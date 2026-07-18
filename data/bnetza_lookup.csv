@@ -1,0 +1,2324 @@
+mastr_id,Anzeigename,norm_name,Energietraeger,Nettonennleistung_MW,Postleitzahl,Ort
+SEE900600559253,RADAG Wehrkraftwerk,radag wehrkraftwerk,Wasser,24.0,79804,Dogern
+SEE900838448145,MKW SAD Turbine 3,mkw sad turbine 3,Abfall,10.0,92421,Schwandorf
+SEE901246020381,Gasmotor Bad Salzungen,gasmotor bad salzungen,Erdgas,10.003,36433,Bad Salzungen
+SEE901752522324,Rheinhafen-Dampfkraftwerk RDK 8 Wasserturbine,rheinhafen-dampfkraftwerk rdk 8 wasserturbine,Wasser,1.8,76189,Karlsruhe
+SEE905721866655,Fab Frechen,fab frechen,Braunkohle,56.0,50226,Frechen
+SEE915137840866,BHKW Hastedt Motor 05,bhkw hastedt motor 05,Erdgas,11.6794,28207,Bremen
+SEE900040609433,SSW-NT,ssw-nt,Steinkohle,6.14,59821,Arnsberg
+SEE901022774309,illwerke vkw Lünerseewerk M4,illwerke vkw lünerseewerk m4,Pumpspeicher,56.0,A-6774,Tschagguns
+SEE901401382521,Tiefstack HKW 16bar-Turbine,tiefstack hkw 16bar-turbine,Waerme,4.9,22113,Hamburg
+SEE902114639810,Bitterfeld BHKW,bitterfeld bhkw,Erdgas,2.0,06749,Bitterfeld-Wolfen
+SEE909886576275,Weisweiler G VGT,weisweiler g vgt,Erdgas,200.0,52249,Eschweiler
+SEE911630335144,BHKW 4,bhkw 4,Biomasse,1.027,25491,Hetlingen
+SEE912257091857,Turbine 7,turbine 7,Abfall,46.5,60439,Frankfurt
+SEE913609763316,Generator 1 Erdgas,generator 1 erdgas,Erdgas,7.0,65203,Wiesbaden
+SEE907703023742,IKW Batteriespeicher,ikw batteriespeicher,Batteriespeicher,1.08,15890,Eisenhüttenstadt
+SEE916115669219,Küstenkraftwerk K.I.E.L Motor 11,küstenkraftwerk k i e l motor 11,Erdgas,9.456,24149,Kiel
+SEE916609233650,DT Niehl 2 RheinEnergie,dt niehl 2 rheinenergie,Waerme,147.0,50735,Köln
+SEE901196452256,Turbine 4,turbine 4,Erdgas,6.71,55246,Mainz-Kostheim
+SEE906231810480,GT1,gt1,Erdgas,5.538,21107,Hamburg
+SEE906385906152,W065-Gebäude 120 / BHKW Modul 04,w065-gebäude 120 bhkw modul 04,Erdgas,4.2,40476,Düsseldorf
+SEE903779951637,"Motor-Heizkraftwerk Chemnitz-Süd, Motor 5",motor-heizkraftwerk chemnitz-süd motor 5,Erdgas,12.7314,09125,Chemnitz
+SEE903937301069,HKW Karcherstraße (GT4),hkw karcherstraße,Erdgas,5.0,67655,Kaiserslautern
+SEE903983424590,Kraftwerk Knapsack II,kraftwerk knapsack ii,Erdgas,430.0,50354,Hürth
+SEE904924198341,BioHKW II,biohkw ii,Biomasse,4.442,89077,Ulm
+SEE912224455828,"Motor-Heizkraftwerk Chemnitz-Süd, Motor 2",motor-heizkraftwerk chemnitz-süd motor 2,Erdgas,12.7314,09125,Chemnitz
+SEE915851127786,BHKW Schwarzer Weg,bhkw schwarzer weg,Erdgas,21.505,52070,Aachen
+SEE900549498521,HKW FFO GM4,hkw ffo gm4,Erdgas,10.3584,15236,Frankfurt
+SEE901440918859,RADAG M1,radag m1,Wasser,27.94,79774,Albbruck
+SEE904165703137,GT1,gt1,Erdgas,51.35,01987,Schwarzheide
+SEE914414538991,GuD Mitte GT12,gud mitte gt12,Erdgas,204.0,67063,Ludwigshafen
+SEE907524301289,T/G 15,t g 15,Mineraloelprodukte,10.0,46147,Oberhausen
+SEE910562646632,Motor 2,motor 2,Biomasse,1.048,28870,Ottersberg
+SEE901516014812,Dampfturbine 1,dampfturbine 1,Erdgas,2.64,37412,Herzberg
+SEE904076796426,Küstenkraftwerk K.I.E.L Motor 4,küstenkraftwerk k i e l motor 4,Erdgas,9.456,24149,Kiel
+SEE905939296770,Küstenkraftwerk K.I.E.L Motor 13,küstenkraftwerk k i e l motor 13,Erdgas,9.456,24149,Kiel
+SEE908658611688,HuR-IKW-G4,hur-ikw-g4,Erdgas,6.02,48499,Salzbergen
+SEE913795928759,SMAREG9 Freiberg,smareg9 freiberg,Batteriespeicher,20.0,09599,Freiberg
+SEE914179988338,Turbine 6,turbine 6,Abfall,2.55,31789,Hameln
+SEE914845982691,BESS Waltershausen,bess waltershausen,Batteriespeicher,10.35,99880,Waltershausen
+SEE900348277440,BHKW Hafen - Modul 4,bhkw hafen - modul 4,Erdgas,2.173,59067,Hamm
+SEE900364034072,Heizkraftwerk Heilbronn FHT 1,heizkraftwerk heilbronn fht 1,Erdgas,6.5,74076,Heilbronn
+SEE900452778307,GGT HO B,ggt ho b,Sonstige Energietraeger (nicht erneuerbar),8.2,38239,Salzgitter
+SEE900664653232,Turbine 1,turbine 1,Abfall,10.7,58636,Iserlohn
+SEE905843309764,Batteriespeicher Emsland,batteriespeicher emsland,Batteriespeicher,45.0,49808,Lingen
+SEE908154984538,GT 1,gt 1,Erdgas,5.167,33332,Gütersloh
+SEE909727831365,Gasturbine Bad Salzungen,gasturbine bad salzungen,Erdgas,9.829,36433,Bad Salzungen
+SEE910823058501,W08_B06_BHKW1+2,w08_b06_bhkw1 2,Erdgas,1.998,71287,Weissach
+SEE913985941537,medl BHKW Broich Modul 2 neu,medl bhkw broich modul 2 neu,Erdgas,2.673,45479,Mülheim
+SEE915170466979,Vianden M2,vianden m2,Pumpspeicher,100.0,9463,Stolzembourg
+SEE918791805134,Turbine 23,turbine 23,Sonstige Energietraeger (nicht erneuerbar),15.5,50769,Köln
+SEE903926257506,KW Häusern MS A2,kw häusern ms a2,Pumpspeicher,30.0,79837,Häusern
+SEE904771605146,Biomassekraftwerk Emden,biomassekraftwerk emden,Biomasse,20.0,26725,Emden
+SEE904983741502,MHKW Mannheim Generator T60,mhkw mannheim generator t60,Abfall,25.6,68169,Mannheim
+SEE905366486355,IPH Strom VT4,iph strom vt4,Erdgas,26.8,65929,Frankfurt
+SEE906830618081,Fab Fortuna,fab fortuna,Braunkohle,15.0,50129,Bergheim
+SEE908746529123,GuD-Block 3,gud-block 3,Erdgas,36.0,18069,Rostock
+SEE902096864651,Maschine 1,maschine 1,Mineraloelprodukte,11.3,76187,Karlsruhe
+SEE902244404746,W059-RD_Geb. 122/3,w059-rd_geb 122 3,Mineraloelprodukte,6.948,70327,Stuttgart
+SEE903702464654,PKV Dampfsammelschienen-KWK-Anlage Generator / Turbine GT 5,pkv dampfsammelschienen-kwk-anlage generator turbine gt 5,Erdgas,5.238,26316,Varel
+SEE905716958785,trlyr 2,trlyr 2,Batteriespeicher,10.0,94104,Tittling
+SEE911836897996,Batteriespeicher Herdecke,batteriespeicher herdecke,Batteriespeicher,6.25,58313,Herdecke
+SEE912912423627,Expander,expander,Mineraloelprodukte,18.9,76187,Karlsruhe
+SEE913516809497,Datteln 4,datteln 4,Steinkohle,1052.0,45711,Datteln
+SEE917689107459,BESS Merseburg,bess merseburg,Batteriespeicher,6.67,06217,Merseburg
+SEE918583974024,Küstenkraftwerk K.I.E.L Motor 2,küstenkraftwerk k i e l motor 2,Erdgas,9.456,24149,Kiel
+SEE901523079712,SMAREG8 Calbe,smareg8 calbe,Batteriespeicher,20.5,39240,Calbe
+SEE904455926604,Turbine 4,turbine 4,Waerme,19.0,76187,Karlsruhe
+SEE906382407782,Pfrombach D F7,pfrombach d f7,Wasser,4.38,85368,Moosburg
+SEE908927793930,Regensburg KWK 2,regensburg kwk 2,Erdgas,2.624,93055,Regensburg
+SEE911476679648,Serrig Maschine 1,serrig maschine 1,Wasser,6.05,54441,Taben-Rodt
+SEE911613995433,Kraftwerk Walheim GTD,kraftwerk walheim gtd,Mineraloelprodukte,136.0,74399,Walheim
+SEE912494745674,Pfrombach E F8,pfrombach e f8,Wasser,14.0,85368,Moosburg
+SEE905804223849,KW Laufenburg Maschine 1,kw laufenburg maschine 1,Wasser,10.442,5080,Laufenburg
+SEE906074606738,Eitting D F1,eitting d f1,Wasser,9.0,85462,Eitting
+SEE909400536488,WKW Rudolf-Fettweis-Werk NDW M1,wkw rudolf-fettweis-werk ndw m1,Wasser,1.27,76596,Forbach
+SEE905937514456,GT 4,gt 4,Mineraloelprodukte,23.2,83734,Hausham
+SEE914878135613,HKW Potsdam-Süd Block2,hkw potsdam-süd block2,Erdgas,40.9,14478,Potsdam
+SEE916435406600,Küstenkraftwerk K.I.E.L Motor 9,küstenkraftwerk k i e l motor 9,Erdgas,9.456,24149,Kiel
+SEE900123363948,Kraftwerk Teufelsbruck MS4,kraftwerk teufelsbruck ms4,Wasser,5.0,83564,Soyen
+SEE901884895389,Dampfturbine 1,dampfturbine 1,Erdgas,12.8,79106,Freiburg
+SEE904364883227,KonTu,kontu,Erdgas,6.9,67547,Worms
+SEE905229048430,GT8,gt8,Erdgas,5.0,59929,Brilon
+SEE907828499484,F13G6,f13g6,Erdgas,18.0,40589,Düsseldorf
+SEE910471578864,Heizkraftwerk an der Friedensbrücke DampfturbineII,heizkraftwerk an der friedensbrücke dampfturbineii,Erdgas,25.0,97080,Würzburg
+SEE901604837408,Saalachkraftwerk E2,saalachkraftwerk e2,Wasser,1.28,83435,Bad Reichenhall
+SEE905257392765,Kesselhaus,kesselhaus,Erdgas,15.0,17389,Anklam
+SEE907731725434,BHKW Jungfernwiese - modernisiert,bhkw jungfernwiese - modernisiert,Erdgas,4.45,17489,Greifswald
+SEE910013400721,KW Laufenburg Maschine 2,kw laufenburg maschine 2,Wasser,10.442,5080,Laufenburg
+SEE912975333499,UPM Schongau HKW 3 GT,upm schongau hkw 3 gt,Erdgas,44.328,86956,Schongau
+SEE901602471161,Alzwerk Maschine 1,alzwerk maschine 1,Wasser,10.08,84489,Burghausen
+SEE903050601572,Turbine/Generator 9,turbine generator 9,Erdgas,13.5,84489,Burghausen
+SEE910475623805,Ofenlinie K3,ofenlinie k3,Abfall,2.2,87437,Kempten
+SEE905714722562,Heizkraftwerk Stuttgart-Münster DT 15,heizkraftwerk stuttgart-münster dt 15,Erdgas,45.0,70376,Stuttgart
+SEE906215229154,MVA EEW Helmstedt,mva eew helmstedt,Abfall,37.5,38372,Büddenstedt
+SEE906312850534,Detzem Maschine 4,detzem maschine 4,Wasser,6.0,54340,Detzem
+SEE907030791383,BMHKW der ESWE BioEnergie,bmhkw der eswe bioenergie,Biomasse,10.5,65205,Wiesbaden
+SEE910161577337,UER L57 M1,uer l57 m1,Steinkohle,17.097,47829,Krefeld
+SEE916532936024,Batteriespeicher Westfalen 1,batteriespeicher westfalen 1,Batteriespeicher,140.0,59071,Hamm
+SEE902796244388,Turbine 4,turbine 4,Erdgas,11.0,31061,Alfeld
+SEE906889375157,Bittenbrunn E K2,bittenbrunn e k2,Wasser,6.73,86633,Neuburg
+SEE908089235248,Dormagen GT2,dormagen gt2,Erdgas,184.0,41540,Dormagen
+SEE911257641864,W065-Gebäude 120 / BHKW Modul 02,w065-gebäude 120 bhkw modul 02,Erdgas,4.2,40476,Düsseldorf
+SEE913911815888,Alzwerk Maschine 2,alzwerk maschine 2,Wasser,10.08,84489,Burghausen
+SEE914989602134,IPH Strom GTX2,iph strom gtx2,Erdgas,49.8,65929,Frankfurt
+SEE916030519361,TG-1902,tg-1902,Mineraloelprodukte,7.3,76187,Karlsruhe
+SEE918037222657,PSW Hohenwarte 2 PSS C,psw hohenwarte 2 pss c,Pumpspeicher,39.7,07338,Hohenwarte
+SEE900963630248,Aufkirchen D F1,aufkirchen d f1,Wasser,9.0,85445,Oberding
+SEE905751443291,BHKW Hastedt Motor 06,bhkw hastedt motor 06,Erdgas,11.6794,28207,Bremen
+SEE906681939748,BHKW Hafen - Modul 1,bhkw hafen - modul 1,Erdgas,2.173,59067,Hamm
+SEE916041421592,NUKAspeicher,nukaspeicher,Batteriespeicher,1.718,87448,Waltenhofen
+SEE921222366043,Batteriepark Metelen,batteriepark metelen,Batteriespeicher,92.5,48629,Metelen
+SEE916697461249,Dingolfing K3,dingolfing k3,Wasser,5.0,84130,Dingolfing
+SEE902745894848,Aufkirchen E F1,aufkirchen e f1,Wasser,9.0,85445,Oberding
+SEE906061539261,"HKW Pfaffenwald, Generator 42",hkw pfaffenwald generator 42,Erdgas,4.9,70569,Stuttgart
+SEE906691973961,medl BHKW Broich Modul 4,medl bhkw broich modul 4,Biomasse,1.999,45479,Mülheim
+SEE908227299279,Vianden M4,vianden m4,Pumpspeicher,100.0,9463,Stolzembourg
+SEE916733797554,Turbine 1,turbine 1,Erdgas,4.15,67468,Neidenfels
+SEE917250397289,RKI Iffezheim M2,rki iffezheim m2,Wasser,27.0,76473,Iffezheim
+SEE905108374407,BHKW Si Si307,bhkw si si307,Erdgas,1.472,71701,Schwieberdingen
+SEE907837230047,Prem K(Ro)1,prem k 1,Wasser,6.4,86983,Lechbruck
+SEE908836263777,IN_N19_KWKK_GT2,in_n19_kwkk_gt2,Erdgas,4.985,85057,Ingolstadt
+SEE914128531905,Euskirchen Generator 2,euskirchen generator 2,Erdgas,6.232,53879,Euskirchen
+SEE912008346410,Dampfturbine,dampfturbine,Waerme,10.8,76593,Gernsbach
+SEE912020488365,Ruhrort 2,ruhrort 2,Sonstige Energietraeger (nicht erneuerbar),59.6,47166,Duisburg
+SEE900559860912,WUN Pellets - BHKW - Modul II,wun pellets - bhkw - modul ii,Erdgas,4.41,95632,Wunsiedel
+SEE902009757629,Notstromdiesel,notstromdiesel,Mineraloelprodukte,1.395,51373,Leverkusen
+SEE906899424722,S300 NT7,s300 nt7,Waerme,24.0,67063,Ludwigshafen
+SEE908293161302,Dampfturbine 7,dampfturbine 7,Erdgas,10.8,76855,Annweiler
+SEE908964165929,T-DT,t-dt,Erdgas,10.5,99087,Erfurt
+SEE911179819280,Gottfrieding K2,gottfrieding k2,Wasser,3.0,84177,Gottfrieding
+SEE910623192382,Dampfturbine II Südzucker Offstein,dampfturbine ii südzucker offstein,Waerme,7.4891,67283,Obrigheim
+SEE918111432224,Turbinengenerator3-SiemensT1915,turbinengenerator3-siemenst1915,Erdgas,5.17,89584,Ehingen
+SEE900610669775,PSW Hohenwarte 2 PSS H,psw hohenwarte 2 pss h,Pumpspeicher,39.7,07338,Hohenwarte
+SEE907282834715,"Kraftwerk VI, Block 61, GT611",kraftwerk vi block 61 gt611,Erdgas,55.3,45772,Marl
+SEE911129038174,BHKW-Anlage,bhkw-anlage,Erdgas,53.481,03052,Cottbus
+SEE902378631681,Kraftwerk Jochenstein MS1,kraftwerk jochenstein ms1,Wasser,26.4,94107,Untergriesbach
+SEE905270326723,Großkayna GT3,großkayna gt3,Mineraloelprodukte,45.625,06242,Großkayna
+SEE909400381729,Hemfurth F2,hemfurth f2,Wasser,10.0,34549,Edertal
+SEE912583238223,Gasmotor 3 Jena,gasmotor 3 jena,Erdgas,12.175,07745,Jena
+SEE912827261192,Oberpeiching M2,oberpeiching m2,Wasser,6.145,86698,Oberndorf
+SEE914688001801,DT 2 (KKK),dt 2,Erdgas,4.339,27318,Hoya
+SEE914857304191,Dormagen GT1,dormagen gt1,Erdgas,184.0,41540,Dormagen
+SEE901410470721,GT3,gt3,Erdgas,62.0,01159,Dresden
+SEE906636749798,KW Säckingen A7,kw säckingen a7,Pumpspeicher,90.0,79713,Bad Säckingen
+SEE908119179962,HDH_004_Industrieheizkraftwerk-Heidenheim_GM4,hdh_004_industrieheizkraftwerk-heidenheim_gm4,Erdgas,3.725,89522,Heidenheim
+SEE909212211870,SMAREG6 Gunzenhausen,smareg6 gunzenhausen,Batteriespeicher,32.04,91710,Gunzenhausen
+SEE911454349471,Batteriespeicher Garzweiler,batteriespeicher garzweiler,Batteriespeicher,6.5,50181,Bedburg
+SEE913282681389,Dampfturbine I Südzucker Plattling,dampfturbine i südzucker plattling,Waerme,6.7895,94447,Plattling
+SEE925192446583,Emsland C GT2,emsland c gt2,Erdgas,58.0,49808,Lingen
+SEE925683830624,Dampfturbine II Südzucker Offenau,dampfturbine ii südzucker offenau,Waerme,7.344,74254,Offenau
+SEE927234931354,Kraftwerk Teufelsbruck MS3,kraftwerk teufelsbruck ms3,Wasser,5.0,83564,Soyen
+SEE903171052819,Biomasseheizkraftwerk,biomasseheizkraftwerk,Biomasse,12.89,07929,Saalburg-Ebersdorf
+SEE909002940690,GKM Block 6,gkm block 6,Steinkohle,255.0,68199,Mannheim
+SEE909599581535,Pfreimd T1,pfreimd t1,Pumpspeicher,29.0,92723,Tännesberg
+SEE914474474840,Ekol,ekol,Biomasse,7.72,46325,Borken
+SEE930322571356,KWK006-2,kwk006-2,Erdgas,4.241,47804,Krefeld
+SEE908238702164,Turboeinheit 1 Dampfturbine 60 t Gen 10 MW,turboeinheit 1 dampfturbine 60 t gen 10 mw,Erdgas,9.4,13353,Berlin
+SEE909438607068,IPH Strom VT3,iph strom vt3,Erdgas,12.9,65929,Frankfurt
+SEE910326850336,Regensburg KWK 1,regensburg kwk 1,Erdgas,2.678,93055,Regensburg
+SEE912155078967,"GG III 8.111,04 kWp (Teil I) Speicher",gg iii 8 111 04 kwp speicher,Batteriespeicher,3.0,19372,Groß Godems
+SEE918067363207,Happurg F4,happurg f4,Pumpspeicher,40.0,91230,Happurg
+SEE918483749111,Müden Maschine 3,müden maschine 3,Wasser,4.1,56254,Müden
+SEE918609979057,Heizkraftwerk Leipzig Süd GTA 9A,heizkraftwerk leipzig süd gta 9a,Erdgas,66.321,04279,Leipzig
+SEE904859529197,ZF-FRD-W04-G32-Prüfstand-B03,zf-frd-w04-g32-prüfstand-b03,Mineraloelprodukte,1.756,88046,Friedrichshafen
+SEE908040387344,BHKW1,bhkw1,Erdgas,1.9805,63225,Langen
+SEE912681231416,Anlage 2009,anlage 2009,Biomasse,2.578,04860,Torgau
+SEE923480872250,PSW Geesthacht PSS B,psw geesthacht pss b,Pumpspeicher,39.7,21502,Geesthacht
+SEE900295294101,BHKW Obere Viehweide M4 (Waldhäuser Str 100),bhkw obere viehweide m4,Erdgas,3.233,72076,Tübingen
+SEE907370296296,MKW SAD Turbine 5,mkw sad turbine 5,Abfall,30.0,92421,Schwandorf
+SEE909007092769,Merching K(Ro)1,merching k 1,Wasser,4.0,86504,Merching
+SEE911671792326,Emsland D GT1,emsland d gt1,Erdgas,293.5,49808,Lingen
+SEE913556136355,Rheinfelden Dampfturbine,rheinfelden dampfturbine,Erdgas,6.43,79618,Rheinfelden
+SEE901925227438,DT,dt,Erdgas,6.358,33332,Gütersloh
+SEE903949785369,Vianden M5,vianden m5,Pumpspeicher,100.0,9463,Stolzembourg
+SEE904819420762,HKW Mitte Gasturbine 1,hkw mitte gasturbine 1,Erdgas,164.0,10179,Berlin
+SEE905930139120,Big Battery Lausitz,big battery lausitz,Batteriespeicher,66.0,03130,Spremberg
+SEE908495409905,KW Waldshut MS B6,kw waldshut ms b6,Pumpspeicher,44.0,79761,Waldshut-Tiengen
+SEE913862454280,Hybridregelkraftwerk,hybridregelkraftwerk,Batteriespeicher,18.0,28207,Bremen
+SEE914662265496,Dampfturbine AEG Kanis,dampfturbine aeg kanis,Waerme,5.47,73312,Geislingen
+SEE914187135533,Maschine 2,maschine 2,Mineraloelprodukte,11.3,76187,Karlsruhe
+SEE917096062495,KWK Anlage Großenkneten,kwk anlage großenkneten,Erdgas,30.16,26197,Großenkneten
+SEE918093565491,Speicher GG III (Teil 2),speicher gg iii,Batteriespeicher,7.0,19372,Groß Godems
+SEE901268232014,trlyr 4,trlyr 4,Batteriespeicher,15.804,04720,Döbeln
+SEE906120609386,DTS 2,dts 2,Erdgas,28.448,68305,Mannheim
+SEE911689709217,Dampfturbine 2,dampfturbine 2,Erdgas,6.0,37412,Herzberg
+SEE917331286914,Werk 1.1 KWK 2,werk 1 1 kwk 2,Erdgas,4.5,80809,München
+SEE918143230942,Walsum 10,walsum 10,Steinkohle,725.0,47179,Duisburg
+SEE921059219284,Küstenkraftwerk K.I.E.L Motor 7,küstenkraftwerk k i e l motor 7,Erdgas,9.456,24149,Kiel
+SEE915985628661,Pumpspeicherkraftwerk Erzhausen,pumpspeicherkraftwerk erzhausen,Pumpspeicher,200.0,37574,Einbeck
+SEE920999677857,Bergheim E K3,bergheim e k3,Wasser,7.9,86673,Bergheim
+SEE921905907730,Niederaußem G,niederaußem g,Braunkohle,628.0,50129,Bergheim
+SEE900128586359,HKW-Sandreuth (Müll),hkw-sandreuth,Waerme,18.8,90441,Nürnberg
+SEE901248773803,Ettling K3,ettling k3,Wasser,4.1,94522,Wallersdorf
+SEE901980882672,KW Kühtai - Maschine 2,kw kühtai - maschine 2,Pumpspeicher,144.5,6183,Kühtai
+SEE902845037787,Werk 1.1 KWK 3,werk 1 1 kwk 3,Erdgas,4.5,80809,München
+SEE913088869400,Kombi-HKW GT1,kombi-hkw gt1,Erdgas,15.29,34134,Kassel
+SEE929516405690,BMK Lünen,bmk lünen,Biomasse,18.5,44536,Lünen
+SEE930277153294,Mitte BHKW 2 Modul 7,mitte bhkw 2 modul 7,Erdgas,4.472,47053,Duisburg
+SEE930322142068,KW Säckingen B8,kw säckingen b8,Pumpspeicher,90.0,79713,Bad Säckingen
+SEE931018364146,KW Wehr MS A10,kw wehr ms a10,Pumpspeicher,227.5,79664,Wehr
+SEE902474184968,Biomethan BHKW 1 Hannover Stöcken,biomethan bhkw 1 hannover stöcken,Biomasse,4.5,30419,Hannover
+SEE909387693235,KWK Gütersloh,kwk gütersloh,Biomasse,12.1,33332,Gütersloh
+SEE912906399075,HKW Eltmann,hkw eltmann,Erdgas,75.185,97483,Eltmann
+SEE922911017253,Wintrich Maschine 2,wintrich maschine 2,Wasser,5.0,54487,Wintrich
+SEE915885358156,HKW III  Block B,hkw iii block b,Erdgas,75.2,47249,Duisburg
+SEE916134140720,Biomassekraftwerk Landesbergen,biomassekraftwerk landesbergen,Biomasse,20.0,31628,Landesbergen
+SEE918705951896,GT2,gt2,Erdgas,40.428,01987,Schwarzheide
+SEE905192478234,Knapsack I - Gasturbine GT12,knapsack i - gasturbine gt12,Erdgas,295.0,50354,Hürth
+SEE906326984744,Weiher 3,weiher 3,Steinkohle,655.6,66287,Quierschied
+SEE916264433549,KWK-Modul 3-H Gotha West,kwk-modul 3-h gotha west,Erdgas,3.3314,99867,Gotha
+SEE916286398239,W059-RD_Geb. 130/8_1001-1029,w059-rd_geb 130 8_1001-1029,Mineraloelprodukte,9.042,70327,Stuttgart
+SEE916662059105,GuD-Block 1,gud-block 1,Erdgas,36.0,18069,Rostock
+SEE918028674410,GM9,gm9,Erdgas,4.457,83022,Rosenheim
+SEE920575296687,"Kraftwerk VII, Block 71, GT711",kraftwerk vii block 71 gt711,Erdgas,55.77,45772,Marl
+SEE921509939243,PASM Großspeicher Bamberg I (Intillion),pasm großspeicher bamberg i,Batteriespeicher,5.4,96050,Bamberg
+SEE902329484380,Dampfturbine I Südzucker Wabern,dampfturbine i südzucker wabern,Waerme,11.8754,34590,Wabern
+SEE910204132950,KW Wyhlen Francis 09,kw wyhlen francis 09,Wasser,2.166,79639,Grenzach-Wyhlen
+SEE908096553144,GBS 2 KW Bexbach,gbs 2 kw bexbach,Batteriespeicher,15.0,66450,Bexbach
+SEE909106315790,TG-1904,tg-1904,Mineraloelprodukte,13.5,76187,Karlsruhe
+SEE914018262315,016 BHKW Modul 3,016 bhkw modul 3,Erdgas,2.05,53127,Bonn
+SEE921877855527,Gasturbine 01 Industriekraftwerk,gasturbine 01 industriekraftwerk,Erdgas,58.5,06406,Bernburg
+SEE902489482608,KW Laufenburg Maschine 4,kw laufenburg maschine 4,Wasser,10.442,5080,Laufenburg
+SEE905731198661,"Duotherm-Anlage, Biomasse",duotherm-anlage biomasse,Biomasse,5.0,27570,Bremerhaven
+SEE913203719740,GKW,gkw,Sonstige Energietraeger (nicht erneuerbar),89.337,66763,Dillingen
+SEE913198518410,KW Waldshut MS B5,kw waldshut ms b5,Pumpspeicher,44.0,79761,Waldshut-Tiengen
+SEE921316314745,BHKW Obere Viehweide M3 (Waldhäuser Str 100),bhkw obere viehweide m3,Erdgas,3.288,72076,Tübingen
+SEE925388069183,HKW Schwarza GT 6,hkw schwarza gt 6,Erdgas,4.939,07407,Rudolstadt
+SEE901506319514,WKW Rudolf-Fettweis-Werk Murgwerk M3,wkw rudolf-fettweis-werk murgwerk m3,Wasser,4.4,76596,Forbach
+SEE902932530221,Second Foundation BESS Oberröblingen,second foundation bess oberröblingen,Batteriespeicher,13.8,06526,Sangerhausen
+SEE907667929555,HKW Dresden-Nord,hkw dresden-nord,Erdgas,11.5,01099,Dresden
+SEE913896693631,Tiefstack GuD GT41,tiefstack gud gt41,Erdgas,50.0,22113,Hamburg
+SEE918928929085,illwerke vkw Rodundwerk I M4,illwerke vkw rodundwerk i m4,Wasser,50.0,A-6773,Vandans
+SEE922579581844,GT2,gt2,Erdgas,4.946,53909,Zülpich
+SEE924053403383,"Shell Energy and Chemicals Park, Kraftwerk Wesseling, Turbine 5",shell energy and chemicals park kraftwerk wesseling turbine 5,Mineraloelprodukte,34.3,50389,Wesseling
+SEE904161631090,Heizkraftwerk Altbach/Deizisau GT C,heizkraftwerk altbach deizisau gt c,Erdgas,81.0,73776,Altbach
+SEE907389779292,Boxberg Block Q,boxberg block q,Braunkohle,840.0,02943,Boxberg
+SEE907892165506,Cuno Heizkraftwerk Herdecke BHKW1,cuno heizkraftwerk herdecke bhkw1,Erdgas,1.95,58313,Herdecke
+SEE912160334607,Leuna GT2,leuna gt2,Erdgas,37.0,06237,Leuna
+SEE928076311489,Fernwärmekraftwerk Kassel DT2,fernwärmekraftwerk kassel dt2,Braunkohle,33.5,34134,Kassel
+SEE928761575349,EEW Großräschen GmbH,eew großräschen gmbh,Abfall,25.0,01983,Großräschen
+SEE927787059284,BHKW Hastedt Motor 04,bhkw hastedt motor 04,Erdgas,11.6794,28207,Bremen
+SEE933236950972,Scholven C,scholven c,Steinkohle,345.0,45896,Gelsenkirchen
+SEE933564106935,Emsland B GT1,emsland b gt1,Erdgas,58.0,49808,Lingen
+SEE933767950021,AEG,aeg,Biomasse,3.705,46325,Borken
+SEE922286010279,TEAtherm,teatherm,Biomasse,9.68,91550,Dinkelsbühl
+SEE925056670925,M_01.2,m_01 2,Erdgas,4.337,53474,Bad Neuenahr-Ahrweiler
+SEE925411264011,Turbine 5,turbine 5,Waerme,1.93,47829,Krefeld
+SEE925720506642,Kraftwerk WI GT,kraftwerk wi gt,Erdgas,16.8,36266,Heringen
+SEE902444234136,Eitting E F2,eitting e f2,Wasser,9.0,85462,Eitting
+SEE904017020009,ET HO5,et ho5,Sonstige Energietraeger (nicht erneuerbar),9.52,66763,Dillingen
+SEE923058511512,Ettling K2,ettling k2,Wasser,4.1,94522,Wallersdorf
+SEE923943268279,Kraftwerk Jänschwalde Block D,kraftwerk jänschwalde block d,Braunkohle,500.0,03185,Teichland
+SEE930647914081,Gasmotoren-Heizkraftwerk Dresden-Reick - Aggregat III,gasmotoren-heizkraftwerk dresden-reick - aggregat iii,Erdgas,11.5,01277,Dresden
+SEE941552924256,Küstenkraftwerk K.I.E.L Motor 15,küstenkraftwerk k i e l motor 15,Erdgas,9.456,24149,Kiel
+SEE947313574326,Kraftwerk Rosenheim MS3,kraftwerk rosenheim ms3,Wasser,11.7,83101,Rohrdorf
+SEE948869114622,Turbosatz 4,turbosatz 4,Erdgas,6.6104,86833,Ettringen
+SEE932259668697,Unterbergen K(Ro)1,unterbergen k 1,Wasser,4.067,86511,Schmiechen
+SEE932845933635,Vianden M11,vianden m11,Pumpspeicher,198.0,9463,Stolzembourg
+SEE916571034606,Bertoldsheim E K3,bertoldsheim e k3,Wasser,6.3,86643,Rennertshofen
+SEE921449009914,Dampfturbine IV CropEnergies Zeitz,dampfturbine iv cropenergies zeitz,Erdgas,17.773,06712,Zeitz
+SEE925652456091,Müllheizkraftwerk Kassel M7,müllheizkraftwerk kassel m7,Abfall,8.0,34123,Kassel
+SEE903626449133,Faimingen M1,faimingen m1,Wasser,5.045,89415,Lauingen
+SEE905647753862,Partition_3,partition_3,Batteriespeicher,3.4,04349,Leipzig
+SEE911430024132,KW Wyhlen Francis 08,kw wyhlen francis 08,Wasser,2.166,79639,Grenzach-Wyhlen
+SEE921196877927,KW Wyhlen Francis 06,kw wyhlen francis 06,Wasser,2.166,79639,Grenzach-Wyhlen
+SEE921830733190,BMHKW Malchin DT,bmhkw malchin dt,Biomasse,10.626,17139,Malchin
+SEE909339504022,SSW-VT,ssw-vt,Steinkohle,6.14,59821,Arnsberg
+SEE910823411191,Werk 1.1 KWK 1,werk 1 1 kwk 1,Erdgas,4.5,80809,München
+SEE909553236495,Turbine Pronsfeld,turbine pronsfeld,Erdgas,12.255,54597,Pronsfeld
+SEE912351283974,Kraftwerk Braunau-Simbach MS2,kraftwerk braunau-simbach ms2,Wasser,25.6,84375,Kirchdorf
+SEE915289541482,HKW West Block 3,hkw west block 3,Steinkohle,61.5,60327,Frankfurt
+SEE915426748132,Block 6 Merkenich RheinEnergie,block 6 merkenich rheinenergie,Braunkohle,75.3,50769,Köln
+SEE919412154723,Dingolfing K2,dingolfing k2,Wasser,5.0,84130,Dingolfing
+SEE919939073064,GT 31 GuD Süd Wolfsburg,gt 31 gud süd wolfsburg,Erdgas,49.4,38440,Wolfsburg
+SEE902238950303,IPH Strom GT1,iph strom gt1,Erdgas,9.9,65929,Frankfurt
+SEE902382668932,PSW Hohenwarte 2 PSS B,psw hohenwarte 2 pss b,Pumpspeicher,39.7,07338,Hohenwarte
+SEE907276435515,BMKW Mannheim,bmkw mannheim,Biomasse,16.1,68169,Mannheim
+SEE921098709050,Emsland C GT1,emsland c gt1,Erdgas,58.0,49808,Lingen
+SEE922395631839,Block1,block1,Sonstige Energietraeger (nicht erneuerbar),97.0,38239,Salzgitter
+SEE900291433160,Hybridspeicher AU,hybridspeicher au,Batteriespeicher,16.0,87477,Sulzberg
+SEE900403199748,Heizkraftwerk Halle-Trotha - Dampfturbine,heizkraftwerk halle-trotha - dampfturbine,Erdgas,12.1585,06118,Halle
+SEE900957573537,KT1,kt1,Waerme,20.0,06237,Leuna
+SEE902215081075,M_01,m_01,Erdgas,1.993,53474,Bad Neuenahr-Ahrweiler
+SEE904887370686,DT1,dt1,Waerme,8.7,06237,Leuna
+SEE915098640406,ZI TR GT2,zi tr gt2,Erdgas,5.5,39326,Zielitz
+SEE912764206645,HKW - GuD1,hkw - gud1,Erdgas,12.405,91052,Erlangen
+SEE922849915072,MVA Hamm Turbine 1,mva hamm turbine 1,Abfall,6.6,59075,Hamm
+SEE926614659772,BMHKW,bmhkw,Biomasse,20.8,49824,Emlichheim
+SEE900100287427,GT2,gt2,Erdgas,6.41,67547,Worms
+SEE907943989181,KW Nußdorf MS1 (im Besitz von Innwerk und ÖBK),kw nußdorf ms1,Wasser,26.5,83131,Nußdorf
+SEE912440649056,Euskirchen Generator 3,euskirchen generator 3,Braunkohle,1.133,53879,Euskirchen
+SEE934927915690,Rheinhafen- Dampfkraftwerk RDK 4S GT,rheinhafen- dampfkraftwerk rdk 4s gt,Erdgas,239.0,76189,Karlsruhe
+SEE935086224739,Heizkraftwerk Heilbronn HLB 6,heizkraftwerk heilbronn hlb 6,Steinkohle,125.0,74076,Heilbronn
+SEE935359739632,Merching K(Ro)3,merching k 3,Wasser,4.0,86504,Merching
+SEE936196276359,Heizkraftwerk Leipzig Nord GT82,heizkraftwerk leipzig nord gt82,Erdgas,64.603,04105,Leipzig
+SEE929808661773,SEDE607510036,sede607510036,Erdgas,4.472,07546,Gera
+SEE930596800480,Gasturbinenkraftwerk Ahrensfelde GT A,gasturbinenkraftwerk ahrensfelde gt a,Erdgas,37.104,16356,Ahrensfelde
+SEE932109633288,Schwabstadl K(Ro)1,schwabstadl k 1,Wasser,4.0,86937,Scheuring
+SEE943600523558,BES NM,bes nm,Batteriespeicher,24.5,24536,Neumünster
+SEE916683222854,UER L57 M3,uer l57 m3,Steinkohle,7.225,47829,Krefeld
+SEE920332685334,PASM Großspeicher Hannover I (Intillion),pasm großspeicher hannover i,Batteriespeicher,5.4,30625,Hannover
+SEE920872442510,Detzem Maschine 3,detzem maschine 3,Wasser,6.0,54340,Detzem
+SEE923401813959,GuD Lichterfelde Gasturbine,gud lichterfelde gasturbine,Erdgas,185.0,12207,Berlin
+SEE935397901879,Turbine 21,turbine 21,Sonstige Energietraeger (nicht erneuerbar),15.5,50769,Köln
+SEE937978171572,Turbine 2,turbine 2,Abfall,3.4,58636,Iserlohn
+SEE940200876787,BHKW Hastedt Motor 08,bhkw hastedt motor 08,Erdgas,11.6794,28207,Bremen
+SEE941548257580,Kraftwerk Gars MS5,kraftwerk gars ms5,Wasser,5.0,83536,Gars
+SEE942019110397,HKW Sandreuth (GT2),hkw sandreuth,Erdgas,53.0,90441,Nürnberg
+SEE943841929270,AHKW HD Turbine,ahkw hd turbine,Abfall,7.97,86167,Augsburg
+SEE946412220059,RKI Iffezheim M5,rki iffezheim m5,Wasser,38.85,76473,Iffezheim
+SEE903153060207,Dampfturbine9,dampfturbine9,Erdgas,18.339,79108,Freiburg
+SEE904677108444,Linie 1 (Kessel 5_Turbine 1)_Komplex 04-01/04,linie 1 _komplex 04-01 04,Biomasse,3.44,72531,Hohenstein
+SEE907064154956,Kraftwerk HA GT1,kraftwerk ha gt1,Erdgas,5.67,36269,Philippsthal
+SEE914513090444,Wintrich Maschine 1,wintrich maschine 1,Wasser,5.0,54487,Wintrich
+SEE915108754215,Kraftwerk Basell Wesseling,kraftwerk basell wesseling,Mineraloelprodukte,90.0,50389,Wesseling
+SEE921572088800,Müllverbrennungsanlage - EEW Stavenhagen GmbH & Co KG,müllverbrennungsanlage - eew stavenhagen gmbh co kg,Abfall,10.0,17153,Stavenhagen
+SEE921679055279,Gottfrieding K1,gottfrieding k1,Wasser,3.0,84177,Gottfrieding
+SEE923433960119,Batteriespeicher Dresden - Reick,batteriespeicher dresden - reick,Batteriespeicher,1.95,01277,Dresden
+SEE928715410504,Gummering K2,gummering k2,Wasser,5.5,84183,Niederviehbach
+SEE932235962276,BHKW 2 Modul 2,bhkw 2 modul 2,Erdgas,4.119,21129,Hamburg
+SEE906834978235,Lage Generator 2,lage generator 2,Steinkohle,4.077,32791,Lage
+SEE909689464656,ET Prozessdampf,et prozessdampf,Sonstige Energietraeger (nicht erneuerbar),1.2,47166,Duisburg
+SEE914143996840,GT3,gt3,Erdgas,7.428,25541,Brunsbüttel
+SEE914931712744,HK_001_Industrieheizkraftwerk-Walsrode_BHKW-GM1,hk_001_industrieheizkraftwerk-walsrode_bhkw-gm1,Erdgas,3.2,29699,Walsrode
+SEE916274994887,bnBm Gaskraftwerk Leipheim,bnbm gaskraftwerk leipheim,Erdgas,310.0,89340,Leipheim
+SEE917110358740,Steinbeis Energie EBS Kessel 6,steinbeis energie ebs kessel 6,Abfall,17.0,25348,Glückstadt
+SEE920405564993,Kraftwerk Stammham MS2,kraftwerk stammham ms2,Wasser,7.733,84533,Stammham
+SEE925023182710,Alzwerk Maschine 5,alzwerk maschine 5,Wasser,10.08,84489,Burghausen
+SEE918046145015,illwerke vkw Lünerseewerk M3,illwerke vkw lünerseewerk m3,Pumpspeicher,56.0,A-6774,Tschagguns
+SEE918648599230,Zolling Biomasse-HKW,zolling biomasse-hkw,Biomasse,19.5,85406,Zolling
+SEE908082298592,W059-RD_Geb. 122/IV_0450-0459,w059-rd_geb 122 iv_0450-0459,Mineraloelprodukte,7.086,70327,Stuttgart
+SEE918573116014,Serrig Maschine 2,serrig maschine 2,Wasser,6.05,54441,Taben-Rodt
+SEE921862229227,Pumpspeicherwerk Rönkhausen PSW2,pumpspeicherwerk rönkhausen psw2,Pumpspeicher,69.0,57413,Finnentrop
+SEE925067145375,GUD-1-7 (iKWK),gud-1-7,Erdgas,4.4,48155,Münster
+SEE925189660817,Prüfstand 8,prüfstand 8,Erdgas,3.15,86165,Augsburg
+SEE901345486644,PSW Goldisthal PSS D,psw goldisthal pss d,Pumpspeicher,263.0,98746,Goldisthal
+SEE902226350702,BESS Leer Nord,bess leer nord,Batteriespeicher,15.36,26789,Leer
+SEE903604447151,E-BHKW,e-bhkw,Erdgas,1.899,75175,Pforzheim
+SEE912463283787,GM1,gm1,Biomasse,3.285,83022,Rosenheim
+SEE916495905242,HKW III  Block B,hkw iii block b,Waerme,84.0,47249,Duisburg
+SEE917211801770,UPM Schongau DKW T4,upm schongau dkw t4,Erdgas,32.0,86956,Schongau
+SEE917960395155,Nordland GuD-Anlage Gasturbine,nordland gud-anlage gasturbine,Erdgas,58.681,26892,Dörpen
+SEE922855765289,HKW III  Block B,hkw iii block b,Erdgas,75.2,47249,Duisburg
+SEE923389370246,Kraftwerk Neuötting MS1,kraftwerk neuötting ms1,Wasser,8.7,84524,Neuötting
+SEE925570951074,Kraftwerk Neuötting MS2,kraftwerk neuötting ms2,Wasser,8.7,84524,Neuötting
+SEE900576662001,Querdel SKW Biomethan2,querdel skw biomethan2,Biomasse,3.352,48336,Sassenberg
+SEE915375007878,Mitte BHKW 2 Modul 4,mitte bhkw 2 modul 4,Erdgas,4.472,47053,Duisburg
+SEE918419019035,Elverlingsen WFAE,elverlingsen wfae,Biomasse,2.3,58791,Werdohl
+SEE922581598120,HKW - DT1,hkw - dt1,Erdgas,9.963,91052,Erlangen
+SEE900628853036,Trianel Gaskraftwerk Hamm Block 20,trianel gaskraftwerk hamm block 20,Erdgas,445.0,59071,Hamm
+SEE902725989434,Regensburg KWK 4,regensburg kwk 4,Erdgas,2.678,93055,Regensburg
+SEE905820921729,Batteriespeicher JT Energy Systems GmbH,batteriespeicher jt energy systems gmbh,Batteriespeicher,25.0,09627,Bobritzsch-Hilbersdorf
+SEE907222955227,Sermuth BHKW 3,sermuth bhkw 3,Mineraloelprodukte,5.7,04680,Colditz
+SEE943609681808,BES DD,bes dd,Batteriespeicher,12.0,01259,Dresden
+SEE945086771409,KWK-Anlage FHW Ratingen West Modul 4,kwk-anlage fhw ratingen west modul 4,Erdgas,1.947,40878,Ratingen
+SEE945845418224,Altheim K3,altheim k3,Wasser,5.718,84051,Essenbach
+SEE948481095354,Generator 1,generator 1,Erdgas,13.0,31171,Nordstemmen
+SEE952262880046,illwerke vkw Rodundwerk I M3,illwerke vkw rodundwerk i m3,Wasser,50.0,A-6773,Vandans
+SEE954649497618,SMAREG4 Wartburgspeicher Eisenach,smareg4 wartburgspeicher eisenach,Batteriespeicher,60.0,99817,Eisenach
+SEE957602727647,SEDE607510036,sede607510036,Erdgas,4.472,07546,Gera
+SEE917497526305,KWK GT1,kwk gt1,Erdgas,15.36,21683,Stade
+SEE917758204157,Motor 3,motor 3,Biomasse,1.048,28870,Ottersberg
+SEE909057995010,Trier Maschine 4,trier maschine 4,Wasser,4.7,54294,Trier
+SEE922477386435,Franken DT2,franken dt2,Erdgas,387.0,90449,Nürnberg
+SEE923918497345,Gasmotoren-Blockheizkraftwerk I (Generator 4),gasmotoren-blockheizkraftwerk i,Erdgas,3.879,01468,Moritzburg
+SEE926367113644,Obervermuntwerk II Maschine 1 Turbine,obervermuntwerk ii maschine 1 turbine,Pumpspeicher,190.0,A-6794,Partenen
+SEE927419839802,"Heizkraftwerk Bonn-Nord, Gasturbine 2 der GuD-Anlage",heizkraftwerk bonn-nord gasturbine 2 der gud-anlage,Erdgas,39.186,53115,Bonn
+SEE927542617698,bnBm GasKW BIB GT5,bnbm gaskw bib gt5,Erdgas,34.4,68647,Biblis
+SEE949500107867,Mühltal F3,mühltal f3,Wasser,3.73,82064,Straßlach-Dingharting
+SEE951620659119,Emsland B GT2,emsland b gt2,Erdgas,58.0,49808,Lingen
+SEE923421872301,GuD Süd GT2,gud süd gt2,Erdgas,165.5,67063,Ludwigshafen
+SEE923527691592,Gasturbinenkraftwerk Ahrensfelde GT D,gasturbinenkraftwerk ahrensfelde gt d,Erdgas,37.104,16356,Ahrensfelde
+SEE924373150776,GT 2,gt 2,Erdgas,23.0,99087,Erfurt
+SEE924562445072,Gasmotoren-Heizkraftwerk Dresden-Reick - Aggregat V,gasmotoren-heizkraftwerk dresden-reick - aggregat v,Erdgas,11.5,01277,Dresden
+SEE925631744058,G20,g20,Erdgas,7.482,36039,Fulda
+SEE929797382345,Gasturbinenkraftwerk Ahrensfelde GT B,gasturbinenkraftwerk ahrensfelde gt b,Erdgas,37.104,16356,Ahrensfelde
+SEE931050475398,GuD Niehl 3 RheinEnergie,gud niehl 3 rheinenergie,Erdgas,452.9,50735,Köln
+SEE932569905017,Küstenkraftwerk K.I.E.L Motor 17,küstenkraftwerk k i e l motor 17,Erdgas,9.456,24149,Kiel
+SEE937830141170,BHKW-G66-KWK-klein,bhkw-g66-kwk-klein,Erdgas,3.736,08058,Zwickau
+SEE904604163027,Karnap B,karnap b,Abfall,38.0,45329,Essen
+SEE905035807238,Kirchmöser GT 1,kirchmöser gt 1,Erdgas,60.0,14774,Brandenburg
+SEE907597880766,Kraftwerk Emden Dampfturbine,kraftwerk emden dampfturbine,Erdgas,433.0,26725,Emden
+SEE909466066615,Motor-Heizkraftwerk Chemnitz-Nord. Motor 3,motor-heizkraftwerk chemnitz-nord motor 3,Erdgas,12.538,09114,Chemnitz
+SEE911219414864,PSW Markersbach PSS E,psw markersbach pss e,Pumpspeicher,174.2,08352,Raschau-Markersbach
+SEE914224312040,Gasmotoren-Blockheizkraftwerk I (Generator 1),gasmotoren-blockheizkraftwerk i,Erdgas,3.879,01468,Moritzburg
+SEE927727929912,MVA-Turbine,mva-turbine,Abfall,27.0,52249,Eschweiler
+SEE932482220433,BHKW 1,bhkw 1,Biomasse,1.027,25491,Hetlingen
+SEE932621971301,GT2,gt2,Erdgas,7.15,36039,Fulda
+SEE934669010578,Bitterfeld GuD,bitterfeld gud,Erdgas,108.0,06749,Bitterfeld-Wolfen
+SEE901911520000,illwerke vkw Obervermuntwerk I M1,illwerke vkw obervermuntwerk i m1,Wasser,18.0,A-6794,Partenen
+SEE908672656115,Gersteinwerk G DT (G2),gersteinwerk g dt,Erdgas,355.0,59368,Werne
+SEE910877433255,Expansionsturbinen S2,expansionsturbinen s2,Sonstige Energietraeger (nicht erneuerbar),1.2,26197,Großenkneten
+SEE918271567637,Geisling K3,geisling k3,Wasser,8.333,93102,Pfatter
+SEE919137629452,IPH Strom VT1,iph strom vt1,Erdgas,17.38,65929,Frankfurt
+SEE904748267797,SEDE607510037,sede607510037,Erdgas,4.387,07549,Gera
+SEE912935247576,Raffineriekraftwerk Leuna MDT,raffineriekraftwerk leuna mdt,Mineraloelprodukte,33.4,06237,Leuna
+SEE915645322953,GT 1,gt 1,Erdgas,23.0,99087,Erfurt
+SEE919076066929,Happurg F1,happurg f1,Pumpspeicher,40.0,91230,Happurg
+SEE919544829094,HKW Mitte GTHKW,hkw mitte gthkw,Erdgas,63.8,38114,Braunschweig
+SEE926292106278,KWK-Anlage Gasturbine 2,kwk-anlage gasturbine 2,Erdgas,4.346,49638,Nortrup
+SEE927622980674,Euskirchen Generator 1,euskirchen generator 1,Braunkohle,7.2,53879,Euskirchen
+SEE927738616955,PSW Bleiloch PSS A,psw bleiloch pss a,Pumpspeicher,39.9,07907,Schleiz
+SEE900252837358,Gasturbine,gasturbine,Erdgas,4.35,76593,Gernsbach
+SEE906392287978,BHKW Hastedt Motor 02,bhkw hastedt motor 02,Erdgas,11.6794,28207,Bremen
+SEE910324388312,Batteriespeicher Chemnitz GmbH & Co. KG,batteriespeicher chemnitz gmbh co kg,Batteriespeicher,15.8,09114,Chemnitz
+SEE910929866741,BHKW Hastedt Motor 03,bhkw hastedt motor 03,Erdgas,11.6794,28207,Bremen
+SEE929022761297,Emsland D GT2,emsland d gt2,Erdgas,293.5,49808,Lingen
+SEE931001040675,KW Plattling DT,kw plattling dt,Erdgas,39.078,94447,Plattling
+SEE941875842596,Ma 1,ma 1,Sonstige Energietraeger (nicht erneuerbar),35.0,38239,Salzgitter
+SEE956207547964,BHKW Hafen - Modul 3,bhkw hafen - modul 3,Erdgas,2.173,59067,Hamm
+SEE957952105034,Heizkraftwerk Meggle,heizkraftwerk meggle,Erdgas,13.6,83512,Reitmehring
+SEE959715874706,Niederaichbach K1,niederaichbach k1,Wasser,5.4,84051,Essenbach
+SEE962712912357,Vianden M3,vianden m3,Pumpspeicher,100.0,9463,Stolzembourg
+SEE965444118547,GTS3,gts3,Erdgas,5.319,49479,Ibbenbüren
+SEE967448123107,BHKW Hafen - Modul 2,bhkw hafen - modul 2,Erdgas,2.173,59067,Hamm
+SEE973234062512,KW Waldshut MS A5,kw waldshut ms a5,Pumpspeicher,44.0,79761,Waldshut-Tiengen
+SEE917568874298,7710MKA10-DT,7710mka10-dt,Waerme,5.874,01454,Wachau
+SEE900310540558,Speicher Beilrode I - Teilanlage 6,speicher beilrode i - teilanlage 6,Batteriespeicher,6.16,04886,Beilrode
+SEE903406002589,Gasmotoren-Blockheizkraftwerk I (Generator 5),gasmotoren-blockheizkraftwerk i,Erdgas,3.879,01468,Moritzburg
+SEE910080930862,Gasmotoren-Blockheizkraftwerk II (Generator 4),gasmotoren-blockheizkraftwerk ii,Erdgas,3.772,01468,Moritzburg
+SEE911283118750,Industriekraftwerk Greifswald GmbH,industriekraftwerk greifswald gmbh,Erdgas,38.2,17509,Lubmin
+SEE911764038249,Franken DT1,franken dt1,Erdgas,383.0,90449,Nürnberg
+SEE912980761904,bnBm GasKW BIB GT7,bnbm gaskw bib gt7,Erdgas,34.4,68647,Biblis
+SEE906257837416,5MKA,5mka,Mineraloelprodukte,28.0,16303,Schwedt
+SEE906462907775,Kraftwerk HA GT2,kraftwerk ha gt2,Erdgas,5.67,36269,Philippsthal
+SEE909297051026,GT2,gt2,Erdgas,22.7,49808,Lingen
+SEE910950875330,bnBm GasKW BIB GT1,bnbm gaskw bib gt1,Erdgas,34.4,68647,Biblis
+SEE932792338347,illwerke vkw Rodundwerk I M1,illwerke vkw rodundwerk i m1,Wasser,50.0,A-6773,Vandans
+SEE932928232242,GKH 2,gkh 2,Steinkohle,136.0,30419,Hannover
+SEE937791832391,Küstenkraftwerk K.I.E.L Motor 16,küstenkraftwerk k i e l motor 16,Erdgas,9.456,24149,Kiel
+SEE939823727910,Küstenkraftwerk K.I.E.L Motor 3,küstenkraftwerk k i e l motor 3,Erdgas,9.456,24149,Kiel
+SEE939899660715,Gasmotoren-Heizkraftwerk Dresden-Reick - Aggregat VII,gasmotoren-heizkraftwerk dresden-reick - aggregat vii,Erdgas,11.5,01277,Dresden
+SEE940475173918,Küstenkraftwerk K.I.E.L Motor 5,küstenkraftwerk k i e l motor 5,Erdgas,9.456,24149,Kiel
+SEE943132425573,BHKW 2,bhkw 2,Biomasse,1.027,25491,Hetlingen
+SEE943181515102,Meitingen M1,meitingen m1,Wasser,4.2,86405,Meitingen
+SEE905054165586,Gasmotoren-Blockheizkraftwerk II (Generator 7),gasmotoren-blockheizkraftwerk ii,Erdgas,3.772,01468,Moritzburg
+SEE912978354040,Gasmotoren-Blockheizkraftwerk II (Generator 6),gasmotoren-blockheizkraftwerk ii,Erdgas,3.772,01468,Moritzburg
+SEE913072031325,Beilrode II - BESS - CoLocation,beilrode ii - bess - colocation,Batteriespeicher,44.72,04886,Beilrode
+SEE913280112274,Kraftwerk HA DT4,kraftwerk ha dt4,Waerme,21.0,36269,Philippsthal
+SEE913483427694,Speicher Beilrode II - Teilanlage 1,speicher beilrode ii - teilanlage 1,Batteriespeicher,10.4,04886,Beilrode
+SEE923793340132,Gasmotoren-Heizkraftwerk Dresden-Reick - Aggregat VIII,gasmotoren-heizkraftwerk dresden-reick - aggregat viii,Erdgas,11.5,01277,Dresden
+SEE925543621515,ECO POWER ONE AB,eco power one ab,Batteriespeicher,51.75,24855,Bollingstedt
+SEE916689752430,N822 GE2,n822 ge2,Waerme,2.65,67063,Ludwigshafen
+SEE917379392493,illwerke vkw Lünerseewerk M2,illwerke vkw lünerseewerk m2,Pumpspeicher,56.0,A-6774,Tschagguns
+SEE919366422664,DTS 3,dts 3,Erdgas,17.009,68305,Mannheim
+SEE920494524915,GuD Mitte GT11,gud mitte gt11,Erdgas,204.0,67063,Ludwigshafen
+SEE922158261037,ECO POWER ONE CD,eco power one cd,Batteriespeicher,51.75,24855,Bollingstedt
+SEE923624580645,Wintrich Maschine 3,wintrich maschine 3,Wasser,5.0,54487,Wintrich
+SEE926582462244,WUN Pellets - BHKW-Modul III,wun pellets - bhkw-modul iii,Erdgas,4.41,95632,Wunsiedel
+SEE907834312319,SWM Uppenborn 2 Gen1,swm uppenborn 2 gen1,Wasser,6.0,84184,Tiefenbach
+SEE909482931270,Faimingen M2,faimingen m2,Wasser,5.045,89415,Lauingen
+SEE916877868585,Hamborn 4,hamborn 4,Sonstige Energietraeger (nicht erneuerbar),101.3,47166,Duisburg
+SEE924172977710,Mittelsbüren GT3,mittelsbüren gt3,Mineraloelprodukte,86.0,28237,Bremen
+SEE926876352800,Urspring K(Ro) 3,urspring k 3,Wasser,3.366,86983,Lechbruck
+SEE930842265841,BESS Halle (Saale),bess halle,Batteriespeicher,11.263,06116,Halle
+SEE933714674710,Kraftwerk GRI,kraftwerk gri,Erdgas,10.0,85092,Kösching
+SEE929910590541,STA - MHKW,sta - mhkw,Abfall,27.0,22145,Stapelfeld
+SEE933935879772,BHKW Zuckerfabrik NST,bhkw zuckerfabrik nst,Biomasse,1.484,31171,Nordstemmen
+SEE934309192626,PSW Geesthacht PSS A,psw geesthacht pss a,Pumpspeicher,39.7,21502,Geesthacht
+SEE938663790405,0066 - STW - BHKW - KWK,0066 - stw - bhkw - kwk,Erdgas,2.419,47906,Kempen
+SEE941459970745,Gummering K1,gummering k1,Wasser,5.5,84183,Niederviehbach
+SEE945436960576,GT1,gt1,Erdgas,7.15,36039,Fulda
+SEE948263410344,Schwabstadl K(Ro)2,schwabstadl k 2,Wasser,4.0,86937,Scheuring
+SEE948545926433,SEDE607510036,sede607510036,Erdgas,4.472,07546,Gera
+SEE953574430066,Küstenkraftwerk K.I.E.L Motor 12,küstenkraftwerk k i e l motor 12,Erdgas,9.456,24149,Kiel
+SEE919395394109,Leipzig KWK 2,leipzig kwk 2,Erdgas,3.36,04349,Leipzig
+SEE921068308450,Speicher Tangermünde,speicher tangermünde,Batteriespeicher,15.8,39590,Tangermünde
+SEE925011950635,Turbine VE 40 ZV MVA IN,turbine ve 40 zv mva in,Abfall,18.24,85055,Ingolstadt
+SEE925076352665,GT 2,gt 2,Mineraloelprodukte,23.2,83734,Hausham
+SEE937822704543,Turbine 2,turbine 2,Abfall,1.177,64293,Darmstadt
+SEE919189403703,Generator 7,generator 7,Erdgas,21.861,65203,Wiesbaden
+SEE927473609168,BNA0174,bna0174,Erdgas,72.46,84508,Burgkirchen
+SEE929031511661,Vianden M9,vianden m9,Pumpspeicher,100.0,9463,Stolzembourg
+SEE931060472509,Dampfturbosatz,dampfturbosatz,Waerme,9.51,07407,Rudolstadt
+SEE934039077637,Gersthofen M1,gersthofen m1,Wasser,1.969,86368,Gersthofen
+SEE934706805181,W08_PST_Mantelobjekt,w08_pst_mantelobjekt,Mineraloelprodukte,18.9022,71287,Weissach
+SEE938349787705,DT2,dt2,Biomasse,12.5,59929,Brilon
+SEE949816813650,SEDE607510037,sede607510037,Erdgas,4.387,07549,Gera
+SEE950675787617,Ingolstadt 3,ingolstadt 3,Mineraloelprodukte,355.0,85098,Großmehring
+SEE934531299087,Gasturbine GT,gasturbine gt,Erdgas,22.0,79639,Grenzach-Wyhlen
+SEE938587513135,Scholven 1 GT2,scholven 1 gt2,Erdgas,54.0,45896,Gelsenkirchen
+SEE939382623364,TWIN2,twin2,Abfall,4.69,26826,Weener
+SEE940552188637,Unterbergen K(Ro)3,unterbergen k 3,Wasser,4.067,86511,Schmiechen
+SEE942803645654,Dampfturbine BBC,dampfturbine bbc,Waerme,2.443,73312,Geislingen
+SEE943096190258,Biomasse-Kraftwerk Fechenheim GmbH,biomasse-kraftwerk fechenheim gmbh,Biomasse,11.33,60386,Frankfurt
+SEE918541277334,Kraftwerk Fulda Aggregat 3C,kraftwerk fulda aggregat 3c,Mineraloelprodukte,2.76,36043,Fulda
+SEE919035876514,KW Witznau MS B3,kw witznau ms b3,Pumpspeicher,55.0,79777,Ühlingen-Birkendorf
+SEE920560912882,SWM HKW Freimann GT12,swm hkw freimann gt12,Erdgas,52.768,80807,München
+SEE921294761234,Kraftwerk Perach MS1,kraftwerk perach ms1,Wasser,6.466,84567,Perach
+SEE921894153743,IPH Strom CoFA BHKW 3,iph strom cofa bhkw 3,Biomasse,1.3725,65929,Frankfurt
+SEE924909675933,GUD-1-2 (GT2),gud-1-2,Erdgas,31.0,48155,Münster
+SEE927630371594,Grubenheizkraftwerk Amsdorf,grubenheizkraftwerk amsdorf,Braunkohle,45.189,06317,Seegebiet Mansfelder Land
+SEE918623387630,EEW Stapelfeld GmbH,eew stapelfeld gmbh,Abfall,11.4,22145,Stapelfeld
+SEE921479798321,Generator C,generator c,Abfall,9.376,42349,Wuppertal
+SEE900240101683,129870 Modul 3,129870 modul 3,Erdgas,4.44,76744,Wörth
+SEE902724065948,BMW Werk 1.5 KWK 8,bmw werk 1 5 kwk 8,Erdgas,2.645,80937,München
+SEE956943312185,A718 KT9,a718 kt9,Waerme,45.5,67063,Ludwigshafen
+SEE922877375398,GuD Anlage GT,gud anlage gt,Erdgas,9.023,04687,Trebsen
+SEE923769915258,HKW Sandreuth (GT1),hkw sandreuth,Erdgas,53.0,90441,Nürnberg
+SEE924682614181,Mercer Stendal TG 1,mercer stendal tg 1,Biomasse,94.515,39596,Arneburg
+SEE926786756569,KW Häusern MS B1,kw häusern ms b1,Pumpspeicher,30.0,79837,Häusern
+SEE928072880231,IPH Strom VT5,iph strom vt5,Erdgas,13.8,65929,Frankfurt
+SEE931494186256,Biomasseheizkraftwerk Wismar,biomasseheizkraftwerk wismar,Biomasse,18.3,23970,Wismar
+SEE910532842996,Au F3,au f3,Wasser,2.0,89257,Illertissen
+SEE912013538152,Windpark Reußenköge Batteriespeicher 2,windpark reußenköge batteriespeicher 2,Batteriespeicher,6.4,25821,Reußenköge
+SEE915051196278,BHKW Ford Saarlouis Modul 4,bhkw ford saarlouis modul 4,Erdgas,4.322,66740,Saarlouis
+SEE915432109163,Irsching 6,irsching 6,Erdgas,300.0,85088,Vohburg
+SEE919134316447,Schkopau A+B Bahngenerator,schkopau a b bahngenerator,Waerme,110.0,06258,Schkopau
+SEE920825895844,BHKW KW5 54,bhkw kw5 54,Erdgas,9.93,55120,Mainz
+SEE901453618340,MHKW Dampfturbine 2,mhkw dampfturbine 2,Abfall,2.1,83022,Rosenheim
+SEE903494881059,Prem K(Ro)3,prem k 3,Wasser,6.4,86983,Lechbruck
+SEE904955359575,KW Ryburg-Schwörstadt M4,kw ryburg-schwörstadt m4,Wasser,28.15,79739,Schwörstadt
+SEE914365805029,"Biomethan BHKW Hannover Herrenhausen, Motor 2",biomethan bhkw hannover herrenhausen motor 2,Biomasse,4.5,30419,Hannover
+SEE914749097217,129870 Modul 1,129870 modul 1,Erdgas,4.44,76744,Wörth
+SEE929068766096,UPM Schongau HKW 2 T1,upm schongau hkw 2 t1,Erdgas,2.85,86956,Schongau
+SEE929107540175,KW Nußdorf MS2 (im Besitz von Innwerk und ÖBK),kw nußdorf ms2,Wasser,23.5,83131,Nußdorf
+SEE939917723934,BHKW Neu-Ulm M3,bhkw neu-ulm m3,Erdgas,2.622,89231,Neu-Ulm
+SEE948609940009,Heizkraftwerk Heilbronn HLB 7,heizkraftwerk heilbronn hlb 7,Steinkohle,778.0,74076,Heilbronn
+SEE949216632202,Dampfturbine 13,dampfturbine 13,Erdgas,38.2,24939,Flensburg
+SEE953174240607,Kraftwerk Gars MS4,kraftwerk gars ms4,Wasser,5.0,83536,Gars
+SEE958184152735,Dampfturbine 7,dampfturbine 7,Erdgas,28.0,24939,Flensburg
+SEE960357727398,Dessau K(Ro)3,dessau k 3,Wasser,3.433,86977,Burggen
+SEE960916622249,GT 2,gt 2,Erdgas,5.167,33332,Gütersloh
+SEE964215288830,Gasturbine,gasturbine,Erdgas,8.6,40589,Düsseldorf
+SEE928579781840,Pfrombach D F3,pfrombach d f3,Wasser,4.38,85368,Moosburg
+SEE928797247012,Regensburg KWK 5,regensburg kwk 5,Erdgas,2.679,93055,Regensburg
+SEE931088083121,Zeltingen Maschine 2,zeltingen maschine 2,Wasser,3.4,54492,Zeltingen-Rachtig
+SEE932569427427,Pielweichs K3,pielweichs k3,Wasser,4.2,94447,Plattling
+SEE931784983831,"Fernheizwerk Bad Elster, Gasturbine",fernheizwerk bad elster gasturbine,Erdgas,5.128,08645,Bad Elster
+SEE933021962319,Waldeck 2 F1,waldeck 2 f1,Pumpspeicher,240.0,34549,Edertal
+SEE933851011843,Turbine 22,turbine 22,Sonstige Energietraeger (nicht erneuerbar),19.2,50769,Köln
+SEE938337436349,Kraftwerk Schwarze Pumpe Block A,kraftwerk schwarze pumpe block a,Braunkohle,755.0,03130,Spremberg
+SEE952672318108,Kraftwerk Schwarze Pumpe Block B,kraftwerk schwarze pumpe block b,Braunkohle,755.0,03130,Spremberg
+SEE957844983702,Ma A,ma a,Sonstige Energietraeger (nicht erneuerbar),9.0,38239,Salzgitter
+SEE925794342412,TREA Leuna 2,trea leuna 2,Abfall,16.245,06237,Leuna
+SEE927287469774,KW Wyhlen Straflo 03,kw wyhlen straflo 03,Wasser,4.5,79639,Grenzach-Wyhlen
+SEE927932653541,illwerke vkw Kopswerk I M2,illwerke vkw kopswerk i m2,Wasser,96.0,A-6793,Gaschurn
+SEE930752846949,Grohnde,grohnde,Kernenergie,1360.0,31860,Emmerthal
+SEE930847992643,PES Ohrdruf,pes ohrdruf,Batteriespeicher,10.35,99885,Ohrdruf
+SEE931197865137,GT2,gt2,Erdgas,5.163,25541,Brunsbüttel
+SEE907294548426,Scheuring K(Ro)2,scheuring k 2,Wasser,4.067,86937,Scheuring
+SEE914861690945,Kraftwerk Egglfing-Obernberg MS3,kraftwerk egglfing-obernberg ms3,Wasser,13.45,94072,Bad Füssing
+SEE917925869486,Nordland GuD-Anlage HD-DTS,nordland gud-anlage hd-dts,Erdgas,22.61,26892,Dörpen
+SEE926120377375,Cogenerationanlage,cogenerationanlage,Erdgas,25.4,93333,Neustadt
+SEE934242259776,Küstenkraftwerk K.I.E.L Motor 8,küstenkraftwerk k i e l motor 8,Erdgas,9.456,24149,Kiel
+SEE934654061066,Wintrich Maschine 4,wintrich maschine 4,Wasser,5.0,54487,Wintrich
+SEE937857006797,WBS-Tarzow,wbs-tarzow,Batteriespeicher,10.0,23972,Lübow
+SEE944122961347,GuD Süd GT1,gud süd gt1,Erdgas,173.0,67063,Ludwigshafen
+SEE945093211103,Erzeugungsanlage FHW Ratingen West Modul 2,erzeugungsanlage fhw ratingen west modul 2,Erdgas,2.0,40878,Ratingen
+SEE931012437020,Kraftwerk Gars MS2,kraftwerk gars ms2,Wasser,5.0,83536,Gars
+SEE932787342328,Gersteinwerk G GT (G1),gersteinwerk g gt,Erdgas,55.0,59368,Werne
+SEE933078887559,Ingolstadt E K1,ingolstadt e k1,Wasser,6.6,85049,Ingolstadt
+SEE943766131437,Turbine 1,turbine 1,Steinkohle,14.2,97424,Schweinfurt
+SEE944148486770,Generator 4,generator 4,Sonstige Energietraeger (nicht erneuerbar),22.0,50997,Köln
+SEE949133098242,Turbine 7,turbine 7,Waerme,18.0,76187,Karlsruhe
+SEE949722134498,F03G2,f03g2,Erdgas,11.88,40589,Düsseldorf
+SEE950641511031,Rain M1,rain m1,Wasser,5.595,86641,Rain
+SEE952352206145,Scholven B,scholven b,Steinkohle,345.0,45896,Gelsenkirchen
+SEE939692270074,Scholven 1 GT1,scholven 1 gt1,Erdgas,54.0,45896,Gelsenkirchen
+SEE942234222677,BHKW Hafen - Modul 5,bhkw hafen - modul 5,Erdgas,2.173,59067,Hamm
+SEE942432515786,Dampfturbine AEG,dampfturbine aeg,Waerme,2.454,73312,Geislingen
+SEE943208281096,Rain BS1,rain bs1,Batteriespeicher,1.5,86641,Rain
+SEE943548208159,AHKW ND Turbine,ahkw nd turbine,Abfall,6.72,86167,Augsburg
+SEE949895584069,HKW Sandreuth (DT3),hkw sandreuth,Erdgas,38.774,90441,Nürnberg
+SEE952807166543,F03G3,f03g3,Erdgas,11.88,40589,Düsseldorf
+SEE955111508221,Dampfturbine DT5,dampfturbine dt5,Erdgas,8.426,79639,Grenzach-Wyhlen
+SEE964903137297,Dampfturbine II Südzucker AG Ochsenfurt,dampfturbine ii südzucker ag ochsenfurt,Waerme,4.983,97199,Ochsenfurt
+SEE968309350465,BHKW 1 + 2,bhkw 1 2,Biomasse,1.998,07407,Rudolstadt
+SEE969267129582,Kraftwerk Gars MS3,kraftwerk gars ms3,Wasser,5.0,83536,Gars
+SEE925326526723,KW Wyhlen Straflo 06,kw wyhlen straflo 06,Wasser,4.5,79639,Grenzach-Wyhlen
+SEE926245506438,SEE_2025_4642_Föhren_BESS,see_2025_4642_föhren_bess,Batteriespeicher,20.0,54343,Föhren
+SEE927968132478,ET HO 9,et ho 9,Sonstige Energietraeger (nicht erneuerbar),7.0,47166,Duisburg
+SEE928246905913,Kraftwerk Stammham,kraftwerk stammham,Wasser,7.733,84533,Stammham
+SEE930197122479,Energieanlage 3,energieanlage 3,Biomasse,19.7,16909,Heiligengrabe
+SEE931986160672,UPM Schongau DKW T5,upm schongau dkw t5,Erdgas,32.0,86956,Schongau
+SEE937997291855,HKW FFO GM3,hkw ffo gm3,Erdgas,10.3584,15236,Frankfurt
+SEE941568392261,RZR I Turbine2,rzr i turbine2,Abfall,14.88,45699,Herten
+SEE948455839281,Kraftwerk Egglfing-Obernberg MS1,kraftwerk egglfing-obernberg ms1,Wasser,13.45,94072,Bad Füssing
+SEE951684578067,Gasturbine 2 - GuD MPE,gasturbine 2 - gud mpe,Erdgas,15.25,33699,Bielefeld
+SEE952794027650,BMHKW Piesteritz,bmhkw piesteritz,Biomasse,20.0,06886,Lutherstadt Wittenberg
+SEE954780579013,IN_WERK_PST_Gesamt,in_werk_pst_gesamt,Mineraloelprodukte,45.178,85057,Ingolstadt
+SEE958518628752,HKW Schildescher Straße DT 3,hkw schildescher straße dt 3,Erdgas,20.0,33611,Bielefeld
+SEE958827094903,Gasturbine 1,gasturbine 1,Erdgas,3.0,56727,Mayen
+SEE935952275827,Dampfturbine,dampfturbine,Erdgas,14.18,39164,Wanzleben-Börde
+SEE936262825863,Ruhrort 4,ruhrort 4,Sonstige Energietraeger (nicht erneuerbar),164.7,47166,Duisburg
+SEE937356687909,SKW Hohenwarte 1 Maschine A,skw hohenwarte 1 maschine a,Wasser,29.9,07338,Hohenwarte
+SEE939242219362,Huckingen A,huckingen a,Sonstige Energietraeger (nicht erneuerbar),303.0,47259,Duisburg
+SEE940012750145,illwerke vkw Rellswerk M1,illwerke vkw rellswerk m1,Pumpspeicher,12.0,A-6773,Vandans
+SEE941328262162,Obernach F2,obernach f2,Wasser,6.4,82432,Walchensee
+SEE943568591200,Bringhausen M4 F1,bringhausen m4 f1,Pumpspeicher,35.0,34549,Edertal
+SEE948541471333,HKW Mitte Gasturbine 2,hkw mitte gasturbine 2,Erdgas,164.0,10179,Berlin
+SEE950140538850,Dessau K(Ro)1,dessau k 1,Wasser,3.433,86977,Burggen
+SEE950624794208,Lehmen Maschine 1,lehmen maschine 1,Wasser,5.0,56332,Niederfell
+SEE943007353727,BHKW 1 Hamburg,bhkw 1 hamburg,Erdgas,1.97,21129,Hamburg
+SEE943309807898,GuD Süd DT,gud süd dt,Waerme,71.5,67063,Ludwigshafen
+SEE915246106037,Saalachkraftwerk D4,saalachkraftwerk d4,Wasser,2.0025,83435,Bad Reichenhall
+SEE918100281437,KWK 7,kwk 7,Erdgas,4.5,84130,Dingolfing
+SEE927858822632,Turbinengenerator5-SiemensT8302,turbinengenerator5-siemenst8302,Biomasse,13.212,89584,Ehingen
+SEE931158678738,Koblenz Maschine 1,koblenz maschine 1,Wasser,4.0,56073,Koblenz
+SEE933592339541,RHR1-A-D1-720-GEN-001-NEA5,rhr1-a-d1-720-gen-001-nea5,Mineraloelprodukte,2.08,53117,Bonn
+SEE934298270268,T.A. Lauta,t a lauta,Abfall,15.7,02991,Lauta
+SEE956216040883,Turbine 2,turbine 2,Steinkohle,10.2,97424,Schweinfurt
+SEE956631893736,F03G1,f03g1,Erdgas,9.0,40589,Düsseldorf
+SEE956884287917,Generator 2,generator 2,Erdgas,11.9,67547,Worms
+SEE902267138956,Kirchmöser GT 2,kirchmöser gt 2,Erdgas,60.0,14774,Brandenburg
+SEE905410926998,FZJ_WVVZ-03.19_BHKW-1,fzj_wvvz-03 19_bhkw-1,Erdgas,4.3,52428,Jülich
+SEE905588844841,GuD-Anlage (Dampfturbine),gud-anlage,Erdgas,16.2,63741,Aschaffenburg
+SEE909908219982,BESS - DE - ARZBERG - GMRO,bess - de - arzberg - gmro,Batteriespeicher,50.5,95659,Arzberg
+SEE961788817153,DT2,dt2,Erdgas,9.156,01987,Schwarzheide
+SEE923965645096,AA-TF-03-NEA-002,aa-tf-03-nea-002,Mineraloelprodukte,1.8,13599,Berlin
+SEE960507530304,"HKW Pfaffenwald, Generator 50",hkw pfaffenwald generator 50,Erdgas,11.3,70569,Stuttgart
+SEE962564048280,HKW Schwarza TS 5,hkw schwarza ts 5,Waerme,7.881,07407,Rudolstadt
+SEE962906846994,HKW Schwarza GT 7,hkw schwarza gt 7,Erdgas,4.934,07407,Rudolstadt
+SEE965067693100,Kraftwerk DK,kraftwerk dk,Erdgas,20.85,47053,Duisburg
+SEE967279432140,GT13800,gt13800,Sonstige Energietraeger (nicht erneuerbar),35.611,50769,Köln
+SEE975166535577,Dampfturbine DT4,dampfturbine dt4,Erdgas,8.0,79639,Grenzach-Wyhlen
+SEE977812651266,RKI Iffezheim M3,rki iffezheim m3,Wasser,27.0,76473,Iffezheim
+SEE934890098444,KW Wyhlen Straflo 02,kw wyhlen straflo 02,Wasser,4.5,79639,Grenzach-Wyhlen
+SEE947816911833,Gasturbinenanlage 12,gasturbinenanlage 12,Erdgas,137.0,84489,Burghausen
+SEE919393178787,Fenne MKV,fenne mkv,Steinkohle,179.0,66333,Völklingen
+SEE920992144554,HKW Mitte GuD BMHKW,hkw mitte gud bmhkw,Erdgas,97.958,38114,Braunschweig
+SEE932782707160,Dampfturbine 3,dampfturbine 3,Erdgas,27.5,56727,Mayen
+SEE933094075404,UPM Schongau HKW 3 DT,upm schongau hkw 3 dt,Erdgas,30.17,86956,Schongau
+SEE956808243722,SEDE607510036,sede607510036,Erdgas,4.472,07546,Gera
+SEE957830042178,Turbine 3,turbine 3,Abfall,18.65,51373,Leverkusen
+SEE958702894895,SN-Lankow-GUD_1994,sn-lankow-gud_1994,Erdgas,6.0,19057,Schwerin
+SEE958847865460,Kraftwerk Zolling,kraftwerk zolling,Steinkohle,472.0,85406,Zolling
+SEE960733358116,0065 - STW - BHKW - KWK,0065 - stw - bhkw - kwk,Erdgas,2.419,47906,Kempen
+SEE919443669678,GBS KW Fenne,gbs kw fenne,Batteriespeicher,15.0,66333,Völklingen
+SEE922519934914,Euskirchen BHKW,euskirchen bhkw,Erdgas,1.178,53879,Euskirchen
+SEE923391382282,"Biomethan BHKW Hannover Herrenhausen, Motor 5",biomethan bhkw hannover herrenhausen motor 5,Biomasse,4.5,30419,Hannover
+SEE943565217936,Partition_4,partition_4,Batteriespeicher,3.4,04349,Leipzig
+SEE943866326672,illwerke vkw Vermuntwerk M2,illwerke vkw vermuntwerk m2,Wasser,85.0,A-6794,Partenen
+SEE950688444200,Biomasse-HKW 2 Kehl,biomasse-hkw 2 kehl,Biomasse,2.6,77694,Kehl
+SEE951966828576,Turbine VE 32 ZV MVA IN,turbine ve 32 zv mva in,Abfall,7.36,85055,Ingolstadt
+SEE905490507995,Q_ESS_Luenen,q_ess_luenen,Batteriespeicher,11.92,44536,Lünen
+SEE911507913505,Turbine 2,turbine 2,Erdgas,2.722,93309,Kelheim
+SEE902280549463,bnBm GasKW BIB GT3,bnbm gaskw bib gt3,Erdgas,34.4,68647,Biblis
+SEE904052511746,PSW Markersbach PSS D,psw markersbach pss d,Pumpspeicher,174.2,08352,Raschau-Markersbach
+SEE904653296578,DT_neu,dt_neu,Abfall,2.98,63741,Aschaffenburg
+SEE909927513559,KW3 GT31,kw3 gt31,Erdgas,291.3,55120,Mainz
+SEE911567250299,Itzehoe GT,itzehoe gt,Mineraloelprodukte,87.0,25588,Oldendorf
+SEE915604855232,GuD-Anlage (Gasturbine),gud-anlage,Erdgas,31.552,63741,Aschaffenburg
+SEE915883553447,Irsching 5 DT,irsching 5 dt,Erdgas,282.0,85088,Vohburg
+SEE937914003899,Spitzenlastkraftwerk Veits Dieseltandem 1,spitzenlastkraftwerk veits dieseltandem 1,Mineraloelprodukte,5.0,87448,Waltenhofen
+SEE941176001043,Lehmen Maschiene 3,lehmen maschiene 3,Wasser,5.0,56332,Niederfell
+SEE942100679987,Vianden M6,vianden m6,Pumpspeicher,100.0,9463,Stolzembourg
+SEE942752513288,DT1,dt1,Biomasse,10.0,59929,Brilon
+SEE945580171361,F13G5,f13g5,Erdgas,18.0,40589,Düsseldorf
+SEE950895373805,Dampfturbinenanlage DT3,dampfturbinenanlage dt3,Erdgas,34.0,66121,Saarbrücken
+SEE955535216191,GTS6,gts6,Erdgas,5.319,49479,Ibbenbüren
+SEE956337212497,Dampfturbine I Südzucker Ochsenfurt,dampfturbine i südzucker ochsenfurt,Waerme,13.667,97199,Ochsenfurt
+SEE916830465356,BHKW KW5 5A,bhkw kw5 5a,Erdgas,9.93,55120,Mainz
+SEE918407219966,GuD Steinitz - HKW 1,gud steinitz - hkw 1,Erdgas,11.6,29410,Salzwedel
+SEE920193460095,HKWH Gasturbine 6,hkwh gasturbine 6,Erdgas,5.424,24116,Kiel
+SEE960155611554,medl BHKW Broich Modul 3 neu,medl bhkw broich modul 3 neu,Erdgas,2.673,45479,Mülheim
+SEE964717210810,Generator 3,generator 3,Erdgas,10.323,65203,Wiesbaden
+SEE968136280119,Rheinhafen- Dampfkraftwerk  RDK 4S DT,rheinhafen- dampfkraftwerk rdk 4s dt,Erdgas,114.0,76189,Karlsruhe
+SEE970579995963,Scholven 1 DT,scholven 1 dt,Waerme,30.0,45896,Gelsenkirchen
+SEE938990134545,MVB Borsigstraße Holz 24,mvb borsigstraße holz 24,Biomasse,20.52,22113,Hamburg
+SEE905826160993,Saalachkraftwerk D2,saalachkraftwerk d2,Wasser,1.75,83435,Bad Reichenhall
+SEE913199703136,Roßhaupten SKW K2,roßhaupten skw k2,Wasser,22.75,87672,Roßhaupten
+SEE913657334902,NEC_WERK_PST_SÜD,nec_werk_pst_süd,Mineraloelprodukte,20.57,74172,Neckarsulm
+SEE917943562765,HKW West Block 2,hkw west block 2,Steinkohle,61.5,60327,Frankfurt
+SEE934395809149,RADAG M2,radag m2,Wasser,27.94,79774,Albbruck
+SEE944354997350,Erdgas BHKW KLA Bottrop Ag. 1,erdgas bhkw kla bottrop ag 1,Erdgas,2.676,46238,Bottrop
+SEE946476002431,Turbine 6,turbine 6,Erdgas,20.815,93309,Kelheim
+SEE980274382876,RKI Iffezheim M6 Fischpass,rki iffezheim m6 fischpass,Wasser,1.05,76473,Iffezheim
+SEE980331579218,Rheinhafen-Dampfkraftwerk RDK 8,rheinhafen-dampfkraftwerk rdk 8,Steinkohle,834.0,76189,Karlsruhe
+SEE980608407671,HKW Sandreuth (DT1),hkw sandreuth,Erdgas,15.596,90441,Nürnberg
+SEE928983473973,BHKW-G,bhkw-g,Erdgas,1.999,33378,Rheda-Wiedenbrück
+SEE931353190974,Kraftwerk Neuötting MS3,kraftwerk neuötting ms3,Wasser,8.7,84524,Neuötting
+SEE934292362181,Fernheizwerk 6-BHKW 8,fernheizwerk 6-bhkw 8,Erdgas,1.9758,12059,Berlin
+SEE940474876544,Müden Maschine 1,müden maschine 1,Wasser,4.1,56254,Müden
+SEE924169304048,Kaufering K(Ro)3,kaufering k 3,Wasser,5.567,86916,Kaufering
+SEE924474026383,Motor 5,motor 5,Biomasse,1.048,28870,Ottersberg
+SEE927303933470,Nordland GuD-Anlage ND-DTS,nordland gud-anlage nd-dts,Erdgas,3.995,26892,Dörpen
+SEE927436598478,Werk 1.5 KWK 4,werk 1 5 kwk 4,Erdgas,3.36,80937,München
+SEE930232746332,Scheuring K(Ro)1,scheuring k 1,Wasser,4.067,86937,Scheuring
+SEE930595548697,Walchenseekraftwerk D F1,walchenseekraftwerk d f1,Wasser,18.0,82431,Kochel
+SEE932907515472,Elsteraue Battery Storage,elsteraue battery storage,Batteriespeicher,13.8,06729,Elsteraue
+SEE934591835126,T4,t4,Steinkohle,14.105,24534,Neumünster
+SEE901050642113,Heizkraftwerk Dieselstraße Block C,heizkraftwerk dieselstraße block c,Erdgas,57.322,06130,Halle
+SEE904662075126,7712MKA10-GT2,7712mka10-gt2,Erdgas,14.885,01454,Wachau
+SEE921399860047,GM2,gm2,Erdgas,3.285,83022,Rosenheim
+SEE927343891853,DT KLA Bottrop,dt kla bottrop,Biomasse,4.5,46238,Bottrop
+SEE937536026146,GuD Marzahn Gasturbine,gud marzahn gasturbine,Erdgas,189.5,12681,Berlin
+SEE946069613440,HKW FFO GM1,hkw ffo gm1,Erdgas,10.3584,15236,Frankfurt
+SEE916894674336,Gasmotoren-Blockheizkraftwerk II (Generator 3),gasmotoren-blockheizkraftwerk ii,Erdgas,3.772,01468,Moritzburg
+SEE924793743626,Gersthofen M5,gersthofen m5,Wasser,1.969,86368,Gersthofen
+SEE925648480314,medl BHKW Broich Modul 1,medl bhkw broich modul 1,Biomasse,3.293,45479,Mülheim
+SEE929865645150,Turbine 24,turbine 24,Sonstige Energietraeger (nicht erneuerbar),10.4,50769,Köln
+SEE934999181948,Unterbergen K(Ro)2,unterbergen k 2,Wasser,4.067,86511,Schmiechen
+SEE936922240418,Lehmen Maschine 4,lehmen maschine 4,Wasser,5.0,56332,Niederfell
+SEE939429845179,Querdel SKW Biomethan1,querdel skw biomethan1,Biomasse,3.352,48336,Sassenberg
+SEE942369834141,Kraftwerk Zanders Paper GmbH,kraftwerk zanders paper gmbh,Erdgas,21.06,51465,Bergisch Gladbach
+SEE957163765348,Generator 3,generator 3,Sonstige Energietraeger (nicht erneuerbar),13.4,50997,Köln
+SEE901789931854,SWM HKW Sued GuD1 GT2,swm hkw sued gud1 gt2,Erdgas,97.9,81371,München
+SEE902686859227,Generator 2,generator 2,Erdgas,14.9,29525,Uelzen
+SEE908125004449,Boxberg Block P,boxberg block p,Braunkohle,500.0,02943,Boxberg
+SEE917303295586,"Motor-Heizkraftwerk Chemnitz-Süd, Motor 4",motor-heizkraftwerk chemnitz-süd motor 4,Erdgas,12.7314,09125,Chemnitz
+SEE920672219015,Generator 5,generator 5,Braunkohle,9.8,49090,Osnabrück
+SEE930248546148,Landau K1,landau k1,Wasser,4.2,94431,Pilsting
+SEE970667868155,Gasturbine 13,gasturbine 13,Erdgas,60.0,24939,Flensburg
+SEE972526098451,Heizkraftwerk an der Friedensbrücke DampfturbineIII,heizkraftwerk an der friedensbrücke dampfturbineiii,Erdgas,23.0,97080,Würzburg
+SEE972922507168,BHKW Hastedt Motor 01,bhkw hastedt motor 01,Erdgas,11.6794,28207,Bremen
+SEE979394589432,Aufkirchen E F2,aufkirchen e f2,Wasser,9.0,85445,Oberding
+SEE979426528330,BHKW Neu-Ulm M2,bhkw neu-ulm m2,Erdgas,2.622,89231,Neu-Ulm
+SEE918714025250,illwerke vkw Kopswerk I M1,illwerke vkw kopswerk i m1,Wasser,96.0,A-6793,Gaschurn
+SEE921503407342,Turbine/Generator 10,turbine generator 10,Erdgas,37.6,84489,Burghausen
+SEE924286409503,IKW Rüdersdorf,ikw rüdersdorf,Abfall,30.0,15562,Rüdersdorf
+SEE933265744528,Hemfurth F1,hemfurth f1,Wasser,10.0,34549,Edertal
+SEE936042422251,GT,gt,Erdgas,16.871,41460,Neuss
+SEE936411567903,WKW Rudolf-Fettweis-Werk Murgwerk M4,wkw rudolf-fettweis-werk murgwerk m4,Wasser,4.4,76596,Forbach
+SEE936473203580,Gasmotor 2 Jena,gasmotor 2 jena,Erdgas,12.175,07745,Jena
+SEE937544161082,EBS Heizkraftwerk Spremberg,ebs heizkraftwerk spremberg,Abfall,17.5,03130,Spremberg
+SEE953815288937,BESS Immenstadt,bess immenstadt,Batteriespeicher,15.8,87509,Immenstadt
+SEE957496380690,Gasturbinenkraftwerk Thyrow GT B,gasturbinenkraftwerk thyrow gt b,Erdgas,37.104,15806,Zossen
+SEE966331411864,Kraftwerk Lippendorf Block R,kraftwerk lippendorf block r,Braunkohle,891.0,04575,Neukieritzsch
+SEE923223371170,Vohburg E K1,vohburg e k1,Wasser,7.76,85088,Vohburg
+SEE925878652192,Enkirch Maschine 1,enkirch maschine 1,Wasser,4.6,56850,Enkirch
+SEE911097916719,Gasturbine Model Sachsen Papier,gasturbine model sachsen papier,Erdgas,30.6493,04838,Eilenburg
+SEE912994271871,Hamborn 3,hamborn 3,Sonstige Energietraeger (nicht erneuerbar),59.6,47166,Duisburg
+SEE914740925915,MOT 2,mot 2,Erdgas,10.285,75175,Pforzheim
+SEE915666168653,MHKW  Pirmasens Verbrennung II,mhkw pirmasens verbrennung ii,Abfall,16.4,66954,Pirmasens
+SEE915966254872,Hamborn 5,hamborn 5,Sonstige Energietraeger (nicht erneuerbar),225.0,47166,Duisburg
+SEE919286948329,Kraftwerk GRI,kraftwerk gri,Erdgas,7.8,85092,Kösching
+SEE927716043575,MVA EEW Hannover,mva eew hannover,Abfall,27.2,30659,Hannover
+SEE931261988564,KW Wyhlen Straflo 01,kw wyhlen straflo 01,Wasser,4.5,79639,Grenzach-Wyhlen
+SEE946556052639,GSH Green Steam Hürth GmbH,gsh green steam hürth gmbh,Biomasse,18.3,50354,Hürth
+SEE953605889740,Batteriespeicher Herrenhausen,batteriespeicher herrenhausen,Batteriespeicher,14.0,30419,Hannover
+SEE923304040681,Gersteinwerk F GT (F1),gersteinwerk f gt,Erdgas,55.0,59368,Werne
+SEE942841758538,illwerke vkw Kopswerk II M2,illwerke vkw kopswerk ii m2,Pumpspeicher,175.0,A-6793,Gaschurn
+SEE945779125267,Pfreimd T2,pfreimd t2,Wasser,3.3,92723,Tännesberg
+SEE957189569340,illwerke vkw Kopswerk II M3,illwerke vkw kopswerk ii m3,Pumpspeicher,175.0,A-6793,Gaschurn
+SEE962376547568,KW Rheinfelden Maschine 4,kw rheinfelden maschine 4,Wasser,22.9,4310,Rheinfelden
+SEE922145299326,KWK-Modul 13 Gotha West,kwk-modul 13 gotha west,Erdgas,1.984,99867,Gotha
+SEE928382664095,KWK Neumarkt,kwk neumarkt,Biomasse,3.0,92318,Neumarkt
+SEE929405778768,Enkirch Maschine 2,enkirch maschine 2,Wasser,4.6,56850,Enkirch
+SEE932989146397,NEZ Adlershof Modul 4,nez adlershof modul 4,Erdgas,1.97,12489,Berlin
+SEE944095305490,Heizkraftwerk an der Friedensbrücke GasturbineII,heizkraftwerk an der friedensbrücke gasturbineii,Erdgas,30.0,97080,Würzburg
+SEE946029200710,Dampfturbine 2,dampfturbine 2,Erdgas,8.13,79106,Freiburg
+SEE920801236685,"Kraftwerk VII, Block 71, DT710",kraftwerk vii block 71 dt710,Erdgas,36.23,45772,Marl
+SEE920847840785,SWM Uppenborn 1 Gen3,swm uppenborn 1 gen3,Wasser,8.8,85368,Wang
+SEE924343365650,W050-TS_Mercedes-Benz Werk Sindelfingen HKW Gasturbine 1,w050-ts_mercedes-benz werk sindelfingen hkw gasturbine 1,Erdgas,29.941,71063,Sindelfingen
+SEE926693191903,Pfrombach D F4,pfrombach d f4,Wasser,4.38,85368,Moosburg
+SEE926900618322,Sermuth BHKW 1,sermuth bhkw 1,Mineraloelprodukte,5.7,04680,Colditz
+SEE927168175756,Pumpspeicherwerk Rönkhausen PSW1,pumpspeicherwerk rönkhausen psw1,Pumpspeicher,69.0,57413,Finnentrop
+SEE927582792126,BESS Leuna 2,bess leuna 2,Batteriespeicher,46.332,06217,Merseburg
+SEE930982693153,Knapsack I - Gasturbine  GT11,knapsack i - gasturbine gt11,Erdgas,295.0,50354,Hürth
+SEE939211785720,Dampfgeneratorturbine 1,dampfgeneratorturbine 1,Erdgas,7.8,84489,Burghausen
+SEE914438115895,Heizkraftwerk Dieselstraße Block A,heizkraftwerk dieselstraße block a,Erdgas,56.845,06130,Halle
+SEE922518617825,Biomasse-HKW 1 Kehl,biomasse-hkw 1 kehl,Biomasse,7.94,77694,Kehl
+SEE923597137761,DT1,dt1,Waerme,1.31,25541,Brunsbüttel
+SEE925158531827,Heizkraftwerk Dieselstraße NEA,heizkraftwerk dieselstraße nea,Erdgas,1.541,06130,Halle
+SEE931406146903,LBG-1/599,lbg-1 599,Sonstige Energietraeger (nicht erneuerbar),15.0,45896,Gelsenkirchen
+SEE931485815622,SWM Uppenborn 2 Gen2,swm uppenborn 2 gen2,Wasser,6.0,84184,Tiefenbach
+SEE935253303649,BMW Landshut KWK 6,bmw landshut kwk 6,Erdgas,4.3,84030,Landshut
+SEE935645540645,KW Wyhlen Francis 07,kw wyhlen francis 07,Wasser,2.166,79639,Grenzach-Wyhlen
+SEE927477486369,Scheuring K(Ro)3,scheuring k 3,Wasser,4.067,86937,Scheuring
+SEE941844408532,Großkayna GT2,großkayna gt2,Mineraloelprodukte,45.625,06242,Großkayna
+SEE943210695102,DT30 GuD Süd Wolfsburg,dt30 gud süd wolfsburg,Waerme,36.2,38440,Wolfsburg
+SEE944172882906,Biogas BHKW Südzucker Rain,biogas bhkw südzucker rain,Biomasse,1.364,86641,Rain
+SEE947227591686,KW Laufenburg Maschine 7,kw laufenburg maschine 7,Wasser,10.442,5080,Laufenburg
+SEE955634700423,WKW Säckingen M2,wkw säckingen m2,Wasser,23.0,79713,Bad Säckingen
+SEE957229968300,Niederaußem H,niederaußem h,Braunkohle,648.0,50129,Bergheim
+SEE959025997980,Gasturbine 3 Jena,gasturbine 3 jena,Erdgas,39.0,07745,Jena
+SEE961660070034,Block 4 Merkenich RheinEnergie,block 4 merkenich rheinenergie,Erdgas,15.5,50769,Köln
+SEE926027902403,P16,p16,Erdgas,2.3,68167,Mannheim
+SEE926313104276,"Kraftwerk VI, Block 62, GT621",kraftwerk vi block 62 gt621,Erdgas,55.014,45772,Marl
+SEE926356200836,Prüfstand 4,prüfstand 4,Erdgas,3.95,86165,Augsburg
+SEE927766801477,PKV Dampfsammelschienen-KWK-Anlage Generator / Turbine DT 11,pkv dampfsammelschienen-kwk-anlage generator turbine dt 11,Waerme,3.647,26316,Varel
+SEE933647139935,Geisling K1,geisling k1,Wasser,8.333,93102,Pfatter
+SEE933745405604,PSW Hohenwarte 2 PSS E,psw hohenwarte 2 pss e,Pumpspeicher,39.7,07338,Hohenwarte
+SEE935147494255,Batteriespeicher Herdecke 2,batteriespeicher herdecke 2,Batteriespeicher,6.08,58313,Herdecke
+SEE935809614632,IPH Strom GT4,iph strom gt4,Erdgas,6.153,65929,Frankfurt
+SEE925692039025,Schnellanlaufturbine (Howden),schnellanlaufturbine,Waerme,1.099,89584,Ehingen
+SEE954482465522,Batterie Hessisch Lichtenau,batterie hessisch lichtenau,Batteriespeicher,12.0,37235,Hessisch Lichtenau
+SEE955292024220,MKW SAD Turbine 4,mkw sad turbine 4,Abfall,10.0,92421,Schwandorf
+SEE956217502250,GGT HO A,ggt ho a,Sonstige Energietraeger (nicht erneuerbar),8.0,38239,Salzgitter
+SEE957285549260,Dampfturbine 9,dampfturbine 9,Steinkohle,32.9,24939,Flensburg
+SEE961328936443,BHKW Obere Viehweide M2 (Waldhäuser Str 100),bhkw obere viehweide m2,Erdgas,3.286,72076,Tübingen
+SEE961687984079,"HKW Pfaffenwald, Generator 41",hkw pfaffenwald generator 41,Erdgas,4.9,70569,Stuttgart
+SEE967844487346,Heizkraftwerk an der Friedensbrücke GasturbineI,heizkraftwerk an der friedensbrücke gasturbinei,Erdgas,51.0,97080,Würzburg
+SEE968474056711,Generator 6,generator 6,Erdgas,21.861,65203,Wiesbaden
+SEE923412553844,GuD Anlage DREWSEN Spezialpapiere (Dampfturbine),gud anlage drewsen spezialpapiere,Erdgas,9.0,29331,Lachendorf
+SEE923729511377,BHKW2 Chemnitzer Straße 40,bhkw2 chemnitzer straße 40,Erdgas,4.313,09599,Freiberg
+SEE923959807806,Turbine 3,turbine 3,Abfall,11.14,68169,Mannheim
+SEE925333539921,Koepchenwerk Bl.,koepchenwerk bl,Pumpspeicher,162.0,58313,Herdecke
+SEE932713248328,BMKW Wicker,bmkw wicker,Biomasse,12.712,65439,Flörsheim
+SEE933095868289,Batteriespeicherkraftwerk,batteriespeicherkraftwerk,Batteriespeicher,15.0,24582,Bordesholm
+SEE937878572653,Langenprozelten E F2,langenprozelten e f2,Pumpspeicher,82.0,97737,Gemünden
+SEE933741679870,Dampfturbineneinheit 1,dampfturbineneinheit 1,Abfall,2.8,42655,Solingen
+SEE936690179729,BHKW1(GKWK-MA-0015),bhkw1,Erdgas,4.101,68305,Mannheim
+SEE918916993708,Wolfen GT,wolfen gt,Erdgas,50.0,06766,Bitterfeld-Wolfen
+SEE919296928137,Sammelschienen-Kraftwerk Gas- und Dampfturbinen,sammelschienen-kraftwerk gas- und dampfturbinen,Erdgas,112.719,63906,Erlenbach
+SEE922767690112,Oberpeiching M1,oberpeiching m1,Wasser,6.145,86698,Oberndorf
+SEE925074451797,KW Laufenburg Maschine 10,kw laufenburg maschine 10,Wasser,10.442,5080,Laufenburg
+SEE928263467494,016 BHKW Modul 2,016 bhkw modul 2,Erdgas,2.05,53127,Bonn
+SEE932773773501,ZF-FRD-W04-G32-Prüfstand-A05,zf-frd-w04-g32-prüfstand-a05,Mineraloelprodukte,1.672,88046,Friedrichshafen
+SEE922914399295,Mercer Rosenthal,mercer rosenthal,Biomasse,53.1,07366,Rosenthal
+SEE923244371197,Heizkraftwerk Leipzig Nord GT81,heizkraftwerk leipzig nord gt81,Erdgas,63.54,04105,Leipzig
+SEE924756001060,BioHKW I,biohkw i,Biomasse,8.6,89077,Ulm
+SEE925723270861,HDH_004_Industrieheizkraftwerk-Heidenheim_GM1,hdh_004_industrieheizkraftwerk-heidenheim_gm1,Erdgas,4.225,89522,Heidenheim
+SEE929967552172,KW Wehr MS A9,kw wehr ms a9,Pumpspeicher,227.5,79664,Wehr
+SEE936443066245,Müllheizkraftwerk Ulm-Donautal Turbine,müllheizkraftwerk ulm-donautal turbine,Abfall,8.7,89079,Ulm
+SEE957253837467,KW Waldshut MS A6,kw waldshut ms a6,Pumpspeicher,44.0,79761,Waldshut-Tiengen
+SEE960175509510,BHKW Hastedt Motor 07,bhkw hastedt motor 07,Erdgas,11.6794,28207,Bremen
+SEE963192915654,"HKW Pfaffenwald, Generator 43",hkw pfaffenwald generator 43,Waerme,2.4,70569,Stuttgart
+SEE964170331206,MHKW Coburg,mhkw coburg,Abfall,10.6,96450,Coburg
+SEE968458734758,Vianden M8,vianden m8,Pumpspeicher,100.0,9463,Stolzembourg
+SEE929161243203,Staudinger 5,staudinger 5,Steinkohle,522.0,63538,Großkrotzenburg
+SEE929182899328,Prüfstände Brühl 3/52,prüfstände brühl 3 52,Mineraloelprodukte,20.758,73733,Esslingen
+SEE931704712701,BESS Balzhausen 2 green flexibility,bess balzhausen 2 green flexibility,Batteriespeicher,38.3,86483,Balzhausen
+SEE932657881513,KWK-Anlage Gasturbine 1,kwk-anlage gasturbine 1,Erdgas,4.811,49638,Nortrup
+SEE937617144974,IN_N19_KWKK_GT1,in_n19_kwkk_gt1,Erdgas,4.985,85057,Ingolstadt
+SEE953266686481,T2,t2,Steinkohle,9.545,24534,Neumünster
+SEE956906670420,BMHKW Bergkamen,bmhkw bergkamen,Biomasse,18.472,59192,Bergkamen
+SEE922473273890,WKW Säckingen M4,wkw säckingen m4,Wasser,23.0,79713,Bad Säckingen
+SEE961706754454,Kraftwerk Jochenstein MS4,kraftwerk jochenstein ms4,Wasser,26.4,94107,Untergriesbach
+SEE964447287038,HKW Gasturbine 2,hkw gasturbine 2,Erdgas,4.894,17489,Greifswald
+SEE965551192713,HKW Linden GT3,hkw linden gt3,Erdgas,70.0,30449,Hannover
+SEE966844914388,Großkayna GT1,großkayna gt1,Mineraloelprodukte,45.625,06242,Großkayna
+SEE968493660913,Kraftwerk Wasserburg MS4 20 kV,kraftwerk wasserburg ms4 20 kv,Wasser,4.82,83512,Wasserburg
+SEE972034775981,Biomass Heizkraftwerk Recklinghausen,biomass heizkraftwerk recklinghausen,Biomasse,18.0,45665,Recklinghausen
+SEE976362409624,BES GRO,bes gro,Batteriespeicher,16.425,04539,Groitzsch
+SEE930267705700,WKW Rudolf-Fettweis-Werk PSW Schwarzenbach M6,wkw rudolf-fettweis-werk psw schwarzenbach m6,Pumpspeicher,21.5,76596,Forbach
+SEE930673793902,Bergkamen A,bergkamen a,Steinkohle,720.0,59192,Bergkamen
+SEE933361522259,Kraftwerk Marbach MAR 4,kraftwerk marbach mar 4,Mineraloelprodukte,306.5,71672,Marbach
+SEE937685363109,Eitting E F1,eitting e f1,Wasser,9.0,85462,Eitting
+SEE943021591570,Kraftwerk Wasserburg MS2 20 kV,kraftwerk wasserburg ms2 20 kv,Wasser,4.82,83512,Wasserburg
+SEE946583344691,KWK 6,kwk 6,Erdgas,4.5,84130,Dingolfing
+SEE951160693116,Gasmotor 5 Jena,gasmotor 5 jena,Erdgas,12.175,07745,Jena
+SEE957769851605,HKW West Turbine 5,hkw west turbine 5,Erdgas,39.137,60327,Frankfurt
+SEE958519166192,ET HO4,et ho4,Sonstige Energietraeger (nicht erneuerbar),9.52,66763,Dillingen
+SEE940316838242,Batteriespeicher,batteriespeicher,Batteriespeicher,12.5,92723,Tännesberg
+SEE945563004310,GM3,gm3,Erdgas,3.285,83022,Rosenheim
+SEE925599434282,Neurath F,neurath f,Braunkohle,1060.0,41517,Grevenbroich
+SEE927032372373,"MHKW, Generator 1",mhkw generator 1,Abfall,7.0,27570,Bremerhaven
+SEE927407069969,Kraftwerk Wasserburg MS2 110 kV,kraftwerk wasserburg ms2 110 kv,Wasser,4.82,83512,Wasserburg
+SEE933402065318,KWK 4 Geb. 192.0,kwk 4 geb 192 0,Erdgas,4.13,84130,Dingolfing
+SEE935949048892,WKW Rudolf-Fettweis-Werk Murgwerk M1,wkw rudolf-fettweis-werk murgwerk m1,Wasser,4.4,76596,Forbach
+SEE938153286029,Kachlet K6,kachlet k6,Wasser,6.7125,94034,Passau
+SEE935976236132,Kachlet K3,kachlet k3,Wasser,6.7125,94034,Passau
+SEE937353642390,Kraftwerk Wasserburg MS1 110 kV,kraftwerk wasserburg ms1 110 kv,Wasser,4.82,83512,Wasserburg
+SEE937360320199,Detzem Maschine 2,detzem maschine 2,Wasser,6.0,54340,Detzem
+SEE941850023651,Dampfturbine III Südzucker Offstein,dampfturbine iii südzucker offstein,Waerme,2.5914,67283,Obrigheim
+SEE943297204990,ZF-SBR-GuD-Heizkraftwerk,zf-sbr-gud-heizkraftwerk,Erdgas,38.6102,66117,Saarbrücken
+SEE943952259648,Boehringer Ingelheim - J41 - GT12/AK12,boehringer ingelheim - j41 - gt12 ak12,Erdgas,4.223,88400,Biberach
+SEE944518084070,Kachlet K5,kachlet k5,Wasser,6.7125,94034,Passau
+SEE942581404276,HDH_004_Industrieheizkraftwerk-Heidenheim_GM2,hdh_004_industrieheizkraftwerk-heidenheim_gm2,Erdgas,4.225,89522,Heidenheim
+SEE945740636167,Generator 1,generator 1,Erdgas,20.0,29525,Uelzen
+SEE946142465416,TögingNeu MS2,tögingneu ms2,Wasser,40.0,84513,Töging
+SEE930751125922,Generator 2,generator 2,Erdgas,13.0,31171,Nordstemmen
+SEE933011205846,Biomethan BHKW 4 Hannover Stöcken,biomethan bhkw 4 hannover stöcken,Biomasse,4.5,30419,Hannover
+SEE933223725231,Erzeugungsanlage FHW Ratingen West Modul 1,erzeugungsanlage fhw ratingen west modul 1,Erdgas,2.0,40878,Ratingen
+SEE938669585906,Kraftwerk Jänschwalde Block B,kraftwerk jänschwalde block b,Braunkohle,500.0,03185,Teichland
+SEE976880282228,HKW Sandreuth (DT2),hkw sandreuth,Erdgas,39.5,90441,Nürnberg
+SEE977346043964,Bringhausen M3 F1,bringhausen m3 f1,Pumpspeicher,35.0,34549,Edertal
+SEE978934537223,Dieselaggregat 3,dieselaggregat 3,Mineraloelprodukte,1.615,58636,Iserlohn
+SEE921785427038,T/G 6,t g 6,Mineraloelprodukte,12.0,46147,Oberhausen
+SEE922429625575,Kraftwerk Egglfing-Obernberg MS4,kraftwerk egglfing-obernberg ms4,Wasser,13.45,94072,Bad Füssing
+SEE923271533315,RZR II Turbine3,rzr ii turbine3,Abfall,23.5,45699,Herten
+SEE924235173530,GT1,gt1,Erdgas,6.41,67547,Worms
+SEE929404505242,KW Rheinfelden Maschine 2,kw rheinfelden maschine 2,Wasser,22.9,4310,Rheinfelden
+SEE980525088564,UER N230 NST3,uer n230 nst3,Erdgas,32.2,47829,Krefeld
+SEE985755138850,Saalachkraftwerk E5,saalachkraftwerk e5,Wasser,1.28,83435,Bad Reichenhall
+SEE988429673565,TREA Breisgau,trea breisgau,Abfall,17.0,79427,Eschbach
+SEE988601422752,Gasmotor 1 Jena,gasmotor 1 jena,Erdgas,12.175,07745,Jena
+SEE993116568932,Batteriespeicher Neurath,batteriespeicher neurath,Batteriespeicher,80.0,41517,Grevenbroich
+SEE993301547841,UER N230 NST4,uer n230 nst4,Erdgas,29.0,47829,Krefeld
+SEE993592183001,Neurath G,neurath g,Braunkohle,1060.0,41517,Grevenbroich
+SEE963848288279,Dampfturbine Block 3,dampfturbine block 3,Abfall,33.5,39126,Magdeburg
+SEE929003106239,Dampfturbine I Südzucker Rain,dampfturbine i südzucker rain,Waerme,4.615,86641,Rain
+SEE931375347240,SMAREG 1,smareg 1,Batteriespeicher,10.0,99867,Gotha
+SEE931699316403,Dingolfing K1,dingolfing k1,Wasser,5.0,84130,Dingolfing
+SEE932265704129,GT2,gt2,Erdgas,23.125,17034,Neubrandenburg
+SEE934189578992,Sonae Arauco Beeskow GmbH,sonae arauco beeskow gmbh,Biomasse,15.8,15848,Beeskow
+SEE934554511586,Felix Schoeller GmbH & Co.KG Weißenborn GT2,felix schoeller gmbh co kg weißenborn gt2,Erdgas,5.083,09600,Weißenborn
+SEE961057667205,Gasturbine Kraftwerk,gasturbine kraftwerk,Erdgas,10.37,64747,Breuberg
+SEE962597527578,Kachlet K1,kachlet k1,Wasser,6.7125,94034,Passau
+SEE965799757125,Speicher Jerchel West - Teilanlage 2,speicher jerchel west - teilanlage 2,Batteriespeicher,5.6,14715,Milower Land
+SEE975464070619,GT1,gt1,Erdgas,23.761,17034,Neubrandenburg
+SEE975862748837,WKW Rudolf-Fettweis-Werk Murgwerk M2,wkw rudolf-fettweis-werk murgwerk m2,Wasser,4.4,76596,Forbach
+SEE976589352260,Müllheizkraftwerk Kassel M8,müllheizkraftwerk kassel m8,Abfall,14.7,34123,Kassel
+SEE936364054154,P18,p18,Erdgas,2.3,68167,Mannheim
+SEE936502086450,IPH Strom GTX 7,iph strom gtx 7,Erdgas,89.389,65929,Frankfurt
+SEE937254014852,IPH Strom CoFA BHKW 1,iph strom cofa bhkw 1,Biomasse,1.3725,65929,Frankfurt
+SEE938443144244,Dornau K2,dornau k2,Wasser,5.655,86956,Schongau
+SEE941568476039,Turbosatz 1,turbosatz 1,Abfall,46.0,50735,Köln
+SEE942226311273,GuD-Block 2,gud-block 2,Erdgas,36.0,18069,Rostock
+SEE945217244789,SWM HKW Freimann GT11,swm hkw freimann gt11,Erdgas,52.451,80807,München
+SEE947245249934,Batteriespeicher Reisgang,batteriespeicher reisgang,Batteriespeicher,15.0,85276,Hettenshausen
+SEE956596589897,Speicher Karstädt,speicher karstädt,Batteriespeicher,20.7,19357,Karstädt
+SEE961620762023,DA_HKW_01,da_hkw_01,Erdgas,10.0,64293,Darmstadt
+SEE965528786747,Kraftwerk Jochenstein MS3,kraftwerk jochenstein ms3,Wasser,26.4,94107,Untergriesbach
+SEE967558939506,Saalachkraftwerk E1,saalachkraftwerk e1,Wasser,1.28,83435,Bad Reichenhall
+SEE969051180959,Dampfturbine I Südzucker Offstein,dampfturbine i südzucker offstein,Waerme,12.0932,67283,Obrigheim
+SEE971138728251,GBS KW Herne,gbs kw herne,Batteriespeicher,15.0,44653,Herne
+SEE971499223693,Kraftwerk Jochenstein MS2,kraftwerk jochenstein ms2,Wasser,26.4,94107,Untergriesbach
+SEE944429192826,SEE944429192826 (MHKW Burgkirchen (Müllverbrennung)),see944429192826,Abfall,12.8,84508,Burgkirchen
+SEE958806714600,Biomethan BHKW 3 Hannover Stöcken,biomethan bhkw 3 hannover stöcken,Biomasse,2.0,30419,Hannover
+SEE967243760361,Dampfturbine 3,dampfturbine 3,Erdgas,13.49,37412,Herzberg
+SEE918373264410,BHKW GT-Ost,bhkw gt-ost,Erdgas,30.7,86167,Augsburg
+SEE919104957342,HKW Buch Gasturbine,hkw buch gasturbine,Erdgas,7.54,13125,Berlin
+SEE920753145547,bnBm GasKW BIB GT4,bnbm gaskw bib gt4,Erdgas,34.4,68647,Biblis
+SEE947399244915,Field Waldkappel,field waldkappel,Batteriespeicher,16.0,37284,Waldkappel
+SEE950309975076,Kraftwerk SI DT3,kraftwerk si dt3,Waerme,7.5,31515,Wunstorf
+SEE952340290002,Felix Schoeller GmbH & Co.KG Weißenborn DT,felix schoeller gmbh co kg weißenborn dt,Erdgas,3.343,09600,Weißenborn
+SEE954883124240,DT,dt,Erdgas,6.303,41460,Neuss
+SEE955696590697,BMKW Königs Wusterhausen,bmkw königs wusterhausen,Biomasse,17.7,15711,Königs Wusterhausen
+SEE956527009524,GuD West 50 Dampfturbine,gud west 50 dampfturbine,Waerme,48.99,38440,Wolfsburg
+SEE958711841521,Felix Schoeller GmbH & Co.KG Weißenborn GT3,felix schoeller gmbh co kg weißenborn gt3,Erdgas,5.2,09600,Weißenborn
+SEE959264884584,Bertoldsheim E K1,bertoldsheim e k1,Wasser,6.3,86643,Rennertshofen
+SEE931478434564,Müden Maschine 4,müden maschine 4,Wasser,4.1,56254,Müden
+SEE939848582457,HKW FFO GM5,hkw ffo gm5,Erdgas,10.3584,15236,Frankfurt
+SEE940081190514,Gasturbine 3,gasturbine 3,Erdgas,4.368,66606,St. Wendel
+SEE945150729886,RZR I Turbine1,rzr i turbine1,Abfall,14.88,45699,Herten
+SEE946976628933,Prem K(Ro)2,prem k 2,Wasser,6.4,86983,Lechbruck
+SEE954066913074,Batteriespeicher-Park Worms,batteriespeicher-park worms,Batteriespeicher,30.0,67547,Worms
+SEE964745752825,HKW III  Block A,hkw iii block a,Erdgas,35.0,47249,Duisburg
+SEE969263477915,Motor 6,motor 6,Biomasse,3.054,28870,Ottersberg
+SEE973931205885,GSH Green Steam Hürth - Stromerzeugung nach KWKG,gsh green steam hürth - stromerzeugung nach kwkg,Abfall,18.3,50354,Hürth
+SEE974038381946,BESS Krumpa I,bess krumpa i,Batteriespeicher,46.332,06242,Krumpa
+SEE975507584615,GKM Block 8,gkm block 8,Steinkohle,435.0,68199,Mannheim
+SEE976944273018,"Rollenprüfstand 1, Gebäude 38",rollenprüfstand 1 gebäude 38,Mineraloelprodukte,1.36,76744,Wörth
+SEE980915157566,Heizkraftwerk Leipzig Süd GTA 9B,heizkraftwerk leipzig süd gta 9b,Erdgas,66.02,04279,Leipzig
+SEE976753443961,H78C Thermofunktionskanal Rollenprüfstand,h78c thermofunktionskanal rollenprüfstand,Mineraloelprodukte,1.0,38440,Wolfsburg
+SEE969792129750,129870 Modul 2,129870 modul 2,Erdgas,4.44,76744,Wörth
+SEE971164680486,DT1,dt1,Erdgas,25.517,01987,Schwarzheide
+SEE974979035090,Kraftwerk Egglfing-Obernberg MS6,kraftwerk egglfing-obernberg ms6,Wasser,13.45,94072,Bad Füssing
+SEE975539952376,KW Ryburg-Schwörstadt M2,kw ryburg-schwörstadt m2,Wasser,28.15,79739,Schwörstadt
+SEE978187174503,Kraftwerk Oberaudorf-Ebbs MS1,kraftwerk oberaudorf-ebbs ms1,Wasser,30.0,83080,Oberaudorf
+SEE981109871657,HKW Moabit Dampfturbine,hkw moabit dampfturbine,Steinkohle,89.0,13353,Berlin
+SEE947020088925,KWK HS Timber,kwk hs timber,Biomasse,5.552,02923,Kodersdorf
+SEE949459256067,Kraftwerk Perach MS2,kraftwerk perach ms2,Wasser,6.466,84567,Perach
+SEE926897163430,01 Std GT2,01 std gt2,Erdgas,44.975,21683,Stade
+SEE929077603696,GuD Lichterfelde Dampfturbine,gud lichterfelde dampfturbine,Waerme,115.0,12207,Berlin
+SEE929198153032,Rheinfelden Gasturbine,rheinfelden gasturbine,Erdgas,9.25,79618,Rheinfelden
+SEE932127408097,Generator Zorbau,generator zorbau,Abfall,27.2,06686,Lützen
+SEE933303289677,PSW Wendefurth PSS A,psw wendefurth pss a,Pumpspeicher,39.9,06502,Thale
+SEE937078173100,GT-Anlage1,gt-anlage1,Erdgas,7.8015,34474,Diemelstadt
+SEE977613214097,SN-Süd-GUD-GT01,sn-süd-gud-gt01,Erdgas,22.6683,19061,Schwerin
+SEE969511682320,HKW FFO GM2,hkw ffo gm2,Erdgas,10.3584,15236,Frankfurt
+SEE971943692655,ST_HKW_T8,st_hkw_t8,Steinkohle,21.645,63811,Stockstadt
+SEE977770417713,T3,t3,Abfall,12.522,24534,Neumünster
+SEE984166693200,Boehringer Ingelheim - 6482 - PSI - KWK,boehringer ingelheim - 6482 - psi - kwk,Abfall,12.0,55218,Ingelheim
+SEE946492105505,Kraftwerk Braunau-Simbach MS1,kraftwerk braunau-simbach ms1,Wasser,25.6,84375,Kirchdorf
+SEE948351715917,GuD Herne,gud herne,Erdgas,608.0,44653,Herne
+SEE948936460041,Saalachkraftwerk D1,saalachkraftwerk d1,Wasser,1.593,83435,Bad Reichenhall
+SEE921008505376,Gasmotoren-Blockheizkraftwerk II (Generator 2),gasmotoren-blockheizkraftwerk ii,Erdgas,3.772,01468,Moritzburg
+SEE923801709234,Batterie Schwabmünchen,batterie schwabmünchen,Batteriespeicher,16.0,86830,Schwabmünchen
+SEE924302504816,"HKW Bonn-Nord, Turbogruppe 4",hkw bonn-nord turbogruppe 4,Waerme,12.12,53115,Bonn
+SEE926090463146,HKW Charlottenburg Gasturbine 4,hkw charlottenburg gasturbine 4,Erdgas,72.0,10589,Berlin
+SEE926239714443,DT Kre,dt kre,Erdgas,25.714,47809,Krefeld
+SEE946979186225,Triebwerk Gars,triebwerk gars,Wasser,5.0,83536,Gars
+SEE947853008176,Vianden M7,vianden m7,Pumpspeicher,100.0,9463,Stolzembourg
+SEE951802406722,GTS5,gts5,Erdgas,7.3777,49479,Ibbenbüren
+SEE964673859078,Bergheim E K1,bergheim e k1,Wasser,7.9,86673,Bergheim
+SEE966349705634,Heizkraftwerk Stuttgart-Münster GT 88,heizkraftwerk stuttgart-münster gt 88,Erdgas,61.0,70376,Stuttgart
+SEE973556997929,KW Laufenburg Maschine 3,kw laufenburg maschine 3,Wasser,10.442,5080,Laufenburg
+SEE978207781308,GuD Merkenich RheinEnergie,gud merkenich rheinenergie,Erdgas,108.2,50769,Köln
+SEE981577033014,KW Laufenburg Maschine 9,kw laufenburg maschine 9,Wasser,10.442,5080,Laufenburg
+SEE986633590692,GT1 CTX,gt1 ctx,Erdgas,5.155,27318,Hoya
+SEE956268312785,Kondensationsturbine EKT,kondensationsturbine ekt,Waerme,30.0,06406,Bernburg
+SEE957509710094,AHKW-Neunkirchen,ahkw-neunkirchen,Abfall,11.6,66538,Neunkirchen
+SEE964721515031,Kaufering K(Ro)1,kaufering k 1,Wasser,5.567,86916,Kaufering
+SEE967390177067,GOES Anlagen Dotternhausen Blöcke 1+2+3+4,goes anlagen dotternhausen blöcke 1 2 3 4,Mineraloelprodukte,15.0,72359,Dotternhausen
+SEE968035471069,Motor 7,motor 7,Biomasse,3.054,28870,Ottersberg
+SEE926471060193,Kraftwerk UB DT1,kraftwerk ub dt1,Waerme,11.3,36414,Unterbreizbach
+SEE931652054403,IPH Strom GT2,iph strom gt2,Waerme,4.2,65929,Frankfurt
+SEE934530018092,HKW Wedel Block 2,hkw wedel block 2,Steinkohle,116.0,22880,Wedel
+SEE955261480668,illwerke vkw Latschauwerk M1,illwerke vkw latschauwerk m1,Wasser,4.0,A-6774,Tschagguns
+SEE955548455112,Restmüllheizkraftwerk,restmüllheizkraftwerk,Waerme,12.6,71032,Böblingen
+SEE956127306573,KW Kühtai - Maschine 1,kw kühtai - maschine 1,Pumpspeicher,144.5,6183,Kühtai
+SEE956682707471,Gummering K3,gummering k3,Wasser,5.5,84183,Niederviehbach
+SEE960955163109,0067 - STW - BHKW - KWK,0067 - stw - bhkw - kwk,Erdgas,2.419,47906,Kempen
+SEE964940893804,GBS KW Walsum,gbs kw walsum,Batteriespeicher,15.0,47179,Duisburg
+SEE982064018118,Gasturbine 2,gasturbine 2,Erdgas,14.5,56727,Mayen
+SEE920201147345,Kraftwerk WI DT5,kraftwerk wi dt5,Waerme,5.0,36266,Heringen
+SEE922981583535,HKW-West Gasturbine 1,hkw-west gasturbine 1,Erdgas,5.1,32657,Lemgo
+SEE923129957027,Mitte BHKW 2 Modul 3,mitte bhkw 2 modul 3,Erdgas,4.472,47053,Duisburg
+SEE943538028071,BHKW Leipzig Nord,bhkw leipzig nord,Erdgas,1.999,04105,Leipzig
+SEE944111876263,PPO1 - Eisenhüttenstadt,ppo1 - eisenhüttenstadt,Abfall,32.0,15890,Eisenhüttenstadt
+SEE945113079652,WKW Rudolf-Fettweis-Werk NDW M2,wkw rudolf-fettweis-werk ndw m2,Wasser,1.27,76596,Forbach
+SEE945933440847,Wuppertal Kraftwerk Turbine 4,wuppertal kraftwerk turbine 4,Erdgas,5.5,42289,Wuppertal
+SEE950450991048,Roßhaupten SKW K1,roßhaupten skw k1,Wasser,22.75,87672,Roßhaupten
+SEE950689982695,SN-Süd-GUD-GT02,sn-süd-gud-gt02,Erdgas,22.6683,19061,Schwerin
+SEE950988570012,Kachlet K4,kachlet k4,Wasser,6.7125,94034,Passau
+SEE955053582136,GuD West 40 Dampfturbine,gud west 40 dampfturbine,Waerme,48.99,38440,Wolfsburg
+SEE985733267343,Erdgas BHKW KLA Bottrop Ag. 3,erdgas bhkw kla bottrop ag 3,Erdgas,2.676,46238,Bottrop
+SEE988841475051,HKW Witzenhausen,hkw witzenhausen,Abfall,28.0,37213,Witzenhausen
+SEE920046158025,GS Solargarten,gs solargarten,Batteriespeicher,14.2,34266,Niestetal
+SEE922153723905,Heizkraftwerk I,heizkraftwerk i,Erdgas,21.45,46045,Oberhausen
+SEE926125006225,Landau K2,landau k2,Wasser,4.2,94431,Pilsting
+SEE931044787582,Generator 3,generator 3,Erdgas,3.0,38315,Schladen
+SEE934842271741,Batteriespeicher Jackerath,batteriespeicher jackerath,Batteriespeicher,4.05,50181,Bedburg
+SEE936668903264,BHKW1,bhkw1,Erdgas,20.543,89077,Ulm
+SEE955310827123,Heizkraftwerk Leipzig Nord DT8B,heizkraftwerk leipzig nord dt8b,Erdgas,25.249,04105,Leipzig
+SEE966920434281,Gasturbine 12,gasturbine 12,Erdgas,50.1,24939,Flensburg
+SEE967019106539,Lehmen Maschine 2,lehmen maschine 2,Wasser,5.0,56332,Niederfell
+SEE968058469012,GT 3,gt 3,Erdgas,5.167,33332,Gütersloh
+SEE969005744404,FSN1-DC22-NEA,fsn1-dc22-nea,Mineraloelprodukte,1.8,08223,Falkenstein
+SEE969023487444,Generator 2,generator 2,Erdgas,4.1,65203,Wiesbaden
+SEE951401550147,Heizkraftwerk Stuttgart-Münster GT 17,heizkraftwerk stuttgart-münster gt 17,Mineraloelprodukte,23.3,70376,Stuttgart
+SEE956908340703,Eitting D F2,eitting d f2,Wasser,9.0,85462,Eitting
+SEE958261845871,NEC_WERK_PST_NORD,nec_werk_pst_nord,Mineraloelprodukte,2.134,74172,Neckarsulm
+SEE961989517128,Bad Düben Battery Storage,bad düben battery storage,Batteriespeicher,13.883,04849,Bad Düben
+SEE969507902654,Kraftwerk Wasserburg MS1 20 kV,kraftwerk wasserburg ms1 20 kv,Wasser,4.82,83512,Wasserburg
+SEE970305352633,Dampfturbine III Südzucker Zeitz,dampfturbine iii südzucker zeitz,Waerme,16.85,06712,Zeitz
+SEE970688261195,01 Std ST1,01 std st1,Waerme,14.0,21683,Stade
+SEE901205245022,"Motor-Heizkraftwerk Chemnitz-Süd, Motor 3",motor-heizkraftwerk chemnitz-süd motor 3,Erdgas,12.7314,09125,Chemnitz
+SEE902522034610,HKW Karcherstraße (GT14),hkw karcherstraße,Erdgas,8.5,67655,Kaiserslautern
+SEE906917494423,ECOspeicher Au,ecospeicher au,Batteriespeicher,6.9,87477,Sulzberg
+SEE907686447658,Sperrenkraftwerk Wehr,sperrenkraftwerk wehr,Wasser,1.2,79664,Wehr
+SEE911202451180,Kraftwerk Werdohl-Elverlingsen E1,kraftwerk werdohl-elverlingsen e1,Mineraloelprodukte,98.0,58791,Werdohl
+SEE918506212059,Gasmotoren Danziger Straße,gasmotoren danziger straße,Erdgas,8.8105,46045,Oberhausen
+SEE927282130440,Gasmotorenkraftwerk Römerbrücke,gasmotorenkraftwerk römerbrücke,Erdgas,52.496,66121,Saarbrücken
+SEE930522848685,GT3,gt3,Erdgas,37.0,06237,Leuna
+SEE947745452346,Dampfgeneratorturbine 2,dampfgeneratorturbine 2,Erdgas,7.9,84489,Burghausen
+SEE937538401125,Maschine 3,maschine 3,Mineraloelprodukte,12.7,76187,Karlsruhe
+SEE942237774470,Gersteinwerk F DT (F2),gersteinwerk f dt,Erdgas,355.0,59368,Werne
+SEE944523267864,NEZ Adlershof Modul 1,nez adlershof modul 1,Erdgas,1.97,12489,Berlin
+SEE945093389369,"Kraftwerk IV, GT 421",kraftwerk iv gt 421,Erdgas,47.0,45772,Marl
+SEE947894664195,GT2,gt2,Erdgas,4.459,63225,Langen
+SEE949685414514,P87,p87,Erdgas,1.6,68167,Mannheim
+SEE915847711449,bnBm GasKW BIB GT6,bnbm gaskw bib gt6,Erdgas,34.4,68647,Biblis
+SEE916508151147,BHKW Ford Saarlouis Modul 5,bhkw ford saarlouis modul 5,Erdgas,4.322,66740,Saarlouis
+SEE982462684892,Ettling K1,ettling k1,Wasser,4.1,94522,Wallersdorf
+SEE938449433663,Kraftwerk GRI,kraftwerk gri,Erdgas,7.2,85092,Kösching
+SEE941054035436,Kraftwerk Passau-Ingling MS4,kraftwerk passau-ingling ms4,Wasser,21.6,94036,Passau
+SEE941115201374,BHKW Potsdam-Nord 2,bhkw potsdam-nord 2,Erdgas,4.45,14471,Potsdam
+SEE954169155876,Heizkraftwerk-Offenbach-EVO,heizkraftwerk-offenbach-evo,Steinkohle,49.0,63067,Offenbach
+SEE955802157592,HK_001_Industrieheizkraftwerk-Walsrode_BHKW-GM2,hk_001_industrieheizkraftwerk-walsrode_bhkw-gm2,Erdgas,3.2,29699,Walsrode
+SEE944503176377,Heizkraftwerk  Altbach/Deizisau HKW 1,heizkraftwerk altbach deizisau hkw 1,Steinkohle,433.0,73776,Altbach
+SEE947225300921,GT1,gt1,Erdgas,37.0,06237,Leuna
+SEE950208762586,Untereichen F1,untereichen f1,Wasser,4.0,89281,Altenstadt
+SEE950477241393,DT,dt,Erdgas,74.0,01159,Dresden
+SEE952058615067,Solvay Rb TA1,solvay rb ta1,Erdgas,54.0,47495,Rheinberg
+SEE953987748918,Mitte BHKW 2 Modul 6,mitte bhkw 2 modul 6,Erdgas,4.472,47053,Duisburg
+SEE957083466325,SWD KWL AGuD,swd kwl agud,Erdgas,100.0,40221,Düsseldorf
+SEE959044776498,Mitte BHKW 2 Modul 5,mitte bhkw 2 modul 5,Erdgas,4.472,47053,Duisburg
+SEE959576281422,Knapsack I - Dampfturbine - DT 10,knapsack i - dampfturbine - dt 10,Erdgas,290.0,50354,Hürth
+SEE962877818310,Heizkraftwerk Stuttgart-Münster DT 19,heizkraftwerk stuttgart-münster dt 19,Erdgas,19.5,70376,Stuttgart
+SEE963454497492,Dampfturbine 2 Jena,dampfturbine 2 jena,Erdgas,39.0,07745,Jena
+SEE972750176482,KWK 5 Geb. 192.0,kwk 5 geb 192 0,Erdgas,4.5,84130,Dingolfing
+SEE973007329446,Boehringer Ingelheim - H111 - GT51/AK51,boehringer ingelheim - h111 - gt51 ak51,Erdgas,4.471,88400,Biberach
+SEE975648364909,WKW Säckingen M3,wkw säckingen m3,Wasser,23.0,79713,Bad Säckingen
+SEE944923156256,WKW Unteropfingen M2,wkw unteropfingen m2,Wasser,3.325,88457,Kirchdorf
+SEE945451865368,KW Säckingen A8,kw säckingen a8,Pumpspeicher,90.0,79713,Bad Säckingen
+SEE951648072822,ZASt,zast,Abfall,12.1,98544,Zella-Mehlis
+SEE951078548935,0050 - STW - BHKW - KWK,0050 - stw - bhkw - kwk,Erdgas,3.313,47906,Kempen
+SEE965333653821,HKW Klingenberg Dampfturbine 3,hkw klingenberg dampfturbine 3,Erdgas,56.0,10317,Berlin
+SEE971021553687,Rain M2,rain m2,Wasser,5.595,86641,Rain
+SEE974045584156,GT6,gt6,Erdgas,5.0,59929,Brilon
+SEE974941636973,HKW Schwarza TS 6,hkw schwarza ts 6,Waerme,7.881,07407,Rudolstadt
+SEE976927444749,RRKW Feldheim,rrkw feldheim,Batteriespeicher,10.0,14929,Treuenbrietzen
+SEE979791664664,Ma 2,ma 2,Sonstige Energietraeger (nicht erneuerbar),49.5,38239,Salzgitter
+SEE980421575656,Gasturbinenkraftwerk Thyrow GT C,gasturbinenkraftwerk thyrow gt c,Erdgas,37.104,15806,Zossen
+SEE980892645759,Aufkirchen D F2,aufkirchen d f2,Wasser,9.0,85445,Oberding
+SEE927922085253,BESS-Einbeck,bess-einbeck,Batteriespeicher,24.5,37574,Einbeck
+SEE976607134694,KWK 2 Geb. 192.0,kwk 2 geb 192 0,Erdgas,4.09,84130,Dingolfing
+SEE972377801989,Pfreimd R2,pfreimd r2,Pumpspeicher,33.0,92555,Trausnitz
+SEE974883809046,HKW Reuter West Dampfturbine E,hkw reuter west dampfturbine e,Steinkohle,282.0,13599,Berlin
+SEE916865356940,Kraftwerk HA GT4,kraftwerk ha gt4,Erdgas,32.0,36269,Philippsthal
+SEE918332839635,bnBm GasKW BIB GT8,bnbm gaskw bib gt8,Erdgas,34.4,68647,Biblis
+SEE924602311411,SWD KWF T1,swd kwf t1,Biomasse,53.7,40233,Düsseldorf
+SEE924780675428,Irsching 5 GT2,irsching 5 gt2,Erdgas,282.0,85088,Vohburg
+SEE925705511180,BHKW 2 - GOM 3,bhkw 2 - gom 3,Erdgas,4.207,85356,München-Flughafen
+SEE927820549208,GT1,gt1,Erdgas,4.77,28237,Bremen
+SEE928459304602,Walchenseekraftwerk D F2,walchenseekraftwerk d f2,Wasser,18.0,82431,Kochel
+SEE920864082298,01 Std GT1,01 std gt1,Erdgas,44.975,21683,Stade
+SEE950355589975,Kraftwerk ZI DT 2,kraftwerk zi dt 2,Waerme,29.49,39326,Zielitz
+SEE959613772449,Gasturbine 5,gasturbine 5,Erdgas,5.4,76855,Annweiler
+SEE960273606623,Biomasseheizkraftwerk Hannover Stöcken,biomasseheizkraftwerk hannover stöcken,Waerme,20.108,30419,Hannover
+SEE963125615224,Küstenkraftwerk K.I.E.L Motor 14,küstenkraftwerk k i e l motor 14,Erdgas,9.456,24149,Kiel
+SEE965660903200,Gasmotoren-Heizkraftwerk Dresden-Reick - Aggregat I,gasmotoren-heizkraftwerk dresden-reick - aggregat i,Erdgas,11.5,01277,Dresden
+SEE967544153657,Küstenkraftwerk K.I.E.L Motor 6,küstenkraftwerk k i e l motor 6,Erdgas,9.456,24149,Kiel
+SEE970806189455,BHKW-G66-KWK-groß,bhkw-g66-kwk-groß,Erdgas,12.747,08058,Zwickau
+SEE971796321603,TS II,ts ii,Abfall,12.0,97076,Würzburg
+SEE963197749315,MOT 4,mot 4,Erdgas,10.285,75175,Pforzheim
+SEE936181210535,Kraftwerk ZI GT 2,kraftwerk zi gt 2,Erdgas,5.49,39326,Zielitz
+SEE942777699660,EBKW Knapsack,ebkw knapsack,Abfall,29.9,50354,Hürth
+SEE945727561772,KW Wehr MS B9,kw wehr ms b9,Pumpspeicher,227.5,79664,Wehr
+SEE953235539855,Heizkraftwerk Stuttgart-Gaisburg HKW 3 Motor 1,heizkraftwerk stuttgart-gaisburg hkw 3 motor 1,Erdgas,9.717,70327,Stuttgart
+SEE968240296907,Untereichen F2,untereichen f2,Wasser,4.0,89281,Altenstadt
+SEE968254365774,GT2,gt2,Erdgas,62.0,01159,Dresden
+SEE969767231167,KW Säckingen B7,kw säckingen b7,Pumpspeicher,90.0,79713,Bad Säckingen
+SEE970931306376,Solvay Rb TA10,solvay rb ta10,Waerme,27.2,47495,Rheinberg
+SEE935506652999,Energiewende-Speicher,energiewende-speicher,Batteriespeicher,11.9,26316,Varel
+SEE940474859066,Z564 VT1,z564 vt1,Waerme,12.0,67063,Ludwigshafen
+SEE946736241334,HKW Aalen,hkw aalen,Erdgas,78.302,73432,Aalen
+SEE949509046600,Zolling GT2,zolling gt2,Mineraloelprodukte,24.5,85406,Zolling
+SEE977600961171,Bertoldsheim E K2,bertoldsheim e k2,Wasser,6.3,86643,Rennertshofen
+SEE978319698396,Kraftwerk Wasserburg MS4 110 kV,kraftwerk wasserburg ms4 110 kv,Wasser,4.82,83512,Wasserburg
+SEE979811488683,Kraftwerk SI GT1,kraftwerk si gt1,Erdgas,5.5,31515,Wunstorf
+SEE983252937631,Niederaußem K,niederaußem k,Braunkohle,944.0,50129,Bergheim
+SEE984446277410,Büttel Speicher,büttel speicher,Batteriespeicher,12.0,25572,Büttel
+SEE985220684011,Kraftwerk SI DT2,kraftwerk si dt2,Waerme,9.3,31515,Wunstorf
+SEE957367978162,Kraftwerk Egglfing-Obernberg MS5,kraftwerk egglfing-obernberg ms5,Wasser,13.45,94072,Bad Füssing
+SEE966988528885,PSW Geesthacht PSS C,psw geesthacht pss c,Pumpspeicher,39.7,21502,Geesthacht
+SEE972475289894,Gasturbine 1 - GuD MPE,gasturbine 1 - gud mpe,Erdgas,14.05,33699,Bielefeld
+SEE976325553869,DTS 1,dts 1,Biomasse,28.448,68305,Mannheim
+SEE983645175053,Ingolstadt 4,ingolstadt 4,Mineraloelprodukte,365.0,85098,Großmehring
+SEE987633796220,GKH 1,gkh 1,Steinkohle,136.0,30419,Hannover
+SEE955978509164,SKW Hohenwarte 1 Maschine C,skw hohenwarte 1 maschine c,Wasser,3.88,07338,Hohenwarte
+SEE961284659301,Obernach F1,obernach f1,Wasser,6.4,82432,Walchensee
+SEE929826629465,BHKW Ramstein,bhkw ramstein,Erdgas,12.75,66877,Ramstein-Miesenbach
+SEE929915888797,Urspring K(Ro) 1,urspring k 1,Wasser,3.366,86983,Lechbruck
+SEE931225490034,SMAREG7 Monheim,smareg7 monheim,Batteriespeicher,12.0,86653,Monheim
+SEE936112096313,BHKW,bhkw,Erdgas,1.957,16909,Heiligengrabe
+SEE980823248912,Turbine 7,turbine 7,Erdgas,25.929,93309,Kelheim
+SEE982512881400,"HKW, Dampfturbine 2",hkw dampfturbine 2,Erdgas,20.4,86152,Augsburg
+SEE962922475031,Meitingen M2,meitingen m2,Wasser,4.2,86405,Meitingen
+SEE964117025212,Kraftwerk Ering-Frauenstein MS1,kraftwerk ering-frauenstein ms1,Wasser,24.3,94140,Ering
+SEE968905685947,SEDE607510037,sede607510037,Erdgas,4.387,07549,Gera
+SEE969078917545,Kraftwerk Ering-Frauenstein MS3,kraftwerk ering-frauenstein ms3,Wasser,24.3,94140,Ering
+SEE935602197158,Saalachkraftwerk E3,saalachkraftwerk e3,Wasser,1.28,83435,Bad Reichenhall
+SEE937849602679,Detzem Maschine 1,detzem maschine 1,Wasser,6.0,54340,Detzem
+SEE940039139749,SW Karlsruhe Heizkraftwerk West Generator 3,sw karlsruhe heizkraftwerk west generator 3,Erdgas,33.0,76189,Karlsruhe
+SEE945908806647,Herne 4,herne 4,Steinkohle,435.0,44653,Herne
+SEE950132255796,Holzheizkraftwerk Cuxhaven,holzheizkraftwerk cuxhaven,Biomasse,17.0,27472,Cuxhaven
+SEE954183997452,01 Std ST2,01 std st2,Waerme,13.0,21683,Stade
+SEE972128015696,BHKW Merheim RheinEnergie,bhkw merheim rheinenergie,Erdgas,30.777,51109,Köln
+SEE976850689781,GuD Mitte DT10,gud mitte dt10,Waerme,89.5,67063,Ludwigshafen
+SEE964658207085,WKW Unteropfingen M4,wkw unteropfingen m4,Wasser,4.225,88457,Kirchdorf
+SEE965768299069,Heizkraftwerk Halle-Trotha - Gasturbine,heizkraftwerk halle-trotha - gasturbine,Erdgas,54.8325,06118,Halle
+SEE967194778880,GT1,gt1,Erdgas,62.0,01159,Dresden
+SEE968471468838,DT23,dt23,Erdgas,29.2,42275,Wuppertal
+SEE973349507359,trlyr 5,trlyr 5,Batteriespeicher,15.0,29227,Celle
+SEE970739914599,KLW1-KVA,klw1-kva,Biomasse,1.0,80939,München
+SEE972346658903,Heizkraftwerk Stuttgart-Gaisburg HKW 3 Motor 3,heizkraftwerk stuttgart-gaisburg hkw 3 motor 3,Erdgas,9.717,70327,Stuttgart
+SEE972458947407,SWD KWL GTE2,swd kwl gte2,Erdgas,64.7,40221,Düsseldorf
+SEE985117126280,ST_HKW_T4,st_hkw_t4,Steinkohle,5.76,63811,Stockstadt
+SEE986886521948,"Biomethan BHKW Hannover Herrenhausen, Motor 1",biomethan bhkw hannover herrenhausen motor 1,Biomasse,4.5,30419,Hannover
+SEE988464391141,Erdgas BHKW KLA Bottrop Ag. 2,erdgas bhkw kla bottrop ag 2,Erdgas,2.676,46238,Bottrop
+SEE988477355802,GKM Block 9,gkm block 9,Steinkohle,843.0,68199,Mannheim
+SEE962395118756,Gasmotoren-Heizkraftwerk Dresden-Reick - Aggregat IV,gasmotoren-heizkraftwerk dresden-reick - aggregat iv,Erdgas,11.5,01277,Dresden
+SEE968206101610,GT3,gt3,Erdgas,4.946,53909,Zülpich
+SEE971280976463,MHKW Turbine,mhkw turbine,Abfall,11.0,73037,Göppingen
+SEE957686843929,Turbine 1,turbine 1,Abfall,10.222,64293,Darmstadt
+SEE959377024433,Alzwerk Maschine 3,alzwerk maschine 3,Wasser,10.08,84489,Burghausen
+SEE961029163353,Trianel Kohlekraftwerk Lünen,trianel kohlekraftwerk lünen,Steinkohle,746.0,44536,Lünen
+SEE962737235608,Block 1,block 1,Abfall,29.2,39126,Magdeburg
+SEE976184145496,KW Rheinfelden Maschine 5,kw rheinfelden maschine 5,Wasser,1.72,4310,Rheinfelden
+SEE976333173899,Gaskraftwerk Landesbergen - Gasturbine,gaskraftwerk landesbergen - gasturbine,Erdgas,65.0,31628,Landesbergen
+SEE982889459141,Werk 1.5 KWK 3,werk 1 5 kwk 3,Erdgas,3.36,80937,München
+SEE930159654734,Kraftwerk Werdohl Elverlingsen E2,kraftwerk werdohl elverlingsen e2,Mineraloelprodukte,98.0,58791,Werdohl
+SEE934529216348,BHKW,bhkw,Biomasse,1.5565,29525,Uelzen
+SEE963081865633,BES BEN,bes ben,Batteriespeicher,16.425,04828,Bennewitz
+SEE964481657378,illwerke vkw Kopswerk I M3,illwerke vkw kopswerk i m3,Wasser,96.0,A-6793,Gaschurn
+SEE971867565370,HKW Niederrad Block 1,hkw niederrad block 1,Erdgas,70.0,60528,Frankfurt
+SEE973271553004,Turbine 5,turbine 5,Erdgas,5.57,55246,Mainz-Kostheim
+SEE976252866650,MOT 5,mot 5,Erdgas,10.285,75175,Pforzheim
+SEE925690509520,Pfreimd R3,pfreimd r3,Pumpspeicher,33.0,92555,Trausnitz
+SEE926982393704,BHKW 10,bhkw 10,Erdgas,10.287,12059,Berlin
+SEE938158660541,Gasturbine 1 - GuD MPE,gasturbine 1 - gud mpe,Erdgas,14.05,33699,Bielefeld
+SEE939218038409,UPM Schongau HKW 2 T2,upm schongau hkw 2 t2,Erdgas,6.25,86956,Schongau
+SEE940780197517,Felix Schoeller GmbH & Co.KG Osnabrück,felix schoeller gmbh co kg osnabrück,Erdgas,14.468,49086,Osnabrück
+SEE978382998973,Meitingen M3,meitingen m3,Wasser,4.2,86405,Meitingen
+SEE984335626152,GT Niehl 2 RheinEnergie,gt niehl 2 rheinenergie,Erdgas,266.0,50735,Köln
+SEE985107396679,Schwammenauel Maschine 1,schwammenauel maschine 1,Wasser,14.0,52396,Heimbach
+SEE986400818790,BHKW 2 Hamburg Modul 1,bhkw 2 hamburg modul 1,Erdgas,4.119,21129,Hamburg
+SEE989887901764,Turbine 5,turbine 5,Abfall,12.26,31789,Hameln
+SEE960680903568,Bergheim E K2,bergheim e k2,Wasser,7.9,86673,Bergheim
+SEE964077382691,01 Std GT3,01 std gt3,Erdgas,44.975,21683,Stade
+SEE967916097817,KRONOS TITAN Nordenham GuD,kronos titan nordenham gud,Erdgas,17.13,26954,Nordenham
+SEE970535357835,PSW Wendefurth PSS B,psw wendefurth pss b,Pumpspeicher,39.9,06502,Thale
+SEE979623845346,Kraftwerk Braunau-Simbach MS4,kraftwerk braunau-simbach ms4,Wasser,25.6,84375,Kirchdorf
+SEE984196895179,GT32 GuD Süd Wolfsburg,gt32 gud süd wolfsburg,Erdgas,49.4,38440,Wolfsburg
+SEE974080003018,TögingNeu MS1,tögingneu ms1,Wasser,40.0,84513,Töging
+SEE974615285285,Heizkraftwerk Stuttgart-Gaisburg HKW 3 Motor 2,heizkraftwerk stuttgart-gaisburg hkw 3 motor 2,Erdgas,9.717,70327,Stuttgart
+SEE975193004329,Kraftwerk WI DT4,kraftwerk wi dt4,Erdgas,28.0,36266,Heringen
+SEE949799257847,Ruhrort 3,ruhrort 3,Sonstige Energietraeger (nicht erneuerbar),94.0,47166,Duisburg
+SEE951458309484,W065-Gebäude 120 / BHKW Modul 01,w065-gebäude 120 bhkw modul 01,Erdgas,4.2,40476,Düsseldorf
+SEE956308510836,MOT 3,mot 3,Erdgas,10.285,75175,Pforzheim
+SEE999756197518,Dampfturbine 2,dampfturbine 2,Erdgas,17.7,56727,Mayen
+SEE971886830459,illwerke vkw Vermuntwerk M1,illwerke vkw vermuntwerk m1,Wasser,85.0,A-6794,Partenen
+SEE980479559837,SWM Uppenborn 2 Gen3,swm uppenborn 2 gen3,Wasser,6.0,84184,Tiefenbach
+SEE983560968952,Kraftwerk Passau-Ingling MS3,kraftwerk passau-ingling ms3,Wasser,21.6,94036,Passau
+SEE968933985491,Second Foundation BESS Königsee,second foundation bess königsee,Batteriespeicher,10.35,07426,Königsee
+SEE973366398565,SEE PPO2,see ppo2,Abfall,19.339,06792,Sandersdorf
+SEE975854838485,BMW Landshut KWK 7,bmw landshut kwk 7,Erdgas,4.3,84030,Landshut
+SEE937610627863,HKW Karcherstraße (T5),hkw karcherstraße,Erdgas,7.0,67655,Kaiserslautern
+SEE944335479066,Dampfturbine II Südzucker Plattling,dampfturbine ii südzucker plattling,Waerme,6.7895,94447,Plattling
+SEE959858570855,GT4,gt4,Erdgas,38.4,06237,Leuna
+SEE964121468647,HDH_004_Industrieheizkraftwerk-Heidenheim_GM5,hdh_004_industrieheizkraftwerk-heidenheim_gm5,Erdgas,3.729,89522,Heidenheim
+SEE970137108491,HKW Karcherstraße (T2),hkw karcherstraße,Erdgas,9.0,67655,Kaiserslautern
+SEE964448645769,BMKW Delitzsch,bmkw delitzsch,Biomasse,18.3,04509,Delitzsch
+SEE990015251552,ABR990388771138,abr990388771138,Erdgas,12.8,37213,Witzenhausen
+SEE991101635409,Motor 1,motor 1,Biomasse,1.048,28870,Ottersberg
+SEE992559962321,Müden Maschine 2,müden maschine 2,Wasser,4.1,56254,Müden
+SEE992590425045,PSW Bleiloch PSS B,psw bleiloch pss b,Pumpspeicher,39.9,07907,Schleiz
+SEE995000682977,Batterie Diespeck,batterie diespeck,Batteriespeicher,20.7,91456,Diespeck
+SEE958260519834,Mitte BHKW3 M2,mitte bhkw3 m2,Erdgas,4.4,47053,Duisburg
+SEE958310939391,MKK,mkk,Abfall,32.0,28237,Bremen
+SEE947996339434,RZR II Turbine4,rzr ii turbine4,Abfall,12.26,45699,Herten
+SEE960162708360,Turbine 4,turbine 4,Erdgas,5.329,93309,Kelheim
+SEE967283752913,Werk 1.5 KWK 1,werk 1 5 kwk 1,Erdgas,3.36,80937,München
+SEE969775213346,"Shell Energy and Chemicals Park, Kraftwerk Godorf",shell energy and chemicals park kraftwerk godorf,Mineraloelprodukte,92.0,50997,Köln
+SEE972466462527,Dampfturbine - GuD MPE,dampfturbine - gud mpe,Erdgas,9.35,33699,Bielefeld
+SEE940809994431,GT1,gt1,Erdgas,4.466,25541,Brunsbüttel
+SEE942749879687,KW Wyhlen Straflo 05,kw wyhlen straflo 05,Wasser,4.5,79639,Grenzach-Wyhlen
+SEE945602121718,Generator B,generator b,Abfall,20.0,42349,Wuppertal
+SEE953991032447,KWKK Heidelberg,kwkk heidelberg,Erdgas,13.288,69120,Heidelberg
+SEE962496130121,BEE Merseburg GmbH,bee merseburg gmbh,Batteriespeicher,12.0,06217,Merseburg
+SEE986617815513,"MHKW, Generator 2",mhkw generator 2,Abfall,7.0,27570,Bremerhaven
+SEE981067351215,Heizkraftwerk Leipzig Süd Schwarzstartbatterie 9C,heizkraftwerk leipzig süd schwarzstartbatterie 9c,Batteriespeicher,3.5,04279,Leipzig
+SEE982928435068,GuD Marzahn Dampfturbine,gud marzahn dampfturbine,Waerme,69.3,12681,Berlin
+SEE985796237000,HKW Schildescher Str GT,hkw schildescher str gt,Erdgas,23.5,33611,Bielefeld
+SEE960317505882,GT 1,gt 1,Mineraloelprodukte,23.2,83734,Hausham
+SEE963709646453,"Biomethan BHKW Hannover Herrenhausen, Motor 3",biomethan bhkw hannover herrenhausen motor 3,Biomasse,2.0,30419,Hannover
+SEE971740147860,T/G 7,t g 7,Mineraloelprodukte,2.025,46147,Oberhausen
+SEE974059990561,AHKW-Neunkirchen Turbine 5,ahkw-neunkirchen turbine 5,Abfall,11.0,66538,Neunkirchen
+SEE987452387340,Happurg F2,happurg f2,Pumpspeicher,40.0,91230,Happurg
+SEE989202977269,GUD Mibü,gud mibü,Erdgas,444.5,28237,Bremen
+SEE999839188105,W065-Gebäude 120 / BHKW Modul 03,w065-gebäude 120 bhkw modul 03,Erdgas,4.2,40476,Düsseldorf
+SEE977720016904,Batterie Breitenworbis,batterie breitenworbis,Batteriespeicher,10.0,37339,Breitenworbis
+SEE985453029962,Könnern Generator 1,könnern generator 1,Braunkohle,8.8,06420,Könnern
+SEE993292613167,Solvay Rb TA8,solvay rb ta8,Waerme,15.94,47495,Rheinberg
+SEE928331694449,"Motor-Heizkraftwerk Chemnitz-Nord, Motor 2",motor-heizkraftwerk chemnitz-nord motor 2,Erdgas,12.538,09114,Chemnitz
+SEE996047653111,"KW TRB Bitterfeld, Bitterfeld-Wolfen, Oststr. 1",kw trb bitterfeld bitterfeld-wolfen oststr 1,Abfall,10.0,06749,Bitterfeld-Wolfen
+SEE981220522926,BER2-AA-D3-GEN-06-NEA,ber2-aa-d3-gen-06-nea,Mineraloelprodukte,2.59,12107,Berlin
+SEE986331287955,Fab Berrenrath,fab berrenrath,Braunkohle,98.0,50354,Hürth
+SEE989200392347,7711MKA10-GT1,7711mka10-gt1,Erdgas,14.885,01454,Wachau
+SEE989733403879,KW Silz - Maschine 1,kw silz - maschine 1,Pumpspeicher,250.0,6424,Silz
+SEE991299080678,GT2,gt2,Erdgas,5.538,21107,Hamburg
+SEE995234903107,Kraftwerk Passau-Ingling MS1,kraftwerk passau-ingling ms1,Wasser,21.6,94036,Passau
+SEE996431301710,BMW Landshut KWK 5,bmw landshut kwk 5,Erdgas,4.3,84030,Landshut
+SEE967298254266,KWK-Anlage FHW Ratingen West Modul 3,kwk-anlage fhw ratingen west modul 3,Erdgas,1.947,40878,Ratingen
+SEE971914041024,Gasturbine Basell Wesseling,gasturbine basell wesseling,Erdgas,51.9,50389,Wesseling
+SEE973250051972,Gasturbine HKW,gasturbine hkw,Erdgas,18.8,37075,Göttingen
+SEE973601397087,Tiefstack GuD DT40,tiefstack gud dt40,Waerme,27.0,22113,Hamburg
+SEE974521954909,Gasturbine 6,gasturbine 6,Erdgas,3.6,76855,Annweiler
+SEE974634012046,illwerke vkw Lünerseewerk M5,illwerke vkw lünerseewerk m5,Pumpspeicher,56.0,A-6774,Tschagguns
+SEE974910236807,N822 GE1,n822 ge1,Waerme,2.65,67063,Ludwigshafen
+SEE976367618755,Biomethan BHKW 2 Hannover Stöcken,biomethan bhkw 2 hannover stöcken,Biomasse,4.5,30419,Hannover
+SEE976404468497,SN-Lankow-GUD-2023,sn-lankow-gud-2023,Erdgas,11.25,19057,Schwerin
+SEE976907281142,HKW Dessau,hkw dessau,Erdgas,39.12,06842,Dessau-Roßlau
+SEE963890006111,HKW Karcherstraße (GT15),hkw karcherstraße,Erdgas,8.5,67655,Kaiserslautern
+SEE964073339897,Heizkraftwerk Stendal,heizkraftwerk stendal,Erdgas,13.21,39576,Stendal
+SEE968161544286,Mitte BHKW3 M1,mitte bhkw3 m1,Erdgas,4.4,47053,Duisburg
+SEE976219797843,SWM HKW Sued GuD2 GT62,swm hkw sued gud2 gt62,Erdgas,146.3,81371,München
+SEE979396678813,Kraftwerk ZI DT1,kraftwerk zi dt1,Waerme,18.1,39326,Zielitz
+SEE982350358232,HKW - GuD2,hkw - gud2,Erdgas,7.032,91052,Erlangen
+SEE982892019516,HKW-West Gasturbine 2,hkw-west gasturbine 2,Erdgas,5.07,32657,Lemgo
+SEE977368296324,MOT 1,mot 1,Erdgas,10.285,75175,Pforzheim
+SEE973493827723,KW Rheinfelden Maschine 1,kw rheinfelden maschine 1,Wasser,22.9,4310,Rheinfelden
+SEE976266175403,Happurg F3,happurg f3,Pumpspeicher,40.0,91230,Happurg
+SEE935573961376,SWM Uppenborn 1 Gen1,swm uppenborn 1 gen1,Wasser,8.8,85368,Wang
+SEE936428070663,Vohburg E K3,vohburg e k3,Wasser,7.76,85088,Vohburg
+SEE936781895453,BHKW2 (GKWK-MA-0016),bhkw2,Erdgas,4.101,68305,Mannheim
+SEE937736737958,ZF-FRD-W04-G22-Prüfstand-844077,zf-frd-w04-g22-prüfstand-844077,Mineraloelprodukte,1.672,88046,Friedrichshafen
+SEE940178738247,GT Chemnitzer Straße 40,gt chemnitzer straße 40,Erdgas,4.757,09599,Freiberg
+SEE941166182769,LEV KWG G22,lev kwg g22,Steinkohle,12.671,51373,Leverkusen
+SEE945811865984,P13,p13,Erdgas,1.0,68167,Mannheim
+SEE963301495572,HK_001_Industrieheizkraftwerk-Walsrode_GT6,hk_001_industrieheizkraftwerk-walsrode_gt6,Erdgas,6.35,29699,Walsrode
+SEE973279238699,Turbine 5,turbine 5,Biomasse,13.0,31061,Alfeld
+SEE973464796218,Dampfturbine FSK Kuhheide 32a,dampfturbine fsk kuhheide 32a,Abfall,28.904,16303,Schwedt
+SEE975248607116,Dampfturbine GWK Kuhheide 34,dampfturbine gwk kuhheide 34,Erdgas,4.7,16303,Schwedt
+SEE976376888927,Gasturbine 1,gasturbine 1,Erdgas,4.92,39164,Wanzleben-Börde
+SEE976445927045,Kraftwerk Stammham MS3,kraftwerk stammham ms3,Wasser,7.733,84533,Stammham
+SEE987838157994,Fenne HKV,fenne hkv,Steinkohle,211.0,66333,Völklingen
+SEE988699847857,GKM Block 7,gkm block 7,Steinkohle,425.0,68199,Mannheim
+SEE991036415459,Gasturbine 1,gasturbine 1,Erdgas,7.558,66606,St. Wendel
+SEE947763810036,HuR-IKW-G5,hur-ikw-g5,Erdgas,9.029,48499,Salzbergen
+SEE951839779134,Küstenkraftwerk K.I.E.L Motor 1,küstenkraftwerk k i e l motor 1,Erdgas,9.456,24149,Kiel
+SEE955314088254,Weisweiler H,weisweiler h,Braunkohle,656.0,52249,Eschweiler
+SEE957262802302,Anlage 2014,anlage 2014,Biomasse,4.95,04860,Torgau
+SEE959229794460,DT,dt,Erdgas,34.0,99087,Erfurt
+SEE962777669616,Zolling GT1,zolling gt1,Mineraloelprodukte,24.5,85406,Zolling
+SEE963438570067,Gasmotoren-Heizkraftwerk Dresden-Reick - Aggregat VI,gasmotoren-heizkraftwerk dresden-reick - aggregat vi,Erdgas,11.5,01277,Dresden
+SEE988114672156,Kaufering K(Ro)2,kaufering k 2,Wasser,5.567,86916,Kaufering
+SEE988182827533,Staudinger 4,staudinger 4,Erdgas,580.0,63538,Großkrotzenburg
+SEE988558018985,KesselH,kesselh,Biomasse,9.18,33378,Rheda-Wiedenbrück
+SEE991807535867,KWK-Anlage Gasturbine 3,kwk-anlage gasturbine 3,Erdgas,4.85,49638,Nortrup
+SEE995156555835,KW Ryburg-Schwörstadt M3,kw ryburg-schwörstadt m3,Wasser,28.15,79739,Schwörstadt
+SEE996980679766,Kraftwerk Oberaudorf-Ebbs MS2,kraftwerk oberaudorf-ebbs ms2,Wasser,30.0,83080,Oberaudorf
+SEE966481430050,W065-Gebäude 120 / BHKW Modul 05,w065-gebäude 120 bhkw modul 05,Erdgas,4.253,40476,Düsseldorf
+SEE929090964958,FZJ_WVVZ-03.19_BHKW-3,fzj_wvvz-03 19_bhkw-3,Erdgas,4.3,52428,Jülich
+SEE929681132193,WKW Dettingen M2,wkw dettingen m2,Wasser,3.6,88451,Dettingen
+SEE936406566188,Walchenseekraftwerk E Pe3,walchenseekraftwerk e pe3,Wasser,13.0,82431,Kochel
+SEE940821413552,Kraftwerk NE DT,kraftwerk ne dt,Waerme,4.4,36119,Neuhof
+SEE941053107073,Stromerzeugung Barby,stromerzeugung barby,Erdgas,17.78,39249,Barby
+SEE943427876363,Kraftwerk Rostock Block A,kraftwerk rostock block a,Steinkohle,514.0,18147,Rostock
+SEE998909352200,EA-46950,ea-46950,Biomasse,10.6,49824,Emlichheim
+SEE975361659900,SWD KWL GuD F,swd kwl gud f,Erdgas,595.0,40221,Düsseldorf
+SEE976826191515,MVA Hamm Turbine 2,mva hamm turbine 2,Abfall,6.5,59075,Hamm
+SEE987789318420,KWK Anlage Kläranlage,kwk anlage kläranlage,Sonstige Energietraeger (nicht erneuerbar),23.0,79400,Kandern
+SEE994055644299,BHKW15,bhkw15,Erdgas,2.619,42275,Wuppertal
+SEE994238154089,MVA Hamm Turbine 3,mva hamm turbine 3,Abfall,6.45,59075,Hamm
+SEE995184160995,Cuno Heizkraftwerk Herdecke BHKW3,cuno heizkraftwerk herdecke bhkw3,Erdgas,2.13,58313,Herdecke
+SEE935153258285,ET HO 8,et ho 8,Sonstige Energietraeger (nicht erneuerbar),8.0,47166,Duisburg
+SEE943682372433,Gasturbine 2,gasturbine 2,Erdgas,5.63,39164,Wanzleben-Börde
+SEE945682618689,Dampfturbine Model Sachsen Papier,dampfturbine model sachsen papier,Erdgas,16.2514,04838,Eilenburg
+SEE946568262484,Heizkraftwerk Dieselstraße Block B,heizkraftwerk dieselstraße block b,Erdgas,57.144,06130,Halle
+SEE946590750676,BHKW Potsdam-Nord 1,bhkw potsdam-nord 1,Erdgas,4.257,14471,Potsdam
+SEE954351462355,Partition_2,partition_2,Batteriespeicher,3.4,04349,Leipzig
+SEE954367504490,GT3,gt3,Erdgas,5.07,21107,Hamburg
+SEE954975672987,Urspring K(Ro) 2,urspring k 2,Wasser,3.366,86983,Lechbruck
+SEE977898966292,MVR Rugenberger Damm Müll,mvr rugenberger damm müll,Abfall,23.875,21129,Hamburg
+SEE985585573104,SWM HKW Sued GuD1 GT3,swm hkw sued gud1 gt3,Erdgas,97.9,81371,München
+SEE986520256656,Solvay Rb TA7,solvay rb ta7,Waerme,12.8,47495,Rheinberg
+SEE988222104112,Speicher Forsthof,speicher forsthof,Batteriespeicher,7.0,92706,Luhe-Wildenau
+SEE949310869146,Prüfstand 6,prüfstand 6,Erdgas,3.15,86165,Augsburg
+SEE950062447919,IPH Strom CoFA BHKW 2,iph strom cofa bhkw 2,Biomasse,1.3725,65929,Frankfurt
+SEE950201173198,MHKW_Gen4,mhkw_gen4,Abfall,49.2,28219,Bremen
+SEE951344432289,KWK Adlershof Modul 2,kwk adlershof modul 2,Erdgas,4.39,12489,Berlin
+SEE935963507269,Kachlet K8,kachlet k8,Wasser,6.7125,94034,Passau
+SEE936388385937,Heizkraftwerk Stuttgart-Münster GT 87,heizkraftwerk stuttgart-münster gt 87,Erdgas,61.0,70376,Stuttgart
+SEE936873341158,Felix Schoeller GmbH & Co.KG Weißenborn GT1,felix schoeller gmbh co kg weißenborn gt1,Erdgas,4.429,09600,Weißenborn
+SEE942954514045,DA_BHKW_01,da_bhkw_01,Erdgas,3.04,64293,Darmstadt
+SEE989834346082,KWK GT2,kwk gt2,Erdgas,15.36,21683,Stade
+SEE991917215321,RADAG M3,radag m3,Wasser,27.94,79774,Albbruck
+SEE936761155751,"Motor-Heizkraftwerk Chemnitz-Süd, Motor 1",motor-heizkraftwerk chemnitz-süd motor 1,Erdgas,12.7314,09125,Chemnitz
+SEE944498947082,BMHKW Biomasseheizkraftwerk Elsterwerda,bmhkw biomasseheizkraftwerk elsterwerda,Biomasse,11.5,04910,Elsterwerda
+SEE946312990083,HKW Karcherstraße (GT13),hkw karcherstraße,Erdgas,8.5,67655,Kaiserslautern
+SEE954610139165,KW Wehr MS B10,kw wehr ms b10,Pumpspeicher,227.5,79664,Wehr
+SEE955837429145,KW ZI Austausch-Geno,kw zi austausch-geno,Erdgas,5.25,39326,Zielitz
+SEE960352714492,GT11,gt11,Erdgas,27.6,42275,Wuppertal
+SEE965327731764,BHKW Jülich,bhkw jülich,Erdgas,1.387,52428,Jülich
+SEE970313657485,BHKW 3,bhkw 3,Biomasse,1.027,25491,Hetlingen
+SEE970656434019,HKW Dresden - Reick Turbosatz 2,hkw dresden - reick turbosatz 2,Erdgas,1.6,01277,Dresden
+SEE939524649245,ZI Tr GT1,zi tr gt1,Erdgas,5.5,39326,Zielitz
+SEE942982288260,Cuno Heizkraftwerk Herdecke H6,cuno heizkraftwerk herdecke h6,Erdgas,417.0,58313,Herdecke
+SEE952937205877,Könnern Generator 2,könnern generator 2,Braunkohle,19.67,06420,Könnern
+SEE964450365167,Solvay Rb TA9,solvay rb ta9,Waerme,27.2,47495,Rheinberg
+SEE972239033510,Dampfturbine II Südzucker Wabern,dampfturbine ii südzucker wabern,Waerme,4.1384,34590,Wabern
+SEE978319002940,Laufwasserkraftwerk Schlüsselburg,laufwasserkraftwerk schlüsselburg,Wasser,5.633,27337,Blender
+SEE981258814888,Kraftwerk Raffinerie Heide GmbH,kraftwerk raffinerie heide gmbh,Mineraloelprodukte,45.2,25770,Hemmingstedt
+SEE981924913907,GT 3,gt 3,Mineraloelprodukte,23.2,83734,Hausham
+SEE984352856976,Leipzig KWK 1,leipzig kwk 1,Erdgas,3.119,04349,Leipzig
+SEE993638387103,NEA EEW Helmstedt,nea eew helmstedt,Mineraloelprodukte,5.18,38372,Büddenstedt
+SEE995447721338,Kachlet K7,kachlet k7,Wasser,6.7125,94034,Passau
+SEE995735564722,Kraftwerk Wasserburg MS3 20 kV,kraftwerk wasserburg ms3 20 kv,Wasser,4.82,83512,Wasserburg
+SEE996485724770,Koblenz Maschine 2,koblenz maschine 2,Wasser,4.0,56073,Koblenz
+SEE998383491525,Heizkraftwerk Stuttgart-Münster DT 12,heizkraftwerk stuttgart-münster dt 12,Erdgas,45.0,70376,Stuttgart
+SEE999705546763,Dampfturbine III Südzucker Rain,dampfturbine iii südzucker rain,Waerme,10.36,86641,Rain
+SEE947163607823,HKW West M12 (2024),hkw west m12,Erdgas,2.282,99867,Gotha
+SEE961899492454,PSW Hohenwarte 2 PSS D,psw hohenwarte 2 pss d,Pumpspeicher,39.7,07338,Hohenwarte
+SEE996891820448,Turbine 3,turbine 3,Waerme,8.0,47829,Krefeld
+SEE998623498277,DT3,dt3,Waerme,23.9,06237,Leuna
+SEE984899087819,Kraftwerk Wasserburg MS5 110 kV,kraftwerk wasserburg ms5 110 kv,Wasser,4.82,83512,Wasserburg
+SEE986097297199,QED_GuD_Staßfurt,qed_gud_staßfurt,Erdgas,100.0,39418,Staßfurt
+SEE987007882719,GuD West 40 Gasturbine,gud west 40 gasturbine,Erdgas,101.0,38440,Wolfsburg
+SEE991958709742,Kraftwerk Jochenstein MS5,kraftwerk jochenstein ms5,Wasser,26.4,94107,Untergriesbach
+SEE992421348512,Kraftwerk Braunau-Simbach MS3,kraftwerk braunau-simbach ms3,Wasser,25.6,84375,Kirchdorf
+SEE989328541450,HKW Reuter West Dampfturbine D,hkw reuter west dampfturbine d,Steinkohle,282.0,13599,Berlin
+SEE991505581654,KW Rheinfelden Maschine 3,kw rheinfelden maschine 3,Wasser,22.9,4310,Rheinfelden
+SEE993233732025,Kraftwerk Egglfing-Obernberg MS2,kraftwerk egglfing-obernberg ms2,Wasser,13.45,94072,Bad Füssing
+SEE995752550746,Werk 1.5 KWK 2,werk 1 5 kwk 2,Erdgas,3.36,80937,München
+SEE996309208363,HKW Alfred-Leikam-Straße BHKW 2,hkw alfred-leikam-straße bhkw 2,Erdgas,7.549,74523,Schwäbisch Hall
+SEE997248724068,Gasturbine 2,gasturbine 2,Erdgas,7.558,66606,St. Wendel
+SEE998199911088,Kraftwerk Lippendorf Block S,kraftwerk lippendorf block s,Braunkohle,891.0,04575,Neukieritzsch
+SEE991050894971,EKT,ekt,Waerme,14.0,06237,Leuna
+SEE992947793209,Dampfturbine,dampfturbine,Abfall,16.0,47475,Kamp-Lintfort
+SEE994690933222,BHKW_CVK,bhkw_cvk,Erdgas,2.64,13353,Berlin
+SEE995613098226,Speicher Gelpertsricht,speicher gelpertsricht,Batteriespeicher,4.0,92706,Luhe-Wildenau
+SEE918857857947,FHKW GT4,fhkw gt4,Erdgas,4.3893,67063,Ludwigshafen
+SEE922908994215,bnBm GasKW BIB GT9,bnbm gaskw bib gt9,Erdgas,34.4,68647,Biblis
+SEE945038569870,Turbinengenerator4-SiemensT5471,turbinengenerator4-siemenst5471,Erdgas,3.4,89584,Ehingen
+SEE949717053087,KW Laufenburg Maschine 8,kw laufenburg maschine 8,Wasser,10.442,5080,Laufenburg
+SEE953611260939,BHKW-Sonnenwärme,bhkw-sonnenwärme,Erdgas,4.1353,17489,Greifswald
+SEE955178360381,KWK 1 Gebäude 192.0,kwk 1 gebäude 192 0,Erdgas,4.13,84130,Dingolfing
+SEE959802115149,DGW TG 10,dgw tg 10,Waerme,8.359,44147,Dortmund
+SEE960158091162,T3,t3,Waerme,9.9,66763,Dillingen
+SEE961061178896,Koblenz Maschine 4,koblenz maschine 4,Wasser,4.0,56073,Koblenz
+SEE961245060139,Saalachkraftwerk D3,saalachkraftwerk d3,Wasser,1.593,83435,Bad Reichenhall
+SEE969213985101,HKW Karcherstraße (GT12),hkw karcherstraße,Erdgas,8.5,67655,Kaiserslautern
+SEE975024902015,HKW-West Dampfturbine,hkw-west dampfturbine,Waerme,2.42,32657,Lemgo
+SEE985331675700,HKW Magirusstraße,hkw magirusstraße,Erdgas,12.6,89077,Ulm
+SEE986418252418,Partition_1,partition_1,Batteriespeicher,3.4,04349,Leipzig
+SEE986959633936,Lage Generator 1,lage generator 1,Erdgas,8.882,32791,Lage
+SEE987361570932,HKW BRB,hkw brb,Erdgas,36.8,14772,Brandenburg
+SEE990364668339,SKW Hohenwarte 1 Maschine B,skw hohenwarte 1 maschine b,Wasser,29.9,07338,Hohenwarte
+SEE997713514354,Ofenlinie K1,ofenlinie k1,Abfall,6.2,87437,Kempten
+SEE968582186379,Boxberg Block R,boxberg block r,Braunkohle,630.0,02943,Boxberg
+SEE968809418429,BHKW_CVK_2,bhkw_cvk_2,Erdgas,2.64,13353,Berlin
+SEE971282697380,Heizkraftwerk Altbach/Deizisau Block 4 GT A (solo),heizkraftwerk altbach deizisau block 4 gt a,Erdgas,45.0,73776,Altbach
+SEE972969049737,KW ZI GT 1,kw zi gt 1,Erdgas,4.91,39326,Zielitz
+SEE934727232676,KW Wyhlen Francis 10,kw wyhlen francis 10,Wasser,2.166,79639,Grenzach-Wyhlen
+SEE943109996648,BMW Landshut KWK 4,bmw landshut kwk 4,Erdgas,4.3,84030,Landshut
+SEE993827105563,Bittenbrunn E K1,bittenbrunn e k1,Wasser,6.73,86633,Neuburg
+SEE980327120226,SWM HKW Sued GuD2 GT61,swm hkw sued gud2 gt61,Erdgas,146.3,81371,München
+SEE986561991462,Cuno Heizkraftwerk Herdecke BHKW2,cuno heizkraftwerk herdecke bhkw2,Erdgas,1.95,58313,Herdecke
+SEE989503748513,SWD KWL GTE1,swd kwl gte1,Erdgas,66.7,40221,Düsseldorf
+SEE993412996354,Kraftwerk WI DT3,kraftwerk wi dt3,Erdgas,12.07,36266,Heringen
+SEE966530598731,Gegendruckdampfturbine Industriekraftwerk,gegendruckdampfturbine industriekraftwerk,Erdgas,21.7,06406,Bernburg
+SEE966970929270,Neef Maschine 1,neef maschine 1,Wasser,4.1,56858,Neef
+SEE967076530902,SMAREG12 Vöhringen I,smareg12 vöhringen i,Batteriespeicher,19.6,89269,Vöhringen
+SEE967464788519,Kraftwerk Fulda Aggregat 4A,kraftwerk fulda aggregat 4a,Mineraloelprodukte,2.76,36043,Fulda
+SEE967950570895,PKV Kraftwerk BGM 2,pkv kraftwerk bgm 2,Biomasse,1.0,26316,Varel
+SEE968613122536,Enkirch Maschine 4,enkirch maschine 4,Wasser,4.6,56850,Enkirch
+SEE971818871499,KW Witznau MS B4,kw witznau ms b4,Pumpspeicher,55.0,79777,Ühlingen-Birkendorf
+SEE971932533266,Batteriespeicher Werne,batteriespeicher werne,Batteriespeicher,72.0,59368,Werne
+SEE972049110999,ZF-FRD-W04-G32-Prüfstand-A03,zf-frd-w04-g32-prüfstand-a03,Mineraloelprodukte,1.756,88046,Friedrichshafen
+SEE939329445868,HKWH Gasturbine 8,hkwh gasturbine 8,Erdgas,5.336,24116,Kiel
+SEE942253705168,FHKW DT 2,fhkw dt 2,Waerme,12.07,67063,Ludwigshafen
+SEE944044057432,"Motor-Heizkraftwerk Chemnitz-Nord, Motor 1",motor-heizkraftwerk chemnitz-nord motor 1,Erdgas,12.538,09114,Chemnitz
+SEE947895305424,BHKW Köpenick Gasturbine 2,bhkw köpenick gasturbine 2,Erdgas,5.0,12557,Berlin
+SEE949085992346,W050-TS_Mercedes-Benz Werk Sindelfingen HKW Turbine 2,w050-ts_mercedes-benz werk sindelfingen hkw turbine 2,Erdgas,17.21,71063,Sindelfingen
+SEE950536544908,Kraftwerk Feldkirchen MS1,kraftwerk feldkirchen ms1,Wasser,12.733,83543,Rott
+SEE960529046555,6MKA,6mka,Mineraloelprodukte,34.5,16303,Schwedt
+SEE999346426134,Kraftwerk Landesbergen Dampfturbine,kraftwerk landesbergen dampfturbine,Erdgas,431.0,31628,Landesbergen
+SEE965029367872,KW Silz - Maschine 2,kw silz - maschine 2,Pumpspeicher,250.0,6424,Silz
+SEE973793127974,KW Mittelsbüren Block 4,kw mittelsbüren block 4,Sonstige Energietraeger (nicht erneuerbar),160.0,28237,Bremen
+SEE975217906967,GT4,gt4,Erdgas,5.538,21107,Hamburg
+SEE983138549866,IKW Block 7,ikw block 7,Sonstige Energietraeger (nicht erneuerbar),53.9,15890,Eisenhüttenstadt
+SEE931497805147,bnBm GasKW BIB GT10,bnbm gaskw bib gt10,Erdgas,34.4,68647,Biblis
+SEE934879768511,Linie 2 (Kessel 6_Turbine 2)_Komplex 04-01/04,linie 2 _komplex 04-01 04,Biomasse,5.24,72531,Hohenstein
+SEE935560628848,Straubing K1,straubing k1,Wasser,7.1667,94315,Straubing
+SEE940303116315,Turbosatz 5,turbosatz 5,Abfall,32.32,14727,Premnitz
+SEE940791401320,Au F1,au f1,Wasser,4.0,89257,Illertissen
+SEE940802366570,PSW Markersbach PSS C,psw markersbach pss c,Pumpspeicher,174.2,08352,Raschau-Markersbach
+SEE983959934148,HKW Linden DT,hkw linden dt,Erdgas,78.0,30449,Hannover
+SEE963787688062,Kachlet K2,kachlet k2,Wasser,6.7125,94034,Passau
+SEE964935453853,DT,dt,Erdgas,26.459,17034,Neubrandenburg
+SEE969004747543,Gasmotor 4 Jena,gasmotor 4 jena,Erdgas,12.175,07745,Jena
+SEE972612434835,Dampfturbine V Südzucker Zeitz,dampfturbine v südzucker zeitz,Waerme,5.641,06712,Zeitz
+SEE965350369514,ET HO 1,et ho 1,Sonstige Energietraeger (nicht erneuerbar),16.0,47166,Duisburg
+SEE973513212348,Kraftwerk Passau-Ingling MS2,kraftwerk passau-ingling ms2,Wasser,21.6,94036,Passau
+SEE976945777003,KWK Baruth,kwk baruth,Biomasse,9.7,15837,Baruth
+SEE981876305560,TREA Leuna 1,trea leuna 1,Abfall,16.245,06237,Leuna
+SEE992623649677,KWK-Anlage Gasturbine 4,kwk-anlage gasturbine 4,Erdgas,4.229,49638,Nortrup
+SEE993205796611,"Biomethan BHKW Hannover Herrenhausen, Motor 4",biomethan bhkw hannover herrenhausen motor 4,Biomasse,4.5,30419,Hannover
+SEE993583711350,Erdgas BHKW KLA Bottrop Ag. 4,erdgas bhkw kla bottrop ag 4,Erdgas,2.676,46238,Bottrop
+SEE996720450723,SWM HKW Sued GuD2 DT60,swm hkw sued gud2 dt60,Erdgas,127.6,81371,München
+SEE925623713673,BHKW 2 - GOM 4,bhkw 2 - gom 4,Erdgas,4.207,85356,München-Flughafen
+SEE928580946900,GuD-Heizkraftwerk M120,gud-heizkraftwerk m120,Erdgas,103.0,65428,Rüsselsheim
+SEE939026884250,PSW Markersbach PSS A,psw markersbach pss a,Pumpspeicher,174.2,08352,Raschau-Markersbach
+SEE999306148830,HDH_004_Industrieheizkraftwerk-Heidenheim_GM3,hdh_004_industrieheizkraftwerk-heidenheim_gm3,Erdgas,4.225,89522,Heidenheim
+SEE929069715185,Biomasse-Verstromungs-Anlage,biomasse-verstromungs-anlage,Biomasse,18.0,58099,Hagen
+SEE929083016459,BHKW Köpenick Gasturbine 1,bhkw köpenick gasturbine 1,Erdgas,5.0,12557,Berlin
+SEE933649593711,Au F2,au f2,Wasser,4.0,89257,Illertissen
+SEE982556430190,Raffineriekraftwerk Leuna HDT,raffineriekraftwerk leuna hdt,Mineraloelprodukte,29.3,06237,Leuna
+SEE982806373970,Batterie Eisenach,batterie eisenach,Batteriespeicher,10.35,99817,Eisenach
+SEE990065849372,TS I,ts i,Abfall,8.7,97076,Würzburg
+SEE990523934756,"Shell Energy and Chemicals Park, Kraftwerk Wesseling, Turbine 1",shell energy and chemicals park kraftwerk wesseling turbine 1,Mineraloelprodukte,35.0,50389,Wesseling
+SEE999239610039,trlyr 8,trlyr 8,Batteriespeicher,20.19,49429,Visbek
+SEE945148512650,PSW Goldisthal PSS A,psw goldisthal pss a,Pumpspeicher,263.0,98746,Goldisthal
+SEE955085348786,Gasmotoren-Blockheizkraftwerk II (Generator 9),gasmotoren-blockheizkraftwerk ii,Erdgas,3.772,01468,Moritzburg
+SEE964041814975,Kraftwerk Eberswalde GmbH (HoKaWe),kraftwerk eberswalde gmbh,Biomasse,20.0,16225,Eberswalde
+SEE966089822219,BHKW KW5 58,bhkw kw5 58,Erdgas,9.93,55120,Mainz
+SEE960934136643,bnBm GasKW BIB GT2,bnbm gaskw bib gt2,Erdgas,34.4,68647,Biblis
+SEE941420464426,Zeltingen Maschine 3,zeltingen maschine 3,Wasser,3.4,54492,Zeltingen-Rachtig
+SEE942956157011,Turbosatz 2,turbosatz 2,Abfall,18.0,50735,Köln
+SEE945462188876,LEV KWG G19,lev kwg g19,Erdgas,27.47,51373,Leverkusen
+SEE945785612836,SWM Uppenborn 1 Gen4,swm uppenborn 1 gen4,Wasser,1.1,85368,Wang
+SEE948865320546,Pfrombach D F1,pfrombach d f1,Wasser,4.38,85368,Moosburg
+SEE950593842498,Remondis Thermische Abfallverwertung GmbH,remondis thermische abfallverwertung gmbh,Abfall,24.0,39418,Staßfurt
+SEE987512757786,IKW Block 8,ikw block 8,Erdgas,88.11,15890,Eisenhüttenstadt
+SEE987729168146,KWK 1 - Kesselhaus,kwk 1 - kesselhaus,Erdgas,5.0,35260,Stadtallendorf
+SEE971304457053,HKW -  K6 DT2,hkw - k6 dt2,Erdgas,16.317,91052,Erlangen
+SEE987113516188,Mitte BHKW 2 Modul 1,mitte bhkw 2 modul 1,Erdgas,4.472,47053,Duisburg
+SEE984453739475,WKW Rudolf-Fettweis-Werk PSW Schwarzenbach M7,wkw rudolf-fettweis-werk psw schwarzenbach m7,Wasser,21.5,76596,Forbach
+SEE988178455061,Gasturbine 02 Industriekraftwerk,gasturbine 02 industriekraftwerk,Erdgas,63.5,06406,Bernburg
+SEE994929345864,Dampfturbine II Südzucker Rain,dampfturbine ii südzucker rain,Waerme,4.615,86641,Rain
+SEE997020557907,DGW TG 15,dgw tg 15,Waerme,16.616,44147,Dortmund
+SEE999258963376,BHKW Boddenluft,bhkw boddenluft,Erdgas,4.5,17489,Greifswald
+SEE981133916751,GT-Anlage2,gt-anlage2,Erdgas,7.8015,34474,Diemelstadt
+SEE982138852266,BHKW-Süd,bhkw-süd,Erdgas,4.162,17489,Greifswald
+SEE982484501641,Kraftwerk Wasserburg MS3 110 kV,kraftwerk wasserburg ms3 110 kv,Wasser,4.82,83512,Wasserburg
+SEE988848971327,"HKW Reuter, Dampfturbine M",hkw reuter dampfturbine m,Waerme,36.0,13599,Berlin
+SEE991087959599,Dampfturbine 1 Jena,dampfturbine 1 jena,Erdgas,25.0,07745,Jena
+SEE994538470544,Gasturbine 2 Jena,gasturbine 2 jena,Erdgas,39.0,07745,Jena
+SEE971244426065,Turbine 1,turbine 1,Biomasse,34.0,33609,Bielefeld
+SEE997354262225,Motor 4,motor 4,Biomasse,1.048,28870,Ottersberg
+SEE999819576335,Block 2,block 2,Abfall,33.6,39126,Magdeburg
+SEE982064123652,KW Wyhlen Straflo 04,kw wyhlen straflo 04,Wasser,4.5,79639,Grenzach-Wyhlen
+SEE987709592503,ET HO 2,et ho 2,Sonstige Energietraeger (nicht erneuerbar),18.0,47166,Duisburg
+SEE991220769276,Dormagen DT,dormagen dt,Erdgas,194.0,41540,Dormagen
+SEE992213654456,Huckingen B,huckingen b,Sonstige Energietraeger (nicht erneuerbar),303.0,47259,Duisburg
+SEE967332608451,BESS - Batteriespeicher SchwörerHaus KG,bess - batteriespeicher schwörerhaus kg,Batteriespeicher,3.78,72531,Hohenstein
+SEE967700439199,BESS Quedlinburg,bess quedlinburg,Batteriespeicher,13.8,06485,Quedlinburg
+SEE969670581717,KW2 DT27,kw2 dt27,Erdgas,250.0,55120,Mainz
+SEE975815924073,P37,p37,Erdgas,4.5,68167,Mannheim
+SEE976193474983,LEV KWG G21,lev kwg g21,Steinkohle,12.671,51373,Leverkusen
+SEE976995281321,Kraftwerk Fulda Aggregat 3A,kraftwerk fulda aggregat 3a,Mineraloelprodukte,2.76,36043,Fulda
+SEE939643489500,Biomasse Heizkraftwerk Siegerland (BHSi),biomasse heizkraftwerk siegerland,Biomasse,20.0,56479,Liebenscheid
+SEE945401341942,BHKW KW5 56,bhkw kw5 56,Erdgas,9.93,55120,Mainz
+SEE945569399960,BHKW KW5 59,bhkw kw5 59,Erdgas,9.93,55120,Mainz
+SEE988421065542,UER N230 NST2,uer n230 nst2,Steinkohle,15.2,47829,Krefeld
+SEE989342161450,Gasturbine 2 (TBM),gasturbine 2,Erdgas,6.528,27318,Hoya
+SEE994853801559,KW Laufenburg Maschine 5,kw laufenburg maschine 5,Wasser,10.442,5080,Laufenburg
+SEE995049451596,Kraftwerk Wasserburg MS5 20 kV,kraftwerk wasserburg ms5 20 kv,Wasser,4.82,83512,Wasserburg
+SEE943750140889,4MKA,4mka,Mineraloelprodukte,59.0,16303,Schwedt
+SEE944229371742,Kraftwerk Feldkrichen MS3,kraftwerk feldkrichen ms3,Wasser,12.733,83543,Rott
+SEE991332001752,KW Laufenburg Maschine 6,kw laufenburg maschine 6,Wasser,10.442,5080,Laufenburg
+SEE995596088894,Wuppertal Kraftwerk Turbine 3,wuppertal kraftwerk turbine 3,Erdgas,5.5,42289,Wuppertal
+SEE999927238279,WKW Rudolf-Fettweis-Werk Murgwerk M5,wkw rudolf-fettweis-werk murgwerk m5,Wasser,4.4,76596,Forbach
+SEE938639845887,HHKW Berlin-Neukölln,hhkw berlin-neukölln,Biomasse,21.634,12355,Berlin
+SEE956061511231,GuD Anlage DT,gud anlage dt,Erdgas,1.434,04687,Trebsen
+SEE959745626917,Prüfstand 11,prüfstand 11,Erdgas,3.95,86165,Augsburg
+SEE960100973492,HKW Wedel Block 1,hkw wedel block 1,Steinkohle,137.0,22880,Wedel
+SEE961847934449,VW Baunatal Gasturbine,vw baunatal gasturbine,Erdgas,45.07,34225,Baunatal
+SEE962185382367,PKV Kraftwerk BGM 1,pkv kraftwerk bgm 1,Biomasse,1.0,26316,Varel
+SEE964821359092,GT1,gt1,Erdgas,4.459,63225,Langen
+SEE967403086416,Speicher Braunsbedra,speicher braunsbedra,Batteriespeicher,5.0,06217,Merseburg
+SEE989300885374,WKW Unteropfingen M3,wkw unteropfingen m3,Wasser,3.325,88457,Kirchdorf
+SEE989457180636,SMAREG5 Hildburghausen,smareg5 hildburghausen,Batteriespeicher,12.0,98646,Hildburghausen
+SEE992607731794,Turbine 4,turbine 4,Waerme,9.23,47829,Krefeld
+SEE992864019192,GT5,gt5,Erdgas,55.4,06237,Leuna
+SEE994551453975,Generator A,generator a,Abfall,20.0,42349,Wuppertal
+SEE999630346957,KWK Baruth,kwk baruth,Biomasse,7.8,15837,Baruth
+SEE999966551940,HKW Potsdam-Süd Block1,hkw potsdam-süd block1,Erdgas,40.9,14478,Potsdam
+SEE941708872783,GBS KW Weiher,gbs kw weiher,Batteriespeicher,15.0,66287,Quierschied
+SEE943653719359,PSW Goldisthal PSS C,psw goldisthal pss c,Pumpspeicher,263.0,98746,Goldisthal
+SEE944787978346,Gaskesselhaus DT,gaskesselhaus dt,Erdgas,5.544,50127,Bergheim
+SEE948068633795,Wasserkraftwerk Dörverden,wasserkraftwerk dörverden,Wasser,5.0,27313,Dörverden
+SEE950589701143,Gaskraftwerk Emden - Gasturbine,gaskraftwerk emden - gasturbine,Erdgas,52.0,26725,Emden
+SEE950981928360,TG4,tg4,Erdgas,10.9,49808,Lingen
+SEE953048986860,Fabrik NE GT Tr,fabrik ne gt tr,Erdgas,5.1,36119,Neuhof
+SEE953508633730,SWM Leitzach 2 M21,swm leitzach 2 m21,Pumpspeicher,22.0,83620,Feldkirchen-Westerham
+SEE976459856379,S300 VT1,s300 vt1,Waerme,28.0,67063,Ludwigshafen
+SEE982127973149,Kombi-HKW GT2,kombi-hkw gt2,Erdgas,31.15,34134,Kassel
+SEE983340579781,SMAREG3 Eisfeld,smareg3 eisfeld,Batteriespeicher,12.0,98673,Eisfeld
+SEE984068604342,SEDE607510036,sede607510036,Erdgas,4.472,07546,Gera
+SEE985036646654,Gasmotoren-Heizkraftwerk Dresden-Reick - Aggregat II,gasmotoren-heizkraftwerk dresden-reick - aggregat ii,Erdgas,11.5,01277,Dresden
+SEE985107237163,Anlage 2013,anlage 2013,Biomasse,4.95,04860,Torgau
+SEE988684097793,HKW Klingenberg Dampfturbine 2,hkw klingenberg dampfturbine 2,Erdgas,56.0,10317,Berlin
+SEE994048824899,Bittenbrunn E K3,bittenbrunn e k3,Wasser,6.73,86633,Neuburg
+SEE996548424685,IKW Block 4,ikw block 4,Sonstige Energietraeger (nicht erneuerbar),34.7,15890,Eisenhüttenstadt
+SEE971156902916,SEDE607510037,sede607510037,Erdgas,4.387,07549,Gera
+SEE972467909069,Schwabstadl K(Ro)3,schwabstadl k 3,Wasser,4.0,86937,Scheuring
+SEE977512784516,Kraftwerk Rosenheim MS1,kraftwerk rosenheim ms1,Wasser,11.7,83101,Rohrdorf
+SEE980276191377,Altheim K2,altheim k2,Wasser,5.718,84051,Essenbach
+SEE977273010268,"Kraftwerk IV, DT 411",kraftwerk iv dt 411,Erdgas,13.76,45772,Marl
+SEE978426302629,Kraftwerk Fulda Aggregat 2,kraftwerk fulda aggregat 2,Mineraloelprodukte,6.29,36043,Fulda
+SEE985657410085,KIT_CN_BHKW_266_MPP1,kit_cn_bhkw_266_mpp1,Erdgas,4.432,76344,Eggenstein-Leopoldshafen
+SEE991388294085,Pielweichs K2,pielweichs k2,Wasser,4.2,94447,Plattling
+SEE991633857065,GUD-1-1 (GT1),gud-1-1,Erdgas,31.0,48155,Münster
+SEE993054223955,Turbosatz 2,turbosatz 2,Abfall,40.4,46049,Oberhausen
+SEE995754822537,PKV Dampfsammelschienen-KWK-Anlage Generator / Turbine GT 8a,pkv dampfsammelschienen-kwk-anlage generator turbine gt 8a,Erdgas,6.127,26316,Varel
+SEE999145467468,GoWerk F,gowerk f,Braunkohle,63.0,50354,Hürth
+SEE947677200282,Schkopau B,schkopau b,Braunkohle,450.0,06258,Schkopau
+SEE947712976042,Kraftwerk NE GT KW,kraftwerk ne gt kw,Erdgas,1.214,36119,Neuhof
+SEE948129095272,Irsching 4,irsching 4,Erdgas,576.0,85088,Vohburg
+SEE954086855965,1MKA,1mka,Mineraloelprodukte,106.0,16303,Schwedt
+SEE942366584926,SWM HKW Nord 1 T10,swm hkw nord 1 t10,Abfall,18.0,85774,Unterföhring
+SEE946744372112,IPH Strom GTX1,iph strom gtx1,Erdgas,53.6,65929,Frankfurt
+SEE953182244383,MHKW Mannheim Generator X1,mhkw mannheim generator x1,Abfall,4.08,68169,Mannheim
+SEE953730197888,MHKW Mannheim Generator TD0,mhkw mannheim generator td0,Abfall,4.26,68169,Mannheim
+SEE955482235511,Maschine 4,maschine 4,Mineraloelprodukte,12.7,76187,Karlsruhe
+SEE958578071345,KWK II HS Timber,kwk ii hs timber,Biomasse,5.28,02923,Kodersdorf
+SEE958897712714,BHKW2,bhkw2,Erdgas,1.9805,63225,Langen
+SEE963537340127,BESS Leuna 3,bess leuna 3,Batteriespeicher,46.332,06217,Merseburg
+SEE984246933080,illwerke vkw Lünerseewerk M1,illwerke vkw lünerseewerk m1,Pumpspeicher,56.0,A-6774,Tschagguns
+SEE986008964080,illwerke vkw Latschauwerk M2,illwerke vkw latschauwerk m2,Wasser,4.0,A-6774,Tschagguns
+SEE968091522767,PSW Hohenwarte 2 PSS A,psw hohenwarte 2 pss a,Pumpspeicher,39.7,07338,Hohenwarte
+SEE969304380679,KW Witznau MS A3,kw witznau ms a3,Pumpspeicher,55.0,79777,Ühlingen-Birkendorf
+SEE974206815730,TG-1901,tg-1901,Mineraloelprodukte,7.3,76187,Karlsruhe
+SEE974711013546,Raffineriekraftwerk Leuna NDT,raffineriekraftwerk leuna ndt,Mineraloelprodukte,29.8,06237,Leuna
+SEE983264343635,Schaper Grid Energy Storage Herford,schaper grid energy storage herford,Batteriespeicher,18.0,32051,Herford
+SEE984394943115,illwerke vkw Rodundwerk I M2,illwerke vkw rodundwerk i m2,Pumpspeicher,50.0,A-6773,Vandans
+SEE991324265957,DT06,dt06,Erdgas,14.383,53909,Zülpich
+SEE994968008959,ZI Tr GT3,zi tr gt3,Erdgas,1.403,39326,Zielitz
+SEE995077047419,HKW Wörth,hkw wörth,Erdgas,90.784,76744,Wörth
+SEE929050048728,Gaskesselhaus GT,gaskesselhaus gt,Erdgas,6.467,50127,Bergheim
+SEE930306010543,Turbine 7,turbine 7,Biomasse,12.3,75175,Pforzheim
+SEE932664806912,Gasmotoren-Blockheizkraftwerk I (Generator 2),gasmotoren-blockheizkraftwerk i,Erdgas,3.879,01468,Moritzburg
+SEE938018666973,Fabrik NE GT Tr.,fabrik ne gt tr,Erdgas,5.1,36119,Neuhof
+SEE941055812814,SI-Gasmotor (12 V 32/40),si-gasmotor,Erdgas,5.235,86153,Augsburg
+SEE942845579245,KWK Hiltrop,kwk hiltrop,Erdgas,43.412,44805,Bochum
+SEE953907486180,FZJ_WVVZ-03.19_BHKW-2,fzj_wvvz-03 19_bhkw-2,Erdgas,4.3,52428,Jülich
+SEE938477978983,Biggekraftwerk Generator 1,biggekraftwerk generator 1,Wasser,4.8,57439,Attendorn
+SEE938782869693,Müllheizkraftwerk Offenbach Turbine 1,müllheizkraftwerk offenbach turbine 1,Abfall,16.762,63069,Offenbach
+SEE944886199833,Neef Maschine 3,neef maschine 3,Wasser,4.1,56858,Neef
+SEE952372080091,SWM HKW Nord 2 T20,swm hkw nord 2 t20,Erdgas,333.0,85774,Unterföhring
+SEE955407848307,Ingolstadt E K3,ingolstadt e k3,Wasser,6.6,85049,Ingolstadt
+SEE959449135135,W059-RD_Geb. 130/8_5001-5032+1030-1032,w059-rd_geb 130 8_5001-5032 1030-1032,Mineraloelprodukte,9.39,70327,Stuttgart
+SEE949049420311,Landau K3,landau k3,Wasser,4.2,94431,Pilsting
+SEE957723162266,HKW Karcherstraße (T1),hkw karcherstraße,Erdgas,5.8,67655,Kaiserslautern
+SEE963374030953,Batterie Rechtenbach,batterie rechtenbach,Batteriespeicher,16.0,35625,Hüttenberg
+SEE963975943188,Heizkraftwerk Altbach/Deizisau GT B,heizkraftwerk altbach deizisau gt b,Erdgas,57.0,73776,Altbach
+SEE965782597448,Heizkraftwerk Altbach/Deizisau HKW 2 DT (Solobetrieb),heizkraftwerk altbach deizisau hkw 2 dt,Steinkohle,323.0,73776,Altbach
+SEE966091400436,Q_ESS_Elverlingsen,q_ess_elverlingsen,Batteriespeicher,17.08,58791,Werdohl
+SEE968986286460,Untereichen F3,untereichen f3,Wasser,2.0,89281,Altenstadt
+SEE974018310478,Generator 4,generator 4,Braunkohle,9.2,49090,Osnabrück
+SEE975444777408,TögingNeu MS3,tögingneu ms3,Wasser,40.0,84513,Töging
+SEE982332501670,Kraftwerk Rosenheim MS2,kraftwerk rosenheim ms2,Wasser,11.7,83101,Rohrdorf
+SEE982564834379,Altheim K1,altheim k1,Wasser,5.718,84051,Essenbach
+SEE985206646330,Küstenkraftwerk K.I.E.L Motor 10,küstenkraftwerk k i e l motor 10,Erdgas,9.456,24149,Kiel
+SEE987007884447,Weisweiler G,weisweiler g,Braunkohle,663.0,52249,Eschweiler
+SEE993385162510,BVI-NT,bvi-nt,Steinkohle,5.786,59821,Arnsberg
+SEE974767618801,Mitte BHKW 2 Modul 2,mitte bhkw 2 modul 2,Erdgas,4.472,47053,Duisburg
+SEE978399772948,GT12,gt12,Erdgas,27.6,42275,Wuppertal
+SEE979861364876,Kraftwerk WI DT 2.1,kraftwerk wi dt 2 1,Erdgas,52.7,36266,Heringen
+SEE996946209945,P12,p12,Erdgas,3.375,68167,Mannheim
+SEE997108032975,KIT_CN_BHKW_0255,kit_cn_bhkw_0255,Erdgas,1.98,76344,Eggenstein-Leopoldshafen
+SEE997216629753,PKV Dampfsammelschienen-KWK-Anlage Generator / Turbine DT 13,pkv dampfsammelschienen-kwk-anlage generator turbine dt 13,Waerme,7.061,26316,Varel
+SEE997982071411,Neef Maschine 2,neef maschine 2,Wasser,4.1,56858,Neef
+SEE976352702957,trlyr 9,trlyr 9,Batteriespeicher,17.25,29614,Soltau
+SEE976533716001,Gersthofen M4,gersthofen m4,Wasser,1.969,86368,Gersthofen
+SEE977277909087,Mühltal F1,mühltal f1,Wasser,3.74,82064,Straßlach-Dingharting
+SEE980016033738,Rheinhafen-Dampfkraftwerk RDK 7,rheinhafen-dampfkraftwerk rdk 7,Steinkohle,517.0,76189,Karlsruhe
+SEE980046698020,Turbine 5,turbine 5,Waerme,54.0,76187,Karlsruhe
+SEE980337143772,WKW Reckingen M2,wkw reckingen m2,Wasser,21.0,79761,Waldshut-Tiengen
+SEE955076814825,"Motor-Heizkraftwerk Chemnitz-Nord, Motor 7",motor-heizkraftwerk chemnitz-nord motor 7,Erdgas,12.538,09114,Chemnitz
+SEE956441736957,Gasmotoren-Blockheizkraftwerk I (Generator 6),gasmotoren-blockheizkraftwerk i,Erdgas,3.879,01468,Moritzburg
+SEE934353123843,Batterie Iphofen,batterie iphofen,Batteriespeicher,20.7,97346,Iphofen
+SEE939426112649,Gersteinwerk I DT (I2),gersteinwerk i dt,Erdgas,355.0,59368,Werne
+SEE940779412058,KW Häusern MS A1,kw häusern ms a1,Pumpspeicher,30.0,79837,Häusern
+SEE948093740512,MHKW Mannheim Generator TE0,mhkw mannheim generator te0,Abfall,4.26,68169,Mannheim
+SEE949306551550,BHKW,bhkw,Erdgas,1.999,20251,Hamburg
+SEE957119289898,W059-RD_122/IV_0463-0469,w059-rd_122 iv_0463-0469,Mineraloelprodukte,8.622,70327,Stuttgart
+SEE987324322059,Küstenkraftwerk K.I.E.L Motor 20,küstenkraftwerk k i e l motor 20,Erdgas,9.456,24149,Kiel
+SEE988046628214,Gasturbinenkraftwerk Ahrensfelde GT C,gasturbinenkraftwerk ahrensfelde gt c,Erdgas,37.104,16356,Ahrensfelde
+SEE989520528877,BMKW Bischofferode,bmkw bischofferode,Biomasse,18.1,37345,Am Ohmberg
+SEE993546424112,Turbine 2,turbine 2,Abfall,12.62,31789,Hameln
+SEE994391041424,Kraftwerk Marbach MAR 3 GT (solo),kraftwerk marbach mar 3 gt,Mineraloelprodukte,85.0,71672,Marbach
+SEE967003406416,Pfrombach D F2,pfrombach d f2,Wasser,4.38,85368,Moosburg
+SEE970820981745,"Kraftwerk VI, Block 62, DT620",kraftwerk vi block 62 dt620,Erdgas,35.98,45772,Marl
+SEE949646756097,FZJ_BATA_10.55,fzj_bata_10 55,Batteriespeicher,1.05,52428,Jülich
+SEE951582148140,BHKW KW5 51,bhkw kw5 51,Erdgas,9.93,55120,Mainz
+SEE993922966908,KWK 3 Geb. 192.0,kwk 3 geb 192 0,Erdgas,4.13,84130,Dingolfing
+SEE995462815548,HKW Schildescher Straße DT 4,hkw schildescher straße dt 4,Erdgas,28.5,33611,Bielefeld
+SEE999051917675,Speicher Jerchel West - Teilanlage 3,speicher jerchel west - teilanlage 3,Batteriespeicher,5.6,14715,Milower Land
+SEE953872640426,Dampfturbine,dampfturbine,Waerme,35.2,48155,Münster
+SEE954220263762,Vohburg E K2,vohburg e k2,Wasser,7.76,85088,Vohburg
+SEE997719859992,HKW Klingenberg Dampfturbine 1,hkw klingenberg dampfturbine 1,Erdgas,52.0,10317,Berlin
+SEE998356674993,GT1,gt1,Erdgas,4.946,53909,Zülpich
+SEE998558143099,Generator Jülich,generator jülich,Erdgas,22.86,52428,Jülich
+SEE974805767829,IPH Strom GTX 8,iph strom gtx 8,Erdgas,89.116,65929,Frankfurt
+SEE976489828827,LEV KWG G11,lev kwg g11,Steinkohle,19.235,51373,Leverkusen
+SEE978654614532,Gersteinwerk H1,gersteinwerk h1,Erdgas,46.0,59368,Werne
+SEE982248430859,Kraftwerk Fulda Aggregat 5,kraftwerk fulda aggregat 5,Mineraloelprodukte,1.12,36043,Fulda
+SEE987913244618,PKV Dampfsammelschienen-KWK-Anlage Generator / Turbine DT 7,pkv dampfsammelschienen-kwk-anlage generator turbine dt 7,Waerme,12.025,26316,Varel
+SEE959496642280,AVA Velsen GmbH,ava velsen gmbh,Abfall,16.0,66127,Saarbrücken
+SEE959614237596,Kraftwerk Fulda Aggregat 4B,kraftwerk fulda aggregat 4b,Mineraloelprodukte,2.76,36043,Fulda
+SEE961674911293,KW Witznau MS A4,kw witznau ms a4,Pumpspeicher,55.0,79777,Ühlingen-Birkendorf
+SEE963154903477,KWK Adlershof Modul 4,kwk adlershof modul 4,Erdgas,4.39,12489,Berlin
+SEE968039156900,Biggekraftwerk Generator 3,biggekraftwerk generator 3,Wasser,4.8,57439,Attendorn
+SEE968234156613,LEV KWX G20,lev kwx g20,Erdgas,25.0,51373,Leverkusen
+SEE968847258773,Heizkraftwerk Heilbronn HLB 5,heizkraftwerk heilbronn hlb 5,Steinkohle,125.0,74076,Heilbronn
+SEE969618944758,Zeltingen Maschine 1,zeltingen maschine 1,Wasser,3.4,54492,Zeltingen-Rachtig
+SEE975556152230,Heizkraftwerk Altbach/Deizisau HKW 2 GT E (Solobetrieb),heizkraftwerk altbach deizisau hkw 2 gt e,Erdgas,65.0,73776,Altbach
+SEE954787876719,Energieanlage 1,energieanlage 1,Biomasse,4.5,16909,Heiligengrabe
+SEE956085205437,Turbine/Generator 8,turbine generator 8,Erdgas,45.8,84489,Burghausen
+SEE965711846036,KWK 2 - Kesselhaus,kwk 2 - kesselhaus,Erdgas,7.5,35260,Stadtallendorf
+SEE970425279599,Kraftwerk Wilhelmshaven Onyx,kraftwerk wilhelmshaven onyx,Steinkohle,726.0,26386,Wilhelmshaven
+SEE988296656760,Dampfturbine III Südzucker Plattling,dampfturbine iii südzucker plattling,Waerme,7.725,94447,Plattling
+SEE997618485445,Steinbeis Energie Papenburg GmbH,steinbeis energie papenburg gmbh,Biomasse,20.8,26871,Papenburg
+SEE932041539754,illwerke vkw Obervermuntwerk I M2,illwerke vkw obervermuntwerk i m2,Wasser,18.0,A-6794,Partenen
+SEE933639931950,Kraftwerk NE GT KW,kraftwerk ne gt kw,Erdgas,1.751,36119,Neuhof
+SEE944656117388,Heimbach Maschine 1,heimbach maschine 1,Wasser,8.0,52396,Heimbach
+SEE983877705974,Gasturbinenkraftwerk Thyrow GT E,gasturbinenkraftwerk thyrow gt e,Erdgas,38.34,15806,Zossen
+SEE985411751317,Kraftwerk Teufelsbruck MS5,kraftwerk teufelsbruck ms5,Wasser,5.0,83564,Soyen
+SEE985908351792,Emsland B DT,emsland b dt,Erdgas,359.0,49808,Lingen
+SEE993590107580,PSW Glems 1,psw glems 1,Pumpspeicher,45.0,72555,Metzingen
+SEE998216550733,TWIN 1,twin 1,Abfall,4.69,26826,Weener
+SEE998479256069,Dampfturbine III Südzucker AG Ochsenfurt,dampfturbine iii südzucker ag ochsenfurt,Erdgas,16.547,97199,Ochsenfurt
+SEE999539592561,Dampfturbine 12,dampfturbine 12,Erdgas,27.2,24939,Flensburg
+SEE971746670720,Fankel Maschine 1,fankel maschine 1,Wasser,4.1,56814,Bruttig-Fankel
+SEE972880386287,Speicher 3,speicher 3,Batteriespeicher,20.0,25821,Reußenköge
+SEE963815106018,Mercer Stendal TG 2,mercer stendal tg 2,Biomasse,45.762,39596,Arneburg
+SEE994477053693,Turbosatz 3,turbosatz 3,Erdgas,4.831,86833,Ettringen
+SEE994826833730,Küstenkraftwerk K.I.E.L Motor 19,küstenkraftwerk k i e l motor 19,Erdgas,9.456,24149,Kiel
+SEE999588015110,Turbine 3,turbine 3,Abfall,26.0,60439,Frankfurt
+SEE968984873471,P34,p34,Erdgas,1.32,68167,Mannheim
+SEE977514334252,Müllheizkraftwerk Offenbach Turbine 2,müllheizkraftwerk offenbach turbine 2,Abfall,2.12,63069,Offenbach
+SEE980645990990,W059-RD_Geb. 130/8_3001-3032,w059-rd_geb 130 8_3001-3032,Mineraloelprodukte,9.826,70327,Stuttgart
+SEE983926102600,PST_210,pst_210,Erdgas,4.4175,88048,Friedrichshafen
+SEE985446296883,Neef Maschine 4,neef maschine 4,Wasser,4.1,56858,Neef
+SEE987326760026,Generator 1,generator 1,Erdgas,17.65,31249,Hohenhameln
+SEE957726925516,Dampfturbineneinheit 3,dampfturbineneinheit 3,Abfall,4.44,42655,Solingen
+SEE958354990617,BES ELS,bes els,Batteriespeicher,20.295,06729,Elsteraue
+SEE959343099212,Kraftwerk Kirchlengern_GT1,kraftwerk kirchlengern_gt1,Erdgas,102.0,32278,Kirchlengern
+SEE964242179781,Gersteinwerk K,gersteinwerk k,Erdgas,112.0,59368,Werne
+SEE969190320896,Pielweichs K1,pielweichs k1,Wasser,4.2,94447,Plattling
+SEE969468708715,BESS Leuna 4,bess leuna 4,Batteriespeicher,46.332,06217,Merseburg
+SEE991358537341,Enkirch Maschine 3,enkirch maschine 3,Wasser,4.6,56850,Enkirch
+SEE991939746742,Langenprozelten E F1,langenprozelten e f1,Pumpspeicher,82.0,97737,Gemünden
+SEE992980224760,KWK Adlershof Modul 1,kwk adlershof modul 1,Erdgas,4.39,12489,Berlin
+SEE994351082467,"Kraftwerk VI, Block 61, DT610",kraftwerk vi block 61 dt610,Erdgas,35.7,45772,Marl
+SEE996136363488,GT12,gt12,Erdgas,46.5,64293,Darmstadt
+SEE998402334093,Batterie HKW Bi Hybrid,batterie hkw bi hybrid,Batteriespeicher,7.5,33611,Bielefeld
+SEE965922127559,Trier Maschine 1,trier maschine 1,Wasser,4.7,54294,Trier
+SEE966264899036,FHKW DT5,fhkw dt5,Waerme,9.1443,67063,Ludwigshafen
+SEE971949289934,Prüfstand 5,prüfstand 5,Erdgas,3.15,86165,Augsburg
+SEE974889284021,Expansionsturbinen S,expansionsturbinen s,Sonstige Energietraeger (nicht erneuerbar),1.2,26197,Großenkneten
+SEE979360835242,Dampfturbineneinheit 2,dampfturbineneinheit 2,Abfall,2.8,42655,Solingen
+SEE988071059649,V159 ET,v159 et,Sonstige Energietraeger (nicht erneuerbar),2.25,67063,Ludwigshafen
+SEE989591633753,Kraftwerk Jänschwalde Block C,kraftwerk jänschwalde block c,Braunkohle,500.0,03185,Teichland
+SEE997242656822,GT 3,gt 3,Erdgas,33.0,99087,Erfurt
+SEE998261618013,Turbine 1,turbine 1,Abfall,4.93,31789,Hameln
+SEE998778600532,WUN Pellets - BHKW-Modul I,wun pellets - bhkw-modul i,Erdgas,4.41,95632,Wunsiedel
+SEE972598164399,Dampfturbine,dampfturbine,Erdgas,2.04,21107,Hamburg
+SEE981003349412,T6,t6,Abfall,14.44,24534,Neumünster
+SEE991322361361,Pfreimd R1,pfreimd r1,Pumpspeicher,33.0,92555,Trausnitz
+SEE994335340088,HKW DT,hkw dt,Braunkohle,16.958,15236,Frankfurt
+SEE997355230520,BHKW 1 Alfred-Leikam-Straße SHA,bhkw 1 alfred-leikam-straße sha,Biomasse,7.549,74523,Schwäbisch Hall
+SEE998292984538,illwerke vkw Kopswerk II M1,illwerke vkw kopswerk ii m1,Pumpspeicher,175.0,A-6793,Gaschurn
+SEE979257485857,Alzwerk Maschine 4,alzwerk maschine 4,Wasser,10.08,84489,Burghausen
+SEE946501569267,TG8,tg8,Erdgas,12.0,47443,Moers
+SEE946934017984,EBS-HKW Rostock,ebs-hkw rostock,Abfall,18.5,18147,Rostock
+SEE990778985312,GuD West 50 Gasturbine,gud west 50 gasturbine,Erdgas,101.0,38440,Wolfsburg
+SEE994429144455,HKW West Block 4,hkw west block 4,Erdgas,110.755,60327,Frankfurt
+SEE996357195448,Koblenz Maschine 3,koblenz maschine 3,Wasser,4.0,56073,Koblenz
+SEE973737205324,Irsching 5 GT1,irsching 5 gt1,Erdgas,282.0,85088,Vohburg
+SEE984944424651,Obervermuntwerk II Maschine 2 Turbine,obervermuntwerk ii maschine 2 turbine,Pumpspeicher,190.0,A-6794,Partenen
+SEE986030306643,MHKW DTS,mhkw dts,Abfall,15.0,55120,Mainz
+SEE986713152253,W050-TS_Mercedes-Benz Werk Sindelfingen HKW Turbine 4,w050-ts_mercedes-benz werk sindelfingen hkw turbine 4,Erdgas,28.5,71063,Sindelfingen
+SEE991627285584,KWK-Anlage: Generator 4 (Gas),kwk-anlage generator 4,Erdgas,4.5,50127,Bergheim
+SEE969707026280,LEV KWG G23,lev kwg g23,Steinkohle,5.484,51373,Leverkusen
+SEE970114818481,Kraftwerk UB DT3,kraftwerk ub dt3,Waerme,12.0,36414,Unterbreizbach
+SEE971801168636,Turboeinheit 2 Dampfturbine 40 t Gen 6 MW,turboeinheit 2 dampfturbine 40 t gen 6 mw,Erdgas,5.7,13353,Berlin
+SEE977934115554,HKW West M11 (2024),hkw west m11,Erdgas,2.282,99867,Gotha
+SEE978888539755,Mittel-Niederdruckdampfturbine,mittel-niederdruckdampfturbine,Erdgas,45.0,03052,Cottbus
+SEE980004472600,KWK Neumarkt,kwk neumarkt,Biomasse,15.275,92318,Neumarkt
+SEE970377695522,Gasmotoren-Blockheizkraftwerk I (Generator 7),gasmotoren-blockheizkraftwerk i,Erdgas,3.879,01468,Moritzburg
+SEE974201537415,Huntorf GT,huntorf gt,Erdgas,321.0,26931,Elsfleth
+SEE975343602986,KWK-Anlage: Generator 2,kwk-anlage generator 2,Braunkohle,9.9,50127,Bergheim
+SEE976549634931,SWD KWF GTKW,swd kwf gtkw,Mineraloelprodukte,86.2,40233,Düsseldorf
+SEE971686772294,Kraftwerk Teufelsbruck MS2,kraftwerk teufelsbruck ms2,Wasser,5.0,83564,Soyen
+SEE973101826070,Kraftwerk Plattling GT,kraftwerk plattling gt,Erdgas,78.157,94447,Plattling
+SEE977891692877,Kraftwerk Ering-Frauenstein MS2,kraftwerk ering-frauenstein ms2,Wasser,24.3,94140,Ering
+SEE979353792927,Küstenkraftwerk K.I.E.L Motor 18,küstenkraftwerk k i e l motor 18,Erdgas,9.456,24149,Kiel
+SEE987197130805,Tiefstack HKW Block 20,tiefstack hkw block 20,Steinkohle,189.0,22113,Hamburg
+SEE992472260238,Fernwärmekraftwerk Kassel DT1,fernwärmekraftwerk kassel dt1,Braunkohle,20.1,34134,Kassel
+SEE993957305321,G25,g25,Erdgas,13.52,36039,Fulda
+SEE994210380116,Kombi-HKW DT,kombi-hkw dt,Erdgas,9.76,34134,Kassel
+SEE995184714136,Solar Zerbst Batterie,solar zerbst batterie,Batteriespeicher,17.56,39261,Zerbst
+SEE998877345112,Biomethan BHKW 5 Hannover Stöcken,biomethan bhkw 5 hannover stöcken,Biomasse,4.5,30419,Hannover
+SEE990521990150,GBS KW Bexbach,gbs kw bexbach,Batteriespeicher,15.0,66450,Bexbach
+SEE997674469793,P35,p35,Erdgas,2.0,68167,Mannheim
+SEE998278854237,SWM HKW Nord 3 T30,swm hkw nord 3 t30,Abfall,22.0,85774,Unterföhring
+SEE952165584195,PSW Markersbach PSS B,psw markersbach pss b,Pumpspeicher,174.2,08352,Raschau-Markersbach
+SEE952857304476,Prüfstand 32,prüfstand 32,Erdgas,1.78,86153,Augsburg
+SEE971815239520,BESS - DE - ARZBERG - GMRW,bess - de - arzberg - gmrw,Batteriespeicher,50.5,95659,Arzberg
+SEE999106955379,Tiefstack GuD GT42,tiefstack gud gt42,Erdgas,50.0,22113,Hamburg
+SEE979557573551,KIT_CN_BHKW_612,kit_cn_bhkw_612,Erdgas,1.98,76344,Eggenstein-Leopoldshafen
+SEE979656996589,BioHKW Herbrechtingen GmbH,biohkw herbrechtingen gmbh,Biomasse,15.7,89542,Herbrechtingen
+SEE986413873564,MHKW_Gen2,mhkw_gen2,Abfall,13.3,28219,Bremen
+SEE994239952295,trlyr 3,trlyr 3,Batteriespeicher,10.35,95369,Untersteinach
+SEE994615652641,Wasserkraftwerk Langwedel,wasserkraftwerk langwedel,Wasser,6.468,27337,Blender
+SEE980794086872,Generator 4,generator 4,Erdgas,8.5,38315,Schladen
+SEE981351966712,M_02,m_02,Biomasse,2.004,53474,Bad Neuenahr-Ahrweiler
+SEE985842749525,Boxberg Block N,boxberg block n,Braunkohle,500.0,02943,Boxberg
+SEE998526561375,SN-Süd-GUD-DT,sn-süd-gud-dt,Erdgas,18.9034,19061,Schwerin
+SEE992079247007,Gasmotoren-Blockheizkraftwerk I (Generator 8),gasmotoren-blockheizkraftwerk i,Erdgas,3.879,01468,Moritzburg
+SEE994080011080,Walchenseekraftwerk E Pe4,walchenseekraftwerk e pe4,Wasser,13.0,82431,Kochel
+SEE996285049943,KW3 DT32,kw3 dt32,Erdgas,139.7,55120,Mainz
+SEE997706570718,GT3,gt3,Erdgas,5.025,28237,Bremen
+SEE998644964959,Gasturbine 1 Jena,gasturbine 1 jena,Erdgas,39.0,07745,Jena
+SEE999790559914,BESS Jardelund,bess jardelund,Batteriespeicher,48.0,24994,Jardelund
+SEE950047894776,W059-RD_Geb. 122/III,w059-rd_geb 122 iii,Mineraloelprodukte,9.44,70327,Stuttgart
+SEE953784241926,PKV Dampfsammelschienen-KWK-Anlage Generator / Turbine DT 9,pkv dampfsammelschienen-kwk-anlage generator turbine dt 9,Waerme,13.167,26316,Varel
+SEE954971534470,Bexbach,bexbach,Steinkohle,726.0,66450,Bexbach
+SEE955526290162,KIT_CN_BHKW_266_MPP2,kit_cn_bhkw_266_mpp2,Erdgas,4.432,76344,Eggenstein-Leopoldshafen
+SEE958335974377,Dampfturbine,dampfturbine,Abfall,12.5,56626,Andernach
+SEE958712241351,Batteriespeicher Marktleugast,batteriespeicher marktleugast,Batteriespeicher,15.0,95352,Marktleugast
+SEE989771083484,LEV KWG G02,lev kwg g02,Steinkohle,8.234,51373,Leverkusen
+SEE993408840296,"Kraftwerk I, EKT16",kraftwerk i ekt16,Steinkohle,45.99,45772,Marl
+SEE995899706617,Gersteinwerk I GT (I1),gersteinwerk i gt,Erdgas,55.0,59368,Werne
+SEE996145759296,Kraftwerk UB GT2,kraftwerk ub gt2,Erdgas,5.5,36414,Unterbreizbach
+SEE998111672394,IKW Wählitz,ikw wählitz,Braunkohle,31.0,06679,Hohenmölsen
+SEE960935066536,TG7,tg7,Erdgas,7.5,47443,Moers
+SEE965755251490,WKW Dettingen M1,wkw dettingen m1,Wasser,3.6,88451,Dettingen
+SEE967441234602,GT1,gt1,Erdgas,22.4,49808,Lingen
+SEE954281393200,Straubing K3,straubing k3,Wasser,7.1667,94315,Straubing
+SEE960254517375,TG6,tg6,Erdgas,10.1,49808,Lingen
+SEE960652233358,Schkopau A,schkopau a,Braunkohle,450.0,06258,Schkopau
+SEE961226195928,Kraftwerk Feldkirchen MS2,kraftwerk feldkirchen ms2,Wasser,12.733,83543,Rott
+SEE962934119541,HKW Charlottenburg Gasturbine 5,hkw charlottenburg gasturbine 5,Erdgas,72.0,10589,Berlin
+SEE973496721325,Gersthofen M2,gersthofen m2,Wasser,1.969,86368,Gersthofen
+SEE975561989005,Vianden M10,vianden m10,Pumpspeicher,196.0,9463,Stolzembourg
+SEE979899728817,KWK006-3,kwk006-3,Erdgas,4.241,47804,Krefeld
+SEE981577567892,Turbine 2,turbine 2,Erdgas,6.92,67468,Neidenfels
+SEE987278903410,Ma 4,ma 4,Sonstige Energietraeger (nicht erneuerbar),31.5,38239,Salzgitter
+SEE991316727548,Kraftwerk Gars MS1,kraftwerk gars ms1,Wasser,5.0,83536,Gars
+SEE992196002671,Niederaichbach K3,niederaichbach k3,Wasser,5.4,84051,Essenbach
+SEE994661495704,Spitzenlastkraftwerk Veits Dieseltandem 3,spitzenlastkraftwerk veits dieseltandem 3,Mineraloelprodukte,5.0,87448,Waltenhofen
+SEE974949152857,Batteriespeicher,batteriespeicher,Batteriespeicher,9.0,67063,Ludwigshafen
+SEE975302241416,Walchenseekraftwerk E Pe2,walchenseekraftwerk e pe2,Wasser,13.0,82431,Kochel
+SEE977519384276,Trier Maschiene 3,trier maschiene 3,Wasser,4.7,54294,Trier
+SEE980013554151,BHKW Ford Saarlouis Modul 2,bhkw ford saarlouis modul 2,Erdgas,4.322,66740,Saarlouis
+SEE985205009518,Dampfturbine I Südzucker Offenau,dampfturbine i südzucker offenau,Waerme,7.344,74254,Offenau
+SEE989756000338,Gersthofen M3,gersthofen m3,Wasser,1.969,86368,Gersthofen
+SEE992187994404,HKW Mitte Dampfturbine,hkw mitte dampfturbine,Waerme,116.0,10179,Berlin
+SEE998177335011,Holzkraftwerk,holzkraftwerk,Biomasse,1.45,33611,Bielefeld
+SEE998387657606,VW Baunatal Dampfturbine,vw baunatal dampfturbine,Waerme,29.304,34225,Baunatal
+SEE998559811041,NEZ Adlershof Modul 3,nez adlershof modul 3,Erdgas,1.97,12489,Berlin
+SEE999173384836,GM8,gm8,Erdgas,4.457,83022,Rosenheim
+SEE999195292805,016 BHKW Modul 1,016 bhkw modul 1,Erdgas,2.05,53127,Bonn
+SEE967069763799,SWM Leitzach 1 M11,swm leitzach 1 m11,Pumpspeicher,48.0,83620,Feldkirchen-Westerham
+SEE998984420832,HKW Nord Generator A,hkw nord generator a,Waerme,61.0,38440,Wolfsburg
+SEE999585452499,HKW Linden GT1,hkw linden gt1,Erdgas,82.0,30449,Hannover
+SEE932484697615,SWM Leitzach 2 M22,swm leitzach 2 m22,Pumpspeicher,22.0,83620,Feldkirchen-Westerham
+SEE939346315557,Speicher Beilrode I - Teilanlage 5,speicher beilrode i - teilanlage 5,Batteriespeicher,5.6,04886,Beilrode
+SEE939662192023,Windpark Reußenköge Batteriespeicher 1,windpark reußenköge batteriespeicher 1,Batteriespeicher,6.4,25821,Reußenköge
+SEE941619779157,Trier Maschine 2,trier maschine 2,Wasser,4.7,54294,Trier
+SEE958909269267,IPH Ersatzbrennstoffverbrennung Turbine,iph ersatzbrennstoffverbrennung turbine,Abfall,71.0,65929,Frankfurt
+SEE961196425506,Zeltingen Maschine 4,zeltingen maschine 4,Wasser,3.4,54492,Zeltingen-Rachtig
+SEE961202959384,PKV Dampfsammelschienen-KWK-Anlage Generator / Turbine GT 8b,pkv dampfsammelschienen-kwk-anlage generator turbine gt 8b,Erdgas,6.127,26316,Varel
+SEE963398776042,GT11,gt11,Erdgas,46.5,64293,Darmstadt
+SEE963962520354,BHKW1 Chemnitzer Straße 40,bhkw1 chemnitzer straße 40,Erdgas,4.313,09599,Freiberg
+SEE965966201352,Biggekraftwerk Generator 2,biggekraftwerk generator 2,Wasser,4.8,57439,Attendorn
+SEE996794687834,Merching K(Ro)2,merching k 2,Wasser,4.0,86504,Merching
+SEE997586162263,RKI Iffezheim M1,rki iffezheim m1,Wasser,27.0,76473,Iffezheim
+SEE990603147649,"Heizkraftwerk Bonn-Nord, Gasturbine 1 der GuD-Anlage",heizkraftwerk bonn-nord gasturbine 1 der gud-anlage,Erdgas,20.5,53115,Bonn
+SEE990935582224,Kraftwerk HA GT3,kraftwerk ha gt3,Erdgas,6.0,36269,Philippsthal
+SEE971876915975,Gasmotoren-Blockheizkraftwerk II (Generator 1),gasmotoren-blockheizkraftwerk ii,Erdgas,3.772,01468,Moritzburg
+SEE972779194474,"Motor-Heizkraftwerk Chemnitz-Nord, Motor 5",motor-heizkraftwerk chemnitz-nord motor 5,Erdgas,12.538,09114,Chemnitz
+SEE977356213593,Heimbach Maschine 2,heimbach maschine 2,Wasser,8.0,52396,Heimbach
+SEE987119743892,PSW Glems 2,psw glems 2,Pumpspeicher,45.0,72555,Metzingen
+SEE972356296461,Gasturbine,gasturbine,Erdgas,38.498,79108,Freiburg
+SEE969540726491,IPH Strom GTX3,iph strom gtx3,Erdgas,49.8,65929,Frankfurt
+SEE972180197972,Ingolstadt E K2,ingolstadt e k2,Wasser,6.6,85049,Ingolstadt
+SEE974434785997,Kraftwerk Perach MS3,kraftwerk perach ms3,Wasser,6.466,84567,Perach
+SEE975793104498,GM4,gm4,Erdgas,10.283,83022,Rosenheim
+SEE988996320985,P31,p31,Erdgas,1.84,68167,Mannheim
+SEE989785638618,Regensburg KWK 3,regensburg kwk 3,Erdgas,2.678,93055,Regensburg
+SEE946709181179,"Motor-Heizkraftwerk Chemnitz-Nord, Motor 4",motor-heizkraftwerk chemnitz-nord motor 4,Erdgas,12.538,09114,Chemnitz
+SEE952488583202,Kraftwerk HA DT1,kraftwerk ha dt1,Waerme,28.0,36269,Philippsthal
+SEE957639615832,Prüfstand 15,prüfstand 15,Erdgas,13.84,86153,Augsburg
+SEE960430412456,Gasmotoren-Blockheizkraftwerk II (Generator 5),gasmotoren-blockheizkraftwerk ii,Erdgas,3.772,01468,Moritzburg
+SEE955937262338,Turbosatz 1,turbosatz 1,Abfall,21.1,46049,Oberhausen
+SEE957201039868,GuD Anlage DREWSEN Spezialpapiere (Gasturbine),gud anlage drewsen spezialpapiere,Erdgas,7.0,29331,Lachendorf
+SEE994418588468,Emsland C DT,emsland c dt,Erdgas,359.0,49808,Lingen
+SEE982563254987,KW2 GT26,kw2 gt26,Erdgas,90.0,55120,Mainz
+SEE982923767645,WKW Dettingen M3,wkw dettingen m3,Wasser,3.6,88451,Dettingen
+SEE991810618885,Fankel Maschine 4,fankel maschine 4,Wasser,4.1,56814,Bruttig-Fankel
+SEE974236609859,"Motor-Heizkraftwerk Chemnitz-Nord, Motor 6",motor-heizkraftwerk chemnitz-nord motor 6,Erdgas,12.538,09114,Chemnitz
+SEE977050146562,GT2,gt2,Erdgas,5.025,28237,Bremen
+SEE980008908440,WKW III,wkw iii,Wasser,18.5,84579,Unterneukirchen
+SEE980130244065,BHKW 2 - GOM 1,bhkw 2 - gom 1,Erdgas,4.207,85356,München-Flughafen
+SEE983509659989,BHKW KW5 52,bhkw kw5 52,Erdgas,9.93,55120,Mainz
+SEE963817764100,HKW Nord GT,hkw nord gt,Erdgas,25.0,38112,Braunschweig
+SEE971995083203,BHKW Braunschweig,bhkw braunschweig,Erdgas,10.4,38112,Braunschweig
+SEE979958690659,KWK Adlershof Modul 3,kwk adlershof modul 3,Erdgas,4.39,12489,Berlin
+SEE980976424690,PKV Dampfsammelschienen-KWK-Anlage Generator/ Turbine GT 6,pkv dampfsammelschienen-kwk-anlage generator turbine gt 6,Erdgas,7.662,26316,Varel
+SEE955867610100,Batteriespeicher Premnitz,batteriespeicher premnitz,Batteriespeicher,7.0,14727,Premnitz
+SEE963827374382,Kirchmöser DT,kirchmöser dt,Erdgas,56.0,14774,Brandenburg
+SEE964290104919,BHKW KW5 53,bhkw kw5 53,Erdgas,9.93,55120,Mainz
+SEE993713255198,W050-TS_Mercedes-Benz Werk Sindelfingen HKW Turbine 5,w050-ts_mercedes-benz werk sindelfingen hkw turbine 5,Erdgas,19.771,71063,Sindelfingen
+SEE995943794058,2MKA,2mka,Mineraloelprodukte,106.0,16303,Schwedt
+SEE997470241692,Batterie Dörverden,batterie dörverden,Batteriespeicher,5.0,27313,Dörverden
+SEE998116131216,NEZ Adlershof Modul 2,nez adlershof modul 2,Erdgas,1.97,12489,Berlin
+SEE968905495126,RKI Iffezheim M4,rki iffezheim m4,Wasser,27.0,76473,Iffezheim
+SEE970980016073,KWK006-1,kwk006-1,Erdgas,4.241,47804,Krefeld
+SEE974051053875,Turbine 4,turbine 4,Abfall,13.85,26826,Weener
+SEE975188536989,HKW-Römerbrücke GuD-Anlage,hkw-römerbrücke gud-anlage,Erdgas,40.0,66121,Saarbrücken
+SEE976320012538,Block2,block2,Sonstige Energietraeger (nicht erneuerbar),97.0,38239,Salzgitter
+SEE977583940965,BHKW Hafen - Modul 7,bhkw hafen - modul 7,Erdgas,2.176,59067,Hamm
+SEE979779484642,HKW-Römerbrücke Dampfturbinenanlage DT2,hkw-römerbrücke dampfturbinenanlage dt2,Erdgas,53.0,66121,Saarbrücken
+SEE989393516094,Gasturbinenkraftwerk Thyrow GT D,gasturbinenkraftwerk thyrow gt d,Erdgas,37.104,15806,Zossen
+SEE992398329613,Biomasse-HKW Oberkirch,biomasse-hkw oberkirch,Biomasse,20.0,77704,Oberkirch
+SEE996080766151,Waldeck 2 F2,waldeck 2 f2,Pumpspeicher,240.0,34549,Edertal
+SEE998534788504,Waldeck 1 Pumpspeicher,waldeck 1 pumpspeicher,Pumpspeicher,75.0,34549,Edertal
+SEE986936308987,KWK-Anlage: Generator 1,kwk-anlage generator 1,Braunkohle,9.9,50127,Bergheim
+SEE989392899242,HKWH Gasturbine 7,hkwh gasturbine 7,Erdgas,5.336,24116,Kiel
+SEE963949142524,SWM Uppenborn 1 Gen2,swm uppenborn 1 gen2,Wasser,8.8,85368,Wang
+SEE964408218132,ZF-FRD-W04-G22-Prüfstand-844078,zf-frd-w04-g22-prüfstand-844078,Mineraloelprodukte,1.672,88046,Friedrichshafen
+SEE970444408703,Kraftwerk Fulda Aggregat 3B,kraftwerk fulda aggregat 3b,Mineraloelprodukte,2.76,36043,Fulda
+SEE972694764301,MHKW_Gen1,mhkw_gen1,Abfall,2.6,28219,Bremen
+SEE991817093418,Kraftwerk Jänschwalde Block A,kraftwerk jänschwalde block a,Braunkohle,500.0,03185,Teichland
+SEE995833202618,TW Gottfrieding K (Ro) 1,tw gottfrieding k 1,Wasser,5.0,84177,Gottfrieding
+SEE965203033722,BHKW Neu-Ulm M4,bhkw neu-ulm m4,Erdgas,2.622,89231,Neu-Ulm
+SEE965730885047,Vianden M1,vianden m1,Pumpspeicher,100.0,9463,Stolzembourg
+SEE966202630769,BHKW Hastedt Motor 09,bhkw hastedt motor 09,Erdgas,11.6794,28207,Bremen
+SEE988465448257,Dessau K(Ro)2,dessau k 2,Wasser,3.433,86977,Burggen
+SEE988616317180,Generator 4,generator 4,Erdgas,11.41,65203,Wiesbaden
+SEE991039408854,Gasturbine 1,gasturbine 1,Erdgas,5.49,79106,Freiburg
+SEE966521084113,Fankel Maschine 3,fankel maschine 3,Wasser,4.1,56814,Bruttig-Fankel
+SEE967078876749,Straubing K2,straubing k2,Wasser,7.1667,94315,Straubing
+SEE969698095906,FHKW DT6,fhkw dt6,Waerme,5.4866,67063,Ludwigshafen
+SEE970143794190,Gasmotoren-Blockheizkraftwerk II (Generator 8),gasmotoren-blockheizkraftwerk ii,Erdgas,3.772,01468,Moritzburg
+SEE970554561831,Kraftwerk HA DT2,kraftwerk ha dt2,Waerme,21.375,36269,Philippsthal
+SEE982798043462,ZF-FRD-W04-G32-Prüfstand-A01,zf-frd-w04-g32-prüfstand-a01,Mineraloelprodukte,1.756,88046,Friedrichshafen
+SEE982694984074,BHKW 1,bhkw 1,Erdgas,1.999,79106,Freiburg
+SEE987807988154,Audorf GT,audorf gt,Mineraloelprodukte,90.0,24783,Osterrönfeld
+SEE976107471893,bnBm GasKW BIB GT11,bnbm gaskw bib gt11,Erdgas,34.4,68647,Biblis
+SEE976415135319,BHKW Kre,bhkw kre,Erdgas,14.0,47809,Krefeld
+SEE977956291342,BHKW Ford Saarlouis Modul 1,bhkw ford saarlouis modul 1,Erdgas,4.322,66740,Saarlouis
+SEE982367992610,Franken GT2,franken gt2,Erdgas,53.0,90449,Nürnberg
+SEE995527175044,Gasmotoren-Blockheizkraftwerk I (Generator 9),gasmotoren-blockheizkraftwerk i,Erdgas,3.879,01468,Moritzburg
+SEE999117793854,Weisweiler H VGT,weisweiler h vgt,Erdgas,200.0,52249,Eschweiler
+SEE976392258995,Geisling K2,geisling k2,Wasser,8.333,93102,Pfatter
+SEE980461358011,BESS Leuna 1,bess leuna 1,Batteriespeicher,46.332,06217,Merseburg
+SEE986461420765,W059-RD_Geb. 122/1,w059-rd_geb 122 1,Mineraloelprodukte,4.344,70327,Stuttgart
+SEE987970110314,Trianel Gaskraftwerk Hamm Block 10,trianel gaskraftwerk hamm block 10,Erdgas,445.0,59071,Hamm
+SEE990151320914,KWK-Anlage,kwk-anlage,Biomasse,15.13,85092,Kösching
+SEE992491089179,F18BHKW,f18bhkw,Erdgas,1.968,40589,Düsseldorf
+SEE992625046054,Mühltal F2,mühltal f2,Wasser,3.73,82064,Straßlach-Dingharting
+SEE992841152355,Gasturbinenkraftwerk Thyrow GT A,gasturbinenkraftwerk thyrow gt a,Erdgas,37.104,15806,Zossen
+SEE994422897143,"HKW Pfaffenwald, Generator 60",hkw pfaffenwald generator 60,Erdgas,11.6,70569,Stuttgart
+SEE997562455938,BHKW Obere Viehweide M1 (Waldhäuser Str 100),bhkw obere viehweide m1,Erdgas,3.293,72076,Tübingen
+SEE987679030500,Gasmotoren-Blockheizkraftwerk I (Generator 3),gasmotoren-blockheizkraftwerk i,Erdgas,3.879,01468,Moritzburg
+SEE987143958569,PSW Hohenwarte 2 PSS G,psw hohenwarte 2 pss g,Pumpspeicher,39.7,07338,Hohenwarte
+SEE988933769624,ZF-FRD-W04-G32-Prüfstand-B01,zf-frd-w04-g32-prüfstand-b01,Mineraloelprodukte,1.756,88046,Friedrichshafen
+SEE992769312817,Kraftwerk UB GT1,kraftwerk ub gt1,Erdgas,4.95,36414,Unterbreizbach
+SEE997722783727,Dornau K1,dornau k1,Wasser,10.945,86956,Schongau
+SEE997894865399,Kraftwerk UB DT2,kraftwerk ub dt2,Waerme,4.5,36414,Unterbreizbach
+SEE998204314217,PST_209,pst_209,Erdgas,4.4175,88048,Friedrichshafen
+SEE979958390276,Emsland D DT,emsland d dt,Erdgas,340.0,49808,Lingen
+SEE983237534152,GT11800,gt11800,Erdgas,29.989,50769,Köln
+SEE985143270643,BHKW Neu-Ulm M1,bhkw neu-ulm m1,Erdgas,2.622,89231,Neu-Ulm
+SEE986249505394,Heizkraftwerk Leipzig Nord DT8C,heizkraftwerk leipzig nord dt8c,Erdgas,25.609,04105,Leipzig
+SEE997867646000,"Heizkraftwerk Bonn-Nord, Dampfturbine GuD-Anlage",heizkraftwerk bonn-nord dampfturbine gud-anlage,Erdgas,62.0,53115,Bonn
+SEE990760688887,MHKW EBT,mhkw ebt,Abfall,5.0,55120,Mainz
+SEE997770651436,BHKW KW5 57,bhkw kw5 57,Erdgas,9.93,55120,Mainz
+SEE999735538103,Fankel Maschine 2,fankel maschine 2,Wasser,4.1,56814,Bruttig-Fankel
+SEE990635906900,W059-RD_Beb. 122/4,w059-rd_beb 122 4,Mineraloelprodukte,7.862,70327,Stuttgart
+SEE990811648037,KW Häusern MS B2,kw häusern ms b2,Pumpspeicher,30.0,79837,Häusern
+SEE992738364885,PSW Hohenwarte 2 PSS F,psw hohenwarte 2 pss f,Pumpspeicher,39.7,07338,Hohenwarte
+SEE997526539162,Kraftwerk-Kirchlengern_GT2,kraftwerk-kirchlengern_gt2,Mineraloelprodukte,19.0,32278,Kirchlengern
+SEE965777272787,Walchenseekraftwerk E Pe1,walchenseekraftwerk e pe1,Wasser,13.0,82431,Kochel
+SEE987993663941,Querdel SKW Biomethan3,querdel skw biomethan3,Biomasse,3.352,48336,Sassenberg
+SEE990877363660,GTS1,gts1,Erdgas,1.088,49479,Ibbenbüren
+SEE991039363757,Gersthofen BS1,gersthofen bs1,Batteriespeicher,12.52,86368,Gersthofen
+SEE994055148599,Heizkraftwerk an der Friedensbrücke DampfturbineIV,heizkraftwerk an der friedensbrücke dampfturbineiv,Erdgas,20.5,97080,Würzburg
+SEE998802179607,BMHKW Horn,bmhkw horn,Biomasse,21.2,32805,Horn-Bad Meinberg
+SEE974189836364,PSW Goldisthal PSS B,psw goldisthal pss b,Pumpspeicher,263.0,98746,Goldisthal
+SEE970401548961,GuD Steinitz - HKW 2,gud steinitz - hkw 2,Erdgas,5.8,29410,Salzwedel
+SEE976877764072,BHKW 2 - GOM 2,bhkw 2 - gom 2,Erdgas,4.207,85356,München-Flughafen
+SEE979557966681,BHKW KW5 55,bhkw kw5 55,Erdgas,9.93,55120,Mainz
+SEE982412379564,BHKW Hafen - Modul 6,bhkw hafen - modul 6,Erdgas,1.398,59067,Hamm
+SEE985412461604,GTS2,gts2,Erdgas,1.1229,49479,Ibbenbüren
+SEE989462539771,BESS Groß Laasch,bess groß laasch,Batteriespeicher,13.416,19288,Groß Laasch
+SEE981832585265,Walchenseekraftwerk D F3,walchenseekraftwerk d f3,Wasser,18.0,82431,Kochel
+SEE982218176312,HKW Buch Dampfturbine,hkw buch dampfturbine,Waerme,5.0,13125,Berlin
+SEE983006552202,PSW Markersbach PSS F,psw markersbach pss f,Pumpspeicher,174.2,08352,Raschau-Markersbach
+SEE994984344970,Walchenseekraftwerk D F4,walchenseekraftwerk d f4,Wasser,18.0,82431,Kochel
+SEE995570780608,BHKW Ford Saarlouis Modul 3,bhkw ford saarlouis modul 3,Erdgas,4.322,66740,Saarlouis
+SEE989745723057,Kraftwerk Teufelsbruck MS1,kraftwerk teufelsbruck ms1,Wasser,5.0,83564,Soyen
+SEE997585564112,illwerke vkw Rodundwerk II M1,illwerke vkw rodundwerk ii m1,Pumpspeicher,295.0,A-6773,Vandans
+SEE988580370860,Turbosatz 4,turbosatz 4,Abfall,1.35,14727,Premnitz
+SEE991539102320,Dinslakener Holz-Energiezentrum CTE,dinslakener holz-energiezentrum cte,Biomasse,19.882,46535,Dinslaken
+SEE993970035267,BESS - Batteriespeicher,bess - batteriespeicher,Batteriespeicher,3.78,72531,Hohenstein
+SEE994027750690,W050-TS_Mercedes-Benz Werk Sindelfingen HKW Turbine 3,w050-ts_mercedes-benz werk sindelfingen hkw turbine 3,Erdgas,4.75,71063,Sindelfingen
+SEE999181532861,HKWH Gasturbine 5,hkwh gasturbine 5,Erdgas,5.424,24116,Kiel
+SEE900073920406,T5,t5,Steinkohle,20.365,24534,Neumünster
+SEE903181060330,BHKW - Hüttenfeld 18,bhkw - hüttenfeld 18,Erdgas,60.0,51427,Bergisch Gladbach
+SEE904421343152,Weisweiler E,weisweiler e,Braunkohle,321.0,52249,Eschweiler
+SEE905554171988,Hafen Block 6,hafen block 6,Steinkohle,303.0,28237,Bremen
+SEE907162822238,Wilhelmshaven 1 DT,wilhelmshaven 1 dt,Steinkohle,715.0,26386,Wilhelmshaven
+SEE910102553963,Gasturbinenanlage Castrop-Rauxel,gasturbinenanlage castrop-rauxel,Erdgas,10.0,44579,Castrop-Rauxel
+SEE918056935682,"Kraftwerk III, DT310",kraftwerk iii dt310,Erdgas,35.45,45772,Marl
+SEE921472787742,illwerke vkw Vermuntwerk M3,illwerke vkw vermuntwerk m3,Wasser,30.0,A-6794,Partenen
+SEE921706084241,GT22,gt22,Mineraloelprodukte,29.4,42275,Wuppertal
+SEE931736847297,Neurath D,neurath d,Braunkohle,607.0,41517,Grevenbroich
+SEE901120268069,"Kraftwerk I, GT11",kraftwerk i gt11,Steinkohle,18.4,45772,Marl
+SEE904088512342,Kraftwerk Marbach MAR 3 DT,kraftwerk marbach mar 3 dt,Mineraloelprodukte,263.5,71672,Marbach
+SEE904194792843,KWM Block 3,kwm block 3,Steinkohle,690.0,31249,Hohenhameln
+SEE905484009146,HKW Charlottenburg Gasturbine 6,hkw charlottenburg gasturbine 6,Mineraloelprodukte,67.0,10589,Berlin
+SEE908048039481,HKW Reuter Dampfturbine C,hkw reuter dampfturbine c,Steinkohle,124.0,13599,Berlin
+SEE937157344278,Kraftwerk Walheim Block 1,kraftwerk walheim block 1,Steinkohle,96.0,74399,Walheim
+SEE941305896496,Turbine 7,turbine 7,Biomasse,14.5,31789,Hameln
+SEE941974735591,Rauchgasturbine,rauchgasturbine,Braunkohle,13.0,03052,Cottbus
+SEE957900196671,Kraftwerk Marbach GT 2,kraftwerk marbach gt 2,Mineraloelprodukte,77.4,71672,Marbach
+SEE959000487536,HKW West Block 1,hkw west block 1,Steinkohle,138.5,38440,Wolfsburg
+SEE959837176825,S300 VT2,s300 vt2,Waerme,28.5,67063,Ludwigshafen
+SEE901344829220,Bestandsanlage_HKW_Aalen,bestandsanlage_hkw_aalen,Erdgas,15.0,73432,Aalen
+SEE904968236689,Kraftwerk Farge,kraftwerk farge,Steinkohle,350.0,28777,Bremen
+SEE920837459195,HKW Nord Generator B,hkw nord generator b,Steinkohle,61.0,38440,Wolfsburg
+SEE924647197780,Dortmund DT,dortmund dt,Erdgas,11.4,44143,Dortmund
+SEE935395375856,Generator 2,generator 2,Erdgas,11.56,31249,Hohenhameln
+SEE938923083674,"Kraftwerk I, T14",kraftwerk i t14,Steinkohle,55.56,45772,Marl
+SEE939468630132,Heizkraftwerk Leipzig Nord DT83,heizkraftwerk leipzig nord dt83,Waerme,44.414,04105,Leipzig
+SEE948546582201,IPH Strom VT2,iph strom vt2,Erdgas,17.38,65929,Frankfurt
+SEE950041295098,GTKW Wedel,gtkw wedel,Mineraloelprodukte,51.0,22880,Wedel
+SEE964729462818,Kraftwerk Jänschwalde Block F,kraftwerk jänschwalde block f,Braunkohle,500.0,03185,Teichland
+SEE965779402670,MHKW Pirmasens Verbrennung,mhkw pirmasens verbrennung,Abfall,15.0,66954,Pirmasens
+SEE901786750397,Niederaußem E,niederaußem e,Braunkohle,295.0,50129,Bergheim
+SEE907142597378,KWD Bestandsanlage,kwd bestandsanlage,Erdgas,48.279,06130,Halle
+SEE923577153439,"Kraftwerk I,  T15",kraftwerk i t15,Steinkohle,68.4,45772,Marl
+SEE933685962403,Weisweiler F,weisweiler f,Braunkohle,321.0,52249,Eschweiler
+SEE937128904463,ST_BHKW_T9,st_bhkw_t9,Biomasse,17.523,63811,Stockstadt
+SEE943690268513,Isar 2,isar 2,Kernenergie,1410.0,84051,Essenbach
+SEE945212899878,HKW Wilmersdorf Gasturbine 3,hkw wilmersdorf gasturbine 3,Mineraloelprodukte,92.0,14199,Berlin
+SEE952266131625,"Kraftwerk I, KT13",kraftwerk i kt13,Steinkohle,20.514,45772,Marl
+SEE963541517812,Irsching 3,irsching 3,Mineraloelprodukte,415.0,85088,Vohburg
+SEE977258693776,Wilhelmshaven 1 ZT,wilhelmshaven 1 zt,Steinkohle,140.0,26386,Wilhelmshaven
+SEE978327902850,Westfalen E,westfalen e,Steinkohle,763.7,59071,Hamm
+SEE917033307511,UER N230 VST4,uer n230 vst4,Erdgas,13.3,47829,Krefeld
+SEE923082939436,"HKW Chemnitz Nord II, Block B",hkw chemnitz nord ii block b,Braunkohle,58.172,09114,Chemnitz
+SEE925694194494,UPM Augsburg Gaskraftwerk,upm augsburg gaskraftwerk,Erdgas,29.5,86153,Augsburg
+SEE927528071629,Gundremmingen C,gundremmingen c,Kernenergie,1288.0,89355,Gundremmingen
+SEE934668342441,HKW - K6 DT2,hkw - k6 dt2,Steinkohle,17.4,91052,Erlangen
+SEE949123804273,Gasturbine 2 - GuD MPE,gasturbine 2 - gud mpe,Erdgas,14.05,33699,Bielefeld
+SEE953373967701,"Kraftwerk I, GT9",kraftwerk i gt9,Steinkohle,15.75,45772,Marl
+SEE968950464368,KW Hastedt Block 15,kw hastedt block 15,Steinkohle,119.0,28207,Bremen
+SEE973768834586,PSW Niederwartha PSS D,psw niederwartha pss d,Pumpspeicher,19.9,01156,Dresden
+SEE978389589440,Walsum 9,walsum 9,Steinkohle,370.0,47179,Duisburg
+SEE907150117643,Neurath A,neurath a,Braunkohle,294.0,41517,Grevenbroich
+SEE907223904750,SWM HKW Sued GuD1 DT1,swm hkw sued gud1 dt1,Erdgas,79.7,81371,München
+SEE923485223774,Fenne MKV Gasturbine,fenne mkv gasturbine,Mineraloelprodukte,34.86,66333,Völklingen
+SEE933174373390,PSW Hohenwarte 1 PSS A,psw hohenwarte 1 pss a,Pumpspeicher,29.9,07338,Hohenwarte
+SEE933960350956,"HKW Chemnitz Nord II, Block C",hkw chemnitz nord ii block c,Braunkohle,92.332,09114,Chemnitz
+SEE934361309352,"Kraftwerk III, GT312",kraftwerk iii gt312,Erdgas,77.567,45772,Marl
+SEE934897209904,Wilhelmshaven GT,wilhelmshaven gt,Mineraloelprodukte,56.0,26386,Wilhelmshaven
+SEE974753539035,Turbine 6,turbine 6,Steinkohle,26.9,75175,Pforzheim
+SEE981220191160,HKW Oberkirch,hkw oberkirch,Steinkohle,18.5,77704,Oberkirch
+SEE902840312209,S300 NKT,s300 nkt,Waerme,39.0,67063,Ludwigshafen
+SEE907396256311,Solvay Rb TA8,solvay rb ta8,Waerme,28.0,47495,Rheinberg
+SEE918337255669,Turbine 6,turbine 6,Waerme,18.0,76187,Karlsruhe
+SEE923480721565,A855 GT1,a855 gt1,Erdgas,47.0,67063,Ludwigshafen
+SEE930228090937,Niederaußem F,niederaußem f,Braunkohle,299.0,50129,Bergheim
+SEE945161671891,HKW Moabit Gasturbine 7,hkw moabit gasturbine 7,Mineraloelprodukte,17.0,13353,Berlin
+SEE945959654273,"Kraftwerk II, T26",kraftwerk ii t26,Steinkohle,62.401,45772,Marl
+SEE956656118067,HKW Wilmersdorf Gasturbine 2,hkw wilmersdorf gasturbine 2,Mineraloelprodukte,92.0,14199,Berlin
+SEE957029086662,illwerke vkw Vermuntwerk M4,illwerke vkw vermuntwerk m4,Wasser,30.0,A-6794,Partenen
+SEE984037976906,"Kraftwerk III, GT311",kraftwerk iii gt311,Erdgas,61.127,45772,Marl
+SEE989054024678,Scholven FWK,scholven fwk,Steinkohle,70.0,45896,Gelsenkirchen
+SEE937052769589,Heyden 4,heyden 4,Steinkohle,875.0,32469,Petershagen
+SEE956973616802,LEV KWG G12,lev kwg g12,Steinkohle,17.235,51373,Leverkusen
+SEE962845122456,SWD KWF T4,swd kwf t4,Biomasse,48.9,40233,Düsseldorf
+SEE963177319026,Turbine 4,turbine 4,Erdgas,16.0,75175,Pforzheim
+SEE963909310185,HKW Moabit Gasturbine 5,hkw moabit gasturbine 5,Mineraloelprodukte,17.0,13353,Berlin
+SEE969074173341,Ma 3,ma 3,Sonstige Energietraeger (nicht erneuerbar),35.0,38239,Salzgitter
+SEE975094128629,HKW Mitte Kessel 12,hkw mitte kessel 12,Erdgas,20.0,38114,Braunschweig
+SEE983424047212,HKW GT,hkw gt,Erdgas,24.5,15236,Frankfurt
+SEE990357023541,illwerke vkw Vermuntwerk M5,illwerke vkw vermuntwerk m5,Wasser,37.0,A-6794,Partenen
+SEE991559435767,"Kraftwerk I, KT5",kraftwerk i kt5,Steinkohle,15.638,45772,Marl
+SEE992973663477,Heizkraftwerk Stuttgart-Münster GT 16,heizkraftwerk stuttgart-münster gt 16,Mineraloelprodukte,23.3,70376,Stuttgart
+SEE964114029633,Kraftwerk Walheim Block 2,kraftwerk walheim block 2,Steinkohle,148.0,74399,Walheim
+SEE967478674402,HKW Wilmersdorf Gasturbine 1,hkw wilmersdorf gasturbine 1,Mineraloelprodukte,92.0,14199,Berlin
+SEE972367491114,PSW Niederwartha PSS C,psw niederwartha pss c,Pumpspeicher,19.9,01156,Dresden
+SEE972461974179,Heizkraftwerk Hagen-Kabel H5,heizkraftwerk hagen-kabel h5,Erdgas,121.0,58099,Hagen
+SEE976414005279,Neurath E,neurath e,Braunkohle,604.0,41517,Grevenbroich
+SEE978971638464,Neurath C,neurath c,Braunkohle,292.0,41517,Grevenbroich
+SEE990438768378,Dampfturbine 8,dampfturbine 8,Steinkohle,32.9,24939,Flensburg
+SEE994549176695,EVA,eva,Grubengas,30.0,49479,Ibbenbüren
+SEE997988564504,BKR Gasturbine,bkr gasturbine,Erdgas,11.344,55543,Bad Kreuznach
+SEE987407788451,Heizkraftwerk Hagen Kabel H4,heizkraftwerk hagen kabel h4,Erdgas,126.0,58099,Hagen
+SEE907933719545,Kraftwerk Herrenhausen Block B,kraftwerk herrenhausen block b,Erdgas,110.0,30419,Hannover
+SEE909323889876,Boehringer Ingelheim - 2336 - K8/T7,boehringer ingelheim - 2336 - k8 t7,Biomasse,11.922,55218,Ingelheim
+SEE917432813484,HKW West Block 2,hkw west block 2,Steinkohle,138.5,38440,Wolfsburg
+SEE944567587799,Emsland A,emsland a,Kernenergie,1336.0,49811,Lingen
+SEE946537967655,Hochdruckdampfturbine,hochdruckdampfturbine,Braunkohle,16.0,03052,Cottbus
+SEE951462745445,Brokdorf,brokdorf,Kernenergie,1410.0,25576,Brokdorf
+SEE985577062814,GKN II,gkn ii,Kernenergie,1310.0,74382,Neckarwestheim
+SEE992750539261,Frimmersdorf P,frimmersdorf p,Braunkohle,284.0,41517,Grevenbroich
+SEE994761683902,Dortmund GT,dortmund gt,Erdgas,14.0,44143,Dortmund
+SEE997842921603,EVE Premnitz,eve premnitz,Abfall,25.0,14727,Premnitz
+SEE999848168525,Moorburg Block B,moorburg block b,Steinkohle,800.0,21079,Hamburg
+SEE979012663285,Neurath B,neurath b,Braunkohle,294.0,41517,Grevenbroich
+SEE988668060393,Turbine 31,turbine 31,Sonstige Energietraeger (nicht erneuerbar),33.6,50769,Köln
+SEE996231694999,Dampfturbine WSK Kuhheide 1,dampfturbine wsk kuhheide 1,Abfall,13.3,16303,Schwedt
+SEE998469801279,MVB Borsigstraße Holz,mvb borsigstraße holz,Biomasse,18.2,22113,Hamburg
+SEE994506958166,PSW Hohenwarte 1 PSS B,psw hohenwarte 1 pss b,Pumpspeicher,29.9,07338,Hohenwarte
+SEE996990805407,HKW Mitte Kessel 1,hkw mitte kessel 1,Steinkohle,44.5,38114,Braunschweig
+SEE998945127831,Heizkraftwerk II,heizkraftwerk ii,Erdgas,26.38,46145,Oberhausen
+SEE999431209765,Frimmersdorf Q,frimmersdorf q,Braunkohle,278.0,41517,Grevenbroich
+SEE966083015792,GT21,gt21,Mineraloelprodukte,29.4,42275,Wuppertal
+SEE967605837250,Niederaußem C,niederaußem c,Braunkohle,295.0,50129,Bergheim
+SEE970816213751,Ibbenbüren B,ibbenbüren b,Steinkohle,794.0,49479,Ibbenbüren
+SEE972471937317,Moorburg Block A,moorburg block a,Steinkohle,800.0,21079,Hamburg
+SEE985047526785,Kraftwerk Jänschwalde Block E,kraftwerk jänschwalde block e,Braunkohle,500.0,03185,Teichland
+SEE992645841813,HKW Moabit Gasturbine 6,hkw moabit gasturbine 6,Mineraloelprodukte,17.0,13353,Berlin
+SEE993836152862,"Kraftwerk I, KT7",kraftwerk i kt7,Steinkohle,17.572,45772,Marl
+SEE999977738880,IKW Deuben,ikw deuben,Braunkohle,67.0,06682,Teuchern
+,,nan,Erdgas,41.97,,
+,,nan,Biomasse,96.82,,
+,,nan,Waerme,0.03,,
+,,nan,Biomasse,109.68,,
+,,nan,Sonstige Energietraeger (nicht erneuerbar),7.92,,
+,,nan,Mineraloelprodukte,0.13,,
+,,nan,Steinkohle,3.55,,
+,,nan,Batteriespeicher,5.94,,
+,,nan,Sonstige Energietraeger (nicht erneuerbar),6.26,,
+,,nan,Wasser,0.78,,
+,,nan,Erdgas,103.99,,
+,,nan,Sonstige Energietraeger (nicht erneuerbar),7.19,,
+,,nan,Biomasse,47.53,,
+,,nan,Mineraloelprodukte,24.56,,
+,,nan,Steinkohle,9.5,,
+,,nan,Biomasse,14.88,,
+,,nan,Erdgas,11.5,,
+,,nan,Batteriespeicher,1.16,,
+,,nan,Sonstige Energietraeger (nicht erneuerbar),4.18,,
+,,nan,Biomasse,18.5,,
+,,nan,Wasser,0.04,,
+,,nan,Wasser,0.01,,
+,,nan,Braunkohle,6.0,,
+,,nan,Erdgas,95.97,,
+,,nan,Grubengas,31.51,,
+,,nan,Biomasse,13.37,,
+,,nan,Wasser,4.0,,
+,,nan,Sonstige Energietraeger (nicht erneuerbar),0.19,,
+,,nan,Mineraloelprodukte,0.82,,
+,,nan,Batteriespeicher,0.3,,
+,,nan,Biomasse,19.79,,
+,,nan,Steinkohle,4.9,,
+,,nan,Braunkohle,0.48,,
+,,nan,Wasser,0.03,,
+,,nan,Batteriespeicher,0.2,,
+,,nan,Mineraloelprodukte,1.59,,
+,,nan,Wasserstoff,0.0,,
+,,nan,Erdgas,41.02,,
+,,nan,Biomasse,16.71,,
+,,nan,Wasser,86.47,,
+,,nan,Sonstige Energietraeger (nicht erneuerbar),5.34,,
+,,nan,Grubengas,1.74,,
+,,nan,Mineraloelprodukte,0.01,,
+,,nan,Erdgas,36.07,,
+,,nan,Biomasse,10.33,,
+,,nan,Mineraloelprodukte,0.0,,
+,,nan,Biomasse,50.03,,
+,,nan,Geothermie,5.32,,
+,,nan,Sonstige Energietraeger (nicht erneuerbar),7.52,,
+,,nan,Wasserstoff,0.03,,
+,,nan,Abfall,2.7,,
+,,nan,Batteriespeicher,0.07,,
+,,nan,Erdgas,14.82,,
+,,nan,Mineraloelprodukte,2.16,,
+,,nan,Batteriespeicher,1.4,,
+,,nan,Pumpspeicher,0.0,,
+,,nan,Waerme,3.55,,
+,,nan,Grubengas,0.01,,
+,,nan,Erdgas,19.07,,
+,,nan,Steinkohle,0.39,,
+,,nan,Wasser,0.27,,
+,,nan,Batteriespeicher,0.66,,
+,,nan,Grubengas,0.14,,
+,,nan,Biomasse,0.59,,
+,,nan,Batteriespeicher,0.13,,
+,,nan,Waerme,3.44,,
+,,nan,Grubengas,51.17,,
+,,nan,Wasser,3.07,,
+,,nan,Biomasse,0.82,,
+,,nan,Batteriespeicher,5.54,,
+,,nan,Braunkohle,0.4,,
+,,nan,Erdgas,64.32,,
+,,nan,Waerme,5.72,,
+,,nan,Mineraloelprodukte,1.75,,
+,,nan,Abfall,0.11,,
+,,nan,Erdgas,128.48,,
+,,nan,Waerme,0.28,,
+,,nan,Sonstige Energietraeger (nicht erneuerbar),0.12,,
+,,nan,Erdgas,45.92,,
+,,nan,Mineraloelprodukte,0.14,,
+,,nan,Batteriespeicher,0.04,,
+,,nan,Sonstige Energietraeger (nicht erneuerbar),0.2,,
+,,nan,Waerme,0.03,,
+,,nan,Braunkohle,1.56,,
+,,nan,Mineraloelprodukte,5.32,,
+,,nan,Abfall,0.0,,
+,,nan,Sonstige Energietraeger (nicht erneuerbar),1.19,,
+,,nan,Erdgas,1.63,,
+,,nan,Mineraloelprodukte,7.48,,
+,,nan,Sonstige Energietraeger (nicht erneuerbar),2.84,,
+,,nan,Waerme,0.01,,
+,,nan,Grubengas,1.88,,
+,,nan,Biomasse,84.3,,
+,,nan,Abfall,0.0,,
+,,nan,Wasser,0.02,,
+,,nan,Sonstige Energietraeger (nicht erneuerbar),0.02,,
+,,nan,Braunkohle,1.6,,
+,,nan,Mineraloelprodukte,4.51,,
+,,nan,Abfall,2.01,,
+,,nan,Waerme,2.06,,
+,,nan,Braunkohle,1.51,,
+,,nan,Erdgas,42.44,,
+,,nan,Erdgas,45.27,,
+,,nan,Erdgas,37.95,,
+,,nan,Steinkohle,14.7,,
+,,nan,Braunkohle,1.0,,
+,,nan,Mineraloelprodukte,0.03,,
+,,nan,Waerme,0.0,,
+,,nan,Erdgas,20.27,,
+,,nan,Waerme,0.36,,
+,,nan,Wasser,0.0,,
+,,nan,Mineraloelprodukte,14.19,,
+,,nan,Biomasse,23.6,,
+,,nan,Wasser,0.07,,
+,,nan,Mineraloelprodukte,0.39,,
+,,nan,Abfall,2.33,,
+,,nan,Sonstige Energietraeger (nicht erneuerbar),0.72,,
+,,nan,Sonstige Energietraeger (nicht erneuerbar),0.67,,
+,,nan,Wasser,0.11,,
+,,nan,Waerme,9.51,,
+,,nan,Batteriespeicher,0.08,,
+,,nan,Pumpspeicher,0.0,,
+,,nan,SolareStrahlungsenergie,75.05,,
+,,nan,SolareStrahlungsenergie,4.33,,
+,,nan,SolareStrahlungsenergie,17.68,,
+,,nan,SolareStrahlungsenergie,6.79,,
+,,nan,SolareStrahlungsenergie,13.86,,
+,,nan,SolareStrahlungsenergie,0.53,,
+,,nan,SolareStrahlungsenergie,8.56,,
+,,nan,SolareStrahlungsenergie,51.39,,
+,,nan,SolareStrahlungsenergie,29.57,,
+,,nan,SolareStrahlungsenergie,41.07,,
+,,nan,SolareStrahlungsenergie,15.8,,
+,,nan,SolareStrahlungsenergie,8.1,,
+,,nan,SolareStrahlungsenergie,2.17,,
+,,nan,SolareStrahlungsenergie,1.73,,
+,,nan,SolareStrahlungsenergie,34.55,,
+,,nan,SolareStrahlungsenergie,6.03,,
+,,nan,Wind (onshore),44.16,,
+,,nan,Wind (onshore),13.46,,
+,,nan,Wind (onshore),276.24,,
+,,nan,Wind (onshore),0.0,,
+,,nan,Wind (onshore),3.8,,
+,,nan,Wind (onshore),38.58,,
+,,nan,Wind (onshore),125.01,,
+,,nan,Wind (onshore),13.6,,
+,,nan,Wind (onshore),455.46,,
+,,nan,Wind (onshore),193.83,,
+,,nan,Wind (onshore),885.39,,
+,,nan,Wind (onshore),640.64,,
+,,nan,Wind (onshore),65.49,,
+,,nan,Wind (onshore),14.2,,
+,,nan,Wind (onshore),79.7,,
+,,nan,Wind (onshore),520.77,,
+BNA0302,Frimmersdorf,frimmersdorf,Braunkohle,129.0,41517,Frimmersdorf
+BNA0303,Frimmersdorf,frimmersdorf,Braunkohle,130.0,41517,Frimmersdorf
+BNA0304,Frimmersdorf,frimmersdorf,Braunkohle,124.0,41517,Frimmersdorf
+BNA0414,Westfalen,westfalen,Steinkohle,152.0,59071,Hamm-Uentrop
+BNA0415,Westfalen,westfalen,Steinkohle,152.0,59071,Hamm-Uentrop
+BNA0011,Papierfabrik Albbruck,papierfabrik albbruck,Steinkohle,28.0,79774,Albbruck
+BNA1337a,Heizkraftwerk,heizkraftwerk,Erdgas,27.0,63741,Aschaffenburg
+BNA0710,Niederaußem,niederaußem,Braunkohle,125.0,50129,Bergheim
+BNA0711,Niederaußem,niederaußem,Braunkohle,125.0,50129,Bergheim
+BNA0118,Heizkraftwerk Süd,heizkraftwerk süd,Erdgas,14.4,53121,Bonn
+BNA0212,HKW II/B,hkw ii b,Steinkohle,133.0,47053,Duisburg
+BNA1021,Weisweiler,weisweiler,Braunkohle,123.0,52249,Eschweiler-Weisweiler
+BNA1022,Weisweiler,weisweiler,Braunkohle,135.0,52249,Eschweiler-Weisweiler
+BNA0269,HKW Flensburg,hkw flensburg,Mineraloelprodukte,30.0,24939,Flensburg
+BNA0307,Frimmersdorf,frimmersdorf,Braunkohle,128.0,41517,Frimmersdorf
+BNA0308,Frimmersdorf,frimmersdorf,Braunkohle,136.0,41517,Frimmersdorf
+BNA0305,Frimmersdorf,frimmersdorf,Braunkohle,130.0,41517,Grevenbroich-Frimmersdorf
+BNA0306,Frimmersdorf,frimmersdorf,Braunkohle,132.0,41517,Grevenbroich-Frimmersdorf
+BNA0309,Frimmersdorf,frimmersdorf,Braunkohle,135.0,41517,Grevenbroich-Frimmersdorf
+BNA0310,Frimmersdorf,frimmersdorf,Braunkohle,138.0,41517,Grevenbroich-Frimmersdorf
+BNA0311,Frimmersdorf,frimmersdorf,Braunkohle,131.0,41517,Grevenbroich-Frimmersdorf
+BNA0312,Frimmersdorf,frimmersdorf,Braunkohle,133.0,41517,Grevenbroich-Frimmersdorf
+BNA0376,Staudinger,staudinger,Steinkohle,293.0,63538,Großkrotzenburg
+BNA0639,HKW Mannheim,hkw mannheim,Abfall,5.56,68169,Mannheim
+BNA0812,Kraftwerk Veltheim,kraftwerk veltheim,Steinkohle,93.0,32457,Porta Westfalica
+BNA0913,GuD Anlage Spreetal,gud anlage spreetal,Erdgas,50.0,2979,Spreetal
+BNA0680,Mumsdorf,mumsdorf,Braunkohle,60.0,4613,Mumsdorf
+BNA0059a,HKW Kassel,hkw kassel,Erdgas,12.2,34225,Baunatal
+BNA0143,KW Mittelsbüren,kw mittelsbüren,Sonstige Energietraeger (nicht erneuerbar),110.0,28237,Bremen
+BNA0187,Datteln,datteln,Steinkohle,95.0,45711,Datteln
+BNA0188,Datteln,datteln,Steinkohle,95.0,45711,Datteln
+BNA0189,Datteln,datteln,Steinkohle,113.0,45711,Datteln
+BNA0375,Staudinger,staudinger,Steinkohle,249.0,63538,Großkrotzenburg
+BNA0448,Shamrock,shamrock,Steinkohle,132.0,44653,Herne
+BNA0638,HKW Mannheim,hkw mannheim,Abfall,2.78,68169,Mannheim
+BNA1275,Kraftwerk Weinheim,kraftwerk weinheim,Erdgas,21.0,69469,Weinheim
+BNA1276,Kraftwerk Weinheim,kraftwerk weinheim,Erdgas,21.0,69469,Weinheim
+BNA0203,Knepper,knepper,Steinkohle,345.0,44357,Dortmund
+BNA0215,KW Walsum,kw walsum,Steinkohle,129.0,47179,Duisburg
+BNA0333,Scholven,scholven,Steinkohle,345.0,45896,Gelsenkirchen
+BNA0334,Scholven,scholven,Steinkohle,345.0,45896,Gelsenkirchen
+BNA0335,Scholven,scholven,Steinkohle,676.0,45896,Gelsenkirchen
+BNA0447,KW Herne,kw herne,Steinkohle,133.0,44653,Herne
+BNA0918a,Dow Stade,dow stade,Erdgas,190.0,21683,Stade
+BNA1035,Kraftwerk Werdohl-Elverlingsen,kraftwerk werdohl-elverlingsen,Steinkohle,186.0,58791,Werdohl
+BNA1338,Spitzenkraftwerk,spitzenkraftwerk,Mineraloelprodukte,19.0,94469,Deggendorf
+BNA0933,Heizkraftwerk Stuttgart-Gaisburg,heizkraftwerk stuttgart-gaisburg,Erdgas,55.0,70376,Stuttgart
+BNA0099,Gasturbinenkraftwerk Bielefeld Ummeln,gasturbinenkraftwerk bielefeld ummeln,Erdgas,55.0,33649,Bielefeld
+BNA0355,Grafenrheinfeld,grafenrheinfeld,Kernenergie,1275.0,97506,Grafenrheinfeld
+BNA0490b,Goldenberg,goldenberg,Braunkohle,45.0,50354,Hürth
+BNA0642,GKM ,gkm,Steinkohle,202.5,68199,Mannheim
+BNA0643,GKM ,gkm,Steinkohle,202.5,68199,Mannheim
+BNA0681,Freimann GT 1,freimann gt 1,Erdgas,80.0,80807,München
+BNA0682,Freimann GT 2,freimann gt 2,Erdgas,80.0,80807,München
+BNA0813,Kraftwerk Veltheim,kraftwerk veltheim,Steinkohle,303.0,32457,Porta Westfalica
+BNA0810,Kraftwerk Veltheim,kraftwerk veltheim,Erdgas,65.0,32457,Porta Westfalica
+BNA0811,Kraftwerk Veltheim,kraftwerk veltheim,Erdgas,335.0,32457,Porta Westfalica
+BNA0922a,GuD-Ikw Staßfurt,gud-ikw staßfurt,Erdgas,9.0,39418,Staßfurt
+BNA0080,Lichterfelde,lichterfelde,Erdgas,144.0,12207,Berlin
+BNA0140,KW Hastedt,kw hastedt,Erdgas,155.0,28207,Bremen
+BNA0145,KW Hafen,kw hafen,Steinkohle,127.0,28237,Bremen
+BNA0273,Heizkraftwerk FL,heizkraftwerk fl,Steinkohle,35.0,24939,Flensburg
+BNA0274,Heizkraftwerk FL,heizkraftwerk fl,Steinkohle,23.0,24939,Flensburg
+BNA0289a,HKW West,hkw west,Sonstige Energietraeger (nicht erneuerbar),19.7,60627,Frankfurt am Main
+BNA0413a,Westfalen,westfalen,Steinkohle,284.0,59071,Hamm-Uentrop
+BNA0735,Thyrow,thyrow,Erdgas,37.5,15806,Nunsdorf
+BNA0736,Thyrow,thyrow,Erdgas,37.5,15806,Nunsdorf
+BNA0737,Thyrow,thyrow,Erdgas,37.5,15806,Nunsdorf
+BNA0799,Heizkraftwerk Pforzheim GmbH,heizkraftwerk pforzheim gmbh,Erdgas,11.3,75175,Pforzheim
+BNA0413b,Westfalen,westfalen,Steinkohle,765.0,59071,Hamm-Uentrop
+BNA1225,PWG,pwg,Erdgas,5.3,82380,Peißenberg
+BNA1226,PWG,pwg,Erdgas,5.3,82380,Peißenberg
+BNA0161,Brunsbüttel,brunsbüttel,Mineraloelprodukte,63.5,25541,Brunsbüttel
+BNA0162,Brunsbüttel,brunsbüttel,Mineraloelprodukte,63.5,25541,Brunsbüttel
+BNA0163,Brunsbüttel,brunsbüttel,Mineraloelprodukte,63.5,25541,Brunsbüttel
+BNA0164,Brunsbüttel,brunsbüttel,Mineraloelprodukte,63.5,25541,Brunsbüttel
+BNA0288,HKW Niederrad,hkw niederrad,Erdgas,56.0,60528,Frankfurt am Main
+BNA0449,KW Herne,kw herne,Steinkohle,280.0,44653,Herne
+BNA0661,Kraftwerk II,kraftwerk ii,Steinkohle,60.4,45772,Marl
+BNA0989,KW West,kw west,Steinkohle,318.0,46562,Voerde
+BNA0990,KW West,kw west,Steinkohle,322.0,46562,Voerde
+BNA0991,KW Voerde,kw voerde,Steinkohle,695.0,46562,Voerde
+BNA0992,KW Voerde,kw voerde,Steinkohle,695.0,46562,Voerde
+BNA1127,GHD,ghd,Erdgas,6.7,84130,Dingolfing
+BNA1128,GHD,ghd,Erdgas,6.7,84130,Dingolfing
+BNA0381,Kernkraft Gundremmingen ,kernkraft gundremmingen,Kernenergie,1284.0,89355,Gundremmingen
+BNA0076,Lichterfelde,lichterfelde,Erdgas,144.0,12207,Berlin
+BNA0083,Wilmersdorf,wilmersdorf,Mineraloelprodukte,92.0,14199,Berlin
+BNA0110,Bochum,bochum,Erdgas,20.7,44799,Bochum
+BNA0211,HKW I,hkw i,Steinkohle,95.0,47053,Duisburg
+BNA0252,Kraftwerk Ensdorf,kraftwerk ensdorf,Steinkohle,283.0,66806,Ensdorf
+BNA0253,Kraftwerk Ensdorf,kraftwerk ensdorf,Steinkohle,106.0,66806,Ensdorf
+BNA0544,HKW Südstadt,hkw südstadt,Erdgas,35.0,50677,Köln
+BNA0618,KW Lünen,kw lünen,Steinkohle,149.0,44536,Lünen
+BNA0619,KW Lünen,kw lünen,Steinkohle,324.0,44536,Lünen
+BNA1200,GuD-Kraftwerk,gud-kraftwerk,Erdgas,17.2,68305,Mannheim
+BNA0934,Heizkraftwerk Stuttgart-Gaisburg,heizkraftwerk stuttgart-gaisburg,Steinkohle,22.6,70376,Stuttgart
+BNA1037,Kraftwerk Werdohl-Elverlingsen,kraftwerk werdohl-elverlingsen,Steinkohle,310.0,58791,Werdohl
+BNA1041,Gersteinwerk,gersteinwerk,Erdgas,55.0,59368,Werne
+BNA0012d,Werkskraftwerk Sappi Alfeld,werkskraftwerk sappi alfeld,Mineraloelprodukte,2.8,31061,Alfeld
+BNA0255,HKW Iderhoffstraße,hkw iderhoffstraße,Erdgas,11.0,99085,Erfurt
+BNA1294,EEV,eev,Mineraloelprodukte,38.0,21107,Hamburg
+BNA0075,Lichterfelde,lichterfelde,Erdgas,144.0,12207,Berlin
+BNA0082,Reuter,reuter,Steinkohle,124.0,13599,Berlin
+BNA0178,HKW Chemnitz  Nord II,hkw chemnitz nord ii,Erdgas,57.2,9114,Chemnitz
+BNA0221c,Gasblock,gasblock,Erdgas,293.0,40221,Düsseldorf
+BNA0343,Heizkraftwerk Gera-Nord,heizkraftwerk gera-nord,Erdgas,74.0,7546,Gera
+BNA0526,Gemeinschaftskraftwerk Kiel,gemeinschaftskraftwerk kiel,Steinkohle,323.0,24149,Kiel
+BNA0753,HKW 2,hkw 2,Erdgas,24.5,46147,Oberhausen
+BNA1046a,Gersteinwerk,gersteinwerk,Steinkohle,614.0,59368,Werne
+BNA1084,HKW Elberfeld ,hkw elberfeld,Steinkohle,85.0,42117,Wuppertal
+BNA0802,Kernkraftwerk Philippsburg 2,kernkraftwerk philippsburg 2,Kernenergie,1402.0,76661,Philippsburg
+BNA0705 ,Niederaußem D,niederaußem d,Braunkohle,297.0,50129,Bergheim
+BNA0439,Buschhaus,buschhaus,Braunkohle,352.0,38350,Helmstedt
+BNA1183,Heizkraftwerk Merheim,heizkraftwerk merheim,Erdgas,15.8,51109,Köln
+BNA0199,Dormagen,dormagen,Erdgas,24.0,41539,Dormagen
+BNA0292,Fab Frechen,fab frechen,Braunkohle,120.0,50226,Frechen

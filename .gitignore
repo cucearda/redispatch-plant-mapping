@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# macOS
+.DS_Store
+
+# Large raw data — obtain from sources, not tracked in git (>GitHub limits / bulky)
+# OPSD_renewable is 329M (exceeds GitHub 100M limit) and is unused by the pipeline
+data/OPSD_renewable_power_plants_DE.csv
+# pypsa_unaggregated is the 18M raw spine input
+data/pypsa_unaggregated_powerplants.csv
+# Redispatch_Daten_2021 is 15M
+data/Redispatch_Daten_2021.csv
+
+# Derived — regenerate with build_candidate_index.py
+data/candidate_index.csv
