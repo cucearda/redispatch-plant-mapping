@@ -23,7 +23,7 @@ from normalize import norm_light, norm_heavy
 
 INDEX   = "data/candidate_index.csv"
 ENTRIES = "data/redispatch_entries.csv"
-EXACT   = "data/matches_exact.csv"
+EXACT   = "results/matches_exact.csv"
 OUT     = "data/fuzzy_candidates.csv"
 
 TOP_K          = 20

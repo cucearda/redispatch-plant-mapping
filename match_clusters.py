@@ -24,7 +24,7 @@ from normalize import norm_light
 
 INDEX   = "data/candidate_index.csv"
 ENTRIES = "data/redispatch_entries.csv"
-OUT     = "data/matches_cluster.csv"
+OUT     = "results/matches_cluster.csv"
 
 # Location extraction: drop DSO codes, scheme words, cluster/number/turbine/direction tokens.
 CL_STOP = {
@@ -124,7 +124,7 @@ def main() -> None:
     out = pd.DataFrame(rows)
     out.to_csv(OUT, index=False, encoding="utf-8")
     # pending list for the geocode channel
-    pd.DataFrame(pending).to_csv("data/matches_cluster_pending.csv", index=False, encoding="utf-8")
+    pd.DataFrame(pending).to_csv("results/matches_cluster_pending.csv", index=False, encoding="utf-8")
 
     print(f"→ {OUT}: {len(out)}/{len(clusters)} clusters matched via NAME channel")
     print(f"  → data/matches_cluster_pending.csv: {len(pending)} need the geocode channel")

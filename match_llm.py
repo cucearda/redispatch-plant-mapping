@@ -28,7 +28,7 @@ dotenv.load_dotenv()
 FUZZY   = "data/fuzzy_candidates.csv"
 INDEX   = "data/candidate_index.csv"
 ENTRIES = "data/redispatch_entries.csv"
-OUT     = "data/matches_llm.csv"
+OUT     = "results/matches_llm.csv"
 
 MODEL       = "claude-sonnet-5"
 BATCH_SIZE  = 20

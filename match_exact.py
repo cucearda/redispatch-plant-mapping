@@ -22,7 +22,7 @@ from normalize import norm_light
 INDEX   = "data/candidate_index.csv"
 BNETZA  = "data/bnetza_lookup.csv"
 ENTRIES = "data/redispatch_entries.csv"
-OUT     = "data/matches_exact.csv"
+OUT     = "results/matches_exact.csv"
 
 
 def main() -> None:
