@@ -21,10 +21,12 @@ from collections import defaultdict
 import pandas as pd
 
 from normalize import norm_light
+from geocode import geocode_names
 
 INDEX   = "data/candidate_index.csv"
 ENTRIES = "data/redispatch_entries.csv"
 OUT     = "results/matches_cluster.csv"
+GEOCODE_RADIUS_KM = 10.0                        # gather renewables within this of the geocoded location
 
 # Location extraction: drop DSO codes, scheme words, cluster/number/turbine/direction tokens.
 CL_STOP = {
@@ -121,13 +123,46 @@ def main() -> None:
             "lon":               round(sum(lons) / len(lons), 4) if lons else "",
         })
 
+    n_name = len(rows)
+
+    # ── geocode channel: geocode the pending locations, gather renewables within R km ──
+    renew = indiv[indiv["Fueltype"].isin(RENEWABLE)]
+    renew_coords = [(cid, la, lo) for cid, la, lo in
+                    zip(renew["id"], pd.to_numeric(renew["lat"], errors="coerce"),
+                        pd.to_numeric(renew["lon"], errors="coerce")) if pd.notna(la) and pd.notna(lo)]
+    still_pending = []
+    try:
+        geo = geocode_names(sorted({p["location"] for p in pending if p["location"]}))
+    except Exception as ex:                        # no API key / offline → keep pending
+        print(f"  ! geocode channel skipped ({type(ex).__name__}); {len(pending)} left pending")
+        geo = {}
+    for p in pending:
+        coord = geo.get(p["location"])
+        members = ([m for m, la, lo in renew_coords
+                    if haversine_km(coord[0], coord[1], la, lo) <= GEOCODE_RADIUS_KM]
+                   if coord else [])
+        if not members:
+            still_pending.append(p)
+            continue
+        lats = [LAT[m] for m in members if pd.notna(LAT.get(m))]
+        lons = [LON[m] for m in members if pd.notna(LON.get(m))]
+        rows.append({
+            "betroffene_anlage": p["betroffene_anlage"], "location": p["location"],
+            "matched_id": ",".join(sorted(members)), "id_source": "index",
+            "n_members": len(members), "total_mw": round(sum(CAP.get(m, 0) for m in members), 1),
+            "method": "cluster_geocode", "confidence": "medium",
+            "lat": round(sum(lats) / len(lats), 4) if lats else "",
+            "lon": round(sum(lons) / len(lons), 4) if lons else "",
+        })
+    pending = still_pending
+
     out = pd.DataFrame(rows)
     out.to_csv(OUT, index=False, encoding="utf-8")
-    # pending list for the geocode channel
     pd.DataFrame(pending).to_csv("results/matches_cluster_pending.csv", index=False, encoding="utf-8")
 
-    print(f"→ {OUT}: {len(out)}/{len(clusters)} clusters matched via NAME channel")
-    print(f"  → data/matches_cluster_pending.csv: {len(pending)} need the geocode channel")
+    print(f"→ {OUT}: {len(out)}/{len(clusters)} clusters matched "
+          f"({n_name} name, {len(out) - n_name} geocode)")
+    print(f"  → results/matches_cluster_pending.csv: {len(pending)} still unresolved")
     if len(out):
         print(f"  member-count: min {out.n_members.min()}, median {out.n_members.median():.0f}, max {out.n_members.max()}")
 

@@ -1,0 +1,3 @@
+betroffene_anlage,matched_id,id_source,method,confidence,needs_review,reasoning,lat,lon,coord_source
+Gebersdorf 2,1156,index,wikipedia,low,,Wikipedia (Gebersdorf (Nürnberg)) coord → nearest plant within 1 km,49.42092,11.00767,index
+WP Emsland,110888,index,wikipedia,low,,Wikipedia (Wippingen) coord → nearest plant within 1 km,52.916736,7.416387,index

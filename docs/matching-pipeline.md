@@ -25,8 +25,10 @@ Each name is routed once and resolved at the first stage that succeeds.
 | 2 | Exact match | [`match_exact.py`](../match_exact.py) | Unique normalised-name equality against BNetzA + the index → early exit. **27 resolved.** |
 | 3 | Fuzzy shortlist | [`match_fuzzy.py`](../match_fuzzy.py) | Fuel- + capacity-filtered `WRatio` top-20 per individual (max over each candidate's name variants). Fuzzy never decides — it feeds the LLM. |
 | 4 | LLM disambiguation | [`match_llm.py`](../match_llm.py) | `claude-sonnet-5` + adaptive thinking picks the correct candidate using fuel / capacity / coordinates / operator knowledge, or returns null. **168 of 197 matched** (130 high · 35 medium · 3 low); 29 null → residual. |
-| 4b | Cluster matching | [`match_clusters.py`](../match_clusters.py) | DSO cluster entries → the **set** of co-located individual plants at that location. Name channel with a geographic-coherence check resolves **32/59**; 27 → geocode. |
-| 5 | Residual + geocode *(in progress)* | — | Wikipedia/coordinate cross-check for unresolved names; Haiku name-geocode gives an approximate coordinate to anything still unmatched so it can enter the spatial analysis. |
+| 4b | Cluster matching | [`match_clusters.py`](../match_clusters.py) | DSO cluster entries → the **set** of co-located individual plants at that location. Name channel (coherence-checked) resolves **32/59**; the Haiku geocode channel resolves **26** more → **58/59**. |
+| 5 | Wikipedia residual | [`match_wikipedia.py`](../match_wikipedia.py) | LLM null/low entries: Wikipedia coordinate → nearest plant within 5 km, or coordinate-only. |
+| 6 | Coordinate backfill | [`geocode_backfill.py`](../geocode_backfill.py) | Any still-coordless row (aggregates, residual failures) gets an approximate coordinate from its name via Haiku, so it can enter the spatial analysis. |
+| 7 | Assemble | [`assemble_results.py`](../assemble_results.py) | Merge all stage outputs → `results/redispatch_plant_matches.csv`. |
 
 Normalisation is shared ([`normalize.py`](../normalize.py)): `norm_light` (exact — lowercase,
 strip TSO prefix / parens / punctuation, split underscores) and `norm_heavy` (fuzzy —
@@ -92,12 +94,12 @@ confidence interpreted accordingly.
   collisions. The result is the member **set** (`matched_id` = comma-joined ids).
   e.g. `SHN Cluster Handewitt` → the 16 Handewitt turbines.
 
-- **`cluster_geocode`** *(pending)* — For cluster locations that appear in *no* plant
+- **`cluster_geocode`** *(built)* — For cluster locations that appear in *no* plant
   name (Süderdonn, Klixbüll, …). Claude Haiku estimates the location's coordinates from
   the name → gather individual wind/solar plants within a radius → the member set.
   Confidence medium (geocoded, not name-confirmed).
 
-- **`wikipedia`** *(pending)* — For individuals the LLM declined (null / low). A bot
+- **`wikipedia`** *(built)* — For individuals the LLM declined (null / low). A bot
   queries the name via the Wikipedia API (`opensearch` → `page/summary` → `coordinates`),
   then back-matches that coordinate to the **nearest index plant within 5 km**. If the
   LLM's guess and Wikipedia's point agree → high; Wikipedia-only → low. Resolves
@@ -123,16 +125,20 @@ Structural aggregates are not thrown away — they are labelled (and, where the 
 carry a `name_technology` and a geocoded coordinate), so the table accounts for **100 % of
 the redispatch names and volume**, which is itself a finding.
 
-## Current status
+## Current status — all channels built
 
-- **Built and producing results:** steps 0–4, the cluster name channel, and the
-  assembler ([`assemble_results.py`](../assemble_results.py)) that merges the per-stage
-  outputs into the single lookup table **`results/redispatch_plant_matches.csv`**
-  (398 rows: 227 matched — 168 `llm` / 32 `cluster_name` / 27 `exact`, at 189 high /
-  35 medium / 3 low confidence; 59 flagged `needs_review`).
-- **In progress:** the `cluster_geocode` and `wikipedia`/residual channels, which will
-  pick up the 59 currently flagged (29 LLM-null individuals + 27 pending clusters + 3 low).
+Final lookup table: **`results/redispatch_plant_matches.csv`** — 398 rows.
 
+- **255 plant-matched:** 168 `llm` · 32 `cluster_name` · 27 `exact` · 26 `cluster_geocode`
+  · 2 `wikipedia`. Confidence: 189 high · 61 medium · 5 low.
+- **370 / 398 carry a coordinate** (255 from the index, 115 name-geocoded); the 28 without
+  are countertrade/emergency (no location) plus a few the geocoder couldn't place.
+- **33 flagged `needs_review`** (low confidence, channel disagreement, or unresolved
+  matchable entries).
+- The rest are structural aggregates (control-reserve regions, substations, regional
+  buckets, foreign plants), labelled and — where possible — geocoded.
+
+Run order: `redispatch_prep` → `build_candidate_index` → `match_exact` → `match_fuzzy` →
+`match_llm` → `match_clusters` → `match_wikipedia` → `assemble_results` → `geocode_backfill`.
 Outputs live in `results/`; intermediates and the index in `data/`. Every stage writes
-incrementally and is independently re-runnable, then `assemble_results.py` reassembles
-the final table.
+incrementally and is independently re-runnable.
