@@ -29,6 +29,7 @@ Each name is routed once and resolved at the first stage that succeeds.
 | 5 | Wikipedia residual | [`match_wikipedia.py`](../match_wikipedia.py) | LLM null/low entries: Wikipedia coordinate → nearest plant within 5 km, or coordinate-only. |
 | 6 | Coordinate backfill | [`geocode_backfill.py`](../geocode_backfill.py) | Any still-coordless row (aggregates, residual failures) gets an approximate coordinate from its name via Haiku, so it can enter the spatial analysis. |
 | 7 | Assemble | [`assemble_results.py`](../assemble_results.py) | Merge all stage outputs → `results/redispatch_plant_matches.csv`. |
+| 8 | Coordinate confirmation | [`confirm_matches.py`](../confirm_matches.py) | Independently geocode each matched name (Haiku) and compare to the matched plant's coordinate → `coord_check`/`check_km`. Flags non-high-confidence disagreements for review. The geocode is coarse, so this is a **review aid**: it catches gross wrong-region matches but 30–55 km differences are usually just geocode imprecision on correct matches. Runs last, after assemble + backfill. |
 
 Normalisation is shared ([`normalize.py`](../normalize.py)): `norm_light` (exact — lowercase,
 strip TSO prefix / parens / punctuation, split underscores) and `norm_heavy` (fuzzy —
@@ -51,6 +52,8 @@ also strip generic type words, DSO prefixes, and turbine codes).
 | `lat`, `lon` | coordinates · *(empty)* | The plant's location |
 | `coord_source` | `index` · `wikipedia` · `geocode` · `none` | Where the coordinate came from — lets name-geocoded unmatched entries enter a spatial read, appropriately caveated |
 | `name_technology` | `Wind` · `Solar` · `Other renewable` · `Conventional` · *(empty)* | Technology parsed from the name where spelled out (mainly the DSO curtailment buckets — finer than `primaerenergieart`) |
+| `coord_check` | `confirmed` · `disagree` · `no_geocode` · *(empty)* | Independent Haiku geocode of the name vs the matched plant's coordinate. A **review aid**, not authoritative — the geocode is coarse (see confirmation step) |
+| `check_km` | distance · *(empty)* | Km between the name-geocode and the matched plant |
 | `reasoning` | free text | One-line justification (LLM rationale, or e.g. "countertrade — no physical plant") |
 
 **Layer 2 — enrichment** (join `matched_id → candidate_index` when `id_source = index`):
