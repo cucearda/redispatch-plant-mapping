@@ -62,8 +62,8 @@ def name_technology(name: str) -> str:
     return ""
 
 
-def main() -> None:
-    r = pd.read_csv(REDISPATCH, sep=";", encoding="utf-8-sig", low_memory=False)
+def main(redispatch_file: str = REDISPATCH) -> None:
+    r = pd.read_csv(redispatch_file, sep=";", encoding="utf-8-sig", low_memory=False)
     r.columns = r.columns.str.strip()
     r["BETROFFENE_ANLAGE"] = r["BETROFFENE_ANLAGE"].astype(str).str.strip()
     r = r[r["BETROFFENE_ANLAGE"].ne("") & r["BETROFFENE_ANLAGE"].ne("nan")]

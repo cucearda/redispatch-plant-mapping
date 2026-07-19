@@ -141,7 +141,8 @@ Final lookup table: **`results/redispatch_plant_matches.csv`** — 398 rows.
 - The rest are structural aggregates (control-reserve regions, substations, regional
   buckets, foreign plants), labelled and — where possible — geocoded.
 
-Run order: `redispatch_prep` → `build_candidate_index` → `match_exact` → `match_fuzzy` →
-`match_llm` → `match_clusters` → `match_wikipedia` → `assemble_results` → `geocode_backfill`.
-Outputs live in `results/`; intermediates and the index in `data/`. Every stage writes
-incrementally and is independently re-runnable.
+Run the whole thing with **`python main.py`** — it orchestrates every stage in order
+(rebuilding the index only if missing) and exposes the redispatch input file as one config
+constant. Or run any stage module directly (`python match_exact.py`) — each writes
+incrementally, so the pipeline is resumable. Outputs live in `results/`; intermediates and
+the index in `data/`.

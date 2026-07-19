@@ -84,9 +84,7 @@ def build_prompt(chunk: list[tuple]) -> str:
             + "\n\n".join(parts))
 
 
-def main() -> None:
-    limit = int(sys.argv[1]) if len(sys.argv) > 1 else None
-
+def main(limit: int | None = None) -> None:
     fuzzy = pd.read_csv(FUZZY, low_memory=False)
     fuzzy["cand_id"] = fuzzy["cand_id"].astype(str)
     idx = pd.read_csv(INDEX, low_memory=False)
@@ -162,4 +160,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
-    main()
+    main(int(sys.argv[1]) if len(sys.argv) > 1 else None)   # optional smoke-test limit
