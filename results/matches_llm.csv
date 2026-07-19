@@ -1,198 +1,313 @@
 betroffene_anlage,matched_id,id_source,method,confidence,reasoning,matched_name,lat,lon
-Wilhelmshaven (ENGIE),742,index,llm,high,ENGIE operates the Wilhelmshaven hard coal plant matching this large 1581 MW unit at the same coordinates.,Wilhelmshaven,53.56808,8.142918
-Reservekraftwerk Altbach/Deizisau Block 1,265,index,llm,high,Direct name match with the 'Heizkraftwerk Altbach/Deizisau' variant and hard coal fuel type consistent with a reserve block.,Altbach Deizisau,48.718902,9.3713815
-KMW_KW3,18298,index,llm,low,"KMW likely refers to Kraftwerksgesellschaft Mainz-Wiesbaden, whose plant appears as 'Mainz Phase', a plausible but uncertain match for block 3.",Mainz Phase,50.025872,8.24192
-Gebersdorf 2,,,llm,none,No candidate corresponds to the Gebersdorf (Nürnberg) power plant location or name.,,,
-50H Halle-Dieselstr HKW-BlockA,4695,index,llm,high,Direct name and location match for the Dieselstrasse CHP plant in Halle.,Dieselstrasse,51.457551,11.991449
-50H Hamburg Wedel1,267,index,llm,medium,"Block 1 of the Wedel plant is the hard coal unit, matching the 253 MW coal candidate at the same coordinates.",Wedel,53.568151,9.724102
-50H Berlin Marzahn,4903,index,llm,high,Direct name and location match for the Marzahn gas plant in Berlin.,Marzahn,52.525284,13.521298
-Netzreservekraftwerk Bexbach A,322,index,llm,high,Direct name match for the Bexbach hard coal reserve power plant.,Bexbach,49.36139,7.237308
-Netzreservekraftwerk Weiher C,264,index,llm,high,Direct name match for the Weiher hard coal reserve power plant.,Weiher,49.333966,7.028434
-50H Halle-Trotha HKW,2776,index,llm,high,Direct match with the 'HKW Halle Trotha' variant and matching location.,Halle Trotha,51.523806,11.943448
-50H Hamburg Tiefstack GuD,3249,index,llm,high,Direct match with the 'GuD Tiefstack' natural gas unit at the Tiefstack site in Hamburg.,Gud Tiefstack,53.526083,10.065517
-Lippendorf VE,313,index,llm,medium,"VE likely denotes Vattenfall Europe's share in the Lippendorf lignite plant, matching the main lignite unit.",Lippendorf,51.1769265,12.376704
-Boxberg (Standort),323,index,llm,high,Direct name match for the large Boxberg lignite power plant site.,Boxberg,51.41333425,14.563203
-50H OWP Wikinger,143020,index,llm,high,Direct match with the Wikinger offshore wind farm.,Wikinger,54.836088842857144,14.067680271428571
-SW München KW-Pool,,,llm,none,"This refers to a pooled portfolio of Stadtwerke München plants rather than a single specific unit, so no single candidate can be confidently matched.",,,
-50H PV Witznitz,4679,index,llm,medium,The Silux Solarpark near Witznitz (Saxony) matches the PV plant location and type described.,Silux Solarpark Gmbh Co Kg,51.16642033333333,12.416004666666666
-Lippendorf EnBW,313,index,llm,high,"EnBW co-owns the Lippendorf lignite plant, matching the main site entry.",Lippendorf,51.1769265,12.376704
-Jänschwalde (Standort),315,index,llm,high,Direct name match for the large Jänschwalde lignite power plant.,Janschwalde,51.835981,14.453465
-Schkopau,270,index,llm,high,Direct name match for the Schkopau lignite power plant.,Schkopau,51.401111,11.950833
-Knapsack 1,722,index,llm,high,"Direct name match for the Knapsack natural gas power plant, block 1 corresponding to this large gas unit.",Knapsack,50.858679,6.845286
-Irsching 5,721,index,llm,high,Irsching 5 is a gas-fired block of the Irsching plant matching id=721.,Irsching,48.767533,11.580019
-Emsland Block B,1157,index,llm,high,"Emsland is a gas-fired plant with multiple blocks, matching id=1157.",Emsland,52.48027,7.305249999999999
-50H OWP Arkona,,,llm,none,No offshore wind park named Arkona appears among the candidates.,,,
-Emsland Block D,1157,index,llm,high,Emsland gas plant matches id=1157 for block D.,Emsland,52.48027,7.305249999999999
-LAUSWARD_GUDF,3228,index,llm,medium,"GUDF (GuD Block F) at Lausward matches the natural gas plant at the same coordinates, id=3228 Swd Kwl Gte.",Swd Kwl Gte,51.222827,6.731094
-Reservekraftwerk Walheim Block 2,1087,index,llm,medium,Walheim Block 2 is the oil-fired reserve unit matching id=1087.,Walheim,49.01598,9.15943
-Heizkraftwerk Heilbronn Block 7,318,index,llm,high,Heilbronn Block 7 corresponds to the Heizkraftwerk Heilbronn plant id=318.,Heilbronn,49.17505666666667,9.207873333333334
-Emsland Block C,1157,index,llm,high,Emsland gas plant matches id=1157 for block C.,Emsland,52.48027,7.305249999999999
-NIEHL-31-GUD,1148,index,llm,high,Niehl GuD block matches Gud Niehl Rheinenergie id=1148.,Gud Niehl Rheinenergie,50.974163,6.988567666666666
-Rheinhafen-Dampfkraftwerk Karlsruhe Block 8,314,index,llm,high,Rheinhafen Dampfkraftwerk Karlsruhe matches id=314.,Rheinhafen Dampfkraftwerk,49.01274,8.304255000000001
-50H OWP Arcadis Ost 1,30734,index,llm,high,Arcadis Ost offshore wind park matches id=30734.,Arcadis Ost,54.81812503703704,13.657002740740742
-ReserveKW Staudinger 5,699,index,llm,medium,Staudinger Block 5 is a hard coal unit matching id=699.,Staudinger,50.088056,8.952222
-HAMMUENTROP_10,723,index,llm,medium,Hamm-Uentrop gas block corresponds to Trianel Gaskraftwerk Hamm id=723.,Trianel Gaskraftwerk Hamm,51.673559,7.9289665
-HERDECKE_H6,719,index,llm,high,Herdecke Block H6 matches Cuno Herdecke Bhkw id=719.,Cuno Herdecke Bhkw,51.4036245,7.41565025
-Rostock Kohlekraftwerk,319,index,llm,high,Rostock coal plant matches KNG Kraftwerk Rostock id=319.,Kng Rostock,54.14065,12.13102
-HAMMUENTROP_20,723,index,llm,medium,Second Hamm-Uentrop gas block matches Trianel Gaskraftwerk Hamm id=723.,Trianel Gaskraftwerk Hamm,51.673559,7.9289665
-Grosskraftwerk Mannheim Block 8,1083,index,llm,high,Grosskraftwerk Mannheim Block 8 matches id=1083.,Grosskraftwerk Mannheim,49.446975,8.492516
-50H Neubrandenburg GuD,3252,index,llm,high,Neubrandenburg GuD matches Gud Nb Gt id=3252.,Gud Nb Gt,53.562547333333335,13.295647666666667
-GERSTEINW_F (KapRes),691,index,llm,medium,Gersteinwerk gas block F capacity reserve matches the natural gas unit id=691.,Gersteinwerk,51.67324,7.710467
-50H OWP Baltic Eagle,32180,index,llm,high,Baltic Eagle offshore wind park matches id=32180.,Baltic Eagle,54.83008946,13.858195599999998
-Reservekraftwerk Heilbronn Block 6,318,index,llm,high,Heilbronn is a Hard Coal plant matching the block designation exactly.,Heilbronn,49.17505666666667,9.207873333333334
-München Nord 2,739,index,llm,high,Swm Nord has variant 'Nord 2' and is located in Munich.,Swm Nord,48.180641,11.637754
-WP Emsland,,,llm,none,No candidate wind farm named or located in Emsland is present in the list.,,,
-NIEDERAUSSEM_H,312,index,llm,high,Niederaussem is the lignite plant with multiple blocks including H.,Niederaussem,50.990677,6.669720000000001
-NIEDERAUSSEM_G,312,index,llm,high,Niederaussem is the lignite plant with multiple blocks including G.,Niederaussem,50.990677,6.669720000000001
-50H Erfurt-Ost HKW GuD,1518,index,llm,high,Direct name match to Gud Erfurt Ost / HKW Erfurt-Ost.,Gud Erfurt Ost,51.0188434,11.0410548
-50H Leipzig Nord GuD,1171,index,llm,high,Matches Heizkraftwerk Leipzig-Nord natural gas plant.,Leipzig Nord,51.351555600000005,12.3777212
-BIBLIS_GT (bnBm),4901,index,llm,high,Exact name match Bnbm Gaskw Bib Gt located near Biblis.,Bnbm Gaskw Bib Gt,49.706078,8.415141
-Netzreservekraftwerk BERGKAMEN_A,274,index,llm,high,Bergkamen hard coal plant directly matches the name.,Bergkamen,51.636945,7.619083
-Grosskraftwerk Mannheim Block 9,1083,index,llm,high,GKM/Grosskraftwerk Mannheim matches the block-level entry.,Grosskraftwerk Mannheim,49.446975,8.492516
-NIEDERAUSSEM_K,312,index,llm,high,Niederaussem lignite plant with block K.,Niederaussem,50.990677,6.669720000000001
-Heizkraftwerk_Pforzheim,3258,index,llm,high,Direct match to Heizkraftwerk Pforzheim GmbH.,Pforzheim,48.896998,8.725477
-UPM Schongau HKW3,3198,index,llm,high,UPM Schongau matches exactly in name and location.,Upm Schongau,47.808151,10.902341
-50H Hamburg Tiefstack 2 HKW SK,730,index,llm,high,Tiefstack is a hard coal (SK) CHP plant in Hamburg matching block 2 designation.,Tiefstack,53.526083,10.065517
-Grosskraftwerk Mannheim Block 6,1083,index,llm,high,GKM/Grosskraftwerk Mannheim matches the block-level entry.,Grosskraftwerk Mannheim,49.446975,8.492516
-Leitzach Pool,298,index,llm,high,Swm Leitzach hydro plant with variant 'Leitzach 1' matches the pool name.,Swm Leitzach,47.874,11.871
-STUMMHAFEN_10,,,llm,none,No candidate plant named or located at Stummhafen is present in the list.,,,
-50H Hamburg MMB BHKW PtH,82762,index,llm,medium,Kwk Hamburg is a small natural-gas CHP unit in Hamburg consistent with a BHKW/PtH designation.,Kwk Hamburg,53.57571046875,10.0168583125
-50H Berlin Reuter West,727,index,llm,high,Direct exact match to Reuter West hard coal plant in Berlin.,Reuter West,52.53207166666667,13.241943999999998
-50H Leipzig Süd GuD,3654,index,llm,high,Leipzig Sud Gta is the natural gas GuD plant matching 'Leipzig Süd GuD'.,Leipzig Sud Gta,51.297278,12.38509
-Heizkraftwerk Altbach/Deizisau GT E,27867,index,llm,high,GT (gas turbine) unit matches the natural-gas Altbach/Deizisau block rather than the hard-coal one.,Altbach Deizisau,48.71778225,9.37267225
-Frankfurt West 4,1080,index,llm,medium,Frankfurt West block 4 best matches the HKW West/Wd Ffw plant located in Frankfurt at the same coordinates.,Wd Ffw,50.099,8.653
-GUD_HERNE_6,1117,index,llm,high,GuD Herne directly corresponds to the natural-gas combined-cycle plant Gud Herne.,Gud Herne,51.5489,7.18335
-Heizkraftwerk Altbach/Deizisau Block 2,265,index,llm,high,"Direct name match to Heizkraftwerk Altbach/Deizisau, the hard-coal main plant with numbered blocks.",Altbach Deizisau,48.718902,9.3713815
-Thyrow D (SysRel),3248,index,llm,high,Thyrow gas turbine plant unit D matches the only Thyrow candidate.,Gasturbinenkraftwerk Thyrow,52.230249,13.302107
-Thyrow E (SysRel),3248,index,llm,high,Thyrow gas turbine plant unit E matches the only Thyrow candidate.,Gasturbinenkraftwerk Thyrow,52.230249,13.302107
-Thyrow C (SysRel),3248,index,llm,high,Thyrow gas turbine plant unit C matches the only Thyrow candidate.,Gasturbinenkraftwerk Thyrow,52.230249,13.302107
-Netzreservekraftwerk Darmstadt/GTKW GT11,3299,index,llm,high,"GTKW Darmstadt directly matches the Netzreservekraftwerk Darmstadt gas turbine plant, unit GT11.",Gtkw Darmstadt,49.8856345,8.649099
-Marbach GT 4 (bnBm),3275,index,llm,high,Marbach GT unit 4 matches the Marbach power plant (Dampfkraftwerk Marbach am Neckar).,Marbach,48.927387499999995,9.231165
-NIEHL-II,1148,index,llm,high,NIEHL-II corresponds to HKW Niehl 2 / Gud Niehl Rheinenergie.,Gud Niehl Rheinenergie,50.974163,6.988567666666666
-Reservekraftwerk Heilbronn Block 5,318,index,llm,high,Block 5 belongs to the Heilbronn hard-coal power plant.,Heilbronn,49.17505666666667,9.207873333333334
-Gebersdorf GT,,,llm,none,No candidate corresponds to the Gebersdorf/Nürnberg location or plant name.,,,
-Frankfurt West 2,1080,index,llm,medium,Frankfurt West block 2 best matches the HKW West/Wd Ffw plant at the same Frankfurt coordinates.,Wd Ffw,50.099,8.653
-50H Dresden-Nossen,1154,index,llm,high,"Dresden-Nossen matches Gasturbinen Nossener Brücke, a gas turbine plant in Dresden.",Gasturbinen Nossener Brucke,51.042464,13.707669
-50H Dresden-Reick,3418,index,llm,high,Dresden-Reick matches the Gasmotoren Dresden Reick plant.,Gasmotoren Dresden Reick,51.0255,13.7845
-Linden GKL GT 1,,,llm,none,No candidate represents the Linden (Gemeinschaftskraftwerk Linden) plant in Hannover.,,,
-Linden GKL DT,,,llm,none,No candidate represents the Linden (Gemeinschaftskraftwerk Linden) plant in Hannover.,,,
-Netzreservekraftwerk Darmstadt/GTKW GT12,3299,index,llm,high,"GTKW Darmstadt directly matches the Netzreservekraftwerk Darmstadt gas turbine plant, unit GT12.",Gtkw Darmstadt,49.8856345,8.649099
-WP_JUECHEN A44N,159489,index,llm,low,"Among several Jüchen wind park candidates, the larger aggregated Wp Juchen entry is the most plausible match for a grid-connection segment near the A44.",Wp Juchen,51.056349857142855,6.498829000000001
-50H Stralsund BHKW+PtH,,,llm,none,No candidate corresponds to a Stralsund combined heat/power plant with power-to-heat.,,,
-ReserveKW Zolling 5,257,index,llm,high,Zolling hard coal plant matches name and location directly.,Zolling,48.455489,11.796122
-Netzreservekraftwerk HERNE_4,317,index,llm,medium,Herne block 4 corresponds to the hard coal Herne plant rather than the GuD unit.,Herne,51.549201,7.18396
-ReserveKW Staudinger 4,699,index,llm,high,Staudinger block 4 is the 522 MW hard coal unit at the Staudinger site.,Staudinger,50.088056,8.952222
-50H InfraLeuna IKW,8569,index,llm,high,InfraLeuna Industriekraftwerk matches the Raffineriekraftwerk Leuna oil plant at the same location.,Raffineriekraftwerk Leuna,51.291343000000005,12.001454
-50H Berlin Lichterfelde,1172,index,llm,high,Direct name and location match for Lichterfelde gas plant in Berlin.,Lichterfelde,52.423388,13.309598
-ReserveKW Ingolstadt 4,8622,index,llm,high,"Ingolstadt oil plant matches name and location, block 4 within capacity range.",Ingolstadt,48.761882,11.50246
-Hannover (GKH) 2,,,llm,none,No candidate corresponds to the Gemeinschaftskraftwerk Hannover (GKH) plant.,,,
-LAUSWARD_AGUD,8669,index,llm,medium,"Lausward Phase is the only Lausward plant candidate, matching the GuD block reference despite fuel type mismatch.",Lausward Phase,51.220831,6.731547
-EGM_DTS,,,llm,none,"No candidate matches the abbreviation EGM_DTS in name, fuel, or location.",,,
-GERSTEINW_DTG2 (KapRes),691,index,llm,medium,Gersteinwerk natural gas unit best matches the 'G' designation in DTG2 for a gas-fired block.,Gersteinwerk,51.67324,7.710467
-HKW BARMEN 1,1528,index,llm,high,HKW Barmen natural gas plant matches name and CHP designation directly.,Barmen,51.269,7.2
-WP Wilstermarsch,,,llm,none,No wind park candidate named Wilstermarsch or nearby location matches.,,,
-Waldeck 6,29,index,llm,high,Waldeck hydro plant matches name; block 6 falls within the Waldeck complex.,Waldeck,51.16743333333333,9.046336666666669
-Waldeck 5,29,index,llm,high,Waldeck hydro plant matches name; block 5 falls within the Waldeck complex.,Waldeck,51.16743333333333,9.046336666666669
-GERSTEINW_G (KapRes),691,index,llm,medium,The 'G' suffix suggests the natural gas Gersteinwerk unit rather than the coal unit.,Gersteinwerk,51.67324,7.710467
-Grosskraftwerk Mannheim Block 7,1083,index,llm,high,Direct match to Grosskraftwerk Mannheim hard coal plant.,Grosskraftwerk Mannheim,49.446975,8.492516
-WEISWEILERVGT_H3,1167,index,llm,medium,"VGT indicates a gas turbine unit, matching the natural gas Weisweiler block rather than the lignite one.",Weissweiler,50.837339,6.319244
-Kraftwerk Walheim GT D,1087,index,llm,medium,GT D suggests the oil-fired gas turbine unit at Walheim rather than the hard coal block.,Walheim,49.01598,9.15943
-50H Halle-Dieselstr HKW-BlockC,4695,index,llm,high,Dieselstrasse natural gas plant in Halle matches name and location closely.,Dieselstrasse,51.457551,11.991449
-Ahrensfelde A (KapRes),3316,index,llm,high,Gtkw Ahrensfelde matches the plant name and location directly.,Gtkw Ahrensfelde,52.580922,13.570582
-Ahrensfelde B (KapRes),3316,index,llm,high,"Gtkw Ahrensfelde matches Ahrensfelde by name, fuel type, and location.",Gtkw Ahrensfelde,52.580922,13.570582
-Ahrensfelde C (KapRes),3316,index,llm,high,"Gtkw Ahrensfelde matches Ahrensfelde by name, fuel type, and location.",Gtkw Ahrensfelde,52.580922,13.570582
-Ahrensfelde D (KapRes),3316,index,llm,high,"Gtkw Ahrensfelde matches Ahrensfelde by name, fuel type, and location.",Gtkw Ahrensfelde,52.580922,13.570582
-Netzreservekraftwerk KMW 2 DT,,,llm,none,"No candidate plausibly represents 'KMW' (likely Kraftwerk Mainz-Wiesbaden), which is absent from the list.",,,
-GERSTEINW_K1 (KapRes),1283,index,llm,high,"K1 denotes the hard-coal ('Kohle') block of Gersteinwerk, matching the 665.5 MW hard coal entry.",Gersteinwerk,51.673532,7.720513
-OWP Nordergründe,94937,index,llm,high,Exact name and fuel/location match for Owp Nordergrunde offshore wind park.,Owp Nordergrunde,53.83530144444445,8.16830877777778
-CHEMIEPARK_MARL_KRAFTWERKE,12318,index,llm,medium,Chemiepark Marl gas-fired 'Kraftwerk I' best matches the generic 'Kraftwerke' plant reference at same coordinates.,Chemiepark Marl,51.6804,7.096900000000001
-Frankfurt West 3,1080,index,llm,high,'Wd Ffw' (West Frankfurt) hard coal plant directly corresponds to 'Frankfurt West' block 3.,Wd Ffw,50.099,8.653
-Walchensee 1,751,index,llm,high,"Walchenseekraftwerk is the only hydro plant named Walchensee, matching block naming.",Walchenseekraftwerk,47.629628,11.33818
-Walchensee 4,751,index,llm,high,"Same Walchenseekraftwerk hydro plant, block 4 reference.",Walchenseekraftwerk,47.629628,11.33818
-Silz 2 (Uniper),OPSD-BNA0906,index,llm,high,KW Silz is the hydro plant matching 'Silz 2' by name and fuel type.,KW Silz,47.269606,10.967829
-Walchensee 3,751,index,llm,high,"Same Walchenseekraftwerk hydro plant, block 3 reference.",Walchenseekraftwerk,47.629628,11.33818
-Walchensee 2,751,index,llm,high,"Same Walchenseekraftwerk hydro plant, block 2 reference.",Walchenseekraftwerk,47.629628,11.33818
-Netzreservekraftwerk GTKW-DA-POOL,,,llm,none,No single candidate corresponds to this generic 'GTKW-DA-POOL' reserve gas turbine pool designation.,,,
-Reservekraftwerk Marbach GT 3,3275,index,llm,medium,"Marbach (Dampfkraftwerk Marbach am Neckar) is the only Marbach plant, plausible site for GT block 3 reserve unit.",Marbach,48.927387499999995,9.231165
-WEISWEILER_VGTG3,1167,index,llm,medium,Weissweiler's natural gas block (400 MW) fits a gas turbine ('GT') designation better than the lignite unit.,Weissweiler,50.837339,6.319244
-Braunschweig HKWM GT31,,,llm,none,No candidate corresponds to a Braunschweig CHP plant (HKWM) in the list.,,,
-KNAPSACK_20,722,index,llm,high,Knapsack natural gas plant directly matches the 'KNAPSACK' name.,Knapsack,50.858679,6.845286
-Heizkraftwerk Gaisburg Block 3,1073,index,llm,high,"'St' variant explicitly lists 'Heizkraftwerk Stuttgart-Gaisburg', matching exactly.",St,49.9767375,9.069419
-GERSTEINW_GTF1 (KapRes),691,index,llm,high,"GTF1 denotes a gas turbine block, matching the natural gas Gersteinwerk unit (1388 MW).",Gersteinwerk,51.67324,7.710467
-50H OWP Baltic 1+2,32078,index,llm,high,"Baltic offshore wind farm matches name, energy type and 50Hertz coastal Baltic Sea location.",Baltic,54.904974653465345,13.056202386138612
-Markersbach (Standort),95,index,llm,high,"Direct name match to Pumpspeicherwerk Markersbach, a large pumped-storage plant in 50Hertz area.",Psw Markersbach Pss,50.52,12.88
-Emden 4 GT (KapRes),3305,index,llm,medium,The 'GT' designation points to the gas turbine unit of the Emden GuD plant rather than the steam turbine unit.,Gud Emden,53.340524,7.210348
-Goldisthal (Standort),10,index,llm,high,Direct name and capacity match to the large Goldisthal pumped-storage plant in 50Hertz territory.,Psw Goldisthal Pss,50.51,11.01
-Pumpspeicherwerk Glems,182,index,llm,high,Exact name and location match for the Glems pumped-storage plant under TransnetBW.,Psw Glems,48.50519,9.28726
-Braunschweig DT,,,llm,none,No candidate in the list corresponds to a Braunschweig power plant.,,,
-Braunschweig GT,,,llm,none,No candidate in the list corresponds to a Braunschweig power plant.,,,
-Pumpspeicherwerk Säckingen RZ TNG,297,index,llm,high,"Direct name match to Säckingen pumped-storage plant, operated within TransnetBW's grid area.",Sackingen,47.56207628571429,7.954524857142857
-Hannover (GKH) 1,,,llm,none,No candidate matches a Hannover-based Gemeinschaftskraftwerk (GKH).,,,
-KMW_KW5,,,llm,none,No candidate corresponds to a plant abbreviated as KMW.,,,
-50H Parchim,,,llm,none,No candidate matches a plant located in or named after Parchim.,,,
-INFRA_HOE_GTX1,15693,index,llm,high,Infraserv Hoechst natural gas unit matches the 'GTX1' gas turbine designation and Amprion grid area.,Infraserv Hoechst,50.091838,8.531305
-Thyrow A (SysRel),3248,index,llm,high,Direct name match to Gasturbinenkraftwerk Thyrow within 50Hertz territory.,Gasturbinenkraftwerk Thyrow,52.230249,13.302107
-Linden GKL GT 3,,,llm,none,No candidate corresponds to the Linden (GKL) power plant.,,,
-Thyrow B (SysRel),3248,index,llm,high,"Same Thyrow gas turbine plant as unit B, matching name and 50Hertz location.",Gasturbinenkraftwerk Thyrow,52.230249,13.302107
-LEIPHEIM_10 (bnBm),3655,index,llm,high,Direct match to the Bnbm Gaskraftwerk Leipheim natural gas plant.,Bnbm Gaskraftwerk Leipheim,48.434778,10.23254
-Kiel (Küstenkraftwerk gesamt),,,llm,none,Name directly matches 'Küstenkraftwerk' K.I.E.L. located in Kiel with matching coordinates.,,,
-ReserveKW Ingolstadt 3,8622,index,llm,high,Ingolstadt oil-fired plant matches the reserve power plant designation for block 3.,Ingolstadt,48.761882,11.50246
-Reservekraftwerk Rheinhafen-Dampfkraftwerk Karlsruhe Block 7,314,index,llm,high,"Direct name match to the Rheinhafen-Dampfkraftwerk Karlsruhe hard coal plant, home of block 7 (RDK7).",Rheinhafen Dampfkraftwerk,49.01274,8.304255000000001
-Robert Frank 4 GT (KapRes),21638,index,llm,high,Direct name match to the Robert Frank natural gas plant used for capacity reserve.,Robert Frank,52.54585,9.11363
-Zolling GT 1,6140,index,llm,high,Direct name match 'Zolling Gt' with matching coordinates and gas turbine type.,Zolling Gt,48.455489,11.796122
-Braunschweig BHKW,8679,index,llm,high,Direct name match 'Bhkw Braunschweig' with matching Braunschweig coordinates.,Bhkw Braunschweig,52.295023,10.521684
-Bremen GKB,728,index,llm,medium,GKB (Gemeinschaftskraftwerk Bremen) corresponds to the Farge hard coal plant located in Bremen.,Farge,53.198738,8.519465
-WP Schafflund,,,llm,none,No candidate wind park matches the name or location of Schafflund.,,,
-GERSTEINW_DTF2 (KapRes),691,index,llm,high,Gersteinwerk gas-fired unit (DTF2) matches the large natural gas Gersteinwerk plant.,Gersteinwerk,51.67324,7.710467
-Kirchlengern GT 1,3269,index,llm,high,Direct name and location match for Kirchlengern gas plant.,Kirchlengern,52.194951,8.648754
-Pumpspeicherwerk Wehr RZ TNG,110,index,llm,high,Pumpspeicherwerk Wehr matches hydro pumped storage plant 'Wehr Ms'.,Wehr Ms,47.652259,7.925798
-Erzhausen 1,0,index,llm,high,Erzhausen pumped storage plant matches directly.,Pumpspeicherkraftwerk Erzhausen,51.898566,9.924887
-Erzhausen 2,0,index,llm,high,"Same Erzhausen pumped storage plant, unit 2.",Pumpspeicherkraftwerk Erzhausen,51.898566,9.924887
-BASF-GESAMTEINSPEISG,692,index,llm,medium,BASF's Ludwigshafen 'Kraftwerk Mitte' (GuD Mitte) matches location and is BASF's main power plant.,Gud Mitte,49.494936,8.434017
-Gebersdorf 1,,,llm,none,No candidate corresponds to the Gebersdorf plant near Nuremberg.,,,
-GERSTEINW_GTI1,691,index,llm,high,Gersteinwerk gas turbine unit matches the natural gas Gersteinwerk plant.,Gersteinwerk,51.67324,7.710467
-GAMOR_ROEMER,3261,index,llm,high,GAMOR_ROEMER corresponds to 'Gasmotorenkraftwerk Romerbrucke' (HKW Römerbrücke).,Gasmotorenkraftwerk Romerbrucke,49.223076,7.016974
-HEIZKRAFTWERK_SAARBRÜCKEN,,,llm,none,No candidate plant is located in or named after Saarbrücken.,,,
-Braunschweig HKWN GT,2772,index,llm,high,HKW-Nord gas turbine in Braunschweig matches coordinates and naming.,Nord Gt,52.3056,10.5072
-Erzhausen 4,0,index,llm,high,"Erzhausen pumped storage plant, unit 4.",Pumpspeicherkraftwerk Erzhausen,51.898566,9.924887
-Erzhausen 3,0,index,llm,high,"Erzhausen pumped storage plant, unit 3.",Pumpspeicherkraftwerk Erzhausen,51.898566,9.924887
-Thyrow D (KapRes),3248,index,llm,high,Direct match to Gasturbinenkraftwerk Thyrow.,Gasturbinenkraftwerk Thyrow,52.230249,13.302107
-Thyrow E (KapRes),3248,index,llm,high,"Direct match to Gasturbinenkraftwerk Thyrow, unit E.",Gasturbinenkraftwerk Thyrow,52.230249,13.302107
-Thyrow B (KapRes),3248,index,llm,high,"Direct match to Gasturbinenkraftwerk Thyrow, unit B.",Gasturbinenkraftwerk Thyrow,52.230249,13.302107
-Thyrow C (KapRes),3248,index,llm,high,Direct name match to Gasturbinenkraftwerk Thyrow.,Gasturbinenkraftwerk Thyrow,52.230249,13.302107
-INFRA_HOE_GTX3,15693,index,llm,medium,"GTX3 suggests gas turbine unit at Infraserv Hoechst, matching the Natural Gas 419.1MW block.",Infraserv Hoechst,50.091838,8.531305
-Reservekraftwerk Rheinhafen-Dampfkraftwerk Karlsruhe Block 4,314,index,llm,medium,Block 4 of the hard-coal Rheinhafen Dampfkraftwerk complex matches the largest hard coal candidate.,Rheinhafen Dampfkraftwerk,49.01274,8.304255000000001
-Braunschweig HKWM DT42,8679,index,llm,medium,BHKW Braunschweig matches the HKW abbreviation and location.,Bhkw Braunschweig,52.295023,10.521684
-GERSTEINW_GTG1 (KapRes),691,index,llm,medium,"GTG1 indicates a gas turbine unit at Gersteinwerk, matching the Natural Gas 1388MW block.",Gersteinwerk,51.67324,7.710467
-Zolling GT 2,6140,index,llm,high,Direct match to Zolling Gt (gas turbine) unit.,Zolling Gt,48.455489,11.796122
-50H BASF Schwarzheide,3243,index,llm,medium,Schwarzheide GuD matches the BASF Schwarzheide site location.,Schwarzheide,51.478138,13.889436
-Netzreservekraftwerk UPM Schongau,3198,index,llm,high,Exact name match to UPM Schongau plant.,Upm Schongau,47.808151,10.902341
-WP Neudersum,150462,index,llm,high,Exact match to Windpark Neudersum.,Windpark Neudersum,52.9776709,7.213945799999999
-HATTINGEN_AIRPRODUCTS(KapRes),,,llm,none,No candidate corresponds to the Hattingen Air Products industrial plant among the renewable/hydro candidates.,,,
-OWP Veja Mate AC105 (kurativ),95076,index,llm,high,Direct match to Owp Veja Mate offshore wind farm.,Owp Veja Mate,54.318555477611945,5.874748507462687
-OWP Albatros AC151 (kurativ),144045,index,llm,high,Direct match to Windpark Albatros offshore wind farm.,Windpark Albatros,54.4871886875,6.24371
-OWP Deutsche Bucht AC152 (kurativ),58458,index,llm,high,Direct match to Deutsche Bucht offshore wind farm.,Deutsche Bucht,54.30371951612902,5.78957629032258
-OWP Deutsche Bucht AC153 (kurativ),58458,index,llm,high,Direct match to Deutsche Bucht offshore wind farm.,Deutsche Bucht,54.30371951612902,5.78957629032258
-OWP Veja Mate AC104 (kurativ),95076,index,llm,high,Direct match to Owp Veja Mate offshore wind farm.,Owp Veja Mate,54.318555477611945,5.874748507462687
-OWP BARD Offshore 1 AC102 (kurativ),32301,index,llm,medium,Bard Offshore Malo likely corresponds to the BARD Offshore 1 wind farm under a renamed entry.,Bard Offshore Malo,54.356897425,5.982390837500001
-OWP BARD Offshore 1 AC103 (kurativ),32301,index,llm,medium,Bard Offshore Malo likely corresponds to the BARD Offshore 1 wind farm under a renamed entry.,Bard Offshore Malo,54.356897425,5.982390837500001
-Würzburg GT 2,,,llm,none,No candidate plant is located in or named after Würzburg.,,,
-HKW_ROEMER_KW,1145,index,llm,high,Romerbrucke matches the HKW Römerbrücke abbreviation.,Romerbrucke,49.224164,7.015021
-50H EnviaTherm Bitterfeld GuD,3320,index,llm,high,Direct match to GuD Bitterfeld plant.,Gud Bitterfeld,51.62902,12.304538
-Würzburg GT 1,,,llm,none,No candidate corresponds to a Würzburg location or gas turbine plant.,,,
-Silz 1 (Uniper),OPSD-BNA0906,index,llm,medium,KW Silz is the only hydro plant at Silz matching the name and location.,KW Silz,47.269606,10.967829
-"Heizkraftwerk Stuttgart-Münster GT 16,17,18",4633,index,llm,high,GT designation matches the natural gas turbine unit at Stuttgart-Münster.,Stuttgart Munster,48.81365,9.21921
-50H Halle-Dieselstr HKW-BlockB,4695,index,llm,high,Dieselstrasse plant in Halle matches name and 50Hertz region coordinates.,Dieselstrasse,51.457551,11.991449
-50H Bad Salzungen HKW,8689,index,llm,high,Direct name match for HKW Bad Salzungen natural gas plant.,Bad Salzungen,50.800018,10.221047
-OWP Borkum Riffgrund 3 Test,51682,index,llm,medium,Test phase of Borkum Riffgrund 3 offshore wind park matches the general Borkum Riffgrund entry.,Borkum Riffgrund,53.99370087557604,6.402609059907834
-Heizkraftwerk Altbach/Deizisau GT A,27867,index,llm,high,"GT A indicates the natural gas turbine unit at Altbach/Deizisau, matching the 248MW gas entry.",Altbach Deizisau,48.71778225,9.37267225
-Hohenwarte 2 (Standort),96,index,llm,medium,No separate Hohenwarte 2 entry exists; the pumped storage complex Psw Hohenwarte Pss likely covers both units.,Psw Hohenwarte Pss,50.602,11.474
-Silz 2 (TIWAG),OPSD-BNA0906,index,llm,medium,"KW Silz is the only hydro plant at Silz, matching despite operator TIWAG not listed.",KW Silz,47.269606,10.967829
-Pumpspeicherwerk Schluchseegruppe Häusern/Waldshut/Witznau RZ TNG,110,index,llm,low,"Wehr is part of the Schluchseewerke pumped storage group, closest plausible match despite name mismatch for Häusern/Witznau.",Wehr Ms,47.652259,7.925798
-Audorf,1524,index,llm,high,Direct name match for Gasturbinenkraftwerk Audorf.,Gasturbinenkraftwerk Audorf,54.29068,9.72286
-Niederrad 1,3253,index,llm,high,Wd Ndr (HKW Niederrad) directly matches the Niederrad plant name.,Wd Ndr,50.086,8.628
-50H PV Bartow,,,llm,none,No candidate corresponds to a solar plant at Bartow.,,,
-Tanzmühle,1996,index,llm,high,Direct name match for Tanzmuhle hydro plant.,Tanzmuhle,49.552216,12.281256
-ReserveKW Plattling,1146,index,llm,high,Direct name match for Kraftwerk Plattling.,Plattling,48.800832,12.868396
-OWP Borkum Riffgrund 3,51682,index,llm,high,Borkum Riffgrund entry matches the offshore wind park name and location directly.,Borkum Riffgrund,53.99370087557604,6.402609059907834
-Reservekraftwerk Heilbronn Block 7,318,index,llm,high,Heilbronn hard coal plant matches the block designation and location.,Heilbronn,49.17505666666667,9.207873333333334
+NIEDERAUSSEM_K,312,index,llm,high,Niederaussem lignite plant matches block K designation.,Niederaussem,50.990677,6.669720000000001
+Rheinhafen-Dampfkraftwerk Karlsruhe Block 7,314,index,llm,high,RDK Block 7 is the hard-coal unit matching the 1351 MW Rheinhafen Dampfkraftwerk entry.,Rheinhafen Dampfkraftwerk,49.01274,8.304255000000001
+VOELKLINGEN_MKV,165502,index,llm,high,"MKV = Modellkraftwerk Völklingen, matching the 'Modellkraftwerk' candidate located at Völklingen coordinates.",Voelklingen Fenne Model,49.2491,6.879
+NIEDERAUSSEM_C,312,index,llm,high,"Niederaussem lignite plant, block C is part of this site.",Niederaussem,50.990677,6.669720000000001
+Rostock Kohlekraftwerk,319,index,llm,high,KNG Kraftwerk Rostock is the hard-coal plant in Rostock.,Kng Rostock,54.14065,12.13102
+Heizkraftwerk Altbach/Deizisau Block 2,265,index,llm,high,Direct name match to Altbach/Deizisau hard coal CHP plant.,Altbach Deizisau,48.718902,9.3713815
+Heizkraftwerk Heilbronn Block 7,318,index,llm,high,Direct name match to Heilbronn hard coal plant.,Heilbronn,49.17505666666667,9.207873333333334
+Boxberg (Standort),323,index,llm,high,Boxberg lignite plant matches the site name directly.,Boxberg,51.41333425,14.563203
+Jänschwalde (Standort),315,index,llm,high,Direct name and fuel match to Jänschwalde lignite plant.,Janschwalde,51.835981,14.453465
+Lippendorf EnBW,313,index,llm,high,"Lippendorf lignite plant is co-owned by EnBW, matching name and fuel type.",Lippendorf,51.1769265,12.376704
+KMW_KW3,18298,index,llm,medium,"KMW likely refers to Kraftwerke Mainz-Wiesbaden, matching the Mainz Phase hard coal candidate located in Mainz.",Mainz Phase,50.025872,8.24192
+Reservekraftwerk Rheinhafen-Dampfkraftwerk Karlsruhe Block 4,314,index,llm,high,RDK Block 4 is part of the hard-coal Rheinhafen Dampfkraftwerk site.,Rheinhafen Dampfkraftwerk,49.01274,8.304255000000001
+Reservekraftwerk Walheim Block 1,1087,index,llm,high,"Walheim Block 1 reserve unit is oil-fired, matching the 136 MW oil candidate at Walheim.",Walheim,49.01598,9.15943
+WEIHER_C,264,index,llm,high,"Weiher hard coal plant, block C designation matches directly.",Weiher,49.333966,7.028434
+Reservekraftwerk Heilbronn Block 5,318,index,llm,high,Only Heilbronn candidate matches the reserve plant name.,Heilbronn,49.17505666666667,9.207873333333334
+BEXBACH_1,322,index,llm,high,Direct name match to Bexbach hard coal plant.,Bexbach,49.36139,7.237308
+Reservekraftwerk Walheim Block 2,596,index,llm,high,"Walheim Block 2 reserve unit is hard coal, matching the 244 MW coal candidate at Walheim.",Walheim,49.017585,9.15769
+Reservekraftwerk Altbach/Deizisau Block 1,265,index,llm,high,"Direct name match to Altbach/Deizisau hard coal plant, Block 1 reserve unit.",Altbach Deizisau,48.718902,9.3713815
+Reservekraftwerk Heilbronn Block 6,318,index,llm,high,Only Heilbronn candidate matches the reserve plant name.,Heilbronn,49.17505666666667,9.207873333333334
+Wilhelmshaven (ENGIE),742,index,llm,high,"Kraftwerk Wilhelmshaven, operated by ENGIE, matches the 1581 MW hard coal candidate.",Wilhelmshaven,53.56808,8.142918
+Lippendorf VE,313,index,llm,high,Lignite plant Lippendorf matches name and fuel type directly.,Lippendorf,51.1769265,12.376704
+NIEDERAUSSEM_G,312,index,llm,high,Direct name match to Niederaussem lignite plant.,Niederaussem,50.990677,6.669720000000001
+Wilhelmshaven (Uniper),742,index,llm,high,Uniper-operated hard coal plant Wilhelmshaven matches name and scale.,Wilhelmshaven,53.56808,8.142918
+WEISWEILER_VGTG3,1167,index,llm,medium,"The 'GT' suffix indicates a gas turbine unit, matching the natural gas Weisweiler entry rather than the lignite one.",Weissweiler,50.837339,6.319244
+Mehrum,,,llm,none,No candidate named Mehrum or matching coordinates/fuel exists in the list.,,,
+VOELKLINGEN_HKV,665,index,llm,medium,Fenne is the actual hard-coal plant located in Völklingen matching coordinates and fuel type.,Fenne,49.248932499999995,6.8809705
+ReserveKW Heyden,316,index,llm,high,Direct name match to Heyden hard coal reserve plant.,Heyden,52.379,8.997
+NIEDERAUSSEM_H,312,index,llm,high,"Direct name match to Niederaussem lignite plant, block H.",Niederaussem,50.990677,6.669720000000001
+EMSLAND_DTC0,1157,index,llm,high,Direct name match to Emsland gas plant.,Emsland,52.48027,7.305249999999999
+GTKW-DA-GT11,,,llm,none,No candidate clearly corresponds to 'DA' gas turbine plant abbreviation.,,,
+Rheinhafen-Dampfkraftwerk Karlsruhe Block 8,314,index,llm,high,Exact name and location match for Rheinhafen-Dampfkraftwerk Karlsruhe.,Rheinhafen Dampfkraftwerk,49.01274,8.304255000000001
+Gebersdorf 2,,,llm,none,No candidate named Gebersdorf or matching location/fuel found.,,,
+Zolling 5,257,index,llm,high,"Direct match to Zolling hard coal plant, block 5.",Zolling,48.455489,11.796122
+Gebersdorf 1,,,llm,none,No candidate named Gebersdorf found in list.,,,
+Irsching 5,721,index,llm,high,Irsching gas plant matches block 5 designation and fuel type.,Irsching,48.767533,11.580019
+Schkopau VE,270,index,llm,high,Direct match to Schkopau lignite plant.,Schkopau,51.401111,11.950833
+GERSTEINW_GTG1,691,index,llm,high,GT designation matches the natural gas Gersteinwerk unit.,Gersteinwerk,51.67324,7.710467
+GERSTEINW_DTG2,1283,index,llm,high,DT designation matches the hard coal Gersteinwerk unit.,Gersteinwerk,51.673532,7.720513
+HAMMUENTROP_20,723,index,llm,high,Hamm-Uentrop location matches Trianel Gaskraftwerk Hamm.,Trianel Gaskraftwerk Hamm,51.673559,7.9289665
+Thyrow C (KapRes),3248,index,llm,high,Direct match to Gasturbinenkraftwerk Thyrow capacity reserve unit.,Gasturbinenkraftwerk Thyrow,52.230249,13.302107
+Thyrow D (KapRes),3248,index,llm,high,Thyrow gas turbine plant matches name and location directly.,Gasturbinenkraftwerk Thyrow,52.230249,13.302107
+HKW_ROEMER_KW,1145,index,llm,medium,HKW Römerbrücke matches the larger main unit rather than the smaller gas-motor variant.,Romerbrucke,49.224164,7.015021
+BASF-GESAMTEINSPEISG,692,index,llm,medium,BASF's total feed-in aligns with the Kraftwerk Mitte GuD located at Ludwigshafen (BASF site) coordinates.,Gud Mitte,49.494936,8.434017
+ReserveKW Irsching 3,3315,index,llm,medium,Irsching block 3 corresponds to the oil-fired 415 MW unit distinct from the large gas CCGT block.,Irsching,48.767533,11.580019
+Pumpspeicherwerk Schluchseegruppe Häusern/Waldshut/Witznau RZ TNG,110,index,llm,low,"Wehr is part of the Schluchseewerk pumped-storage group near Waldshut, closest plausible match though no exact Häusern entry exists.",Wehr Ms,47.652259,7.925798
+Reservekraftwerk Marbach GT 3,3275,index,llm,high,Marbach reserve power plant matches name and location for GT block 3.,Marbach,48.927387499999995,9.231165
+Reservekraftwerk Marbach DT 3,3275,index,llm,high,Same Marbach reserve plant covers DT (steam turbine) block 3.,Marbach,48.927387499999995,9.231165
+KNAPSACK_20,722,index,llm,high,Knapsack gas plant directly matches name.,Knapsack,50.858679,6.845286
+EMSLAND_DTB0,1157,index,llm,high,Emsland gas plant matches name directly.,Emsland,52.48027,7.305249999999999
+HAMMUENTROP_10,723,index,llm,high,Trianel Gaskraftwerk Hamm matches the Hamm location referenced in the entry.,Trianel Gaskraftwerk Hamm,51.673559,7.9289665
+IBBENBUEREN_B,1077,index,llm,high,Ibbenbüren hard coal plant matches name directly.,Ibbenburen,52.285881,7.750047
+Thyrow A (KapRes),3248,index,llm,high,Thyrow gas turbine plant matches name and capacity reserve context.,Gasturbinenkraftwerk Thyrow,52.230249,13.302107
+Emden 4 GT (KapRes),3305,index,llm,medium,The GT designation fits the Emden Gas (Gud Emden) unit better than the Dampfturbine unit despite lower capacity.,Gud Emden,53.340524,7.210348
+Thyrow B (KapRes),3248,index,llm,high,Thyrow gas turbine plant matches name and capacity reserve context.,Gasturbinenkraftwerk Thyrow,52.230249,13.302107
+GERSTEINW_GTF1,691,index,llm,high,Gersteinwerk gas turbine block matches the natural gas unit.,Gersteinwerk,51.67324,7.710467
+GERSTEINW_DTF2,1283,index,llm,medium,DTF likely denotes the steam turbine (Dampfturbine) hard coal block of Gersteinwerk.,Gersteinwerk,51.673532,7.720513
+Emsland Block B,1157,index,llm,high,Emsland gas plant matches name directly.,Emsland,52.48027,7.305249999999999
+NIEHL-31-GUD,1148,index,llm,high,GuD Niehl matches name and fuel type directly.,Gud Niehl Rheinenergie,50.974163,6.988567666666666
+LAUSWARD_AGUD,3228,index,llm,high,Swd Kwl Gte natural gas unit at matching Lausward coordinates represents the GuD (Fortuna) block A.,Swd Kwl Gte,51.222827,6.731094
+HERDECKE_H6,719,index,llm,high,Cuno Heizkraftwerk Herdecke matches the Herdecke location and block designation.,Cuno Herdecke Bhkw,51.4036245,7.41565025
+SWDU_HKW_3B_GT2,3228,index,llm,high,SWD (Stadtwerke Duisburg) KWL GTE natural gas plant matches location and turbine designation.,Swd Kwl Gte,51.222827,6.731094
+LAUSWARD_GUDF,8669,index,llm,medium,"Only candidate named Lausward, though fuel type listed as coal rather than the GuD gas unit implied by name.",Lausward Phase,51.220831,6.731547
+KNAPSACK_DT10,722,index,llm,high,Direct name match to Knapsack natural gas plant.,Knapsack,50.858679,6.845286
+Knapsack 1,722,index,llm,high,Direct name match to Knapsack natural gas plant.,Knapsack,50.858679,6.845286
+Ahrensfelde A (KapRes),3316,index,llm,high,"Gtkw Ahrensfelde is the only Ahrensfelde plant in the list, matching name and gas turbine type for capacity reserve.",Gtkw Ahrensfelde,52.580922,13.570582
+ReserveKW Staudinger 4,,,llm,none,No Staudinger plant present among the given candidates.,,,
+Emsland Block D,1157,index,llm,high,Emsland natural gas plant directly matches block designation.,Emsland,52.48027,7.305249999999999
+Ahrensfelde B (KapRes),3316,index,llm,high,Gtkw Ahrensfelde is the only Ahrensfelde plant available.,Gtkw Ahrensfelde,52.580922,13.570582
+Ahrensfelde C (KapRes),3316,index,llm,high,Gtkw Ahrensfelde is the only Ahrensfelde plant available.,Gtkw Ahrensfelde,52.580922,13.570582
+Ahrensfelde D (KapRes),3316,index,llm,high,Gtkw Ahrensfelde is the only Ahrensfelde plant available.,Gtkw Ahrensfelde,52.580922,13.570582
+UPMSchongau,3198,index,llm,high,Exact name match to UPM Schongau natural gas plant.,Upm Schongau,47.808151,10.902341
+Emsland Block C,1157,index,llm,high,Emsland natural gas plant directly matches block designation.,Emsland,52.48027,7.305249999999999
+Reservekraftwerk Marbach GT 2,3275,index,llm,high,"Marbach is the only plant matching name, used as reserve gas turbine unit.",Marbach,48.927387499999995,9.231165
+ReserveKW Ingolstadt 4,8622,index,llm,high,Ingolstadt oil plant matches reserve power plant block 4 designation.,Ingolstadt,48.761882,11.50246
+Erzhausen 3,0,index,llm,high,Pumpspeicherkraftwerk Erzhausen is the only Erzhausen storage plant listed.,Pumpspeicherkraftwerk Erzhausen,51.898566,9.924887
+Erzhausen 1,0,index,llm,high,Pumpspeicherkraftwerk Erzhausen is the only Erzhausen storage plant listed.,Pumpspeicherkraftwerk Erzhausen,51.898566,9.924887
+Erzhausen 4,0,index,llm,high,Pumpspeicherkraftwerk Erzhausen is the only Erzhausen storage plant listed.,Pumpspeicherkraftwerk Erzhausen,51.898566,9.924887
+EMSLAND_DTD0,1157,index,llm,high,Direct name match to Emsland natural gas plant.,Emsland,52.48027,7.305249999999999
+ReserveKW Ingolstadt 3,8622,index,llm,high,Ingolstadt oil plant matches reserve power plant block 3 designation.,Ingolstadt,48.761882,11.50246
+Hohenwarte 2 (Standort),96,index,llm,medium,No Hohenwarte 2 entry exists; nearest match is the co-located Hohenwarte pumped-storage site (Hohenwarte 1).,Psw Hohenwarte Pss,50.602,11.474
+Grosskraftwerk Mannheim Block 6 und 8,1083,index,llm,high,"Name directly matches Grosskraftwerk Mannheim (GKM), a hard coal plant with multiple blocks.",Grosskraftwerk Mannheim,49.446975,8.492516
+Goldisthal (Standort),10,index,llm,high,Goldisthal pumped storage plant matches the Sonstiges energy type and hydro storage capacity.,Psw Goldisthal Pss,50.51,11.01
+Pumpspeicherwerk Säckingen RZ TNG,297,index,llm,high,Direct name match to Säckingen pumped storage hydro plant under TransnetBW.,Sackingen,47.56207628571429,7.954524857142857
+KNAPSACK_GT12,722,index,llm,high,Knapsack gas turbine unit matches the Natural Gas Knapsack plant.,Knapsack,50.858679,6.845286
+KNAPSACK_GT11,722,index,llm,high,"Same Knapsack gas plant, another gas turbine unit designation.",Knapsack,50.858679,6.845286
+Heizkraftwerk Altbach/Deizisau GT A,27867,index,llm,medium,GT designation suggests the natural gas turbine unit at Altbach Deizisau rather than the coal block.,Altbach Deizisau,48.71778225,9.37267225
+"Heizkraftwerk Stuttgart-Münster GT 16,17,18",4633,index,llm,medium,GT numbering suggests the natural gas unit at Stuttgart Münster site.,Stuttgart Munster,48.81365,9.21921
+STUMMHAFEN_10,,,llm,none,No candidate plausibly matches the name 'Stummhafen'.,,,
+Kraftwerk Walheim GT D,1087,index,llm,medium,GT designation points to the oil-fired gas turbine unit at Walheim rather than the coal block.,Walheim,49.01598,9.15943
+EMSLAND_GTD1,1157,index,llm,high,"Direct match to the large Emsland natural gas plant, gas turbine unit 1.",Emsland,52.48027,7.305249999999999
+EMSLAND_GTD2,1157,index,llm,high,"Direct match to the large Emsland natural gas plant, gas turbine unit 2.",Emsland,52.48027,7.305249999999999
+Thyrow A (SysRel),3248,index,llm,high,Gasturbinenkraftwerk Thyrow matches the name and location exactly for unit A.,Gasturbinenkraftwerk Thyrow,52.230249,13.302107
+Thyrow B (SysRel),3248,index,llm,high,Same Thyrow gas turbine plant for unit B.,Gasturbinenkraftwerk Thyrow,52.230249,13.302107
+Thyrow D (SysRel),3248,index,llm,high,Same Thyrow gas turbine plant for unit D.,Gasturbinenkraftwerk Thyrow,52.230249,13.302107
+Thyrow E (SysRel),3248,index,llm,high,Same Thyrow gas turbine plant for unit E.,Gasturbinenkraftwerk Thyrow,52.230249,13.302107
+Thyrow C (SysRel),3248,index,llm,high,Same Thyrow gas turbine plant for unit C.,Gasturbinenkraftwerk Thyrow,52.230249,13.302107
+Grosskraftwerk Mannheim Block 7,1083,index,llm,high,"Direct match to Grosskraftwerk Mannheim (GKM) hard coal plant, block 7.",Grosskraftwerk Mannheim,49.446975,8.492516
+Erzhausen 2,0,index,llm,high,"Matches Pumpspeicherkraftwerk Erzhausen, a hydro storage plant under TenneT.",Pumpspeicherkraftwerk Erzhausen,51.898566,9.924887
+München Süd DT 1,,,llm,none,No candidate plant is located in München Süd or matches this designation.,,,
+GTKW-DA-GT12,,,llm,none,No candidate corresponds to a 'GTKW-DA' plant abbreviation.,,,
+Waldeck 5,29,index,llm,high,"Waldeck 5 is a block of the Waldeck pumped-storage plant, matching id=29 Waldeck.",Waldeck,51.16743333333333,9.046336666666669
+Waldeck 1,29,index,llm,high,"Waldeck 1 corresponds to the same Waldeck pumped-storage plant, id=29.",Waldeck,51.16743333333333,9.046336666666669
+Netzreservekraftwerk Weiher/C,264,index,llm,high,Weiher/C matches the hard-coal Weiher plant (id=264) used as network reserve.,Weiher,49.333966,7.028434
+KKE_A,,,llm,none,"KKE likely refers to the Emsland site; the only Emsland candidate in the list is the gas-fired plant (id=1157), though fuel type doesn't confirm the usual nuclear KKE meaning.",,,
+Netzreservekraftwerk Bexbach/A,322,index,llm,high,"Bexbach/A directly matches the Bexbach hard-coal plant, id=322.",Bexbach,49.36139,7.237308
+Heizkraftwerk Altbach/Deizisau GT E,27867,index,llm,high,The 'GT' designation points to the gas-fired unit at Altbach/Deizisau (id=27867) rather than the coal block.,Altbach Deizisau,48.71778225,9.37267225
+Grosskraftwerk Mannheim Block 9,1083,index,llm,high,"Block 9 belongs to the Grosskraftwerk Mannheim (GKM) hard-coal plant, id=1083.",Grosskraftwerk Mannheim,49.446975,8.492516
+Netzreservekraftwerk Darmstadt/GTKW GT12,3299,index,llm,high,"GTKW Darmstadt directly matches id=3299, a gas turbine reserve plant in Darmstadt.",Gtkw Darmstadt,49.8856345,8.649099
+Netzreservekraftwerk Darmstadt/GTKW GT11,3299,index,llm,high,Same GTKW Darmstadt site (id=3299) for the GT11 unit.,Gtkw Darmstadt,49.8856345,8.649099
+Thyrow E (KapRes),3248,index,llm,high,"Thyrow matches the Gasturbinenkraftwerk Thyrow, id=3248, a capacity reserve gas turbine plant.",Gasturbinenkraftwerk Thyrow,52.230249,13.302107
+Freimann GT12,690,index,llm,high,"Freimann GT12 matches the SWM Freimann gas plant (id=690), the only Freimann candidate.",Swm Freimann,48.189,11.596
+Freimann GT11,690,index,llm,high,Same SWM Freimann plant (id=690) for the GT11 unit.,Swm Freimann,48.189,11.596
+Silz 1 (TIWAG),OPSD-BNA0906,index,llm,high,"Silz matches the TIWAG hydro plant KW Silz in Tyrol, id=OPSD-BNA0906.",KW Silz,47.269606,10.967829
+Silz 2 (Uniper),OPSD-BNA0906,index,llm,medium,"Same Silz hydro site is the only candidate, though operator listed differs (Uniper vs TIWAG).",KW Silz,47.269606,10.967829
+Netzreservekraftwerk KMW 2 DT,,,llm,none,No candidate corresponds to the KMW (Kraftwerk Mainz-Wiesbaden) site among the given options.,,,
+Schkopau,270,index,llm,high,"Exact name match with the Schkopau lignite plant, id=270.",Schkopau,51.401111,11.950833
+LUDWHN_A800_GT11,,,llm,none,No candidate matches the 'LUDWHN' (likely Ludwigshafen) designation.,,,
+50H-OWP-Wikinger,143020,index,llm,high,"OWP Wikinger directly matches the offshore wind farm Wikinger, id=143020.",Wikinger,54.836088842857144,14.067680271428571
+NEURATH_A_110kV,272,index,llm,high,"NEURATH matches the large lignite plant Neurath, id=272, despite the voltage suffix.",Neurath,51.037649,6.612286
+Linden GKL GT 3,,,llm,none,No candidate corresponds to the Kraftwerk Linden (GKL) site among the given options.,,,
+Robert Frank 4 GT (KapRes),21638,index,llm,high,Direct name match to Robert Frank gas plant with matching capacity.,Robert Frank,52.54585,9.11363
+50H OWP MIO Baltic 1+2,32078,index,llm,high,Baltic wind farm matches '50Hertz OWP Baltic 1+2' naming and location off Rügen.,Baltic,54.904974653465345,13.056202386138612
+Pumpspeicherwerk Glems,182,index,llm,high,Exact name and type match for pumped-storage plant Glems.,Psw Glems,48.50519,9.28726
+Netzreservekraftwerk UPM Schongau,3198,index,llm,high,Direct match to UPM Schongau gas plant used as grid reserve.,Upm Schongau,47.808151,10.902341
+Silz 2 (TIWAG),OPSD-BNA0906,index,llm,high,"KW Silz hydro plant in Tyrol matches TIWAG's Sellrain-Silz scheme, block 2.",KW Silz,47.269606,10.967829
+50H OWP Arkona,,,llm,none,No candidate named Arkona or matching its coordinates exists in the list.,,,
+50H OWP Wikinger,143020,index,llm,high,Exact name match to Wikinger offshore wind farm operated under 50Hertz area.,Wikinger,54.836088842857144,14.067680271428571
+Silz 1 (Uniper),OPSD-BNA0906,index,llm,medium,"Same KW Silz plant as block 1, though operator listed as Uniper rather than TIWAG creates some uncertainty.",KW Silz,47.269606,10.967829
+OWP Nordergründe,94937,index,llm,high,Direct name and location match to Owp Nordergrunde offshore wind farm.,Owp Nordergrunde,53.83530144444445,8.16830877777778
+EMSLAND_GTC1,1157,index,llm,high,Emsland gas plant matches the gas turbine unit C1 naming and location.,Emsland,52.48027,7.305249999999999
+HKW-OF-EVO,,,llm,none,No candidate corresponds to an Offenbach EVO CHP plant among the listed entries.,,,
+VoelklingenGT,165502,index,llm,medium,"Völklingen Fenne coal plant is the only Völklingen-named candidate, plausibly containing the referenced gas turbine unit.",Voelklingen Fenne Model,49.2491,6.879
+OWP Riffgat,124206,index,llm,high,Direct name match to Riffgat offshore wind farm.,Riffgat,53.69243143333333,6.475444666666667
+WEISWEILERVGT_H3,1167,index,llm,high,Weisweiler gas turbine (Natural Gas) matches the 'VGT' gas turbine block designation at the Weisweiler site.,Weissweiler,50.837339,6.319244
+Markersbach (Standort),95,index,llm,high,Direct name and hydro type match to Markersbach pumped-storage plant.,Psw Markersbach Pss,50.52,12.88
+Frankfurt West 4,1080,index,llm,high,Wd Ffw (HKW West) located in Frankfurt matches the 'Frankfurt West' block naming.,Wd Ffw,50.099,8.653
+EMSLAND_GTB1,1157,index,llm,high,Emsland gas plant matches the gas turbine unit B1 naming and location.,Emsland,52.48027,7.305249999999999
+Waldeck 6,29,index,llm,high,Waldeck hydro plant matches the block 6 designation of the Waldeck pumped-storage complex.,Waldeck,51.16743333333333,9.046336666666669
+HKW_BA_B1_DT_23,43876,index,llm,low,"The 'Ba' location code in Bhkw Heizzentrale Pgw Ba loosely matches the 'BA' site abbreviation, though capacity and block numbering are uncertain.",Bhkw Heizzentrale Pgw Ba,48.478254500000006,7.9609375
+HKW_BA_B1_GT_11,,,llm,none,No candidate in this list corresponds to a gas turbine unit at a 'BA' site matching the naming pattern.,,,
+KMW_KW5,39620,index,llm,low,"Coordinates near Mainz-Wiesbaden area match the gas-fired Bhkw unit, though the name abbreviation is not directly confirmed.",Bhkw,50.027031,8.2409
+GERSTEINW_K1,1283,index,llm,high,"K1 denotes the coal (Kohle) block of Gersteinwerk, matching the hard-coal Gersteinwerk candidate.",Gersteinwerk,51.673532,7.720513
+Niederrad 1,3253,index,llm,high,Direct name match 'HKW Niederrad' with matching coordinates in Frankfurt.,Wd Ndr,50.086,8.628
+Kernkraftwerk Neckarwestheim Block 2,,,llm,none,No nuclear plant candidate corresponding to Neckarwestheim is present in the list.,,,
+Braunschweig DT,,,llm,none,No candidate located in or named after Braunschweig exists in the list.,,,
+Braunschweig GT,,,llm,none,No candidate located in or named after Braunschweig exists in the list.,,,
+Emsland Block D pool,1157,index,llm,high,"Emsland gas power plant matches directly by name and location, Block D being a sub-unit.",Emsland,52.48027,7.305249999999999
+B¿rse,,,llm,none,Garbled name gives no clear plant reference among the candidates.,,,
+WP Emsland,,,llm,none,No wind park candidate located in the Emsland region is present.,,,
+WP Wilstermarsch,,,llm,none,No candidate corresponds to the Wilstermarsch wind farm location.,,,
+Pumpspeicherwerk Wehr RZ TNG,110,index,llm,high,Direct name and location match for the Wehr pumped-storage plant under TransnetBW.,Wehr Ms,47.652259,7.925798
+D4_SWSW_ANT_RWE,,,llm,none,Abbreviated code does not correspond to any identifiable candidate plant.,,,
+50H Berlin Marzahn,4903,index,llm,high,Marzahn candidate directly matches the Berlin Marzahn plant name and location.,Marzahn,52.525284,13.521298
+SW München KW-Pool,3230,index,llm,medium,Represents the main Stadtwerke München combined-cycle plant (Süd GuD) as the largest unit in the SWM pool.,Swm Sued Gud,48.111831124999995,11.5523455
+GERSTEINW_GTF1 (KapRes),691,index,llm,high,GT designation matches the natural gas Gersteinwerk unit.,Gersteinwerk,51.67324,7.710467
+GERSTEINW_DTF2 (KapRes),691,index,llm,medium,DT likely refers to the steam turbine of the gas-fired Gersteinwerk combined-cycle block.,Gersteinwerk,51.67324,7.710467
+BIBLIS_GT (bnBm),4901,index,llm,high,Directly matches 'Bnbm Gaskw Bib Gt' candidate by name and fuel type.,Bnbm Gaskw Bib Gt,49.706078,8.415141
+GERSTEINW_GTG1 (KapRes),691,index,llm,high,GT designation matches the natural gas Gersteinwerk unit.,Gersteinwerk,51.67324,7.710467
+GERSTEINW_DTG2 (KapRes),691,index,llm,medium,DT likely refers to the steam turbine of the gas-fired Gersteinwerk combined-cycle block.,Gersteinwerk,51.67324,7.710467
+AMP_WESTNETZ_NAHE_TEL,,,llm,none,No candidate corresponds to a plant in the Nahe region under Westnetz.,,,
+PSW Rönkhausen,31,index,llm,high,Direct name match to Pumpspeicherwerk Rönkhausen (Hydro/PSW) at matching coordinates.,Pumpspeicherwerk Ronkhausen Psw,51.227233,7.971745
+Kiel (Küstenkraftwerk gesamt),2681,index,llm,high,Gemeinschaftskraftwerk Kiel variant matches Küstenkraftwerk Kiel location and name.,Kiel Phase,54.338671,10.176885
+EGM_DTS,,,llm,none,"No candidate plausibly matches the abbreviation EGM_DTS by name, fuel type or location.",,,
+Linden GKL DT,,,llm,none,"No candidate named Linden (Gemeinschaftskraftwerk Linden, Hannover) appears in the candidate list.",,,
+Linden GKL GT 1,,,llm,none,"No candidate named Linden (Gemeinschaftskraftwerk Linden, Hannover) appears in the candidate list.",,,
+NIEHL-II,1148,index,llm,high,HKW Niehl 2 variant directly matches NIEHL-II naming and fuel/capacity profile.,Gud Niehl Rheinenergie,50.974163,6.988567666666666
+50H HAP Halle-Dieselstr HKW-BlockC,,,llm,none,"Dieselstrasse plant matches Halle-Dieselstraße HKW location, block letter denotes a unit of same plant.",,,
+HAP Jänschwalde (Standort),315,index,llm,high,Direct name and location match to KW Jänschwalde lignite plant.,Janschwalde,51.835981,14.453465
+HAP Lippendorf VE,313,index,llm,high,Direct name match to Lippendorf lignite plant.,Lippendorf,51.1769265,12.376704
+HAP Schkopau,270,index,llm,high,Direct name match to Schkopau lignite plant.,Schkopau,51.401111,11.950833
+München Nord 2,739,index,llm,high,Swm Nord variant 'Nord 2' matches München Nord 2 name and coordinates.,Swm Nord,48.180641,11.637754
+HAP Schwarze Pumpe (Standort),268,index,llm,high,Direct name match to Schwarze Pumpe lignite plant.,Schwarze Pumpe,51.531359,14.348723
+HAP Boxberg (Standort),323,index,llm,high,Direct name match to Boxberg lignite plant.,Boxberg,51.41333425,14.563203
+Emsland Block C pool,1157,index,llm,high,Emsland gas plant matches name and location for a block-level pooled entry.,Emsland,52.48027,7.305249999999999
+Bexbach A,322,index,llm,high,"Direct name match to Kraftwerk Bexbach hard coal plant, block A.",Bexbach,49.36139,7.237308
+WP Kaskasi,94899,index,llm,high,Owp Kaskasi is the offshore wind park matching the name Kaskasi and wind fuel type.,Owp Kaskasi,54.48880481578948,7.691322236842105
+50H Erfurt-Ost HKW GuD,1518,index,llm,high,Gud Erfurt Ost / HKW Erfurt-Ost variant directly matches the entry name.,Gud Erfurt Ost,51.0188434,11.0410548
+Weiher C,264,index,llm,high,"Direct name match to Kraftwerk Weiher hard coal plant, block C.",Weiher,49.333966,7.028434
+SWDU_HKW_3A,3228,index,llm,medium,"SWD prefix and HKW designation best match the largest Stadtwerke Duisburg CHP unit Swd Kwl Gte, though exact block correspondence is uncertain.",Swd Kwl Gte,51.222827,6.731094
+50H Halle-Dieselstr HKW-BlockA,4695,index,llm,high,"Dieselstrasse plant matches Halle-Dieselstraße HKW location, block letter denotes a unit of same plant.",Dieselstrasse,51.457551,11.991449
+50H Halle-Dieselstr HKW-BlockB,4695,index,llm,high,"Name 'Halle-Dieselstr' matches variant 'Dieselstrasse' located in Halle (51.46,11.99).",Dieselstrasse,51.457551,11.991449
+ROENKHAUSEN_PSW1,31,index,llm,high,"Direct name match to 'Pumpspeicherwerk Ronkhausen Psw', a pumped-storage hydro plant.",Pumpspeicherwerk Ronkhausen Psw,51.227233,7.971745
+Grosskraftwerk Mannheim Block 6 7 und 8,1083,index,llm,high,"Exact name match 'Grosskraftwerk Mannheim' (GKM), hard coal plant with multiple blocks.",Grosskraftwerk Mannheim,49.446975,8.492516
+Heizkraftwerk Gaisburg Block 3,1073,index,llm,high,Variant 'Heizkraftwerk Stuttgart-Gaisburg' matches exactly.,St,49.9767375,9.069419
+Frankfurt West 3,1080,index,llm,medium,"Coordinates (50.099,8.653) place 'Wd Ffw / HKW West' directly in Frankfurt, matching 'Frankfurt West' block naming.",Wd Ffw,50.099,8.653
+50H Halle-Dieselstr HKW-BlockC,4695,index,llm,high,"Same Halle Dieselstrasse plant as BlockB entry, different generation unit.",Dieselstrasse,51.457551,11.991449
+GUD_HERNE_6,1117,index,llm,high,'Gud Herne' natural gas CCGT plant directly matches 'GUD_HERNE' name.,Gud Herne,51.5489,7.18335
+50H Halle-Trotha HKW,2776,index,llm,high,"Variant 'HKW Halle Trotha' matches directly, natural gas CHP consistent with 'HKW' designation.",Halle Trotha,51.523806,11.943448
+INFRA_HOE_GTX1,15693,index,llm,medium,GTX (gas turbine) unit at Infraserv Hoechst matches the natural gas Infraserv Hoechst entry rather than the coal one.,Infraserv Hoechst,50.091838,8.531305
+INFRA_HOE_GTX2,15693,index,llm,medium,"Same Infraserv Hoechst gas turbine complex, second unit.",Infraserv Hoechst,50.091838,8.531305
+INFRA_HOE_GTX3,15693,index,llm,medium,"Same Infraserv Hoechst gas turbine complex, third unit.",Infraserv Hoechst,50.091838,8.531305
+Frankfurt West 2,1080,index,llm,medium,"Same Frankfurt 'HKW West' complex as West 3, different block number.",Wd Ffw,50.099,8.653
+50H EnviaTherm Bitterfeld-Wolfen GuD,3320,index,llm,high,'Gud Bitterfeld' directly matches EnviaTherm Bitterfeld-Wolfen GuD plant location and fuel type.,Gud Bitterfeld,51.62902,12.304538
+München Süd GT 61,8635,index,llm,low,"Variant 'Süd GT 62' closely matches naming pattern of consecutive GT units, though city label mismatch reduces certainty.",Gt,50.027031,8.2409
+Wolfsburg Nord A,25081,index,llm,medium,"'Wolfsburg North' hard coal plant matches location and name closely, block A likely one of its units.",Wolfsburg North,52.431703,10.786957
+Wolfsburg West 2,1086,index,llm,low,"'Gud West' cluster coordinates are near Wolfsburg, plausibly a second block of a nearby gas plant.",Gud West,52.444229,10.7581265
+ROENKHAUSEN_PSW2,31,index,llm,high,Second unit of the same Rönkhausen pumped-storage plant as PSW1.,Pumpspeicherwerk Ronkhausen Psw,51.227233,7.971745
+LEIPHEIM_10 (bnBm),3655,index,llm,high,Direct match to 'Bnbm Gaskraftwerk Leipheim' by name and operator abbreviation.,Bnbm Gaskraftwerk Leipheim,48.434778,10.23254
+NIEHL-II-GT,1148,index,llm,high,Variant 'HKW Niehl 2' matches 'NIEHL-II' directly.,Gud Niehl Rheinenergie,50.974163,6.988567666666666
+50H Berlin Lichterfelde,1172,index,llm,high,Direct name and location match to 'Lichterfelde' plant in Berlin.,Lichterfelde,52.423388,13.309598
+GERSTEINW_G (KapRes),691,index,llm,medium,Gersteinwerk gas-fired block matches the '_G' designation and large capacity typical of capacity reserve gas units.,Gersteinwerk,51.67324,7.710467
+50H Berlin Reuter West,727,index,llm,high,Direct name match to Reuter West hard coal plant in Berlin.,Reuter West,52.53207166666667,13.241943999999998
+50H Hamburg Wedel1 Block1,267,index,llm,medium,"Wedel Block 1 historically refers to the hard coal unit at Wedel, Hamburg.",Wedel,53.568151,9.724102
+Bremen 15,1163,index,llm,low,"Kraftwerk Hafen coordinates are near Bremen's port area, a plausible but uncertain match for 'Bremen 15'.",Hafen,53.124672,8.726764
+50H Hamburg Wedel1,267,index,llm,medium,"Matches the hard coal Wedel plant in Hamburg, consistent with block naming convention.",Wedel,53.568151,9.724102
+SWDU_HKW_3B,2584,index,llm,medium,"SWDU likely denotes Stadtwerke Duisburg HKW III/A, matching the '3B' block designation.",Duisburg,51.39066,6.74778
+Heizkraftwerk_Pforzheim,3258,index,llm,high,Direct name match to Heizkraftwerk Pforzheim GmbH.,Pforzheim,48.896998,8.725477
+50H Stralsund BHKW+P2H,,,llm,none,No candidate corresponds to a Stralsund CHP or power-to-heat plant.,,,
+NIEDERAUSSEM_F,312,index,llm,high,Niederaussem lignite plant matches the block-level designation 'F'.,Niederaussem,50.990677,6.669720000000001
+AMP_WESTNETZ_MUENSTERLAND_TEL,,,llm,none,"This appears to be a grid telecontrol node, not a specific power plant.",,,
+AMP_WESTNETZ_SAUERLAND_TEL,,,llm,none,"This appears to be a grid telecontrol node, not a specific power plant.",,,
+50H OWP Arcadis Ost 1,30734,index,llm,high,Direct name match to the Arcadis Ost offshore wind park.,Arcadis Ost,54.81812503703704,13.657002740740742
+50H Hamburg Tiefstack 2 HKW SK,730,index,llm,high,"Tiefstack hard coal (Steinkohle, SK) plant matches the block 2 designation.",Tiefstack,53.526083,10.065517
+UPM Schongau HKW3,3198,index,llm,high,Direct match to UPM Schongau CHP plant.,Upm Schongau,47.808151,10.902341
+LINGEN-GT2,8701,index,llm,high,BP Lingen gas turbine plant matches the Lingen GT designation.,Bp Lingen,52.56256,7.303027
+50H InfraLeuna IKW,8569,index,llm,medium,"Raffineriekraftwerk Leuna, operated by InfraLeuna, matches the industrial power plant (IKW) reference.",Raffineriekraftwerk Leuna,51.291343000000005,12.001454
+50H Hamburg MMB BHKW P2H,,,llm,none,No candidate matches the specific 'MMB' BHKW/power-to-heat unit in Hamburg.,,,
+LINGEN-GT1,8701,index,llm,high,BP Lingen gas turbine plant matches the Lingen GT designation.,Bp Lingen,52.56256,7.303027
+50H Hamburg Tiefstack GuD,3249,index,llm,high,Direct match to the GuD Tiefstack combined-cycle gas plant in Hamburg.,Gud Tiefstack,53.526083,10.065517
+Reisach 1,,,llm,none,No candidate corresponds to the Reisach hydro plant.,,,
+Reisach 2,,,llm,none,No candidate matches the small hydro plant 'Reisach' by name or location.,,,
+Reisach 3,,,llm,none,No candidate matches the small hydro plant 'Reisach' by name or location.,,,
+Tanzmühle,1996,index,llm,high,Direct name match to 'Tanzmuhle' hydro plant.,Tanzmuhle,49.552216,12.281256
+WEISWEISER_F_110,,,llm,none,Weisweiler lignite block F matches large 1961 MW Weissweiler lignite plant.,,,
+Bremen BHKW,,,llm,none,No small Bremen CHP (BHKW) candidate is present; large Mittelsbüren plants don't fit BHKW designation.,,,
+GERSTEINW_F (KapRes),691,index,llm,high,Gersteinwerk gas block matches the 1388 MW natural gas Gersteinwerk entry.,Gersteinwerk,51.67324,7.710467
+50H OWP Baltic 1+2 Süd MIO,32078,index,llm,high,Baltic offshore wind farm matches Baltic 1+2 naming and location off Rügen.,Baltic,54.904974653465345,13.056202386138612
+50H Neubrandenburg GuD,3252,index,llm,high,Direct match to 'GuD-HKW Neubrandenburg' natural gas plant.,Gud Nb Gt,53.562547333333335,13.295647666666667
+NIEDERAUSSEM_E,312,index,llm,high,Direct match to Niederaussem lignite plant block E.,Niederaussem,50.990677,6.669720000000001
+Würzburg GT 1,,,llm,none,No candidate located in or near Würzburg is present in the list.,,,
+Gebersdorf GT,,,llm,none,No candidate matches the Gebersdorf (Nürnberg) gas turbine location or name.,,,
+HKW_ROEMER_LM600,,,llm,none,No candidate corresponds to the Römerbrücke HKW LM600 gas turbine plant.,,,
+Audorf,1524,index,llm,high,Direct name match to Gasturbinenkraftwerk Audorf.,Gasturbinenkraftwerk Audorf,54.29068,9.72286
+HKW BARMEN 1,1528,index,llm,high,Matches 'HKW Barmen' natural gas CHP plant variant.,Barmen,51.269,7.2
+50H Stralsund BHKW+PtH,,,llm,none,No candidate located in Stralsund is present among the options.,,,
+50H PV Witznitz,4679,index,llm,medium,"Only solar PV candidate near the Leipzig/Witznitz region, plausible match for a photovoltaic plant.",Silux Solarpark Gmbh Co Kg,51.16642033333333,12.416004666666666
+Leitzach 2 M21,298,index,llm,medium,"Leitzach hydro plant complex (Swm Leitzach) likely includes unit 2, matching machine designation M21.",Swm Leitzach,47.874,11.871
+Leitzach 2 M22,298,index,llm,medium,Same Leitzach hydro complex as unit 2 machine M22.,Swm Leitzach,47.874,11.871
+Netzreservekraftwerk VOELKLINGEN_HKV,165502,index,llm,high,Matches 'Modellkraftwerk Völklingen' (Voelklingen Fenne Model) reserve power plant.,Voelklingen Fenne Model,49.2491,6.879
+50H Leipzig Süd GuD,3654,index,llm,high,Direct match to 'Leipzig Sud Gta' natural gas CHP plant.,Leipzig Sud Gta,51.297278,12.38509
+Netzreservekraftwerk VOELKLINGEN_MKV,165502,index,llm,high,"MKV stands for Modellkraftwerk Völklingen, matching the Voelklingen Fenne Model plant.",Voelklingen Fenne Model,49.2491,6.879
+GAMOR_ROEMER,3261,index,llm,high,GAMOR_ROEMER refers to the Gasmotorenkraftwerk Römerbrücke in Saarbrücken.,Gasmotorenkraftwerk Romerbrucke,49.223076,7.016974
+ReserveKW Staudinger 5,699,index,llm,high,Staudinger Block 5 is the hard coal unit at the Staudinger site.,Staudinger,50.088056,8.952222
+Netzreservekraftwerk Bexbach A,322,index,llm,high,Direct name match with Bexbach hard coal plant.,Bexbach,49.36139,7.237308
+Grosskraftwerk Mannheim Block 6,1083,index,llm,high,Direct name match with Grosskraftwerk Mannheim (GKM).,Grosskraftwerk Mannheim,49.446975,8.492516
+Leitzach 1 M11,298,index,llm,high,Leitzach 1 matches the SWM Leitzach hydro plant variant name.,Swm Leitzach,47.874,11.871
+Netzreservekraftwerk Weiher C,264,index,llm,high,Direct name match with the Weiher hard coal plant.,Weiher,49.333966,7.028434
+50H Leipzig Nord GuD,1171,index,llm,high,Leipzig Nord natural gas CHP matches the GuD designation.,Leipzig Nord,51.351555600000005,12.3777212
+50H Hamburg MMB BHKW PtH,82762,index,llm,medium,"Kwk Hamburg is a natural gas BHKW located in Hamburg, matching the BHKW/PtH description.",Kwk Hamburg,53.57571046875,10.0168583125
+WP_BEDBURG A44N,156673,index,llm,medium,WP_ prefix corresponds to 'Wp Bedburg' wind farm near Bedburg.,Wp Bedburg,51.02883492857143,6.4906605
+WP_JUECHEN A44N,159489,index,llm,high,Direct match with Wp Juchen wind farm.,Wp Juchen,51.056349857142855,6.498829000000001
+Würzburg GT 2,,,llm,none,No candidate located in or near Würzburg is present in the list.,,,
+Hannover (GKH) 1,,,llm,none,No candidate corresponds to the Gemeinschaftskraftwerk Hannover (GKH) location.,,,
+Plattling GT,1146,index,llm,high,Direct name match with the Plattling gas turbine plant.,Plattling,48.800832,12.868396
+Braunschweig HKWM GT31,,,llm,none,No candidate matches a Braunschweig CHP plant.,,,
+Hannover (GKH) 2,,,llm,none,No candidate corresponds to the Gemeinschaftskraftwerk Hannover (GKH) location.,,,
+50H Dresden-Nossen,1154,index,llm,high,Matches HKW Dresden-Nossener Brücke gas turbine plant.,Gasturbinen Nossener Brucke,51.042464,13.707669
+GuDAnlageM120,3240,index,llm,low,"A GuD-Anlage near 100-150MW natural gas capacity is the closest plausible match, though the '120' designation is uncertain.",Gud,49.991802,8.413353
+Reservekraftwerk Rheinhafen-Dampfkraftwerk Karlsruhe Block 7,314,index,llm,high,Block 7 of RDK Karlsruhe is a hard coal unit matching the Rheinhafen Dampfkraftwerk hard coal entry.,Rheinhafen Dampfkraftwerk,49.01274,8.304255000000001
+Netzreservekraftwerk BERGKAMEN_A,274,index,llm,high,Direct name match with the Bergkamen hard coal plant.,Bergkamen,51.636945,7.619083
+Leitzach Pool,298,index,llm,high,"Direct name match to Swm Leitzach (Leitzach 1), a hydro plant.",Swm Leitzach,47.874,11.871
+50H OWP Baltic Eagle,32180,index,llm,high,Exact name and location match for offshore wind park Baltic Eagle.,Baltic Eagle,54.83008946,13.858195599999998
+Netzreservekraftwerk SCHOLVEN_B,269,index,llm,medium,Scholven block B corresponds to the main Scholven hard coal unit.,Scholven,51.599970000000006,7.00565
+CHEMIEPARK_MARL_KRAFTWERKE,1749,index,llm,low,"Generic Chemiepark Marl reference; picked the hard coal unit as primary plant, though a gas unit also exists at the same site.",Chemiepark Marl,51.696393,7.093964
+Braunschweig HKWN GT,2772,index,llm,high,HKW-Nord in Braunschweig matches the gas turbine 'Nord Gt' entry located at Braunschweig coordinates.,Nord Gt,52.3056,10.5072
+HATTINGEN_AIRPRODUCTS(KapRes),,,llm,none,No candidate corresponds to an Air Products industrial unit in Hattingen.,,,
+OWP Gode Wind 3 AC160,68754,index,llm,high,Gode Wind 3 is part of the Gode Wind offshore wind cluster matching id 68754.,Gode Wind,54.04279978333333,7.014410708333332
+GERSTEINW_K1 (KapRes),1283,index,llm,medium,Gersteinwerk K1 (coal block) matches the hard coal Gersteinwerk unit rather than the gas unit.,Gersteinwerk,51.673532,7.720513
+Marbach GT 4 (bnBm),3275,index,llm,high,Marbach GT corresponds directly to the Marbach power plant (oil-fired).,Marbach,48.927387499999995,9.231165
+Mercedes_Sindelfingen_GT1,3214,index,llm,high,Heizkraftwerk Sindelfingen matches the Mercedes-Benz Sindelfingen plant location and gas-fired type.,Sindelfingen,48.6973658,8.9992082
+Zolling GT 1,6140,index,llm,high,Zolling Gt is the gas turbine unit at the Zolling site.,Zolling Gt,48.455489,11.796122
+Zolling GT 2,6140,index,llm,medium,"Only one Zolling gas turbine candidate exists, likely representing both GT1 and GT2 units at the same site.",Zolling Gt,48.455489,11.796122
+Netzreservekraftwerk HERNE_4,317,index,llm,high,Herne block 4 matches the hard coal Herne power plant.,Herne,51.549201,7.18396
+Grosskraftwerk Mannheim Block 8,1083,index,llm,high,Direct name match to Grosskraftwerk Mannheim (GKM).,Grosskraftwerk Mannheim,49.446975,8.492516
+50H EnviaTherm Bitterfeld GuD,3320,index,llm,high,GuD Bitterfeld matches the natural gas combined-cycle plant at Bitterfeld.,Gud Bitterfeld,51.62902,12.304538
+EnBW Pumpverbot,110,index,llm,low,"Wehr is an EnBW-operated pumped storage plant, plausibly the subject of a pump restriction order.",Wehr Ms,47.652259,7.925798
+50H Dresden-Reick,3418,index,llm,high,Gasmotoren Dresden Reick directly matches the Dresden-Reick plant.,Gasmotoren Dresden Reick,51.0255,13.7845
+50H OWP Baltic 1+2 Nord,32078,index,llm,high,Baltic (350.7MW) corresponds to the combined Baltic 1+2 offshore wind farms.,Baltic,54.904974653465345,13.056202386138612
+50H Parchim,,,llm,none,No candidate plant corresponds to a facility located in Parchim.,,,
+ReserveKW Zolling 5,257,index,llm,high,Zolling block 5 corresponds to the main hard coal Zolling power plant.,Zolling,48.455489,11.796122
+Walchensee 1,751,index,llm,high,Walchenseekraftwerk is a multi-unit hydro plant matching the block-numbered Walchensee entries.,Walchenseekraftwerk,47.629628,11.33818
+Walchensee 2,751,index,llm,high,Walchenseekraftwerk is a multi-unit hydro plant matching the block-numbered Walchensee entries.,Walchenseekraftwerk,47.629628,11.33818
+Walchensee 3,751,index,llm,high,Walchenseekraftwerk is a multi-unit hydro plant matching the block-numbered Walchensee entries.,Walchenseekraftwerk,47.629628,11.33818
+Walchensee 4,751,index,llm,high,Walchenseekraftwerk is a multi-unit hydro plant matching the block-numbered Walchensee entries.,Walchenseekraftwerk,47.629628,11.33818
+Netzreservekraftwerk GTKW-DA-POOL,,,llm,none,No candidate corresponds to this pooled gas turbine network reserve plant.,,,
+50H OWP Baltic 1+2,32078,index,llm,high,Baltic offshore wind park matches the combined Baltic 1+2 designation.,Baltic,54.904974653465345,13.056202386138612
+Braunschweig BHKW,8679,index,llm,high,Exact name and location match for Bhkw Braunschweig.,Bhkw Braunschweig,52.295023,10.521684
+Bremen GKB,728,index,llm,medium,GKB (Gemeinschaftskraftwerk Bremen) historically refers to the Farge coal plant near Bremen.,Farge,53.198738,8.519465
+WP Schafflund,,,llm,none,No candidate matches the wind park name or location of Schafflund.,,,
+Kirchlengern GT 1,3269,index,llm,high,Direct name match for the Kirchlengern gas turbine plant.,Kirchlengern,52.194951,8.648754
+GERSTEINW_GTI1,691,index,llm,high,Gersteinwerk natural gas unit matches the GTI (gas turbine) designation and location.,Gersteinwerk,51.67324,7.710467
+HEIZKRAFTWERK_SAARBRÜCKEN,,,llm,none,No candidate located in or named after Saarbrücken.,,,
+Braunschweig HKWM DT42,,,llm,none,No Braunschweig-related candidate present in this list.,,,
+50H BASF Schwarzheide,3243,index,llm,high,GuD Schwarzheide matches the BASF Schwarzheide gas plant location and fuel type.,Schwarzheide,51.478138,13.889436
+WP Neudersum,150462,index,llm,high,Direct name match for Windpark Neudersum.,Windpark Neudersum,52.9776709,7.213945799999999
+OWP Albatros AC151 (kurativ),144045,index,llm,high,Windpark Albatros matches the OWP Albatros designation.,Windpark Albatros,54.4871886875,6.24371
+OWP BARD Offshore 1 AC102 (kurativ),32301,index,llm,high,Bard Offshore Malo corresponds to the BARD Offshore 1 wind farm.,Bard Offshore Malo,54.356897425,5.982390837500001
+OWP BARD Offshore 1 AC103 (kurativ),32301,index,llm,high,Bard Offshore Malo corresponds to the BARD Offshore 1 wind farm.,Bard Offshore Malo,54.356897425,5.982390837500001
+OWP Deutsche Bucht AC152 (kurativ),58458,index,llm,high,Deutsche Bucht offshore wind farm matches directly.,Deutsche Bucht,54.30371951612902,5.78957629032258
+OWP Deutsche Bucht AC153 (kurativ),58458,index,llm,high,Deutsche Bucht offshore wind farm matches directly.,Deutsche Bucht,54.30371951612902,5.78957629032258
+OWP Veja Mate AC104 (kurativ),95076,index,llm,high,Direct name match to Owp Veja Mate offshore wind park.,Owp Veja Mate,54.318555477611945,5.874748507462687
+OWP Veja Mate AC105 (kurativ),95076,index,llm,high,Direct name match to Owp Veja Mate offshore wind park.,Owp Veja Mate,54.318555477611945,5.874748507462687
+50H Bad Salzungen HKW,8689,index,llm,high,Name and CHP designation match Bad Salzungen/HKW Bad Salzungen entry.,Bad Salzungen,50.800018,10.221047
+OWP Borkum Riffgrund 3 Test,51682,index,llm,medium,"Belongs to the Borkum Riffgrund offshore wind complex, likely testing phase of unit 3.",Borkum Riffgrund,53.99370087557604,6.402609059907834
+50H PV Bartow,,,llm,none,"No solar (PV) candidate named Bartow exists among the listed options, only wind/hydro entries.",,,
+ReserveKW Plattling,1146,index,llm,high,Direct match to Kraftwerk Plattling reserve plant.,Plattling,48.800832,12.868396
+OWP Borkum Riffgrund 3,51682,index,llm,high,"Matches the Borkum Riffgrund offshore wind farm complex, unit 3.",Borkum Riffgrund,53.99370087557604,6.402609059907834
+Reservekraftwerk Heilbronn Block 7,318,index,llm,high,Heilbronn hard coal plant matches the reserve plant name and block designation.,Heilbronn,49.17505666666667,9.207873333333334
+50H PV Haidemühl,118295,index,llm,high,Pva Haidemuhl is a solar (PV) plant matching the name Haidemühl closely.,Pva Haidemuhl,51.54592,14.264468
+Huntorf,738,index,llm,high,Direct match to the Huntorf compressed air gas turbine plant.,Luftspeicher Gasturbinenkraftwerk Huntorf,53.195932,8.388178
+Hannover-Linden GuD,,,llm,none,No candidate located in Hannover-Linden or named accordingly is present in the list.,,,
+INFRA_HOE_GTX8,15693,index,llm,medium,"INFRA and HOE abbreviations correspond to Infraserv Hoechst's gas turbine unit, matching the natural gas plant entry.",Infraserv Hoechst,50.091838,8.531305

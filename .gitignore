@@ -13,6 +13,8 @@ venv/
 data/OPSD_renewable_power_plants_DE.csv
 # pypsa_unaggregated is the 18M raw spine input
 data/pypsa_unaggregated_powerplants.csv
+# pypsa_powerplants is the 21M all-country extract (German subset == pypsa_unaggregated)
+data/pypsa_powerplants.csv
 # Redispatch_Daten_2021 is 15M
 data/Redispatch_Daten_2021.csv
 

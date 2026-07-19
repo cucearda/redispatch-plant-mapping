@@ -29,7 +29,7 @@ import confirm_matches
 
 # ── config ────────────────────────────────────────────────────────────────────
 # Redispatch_Daten_2021.csv is the fuller extract (2021-2026); Redispatch_Daten.csv is 2025-26.
-REDISPATCH_FILE = "data/Redispatch_Daten.csv"
+REDISPATCH_FILE = "data/Redispatch_Daten_2021.csv"
 INDEX_FILE      = "data/candidate_index.csv"
 
 # ── stages, in order ──────────────────────────────────────────────────────────
