@@ -149,14 +149,14 @@ Silz 2 (Uniper),Erneuerbar,False,220.0,TenneT DE,39,individual,
 Netzreservekraftwerk KMW 2 DT,Konventionell,False,250.0,Amprion,203,individual,
 Schkopau,Konventionell,False,500.0,50Hertz,795,individual,
 LUDWHN_A800_GT11,Konventionell,False,90.0,Amprion,2,individual,
-50H-OWP-Wikinger,Erneuerbar,False,10.0,50Hertz,1,individual,
-50H UW MIO Baltic 1+2,Erneuerbar,False,10.0,50Hertz,1,substation,
+50H-OWP-Wikinger,Erneuerbar,False,10.0,50Hertz,1,individual,Wind
+50H UW MIO Baltic 1+2,Erneuerbar,False,10.0,50Hertz,1,substation,Wind
 50H UW Bertikow,Erneuerbar,False,477.0,50Hertz,1161,substation,
 NEURATH_A_110kV,Konventionell,False,100.0,Amprion,2,individual,
 50H UW Schönewalde,Erneuerbar,False,304.0,50Hertz,668,substation,
 Linden GKL GT 3,Konventionell,False,75.0,TenneT DE,171,individual,
 Robert Frank 4 GT (KapRes),Konventionell,False,56.0,TenneT DE,66,individual,
-50H OWP MIO Baltic 1+2,Erneuerbar,False,320.0,50Hertz,38,individual,
+50H OWP MIO Baltic 1+2,Erneuerbar,False,320.0,50Hertz,38,individual,Wind
 50H UW Wessin,Erneuerbar,False,113.0,50Hertz,334,substation,
 BERGKAMEN_A,Konventionell,False,715.0,Amprion,161,individual,
 Pumpspeicherwerk Glems,Sonstiges,False,61.0,TransnetBW,28,individual,
@@ -165,23 +165,23 @@ Netzreservekraftwerk UPM Schongau,Konventionell,False,64.0,Amprion,207,individua
 Silz 2 (TIWAG),Erneuerbar,False,242.0,TenneT DE,10,individual,
 50H UW Wustermark,Erneuerbar,False,140.0,50Hertz,280,substation,
 50H UW Iven,Erneuerbar,False,38.0,50Hertz,212,substation,
-50H OWP Arkona,Erneuerbar,False,377.0,50Hertz,765,individual,
+50H OWP Arkona,Erneuerbar,False,377.0,50Hertz,765,individual,Wind
 50H UW Altentreptow,Erneuerbar,False,66.0,50Hertz,225,substation,
-50H OWP Wikinger,Erneuerbar,False,350.0,50Hertz,721,individual,
+50H OWP Wikinger,Erneuerbar,False,350.0,50Hertz,721,individual,Wind
 Silz 1 (Uniper),Erneuerbar,False,250.0,TenneT DE,16,individual,
 VIANDEN_4,Sonstiges,False,30.0,Amprion,1,foreign,
 WP Jardelund,Erneuerbar,False,79.0,TenneT DE,255,individual,
-OWP Nordergründe,Erneuerbar,False,100.0,TenneT DE,217,individual,
+OWP Nordergründe,Erneuerbar,False,100.0,TenneT DE,217,individual,Wind
 EMSLAND_GTC1,Konventionell,False,230.0,Amprion,3,individual,
 HKW-OF-EVO,Konventionell,False,10.0,Amprion,14,individual,
 VoelklingenGT,Konventionell,False,30.0,Amprion,5,individual,
-OWP UW Dörpen-West,Erneuerbar,False,1966.0,TenneT DE,1888,substation,
-OWP Riffgat,Erneuerbar,False,110.0,TenneT DE,93,individual,
-OWP UW Emden-Ost,Erneuerbar,False,1303.0,TenneT DE,704,substation,
+OWP UW Dörpen-West,Erneuerbar,False,1966.0,TenneT DE,1888,substation,Wind
+OWP Riffgat,Erneuerbar,False,110.0,TenneT DE,93,individual,Wind
+OWP UW Emden-Ost,Erneuerbar,False,1303.0,TenneT DE,704,substation,Wind
 WEISWEILERVGT_H3,Konventionell,False,211.0,Amprion,86,individual,
-OWP UW Büttel,Erneuerbar,False,1947.0,TenneT DE,1867,substation,
+OWP UW Büttel,Erneuerbar,False,1947.0,TenneT DE,1867,substation,Wind
 Markersbach (Standort),Sonstiges,False,600.0,50Hertz,26,individual,
-OWP UW Diele,Erneuerbar,False,1100.0,TenneT DE,1093,substation,
+OWP UW Diele,Erneuerbar,False,1100.0,TenneT DE,1093,substation,Wind
 Frankfurt West 4,Konventionell,False,100.0,TenneT DE,200,individual,
 SCHOLVEN_B,Konventionell,False,100.0,Amprion,15,individual,
 EMSLAND_GTB1,Konventionell,False,55.0,Amprion,1,individual,
@@ -296,7 +296,7 @@ Heizkraftwerk_Pforzheim,Konventionell,False,51.0,TransnetBW,282,individual,
 NIEDERAUSSEM_F,Konventionell,False,200.0,Amprion,2,individual,
 AMP_WESTNETZ_MUENSTERLAND_TEL,Sonstiges,False,150.0,Amprion,1,individual,
 AMP_WESTNETZ_SAUERLAND_TEL,Sonstiges,False,160.0,Amprion,1,individual,
-50H OWP Arcadis Ost 1,Erneuerbar,False,247.0,50Hertz,469,individual,
+50H OWP Arcadis Ost 1,Erneuerbar,False,247.0,50Hertz,469,individual,Wind
 50H Hamburg Tiefstack 2 HKW SK,Konventionell,False,106.0,50Hertz,111,individual,
 UPM Schongau HKW3,Konventionell,False,65.0,Amprion,38,individual,
 LINGEN-GT2,Konventionell,False,6.0,Amprion,5,individual,
@@ -346,7 +346,7 @@ AMP_WESTNETZ_SAUERLAND_CR_WIND,Erneuerbar,False,250.0,Amprion,3,control_reserve,
 SHN Cluster Handewitt T411 T413,Erneuerbar,False,200.0,TenneT DE,3,cluster,
 Bremen BHKW,Konventionell,False,104.0,TenneT DE,5,individual,
 GERSTEINW_F (KapRes),Konventionell,False,355.0,Amprion,53,individual,
-50H OWP Baltic 1+2 Süd MIO,Erneuerbar,False,255.0,50Hertz,8,individual,
+50H OWP Baltic 1+2 Süd MIO,Erneuerbar,False,255.0,50Hertz,8,individual,Wind
 50H_EDIS_CR_ATS,Erneuerbar,False,300.0,50Hertz,12,control_reserve,
 50H_AVA_CR_STW,Erneuerbar,False,700.0,50Hertz,106,control_reserve,
 50H_AVA_CR_WOL,Erneuerbar,False,627.0,50Hertz,109,control_reserve,
@@ -421,7 +421,7 @@ Netzreservekraftwerk BERGKAMEN_A,Konventionell,False,1010.0,Amprion,134,individu
 Leitzach Pool,Sonstiges,False,96.0,TenneT DE,114,individual,
 AVA Cluster Stadorf,Erneuerbar,False,400.0,TenneT DE,51,cluster,
 AVA Cluster Sottrum T412,Erneuerbar,False,55.87,TenneT DE,14,cluster,
-50H OWP Baltic Eagle,Erneuerbar,False,463.0,50Hertz,362,individual,
+50H OWP Baltic Eagle,Erneuerbar,False,463.0,50Hertz,362,individual,Wind
 Eltmann,Konventionell,False,50.0,TenneT DE,83,individual,
 AMP_LEW_VERTEILNETZ_SUED_CR_PHOTOVOLTAIK,Erneuerbar,False,230.0,Amprion,5,control_reserve,Solar
 AMP_LEW_VERTEILNETZ_SUED_CR_SONSTIGE_EE,Sonstiges,False,43.0,Amprion,3,control_reserve,Other renewable
@@ -457,7 +457,7 @@ AVA Cluster Vörden,Erneuerbar,False,86.15,TenneT DE,6,cluster,
 EnBW Pumpverbot,,False,245.0,TransnetBW,1,individual,
 AVA Cluster Alfstedt,Erneuerbar,False,750.0,TenneT DE,24,cluster,
 50H Dresden-Reick,Konventionell,False,70.0,50Hertz,20,individual,
-50H OWP Baltic 1+2 Nord,Erneuerbar,False,80.0,50Hertz,1,individual,
+50H OWP Baltic 1+2 Nord,Erneuerbar,False,80.0,50Hertz,1,individual,Wind
 50H Parchim,Konventionell,False,4.0,50Hertz,4,individual,
 ReserveKW Zolling 5,Konventionell,False,450.0,TenneT DE,86,individual,
 Baden-Württemberg Süd-Ost EE,Erneuerbar,False,128.69,TransnetBW,3,regional_renewable,
@@ -472,7 +472,7 @@ BAG NWAK-Cluster 15 Pleinting,Erneuerbar,False,550.0,TenneT DE,161,cluster,
 BAG NWAK-Cluster 17 Altheim,Erneuerbar,False,450.0,TenneT DE,175,cluster,
 Netzreservekraftwerk GTKW-DA-POOL,Konventionell,False,92.0,Amprion,138,individual,
 BAG NWAK-Cluster 16 Regensburg-Sittling,Erneuerbar,False,400.0,TenneT DE,90,cluster,
-50H OWP Baltic 1+2,Erneuerbar,False,312.0,50Hertz,34,individual,
+50H OWP Baltic 1+2,Erneuerbar,False,312.0,50Hertz,34,individual,Wind
 BAG NWAK-Cluster 03 Bergrheinfeld-Schweinfurt,Erneuerbar,False,600.0,TenneT DE,51,cluster,
 BAG NWAK-Cluster 04 Aschaffenburg,Erneuerbar,False,200.0,TenneT DE,38,cluster,
 BAG NWAK-Cluster 05 Kriegenbrunn-Ludersheim,Erneuerbar,False,300.0,TenneT DE,14,cluster,
@@ -518,10 +518,10 @@ AMP_LEW_VERTEILNETZ_SUED_CR_KONVENTIONELL,Sonstiges,False,2.0,Amprion,1,control_
 BAG NWAK-Cluster 08 Neufinsing,Erneuerbar,False,200.0,TenneT DE,2,cluster,
 BAG NWAK-Cluster 10 Oberbachern,Erneuerbar,False,200.0,TenneT DE,1,cluster,
 Braunschweig HKWM DT42,Konventionell,False,16.5,TenneT DE,5,individual,
-UW Diele,Erneuerbar,False,1125.0,TenneT DE,184,substation,
-UW Büttel,Erneuerbar,False,1955.85,TenneT DE,527,substation,
-UW Emden-Ost,Erneuerbar,False,1160.54,TenneT DE,130,substation,
-UW Dörpen-West,Erneuerbar,False,2095.0,TenneT DE,353,substation,
+UW Diele,Erneuerbar,False,1125.0,TenneT DE,184,substation,Wind
+UW Büttel,Erneuerbar,False,1955.85,TenneT DE,527,substation,Wind
+UW Emden-Ost,Erneuerbar,False,1160.54,TenneT DE,130,substation,Wind
+UW Dörpen-West,Erneuerbar,False,2095.0,TenneT DE,353,substation,Wind
 Obernburg,Konventionell,False,8.0,TenneT DE,9,individual,
 50H BASF Schwarzheide,Konventionell,False,29.0,50Hertz,46,individual,
 BAG NWAK-Cluster 09 Marienberg,Erneuerbar,False,150.0,TenneT DE,5,cluster,
@@ -533,13 +533,13 @@ AMP_WESTNETZ_NIKE_CR_KONVENTIONELL,Sonstiges,False,2.0,Amprion,2,control_reserve
 CROC Cluster Parchim Süd,Sonstiges,False,230.0,50Hertz,7,cluster,
 WP_GREVENBROICH,Erneuerbar,False,9.0,Amprion,1,individual,
 50H_EDIS_CR_VIE_Sued,Erneuerbar,False,118.0,50Hertz,2,control_reserve,
-OWP Albatros AC151 (kurativ),Erneuerbar,False,6.79,TenneT DE,2,individual,
-OWP BARD Offshore 1 AC102 (kurativ),Erneuerbar,False,10.52,TenneT DE,2,individual,
-OWP BARD Offshore 1 AC103 (kurativ),Erneuerbar,False,12.32,TenneT DE,2,individual,
-OWP Deutsche Bucht AC152 (kurativ),Erneuerbar,False,10.14,TenneT DE,2,individual,
-OWP Deutsche Bucht AC153 (kurativ),Erneuerbar,False,10.68,TenneT DE,2,individual,
-OWP Veja Mate AC104 (kurativ),Erneuerbar,False,21.04,TenneT DE,2,individual,
-OWP Veja Mate AC105 (kurativ),Erneuerbar,False,20.87,TenneT DE,2,individual,
+OWP Albatros AC151 (kurativ),Erneuerbar,False,6.79,TenneT DE,2,individual,Wind
+OWP BARD Offshore 1 AC102 (kurativ),Erneuerbar,False,10.52,TenneT DE,2,individual,Wind
+OWP BARD Offshore 1 AC103 (kurativ),Erneuerbar,False,12.32,TenneT DE,2,individual,Wind
+OWP Deutsche Bucht AC152 (kurativ),Erneuerbar,False,10.14,TenneT DE,2,individual,Wind
+OWP Deutsche Bucht AC153 (kurativ),Erneuerbar,False,10.68,TenneT DE,2,individual,Wind
+OWP Veja Mate AC104 (kurativ),Erneuerbar,False,21.04,TenneT DE,2,individual,Wind
+OWP Veja Mate AC105 (kurativ),Erneuerbar,False,20.87,TenneT DE,2,individual,Wind
 AVA Cluster Voslapp,Erneuerbar,False,950.0,TenneT DE,136,cluster,
 HUCKINGEN_A,Konventionell,False,100.0,Amprion,14,individual,
 CROC Cluster Görries,Sonstiges,False,100.0,50Hertz,5,cluster,
@@ -549,7 +549,7 @@ AVA Cluster Landesbergen,Erneuerbar,False,22.72,TenneT DE,3,cluster,
 BATTERIESPEICHER_NEURATH,Sonstiges,False,20.0,Amprion,1,individual,
 50H Chemnitz,Konventionell,False,50.0,50Hertz,13,individual,
 50H Bad Salzungen HKW,Konventionell,False,5.0,50Hertz,5,individual,
-OWP Borkum Riffgrund 3 Test,Erneuerbar,False,50.0,TenneT DE,1,individual,
+OWP Borkum Riffgrund 3 Test,Erneuerbar,False,50.0,TenneT DE,1,individual,Wind
 CROC Cluster Güstrow,Sonstiges,False,150.0,50Hertz,2,cluster,
 Lippendorf,Konventionell,False,852.0,50Hertz,97,individual,
 50H_AVA_CR_WK,Erneuerbar,False,96.0,50Hertz,5,control_reserve,
@@ -558,9 +558,9 @@ AVA Cluster Emden Ost,Erneuerbar,False,200.0,TenneT DE,1,cluster,
 HKW Aalen,Konventionell,False,38.0,TransnetBW,2,individual,
 50H_MNS_CR_CRO,Erneuerbar,False,52.0,50Hertz,2,control_reserve,
 ReserveKW Plattling,Konventionell,False,85.0,TenneT DE,11,individual,
-OWP Borkum Riffgrund 3,Erneuerbar,False,216.84,TenneT DE,3,individual,
+OWP Borkum Riffgrund 3,Erneuerbar,False,216.84,TenneT DE,3,individual,Wind
 Reservekraftwerk Heilbronn Block 7,Konventionell,False,730.0,TransnetBW,30,individual,
-UW Garrel-Ost alpha,Erneuerbar,False,114.24,TenneT DE,5,substation,
+UW Garrel-Ost alpha,Erneuerbar,False,114.24,TenneT DE,5,substation,Wind
 50H PV Haidemühl,Erneuerbar,False,15.0,50Hertz,26,individual,Solar
 AVA Cluster Mehringen,Erneuerbar,False,232.39,TenneT DE,3,cluster,
 Heizkraftwerk Stuttgart-Münster GT 88,Konventionell,False,60.0,TransnetBW,19,individual,

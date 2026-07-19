@@ -46,6 +46,12 @@ TECH_RES = [
     ("Other renewable",  re.compile(r"SONSTIGE_EE", re.I)),
     ("Conventional",     re.compile(r"KONVENTIONELL", re.I)),
 ]
+# Offshore-wind substations: OWP = Offshore-Windpark (deterministic from the name); the plain
+# `UW …` converter stations below are the onshore landing points of offshore HVDC links
+# (Büttel=SylWin, Diele/Garrel=DolWin, Dörpen-West, Emden-Ost) — knowledge, hardcoded once.
+_OWP = re.compile(r"\bOWP\b", re.I)
+_UW  = re.compile(r"\bUW\b|Umspannwerk", re.I)
+_OFFSHORE_CONVERTER = re.compile(r"büttel|buettel|diele|dörpen|dorpen|emden|garrel|baltic", re.I)
 
 
 def classify(name: str) -> str:
@@ -59,6 +65,10 @@ def name_technology(name: str) -> str:
     for label, rx in TECH_RES:
         if rx.search(name):
             return label
+    if _OWP.search(name):                                       # Offshore-Windpark substation
+        return "Wind"
+    if _UW.search(name) and _OFFSHORE_CONVERTER.search(name):   # offshore HVDC converter station
+        return "Wind"
     return ""
 
 
