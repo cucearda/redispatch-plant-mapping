@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(export PYTHONIOENCODING=utf-8)",
+      "Bash(python -c ' *)",
+      "Skill(dataviz)",
+      "Skill(dataviz:*)",
+      "Bash(node -e ' *)",
+      "PowerShell($edge = \\(Get-Command msedge -ErrorAction SilentlyContinue\\).Source; if\\(-not $edge\\){ $edge = \\(Resolve-Path \"C:\\\\Program Files \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\" -ErrorAction SilentlyContinue\\).Path }; \"edge=$edge\"; \\(Get-Command node -ErrorAction SilentlyContinue\\).Source)",
+      "Bash(curl -s -o /dev/null -w \"leaflet:%{http_code} \" --max-time 8 https://unpkg.com/leaflet@1.9.4/dist/leaflet.js)",
+      "Bash(curl -s -o /dev/null -w \"carto:%{http_code} \" --max-time 8 \"https://a.basemaps.cartocdn.com/light_all/6/33/21.png\")",
+      "Bash(curl -s -o /dev/null -w \"nouislider:%{http_code}\" --max-time 8 https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.js)",
+      "Bash(python -m http.server 8777)",
+      "Bash(curl -s -o /dev/null -w \"server:%{http_code}\\\\n\" http://localhost:8777/index.html)",
+      "Bash(pkill -f \"http.server 8777\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" --max-time 2 http://localhost:8777/)",
+      "Bash(jobs -l)",
+      "Bash(kill %1)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" --max-time 2 http://localhost:8777/)",
+      "Bash(cp index.html _test_filter.html)",
+      "Bash(cp index.html _test_day10.html)",
+      "Bash(cp index.html _test_day300.html)"
+    ]
+  }
+}

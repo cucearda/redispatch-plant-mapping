@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Redispatch in Germany — location &amp; volume</title>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin="" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.css" />
+
+<style>
+  :root {
+    /* diverging pair (validated): blue = increase, red = decrease, gray midpoint */
+    --c-increase:   #2a78d6;
+    --c-decrease:   #e34948;
+    --c-balanced:   #8f8d86;
+    --c-boerse:     #eda100;   /* categorical yellow — market countertrade */
+    --c-notident:   #8f8d86;   /* muted gray — unresolved plants */
+
+    --surface:      #ffffff;
+    --ink-primary:  #0b0b0b;
+    --ink-secondary:#52514e;
+    --ink-muted:    #898781;
+    --hairline:     rgba(11,11,11,0.10);
+    --panel-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 4px 14px rgba(0,0,0,0.10);
+    --font: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+
+  html, body { margin: 0; height: 100%; }
+  #map { position: absolute; inset: 0; z-index: 0; background: #efeee9; }
+
+  .panel {
+    position: absolute;
+    z-index: 500;
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 10px;
+    box-shadow: var(--panel-shadow);
+    font-family: var(--font);
+    color: var(--ink-primary);
+  }
+
+  /* ---- title -------------------------------------------------------------- */
+  #title { top: 12px; left: 12px; max-width: 340px; padding: 12px 16px; }
+  #title h1 { margin: 0; font-size: 17px; font-weight: 650; letter-spacing: -0.01em; }
+  #title p  { margin: 4px 0 0; font-size: 12px; color: var(--ink-secondary); line-height: 1.35; }
+  #title .range { margin-top: 6px; font-size: 12px; font-weight: 600; color: var(--ink-primary); }
+
+  /* ---- right-side stack: unmapped + filters panels ------------------------ */
+  #right-stack {
+    position: absolute; top: 12px; right: 12px; z-index: 500;
+    display: flex; flex-direction: column; gap: 12px; width: 224px;
+  }
+  #right-stack > .panel { position: static; width: auto; }
+
+  #unmapped { padding: 12px 14px; }
+  #unmapped h2, #filters h2 {
+    margin: 0 0 8px; font-size: 11px; font-weight: 650; text-transform: uppercase;
+    letter-spacing: 0.04em; color: var(--ink-muted);
+  }
+  .u-row { display: flex; align-items: baseline; gap: 8px; margin: 7px 0; }
+  .u-dot { width: 10px; height: 10px; border-radius: 50%; flex: 0 0 auto; transform: translateY(1px); }
+  .u-dot-hatch {
+    border-radius: 3px;
+    background: repeating-linear-gradient(45deg, var(--ink-muted) 0 2px, transparent 2px 4px);
+  }
+  .u-label { font-size: 12px; color: var(--ink-secondary); flex: 1 1 auto; }
+  .u-val   { font-size: 13px; font-weight: 650; font-variant-numeric: tabular-nums; }
+  .u-pct   { font-size: 11px; color: var(--ink-muted); font-variant-numeric: tabular-nums; min-width: 40px; text-align: right; }
+  .u-hint  { margin: 10px 0 0; font-size: 10.5px; line-height: 1.4; color: var(--ink-muted); }
+
+  /* ---- plant filter panel -------------------------------------------------- */
+  #filters { padding: 12px 14px; }
+  .f-group { margin: 0 0 10px; }
+  .f-group:last-child { margin-bottom: 0; }
+  .f-group-title {
+    font-size: 10.5px; font-weight: 650; text-transform: uppercase;
+    letter-spacing: 0.04em; color: var(--ink-muted); margin-bottom: 6px;
+  }
+  .f-check {
+    display: flex; align-items: center; gap: 7px; margin: 5px 0;
+    font-size: 12px; color: var(--ink-secondary); cursor: pointer; user-select: none;
+  }
+  .f-check input { margin: 0; accent-color: var(--ink-primary); cursor: pointer; }
+
+  /* ---- legend ------------------------------------------------------------- */
+  #legend { bottom: 96px; left: 12px; padding: 12px 14px; }
+  #legend h2 {
+    margin: 0 0 8px; font-size: 11px; font-weight: 650; text-transform: uppercase;
+    letter-spacing: 0.04em; color: var(--ink-muted);
+  }
+  .l-row { display: flex; align-items: center; gap: 8px; margin: 5px 0; font-size: 12px; color: var(--ink-secondary); }
+  .l-swatch { width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid #fff; box-shadow: 0 0 0 1px var(--hairline); flex: 0 0 auto; }
+  .l-sizes { display: flex; align-items: flex-end; gap: 14px; margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--hairline); }
+  .l-size { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+  .l-size .ring { border: 1.5px solid var(--ink-muted); border-radius: 50%; }
+  .l-size span { font-size: 10px; color: var(--ink-muted); font-variant-numeric: tabular-nums; }
+
+  /* ---- time control ------------------------------------------------------- */
+  #timebar {
+    left: 12px; right: 12px; bottom: 12px; padding: 12px 18px 16px;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .tb-top { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .tb-top .lbl { font-size: 12px; font-weight: 600; color: var(--ink-secondary); }
+  .tb-dates { font-size: 13px; font-weight: 650; font-variant-numeric: tabular-nums; }
+  .tb-presets { display: flex; gap: 6px; margin-left: auto; flex-wrap: wrap; align-items: center; }
+  .tb-presets button, .tb-presets select {
+    font-family: var(--font); font-size: 12px; color: var(--ink-primary);
+    background: #f4f3ef; border: 1px solid var(--hairline); border-radius: 7px;
+    padding: 4px 10px; cursor: pointer;
+  }
+  .tb-presets button:hover { background: #e9e8e2; }
+  #slider { margin: 2px 6px 0; }
+  .noUi-connect { background: var(--ink-secondary); }
+  .noUi-handle { border-radius: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+
+  .leaflet-tooltip.rd-tip {
+    font-family: var(--font); font-size: 12px; line-height: 1.45;
+    border-radius: 8px; border: 1px solid var(--hairline); box-shadow: var(--panel-shadow);
+    padding: 8px 10px;
+  }
+  .rd-tip .t-name { font-weight: 650; margin-bottom: 3px; }
+  .rd-tip .t-fuel { color: var(--ink-muted); font-size: 11px; margin-bottom: 5px; }
+  .rd-tip table { border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  .rd-tip td { padding: 1px 0; }
+  .rd-tip td.k { color: var(--ink-secondary); padding-right: 12px; }
+  .rd-tip td.v { text-align: right; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<div id="title" class="panel">
+  <h1>Redispatch in Germany</h1>
+  <p>Location and volume of grid-driven redispatch by power plant. Circle size = total
+     energy (MWh); colour = net direction.</p>
+  <div class="range" id="title-range">—</div>
+</div>
+
+<div id="right-stack">
+  <div id="unmapped" class="panel">
+    <h2>Not on the map</h2>
+    <div class="u-row">
+      <span class="u-dot" style="background: var(--c-boerse)"></span>
+      <span class="u-label">Börse (market)</span>
+      <span class="u-val" id="u-boerse-val">—</span>
+      <span class="u-pct" id="u-boerse-pct"></span>
+    </div>
+    <div class="u-row">
+      <span class="u-dot" style="background: var(--c-notident)"></span>
+      <span class="u-label">Not identified</span>
+      <span class="u-val" id="u-ni-val">—</span>
+      <span class="u-pct" id="u-ni-pct"></span>
+    </div>
+    <div class="u-row" id="u-filtered-row">
+      <span class="u-dot u-dot-hatch"></span>
+      <span class="u-label">Hidden by filter</span>
+      <span class="u-val" id="u-filtered-val">—</span>
+      <span class="u-pct" id="u-filtered-pct"></span>
+    </div>
+    <p class="u-hint">Redispatch volume in this window with no plant location
+       (Börse, not identified), plus any matched-plant volume currently hidden
+       by the plant filter below.</p>
+  </div>
+
+  <div id="filters" class="panel">
+    <h2>Plants shown</h2>
+    <div class="f-group">
+      <div class="f-group-title">Match type</div>
+      <label class="f-check"><input type="checkbox" id="mt-matched" checked> Matched to plant</label>
+      <label class="f-check"><input type="checkbox" id="mt-geocoded" checked> Geocoded only</label>
+    </div>
+    <div class="f-group">
+      <div class="f-group-title">Confidence</div>
+      <label class="f-check"><input type="checkbox" class="f-conf" value="high" checked> High</label>
+      <label class="f-check"><input type="checkbox" class="f-conf" value="medium" checked> Medium</label>
+      <label class="f-check"><input type="checkbox" class="f-conf" value="low" checked> Low</label>
+      <label class="f-check"><input type="checkbox" class="f-conf" value="none" checked> None</label>
+    </div>
+  </div>
+</div>
+
+<div id="legend" class="panel">
+  <h2>Legend</h2>
+  <div class="l-row"><span class="l-swatch" style="background: var(--c-increase)"></span> Net increase (erhöhen)</div>
+  <div class="l-row"><span class="l-swatch" style="background: var(--c-decrease)"></span> Net decrease (reduzieren)</div>
+  <div class="l-row"><span class="l-swatch" style="background: var(--c-balanced)"></span> Balanced</div>
+  <div class="l-sizes" id="l-sizes"></div>
+</div>
+
+<div id="timebar" class="panel">
+  <div class="tb-top">
+    <span class="lbl">Period</span>
+    <span class="tb-dates" id="tb-dates">—</span>
+    <div class="tb-presets">
+      <button id="preset-all">Whole period</button>
+      <select id="preset-month" aria-label="Jump to month"></select>
+    </div>
+  </div>
+  <div id="slider"></div>
+</div>
+
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.js"></script>
+<script src="data.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  // data.js declares `const REDISPATCH_DATA` — a top-level const is a global
+  // lexical binding (referenced by name), NOT a property of window.
+  const DATA = REDISPATCH_DATA;
+
+  // ---- date axis: continuous daily range from date_min..date_max -----------
+  function parseDay(s) { const [y, m, d] = s.split("-").map(Number); return new Date(Date.UTC(y, m - 1, d)); }
+  function fmtDay(d) { return d.toISOString().slice(0, 10); }
+  function fmtHuman(s) {
+    const d = parseDay(s);
+    return d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+  }
+
+  const DAYS = [];
+  {
+    let cur = parseDay(DATA.meta.date_min);
+    const end = parseDay(DATA.meta.date_max);
+    while (cur <= end) { DAYS.push(fmtDay(cur)); cur = new Date(cur.getTime() + 86400000); }
+  }
+  const dayIndex = Object.fromEntries(DAYS.map((d, i) => [d, i]));
+
+  // ---- number formatting ---------------------------------------------------
+  function fmtMWh(v) {
+    if (v >= 1e6) return (v / 1e6).toFixed(2) + " TWh";
+    if (v >= 1e3) return (v / 1e3).toFixed(1) + " GWh";
+    return Math.round(v) + " MWh";
+  }
+  function fmtPct(v, total) { return total > 0 ? (100 * v / total).toFixed(1) + "%" : "—"; }
+
+  // ---- size scale (area proportional to volume, scaled by window length) ---
+  // The reference scale depends only on how many days are selected, not on
+  // which days or which plants are visible — so panning the window (same
+  // length, different position) never rescales the map, and circles stay
+  // comparable as you move through time. Only resizing the window (a
+  // different day-count) changes the scale. See referenceMaxForWindow() below.
+  const R_MIN = 3, R_MAX = 46;
+  let currentMaxTotal = 1; // MWh; updated per render() call before radius() is used
+
+  function radius(mwh) {
+    if (mwh <= 0) return 0;
+    const r = R_MAX * Math.sqrt(mwh / currentMaxTotal);
+    return Math.max(R_MIN, Math.min(R_MAX, r));
+  }
+
+  // round v to a "nice" 1/2/5 * 10^n number, for legend reference values
+  function niceNumber(v) {
+    if (v <= 0) return 0;
+    const exp = Math.floor(Math.log10(v));
+    const base = Math.pow(10, exp);
+    const frac = v / base;
+    const niceFrac = frac < 1.5 ? 1 : frac < 3 ? 2 : frac < 7 ? 5 : 10;
+    return niceFrac * base;
+  }
+
+  // three ascending nice reference volumes for the size legend, scaled to
+  // the current window length (see referenceMaxForWindow)
+  function legendValues(maxTotal) {
+    if (maxTotal <= 0) return [];
+    const top = niceNumber(maxTotal);
+    const vals = [niceNumber(top / 25), niceNumber(top / 5), top];
+    return [...new Set(vals)].filter(v => v > 0).sort((a, b) => a - b);
+  }
+
+  function colorFor(inc, dec) {
+    const total = inc + dec, net = inc - dec;
+    if (total <= 0 || Math.abs(net) / total < 0.1) return "var-balanced";
+    return net > 0 ? "var-increase" : "var-decrease";
+  }
+  const CSSCOL = {
+    "var-increase": getComputedStyle(document.documentElement).getPropertyValue("--c-increase").trim(),
+    "var-decrease": getComputedStyle(document.documentElement).getPropertyValue("--c-decrease").trim(),
+    "var-balanced": getComputedStyle(document.documentElement).getPropertyValue("--c-balanced").trim(),
+  };
+
+  // ---- map ------------------------------------------------------------------
+  const map = L.map("map", { zoomControl: true, minZoom: 4, maxZoom: 11 })
+    .setView([51.1, 10.2], 6);
+  L.control.zoom({ position: "topleft" }); // keep default; positioned below title via CSS default
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    subdomains: "abcd", maxZoom: 19,
+  }).addTo(map);
+
+  const layer = L.layerGroup().addTo(map);
+
+  // pre-sum each plant's series into arrays aligned with DAYS would be heavy in
+  // memory; instead keep per-plant sparse series and iterate its own keys.
+  const plants = DATA.plants.map(p => ({
+    name: p.name, lat: p.lat, lon: p.lon, fueltype: p.fueltype, entry_type: p.entry_type,
+    matched: p.matched, confidence: p.confidence,
+    days: Object.keys(p.series), series: p.series,
+  }));
+
+  // Anchor for the length-based scale: the single largest plant total over the
+  // *entire* dataset, turned into a per-day rate. A window of N days always
+  // references perDayRate * N (nice-rounded) regardless of where it sits or
+  // which plants/filters are active — only its length matters.
+  const wholePeriodMax = plants.reduce((max, p) => {
+    let total = 0;
+    for (const d of p.days) { const v = p.series[d]; total += v[0] + v[1]; }
+    return Math.max(max, total);
+  }, 0);
+  const PER_DAY_RATE = wholePeriodMax / DAYS.length; // MWh/day
+
+  function referenceMaxForWindow(i0, i1) {
+    return PER_DAY_RATE * (i1 - i0 + 1);
+  }
+
+  function sumWindow(series, dayKeys, i0, i1) {
+    let inc = 0, dec = 0;
+    for (const d of dayKeys) {
+      const idx = dayIndex[d];
+      if (idx >= i0 && idx <= i1) { const v = series[d]; inc += v[0]; dec += v[1]; }
+    }
+    return [inc, dec];
+  }
+  function sumUnmapped(obj, i0, i1) {
+    let s = 0;
+    for (const d in obj) { const idx = dayIndex[d]; if (idx >= i0 && idx <= i1) s += obj[d]; }
+    return s;
+  }
+
+  // ---- plant filter (match type + confidence) -------------------------------
+  function readFilter() {
+    const showMatched = document.getElementById("mt-matched").checked;
+    const showGeocoded = document.getElementById("mt-geocoded").checked;
+    const confs = new Set(
+      Array.from(document.querySelectorAll(".f-conf:checked")).map(el => el.value)
+    );
+    return function passes(p) {
+      if (p.matched && !showMatched) return false;
+      if (!p.matched && !showGeocoded) return false;
+      return confs.has(p.confidence);
+    };
+  }
+
+  let lastI0 = 0, lastI1 = 0;
+
+  // ---- render for a [i0, i1] day-index window ------------------------------
+  function render(i0, i1) {
+    lastI0 = i0; lastI1 = i1;
+    layer.clearLayers();
+    let shownTotal = 0, filteredOutTotal = 0;
+    const passes = readFilter();
+
+    // gather active plants, split into shown (passes filter) vs hidden
+    const active = [];
+    for (const p of plants) {
+      const [inc, dec] = sumWindow(p.series, p.days, i0, i1);
+      const total = inc + dec;
+      if (total <= 0) continue;
+      if (passes(p)) {
+        shownTotal += total;
+        active.push({ p, inc, dec, total });
+      } else {
+        filteredOutTotal += total;
+      }
+    }
+    active.sort((a, b) => b.total - a.total); // largest first so small circles sit on top
+
+    // scale depends only on window length, so it stays fixed while panning
+    const referenceMax = referenceMaxForWindow(i0, i1);
+    currentMaxTotal = referenceMax > 0 ? referenceMax : 1;
+    updateSizeLegend(referenceMax);
+
+    for (const { p, inc, dec, total } of active) {
+      const r = radius(total);
+      const key = colorFor(inc, dec);
+      const net = inc - dec;
+      const marker = L.circleMarker([p.lat, p.lon], {
+        radius: r,
+        color: "#ffffff", weight: 1.5, opacity: 0.95,
+        fillColor: CSSCOL[key], fillOpacity: 0.72,
+      });
+      marker.bindTooltip(
+        `<div class="t-name">${escapeHtml(p.name)}</div>` +
+        (p.fueltype ? `<div class="t-fuel">${escapeHtml(p.fueltype)}</div>` : "") +
+        `<table>` +
+          `<tr><td class="k">Total</td><td class="v">${fmtMWh(total)}</td></tr>` +
+          `<tr><td class="k">Increase</td><td class="v" style="color:${CSSCOL["var-increase"]}">${fmtMWh(inc)}</td></tr>` +
+          `<tr><td class="k">Decrease</td><td class="v" style="color:${CSSCOL["var-decrease"]}">${fmtMWh(dec)}</td></tr>` +
+          `<tr><td class="k">Net</td><td class="v">${net >= 0 ? "+" : "−"}${fmtMWh(Math.abs(net))}</td></tr>` +
+        `</table>`,
+        { className: "rd-tip", sticky: true, direction: "top", opacity: 1 }
+      );
+      layer.addLayer(marker);
+    }
+
+    // ---- unmapped panel ----------------------------------------------------
+    const boerse = sumUnmapped(DATA.unmapped.boerse, i0, i1);
+    const ni = sumUnmapped(DATA.unmapped.not_identified, i0, i1);
+    const windowTotal = shownTotal + filteredOutTotal + boerse + ni;
+    document.getElementById("u-boerse-val").textContent = fmtMWh(boerse);
+    document.getElementById("u-ni-val").textContent = fmtMWh(ni);
+    document.getElementById("u-boerse-pct").textContent = fmtPct(boerse, windowTotal);
+    document.getElementById("u-ni-pct").textContent = fmtPct(ni, windowTotal);
+
+    const filteredRow = document.getElementById("u-filtered-row");
+    if (filteredOutTotal > 0) {
+      filteredRow.style.display = "";
+      document.getElementById("u-filtered-val").textContent = fmtMWh(filteredOutTotal);
+      document.getElementById("u-filtered-pct").textContent = fmtPct(filteredOutTotal, windowTotal);
+    } else {
+      filteredRow.style.display = "none";
+    }
+
+    // ---- title range + timebar ---------------------------------------------
+    const label = `${fmtHuman(DAYS[i0])} – ${fmtHuman(DAYS[i1])}`;
+    document.getElementById("title-range").textContent = label;
+    document.getElementById("tb-dates").textContent = label;
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  }
+
+  // ---- legend size reference (recomputed every render, see radius()) -------
+  function updateSizeLegend(maxTotal) {
+    const el = document.getElementById("l-sizes");
+    el.innerHTML = "";
+    for (const mwh of legendValues(maxTotal)) {
+      const r = radius(mwh), d = Math.round(r * 2);
+      const wrap = document.createElement("div");
+      wrap.className = "l-size";
+      const ring = document.createElement("div");
+      ring.className = "ring";
+      ring.style.width = d + "px"; ring.style.height = d + "px";
+      const span = document.createElement("span");
+      span.textContent = fmtMWh(mwh);
+      wrap.appendChild(ring); wrap.appendChild(span);
+      el.appendChild(wrap);
+    }
+  }
+
+  // ---- plant filter panel wiring -------------------------------------------
+  document.querySelectorAll('#filters input[type="checkbox"]').forEach(el => {
+    el.addEventListener("change", () => render(lastI0, lastI1));
+  });
+
+  // ---- month presets -------------------------------------------------------
+  (function buildMonths() {
+    const sel = document.getElementById("preset-month");
+    const opt0 = document.createElement("option");
+    opt0.value = ""; opt0.textContent = "Jump to month…"; opt0.disabled = true; opt0.selected = true;
+    sel.appendChild(opt0);
+    const seen = new Set();
+    for (const d of DAYS) {
+      const ym = d.slice(0, 7);
+      if (seen.has(ym)) continue;
+      seen.add(ym);
+      const opt = document.createElement("option");
+      opt.value = ym;
+      opt.textContent = parseDay(d + "").toLocaleDateString("en-GB", { month: "short", year: "numeric", timeZone: "UTC" });
+      sel.appendChild(opt);
+    }
+    sel.addEventListener("change", () => {
+      const ym = sel.value; if (!ym) return;
+      let i0 = DAYS.findIndex(d => d.startsWith(ym));
+      let i1 = i0; for (let i = i0; i < DAYS.length && DAYS[i].startsWith(ym); i++) i1 = i;
+      slider.noUiSlider.set([i0, i1]);
+      sel.selectedIndex = 0;
+    });
+  })();
+
+  // ---- slider --------------------------------------------------------------
+  const slider = document.getElementById("slider");
+  noUiSlider.create(slider, {
+    start: [0, DAYS.length - 1],
+    connect: true,
+    behaviour: "drag", // dragging the middle connect bar pans the window, keeping its length fixed
+    step: 1,
+    margin: 0,
+    range: { min: 0, max: DAYS.length - 1 },
+    format: { to: v => Math.round(v), from: v => Math.round(v) },
+  });
+  slider.noUiSlider.on("update", (values) => {
+    render(+values[0], +values[1]);
+  });
+  document.getElementById("preset-all").addEventListener("click", () => {
+    slider.noUiSlider.set([0, DAYS.length - 1]);
+  });
+
+  // initial render is triggered by the slider "update" event on create.
+})();
+</script>
+</body>
+</html>
