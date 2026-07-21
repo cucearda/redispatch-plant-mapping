@@ -37,7 +37,10 @@ def main() -> None:
     df["coord_check"] = ""                 # object column
     df["check_km"] = float("nan")          # float column (accepts the distances)
 
-    matched = df[df["matched_id"].notna() & df["lat"].notna()]
+    # multi_plant is excluded: its coordinate is the centroid of plants spread across the
+    # country, so geocoding the bundle string can only ever "disagree" — nothing to confirm.
+    matched = df[df["matched_id"].notna() & df["lat"].notna()
+                 & df["entry_type"].ne("multi_plant")]
     print(f"cross-checking {len(matched)} matched rows via Haiku geocode …")
     coords = geocode_names(list(matched["betroffene_anlage"]))
 

@@ -1,12 +1,14 @@
 """
 redispatch_prep.py — matching pipeline steps 0-1.
 
-Step 0 — reduce Redispatch_Daten.csv to the distinct BETROFFENE_ANLAGE keys, with
+Step 0 — reduce the redispatch export(s) to the distinct BETROFFENE_ANLAGE keys, with
          per-name attributes: modal PRIMAERENERGIEART, max(MAXIMALE_LEISTUNG_MW)
-         (the capacity lower bound), instructing TSOs, event count.
+         (the capacity lower bound), instructing TSOs, event count. Several exports
+         can be passed at once — they're concatenated, so a name appearing in more
+         than one year aggregates into a single row.
 Step 1 — rule filter: classify each key into the 3-way router's entry_type —
-         individual · cluster · control_reserve · substation · regional_renewable
-         · countertrade · emergency · foreign.
+         individual · cluster · multi_plant · control_reserve · regional_renewable
+         · substation · countertrade · emergency · foreign.
 
 Output: data/redispatch_entries.csv (one row per distinct name, the loop grain
 for everything downstream). Only `individual` + `cluster` go to matching; the rest
@@ -34,6 +36,20 @@ CATEGORY_RES = [
     ("regional_renewable", re.compile(r"\bEE\b", re.I)),                     # "EE Bayern" — whole-state renewables
 ]
 
+# The 2013-2020 export bundles several plants into one entry: "Boxberg, Goldisthal,
+# Jänschwalde". Each segment is a plant that also appears as its own entry, so these are
+# composed from the member matches downstream (assemble_results) rather than matched as a
+# string. A segment only counts if it carries a word of ≥4 letters — that keeps block-number
+# tails ("Heizkraftwerk Stuttgart-Münster GT 16,17,18") a single individual entry.
+_PLANTISH = re.compile(r"[A-Za-zÄÖÜäöüß]{4,}")
+
+
+def segments(name: str) -> list[str]:
+    """The comma-separated plant names in a multi_plant entry ([] if it isn't one)."""
+    parts = [p.strip() for p in name.split(",")]
+    return parts if sum(bool(_PLANTISH.search(p)) for p in parts) >= 2 else []
+
+
 
 # Technology spelled out in the name (mostly the DSO CR_ buckets: `_CR_WIND` etc).
 # Finer than PRIMAERENERGIEART — Wind vs Solar are both "Erneuerbar" there.
@@ -58,7 +74,7 @@ def classify(name: str) -> str:
     for label, rx in CATEGORY_RES:
         if rx.search(name):
             return label
-    return "individual"
+    return "multi_plant" if segments(name) else "individual"
 
 
 def name_technology(name: str) -> str:
@@ -72,9 +88,15 @@ def name_technology(name: str) -> str:
     return ""
 
 
-def main(redispatch_file: str = REDISPATCH) -> None:
-    r = pd.read_csv(redispatch_file, sep=";", encoding="utf-8-sig", low_memory=False)
-    r.columns = r.columns.str.strip()
+def main(redispatch_file: str | list[str] = REDISPATCH) -> None:
+    files = [redispatch_file] if isinstance(redispatch_file, str) else list(redispatch_file)
+    frames = []
+    for f in files:
+        df = pd.read_csv(f, sep=";", encoding="utf-8-sig", low_memory=False)
+        df.columns = df.columns.str.strip()
+        print(f"  {f}: {len(df)} events")
+        frames.append(df)
+    r = pd.concat(frames, ignore_index=True)
     r["BETROFFENE_ANLAGE"] = r["BETROFFENE_ANLAGE"].astype(str).str.strip()
     r = r[r["BETROFFENE_ANLAGE"].ne("") & r["BETROFFENE_ANLAGE"].ne("nan")]
     r["MAXIMALE_LEISTUNG_MW"] = pd.to_numeric(
@@ -105,6 +127,15 @@ def main(redispatch_file: str = REDISPATCH) -> None:
     print(out["entry_type"].value_counts().to_string())
     matchable = out["entry_type"].isin(["individual", "cluster"]).sum()
     print(f"\nmatchable (individual + cluster): {matchable}")
+
+    # multi_plant rows are composed from their segments' matches — report the segments
+    # that have no entry of their own (those members are simply missing from the set).
+    known = set(out["betroffene_anlage"])
+    segs = {s for n in out.loc[out["entry_type"] == "multi_plant", "betroffene_anlage"]
+            for s in segments(n)}
+    if segs:
+        print(f"multi_plant segments: {len(segs)} distinct, "
+              f"{len(segs - known)} without an entry of their own")
     print(f"energy-type conflicts flagged:    {int(out['energy_conflict'].sum())}")
 
     # self-check
