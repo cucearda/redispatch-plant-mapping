@@ -100,7 +100,12 @@ def main(limit: int | None = None) -> None:
     fuzzy["Set"] = fuzzy["cand_id"].map(SET).fillna("")
     fuzzy["match_names"] = fuzzy["cand_id"].map(MN).fillna("")
 
-    names = list(fuzzy["betroffene_anlage"].drop_duplicates())
+    # Incremental: names already in OUT keep their earlier verdict, so adding a new
+    # redispatch export only pays for its new names. Delete OUT to re-decide everything.
+    done = set(pd.read_csv(OUT)["betroffene_anlage"]) if os.path.exists(OUT) else set()
+    names = [n for n in fuzzy["betroffene_anlage"].drop_duplicates() if n not in done]
+    if done:
+        print(f"  {len(done)} entries already decided in {OUT} — skipping")
     if limit:
         names = names[:limit]
 
@@ -116,8 +121,9 @@ def main(limit: int | None = None) -> None:
     client = anthropic.Anthropic(api_key=os.getenv("CLAUDE_API_KEY"))
     chunks = [work[i:i + BATCH_SIZE] for i in range(0, len(work), BATCH_SIZE)]
 
-    with open(OUT, "w", newline="", encoding="utf-8") as f:
-        csv.DictWriter(f, fieldnames=FIELDS).writeheader()
+    if not os.path.exists(OUT):
+        with open(OUT, "w", newline="", encoding="utf-8") as f:
+            csv.DictWriter(f, fieldnames=FIELDS).writeheader()
 
     n_match = n_null = 0
     for bn, chunk in enumerate(chunks, 1):

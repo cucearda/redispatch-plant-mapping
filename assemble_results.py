@@ -14,6 +14,8 @@ import os
 
 import pandas as pd
 
+from redispatch_prep import segments
+
 ENTRIES = "data/redispatch_entries.csv"
 INDEX   = "data/candidate_index.csv"
 EXACT   = "results/matches_exact.csv"
@@ -106,6 +108,38 @@ def main() -> None:
             else:                                     # coordinate-only (no plant nearby)
                 put(r.betroffene_anlage, "", "", "wikipedia", "none", r.reasoning,
                     lat=r.lat, lon=r.lon, coord_source=r.coord_source, needs_review=r.needs_review)
+
+    # multi_plant — "Boxberg, Goldisthal, Jänschwalde" bundles plants that each have an
+    # entry of their own, so compose the members' resolved matches instead of matching the
+    # string. Runs last: the segments' own rows must be final (incl. wikipedia overrides).
+    def num(v):
+        try:
+            return float(v)
+        except (TypeError, ValueError):
+            return None
+
+    for e in base[base["entry_type"] == "multi_plant"].itertuples():
+        parts = segments(e.betroffene_anlage)
+        mem = [match[p] for p in parts if match.get(p, {}).get("matched_id")]
+        if not mem:
+            continue
+        pts  = [(num(m["lat"]), num(m["lon"])) for m in mem]
+        pts  = [p for p in pts if p[0] is not None and p[1] is not None]
+        caps = [c for c in (num(m["capacity_mw"]) for m in mem) if c is not None]
+        whole = len(mem) == len(parts)
+        put(e.betroffene_anlage, ",".join(str(m["matched_id"]) for m in mem), "index",
+            "multi_plant", "high" if whole else "medium",
+            f"multi-plant entry: {len(mem)}/{len(parts)} listed plants matched",
+            matched_name=" + ".join(str(m["matched_name"]) for m in mem),
+            fueltype=uniq_join(m["fueltype"] for m in mem),
+            capacity=sum(caps) if caps else "",
+            lat=round(sum(p[0] for p in pts) / len(pts), 4) if pts else "",
+            lon=round(sum(p[1] for p in pts) / len(pts), 4) if pts else "",
+            coord_source="index" if pts else "",
+            mastr=uniq_join(m["mastr_ids"] for m in mem),
+            opsd=uniq_join(m["opsd_ids"] for m in mem),
+            eic=uniq_join(m["eic_ids"] for m in mem),
+            needs_review="no" if whole else "yes")
 
     # ── merge onto the 398-row base ────────────────────────────────────────────
     rows = []

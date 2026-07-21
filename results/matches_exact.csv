@@ -1,56 +1,81 @@
 betroffene_anlage,entry_type,matched_id,id_source,method,matched_name
-NEURATH_F,individual,272,index,exact,Neurath
+Ingolstadt 4,individual,8622,index,exact,Ingolstadt
+Staudinger 5,individual,699,index,exact,Staudinger
+Herne,individual,317,index,exact,Herne
+Walsum,individual,320,index,exact,Walsum
+Heyden,individual,316,index,exact,Heyden
+Emsland,individual,1157,index,exact,Emsland
+Ingolstadt 3,individual,8622,index,exact,Ingolstadt
+Ibbenbüren,individual,1077,index,exact,Ibbenburen
+Neurath,individual,272,index,exact,Neurath
+Heizkraftwerk Heilbronn,individual,318,index,exact,Heilbronn
+Isar 2,individual,3296,index,exact,Isar 2 Kki 2
+Farge,individual,728,index,exact,Farge
+Reisach,individual,123395,index,exact,Reisach
+Lippendorf,individual,313,index,exact,Lippendorf
+Schwarze Pumpe,individual,268,index,exact,Schwarze Pumpe
+Irsching 4,individual,721,index,exact,Irsching
+Grohnde,individual,3286,index,exact,Grohnde Kwg
+Brokdorf,individual,3323,index,exact,Brokdorf Kbr
+Itzehoe,individual,8609,index,exact,Gasturbinenkraftwerk Itzehoe
+Kraftwerk Bexbach,individual,322,index,exact,Bexbach
+Knapsack,individual,722,index,exact,Knapsack
+Emsland KKE,individual,3307,index,exact,Emsland Kke
+Emsland (EON),individual,1157,index,exact,Emsland
+Moorburg,individual,697,index,exact,Moorburg
+Isar 2 (SWM),individual,3296,index,exact,Isar 2 Kki 2
+Brokdorf (EON),individual,3323,index,exact,Brokdorf Kbr
+Isar 2 (EON),individual,3296,index,exact,Isar 2 Kki 2
+Gundremmingen B (EON),individual,15117,index,exact,Gundremmingen B
+GTKW Darmstadt,individual,3299,index,exact,Gtkw Darmstadt
+Ensdorf,individual,2680,index,exact,Ensdorf
+Isar 2 (Uniper),individual,3296,index,exact,Isar 2 Kki 2
+Lippendorf (EnBW),individual,313,index,exact,Lippendorf
+Heizkraftwerk Altbach/Deizisau GT C,individual,27867,index,exact,Altbach Deizisau
+Heizkraftwerk Altbach/Deizisau GT B,individual,27867,index,exact,Altbach Deizisau
+Obernburg,individual,3317,index,exact,Sammelschienen Gas Und Dampfturbinen
+Wilhelmshaven GT (Uniper),individual,3204,index,exact,Wilhelmshaven Gt
+Lippendorf (LEAG),individual,313,index,exact,Lippendorf
+Zielitz,individual,3236,index,exact,Zi Tr Gt
+Schwarze Pumpe (Standort),individual,268,index,exact,Schwarze Pumpe
 NEURATH_G,individual,272,index,exact,Neurath
+Grosskraftwerk Mannheim,individual,1083,index,exact,Grosskraftwerk Mannheim
+NEURATH_F,individual,272,index,exact,Neurath
+Moorburg (Standort),individual,697,index,exact,Moorburg
+WALSUM_10,individual,320,index,exact,Walsum
+WALSUM_9,individual,320,index,exact,Walsum
+WEISWEILER_H,individual,258,index,exact,Weissweiler
+SCHOLVEN_B,individual,269,index,exact,Scholven
 NEURATH_D,individual,272,index,exact,Neurath
 NEURATH_E,individual,272,index,exact,Neurath
-Grohnde,individual,3286,index,exact,Grohnde Kwg
-Grosskraftwerk Mannheim,individual,1083,index,exact,Grosskraftwerk Mannheim
-Brokdorf,individual,3323,index,exact,Brokdorf Kbr
-Schwarze Pumpe (Standort),individual,268,index,exact,Schwarze Pumpe
-Farge,individual,728,index,exact,Farge
-Staudinger 5,individual,699,index,exact,Staudinger
-HERNE_4,individual,317,index,exact,Herne
-Isar 2 (Uniper),individual,3296,index,exact,Isar 2 Kki 2
 WEISWEILER_G,individual,258,index,exact,Weissweiler
+SCHOLVEN_C,individual,269,index,exact,Scholven
+HERNE_4,individual,317,index,exact,Herne
+WEISWEILER_E,individual,258,index,exact,Weissweiler
 NEURATH_B,individual,272,index,exact,Neurath
 WESTFALEN_E,individual,698,index,exact,Westfalen
-WALSUM_10,individual,320,index,exact,Walsum
+BERGKAMEN_A,individual,274,index,exact,Bergkamen
+WEISWEILER_F,individual,258,index,exact,Weissweiler
 NEURATH_A,individual,272,index,exact,Neurath
 Datteln_4,individual,325,index,exact,Datteln
-Irsching 4,individual,721,index,exact,Irsching
-WEISWEILER_H,individual,258,index,exact,Weissweiler
-Moorburg (Standort),individual,697,index,exact,Moorburg
-Isar 2 (SWM),individual,3296,index,exact,Isar 2 Kki 2
 Reuter West (Standort),individual,727,index,exact,Reuter West
-Heizkraftwerk Altbach/Deizisau GT B,individual,27867,index,exact,Altbach Deizisau
-WEISWEILER_E,individual,258,index,exact,Weissweiler
-WEISWEILER_F,individual,258,index,exact,Weissweiler
-Heizkraftwerk Altbach/Deizisau GT C,individual,27867,index,exact,Altbach Deizisau
-BERGKAMEN_A,individual,274,index,exact,Bergkamen
 WP Jardelund,individual,159438,index,exact,Wp Jardelund
-SCHOLVEN_B,individual,269,index,exact,Scholven
-SCHOLVEN_C,individual,269,index,exact,Scholven
-Heyden,individual,316,index,exact,Heyden
 DORMAGEN_GT2,individual,1153,index,exact,Dormagen
 50H Berlin Mitte,individual,10325,index,exact,Berlin Mitte
 NEURATH_C,individual,272,index,exact,Neurath
 50H Rostock Marienehe,individual,3276,index,exact,Rostock Marienehe
 Irsching 3,individual,3315,index,exact,Irsching
 Irsching 6 (bnBm),individual,721,index,exact,Irsching
-Itzehoe,individual,8609,index,exact,Gasturbinenkraftwerk Itzehoe
 WP_BEDBURG,individual,156673,index,exact,Wp Bedburg
 WP_TITZ,individual,162468,index,exact,Wp Titz
 Burghausen,individual,53946,index,exact,Burghausen
 Eltmann,individual,3304,index,exact,Eltmann
-Reisach,individual,123395,index,exact,Reisach
 HUCKINGEN_B,individual,720,index,exact,Huckingen
-Obernburg,individual,3317,index,exact,Sammelschienen Gas Und Dampfturbinen
 WP_GREVENBROICH,individual,158549,index,exact,Wp Grevenbroich
 HUCKINGEN_A,individual,720,index,exact,Huckingen
 50H Bernburg,individual,33616,index,exact,Bernburg
 BATTERIESPEICHER_NEURATH,individual,4707,index,exact,Batteriespeicher Neurath
 50H Chemnitz,individual,55231,index,exact,Chemnitz
-Lippendorf,individual,313,index,exact,Lippendorf
 HKW Aalen,individual,4987,index,exact,Aalen
 Heizkraftwerk Stuttgart-Münster GT 88,individual,4633,index,exact,Stuttgart Munster
 Heizkraftwerk Stuttgart-Münster GT 87,individual,4633,index,exact,Stuttgart Munster

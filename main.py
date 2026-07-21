@@ -28,13 +28,14 @@ import geocode_backfill
 import confirm_matches
 
 # ── config ────────────────────────────────────────────────────────────────────
-# Redispatch_Daten_2021.csv is the fuller extract (2021-2026); Redispatch_Daten.csv is 2025-26.
-REDISPATCH_FILE = "data/Redispatch_Daten_2021.csv"
-INDEX_FILE      = "data/candidate_index.csv"
+# Both exports together cover 2013-2026 (Redispatch_Daten.csv is the 2025-26 subset of the
+# 2021 file). Concatenated in step 1, so a name appearing in both years is one entry.
+REDISPATCH_FILES = ["data/Redispatch Export 2013-2020.csv", "data/Redispatch_Daten_2021.csv"]
+INDEX_FILE       = "data/candidate_index.csv"
 
 # ── stages, in order ──────────────────────────────────────────────────────────
 STAGES = [
-    ("redispatch prep + rule filter", lambda: redispatch_prep.main(REDISPATCH_FILE)),
+    ("redispatch prep + rule filter", lambda: redispatch_prep.main(REDISPATCH_FILES)),
     ("exact match",                   match_exact.main),
     ("fuzzy shortlist",               match_fuzzy.main),
     ("LLM disambiguation",            match_llm.main),
