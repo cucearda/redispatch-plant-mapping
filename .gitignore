@@ -15,8 +15,10 @@ data/OPSD_renewable_power_plants_DE.csv
 data/pypsa_unaggregated_powerplants.csv
 # pypsa_powerplants is the 21M all-country extract (German subset == pypsa_unaggregated)
 data/pypsa_powerplants.csv
-# Redispatch_Daten_2021 is 15M
-data/Redispatch_Daten_2021.csv
 
 # Derived — regenerate with build_candidate_index.py
 data/candidate_index.csv
+
+# Derived — regenerate with dashboard/build_data.py (2013-2020 + 2021-2026,
+# timezone-normalized and de-duplicated)
+data/Redispatch_Daten_2013_2026.csv

@@ -1,21 +1,38 @@
 """Build the dashboard data file (dashboard/data.js) from the raw redispatch
 calls and the plant-coordinate matches.
 
-Reads:
-  - data/Redispatch_Daten.csv        raw redispatch calls (semicolon, utf-8-sig,
-                                     German comma-decimals)
-  - results/redispatch_plant_matches.csv   one row per distinct plant name,
-                                     with lat/lon/fueltype/entry_type
+Reads (both raw exports, covering 2013-2026 together):
+  - data/Redispatch_Daten_2013_2020.csv
+  - data/Redispatch_Daten_2021_2026.csv
+  - results/redispatch_plant_matches.csv   one row per distinct plant name
+                                           (or composed multi_plant bundle),
+                                           with lat/lon/fueltype/entry_type
 
 Writes:
-  - dashboard/data.js                `const REDISPATCH_DATA = {...}` loaded by
-                                     index.html via <script src> (works from
-                                     file:// with no server / CORS issue).
+  - data/Redispatch_Daten_2013_2026.csv    the two exports combined, timezone-
+                                           normalized and de-duplicated. A
+                                           derived cache (gitignored) — delete
+                                           and re-run to regenerate.
+  - dashboard/data.js                      `const REDISPATCH_DATA = {...}`
+                                           loaded by index.html via <script
+                                           src> (works from file:// with no
+                                           server / CORS issue).
 
 Each raw call is classified as:
-  - mapped        -> the matched plant has coordinates (drawn as a map circle)
+  - mapped        -> the matched plant (or multi-plant bundle) has coordinates
+                     (drawn as a map circle)
   - boerse        -> entry_type == "countertrade" (the "Börse" market entry)
   - not_identified-> everything else without coordinates
+
+Two source-data quirks are corrected here, not in the raw files:
+  - The 2013-2020 export timestamps are labelled UTC; the 2021-2026 export
+    (and everything since) is CET/CEST local time. Left alone, calendar days
+    would misalign by 1-2h across the 2020/2021 boundary — every timestamp is
+    converted to Europe/Berlin local time before its "day" is taken.
+  - 6 rows in Redispatch_Daten_2021_2026.csv have a corrupted byte in
+    "erhöhen" (a mixed-encoding artifact in the source export). RICHTUNG is
+    matched by substring ("erh" / "reduzieren") rather than exact equality so
+    these still classify correctly.
 
 Only dependency is pandas (already used elsewhere in the project).
 
@@ -32,12 +49,15 @@ import pandas as pd
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 
-RAW_FILE = os.path.join(ROOT, "data", "Redispatch_Daten.csv")
+RAW_FILES = [
+    os.path.join(ROOT, "data", "Redispatch_Daten_2013_2020.csv"),
+    os.path.join(ROOT, "data", "Redispatch_Daten_2021_2026.csv"),
+]
+COMBINED_FILE = os.path.join(ROOT, "data", "Redispatch_Daten_2013_2026.csv")
 MATCHES_FILE = os.path.join(ROOT, "results", "redispatch_plant_matches.csv")
 OUT_FILE = os.path.join(HERE, "data.js")
 
-INCREASE = "Wirkleistungseinspeisung erhöhen"   # inject more power
-DECREASE = "Wirkleistungseinspeisung reduzieren"  # inject less power
+BERLIN = "Europe/Berlin"
 
 
 def _num(series):
@@ -48,19 +68,57 @@ def _num(series):
     )
 
 
-def load_raw():
-    r = pd.read_csv(RAW_FILE, sep=";", encoding="utf-8-sig", low_memory=False)
-    r.columns = r.columns.str.strip()
-    r["name"] = r["BETROFFENE_ANLAGE"].astype(str).str.strip()
-    r["date"] = pd.to_datetime(
-        r["BEGINN_DATUM"], format="%d.%m.%Y", errors="coerce"
+def _local_day(df):
+    """Europe/Berlin calendar day for BEGINN_DATUM+BEGINN_UHRZEIT, aware that
+    ZEITZONE_VON is either 'UTC' (2013-2020 export) or 'CET'/'CEST' (2021-2026
+    export, already Berlin wall-clock time)."""
+    naive = pd.to_datetime(
+        df["BEGINN_DATUM"] + " " + df["BEGINN_UHRZEIT"],
+        format="%d.%m.%Y %H:%M", errors="coerce",
     )
+    is_utc = df["ZEITZONE_VON"].astype(str).str.strip().str.upper().eq("UTC")
+
+    day = pd.Series(pd.NA, index=df.index, dtype="object")
+    utc_local = (naive[is_utc]
+                 .dt.tz_localize("UTC", ambiguous="NaT", nonexistent="NaT")
+                 .dt.tz_convert(BERLIN))
+    day.loc[is_utc] = utc_local.dt.strftime("%Y-%m-%d")
+
+    berlin_local = naive[~is_utc].dt.tz_localize(
+        BERLIN, ambiguous="NaT", nonexistent="NaT")
+    day.loc[~is_utc] = berlin_local.dt.strftime("%Y-%m-%d")
+    return day
+
+
+def load_raw():
+    frames = []
+    for path in RAW_FILES:
+        df = pd.read_csv(path, sep=";", encoding="utf-8-sig", low_memory=False)
+        df.columns = df.columns.str.strip()
+        n_before = len(df)
+        df = df.drop_duplicates()
+        n_dupes = n_before - len(df)
+        print(f"  {os.path.basename(path)}: {n_before} rows"
+              + (f" ({n_dupes} exact duplicates dropped)" if n_dupes else ""))
+        frames.append(df)
+    r = pd.concat(frames, ignore_index=True)
+
+    r["name"] = r["BETROFFENE_ANLAGE"].astype(str).str.strip()
+    r["day"] = _local_day(r)
     r["mwh"] = _num(r["GESAMTE_ARBEIT_MWH"]).abs()
-    r = r.dropna(subset=["date", "mwh"])
-    # split volume into increase / decrease columns
-    r["inc"] = r["mwh"].where(r["RICHTUNG"] == INCREASE, 0.0)
-    r["dec"] = r["mwh"].where(r["RICHTUNG"] == DECREASE, 0.0)
-    r["day"] = r["date"].dt.strftime("%Y-%m-%d")
+    r = r.dropna(subset=["day", "mwh"])
+
+    # substring match, not equality: tolerant of the corrupted "erhöhen" byte
+    # in a handful of 2021-2026 rows, and of either source's exact wording
+    richtung = r["RICHTUNG"].astype(str)
+    is_increase = richtung.str.contains("erh", case=False, na=False)
+    is_decrease = richtung.str.contains("reduzieren", case=False, na=False)
+    r["inc"] = r["mwh"].where(is_increase, 0.0)
+    r["dec"] = r["mwh"].where(is_decrease, 0.0)
+
+    r.to_csv(COMBINED_FILE, sep=";", index=False, encoding="utf-8-sig")
+    print(f"  -> {os.path.basename(COMBINED_FILE)}: {len(r)} combined rows "
+          f"(gitignored cache, regenerate freely)")
     return r
 
 
@@ -107,7 +165,8 @@ def build():
                      fueltype=fuels, entry_type=etypes,
                      matched=matcheds, confidence=confs)
 
-    # ---- mapped plants: per (name, day) volume split ------------------------
+    # ---- mapped plants (incl. composed multi-plant bundles): per (name, day)
+    # volume split ------------------------------------------------------------
     mapped = raw[raw["category"] == "mapped"]
     plants = []
     grp = mapped.groupby("name", sort=False)
@@ -175,7 +234,7 @@ def build():
 
     # ---- report -------------------------------------------------------------
     size_kb = os.path.getsize(OUT_FILE) / 1024
-    print(f"Wrote {OUT_FILE} ({size_kb:.0f} KB)")
+    print(f"\nWrote {OUT_FILE} ({size_kb:.0f} KB)")
     print(f"Date range : {data['meta']['date_min']} .. {data['meta']['date_max']}")
     print(f"Plants     : {len(plants)} with coordinates")
     print(f"Total MWh  : {total_mwh:,.0f}")

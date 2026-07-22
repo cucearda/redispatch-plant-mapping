@@ -29,8 +29,8 @@ import confirm_matches
 
 # ── config ────────────────────────────────────────────────────────────────────
 # Both exports together cover 2013-2026 (Redispatch_Daten.csv is the 2025-26 subset of the
-# 2021 file). Concatenated in step 1, so a name appearing in both years is one entry.
-REDISPATCH_FILES = ["data/Redispatch Export 2013-2020.csv", "data/Redispatch_Daten_2021.csv"]
+# 2021-2026 file). Concatenated in step 1, so a name appearing in both years is one entry.
+REDISPATCH_FILES = ["data/Redispatch_Daten_2013_2020.csv", "data/Redispatch_Daten_2021_2026.csv"]
 INDEX_FILE       = "data/candidate_index.csv"
 
 # ── stages, in order ──────────────────────────────────────────────────────────

@@ -456,21 +456,29 @@
     el.addEventListener("change", () => render(lastI0, lastI1));
   });
 
-  // ---- month presets -------------------------------------------------------
+  // ---- month presets (grouped by year — the dataset now spans ~13 years) ---
   (function buildMonths() {
     const sel = document.getElementById("preset-month");
     const opt0 = document.createElement("option");
     opt0.value = ""; opt0.textContent = "Jump to month…"; opt0.disabled = true; opt0.selected = true;
     sel.appendChild(opt0);
     const seen = new Set();
+    let group = null, groupYear = null;
     for (const d of DAYS) {
       const ym = d.slice(0, 7);
       if (seen.has(ym)) continue;
       seen.add(ym);
+      const year = d.slice(0, 4);
+      if (year !== groupYear) {
+        group = document.createElement("optgroup");
+        group.label = year;
+        sel.appendChild(group);
+        groupYear = year;
+      }
       const opt = document.createElement("option");
       opt.value = ym;
-      opt.textContent = parseDay(d + "").toLocaleDateString("en-GB", { month: "short", year: "numeric", timeZone: "UTC" });
-      sel.appendChild(opt);
+      opt.textContent = parseDay(d + "").toLocaleDateString("en-GB", { month: "short", timeZone: "UTC" });
+      group.appendChild(opt);
     }
     sel.addEventListener("change", () => {
       const ym = sel.value; if (!ym) return;

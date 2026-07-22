@@ -8,9 +8,12 @@ no server or build tooling required.
 
 | File | Role |
 |---|---|
-| `build_data.py` | Reads the raw calls + the plant-coordinate matches, aggregates, and writes `data.js`. |
+| `build_data.py` | Reads both raw exports + the plant-coordinate matches, aggregates, and writes `data.js`. |
 | `data.js` | **Generated** — `const REDISPATCH_DATA = {…}`. Do not edit by hand. |
 | `index.html` | The dashboard. Loads `data.js` locally and Leaflet + noUiSlider + map tiles from CDNs. |
+
+Also writes/reads `data/Redispatch_Daten_2013_2026.csv` — a gitignored, regenerate-freely
+cache combining the two source exports (see below).
 
 ## Usage
 
@@ -20,9 +23,23 @@ no server or build tooling required.
    python dashboard/build_data.py
    ```
 
-   It reads `data/Redispatch_Daten.csv` and `results/redispatch_plant_matches.csv`,
-   writes `dashboard/data.js`, and prints a sanity report (plant count, date range,
-   and the volume split mapped / Börse / not-identified, which sums to 100%).
+   It reads `data/Redispatch_Daten_2013_2020.csv` and `data/Redispatch_Daten_2021_2026.csv`
+   (the full 2013–2026 history) plus `results/redispatch_plant_matches.csv`, writes
+   `dashboard/data.js`, and prints a sanity report (plant count, date range, and the
+   volume split mapped / Börse / not-identified, which sums to 100%).
+
+   Combining the two exports required correcting two source-data quirks (not touched
+   in the raw files themselves):
+   - **Timezone**: the 2013-2020 export timestamps are labelled UTC; 2021-2026 is
+     CET/CEST (German local time). Every timestamp is converted to Europe/Berlin
+     local time before its calendar "day" is taken, so days line up correctly across
+     the 2020/2021 boundary instead of drifting by 1-2 hours.
+   - **Encoding**: 6 rows in `Redispatch_Daten_2021_2026.csv` have a corrupted byte in
+     "erhöhen" (mixed-encoding artifact in the export). Direction is matched by
+     substring (`erh` / `reduzieren`) rather than exact equality, so those rows still
+     classify correctly instead of silently vanishing from the increase/decrease split.
+   - Exact full-row duplicates in either export (568 in 2013-2020, 50 in 2021-2026 —
+     apparent export artifacts) are dropped before aggregating, to avoid double-counting.
 
 2. **Open the dashboard** — double-click `dashboard/index.html` (opens over
    `file://`; `data.js` is loaded via a `<script>` tag so no local server is
@@ -58,5 +75,5 @@ no server or build tooling required.
 
 ## Regenerating after a data refresh
 
-Re-run `python dashboard/build_data.py` whenever `data/Redispatch_Daten.csv` or
+Re-run `python dashboard/build_data.py` whenever either raw export or
 `results/redispatch_plant_matches.csv` changes, then reload the page.
