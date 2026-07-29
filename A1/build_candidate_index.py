@@ -26,12 +26,13 @@ from collections import defaultdict
 
 import pandas as pd
 
+from paths import INPUT_DIR, TEMP_DIR
+
 # ── files ─────────────────────────────────────────────────────────────────────
-DATA   = "data/"
-PYPSA  = DATA + "pypsa_unaggregated_powerplants.csv"
-OPSD   = DATA + "OPSD_conventional_power_plants_DE.csv"
-BNETZA = DATA + "Bundesnetzagentur_Kraftwerkliste .csv"
-OUT    = DATA + "candidate_index.csv"
+PYPSA  = os.path.join(INPUT_DIR, "pypsa_unaggregated_powerplants.csv")
+OPSD   = os.path.join(INPUT_DIR, "OPSD_conventional_power_plants_DE.csv")
+BNETZA = os.path.join(INPUT_DIR, "Bundesnetzagentur_Kraftwerkliste.csv")
+OUT    = os.path.join(TEMP_DIR, "candidate_index.csv")
 
 # ── tuning (same constants as the old aggregate_plants.py) ────────────────────
 MAX_FARM_RADIUS_KM       = 50.0        # Pass 1: same-name merge tolerance
@@ -295,8 +296,8 @@ def write_bnetza_lookup() -> None:
     out = kw.rename(columns={"EinheitMastrNummer": "mastr_id"})[
         ["mastr_id", "Anzeigename", "norm_name", "Energietraeger",
          "Nettonennleistung_MW", "Postleitzahl", "Ort"]]
-    out.to_csv(DATA + "bnetza_lookup.csv", index=False, encoding="utf-8")
-    print(f"→ {DATA}bnetza_lookup.csv: {len(out)} rows "
+    out.to_csv(os.path.join(TEMP_DIR, "bnetza_lookup.csv"), index=False, encoding="utf-8")
+    print(f"→ {os.path.join(TEMP_DIR, 'bnetza_lookup.csv')}: {len(out)} rows "
           f"({out['norm_name'].nunique()} distinct normalised names) for stage-1 exact match")
 
 
@@ -366,5 +367,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     main()

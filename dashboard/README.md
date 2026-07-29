@@ -12,7 +12,7 @@ no server or build tooling required.
 | `data.js` | **Generated** — `const REDISPATCH_DATA = {…}`. Do not edit by hand. |
 | `index.html` | The dashboard. Loads `data.js` locally and Leaflet + noUiSlider + map tiles from CDNs. |
 
-Also writes/reads `data/Redispatch_Daten_2013_2026.csv` — a gitignored, regenerate-freely
+Also writes/reads `input/Redispatch_Daten_2013_2026.csv` — a gitignored, regenerate-freely
 cache combining the two source exports (see below).
 
 ## Usage
@@ -23,8 +23,8 @@ cache combining the two source exports (see below).
    python dashboard/build_data.py
    ```
 
-   It reads `data/Redispatch_Daten_2013_2020.csv` and `data/Redispatch_Daten_2021_2026.csv`
-   (the full 2013–2026 history) plus `results/redispatch_plant_matches.csv`, writes
+   It reads `input/Redispatch_Daten_2013_2020.csv` and `input/Redispatch_Daten_2021_2026.csv`
+   (the full 2013–2026 history) plus `results/A1/redispatch_plant_matches.csv`, writes
    `dashboard/data.js`, and prints a sanity report (plant count, date range, and the
    volume split mapped / Börse / not-identified, which sums to 100%).
 
@@ -76,4 +76,4 @@ cache combining the two source exports (see below).
 ## Regenerating after a data refresh
 
 Re-run `python dashboard/build_data.py` whenever either raw export or
-`results/redispatch_plant_matches.csv` changes, then reload the page.
+`results/A1/redispatch_plant_matches.csv` changes, then reload the page.

@@ -18,11 +18,12 @@ from collections import defaultdict
 import pandas as pd
 
 from normalize import norm_light
+from paths import TEMP_DIR, RESULTS_DIR
 
-INDEX   = "data/candidate_index.csv"
-BNETZA  = "data/bnetza_lookup.csv"
-ENTRIES = "data/redispatch_entries.csv"
-OUT     = "results/matches_exact.csv"
+INDEX   = os.path.join(TEMP_DIR, "candidate_index.csv")
+BNETZA  = os.path.join(TEMP_DIR, "bnetza_lookup.csv")
+ENTRIES = os.path.join(TEMP_DIR, "redispatch_entries.csv")
+OUT     = os.path.join(RESULTS_DIR, "matches_exact.csv")
 
 
 def main() -> None:
@@ -105,5 +106,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     main()

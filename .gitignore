@@ -10,15 +10,18 @@ venv/
 
 # Large raw data — obtain from sources, not tracked in git (>GitHub limits / bulky)
 # OPSD_renewable is 329M (exceeds GitHub 100M limit) and is unused by the pipeline
-data/OPSD_renewable_power_plants_DE.csv
+input/OPSD_renewable_power_plants_DE.csv
 # pypsa_unaggregated is the 18M raw spine input
-data/pypsa_unaggregated_powerplants.csv
+input/pypsa_unaggregated_powerplants.csv
 # pypsa_powerplants is the 21M all-country extract (German subset == pypsa_unaggregated)
-data/pypsa_powerplants.csv
+input/pypsa_powerplants.csv
 
-# Derived — regenerate with build_candidate_index.py
-data/candidate_index.csv
+# Per-pipeline private scratch — regenerable intermediates (candidate index, bnetza
+# lookup, redispatch entries, fuzzy candidates, ...). Future-proof: covers any
+# pipeline folder's temp_<label>/ (A1/temp_A1/, A2/temp_A2/, ...) without editing
+# this file again per new pipeline.
+*/temp_*/
 
 # Derived — regenerate with dashboard/build_data.py (2013-2020 + 2021-2026,
 # timezone-normalized and de-duplicated)
-data/Redispatch_Daten_2013_2026.csv
+input/Redispatch_Daten_2013_2026.csv

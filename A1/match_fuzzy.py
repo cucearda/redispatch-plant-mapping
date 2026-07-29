@@ -20,11 +20,12 @@ import pandas as pd
 from rapidfuzz import process, fuzz
 
 from normalize import norm_light, norm_heavy
+from paths import TEMP_DIR, RESULTS_DIR
 
-INDEX   = "data/candidate_index.csv"
-ENTRIES = "data/redispatch_entries.csv"
-EXACT   = "results/matches_exact.csv"
-OUT     = "data/fuzzy_candidates.csv"
+INDEX   = os.path.join(TEMP_DIR, "candidate_index.csv")
+ENTRIES = os.path.join(TEMP_DIR, "redispatch_entries.csv")
+EXACT   = os.path.join(RESULTS_DIR, "matches_exact.csv")
+OUT     = os.path.join(TEMP_DIR, "fuzzy_candidates.csv")
 
 TOP_K          = 20
 CAP_TOL        = 0.3    # keep candidates >= 70% of the entry's max dispatched power
@@ -138,5 +139,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     main()

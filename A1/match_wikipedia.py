@@ -20,10 +20,12 @@ import urllib.request
 
 import pandas as pd
 
-LLM     = "results/matches_llm.csv"
-INDEX   = "data/candidate_index.csv"
-ENTRIES = "data/redispatch_entries.csv"
-OUT     = "results/matches_wikipedia.csv"
+from paths import TEMP_DIR, RESULTS_DIR
+
+LLM     = os.path.join(RESULTS_DIR, "matches_llm.csv")
+INDEX   = os.path.join(TEMP_DIR, "candidate_index.csv")
+ENTRIES = os.path.join(TEMP_DIR, "redispatch_entries.csv")
+OUT     = os.path.join(RESULTS_DIR, "matches_wikipedia.csv")
 
 UA = {"User-Agent": "redispatch-plant-matching/1.0 (thesis research; github.com/cucearda)"}
 COORD_MATCH_KM = 5.0
@@ -139,5 +141,4 @@ def _row(name, mid, src, conf, reason, lat, lon, coord_source="index", review=Fa
 
 
 if __name__ == "__main__":
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     main()

@@ -25,10 +25,12 @@ from pydantic import BaseModel
 
 dotenv.load_dotenv()
 
-FUZZY   = "data/fuzzy_candidates.csv"
-INDEX   = "data/candidate_index.csv"
-ENTRIES = "data/redispatch_entries.csv"
-OUT     = "results/matches_llm.csv"
+from paths import TEMP_DIR, RESULTS_DIR
+
+FUZZY   = os.path.join(TEMP_DIR, "fuzzy_candidates.csv")
+INDEX   = os.path.join(TEMP_DIR, "candidate_index.csv")
+ENTRIES = os.path.join(TEMP_DIR, "redispatch_entries.csv")
+OUT     = os.path.join(RESULTS_DIR, "matches_llm.csv")
 
 MODEL       = "claude-sonnet-5"
 BATCH_SIZE  = 20
@@ -165,5 +167,4 @@ def main(limit: int | None = None) -> None:
 
 
 if __name__ == "__main__":
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     main(int(sys.argv[1]) if len(sys.argv) > 1 else None)   # optional smoke-test limit

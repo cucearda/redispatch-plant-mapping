@@ -2,14 +2,14 @@
 calls and the plant-coordinate matches.
 
 Reads (both raw exports, covering 2013-2026 together):
-  - data/Redispatch_Daten_2013_2020.csv
-  - data/Redispatch_Daten_2021_2026.csv
-  - results/redispatch_plant_matches.csv   one row per distinct plant name
+  - input/Redispatch_Daten_2013_2020.csv
+  - input/Redispatch_Daten_2021_2026.csv
+  - results/A1/redispatch_plant_matches.csv   one row per distinct plant name
                                            (or composed multi_plant bundle),
                                            with lat/lon/fueltype/entry_type
 
 Writes:
-  - data/Redispatch_Daten_2013_2026.csv    the two exports combined, timezone-
+  - input/Redispatch_Daten_2013_2026.csv   the two exports combined, timezone-
                                            normalized and de-duplicated. A
                                            derived cache (gitignored) — delete
                                            and re-run to regenerate.
@@ -50,11 +50,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 
 RAW_FILES = [
-    os.path.join(ROOT, "data", "Redispatch_Daten_2013_2020.csv"),
-    os.path.join(ROOT, "data", "Redispatch_Daten_2021_2026.csv"),
+    os.path.join(ROOT, "input", "Redispatch_Daten_2013_2020.csv"),
+    os.path.join(ROOT, "input", "Redispatch_Daten_2021_2026.csv"),
 ]
-COMBINED_FILE = os.path.join(ROOT, "data", "Redispatch_Daten_2013_2026.csv")
-MATCHES_FILE = os.path.join(ROOT, "results", "redispatch_plant_matches.csv")
+COMBINED_FILE = os.path.join(ROOT, "input", "Redispatch_Daten_2013_2026.csv")
+MATCHES_FILE = os.path.join(ROOT, "results", "A1", "redispatch_plant_matches.csv")
 OUT_FILE = os.path.join(HERE, "data.js")
 
 BERLIN = "Europe/Berlin"

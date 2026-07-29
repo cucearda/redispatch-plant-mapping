@@ -2,19 +2,19 @@
 main.py — run the full redispatch → power-plant matching pipeline end to end.
 
 Each stage lives in its own module with a `main()` entry point (see docs/matching-pipeline.md);
-this orchestrates them in order. Stages write incrementally to data/ and results/, so a run can
-also be resumed by commenting out completed stages.
+this orchestrates them in order. Stages write incrementally to this pipeline's temp_A1/ and to
+results/A1/ (see paths.py), so a run can also be resumed by commenting out completed stages.
 
-    python main.py
+    python A1/main.py
 
 The candidate index (step 0) is rebuilt only if it's missing — the German PyPSA data is stable,
-so delete data/candidate_index.csv to force a rebuild.
+so delete temp_A1/candidate_index.csv to force a rebuild.
 """
 
 import os
 import time
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))          # all stages use paths relative to repo root
+from paths import INPUT_DIR, TEMP_DIR, RESULTS_DIR
 
 import build_candidate_index
 import redispatch_prep
@@ -30,8 +30,9 @@ import confirm_matches
 # ── config ────────────────────────────────────────────────────────────────────
 # Both exports together cover 2013-2026 (Redispatch_Daten.csv is the 2025-26 subset of the
 # 2021-2026 file). Concatenated in step 1, so a name appearing in both years is one entry.
-REDISPATCH_FILES = ["data/Redispatch_Daten_2013_2020.csv", "data/Redispatch_Daten_2021_2026.csv"]
-INDEX_FILE       = "data/candidate_index.csv"
+REDISPATCH_FILES = [os.path.join(INPUT_DIR, "Redispatch_Daten_2013_2020.csv"),
+                     os.path.join(INPUT_DIR, "Redispatch_Daten_2021_2026.csv")]
+INDEX_FILE       = os.path.join(TEMP_DIR, "candidate_index.csv")
 
 # ── stages, in order ──────────────────────────────────────────────────────────
 STAGES = [
@@ -64,7 +65,8 @@ def main() -> None:
         banner(f"step {i} · {name}")
         fn()
 
-    print(f"\n✓ pipeline complete in {time.time() - t0:.0f}s → results/redispatch_plant_matches.csv")
+    print(f"\n✓ pipeline complete in {time.time() - t0:.0f}s → "
+          f"{os.path.join(RESULTS_DIR, 'redispatch_plant_matches.csv')}")
 
 
 if __name__ == "__main__":

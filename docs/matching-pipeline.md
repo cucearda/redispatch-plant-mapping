@@ -11,8 +11,8 @@ table has one row per name, and is joined back onto the events for analysis.
 
 | Artifact | Role |
 |---|---|
-| `data/candidate_index.csv` | The matchable universe — PyPSA `powerplantmatching` fleet (spine) + 43 gap-filled OPSD conventional plants, each row carrying its `{pypsa, mastr, opsd, eic}` IDs, coordinates, capacity, fuel, and name variants. Built by [`build_candidate_index.py`](../build_candidate_index.py). See [step0-candidate-index.md](step0-candidate-index.md). |
-| `data/bnetza_lookup.csv` | The BNetzA Kraftwerksliste as a standalone exact-match table (`norm_name → mastr_id`), kept out of the index. |
+| `A1/temp_A1/candidate_index.csv` | The matchable universe — PyPSA `powerplantmatching` fleet (spine) + 43 gap-filled OPSD conventional plants, each row carrying its `{pypsa, mastr, opsd, eic}` IDs, coordinates, capacity, fuel, and name variants. Built by [`build_candidate_index.py`](../A1/build_candidate_index.py). See [step0-candidate-index.md](step0-candidate-index.md). |
+| `A1/temp_A1/bnetza_lookup.csv` | The BNetzA Kraftwerksliste as a standalone exact-match table (`norm_name → mastr_id`), kept out of the index. |
 
 ## Pipeline stages
 
@@ -20,18 +20,18 @@ Each name is routed once and resolved at the first stage that succeeds.
 
 | # | Stage | Module | What it does |
 |---|---|---|---|
-| 0 | Redispatch prep | [`redispatch_prep.py`](../redispatch_prep.py) | Reduce to 398 distinct keys; per name compute modal `PRIMAERENERGIEART`, `max(MAXIMALE_LEISTUNG_MW)` (the capacity floor), and a `name_technology` where the name spells it out. |
+| 0 | Redispatch prep | [`redispatch_prep.py`](../A1/redispatch_prep.py) | Reduce to 398 distinct keys; per name compute modal `PRIMAERENERGIEART`, `max(MAXIMALE_LEISTUNG_MW)` (the capacity floor), and a `name_technology` where the name spells it out. |
 | 1 | Rule filter / router | " | Classify each key into `individual` / `cluster` / an unmatchable aggregate type. ~283 matchable, ~115 structural aggregates (kept, labelled). |
-| 2 | Exact match | [`match_exact.py`](../match_exact.py) | Unique normalised-name equality against BNetzA + the index → early exit. **27 resolved.** |
-| 3 | Fuzzy shortlist | [`match_fuzzy.py`](../match_fuzzy.py) | Fuel- + capacity-filtered `WRatio` top-20 per individual (max over each candidate's name variants). Fuzzy never decides — it feeds the LLM. |
-| 4 | LLM disambiguation | [`match_llm.py`](../match_llm.py) | `claude-sonnet-5` + adaptive thinking picks the correct candidate using fuel / capacity / coordinates / operator knowledge, or returns null. **168 of 197 matched** (130 high · 35 medium · 3 low); 29 null → residual. |
-| 4b | Cluster matching | [`match_clusters.py`](../match_clusters.py) | DSO cluster entries → the **set** of co-located individual plants at that location. Name channel (coherence-checked) resolves **32/59**; the Haiku geocode channel resolves **26** more → **58/59**. |
-| 5 | Wikipedia residual | [`match_wikipedia.py`](../match_wikipedia.py) | LLM null/low entries: Wikipedia coordinate → nearest plant within 5 km, or coordinate-only. |
-| 6 | Coordinate backfill | [`geocode_backfill.py`](../geocode_backfill.py) | Any still-coordless row (aggregates, residual failures) gets an approximate coordinate from its name via Haiku, so it can enter the spatial analysis. |
-| 7 | Assemble | [`assemble_results.py`](../assemble_results.py) | Merge all stage outputs → `results/redispatch_plant_matches.csv`. |
-| 8 | Coordinate confirmation | [`confirm_matches.py`](../confirm_matches.py) | Independently geocode each matched name (Haiku) and compare to the matched plant's coordinate → `coord_check`/`check_km`. Flags non-high-confidence disagreements for review. The geocode is coarse, so this is a **review aid**: it catches gross wrong-region matches but 30–55 km differences are usually just geocode imprecision on correct matches. Runs last, after assemble + backfill. |
+| 2 | Exact match | [`match_exact.py`](../A1/match_exact.py) | Unique normalised-name equality against BNetzA + the index → early exit. **27 resolved.** |
+| 3 | Fuzzy shortlist | [`match_fuzzy.py`](../A1/match_fuzzy.py) | Fuel- + capacity-filtered `WRatio` top-20 per individual (max over each candidate's name variants). Fuzzy never decides — it feeds the LLM. |
+| 4 | LLM disambiguation | [`match_llm.py`](../A1/match_llm.py) | `claude-sonnet-5` + adaptive thinking picks the correct candidate using fuel / capacity / coordinates / operator knowledge, or returns null. **168 of 197 matched** (130 high · 35 medium · 3 low); 29 null → residual. |
+| 4b | Cluster matching | [`match_clusters.py`](../A1/match_clusters.py) | DSO cluster entries → the **set** of co-located individual plants at that location. Name channel (coherence-checked) resolves **32/59**; the Haiku geocode channel resolves **26** more → **58/59**. |
+| 5 | Wikipedia residual | [`match_wikipedia.py`](../A1/match_wikipedia.py) | LLM null/low entries: Wikipedia coordinate → nearest plant within 5 km, or coordinate-only. |
+| 6 | Coordinate backfill | [`geocode_backfill.py`](../A1/geocode_backfill.py) | Any still-coordless row (aggregates, residual failures) gets an approximate coordinate from its name via Haiku, so it can enter the spatial analysis. |
+| 7 | Assemble | [`assemble_results.py`](../A1/assemble_results.py) | Merge all stage outputs → `results/A1/redispatch_plant_matches.csv`. |
+| 8 | Coordinate confirmation | [`confirm_matches.py`](../A1/confirm_matches.py) | Independently geocode each matched name (Haiku) and compare to the matched plant's coordinate → `coord_check`/`check_km`. Flags non-high-confidence disagreements for review. The geocode is coarse, so this is a **review aid**: it catches gross wrong-region matches but 30–55 km differences are usually just geocode imprecision on correct matches. Runs last, after assemble + backfill. |
 
-Normalisation is shared ([`normalize.py`](../normalize.py)): `norm_light` (exact — lowercase,
+Normalisation is shared ([`normalize.py`](../A1/normalize.py)): `norm_light` (exact — lowercase,
 strip TSO prefix / parens / punctuation, split underscores) and `norm_heavy` (fuzzy —
 also strip generic type words, DSO prefixes, and turbine codes).
 
@@ -130,7 +130,7 @@ the redispatch names and volume**, which is itself a finding.
 
 ## Current status — all channels built
 
-Final lookup table: **`results/redispatch_plant_matches.csv`** — 398 rows.
+Final lookup table: **`results/A1/redispatch_plant_matches.csv`** — 398 rows.
 
 - **255 plant-matched:** 168 `llm` · 32 `cluster_name` · 27 `exact` · 26 `cluster_geocode`
   · 2 `wikipedia`. Confidence: 189 high · 61 medium · 5 low.
@@ -141,8 +141,17 @@ Final lookup table: **`results/redispatch_plant_matches.csv`** — 398 rows.
 - The rest are structural aggregates (control-reserve regions, substations, regional
   buckets, foreign plants), labelled and — where possible — geocoded.
 
-Run the whole thing with **`python main.py`** — it orchestrates every stage in order
+Run the whole thing with **`python A1/main.py`** — it orchestrates every stage in order
 (rebuilding the index only if missing) and exposes the redispatch input file as one config
-constant. Or run any stage module directly (`python match_exact.py`) — each writes
-incrementally, so the pipeline is resumable. Outputs live in `results/`; intermediates and
-the index in `data/`.
+constant. Or run any stage module directly (`python A1/match_exact.py`) — each writes
+incrementally, so the pipeline is resumable.
+
+This is pipeline **A1** — one of potentially several matching-pipeline variants the project
+supports (see the repo's top-level structure). Raw source data is shared across every
+pipeline variant in the project-root `input/` folder. Outputs are centralized in
+`results/<pipeline-label>/` (e.g. `results/A1/`), so multiple variants' outputs sit side by
+side for comparison. Intermediates and the candidate index live in each pipeline's own
+private `<label>/temp_<label>/` (e.g. `A1/temp_A1/`) — regenerable scratch space, not shared
+across pipelines. Path resolution for all of this is handled by each pipeline folder's
+`paths.py` (identical content across pipelines; auto-derives its label from its own folder
+name), so a new pipeline variant only needs its own folder — no manual path configuration.

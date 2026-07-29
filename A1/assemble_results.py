@@ -15,14 +15,15 @@ import os
 import pandas as pd
 
 from redispatch_prep import segments
+from paths import TEMP_DIR, RESULTS_DIR
 
-ENTRIES = "data/redispatch_entries.csv"
-INDEX   = "data/candidate_index.csv"
-EXACT   = "results/matches_exact.csv"
-LLM     = "results/matches_llm.csv"
-CLUSTER = "results/matches_cluster.csv"
-WIKI    = "results/matches_wikipedia.csv"
-OUT     = "results/redispatch_plant_matches.csv"
+ENTRIES = os.path.join(TEMP_DIR, "redispatch_entries.csv")
+INDEX   = os.path.join(TEMP_DIR, "candidate_index.csv")
+EXACT   = os.path.join(RESULTS_DIR, "matches_exact.csv")
+LLM     = os.path.join(RESULTS_DIR, "matches_llm.csv")
+CLUSTER = os.path.join(RESULTS_DIR, "matches_cluster.csv")
+WIKI    = os.path.join(RESULTS_DIR, "matches_wikipedia.csv")
+OUT     = os.path.join(RESULTS_DIR, "redispatch_plant_matches.csv")
 
 COLS = ["betroffene_anlage", "primaerenergieart", "entry_type", "name_technology",
         "matched_id", "id_source", "method", "confidence", "needs_review",
@@ -182,5 +183,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     main()

@@ -22,10 +22,11 @@ import pandas as pd
 
 from normalize import norm_light
 from geocode import geocode_names
+from paths import TEMP_DIR, RESULTS_DIR
 
-INDEX   = "data/candidate_index.csv"
-ENTRIES = "data/redispatch_entries.csv"
-OUT     = "results/matches_cluster.csv"
+INDEX   = os.path.join(TEMP_DIR, "candidate_index.csv")
+ENTRIES = os.path.join(TEMP_DIR, "redispatch_entries.csv")
+OUT     = os.path.join(RESULTS_DIR, "matches_cluster.csv")
 GEOCODE_RADIUS_KM = 10.0                        # gather renewables within this of the geocoded location
 
 # Location extraction: drop DSO codes, scheme words, cluster/number/turbine/direction tokens.
@@ -158,11 +159,11 @@ def main() -> None:
 
     out = pd.DataFrame(rows)
     out.to_csv(OUT, index=False, encoding="utf-8")
-    pd.DataFrame(pending).to_csv("results/matches_cluster_pending.csv", index=False, encoding="utf-8")
+    pd.DataFrame(pending).to_csv(os.path.join(RESULTS_DIR, "matches_cluster_pending.csv"), index=False, encoding="utf-8")
 
     print(f"→ {OUT}: {len(out)}/{len(clusters)} clusters matched "
           f"({n_name} name, {len(out) - n_name} geocode)")
-    print(f"  → results/matches_cluster_pending.csv: {len(pending)} still unresolved")
+    print(f"  → {os.path.join(RESULTS_DIR, 'matches_cluster_pending.csv')}: {len(pending)} still unresolved")
     if len(out):
         print(f"  member-count: min {out.n_members.min()}, median {out.n_members.median():.0f}, max {out.n_members.max()}")
 
@@ -171,5 +172,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     main()

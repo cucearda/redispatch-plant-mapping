@@ -20,8 +20,10 @@ import re
 
 import pandas as pd
 
-REDISPATCH = "data/Redispatch_Daten.csv"
-OUT        = "data/redispatch_entries.csv"
+from paths import INPUT_DIR, TEMP_DIR
+
+REDISPATCH = os.path.join(INPUT_DIR, "Redispatch_Daten.csv")
+OUT        = os.path.join(TEMP_DIR, "redispatch_entries.csv")
 
 # Classification patterns, checked in precedence order (first match wins).
 # Order matters: countertrade/emergency/foreign before the grid aggregates,
@@ -147,5 +149,4 @@ def main(redispatch_file: str | list[str] = REDISPATCH) -> None:
 
 
 if __name__ == "__main__":
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     main()

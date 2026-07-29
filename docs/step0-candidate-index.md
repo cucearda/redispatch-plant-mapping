@@ -1,10 +1,10 @@
 # Step 0 — Candidate Index
 
 Builds the two lookup tables every downstream matching stage reads. Script:
-[`build_candidate_index.py`](../build_candidate_index.py). Run:
+[`build_candidate_index.py`](../A1/build_candidate_index.py). Run:
 
 ```bash
-python build_candidate_index.py        # writes data/candidate_index.csv + data/bnetza_lookup.csv
+python A1/build_candidate_index.py     # writes A1/temp_A1/candidate_index.csv + A1/temp_A1/bnetza_lookup.csv
 ```
 
 ## Purpose
@@ -16,11 +16,13 @@ the output, and (c) is aggregated to the right granularity. Step 0 produces it.
 
 ## Inputs
 
+All inputs live in the project-root `input/` folder (shared across every pipeline variant):
+
 | File | Rows | Role |
 |---|---|---|
 | `pypsa_unaggregated_powerplants.csv` | 141,420 | **Spine.** Full MaStR-level fleet, all with coords; `projectID` cross-references MaStR/OPSD/EIC/JRC/GEM |
 | `OPSD_conventional_power_plants_DE.csv` | 909 | Curated conventional names + `BNA` ids; gap-fill source |
-| `Bundesnetzagentur_Kraftwerkliste .csv` | 2,614 | MaStR extract (Datenstand 2026); source for the standalone exact-match table |
+| `Bundesnetzagentur_Kraftwerkliste.csv` | 2,614 | MaStR extract (Datenstand 2026); source for the standalone exact-match table |
 
 `OPSD_renewable_power_plants_DE.csv` (1.77M rows) is **deliberately not used** — it
 duplicates PyPSA's MaStR-derived renewables, is ~all rooftop-PV noise, and carries no
@@ -28,7 +30,7 @@ usable per-plant id. Renewable coverage comes through PyPSA ↔ MaStR (`mastr_id
 
 ## Outputs
 
-### `data/candidate_index.csv` — the matchable universe (106,324 rows)
+### `A1/temp_A1/candidate_index.csv` — the matchable universe (106,324 rows)
 
 | entry_type | rows | what it is |
 |---|---|---|
@@ -44,7 +46,7 @@ lat, lon, mastr_ids, opsd_ids, eic_ids, source_pypsa_ids, turbine_count`.
   so a match emits the plant IDs directly. Coverage: mastr **99.8%**, eic 1,937 rows,
   opsd 673 rows (673 rows hold all 907 OPSD conventional ids — one row can carry several).
 
-### `data/bnetza_lookup.csv` — standalone stage-1 exact-match table (2,323 rows, 1,963 distinct `norm_name`)
+### `A1/temp_A1/bnetza_lookup.csv` — standalone stage-1 exact-match table (2,323 rows, 1,963 distinct `norm_name`)
 
 Columns: `mastr_id, Anzeigename, norm_name, Energietraeger, Nettonennleistung_MW,
 Postleitzahl, Ort`. Cleaned from the raw BNetzA file (9 junk header rows dropped,

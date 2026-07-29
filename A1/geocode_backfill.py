@@ -14,8 +14,9 @@ import os
 import pandas as pd
 
 from geocode import geocode_names
+from paths import RESULTS_DIR
 
-FILE = "results/redispatch_plant_matches.csv"
+FILE = os.path.join(RESULTS_DIR, "redispatch_plant_matches.csv")
 NO_PLACE = {"countertrade", "emergency"}
 
 
@@ -39,5 +40,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     main()
