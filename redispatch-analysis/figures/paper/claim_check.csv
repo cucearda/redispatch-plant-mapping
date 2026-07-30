@@ -1,0 +1,34 @@
+section,claim,paper,computed,ok,note,status
+4,total events,123362,123362,True,,OK
+4,"total volume (TWh, abs)",182.03,182.03,True,,OK
+4,data end date,2026-06-22,2026-06-22,True,,OK
+4.1,events kept,83716,83716,True,,OK
+4.1,share of events kept (%),67.9,67.9,True,,OK
+4.1,volume kept (TWh),120.6,120.6,True,,OK
+4.1,share of volume kept (%),66.3,66.3,True,,OK
+4.1,"events in (0.95, 1.0]",56216,56216,True,,OK
+4.1,"events in (0.8, 0.95]",20553,20553,True,,OK
+4.1,"""three quarters"" with conf > 0.8",75% of all events,62% of all / 73% of matched,False,"denominator must be stated: 62% of all, 73% of matched",FIX
+4.1,events resolved by opsd_exact,50493,50493,True,,OK
+4.1,events resolved by wikipedia,10168,10168,True,,OK
+4.1,events resolved by psa_exact,9278,9278,True,,OK
+4.1,excluded events,36801,39646,False,"36,801 is the pre-reason-filter count; 123,362-83,716 = 39,646",FIX
+4.1,low-confidence matches,19107,19107,True,,OK
+4.1,market-based measures,15236,15236,True,,OK
+4.1,multi-plant bundles,2316,2316,True,,OK
+4.1,dropped market volume (GWh),28580,28580,True,,OK
+4.1,TenneT DE market volume (% of total),13.7,13.73,True,,OK
+4.1,TransnetBW market volume (% of total),1.0,1.04,True,,OK
+4.1,Amprion market volume (% of total),0.6,0.56,True,,OK
+4.1,50Hertz market volume (% of total),0.4,0.4,True,,OK
+4.1,Amprion events/plants/MWh %,83/64/86,83/64/86,True,matches at conf>0.4; on EXPORT it is 71/51/79,OK
+4.1,TransnetBW events/plants/MWh %,86/71/91,86/71/91,True,on EXPORT: 83/62/88,OK
+4.1,50Hertz plants %,20,20.0,True,on EXPORT: 13%,OK
+4.1,figure caption threshold,conf > 0.5,conf > 0.4,False,caption and text disagree; the values are the 0.4 ones,FIX
+4.1,"TenneT ""MWh and event rates (66% and 60%)""",MWh 66 / events 60,events 66 / MWh 60,False,"labels swapped in the text: 66 is events, 60 is MWh",FIX
+5.1,North down events,27800,27574,False,"GEO basis; on EXPORT it is 21,925",FIX
+5.1,North down GWh,40000,40124,False,"EXPORT: 34,856",FIX
+5.1,North up events,5800,5875,False,"EXPORT: 5,206",FIX
+5.1,South up events,25900,25791,False,"EXPORT: 22,014",FIX
+5.1,South down events,3400,3347,False,"EXPORT: 2,759",FIX
+5.1,regional totals sum to the analysis set,83716,101793,False,"Figure 2 currently totals 101,793",FIX

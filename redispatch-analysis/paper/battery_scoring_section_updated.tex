@@ -1,0 +1,77 @@
+\subsection{Scoring the Battery locations}
+Under nodal pricing, each node's price equals the system marginal cost of supplying energy there, inclusive of the shadow prices of binding network constraints \cite{}. A battery arbitraging the intertemporal price differences at its node therefore charges when local energy is abundant and discharges when it is scarce, so its profit motive coincides with the operator's objective of relieving congestion. Germany operates as a single bidding zone, so this locational signal is absent from the market price. We try to recover it from redispatch. Redispatch is the TSO's quantity-based correction of flows the grid can not enable and its direction reveals the sign of the latent nodal--zonal wedge: downward redispatch (curtailment) signals a local surplus that cannot be exported, implying a true local price below the zonal price; upward redispatch signals local scarcity, implying a price above it. We therefore treat local redispatch direction and, via the kernel weighting in Section X, its intensity, as a proxy for the wedge a nodal market would have produced. A battery exploits this by shifting energy in time at its own node. It relieves congestion only where the local grid has headroom. At a surplus node it absorbs energy that would otherwise be curtailed; at a deficit node it supplies energy that would otherwise require costly ramp-up. A site whose only way to help would be to push power across the binding constraint itself yields no relief and the price at the node should indicate as such, therefore forcing batteries to act in ways beneficial to the overall grid system.
+Expanding on this logic, batteries exposed to nodal prices (or their redispatch approximation) should generate the more profit the better they are located for the grid.
+
+To operationalise this idea we score every currently deployed German battery by the arbitrage profit it would earn against a \emph{local effective price} $\hat{\pi}_{n,t}$, which we construct by bending the zonal intraday price with a kernel-weighted sum of nearby redispatch events. The entire pipeline runs at quarter-hourly (15-minute) resolution, i.e. $96$ steps per day with a step length of $\Delta t = 0.25\,\text{h}$, matching the native granularity of both the intraday price series and the redispatch records. The scoring window is restricted to 2021-10-01 through 2025-12-31, the period in which the harmonised Redispatch 2.0 regime is in force and for which prices and redispatch both have full coverage.
+
+\paragraph{Effective local price.}
+For each battery $n$ and each 15-minute step $t$ the effective local price is built additively from the zonal base price and a congestion-driven wedge,
+\begin{equation}
+\label{eq:effective_price_main}
+\hat{\pi}_{n,t} = p^{\text{base}}_t + \underbrace{\alpha \sum_{g \in \mathcal{G}_t} K_h\!\big(d(n, \text{bus}(g))\big)\, s_g\, m_g}_{\text{wedge}_{n,t}},
+\end{equation}
+where $p^{\text{base}}_t$ is the quarter-hourly intraday spot price in the German bidding zone (identical for all locations), $\mathcal{G}_t$ is the set of redispatch events active in step $t$, $s_g \in \{+1, -1\}$ is the sign of event $g$ (see below), $m_g$ is its mean power in MW, and $K_h(\cdot)$ is a spatial kernel that decays the influence of an event with distance. In contrast to a multiplicative formulation, the additive wedge is a flat EUR/MWh shift that is independent of the price level: a surplus neighbourhood lowers the cheap charging hours by the same amount as it lowers the expensive ones, so the local signal is symmetric across the day rather than biased toward peak hours. Note that, as before, positive (upward) and negative (downward) redispatch at different nearby sites cancel within the sum. The wedge is clipped to $\pm 500\,\text{EUR/MWh}$ (roughly the 99th percentile of observed intraday prices) so that a few buses sitting next to GW-scale redispatch hubs cannot produce a congestion premium that exceeds any physically plausible scarcity price.
+
+The sign $s_g$ is read directly from the \texttt{RICHTUNG} field of the redispatch data: \emph{Wirkleistungseinspeisung erh\"ohen} (increase feed-in) maps to $s_g = +1$, signalling local grid shortage at which the battery should discharge, while \emph{Wirkleistungseinspeisung reduzieren} maps to $s_g = -1$, signalling local surplus at which the battery should charge. This mapping is asserted at load time to cover 100\% of rows.
+
+\paragraph{Calibrating the wedge scale.}
+The scalar $\alpha$ controls the magnitude of the local price signal. Rather than fixing it to an arbitrary value, we \emph{calibrate} it so that the mean absolute wedge over all steps with active nearby redispatch equals a target premium of $100\,\text{EUR/MWh}$. This target is anchored to the empirical cost of congestion reported by the BNetzA: dividing the annual redispatch cost (on the order of \EUR$2.8$\,bn in 2024) by the annual redispatch energy (on the order of $28\,\text{TWh}$) yields roughly $100\,\text{EUR/MWh}$. Anchoring $\alpha$ to this figure ties the size of the local premium to what relieving congestion actually costs the system, instead of to an assumed scalar. Because $\alpha$ enters only through the wedge, it primarily governs the magnitude of the locational premium rather than the substance of the relative ranking; a sensitivity analysis on $\alpha$ and on the target premium remains a useful robustness check for future work.
+
+\paragraph{Spatial kernel and electrical distance.}
+The kernel $K_h$ decays the impact of a redispatch event with distance. Our default specification measures distance \emph{electrically} rather than geographically. We build a DC power-flow model of the German 220/380\,kV transmission grid in \texttt{PyPSA} and compute its Power Transfer Distribution Factor (PTDF) matrix; the electrical distance between a battery bus $n$ and an event bus $g$ is then
+\begin{equation}
+\label{eq:ptdf_distance}
+d_{\text{elec}}(n, g) = \big\lVert \text{PTDF}_{:,n} - \text{PTDF}_{:,g} \big\rVert_2 ,
+\end{equation}
+the Euclidean norm of the difference between their PTDF columns. Two buses with identical PTDF columns shift every transmission line by the same amount per unit of injection, so a battery at one bus is a perfect electrical substitute for a redispatch action at the other; the norm in \eqref{eq:ptdf_distance} measures exactly how far a site is from being such a substitute. DC PTDF column-differences are slack-invariant, and pairs of buses in disconnected sub-networks are forced to zero coupling. A Gaussian shape with dimensionless bandwidth $0.5$ is applied to $d_{\text{elec}}$.
+
+The earlier graph-distance kernels are retained as alternatives for backward compatibility with the project's redispatch KDE map. In that variant, distance is the shortest-path (Dijkstra) graph distance over the same transmission topology, in metres, and the decay is either a Gaussian or a quartic kernel with bandwidth $h = 200\,\text{km}$. The standard one-dimensional Gaussian kernel used for the decay is
+\begin{equation}
+\label{eq:gaussian_kernel}
+K_H(x) = \exp\!\left(-\frac{x^2}{2H^2}\right),
+\end{equation}
+with the constant prefactor absorbed into $\alpha$. The PTDF kernel is the rigorous version of what the graph-distance kernel only approximates: it replaces ``how far apart are these buses on the map'' with ``how electrically interchangeable are these buses'', which is the property that actually determines whether a battery can substitute for a redispatch action.
+
+\paragraph{Profit valuation.}
+The arbitrage profit each battery would earn against its effective price is estimated with a simple solving heuristic. For each day we charge the battery at full rated power during the $k$ quarter-hour steps with the lowest effective price and discharge it at full power during the $k$ steps with the highest, where $k = E/(\bar{p}\,\Delta t) = 16$ is the number of 15-minute steps needed to fill the 4-hour battery (i.e. four hours of charging matched against the four most expensive hours of discharging). The resulting window profit is
+\begin{equation}
+\label{eq:heuristic_profit}
+V[n] = \sum_{\text{days}} \Big( \overline{\hat{\pi}}^{\,\text{high-}k}_{n} - \overline{\hat{\pi}}^{\,\text{low-}k}_{n} \Big)\, \bar{p}\, k\, \Delta t,
+\end{equation}
+where $\overline{\hat{\pi}}^{\,\text{high-}k}_{n}$ and $\overline{\hat{\pi}}^{\,\text{low-}k}_{n}$ are the means of the $k$ highest and $k$ lowest effective prices on that day, and each of the $k$ steps moves $\bar{p}\,\Delta t$ MWh. This is the lossless analytic profit of a single daily charge--discharge cycle. The heuristic deliberately disregards round-trip efficiency losses, inter-day arbitrage, ramp and degradation limits, and grid-connection constraints. Since the goal is a \emph{relative} ranking of sites and the same simplifications are applied uniformly to every battery, this is acceptable; replacing it with a full storage optimisation (e.g. a cyclic state-of-charge arbitrage program) is a natural extension for future work.
+
+\paragraph{Fleet, normalisation, and ranking.}
+The batteries considered are the active battery storage units in Germany pulled from the Marktstammdatenregister (units with missing coordinates are dropped). To make the comparison purely locational, every battery is scored at a common reference size of $50\,\text{MW}$ rated power and $200\,\text{MWh}$ capacity (the 4-hour duration), so its own nameplate and the unused capacity field do not enter the ranking. For each battery we report the window profit $V[n]$ under the local effective price, a \emph{copperplate} baseline $V_{\text{copperplate}}[n]$ obtained by applying the same heuristic to the flat base price $\hat{\pi} = p^{\text{base}}$ (spatially uniform, the value a battery would earn purely from temporal arbitrage with no congestion signal), and the difference
+\begin{equation}
+\label{eq:delta_v}
+\Delta V[n] = V[n] - V_{\text{copperplate}}[n].
+\end{equation}
+Because the copperplate is identical across the fleet (every battery is scored at the same size against the same base price), $\Delta V[n]$ isolates the pure locational value created by congestion, and the fleet is ranked by $\Delta V$ per year. The sites with the highest $\Delta V$ are those that --- if the price signal were passed through to them --- would be most valuable for relieving congestion on the grid.
+
+We deliberately abstract from a number of real-world constraints: inter-day arbitrage, exact physical ramp and degradation limits, grid-connection capacity, and DSO-level redispatch (the data covers transmission-level events only). Because the same simplifications and the same reference battery are applied uniformly to every site, the \emph{relative} ranking of locations remains interpretable even though the absolute profits should not be read as forecasts. A further caveat is that redispatch reflects \emph{today's} congestion on a grid that is actively being expanded (Suedlink, Suedostlink, and others), so $\Delta V$ scores present-day locational value rather than the congestion a battery commissioned today would face over its full operating life.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{equation}
+        \hat{\pi}_{n,t} = p^{\text{base}}_t + \alpha \sum_{g \in \mathcal{G}_t} K_h\!\big(d(n, \text{bus}(g))\big) \cdot s_g \cdot m_g
+        \label{eq:wedge_scoring_function}
+    \end{equation}
+
+    \vspace{0.5em}
+
+    \begin{tabular}{lp{10cm}}
+        \textbf{Symbol} & \textbf{Explanation} \\
+        \hline
+        $\hat{\pi}_{n,t}$ & Effective local price for battery $n$ at 15-minute step $t$ [EUR/MWh]. \\
+        $p^{\text{base}}_t$ & Quarter-hourly intraday base market price at step $t$ [EUR/MWh], identical for all locations. \\
+        $\alpha$ & Wedge scale [EUR/MWh per kernel-MW unit], calibrated so the mean absolute wedge over active steps equals a $100\,\text{EUR/MWh}$ BNetzA-anchored target. \\
+        $\mathcal{G}_t$ & Set of all active redispatch events occurring during step $t$. \\
+        $K_h(\cdot)$ & Spatial kernel decaying the impact with distance; default applied to PTDF electrical distance \eqref{eq:ptdf_distance}, with bandwidth $h$. \\
+        $d(n, \text{bus}(g))$ & Distance between battery $n$ and event $g$: electrical PTDF distance (default) or shortest-path graph distance (legacy). \\
+        $s_g$ & Sign of the redispatch event ($+1$ for local shortage $\rightarrow$ discharge, $-1$ for local surplus $\rightarrow$ charge). \\
+        $m_g$ & Mean power of event $g$ [MW], volume-weighting the wedge by the amount of congestion relief active. \\
+    \end{tabular}
+
+    \caption{Effective local price scoring function: the zonal price plus a spatially-decayed, volume-weighted redispatch wedge. The wedge is clipped to $\pm 500\,\text{EUR/MWh}$.}
+    \label{fig:wedge_scoring_function}
+\end{figure}

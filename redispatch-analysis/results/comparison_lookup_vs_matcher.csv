@@ -1,0 +1,763 @@
+name_lkp,name_mat,agreement,dist_km,lat_lkp,lon_lkp,source_lkp,coord_kind,confidence_lkp,lat_mat,lon_mat,source_mat,confidence_mat
+Silz 2 (Uniper),Silz 2 (Uniper),DISAGREE > 50 km,705.2726859370852,47.2667,10.7667,geocoded_unmatched,geocoded,none,53.5195,12.44,gazetteer,0.5
+Silz 1 (TIWAG),Silz 1 (TIWAG),DISAGREE > 50 km,703.7255352667373,47.264,10.93,geocoded_unmatched,geocoded,none,53.5195,12.44,gazetteer,0.5
+Silz 1 (Uniper),Silz 1 (Uniper),DISAGREE > 50 km,703.4697159250571,47.3133,10.5083,mastr_match,geocoded,none,53.5195,12.44,gazetteer,0.5
+Silz 2 (TIWAG),Silz 2 (TIWAG),DISAGREE > 50 km,703.4697159250571,47.3133,10.5083,mastr_match,geocoded,none,53.5195,12.44,gazetteer,0.5
+BAG NWAK-Cluster 10 Oberbachern,BAG NWAK-Cluster 10 Oberbachern,DISAGREE > 50 km,493.0072761423521,51.5833,6.7667,geocoded_cluster,geocoded,medium,48.2820287,11.3686997,nominatim,0.4
+SHN Cluster Krümmel,SHN Cluster Krümmel,DISAGREE > 50 km,405.35555150659764,53.79,10.41,cluster_match,geocoded,medium,50.5372,7.7247,gazetteer,0.5
+SHN Cluster Audorf Süd,SHN Cluster Audorf Süd,DISAGREE > 50 km,336.23326413733855,54.37,9.37,mastr_match,geocoded,medium,51.363309,8.837303,psa_fuzzy_dir,0.654
+AVA Cluster Elsen,AVA Cluster Elsen,DISAGREE > 50 km,334.8528160199257,51.97,8.74,mastr_match,geocoded,medium,49.213875,6.827617,psa_fuzzy,0.727
+Tanzmühle,Tanzmühle,DISAGREE > 50 km,331.6559622616381,52.3829,10.7879,geocoded_match,geocoded,medium,49.552216,12.281256,psa_fuzzy,0.758
+BAG NWAK-Cluster 17 Altheim,BAG NWAK-Cluster 17 Altheim,DISAGREE > 50 km,327.81500739839055,48.75,12.88,mastr_match,geocoded,medium,51.536513,14.382898,opsd_exact,1.0
+München Süd DT 1,München Süd DT 1,DISAGREE > 50 km,319.7489364906219,50.027031,8.2409,claude,pypsa,medium,48.14369733333334,11.559808,gazetteer,0.5
+BAG NWAK-Cluster 09 Marienberg,BAG NWAK-Cluster 09 Marienberg,DISAGREE > 50 km,315.35569154979186,50.6367,13.1658,cluster_match,geocoded,medium,51.383375,8.816508,psa_fuzzy,0.72
+Pumpspeicherwerk Wehr RZ TNG,Pumpspeicherwerk Wehr RZ TNG,DISAGREE > 50 km,311.7043154550841,47.652259,7.925798,claude,pypsa,high,50.4167,7.2167,gazetteer,0.5
+INFRA_HOE_GTX1,INFRA_HOE_GTX1,DISAGREE > 50 km,307.8837348588721,50.091838,8.531305,claude,pypsa,high,52.8398531,9.075962,nominatim,0.4
+INFRA_HOE_GTX2,INFRA_HOE_GTX2,DISAGREE > 50 km,307.8837348588721,50.091838,8.531305,claude,pypsa,high,52.8398531,9.075962,nominatim,0.4
+INFRA_HOE_GTX3,INFRA_HOE_GTX3,DISAGREE > 50 km,307.8837348588721,50.091838,8.531305,claude,pypsa,high,52.8398531,9.075962,nominatim,0.4
+UW Emden-Ost,UW Emden-Ost,DISAGREE > 50 km,301.18936046417855,52.2296725,11.2649725,claude,pypsa,medium,53.384675,7.21097,psa_exact_dir,0.855
+Gebersdorf GT,Gebersdorf GT,DISAGREE > 50 km,281.05647167344284,51.5931,11.5789,mastr_match,geocoded,none,49.0753118,11.2302124,nominatim,0.4
+Reisach 3,Reisach 3,DISAGREE > 50 km,243.5850409393248,47.62,10.74,geocoded_match,geocoded,low,49.7418856,11.5647709,nominatim,0.4
+Reisach 1,Reisach 1,DISAGREE > 50 km,238.67683810217423,47.6667,10.7333,geocoded_match,geocoded,medium,49.7418856,11.5647709,nominatim,0.4
+Reisach 2,Reisach 2,DISAGREE > 50 km,238.67683810217423,47.6667,10.7333,geocoded_match,geocoded,medium,49.7418856,11.5647709,nominatim,0.4
+Erzhausen 1,Erzhausen 1,DISAGREE > 50 km,234.52264250776395,49.9667,8.5833,mastr_match,geocoded,low,51.89912,9.92452,opsd_exact,1.0
+Erzhausen 2,Erzhausen 2,DISAGREE > 50 km,234.52264250776395,49.9667,8.5833,mastr_match,geocoded,low,51.89912,9.92452,opsd_exact,1.0
+Erzhausen 3,Erzhausen 3,DISAGREE > 50 km,234.52264250776395,49.9667,8.5833,mastr_match,geocoded,low,51.89912,9.92452,opsd_exact,1.0
+Erzhausen 4,Erzhausen 4,DISAGREE > 50 km,234.52264250776395,49.9667,8.5833,mastr_match,geocoded,low,51.89912,9.92452,opsd_exact,1.0
+Reisach,Reisach,DISAGREE > 50 km,223.91523698459355,47.7778,10.8906,mastr_match,geocoded,high,49.7418856,11.5647709,nominatim,0.4
+Mehrum,Mehrum,DISAGREE > 50 km,222.1033569922454,52.289,9.651,mastr_match,geocoded,none,51.5757486,6.6247822,nominatim,0.4
+Gebersdorf 2,Gebersdorf 2,DISAGREE > 50 km,194.59597179675245,50.6333,12.4667,geocoded_match,geocoded,medium,49.0753118,11.2302124,nominatim,0.4
+Gebersdorf 1,Gebersdorf 1,DISAGREE > 50 km,191.64371220689029,50.3833,12.9667,geocoded_match,geocoded,low,49.0753118,11.2302124,nominatim,0.4
+Linden GKL GT 3,Linden GKL GT 3,DISAGREE > 50 km,158.84904340664542,51.4144,8.0387,mastr_match,geocoded,none,52.833598,7.772684,psa_fuzzy,0.738
+AVA Cluster Mehringen,AVA Cluster Mehringen,DISAGREE > 50 km,137.5188615262337,52.22,10.59,mastr_match,geocoded,medium,51.359841,9.153277,psa_fuzzy,0.753
+AVA Cluster Voslapp,AVA Cluster Voslapp,DISAGREE > 50 km,128.53240785846899,52.4333,8.2167,geocoded_cluster,geocoded,low,53.5871884,8.102887,nominatim,0.4
+50H OWP Wikinger,50H OWP Wikinger,DISAGREE > 50 km,123.51633045343048,54.6667,12.1667,geocoded_unmatched,geocoded,none,54.837688,14.068586,psa_exact,0.95
+BAG NWAK-Cluster 06 Raitersaich,BAG NWAK-Cluster 06 Raitersaich,DISAGREE > 50 km,122.66349035668327,50.328,11.701,cluster_match,geocoded,medium,49.3729799,10.8446391,nominatim,0.4
+NIEHL-II,NIEHL-II,DISAGREE > 50 km,121.59030910182983,50.974163,6.988567666666666,claude,pypsa,high,49.9577,6.3552,gazetteer,0.5
+NIEHL-II-GT,NIEHL-II-GT,DISAGREE > 50 km,121.59030910182983,50.974163,6.988567666666666,claude,pypsa,high,49.9577,6.3552,gazetteer,0.5
+Linden GKL DT,Linden GKL DT,DISAGREE > 50 km,117.55371317034464,52.418711,9.374635,claude,pypsa,medium,52.833598,7.772684,psa_fuzzy,0.738
+Linden GKL GT 1,Linden GKL GT 1,DISAGREE > 50 km,117.55371317034464,52.418711,9.374635,claude,pypsa,medium,52.833598,7.772684,psa_fuzzy,0.738
+AVA Cluster Vörden,AVA Cluster Vörden,DISAGREE > 50 km,94.90608122044016,52.3083,8.0917,cluster_match,geocoded,high,51.81916667,9.22944444,wikipedia,0.85
+UW Dörpen-West,UW Dörpen-West,DISAGREE > 50 km,73.48669901043166,53.636941,7.502316,claude,pypsa,medium,52.97785,7.420967,psa_fuzzy_dir,0.664
+BAG NWAK-Cluster 05 Kriegenbrunn-Ludersheim,BAG NWAK-Cluster 05 Kriegenbrunn-Ludersheim,DISAGREE > 50 km,69.0040231761032,50.17,10.81,geocoded_cluster,geocoded,medium,49.556437,10.9542353,nominatim,0.4
+AVA Cluster Stadorf,AVA Cluster Stadorf,DISAGREE > 50 km,65.57472640063202,53.05,9.42,mastr_match,geocoded,medium,52.9919338,10.3956338,nominatim,0.4
+Netzreservekraftwerk UPM Schongau,Netzreservekraftwerk UPM Schongau,DISAGREE > 50 km,63.51320312745908,48.379336,10.899984,claude,pypsa,high,47.808151,10.902341,psa_exact,0.95
+50H PV Haidemühl,50H PV Haidemühl,DISAGREE > 50 km,62.45959690250558,51.549969,13.361208,claude,pypsa,medium,51.54592,14.264468,psa_fuzzy,0.758
+BAG NWAK-Cluster 12 Pirach-Simbach,BAG NWAK-Cluster 12 Pirach-Simbach,DISAGREE > 50 km,61.114974183769085,48.058,13.054,cluster_match,geocoded,high,48.5661,12.7389,gazetteer,0.5
+OWP UW Diele,OWP UW Diele,DISAGREE > 50 km,58.838940136641256,53.636941,7.502316,claude,pypsa,medium,53.1201491,7.3117171,nominatim,0.4
+UW Diele,UW Diele,DISAGREE > 50 km,58.838940136641256,53.636941,7.502316,claude,pypsa,medium,53.1201491,7.3117171,nominatim,0.4
+AVA Cluster SC Dipperz Großkrotzenburg,AVA Cluster SC Dipperz Großkrotzenburg,DISAGREE > 50 km,56.83796727741895,50.1128,9.3642,mastr_match,geocoded,medium,50.5433,9.7959,gazetteer,0.5
+SHN Cluster Hamburg Nord,SHN Cluster Hamburg Nord,agree  1–10 km,9.384635669104282,53.57,10.0,cluster_match,geocoded,medium,53.6525,10.03,state_centroid_N,0.3
+Walchensee 1,Walchensee 1,agree  1–10 km,9.041647041111252,47.629628,11.33818,claude,pypsa,high,47.554694,11.291366,opsd_city,0.275
+Walchensee 2,Walchensee 2,agree  1–10 km,9.041647041111252,47.629628,11.33818,claude,pypsa,high,47.554694,11.291366,opsd_city,0.275
+Walchensee 3,Walchensee 3,agree  1–10 km,9.041647041111252,47.629628,11.33818,claude,pypsa,high,47.554694,11.291366,opsd_city,0.275
+Walchensee 4,Walchensee 4,agree  1–10 km,9.041647041111252,47.629628,11.33818,claude,pypsa,high,47.554694,11.291366,opsd_city,0.275
+AVA Cluster Algermissen T411,AVA Cluster Algermissen T411,agree  1–10 km,8.86427828083051,52.19,9.89,mastr_match,geocoded,medium,52.2533,9.9691,gazetteer,0.5
+AVA Cluster Algermissen T412,AVA Cluster Algermissen T412,agree  1–10 km,8.86427828083051,52.19,9.89,mastr_match,geocoded,medium,52.2533,9.9691,gazetteer,0.5
+LINGEN-GT1,LINGEN-GT1,agree  1–10 km,8.837215014235671,52.56256,7.303027,claude,pypsa,medium,52.4831,7.3005,psa_exact,0.95
+LINGEN-GT2,LINGEN-GT2,agree  1–10 km,8.837215014235671,52.56256,7.303027,claude,pypsa,high,52.4831,7.3005,psa_exact,0.95
+AVA Cluster Hannover West,AVA Cluster Hannover West,agree  1–10 km,8.557748929558082,52.37,9.74,cluster_match,geocoded,high,52.427939,9.656977,psa_exact_dir,0.855
+Grosskraftwerk Mannheim,Grosskraftwerk Mannheim,agree  1–10 km,8.068790907574318,49.446975,8.492516,claude,pypsa,high,49.51644467,8.460246482,opsd_exact,1.0
+Grosskraftwerk Mannheim Block 6,Grosskraftwerk Mannheim Block 6,agree  1–10 km,8.068790907574318,49.446975,8.492516,claude,pypsa,high,49.51644467,8.460246482,opsd_exact,1.0
+Grosskraftwerk Mannheim Block 6 7 und 8,Grosskraftwerk Mannheim Block 6 7 und 8,agree  1–10 km,8.068790907574318,49.446975,8.492516,claude,pypsa,high,49.51644467,8.460246482,opsd_exact,1.0
+Grosskraftwerk Mannheim Block 6 und 8,Grosskraftwerk Mannheim Block 6 und 8,agree  1–10 km,8.068790907574318,49.446975,8.492516,claude,pypsa,high,49.51644467,8.460246482,opsd_exact,1.0
+Grosskraftwerk Mannheim Block 7,Grosskraftwerk Mannheim Block 7,agree  1–10 km,8.068790907574318,49.446975,8.492516,claude,pypsa,high,49.51644467,8.460246482,opsd_exact,1.0
+Grosskraftwerk Mannheim Block 8,Grosskraftwerk Mannheim Block 8,agree  1–10 km,8.068790907574318,49.446975,8.492516,claude,pypsa,high,49.51644467,8.460246482,opsd_exact,1.0
+Grosskraftwerk Mannheim Block 9,Grosskraftwerk Mannheim Block 9,agree  1–10 km,8.068790907574318,49.446975,8.492516,claude,pypsa,high,49.51644467,8.460246482,opsd_exact,1.0
+Wemag CAT Cluster Perleberg 003,Wemag CAT Cluster Perleberg 003,agree  1–10 km,7.733867779292023,53.13,11.93,geocoded_unmatched,geocoded,low,53.0758,11.8574,gazetteer,0.5
+München Nord 2,München Nord 2,agree  1–10 km,7.09211163147616,48.180641,11.637754,claude,pypsa,high,48.14369733333334,11.559808,gazetteer,0.5
+WP_BEDBURG A44N,WP_BEDBURG A44N,agree  1–10 km,7.051639409810927,51.04169025,6.507481,claude,pypsa,medium,50.9926,6.5713,gazetteer,0.5
+Reservekraftwerk Rheinhafen-Dampfkraftwerk Karlsruhe Block 4,Reservekraftwerk Rheinhafen-Dampfkraftwerk Karlsruhe Block 4,agree  1–10 km,6.637809671447983,49.01274,8.304255000000001,claude,pypsa,high,49.07,8.33,wikipedia,0.85
+Reservekraftwerk Rheinhafen-Dampfkraftwerk Karlsruhe Block 7,Reservekraftwerk Rheinhafen-Dampfkraftwerk Karlsruhe Block 7,agree  1–10 km,6.637809671447983,49.01274,8.304255000000001,claude,pypsa,high,49.07,8.33,wikipedia,0.85
+Rheinhafen-Dampfkraftwerk Karlsruhe Block 7,Rheinhafen-Dampfkraftwerk Karlsruhe Block 7,agree  1–10 km,6.637809671447983,49.01274,8.304255000000001,claude,pypsa,high,49.07,8.33,wikipedia,0.85
+Rheinhafen-Dampfkraftwerk Karlsruhe Block 8,Rheinhafen-Dampfkraftwerk Karlsruhe Block 8,agree  1–10 km,6.637809671447983,49.01274,8.304255000000001,claude,pypsa,high,49.07,8.33,wikipedia,0.85
+SHN Cluster Klixbüll,SHN Cluster Klixbüll,agree  1–10 km,6.308547549557202,54.78,8.95,cluster_match,geocoded,high,54.818572,8.877825,psa_fuzzy,0.753
+50H Hamburg Tiefstack 2 HKW SK,50H Hamburg Tiefstack 2 HKW SK,agree  1–10 km,6.079056366995304,53.526083,10.065517,claude,pypsa,high,53.57172178217822,10.01485742574257,gazetteer,0.5
+50H Hamburg Tiefstack GuD,50H Hamburg Tiefstack GuD,agree  1–10 km,6.079056366995304,53.526083,10.065517,claude,pypsa,high,53.57172178217822,10.01485742574257,gazetteer,0.5
+50H UW Altentreptow,50H UW Altentreptow,agree  1–10 km,6.066593782791355,53.69913606666666,13.208388666666668,claude,pypsa,high,53.695406,13.300324,psa_exact,0.95
+Rostock Kohlekraftwerk,Rostock Kohlekraftwerk,agree  1–10 km,5.841502857047484,54.14065,12.13102,claude,pypsa,high,54.08816,12.13468,wikipedia,0.85
+ReserveKW Ingolstadt 3,ReserveKW Ingolstadt 3,agree  1–10 km,5.7609003027281735,48.761882,11.50246,claude,pypsa,high,48.75808,11.42408,gazetteer,0.5
+ReserveKW Ingolstadt 4,ReserveKW Ingolstadt 4,agree  1–10 km,5.7609003027281735,48.761882,11.50246,claude,pypsa,high,48.75808,11.42408,gazetteer,0.5
+WP Schafflund,WP Schafflund,agree  1–10 km,5.240149330540986,54.8056,9.1806,mastr_match,geocoded,high,54.7585,9.1833,gazetteer,0.5
+50H Halle-Trotha HKW,50H Halle-Trotha HKW,agree  1–10 km,4.977486694536679,51.523806,11.943448,claude,pypsa,high,51.48096,11.96427,opsd_exact,1.0
+50H Halle-Dieselstr HKW-BlockA,50H Halle-Dieselstr HKW-BlockA,agree  1–10 km,4.949116522123482,51.523806,11.943448,claude,pypsa,medium,51.483,11.972,gazetteer,0.5
+50H Halle-Dieselstr HKW-BlockB,50H Halle-Dieselstr HKW-BlockB,agree  1–10 km,4.949116522123482,51.523806,11.943448,claude,pypsa,medium,51.483,11.972,gazetteer,0.5
+50H Halle-Dieselstr HKW-BlockC,50H Halle-Dieselstr HKW-BlockC,agree  1–10 km,4.949116522123482,51.523806,11.943448,claude,pypsa,medium,51.483,11.972,gazetteer,0.5
+50H HAP Halle-Dieselstr HKW-BlockC,50H HAP Halle-Dieselstr HKW-BlockC,agree  1–10 km,4.949116522123482,51.523806,11.943448,claude,pypsa,medium,51.483,11.972,gazetteer,0.5
+50H UW Wustermark,50H UW Wustermark,agree  1–10 km,4.832414338434756,52.54109833333333,12.892550333333332,claude,pypsa,high,52.562313,12.954929,psa_exact,0.95
+SHN Cluster Brunsbüttel,SHN Cluster Brunsbüttel,agree  1–10 km,4.710327272649523,53.8833,9.1167,cluster_match,geocoded,high,53.925647,9.118544,psa_fuzzy,0.766
+50H Parchim,50H Parchim,agree  1–10 km,4.519139373251928,53.4269,11.7806,geocoded_match,geocoded,high,53.4263,11.8488,gazetteer,0.5
+CROC Cluster Parchim Süd,CROC Cluster Parchim Süd,agree  1–10 km,4.469619725473572,53.4167,11.7833,cluster_match,geocoded,high,53.4263,11.8488,gazetteer,0.5
+50H Dresden-Reick,50H Dresden-Reick,agree  1–10 km,4.450629833273342,51.0255,13.7845,claude,pypsa,high,51.05594137931033,13.74316896551724,gazetteer,0.5
+Braunschweig HKWN GT,Braunschweig HKWN GT,agree  1–10 km,4.354583034444696,52.3056,10.5072,claude,pypsa,high,52.26814,10.52586666666667,gazetteer,0.5
+Niederrad 1,Niederrad 1,agree  1–10 km,4.315708751233652,50.1056,8.6797,geocoded_match,geocoded,medium,50.0856,8.62785,opsd_exact,1.0
+BAG NWAK-Cluster 16 Regensburg-Sittling,BAG NWAK-Cluster 16 Regensburg-Sittling,agree  1–10 km,4.205548234493774,48.98,12.1,cluster_match,geocoded,medium,49.01781428571429,12.09888571428571,gazetteer,0.5
+Wolfsburg West 2,Wolfsburg West 2,agree  1–10 km,3.8438712778725797,52.4424555,10.762681,claude,pypsa,high,52.4097,10.7808,gazetteer,0.5
+Heizkraftwerk Gaisburg Block 3,Heizkraftwerk Gaisburg Block 3,agree  1–10 km,3.6831813219032115,48.7528,9.1892,geocoded_match,geocoded,high,48.7800613,9.2177448,nominatim,0.4
+Bremen 15,Bremen 15,agree  1–10 km,3.593459814816216,53.0795,8.8231,geocoded_match,geocoded,medium,53.051692,8.7957,psa_exact,0.95
+HATTINGEN_AIRPRODUCTS(KapRes),HATTINGEN_AIRPRODUCTS(KapRes),agree  1–10 km,3.5755146176088743,51.3933,7.2213,mastr_match,geocoded,none,51.39846666666667,7.170433333333333,gazetteer,0.5
+VIANDEN_1,VIANDEN_1,agree  1–10 km,3.5319445857146405,49.931,6.215,geocoded_match,geocoded,high,49.9522709,6.178345597000001,opsd_exact,1.0
+VIANDEN_3,VIANDEN_3,agree  1–10 km,3.5319445857146405,49.931,6.215,geocoded_match,geocoded,high,49.9522709,6.178345597000001,opsd_exact,1.0
+50H Erfurt-Ost HKW GuD,50H Erfurt-Ost HKW GuD,agree  1–10 km,3.38330239367807,51.0188434,11.0410548,claude,pypsa,high,50.989612,11.027635,opsd_exact,1.0
+50H Berlin Marzahn,50H Berlin Marzahn,agree  1–10 km,3.364734744527865,52.525284,13.521298,claude,pypsa,high,52.55,13.55,wikipedia,0.85
+WP Wilstermarsch,WP Wilstermarsch,agree  1–10 km,3.2954888885167146,53.907303,9.266917,claude,pypsa,medium,53.9149,9.31555,manual,1.0
+Bremen BHKW,Bremen BHKW,agree  1–10 km,3.2895321631723355,53.08,8.81,mastr_match,geocoded,high,53.051692,8.7957,psa_exact,0.95
+SHN Cluster Heide West T411 T412,SHN Cluster Heide West T411 T412,agree  1–10 km,3.208499631081972,54.2,9.05,cluster_match,geocoded,medium,54.1958,9.0988,gazetteer,0.5
+SHN Cluster Heide West T413,SHN Cluster Heide West T413,agree  1–10 km,3.208499631081972,54.2,9.05,cluster_match,geocoded,medium,54.1958,9.0988,gazetteer,0.5
+Bremen GKB,Bremen GKB,agree  1–10 km,3.0959407116107154,53.0793,8.8017,geocoded_match,geocoded,medium,53.051692,8.7957,psa_exact,0.95
+Würzburg GT 1,Würzburg GT 1,agree  1–10 km,3.085909699129465,49.7927,9.9514,mastr_match,geocoded,medium,49.793019,9.994387,psa_fuzzy,0.753
+Würzburg GT 2,Würzburg GT 2,agree  1–10 km,3.085909699129465,49.7927,9.9514,mastr_match,geocoded,medium,49.793019,9.994387,psa_fuzzy,0.753
+Braunschweig HKWM DT42,Braunschweig HKWM DT42,agree  1–10 km,3.0027686189809684,52.295023,10.521684,claude,pypsa,medium,52.26814,10.52586666666667,gazetteer,0.5
+Braunschweig HKWM GT31,Braunschweig HKWM GT31,agree  1–10 km,3.0027686189809684,52.295023,10.521684,claude,pypsa,medium,52.26814,10.52586666666667,gazetteer,0.5
+VIANDEN_11,VIANDEN_11,agree  1–10 km,2.9213026166490907,49.93,6.2,geocoded_match,geocoded,high,49.9522709,6.178345597000001,opsd_exact,1.0
+VIANDEN_4,VIANDEN_4,agree  1–10 km,2.9213026166490907,49.93,6.2,geocoded_match,geocoded,high,49.9522709,6.178345597000001,opsd_exact,1.0
+50H Dresden-Nossen,50H Dresden-Nossen,agree  1–10 km,2.898962613586534,51.042464,13.707669,claude,pypsa,high,51.05594137931033,13.74316896551724,gazetteer,0.5
+50H Neubrandenburg GuD,50H Neubrandenburg GuD,agree  1–10 km,2.8935306635700377,53.5565,13.2635,geocoded_match,geocoded,high,53.5745,13.295142,opsd_exact,1.0
+UW Höpfingen,UW Höpfingen,agree  1–10 km,2.8484800840477424,49.584461,9.4566598,claude,pypsa,high,49.6025,9.4286,gazetteer,0.5
+50H Hamburg MMB BHKW P2H,50H Hamburg MMB BHKW P2H,agree  1–10 km,2.685261964055339,53.5511,9.9937,mastr_match,geocoded,medium,53.57172178217822,10.01485742574257,gazetteer,0.5
+50H Hamburg MMB BHKW PtH,50H Hamburg MMB BHKW PtH,agree  1–10 km,2.685261964055339,53.5511,9.9937,mastr_match,geocoded,medium,53.57172178217822,10.01485742574257,gazetteer,0.5
+HEIZKRAFTWERK_SAARBRÜCKEN,HEIZKRAFTWERK_SAARBRÜCKEN,agree  1–10 km,2.5977000375965456,49.2414,6.9912,geocoded_match,geocoded,high,49.223899,7.014899000000001,opsd_city,0.55
+AVA Cluster Helmstedt,AVA Cluster Helmstedt,agree  1–10 km,2.5565200968642796,52.23,11.0,cluster_match,geocoded,high,52.208034,10.988918,psa_exact,0.95
+ReserveKW Plattling,ReserveKW Plattling,agree  1–10 km,2.509496205094323,48.800832,12.868396,claude,pypsa,high,48.7787,12.8751,gazetteer,0.5
+Obernburg,Obernburg,agree  1–10 km,2.507967686552967,49.8489,9.1308,geocoded_match,geocoded,high,49.82935,9.14824,opsd_exact,1.0
+SHN Cluster Husum Nord,SHN Cluster Husum Nord,agree  1–10 km,2.4922932137588814,54.48,9.05,mastr_match,geocoded,high,54.459163,9.03579,psa_exact_dir,0.855
+Wolfsburg Nord A,Wolfsburg Nord A,agree  1–10 km,2.481995968309351,52.431703,10.786957,claude,pypsa,medium,52.4097,10.7808,gazetteer,0.5
+SHN Cluster Kiel Süd,SHN Cluster Kiel Süd,agree  1–10 km,2.3141924683401514,54.31,10.13,cluster_match,geocoded,high,54.3308,10.12878823529412,gazetteer,0.5
+ReserveKW Zolling 5,ReserveKW Zolling 5,agree  1–10 km,2.254043915012654,48.455489,11.796122,claude,pypsa,high,48.45,11.7667,gazetteer,0.5
+UPMSchongau,UPMSchongau,agree  1–10 km,2.1440695045274145,47.789,10.899,geocoded_match,geocoded,high,47.808151,10.902341,psa_exact,0.95
+AVA Cluster Emden Ost,AVA Cluster Emden Ost,agree  1–10 km,2.0345525742339197,53.3667,7.2167,cluster_match,geocoded,high,53.384675,7.21097,psa_exact_dir,0.855
+München Süd GT 61,München Süd GT 61,agree  1–10 km,1.9040867760662585,48.1351,11.582,mastr_match,geocoded,medium,48.14369733333334,11.559808,gazetteer,0.5
+Hohenwarte 2 (Standort),Hohenwarte 2 (Standort),agree  1–10 km,1.875508004296487,50.602,11.474,claude,pypsa,high,50.61433423,11.49212837,opsd_exact,1.0
+Plattling GT,Plattling GT,agree  1–10 km,1.8125821020836081,48.800832,12.868396,claude,pypsa,high,48.78742,12.88246,opsd_exact,1.0
+50H Stralsund BHKW+P2H,50H Stralsund BHKW+P2H,agree  1–10 km,1.7744333547515814,54.3088,13.0947,mastr_match,geocoded,high,54.31123333333333,13.06766666666667,gazetteer,0.5
+Mercedes_Sindelfingen_GT1,Mercedes_Sindelfingen_GT1,agree  1–10 km,1.7440059812046909,48.6973658,8.9992082,claude,pypsa,high,48.71305,8.9992,gazetteer,0.5
+BAG NWAK-Cluster 04 Aschaffenburg,BAG NWAK-Cluster 04 Aschaffenburg,agree  1–10 km,1.7005571311691485,49.974,9.147,geocoded_cluster,geocoded,medium,49.988218,9.155761,opsd_city,0.55
+50H Stralsund BHKW+PtH,50H Stralsund BHKW+PtH,agree  1–10 km,1.627133660681003,54.3088,13.0924,mastr_match,geocoded,high,54.31123333333333,13.06766666666667,gazetteer,0.5
+Netzreservekraftwerk Darmstadt/GTKW GT11,Netzreservekraftwerk Darmstadt/GTKW GT11,agree  1–10 km,1.5634119276988787,49.8856345,8.649099,claude,pypsa,high,49.8718375,8.653300000000002,gazetteer,0.5
+Netzreservekraftwerk Darmstadt/GTKW GT12,Netzreservekraftwerk Darmstadt/GTKW GT12,agree  1–10 km,1.5634119276988787,49.8856345,8.649099,claude,pypsa,high,49.8718375,8.653300000000002,gazetteer,0.5
+UPM Schongau HKW3,UPM Schongau HKW3,agree  1–10 km,1.5584512577059002,47.8014,10.8834,geocoded_match,geocoded,high,47.8122,10.8967,manual,1.0
+Huntorf,Huntorf,agree  1–10 km,1.532669215217119,53.195932,8.388178,claude,pypsa,high,53.18969,8.40869,opsd_exact,1.0
+Braunschweig GT,Braunschweig GT,agree  1–10 km,1.5101767993924258,52.3056,10.5072,claude,pypsa,medium,52.295298,10.521672,opsd_exact,1.0
+WP_BEDBURG,WP_BEDBURG,agree  1–10 km,1.5006113992463976,51.03910945,6.53203195,claude,pypsa,high,51.035065,6.511557,psa_exact,0.95
+PSW Rönkhausen,PSW Rönkhausen,agree  1–10 km,1.4926385987856678,51.227233,7.971745,claude,pypsa,high,51.22475,7.99281,opsd_exact,1.0
+ROENKHAUSEN_PSW1,ROENKHAUSEN_PSW1,agree  1–10 km,1.4926385987856678,51.227233,7.971745,claude,pypsa,high,51.22475,7.99281,opsd_exact,1.0
+ROENKHAUSEN_PSW2,ROENKHAUSEN_PSW2,agree  1–10 km,1.4926385987856678,51.227233,7.971745,claude,pypsa,high,51.22475,7.99281,opsd_exact,1.0
+HERDECKE_H6,HERDECKE_H6,agree  1–10 km,1.4547230706080483,51.4036245,7.41565025,claude,pypsa,high,51.4,7.4358,gazetteer,0.5
+Pumpspeicherwerk Säckingen RZ TNG,Pumpspeicherwerk Säckingen RZ TNG,agree  1–10 km,1.4484392800063126,47.56207628571429,7.954524857142857,claude,pypsa,high,47.5527459,7.9410556,nominatim,0.4
+NEURATH_A_110kV,NEURATH_A_110kV,agree  1–10 km,1.3087392008818555,51.037649,6.612286,claude,pypsa,high,51.0392708,6.5937467,nominatim,0.4
+Ahrensfelde A (KapRes),Ahrensfelde A (KapRes),agree  1–10 km,1.2487490253180664,52.580922,13.570582,claude,pypsa,high,52.58950001,13.5586524,opsd_exact,1.0
+Ahrensfelde B (KapRes),Ahrensfelde B (KapRes),agree  1–10 km,1.2487490253180664,52.580922,13.570582,claude,pypsa,high,52.58950001,13.5586524,opsd_exact,1.0
+Ahrensfelde C (KapRes),Ahrensfelde C (KapRes),agree  1–10 km,1.2487490253180664,52.580922,13.570582,claude,pypsa,high,52.58950001,13.5586524,opsd_exact,1.0
+Ahrensfelde D (KapRes),Ahrensfelde D (KapRes),agree  1–10 km,1.2487490253180664,52.580922,13.570582,claude,pypsa,high,52.58950001,13.5586524,opsd_exact,1.0
+50H Berlin Lichterfelde,50H Berlin Lichterfelde,agree  1–10 km,1.20525882594632,52.423388,13.309598,claude,pypsa,high,52.43333333,13.31666667,wikipedia,0.85
+DORMAGEN_GT2,DORMAGEN_GT2,agree  1–10 km,1.1346623672572553,51.086969,6.818407,claude,pypsa,high,51.07908,6.828710000000001,opsd_exact,1.0
+50H EnviaTherm Bitterfeld-Wolfen GuD,50H EnviaTherm Bitterfeld-Wolfen GuD,agree  1–10 km,1.059627056747277,51.62902,12.304538,claude,pypsa,high,51.62965,12.28922,opsd_city,0.55
+WEISWEILER_VGTG3,WEISWEILER_VGTG3,agree  1–10 km,1.047309706642925,50.837339,6.319244,claude,pypsa,high,50.8280995,6.3163491,nominatim,0.4
+BAG NWAK-Cluster 14 Schwandorf,BAG NWAK-Cluster 14 Schwandorf,agree  < 1 km,0.9266252979626457,49.32,12.11,cluster_match,geocoded,medium,49.32833333,12.11,wikipedia,0.85
+Datteln_4,Datteln_4,agree  < 1 km,0.8775422458454987,51.63313,7.34248,claude,pypsa,high,51.62952,7.331174000000001,opsd_exact,1.0
+OWP Veja Mate AC104 (kurativ),OWP Veja Mate AC104 (kurativ),agree  < 1 km,0.8438390767414041,54.318555477611945,5.874748507462687,claude,pypsa,high,54.326029,5.872489,psa_exact,0.95
+OWP Veja Mate AC105 (kurativ),OWP Veja Mate AC105 (kurativ),agree  < 1 km,0.8438390767414041,54.318555477611945,5.874748507462687,claude,pypsa,high,54.326029,5.872489,psa_exact,0.95
+CROC Cluster Güstrow,CROC Cluster Güstrow,agree  < 1 km,0.7815765156966814,53.7933,12.1833,cluster_match,geocoded,high,53.7972,12.1734,gazetteer,0.5
+Goldisthal (Standort),Goldisthal (Standort),agree  < 1 km,0.7694812174684937,50.51,11.01,claude,pypsa,high,50.50975864,11.02087498,opsd_exact,1.0
+50H OWP Arkona,50H OWP Arkona,agree  < 1 km,0.6752965466718812,54.787911,14.122602,claude,pypsa,high,54.7819,14.1211,unresolved,1.0
+AVA Cluster Emden Borssum,AVA Cluster Emden Borssum,agree  < 1 km,0.6482817109366407,53.366,7.207,cluster_match,geocoded,high,53.3667,7.2167,gazetteer,0.5
+50H EnviaTherm Bitterfeld GuD,50H EnviaTherm Bitterfeld GuD,agree  < 1 km,0.6462485381830285,51.62902,12.304538,claude,pypsa,high,51.633861,12.299357,opsd_exact,1.0
+AVA Cluster Gießen Nord T413 T414,AVA Cluster Gießen Nord T413 T414,agree  < 1 km,0.6433344195558622,50.59,8.674,geocoded_cluster,geocoded,medium,50.58524,8.67918,gazetteer,0.5
+OWP Albatros AC151 (kurativ),OWP Albatros AC151 (kurativ),agree  < 1 km,0.6280097113149505,54.4871886875,6.24371,claude,pypsa,high,54.481963,6.247398,psa_exact,0.95
+HAP Lippendorf VE,HAP Lippendorf VE,agree  < 1 km,0.6248889214873377,51.1769265,12.376704,claude,pypsa,high,51.182122,12.373287,opsd_fuzzy,0.773
+Lippendorf,Lippendorf,agree  < 1 km,0.6248889214873377,51.1769265,12.376704,claude,pypsa,high,51.182122,12.373287,opsd_exact,1.0
+Lippendorf EnBW,Lippendorf (EnBW),agree  < 1 km,0.6248889214873377,51.1769265,12.376704,claude,pypsa,high,51.182122,12.373287,opsd_exact,1.0
+Lippendorf VE,Lippendorf VE,agree  < 1 km,0.6248889214873377,51.1769265,12.376704,claude,pypsa,high,51.182122,12.373287,opsd_fuzzy,0.773
+Burghausen,Burghausen,agree  < 1 km,0.5863549359351553,48.18104475,12.8473455,claude,pypsa,high,48.186212,12.845768,opsd_exact,1.0
+AVA Cluster Lüneburg T412,AVA Cluster Lüneburg T412,agree  < 1 km,0.5749702871305598,53.254,10.41,mastr_match,geocoded,medium,53.2497,10.4148,gazetteer,0.5
+AVA Cluster Lüneburg T413,AVA Cluster Lüneburg T413,agree  < 1 km,0.5749702871305598,53.254,10.41,mastr_match,geocoded,medium,53.2497,10.4148,gazetteer,0.5
+WP_GREVENBROICH,WP_GREVENBROICH,agree  < 1 km,0.5689382312872929,51.058801,6.540425666666667,claude,pypsa,high,51.05505,6.545962,psa_exact,0.95
+NIEDERAUSSEM_C,NIEDERAUSSEM_C,agree  < 1 km,0.5596764289261723,50.990677,6.669720000000001,claude,pypsa,high,50.995692,6.669039,opsd_exact,1.0
+NIEDERAUSSEM_E,NIEDERAUSSEM_E,agree  < 1 km,0.5596764289261723,50.990677,6.669720000000001,claude,pypsa,high,50.995692,6.669039,opsd_exact,1.0
+NIEDERAUSSEM_F,NIEDERAUSSEM_F,agree  < 1 km,0.5596764289261723,50.990677,6.669720000000001,claude,pypsa,high,50.995692,6.669039,opsd_exact,1.0
+NIEDERAUSSEM_G,NIEDERAUSSEM_G,agree  < 1 km,0.5596764289261723,50.990677,6.669720000000001,claude,pypsa,high,50.995692,6.669039,opsd_exact,1.0
+NIEDERAUSSEM_H,NIEDERAUSSEM_H,agree  < 1 km,0.5596764289261723,50.990677,6.669720000000001,claude,pypsa,high,50.995692,6.669039,opsd_exact,1.0
+NIEDERAUSSEM_K,NIEDERAUSSEM_K,agree  < 1 km,0.5596764289261723,50.990677,6.669720000000001,claude,pypsa,high,50.995692,6.669039,opsd_exact,1.0
+WP Kaskasi,WP Kaskasi,agree  < 1 km,0.5128028378633958,54.48880481578948,7.691322236842105,claude,pypsa,high,54.491406,7.684766,psa_exact,0.95
+OWP Deutsche Bucht AC152 (kurativ),OWP Deutsche Bucht AC152 (kurativ),agree  < 1 km,0.49549760293922845,54.30371951612902,5.78957629032258,claude,pypsa,high,54.307588,5.793367,psa_exact,0.95
+OWP Deutsche Bucht AC153 (kurativ),OWP Deutsche Bucht AC153 (kurativ),agree  < 1 km,0.49549760293922845,54.30371951612902,5.78957629032258,claude,pypsa,high,54.307588,5.793367,psa_exact,0.95
+HAP Schwarze Pumpe (Standort),HAP Schwarze Pumpe (Standort),agree  < 1 km,0.49065958660060566,51.531359,14.348723,claude,pypsa,high,51.53482028,14.35312271,opsd_exact,1.0
+Schwarze Pumpe (Standort),Schwarze Pumpe (Standort),agree  < 1 km,0.49065958660060566,51.531359,14.348723,claude,pypsa,high,51.53482028,14.35312271,opsd_exact,1.0
+GERSTEINW_DTF2,GERSTEINW_DTF2,agree  < 1 km,0.4467545597509299,51.67324,7.710467,claude,pypsa,medium,51.673333,7.716944,manual,1.0
+GERSTEINW_DTG2,GERSTEINW_DTG2,agree  < 1 km,0.4467545597509299,51.67324,7.710467,claude,pypsa,medium,51.673333,7.716944,manual,1.0
+GERSTEINW_DTG2 (KapRes),GERSTEINW_DTG2 (KapRes),agree  < 1 km,0.4467545597509299,51.67324,7.710467,claude,pypsa,high,51.673333,7.716944,manual,1.0
+GERSTEINW_F (KapRes),GERSTEINW_F (KapRes),agree  < 1 km,0.4467545597509299,51.67324,7.710467,claude,pypsa,high,51.673333,7.716944,manual,1.0
+GERSTEINW_G (KapRes),GERSTEINW_G (KapRes),agree  < 1 km,0.4467545597509299,51.67324,7.710467,claude,pypsa,high,51.673333,7.716944,manual,1.0
+GERSTEINW_GTF1,GERSTEINW_GTF1,agree  < 1 km,0.4467545597509299,51.67324,7.710467,claude,pypsa,high,51.673333,7.716944,manual,1.0
+GERSTEINW_GTF1 (KapRes),GERSTEINW_GTF1 (KapRes),agree  < 1 km,0.4467545597509299,51.67324,7.710467,claude,pypsa,high,51.673333,7.716944,manual,1.0
+GERSTEINW_GTG1,GERSTEINW_GTG1,agree  < 1 km,0.4467545597509299,51.67324,7.710467,claude,pypsa,high,51.673333,7.716944,manual,1.0
+GERSTEINW_GTG1 (KapRes),GERSTEINW_GTG1 (KapRes),agree  < 1 km,0.4467545597509299,51.67324,7.710467,claude,pypsa,high,51.673333,7.716944,manual,1.0
+GERSTEINW_GTI1,GERSTEINW_GTI1,agree  < 1 km,0.4467545597509299,51.67324,7.710467,claude,pypsa,high,51.673333,7.716944,manual,1.0
+OWP Gode Wind 3 AC160,OWP Gode Wind 3 AC160,agree  < 1 km,0.44210476481523153,54.04279978333333,7.014410708333332,claude,pypsa,high,54.044408,7.008218,psa_exact,0.95
+Farge,Farge,agree  < 1 km,0.4308426851546708,53.198738,8.519465,claude,pypsa,high,53.20206653,8.516153926,opsd_exact,1.0
+Heyden,Heyden,agree  < 1 km,0.4270772172401063,52.379,8.997,claude,pypsa,high,52.38279238,8.996004114,opsd_exact,1.0
+Zolling 5,Zolling 5,agree  < 1 km,0.42641986300875356,48.455489,11.796122,claude,pypsa,high,48.45534,11.8019,opsd_exact,1.0
+Zolling GT 1,Zolling GT 1,agree  < 1 km,0.42641986300875356,48.455489,11.796122,claude,pypsa,high,48.45534,11.8019,opsd_exact,1.0
+Zolling GT 2,Zolling GT 2,agree  < 1 km,0.42641986300875356,48.455489,11.796122,claude,pypsa,high,48.45534,11.8019,opsd_exact,1.0
+HAP Jänschwalde (Standort),HAP Jänschwalde (Standort),agree  < 1 km,0.41945386547607644,51.835981,14.453465,claude,pypsa,high,51.83444099,14.45903778,opsd_exact,1.0
+Jänschwalde (Standort),Jänschwalde (Standort),agree  < 1 km,0.41945386547607644,51.835981,14.453465,claude,pypsa,high,51.83444099,14.45903778,opsd_exact,1.0
+50H UW Bertikow,50H UW Bertikow,agree  < 1 km,0.4110680184432652,53.2567245,13.948202750000002,claude,pypsa,high,53.259097,13.952942,psa_exact,0.95
+Netzreservekraftwerk SCHOLVEN_B,Netzreservekraftwerk SCHOLVEN_B,agree  < 1 km,0.39626266020800033,51.599970000000006,7.00565,claude,pypsa,high,51.60236802,7.009894096,opsd_exact,1.0
+SCHOLVEN_B,SCHOLVEN_B,agree  < 1 km,0.39626266020800033,51.599970000000006,7.00565,claude,pypsa,high,51.60236802,7.009894096,opsd_exact,1.0
+SCHOLVEN_C,SCHOLVEN_C,agree  < 1 km,0.39626266020800033,51.599970000000006,7.00565,claude,pypsa,high,51.60236802,7.009894096,opsd_exact,1.0
+HUCKINGEN_A,HUCKINGEN_A,agree  < 1 km,0.39291955746708845,51.371067,6.719111,claude,pypsa,high,51.36787,6.7167,opsd_exact,1.0
+HUCKINGEN_B,HUCKINGEN_B,agree  < 1 km,0.39291955746708845,51.371067,6.719111,claude,pypsa,high,51.36787,6.7167,opsd_exact,1.0
+50H OWP Arcadis Ost 1,50H OWP Arcadis Ost 1,agree  < 1 km,0.3836212623347169,54.81812503703704,13.657002740740742,claude,pypsa,high,54.817461,13.651127,psa_exact,0.95
+BIBLIS_GT (bnBm),BIBLIS_GT (bnBm),agree  < 1 km,0.35910869499658493,49.706078,8.415141,claude,pypsa,high,49.7093,8.4148,psa_exact,0.95
+IBBENBUEREN_B,IBBENBUEREN_B,agree  < 1 km,0.35694201781827345,52.285881,7.750047,claude,pypsa,high,52.28881179,7.747906179,opsd_exact,1.0
+50H Chemnitz,50H Chemnitz,agree  < 1 km,0.3562266191831447,50.854711,12.919515,claude,pypsa,medium,50.856981,12.923096,opsd_city,0.55
+GUD_HERNE_6,GUD_HERNE_6,agree  < 1 km,0.35219748108492904,51.5489,7.18335,claude,pypsa,high,51.550753,7.187481,opsd_exact,1.0
+50H OWP Baltic Eagle,50H OWP Baltic Eagle,agree  < 1 km,0.345491918907243,54.83008946,13.858195599999998,claude,pypsa,high,54.828956,13.863218,psa_exact,0.95
+Reuter West (Standort),Reuter West (Standort),agree  < 1 km,0.33873002814401915,52.53207166666667,13.241943999999998,claude,pypsa,high,52.53508792,13.24264526,opsd_exact,1.0
+Boxberg (Standort),Boxberg (Standort),agree  < 1 km,0.33709636662449943,51.41333425,14.563203,claude,pypsa,high,51.41626317,14.56194878,opsd_exact,1.0
+HAP Boxberg (Standort),HAP Boxberg (Standort),agree  < 1 km,0.33709636662449943,51.41333425,14.563203,claude,pypsa,high,51.41626317,14.56194878,opsd_exact,1.0
+Wilhelmshaven (Uniper),Wilhelmshaven (Uniper),agree  < 1 km,0.3338834869977945,53.56808,8.142918,claude,pypsa,high,53.565819,8.146245,opsd_exact,1.0
+HERNE_4,HERNE_4,agree  < 1 km,0.29841911658780973,51.549201,7.18396,claude,pypsa,high,51.550753,7.187481,opsd_exact,1.0
+Netzreservekraftwerk HERNE_4,Netzreservekraftwerk HERNE_4,agree  < 1 km,0.29841911658780973,51.549201,7.18396,claude,pypsa,high,51.550753,7.187481,opsd_exact,1.0
+HAP Schkopau,HAP Schkopau,agree  < 1 km,0.29676089803660566,51.401111,11.950833,claude,pypsa,high,51.39845463,11.9504201,opsd_exact,1.0
+Schkopau,Schkopau,agree  < 1 km,0.29676089803660566,51.401111,11.950833,claude,pypsa,high,51.39845463,11.9504201,opsd_exact,1.0
+Schkopau VE,Schkopau VE,agree  < 1 km,0.29676089803660566,51.401111,11.950833,claude,pypsa,high,51.39845463,11.9504201,opsd_fuzzy,0.756
+Heizkraftwerk Altbach/Deizisau Block 2,Heizkraftwerk Altbach/Deizisau Block 2,agree  < 1 km,0.29644813900359346,48.718902,9.3713815,claude,pypsa,high,48.717611,9.374917,opsd_exact,1.0
+Reservekraftwerk Altbach/Deizisau Block 1,Reservekraftwerk Altbach/Deizisau Block 1,agree  < 1 km,0.29644813900359346,48.718902,9.3713815,claude,pypsa,high,48.717611,9.374917,opsd_exact,1.0
+NEURATH_A,NEURATH_A,agree  < 1 km,0.2798774875825381,51.037649,6.612286,claude,pypsa,high,51.039475,6.615041000000001,opsd_exact,1.0
+NEURATH_B,NEURATH_B,agree  < 1 km,0.2798774875825381,51.037649,6.612286,claude,pypsa,high,51.039475,6.615041000000001,opsd_exact,1.0
+NEURATH_C,NEURATH_C,agree  < 1 km,0.2798774875825381,51.037649,6.612286,claude,pypsa,high,51.039475,6.615041000000001,opsd_exact,1.0
+NEURATH_D,NEURATH_D,agree  < 1 km,0.2798774875825381,51.037649,6.612286,claude,pypsa,high,51.039475,6.615041000000001,opsd_exact,1.0
+NEURATH_E,NEURATH_E,agree  < 1 km,0.2798774875825381,51.037649,6.612286,claude,pypsa,high,51.039475,6.615041000000001,opsd_exact,1.0
+NEURATH_F,NEURATH_F,agree  < 1 km,0.2798774875825381,51.037649,6.612286,claude,pypsa,high,51.039475,6.615041000000001,opsd_exact,1.0
+NEURATH_G,NEURATH_G,agree  < 1 km,0.2798774875825381,51.037649,6.612286,claude,pypsa,high,51.039475,6.615041000000001,opsd_exact,1.0
+Heizkraftwerk Heilbronn Block 7,Heizkraftwerk Heilbronn Block 7,agree  < 1 km,0.2773215196673692,49.17505666666667,9.207873333333334,claude,pypsa,high,49.177334,9.206318,opsd_exact,1.0
+Reservekraftwerk Heilbronn Block 5,Reservekraftwerk Heilbronn Block 5,agree  < 1 km,0.2773215196673692,49.17505666666667,9.207873333333334,claude,pypsa,high,49.177334,9.206318,opsd_exact,1.0
+Reservekraftwerk Heilbronn Block 6,Reservekraftwerk Heilbronn Block 6,agree  < 1 km,0.2773215196673692,49.17505666666667,9.207873333333334,claude,pypsa,high,49.177334,9.206318,opsd_exact,1.0
+Reservekraftwerk Heilbronn Block 7,Reservekraftwerk Heilbronn Block 7,agree  < 1 km,0.2773215196673692,49.17505666666667,9.207873333333334,claude,pypsa,high,49.177334,9.206318,opsd_exact,1.0
+OWP Riffgat,OWP Riffgat,agree  < 1 km,0.27604057324170284,53.69243143333333,6.475444666666667,claude,pypsa,high,53.693007,6.479523,psa_exact,0.95
+Moorburg (Standort),Moorburg (Standort),agree  < 1 km,0.27320375466371416,53.487504,9.949603,claude,pypsa,high,53.486245,9.953149,opsd_exact,1.0
+OWP BARD Offshore 1 AC102 (kurativ),OWP BARD Offshore 1 AC102 (kurativ),agree  < 1 km,0.26175479870541557,54.356897425,5.982390837500001,claude,pypsa,high,54.355,5.98,manual,1.0
+OWP BARD Offshore 1 AC103 (kurativ),OWP BARD Offshore 1 AC103 (kurativ),agree  < 1 km,0.26175479870541557,54.356897425,5.982390837500001,claude,pypsa,high,54.355,5.98,manual,1.0
+WESTFALEN_E,WESTFALEN_E,agree  < 1 km,0.2594697619583933,51.682608,7.969927,claude,pypsa,high,51.680278,7.969722,opsd_exact,1.0
+GERSTEINW_K1,GERSTEINW_K1,agree  < 1 km,0.2470997130793426,51.673532,7.720513,claude,pypsa,high,51.673333,7.716944,manual,1.0
+GERSTEINW_K1 (KapRes),GERSTEINW_K1 (KapRes),agree  < 1 km,0.2470997130793426,51.673532,7.720513,claude,pypsa,high,51.673333,7.716944,manual,1.0
+WEISWEILER_E,WEISWEILER_E,agree  < 1 km,0.24187681827762117,50.837339,6.319244,claude,pypsa,high,50.839167,6.321111,opsd_exact,1.0
+WEISWEILER_F,WEISWEILER_F,agree  < 1 km,0.24187681827762117,50.837339,6.319244,claude,pypsa,high,50.839167,6.321111,opsd_exact,1.0
+WEISWEILER_F_110,WEISWEILER_F_110,agree  < 1 km,0.24187681827762117,50.837339,6.319244,claude,pypsa,high,50.839167,6.321111,opsd_exact,1.0
+WEISWEILER_G,WEISWEILER_G,agree  < 1 km,0.24187681827762117,50.837339,6.319244,claude,pypsa,high,50.839167,6.321111,opsd_exact,1.0
+WEISWEILER_H,WEISWEILER_H,agree  < 1 km,0.24187681827762117,50.837339,6.319244,claude,pypsa,high,50.839167,6.321111,opsd_exact,1.0
+WEISWEILERVGT_H3,WEISWEILERVGT_H3,agree  < 1 km,0.24187681827762117,50.837339,6.319244,claude,pypsa,high,50.839167,6.321111,manual,1.0
+BEXBACH_1,BEXBACH_1,agree  < 1 km,0.23284231754528242,49.36139,7.237308,claude,pypsa,high,49.363481,7.237136,opsd_exact,1.0
+Bexbach A,Bexbach A,agree  < 1 km,0.23284231754528242,49.36139,7.237308,claude,pypsa,high,49.363481,7.237136,opsd_exact,1.0
+Netzreservekraftwerk Bexbach A,Netzreservekraftwerk Bexbach A,agree  < 1 km,0.23284231754528242,49.36139,7.237308,claude,pypsa,high,49.363481,7.237136,opsd_exact,1.0
+Kiel (Küstenkraftwerk gesamt),Kiel (Küstenkraftwerk gesamt),agree  < 1 km,0.2321838867840358,54.341,10.179,claude,pypsa,high,54.33945,10.1766,opsd_exact,1.0
+UW Büttel,UW Büttel,agree  < 1 km,0.22938594093238154,53.9128284,9.2282964,claude,pypsa,medium,53.910965,9.229799,psa_fuzzy,0.738
+WP Jardelund,WP Jardelund,agree  < 1 km,0.22327978325167783,54.85292283333334,9.206747333333334,claude,pypsa,high,54.852163,9.209976,psa_exact,0.95
+Kraftwerk Walheim GT D,Kraftwerk Walheim GT D,agree  < 1 km,0.22288512137835145,49.01598,9.15943,claude,pypsa,high,49.017472,9.157389,opsd_exact,1.0
+50H BASF Schwarzheide,50H BASF Schwarzheide,agree  < 1 km,0.2200656500699528,51.478138,13.889436,claude,pypsa,high,51.47617,13.8891,opsd_exact,1.0
+Netzreservekraftwerk Weiher C,Netzreservekraftwerk Weiher C,agree  < 1 km,0.21250954620208093,49.333966,7.028434,claude,pypsa,high,49.33413028,7.031355927999999,opsd_exact,1.0
+WEIHER_C,WEIHER_C,agree  < 1 km,0.21250954620208093,49.333966,7.028434,claude,pypsa,high,49.33413028,7.031355927999999,opsd_exact,1.0
+Emsland Block B,Emsland Block B,agree  < 1 km,0.20263694479031952,52.48027,7.305249999999999,claude,pypsa,high,52.481878,7.306658,opsd_exact,1.0
+Emsland Block C,Emsland Block C,agree  < 1 km,0.20263694479031952,52.48027,7.305249999999999,claude,pypsa,high,52.481878,7.306658,opsd_exact,1.0
+Emsland Block C pool,Emsland Block C pool,agree  < 1 km,0.20263694479031952,52.48027,7.305249999999999,claude,pypsa,medium,52.481878,7.306658,opsd_exact,1.0
+Emsland Block D,Emsland Block D,agree  < 1 km,0.20263694479031952,52.48027,7.305249999999999,claude,pypsa,high,52.481878,7.306658,opsd_exact,1.0
+Emsland Block D pool,Emsland Block D pool,agree  < 1 km,0.20263694479031952,52.48027,7.305249999999999,claude,pypsa,medium,52.481878,7.306658,opsd_exact,1.0
+EMSLAND_DTB0,EMSLAND_DTB0,agree  < 1 km,0.20263694479031952,52.48027,7.305249999999999,claude,pypsa,high,52.481878,7.306658,opsd_exact,1.0
+EMSLAND_DTC0,EMSLAND_DTC0,agree  < 1 km,0.20263694479031952,52.48027,7.305249999999999,claude,pypsa,high,52.481878,7.306658,opsd_exact,1.0
+EMSLAND_DTD0,EMSLAND_DTD0,agree  < 1 km,0.20263694479031952,52.48027,7.305249999999999,claude,pypsa,high,52.481878,7.306658,opsd_exact,1.0
+EMSLAND_GTB1,EMSLAND_GTB1,agree  < 1 km,0.20263694479031952,52.48027,7.305249999999999,claude,pypsa,high,52.481878,7.306658,opsd_exact,1.0
+EMSLAND_GTC1,EMSLAND_GTC1,agree  < 1 km,0.20263694479031952,52.48027,7.305249999999999,claude,pypsa,high,52.481878,7.306658,opsd_exact,1.0
+EMSLAND_GTD1,EMSLAND_GTD1,agree  < 1 km,0.20263694479031952,52.48027,7.305249999999999,claude,pypsa,high,52.481878,7.306658,opsd_exact,1.0
+EMSLAND_GTD2,EMSLAND_GTD2,agree  < 1 km,0.20263694479031952,52.48027,7.305249999999999,claude,pypsa,high,52.481878,7.306658,opsd_exact,1.0
+OWP Nordergründe,OWP Nordergründe,agree  < 1 km,0.1936241661206209,53.83530144444445,8.16830877777778,claude,pypsa,high,53.836417,8.166043,psa_fuzzy,0.768
+Eltmann,Eltmann,agree  < 1 km,0.18804132822783914,49.984,10.654,claude,pypsa,high,49.984,10.65137,opsd_exact,1.0
+Isar 2 (SWM),Isar 2 (SWM),agree  < 1 km,0.17970515681774393,48.6056,12.29315,claude,pypsa,high,48.6046,12.29507,opsd_exact,1.0
+Isar 2 (Uniper),Isar 2 (Uniper),agree  < 1 km,0.17970515681774393,48.6056,12.29315,claude,pypsa,high,48.6046,12.29507,opsd_exact,1.0
+WP_TITZ,WP_TITZ,agree  < 1 km,0.17352876187612293,50.97337433333333,6.498206,claude,pypsa,high,50.973574,6.495748,psa_exact,0.95
+Heizkraftwerk Altbach/Deizisau GT A,Heizkraftwerk Altbach/Deizisau GT A,agree  < 1 km,0.1657791598528465,48.71778225,9.37267225,claude,pypsa,high,48.717611,9.374917,opsd_exact,1.0
+Heizkraftwerk Altbach/Deizisau GT B,Heizkraftwerk Altbach/Deizisau GT B,agree  < 1 km,0.1657791598528465,48.71778225,9.37267225,claude,pypsa,high,48.717611,9.374917,opsd_exact,1.0
+Heizkraftwerk Altbach/Deizisau GT C,Heizkraftwerk Altbach/Deizisau GT C,agree  < 1 km,0.1657791598528465,48.71778225,9.37267225,claude,pypsa,high,48.717611,9.374917,opsd_exact,1.0
+Heizkraftwerk Altbach/Deizisau GT E,Heizkraftwerk Altbach/Deizisau GT E,agree  < 1 km,0.1657791598528465,48.71778225,9.37267225,claude,pypsa,high,48.717611,9.374917,opsd_exact,1.0
+50H UW Iven,50H UW Iven,agree  < 1 km,0.1536189626912542,53.797336,13.395290666666666,claude,pypsa,high,53.796397,13.393575,psa_exact,0.95
+WALSUM_10,WALSUM_10,agree  < 1 km,0.1497219850437205,51.5274965,6.7131585000000005,claude,pypsa,high,51.528611,6.711944,opsd_exact,1.0
+Hannover (GKH) 1,Hannover (GKH) 1,agree  < 1 km,0.1493242756222005,52.420476,9.65067,claude,pypsa,high,52.42,9.648611,opsd_city,0.55
+Hannover (GKH) 2,Hannover (GKH) 2,agree  < 1 km,0.1493242756222005,52.420476,9.65067,claude,pypsa,high,52.42,9.648611,opsd_city,0.55
+SHN Cluster Lübeck,SHN Cluster Lübeck,agree  < 1 km,0.1302318123957696,53.868,10.687,cluster_match,geocoded,high,53.8677,10.68508,wikipedia,0.85
+WP Neudersum,WP Neudersum,agree  < 1 km,0.11697876427668588,52.9776709,7.213945799999999,claude,pypsa,high,52.978183,7.215472,psa_exact,0.95
+Freimann GT11,Freimann GT11,agree  < 1 km,0.11161558274520254,48.189,11.596,claude,pypsa,high,48.188278,11.594954,opsd_exact,1.0
+Freimann GT12,Freimann GT12,agree  < 1 km,0.11161558274520254,48.189,11.596,claude,pypsa,high,48.188278,11.594954,opsd_exact,1.0
+ReserveKW Staudinger 4,ReserveKW Staudinger 4,agree  < 1 km,0.103548080585888,50.088056,8.952222,claude,pypsa,high,50.0886,8.9534,manual,1.0
+ReserveKW Staudinger 5,ReserveKW Staudinger 5,agree  < 1 km,0.103548080585888,50.088056,8.952222,claude,pypsa,high,50.0886,8.9534,manual,1.0
+Staudinger 5,Staudinger 5,agree  < 1 km,0.10052499630397455,50.088056,8.952222,claude,pypsa,high,50.088553,8.953399000000001,opsd_exact,1.0
+Kernkraftwerk Neckarwestheim Block 2,Kernkraftwerk Neckarwestheim Block 2,agree  < 1 km,0.09440815919661072,49.040019,9.176408,claude,pypsa,high,49.0408,9.1759,psa_exact,0.95
+NIEHL-31-GUD,NIEHL-31-GUD,agree  < 1 km,0.09220917018884882,50.974163,6.988567666666666,claude,pypsa,high,50.97492,6.98803,opsd_exact,1.0
+Brokdorf,Brokdorf,agree  < 1 km,0.08552206604501932,53.85083,9.34472,claude,pypsa,high,53.851095,9.345944,opsd_exact,1.0
+50H UW Wessin,50H UW Wessin,agree  < 1 km,0.07141012904747869,53.56171465,11.7185859,claude,pypsa,high,53.562134,11.717767,psa_exact,0.95
+Markersbach (Standort),Markersbach (Standort),agree  < 1 km,0.07099832181576142,50.52,12.88,claude,pypsa,high,50.51938,12.87976,opsd_exact,1.0
+LAUSWARD_AGUD,LAUSWARD_AGUD,agree  < 1 km,0.0655667472473428,51.220831,6.731547,claude,pypsa,high,51.2214,6.7313,manual,1.0
+LAUSWARD_GUDF,LAUSWARD_GUDF,agree  < 1 km,0.0655667472473428,51.220831,6.731547,claude,pypsa,high,51.2214,6.7313,manual,1.0
+50H Leipzig Nord GuD,50H Leipzig Nord GuD,agree  < 1 km,0.06384043094435804,51.351555600000005,12.3777212,claude,pypsa,high,51.35119,12.37843,opsd_exact,1.0
+Irsching 3,Irsching 3,agree  < 1 km,0.057052303720761574,48.767533,11.580019,claude,pypsa,high,48.76702,11.580033,opsd_exact,1.0
+Irsching 4,Irsching 4,agree  < 1 km,0.057052303720761574,48.767533,11.580019,claude,pypsa,high,48.76702,11.580033,opsd_exact,1.0
+Irsching 5,Irsching 5,agree  < 1 km,0.057052303720761574,48.767533,11.580019,claude,pypsa,high,48.76702,11.580033,opsd_exact,1.0
+Irsching 6 (bnBm),Irsching 6 (bnBm),agree  < 1 km,0.057052303720761574,48.767533,11.580019,claude,pypsa,high,48.76702,11.580033,opsd_exact,1.0
+Grohnde,Grohnde,agree  < 1 km,0.050303885402497174,52.0352,9.413333,claude,pypsa,high,52.035641,9.413497,opsd_exact,1.0
+Waldeck 1,Waldeck 1,agree  < 1 km,0.047581010162669045,51.16743333333333,9.046336666666669,claude,pypsa,high,51.167139,9.046832,opsd_exact,1.0
+Waldeck 5,Waldeck 5,agree  < 1 km,0.047581010162669045,51.16743333333333,9.046336666666669,claude,pypsa,high,51.167139,9.046832,opsd_exact,1.0
+Waldeck 6,Waldeck 6,agree  < 1 km,0.047581010162669045,51.16743333333333,9.046336666666669,claude,pypsa,high,51.167139,9.046832,opsd_exact,1.0
+50H UW Putlitz,50H UW Putlitz,agree  < 1 km,0.04440746981415911,53.32064570967742,12.02702829032258,claude,pypsa,high,53.321038,12.026903,psa_exact,0.95
+50H Bad Salzungen HKW,50H Bad Salzungen HKW,agree  < 1 km,0.043788783054503455,50.800018,10.221047,claude,pypsa,high,50.800266,10.220563,opsd_exact,1.0
+Kirchlengern GT 1,Kirchlengern GT 1,agree  < 1 km,0.04001191386332605,52.194951,8.648754,claude,pypsa,high,52.19507,8.6482,opsd_exact,1.0
+Pumpspeicherwerk Glems,Pumpspeicherwerk Glems,agree  < 1 km,0.033496446835463045,48.50519,9.28726,claude,pypsa,high,48.50499,9.28692,opsd_exact,1.0
+Emden 4 GT (KapRes),Emden 4 GT (KapRes),agree  < 1 km,0.030609877509712925,53.340524,7.210348,claude,pypsa,high,53.340748,7.210616,psa_exact,0.95
+Braunschweig BHKW,Braunschweig BHKW,agree  < 1 km,0.030589534718908403,52.295023,10.521684,claude,pypsa,high,52.295298,10.521672,opsd_exact,1.0
+Braunschweig DT,Braunschweig DT,agree  < 1 km,0.030589534718908403,52.295023,10.521684,claude,pypsa,medium,52.295298,10.521672,opsd_exact,1.0
+Frankfurt West 2,Frankfurt West 2,agree  < 1 km,0.028427624677068816,50.1109,8.6821,geocoded_match,geocoded,medium,50.1106444,8.6820917,nominatim,0.4
+Frankfurt West 3,Frankfurt West 3,agree  < 1 km,0.028427624677068816,50.1109,8.6821,geocoded_match,geocoded,medium,50.1106444,8.6820917,nominatim,0.4
+Frankfurt West 4,Frankfurt West 4,agree  < 1 km,0.028427624677068816,50.1109,8.6821,geocoded_match,geocoded,medium,50.1106444,8.6820917,nominatim,0.4
+Reservekraftwerk Walheim Block 1,Reservekraftwerk Walheim Block 1,agree  < 1 km,0.02529228401936253,49.017585,9.15769,claude,pypsa,high,49.017472,9.157389,opsd_exact,1.0
+Reservekraftwerk Walheim Block 2,Reservekraftwerk Walheim Block 2,agree  < 1 km,0.02529228401936253,49.017585,9.15769,claude,pypsa,high,49.017472,9.157389,opsd_exact,1.0
+BERGKAMEN_A,BERGKAMEN_A,agree  < 1 km,0.023433462421271988,51.636945,7.619083,claude,pypsa,high,51.63701,7.618760000000001,opsd_exact,1.0
+Netzreservekraftwerk BERGKAMEN_A,Netzreservekraftwerk BERGKAMEN_A,agree  < 1 km,0.023433462421271988,51.636945,7.619083,claude,pypsa,high,51.63701,7.618760000000001,opsd_exact,1.0
+HKW BARMEN 1,HKW BARMEN 1,agree  < 1 km,0.022943507551893626,51.269,7.2,claude,pypsa,high,51.268889,7.200278,opsd_exact,1.0
+50H Bernburg,50H Bernburg,agree  < 1 km,0.015436134397615183,51.80247366666666,11.751461,claude,pypsa,high,51.802609,11.751511,opsd_exact,1.0
+Thyrow A (KapRes),Thyrow A (KapRes),agree  < 1 km,0.015346508076670266,52.230249,13.302107,claude,pypsa,high,52.23015,13.30195,opsd_exact,1.0
+Thyrow A (SysRel),Thyrow A (SysRel),agree  < 1 km,0.015346508076670266,52.230249,13.302107,claude,pypsa,high,52.23015,13.30195,opsd_exact,1.0
+Thyrow B (KapRes),Thyrow B (KapRes),agree  < 1 km,0.015346508076670266,52.230249,13.302107,claude,pypsa,high,52.23015,13.30195,opsd_exact,1.0
+Thyrow B (SysRel),Thyrow B (SysRel),agree  < 1 km,0.015346508076670266,52.230249,13.302107,claude,pypsa,high,52.23015,13.30195,opsd_exact,1.0
+Thyrow C (KapRes),Thyrow C (KapRes),agree  < 1 km,0.015346508076670266,52.230249,13.302107,claude,pypsa,high,52.23015,13.30195,opsd_exact,1.0
+Thyrow C (SysRel),Thyrow C (SysRel),agree  < 1 km,0.015346508076670266,52.230249,13.302107,claude,pypsa,high,52.23015,13.30195,opsd_exact,1.0
+Thyrow D (KapRes),Thyrow D (KapRes),agree  < 1 km,0.015346508076670266,52.230249,13.302107,claude,pypsa,high,52.23015,13.30195,opsd_exact,1.0
+Thyrow D (SysRel),Thyrow D (SysRel),agree  < 1 km,0.015346508076670266,52.230249,13.302107,claude,pypsa,high,52.23015,13.30195,opsd_exact,1.0
+Thyrow E (KapRes),Thyrow E (KapRes),agree  < 1 km,0.015346508076670266,52.230249,13.302107,claude,pypsa,high,52.23015,13.30195,opsd_exact,1.0
+Thyrow E (SysRel),Thyrow E (SysRel),agree  < 1 km,0.015346508076670266,52.230249,13.302107,claude,pypsa,high,52.23015,13.30195,opsd_exact,1.0
+Wilhelmshaven (ENGIE),Wilhelmshaven (ENGIE),agree  < 1 km,0.005947815494561236,53.565866,8.146202,claude,pypsa,high,53.565819,8.146245,opsd_exact,1.0
+Audorf,Audorf,agree  < 1 km,0.005587897311462633,54.29068,9.72286,claude,pypsa,high,54.290672,9.722775,opsd_exact,1.0
+ReserveKW Irsching 3,ReserveKW Irsching 3,agree  < 1 km,0.0039247777651190046,48.767533,11.580019,claude,pypsa,high,48.7675,11.58,manual,1.0
+Itzehoe,Itzehoe,agree  < 1 km,0.0034868551668887473,53.96645,9.44951,claude,pypsa,high,53.966422,9.449486,opsd_exact,1.0
+50H Rostock Marienehe,50H Rostock Marienehe,agree  < 1 km,1.0362480907536391e-13,54.1256,12.083541000000002,claude,pypsa,high,54.1256,12.083541,psa_exact,0.95
+50H Berlin Mitte,50H Berlin Mitte,agree  < 1 km,0.0,52.51172,13.42092,claude,pypsa,high,52.51172,13.42092,psa_exact,0.95
+50H Leipzig Süd GuD,50H Leipzig Süd GuD,agree  < 1 km,0.0,51.297278,12.38509,claude,pypsa,high,51.297278,12.38509,psa_fuzzy,0.762
+BATTERIESPEICHER_NEURATH,BATTERIESPEICHER_NEURATH,agree  < 1 km,0.0,51.037649,6.612286,claude,pypsa,high,51.037649,6.612286,psa_exact,0.95
+Heizkraftwerk_Pforzheim,Heizkraftwerk_Pforzheim,agree  < 1 km,0.0,48.896998,8.725477,claude,pypsa,high,48.896998,8.725477,psa_exact,0.95
+Heizkraftwerk Stuttgart-Münster GT 88,Heizkraftwerk Stuttgart-Münster GT 88,agree  < 1 km,0.0,48.81365,9.21921,claude,pypsa,high,48.81365,9.21921,psa_fuzzy,0.776
+HKW Aalen,HKW Aalen,agree  < 1 km,0.0,48.823728,10.116537,claude,pypsa,high,48.823728,10.116537,psa_exact,0.95
+Knapsack 1,Knapsack 1,agree  < 1 km,0.0,50.858679,6.845286,claude,pypsa,high,50.858679,6.845286,psa_exact,0.95
+KNAPSACK_20,KNAPSACK_20,agree  < 1 km,0.0,50.858679,6.845286,claude,pypsa,high,50.858679,6.845286,psa_exact,0.95
+KNAPSACK_DT10,KNAPSACK_DT10,agree  < 1 km,0.0,50.858679,6.845286,claude,pypsa,high,50.858679,6.845286,psa_exact,0.95
+KNAPSACK_GT11,KNAPSACK_GT11,agree  < 1 km,0.0,50.858679,6.845286,claude,pypsa,high,50.858679,6.845286,psa_exact,0.95
+KNAPSACK_GT12,KNAPSACK_GT12,agree  < 1 km,0.0,50.858679,6.845286,claude,pypsa,high,50.858679,6.845286,psa_exact,0.95
+LEIPHEIM_10 (bnBm),LEIPHEIM_10 (bnBm),agree  < 1 km,0.0,48.434778,10.23254,claude,pypsa,high,48.434778,10.23254,psa_exact,0.95
+Marbach GT 4 (bnBm),Marbach GT 4 (bnBm),agree  < 1 km,0.0,48.9273875,9.231165,claude,pypsa,high,48.9273875,9.231165,psa_exact,0.95
+Reservekraftwerk Marbach DT 3,Reservekraftwerk Marbach DT 3,agree  < 1 km,0.0,48.9273875,9.231165,claude,pypsa,high,48.9273875,9.231165,psa_exact,0.95
+Reservekraftwerk Marbach GT 2,Reservekraftwerk Marbach GT 2,agree  < 1 km,0.0,48.9273875,9.231165,claude,pypsa,high,48.9273875,9.231165,psa_exact,0.95
+Reservekraftwerk Marbach GT 3,Reservekraftwerk Marbach GT 3,agree  < 1 km,0.0,48.9273875,9.231165,claude,pypsa,high,48.9273875,9.231165,psa_exact,0.95
+Robert Frank 4 GT (KapRes),Robert Frank 4 GT (KapRes),agree  < 1 km,0.0,52.54585,9.11363,claude,pypsa,high,52.54585,9.11363,psa_exact,0.95
+SW München KW-Pool,SW München KW-Pool,agree  < 1 km,0.0,48.1351,11.582,mastr_match,geocoded,low,48.1351,11.582,manual,1.0
+OWP Borkum Riffgrund 3,OWP Borkum Riffgrund 3,diverge 10–50 km,49.66982591722707,53.99370087557604,6.402609059907834,claude,pypsa,high,53.5809,6.6915,gazetteer,0.5
+OWP Borkum Riffgrund 3 Test,OWP Borkum Riffgrund 3 Test,diverge 10–50 km,49.66982591722707,53.99370087557604,6.402609059907834,claude,pypsa,high,53.5809,6.6915,gazetteer,0.5
+BAG NWAK-Cluster 15 Pleinting,BAG NWAK-Cluster 15 Pleinting,diverge 10–50 km,49.20495501720844,48.65,12.45,cluster_match,geocoded,medium,48.658598,13.119736,wikipedia,0.85
+BAG NWAK-Cluster 02 Oberhaid-Redwitz,BAG NWAK-Cluster 02 Oberhaid-Redwitz,diverge 10–50 km,49.1893890328445,50.135,11.427,cluster_match,geocoded,high,49.9325,10.8147,gazetteer,0.5
+GERSTEINW_DTF2 (KapRes),GERSTEINW_DTF2 (KapRes),diverge 10–50 km,43.61975051131108,51.6886345,7.084752,claude,pypsa,medium,51.673333,7.716944,manual,1.0
+50H PV Bartow,50H PV Bartow,diverge 10–50 km,42.620982540868354,53.5082,13.6833,mastr_match,geocoded,medium,53.826522,13.322914,psa_exact,0.95
+BAG NWAK-Cluster 13 Etzenricht,BAG NWAK-Cluster 13 Etzenricht,diverge 10–50 km,42.229676094148985,49.96,11.8,mastr_match,geocoded,medium,49.6333,12.1,gazetteer,0.5
+AMP_WESTNETZ_SAUERLAND_TEL,AMP_WESTNETZ_SAUERLAND_TEL,diverge 10–50 km,41.33016342496423,51.45,8.15,geocoded_match,geocoded,low,51.1,8.35,grid_area_region,0.3
+50H UW Schönewalde,50H UW Schönewalde,diverge 10–50 km,41.01027271685931,51.963138333333326,13.773327666666669,claude,pypsa,medium,51.81413889,13.22669444,wikipedia,0.85
+AVA Cluster Dollern,AVA Cluster Dollern,diverge 10–50 km,40.71068245008294,53.64,8.96,cluster_match,geocoded,medium,53.5333,9.55,gazetteer,0.5
+AVA Cluster Twistetal,AVA Cluster Twistetal,diverge 10–50 km,37.278290569592244,51.65,8.92,mastr_match,geocoded,medium,51.317481,8.988592,psa_exact,0.95
+AVA Cluster Lehrte,AVA Cluster Lehrte,diverge 10–50 km,37.162853019003,52.02,10.08,cluster_match,geocoded,high,52.350622,10.000304,psa_exact,0.95
+Vorarlberger Ilwerke,Vorarlberger Ilwerke,diverge 10–50 km,36.67746710327079,47.3333,10.1667,mastr_match,geocoded,low,47.488,9.73622222,wikipedia,0.85
+OWP UW Dörpen-West,OWP UW Dörpen-West,diverge 10–50 km,35.56941596967589,53.2667,7.65,mastr_match,geocoded,low,52.97785,7.420967,psa_fuzzy_dir,0.664
+OWP UW Emden-Ost,OWP UW Emden-Ost,diverge 10–50 km,34.02916353746545,53.636941,7.502316,claude,pypsa,medium,53.384675,7.21097,psa_exact_dir,0.855
+BAG NWAK-Cluster 03 Bergrheinfeld-Schweinfurt,BAG NWAK-Cluster 03 Bergrheinfeld-Schweinfurt,diverge 10–50 km,31.297405335585914,50.29,10.23,mastr_match,geocoded,high,50.0103,10.1809,gazetteer,0.5
+AMP_WESTNETZ_NAHE_TEL,AMP_WESTNETZ_NAHE_TEL,diverge 10–50 km,30.89365510134733,49.75,7.88,mastr_match,geocoded,none,49.75,7.45,grid_area_region,0.3
+OWP UW Büttel,OWP UW Büttel,diverge 10–50 km,30.524091295906363,54.15,9.0,mastr_match,geocoded,high,53.910965,9.229799,psa_fuzzy,0.738
+SHN Cluster Süderdonn T411,SHN Cluster Süderdonn T411,diverge 10–50 km,28.80377150413805,54.12,8.75,mastr_match,geocoded,medium,53.9818,9.1232,unresolved,1.0
+SHN Cluster Süderdonn T412 T413,SHN Cluster Süderdonn T412 T413,diverge 10–50 km,28.80377150413805,54.12,8.75,mastr_match,geocoded,medium,53.9818,9.1232,unresolved,1.0
+BAG NWAK-Cluster 01 Mechlenreuth,BAG NWAK-Cluster 01 Mechlenreuth,diverge 10–50 km,28.58200563280303,50.299,12.151,mastr_match,geocoded,medium,50.1718024,11.801791,nominatim,0.4
+Kühtai 2 (TIWAG),Kühtai 2 (TIWAG),diverge 10–50 km,27.20018893799892,47.28,11.35,geocoded_unmatched,geocoded,none,47.207784,11.005735,opsd_exact,1.0
+UW Garrel-Ost alpha,UW Garrel-Ost alpha,diverge 10–50 km,26.097910730191504,53.1667,8.1667,geocoded_match,geocoded,high,52.95,8.0167,gazetteer,0.5
+Kühtai 2 (Uniper),Kühtai 2 (Uniper),diverge 10–50 km,25.17571704078085,47.25,11.3333,geocoded_unmatched,geocoded,none,47.207784,11.005735,opsd_exact,1.0
+AVA Cluster Wechold,AVA Cluster Wechold,diverge 10–50 km,24.95991029111167,52.78,9.48,cluster_match,geocoded,medium,52.846323,9.125198,wikipedia,0.85
+Kühtai 1 (TIWAG),Kühtai 1 (TIWAG),diverge 10–50 km,23.65150494843349,47.32,11.272,geocoded_unmatched,geocoded,none,47.207784,11.005735,opsd_exact,1.0
+AMP_WESTNETZ_MUENSTERLAND_TEL,AMP_WESTNETZ_MUENSTERLAND_TEL,diverge 10–50 km,23.453634280585565,51.97,7.62,geocoded_match,geocoded,medium,52.1,7.35,grid_area_region,0.3
+AVA Cluster Sottrum T411 T413,AVA Cluster Sottrum T411 T413,diverge 10–50 km,21.92312199040611,53.24,9.49,cluster_match,geocoded,medium,53.1167,9.2333,gazetteer,0.5
+AVA Cluster Landesbergen,AVA Cluster Landesbergen,diverge 10–50 km,21.742734302776675,52.3833,9.1667,cluster_match,geocoded,high,52.575945,9.111688,psa_exact,0.95
+SHN Cluster Kummerfeld,SHN Cluster Kummerfeld,diverge 10–50 km,19.99204293259171,53.86,9.68,mastr_match,geocoded,medium,53.6926,9.791,gazetteer,0.5
+BAG NWAK-Cluster 08 Neufinsing,BAG NWAK-Cluster 08 Neufinsing,diverge 10–50 km,19.32178761746562,48.31,11.58,geocoded_cluster,geocoded,medium,48.2210641,11.8042527,nominatim,0.4
+50H Hamburg Wedel1,50H Hamburg Wedel1,diverge 10–50 km,19.203316139450198,53.568151,9.724102,claude,pypsa,high,53.57172178217822,10.01485742574257,gazetteer,0.5
+50H Hamburg Wedel1 Block1,50H Hamburg Wedel1 Block1,diverge 10–50 km,19.203316139450198,53.568151,9.724102,claude,pypsa,high,53.57172178217822,10.01485742574257,gazetteer,0.5
+AVA Cluster Sottrum T412,AVA Cluster Sottrum T412,diverge 10–50 km,19.03342671153756,52.97,9.38,cluster_match,geocoded,high,53.1167,9.2333,gazetteer,0.5
+SHN Cluster Handewitt T411 T413,SHN Cluster Handewitt T411 T413,diverge 10–50 km,16.504516082808617,54.72,9.07,cluster_match,geocoded,high,54.7645,9.3153,gazetteer,0.5
+SHN Cluster Itzehoe West,SHN Cluster Itzehoe West,diverge 10–50 km,15.77436010363204,53.871,9.29,mastr_match,geocoded,high,53.921,9.5153,gazetteer,0.5
+SHN Cluster Wilster West,SHN Cluster Wilster West,diverge 10–50 km,15.730195701516301,53.85,9.15,mastr_match,geocoded,high,53.916538,9.361797,psa_exact_dir,0.855
+WP_JUECHEN A44N,WP_JUECHEN A44N,diverge 10–50 km,14.725200608366354,51.2142,6.3931,mastr_match,geocoded,none,51.1,6.5,gazetteer,0.5
+Netzreservekraftwerk VOELKLINGEN_HKV,Netzreservekraftwerk VOELKLINGEN_HKV,diverge 10–50 km,13.55550986908053,49.3512,6.7509,claude,pypsa,medium,49.2516,6.8587,gazetteer,0.5
+Netzreservekraftwerk VOELKLINGEN_MKV,Netzreservekraftwerk VOELKLINGEN_MKV,diverge 10–50 km,13.55550986908053,49.3512,6.7509,claude,pypsa,medium,49.2516,6.8587,gazetteer,0.5
+VOELKLINGEN_HKV,VOELKLINGEN_HKV,diverge 10–50 km,13.55550986908053,49.3512,6.7509,claude,pypsa,medium,49.2516,6.8587,gazetteer,0.5
+VOELKLINGEN_MKV,VOELKLINGEN_MKV,diverge 10–50 km,13.55550986908053,49.3512,6.7509,claude,pypsa,medium,49.2516,6.8587,gazetteer,0.5
+AVA Cluster Alfstedt,AVA Cluster Alfstedt,diverge 10–50 km,13.101245142472841,53.54,9.23,cluster_match,geocoded,high,53.54581,9.031961,psa_exact,0.95
+50H OWP Baltic 1+2,50H OWP Baltic 1+2,diverge 10–50 km,12.034749490034883,54.90497465346535,13.056202386138612,claude,pypsa,high,54.984763,13.183523,psa_exact,0.38
+50H OWP Baltic 1+2 Nord,50H OWP Baltic 1+2 Nord,diverge 10–50 km,12.034749490034883,54.90497465346535,13.056202386138612,claude,pypsa,high,54.984763,13.183523,psa_exact_dir,0.342
+50H OWP Baltic 1+2 Süd MIO,50H OWP Baltic 1+2 Süd MIO,diverge 10–50 km,12.034749490034883,54.90497465346535,13.056202386138612,claude,pypsa,high,54.984763,13.183523,psa_exact_dir,0.342
+50H OWP MIO Baltic 1+2,50H OWP MIO Baltic 1+2,diverge 10–50 km,12.034749490034883,54.90497465346535,13.056202386138612,claude,pypsa,high,54.984763,13.183523,manual,1.0
+WP Emsland,WP Emsland,diverge 10–50 km,11.613126820667544,53.0,7.45,geocoded_match,geocoded,medium,52.9,7.4,grid_area_region,0.3
+AVA Cluster Würgassen,AVA Cluster Würgassen,diverge 10–50 km,11.54597945515129,51.64,9.24,cluster_match,geocoded,medium,51.6445021,9.4071653,nominatim,0.4
+SHN Cluster Handewitt T411,SHN Cluster Handewitt T411,diverge 10–50 km,11.235258403603614,54.7,9.45,cluster_match,geocoded,high,54.7645,9.3153,gazetteer,0.5
+SHN Cluster Handewitt T414 T415,SHN Cluster Handewitt T414 T415,diverge 10–50 km,11.235258403603614,54.7,9.45,cluster_match,geocoded,high,54.7645,9.3153,gazetteer,0.5
+SHN Cluster Schuby West,SHN Cluster Schuby West,diverge 10–50 km,11.018039833526693,54.62,9.42,cluster_match,geocoded,high,54.521057,9.429227,psa_exact_dir,0.855
+50H UW MIO Baltic 1+2,50H UW MIO Baltic 1+2,diverge 10–50 km,10.86504591532828,54.90497465346535,13.056202386138612,claude,pypsa,high,54.9733,13.1778,manual,1.0
+SHN Cluster Jardelund,SHN Cluster Jardelund,diverge 10–50 km,10.498158141634052,54.806,9.067,cluster_match,geocoded,high,54.852163,9.209976,psa_exact,0.95
+SHN Cluster Handewitt T412 T413,SHN Cluster Handewitt T412 T413,diverge 10–50 km,10.289330235163666,54.68,9.25,cluster_match,geocoded,high,54.7645,9.3153,gazetteer,0.5
+HAMMUENTROP_10,HAMMUENTROP_10,diverge 10–50 km,10.153127906674094,51.6764,7.8226,mastr_match,geocoded,high,51.680278,7.969722,opsd_city,0.55
+HAMMUENTROP_20,HAMMUENTROP_20,diverge 10–50 km,10.153127906674094,51.6764,7.8226,mastr_match,geocoded,high,51.680278,7.969722,opsd_city,0.55
+50H Berlin Reuter West,50H Berlin Reuter West,diverge 10–50 km,10.143039411568047,52.53207166666667,13.241943999999998,claude,pypsa,high,52.5050065934066,13.38509945054945,gazetteer,0.5
+Leitzach 1 M11,Leitzach 1 M11,diverge 10–50 km,10.037466997687849,47.874,11.871,claude,pypsa,medium,47.78379,11.87586,wikipedia,0.85
+Leitzach 2 M21,Leitzach 2 M21,diverge 10–50 km,10.037466997687849,47.874,11.871,claude,pypsa,medium,47.78379,11.87586,wikipedia,0.85
+Leitzach 2 M22,Leitzach 2 M22,diverge 10–50 km,10.037466997687849,47.874,11.871,claude,pypsa,medium,47.78379,11.87586,wikipedia,0.85
+Leitzach Pool,Leitzach Pool,diverge 10–50 km,10.037466997687849,47.874,11.871,claude,pypsa,high,47.78379,11.87586,manual,1.0
+50H_EDIS_CR_LV_NORD,,name only in lookup,,,,aggregated,none,,,,,
+50H_EDIS_CR_LV_WU,,name only in lookup,,,,aggregated,none,,,,,
+50H_MNS_CR_LV_OST,,name only in lookup,,,,aggregated,none,,,,,
+Börse,,name only in lookup,,,,aggregated,none,,,,,
+CROC Cluster Perleberg,,name only in lookup,,53.13,11.93,mastr_match,geocoded,high,,,,
+Hannover-Linden GuD,,name only in lookup,,51.3110488,12.002885,claude,pypsa,medium,,,,
+"Heizkraftwerk Stuttgart-Münster GT 16,17,18",,name only in lookup,,48.81348,9.21823,claude,pypsa,high,,,,
+Heizkraftwerk Stuttgart-Münster GT 87,,name only in lookup,,48.81365,9.21921,claude,pypsa,high,,,,
+INFRA_HOE_GTX8,,name only in lookup,,50.091838,8.531305,claude,pypsa,high,,,,
+,10YDE-RWENET---I,name only in matcher,,,,,,,,,skipped_grid_area_market,0.0
+,Abschaltbare Last (RZ TenneT DE),name only in matcher,,,,,,,,,skipped_grid_area_market,0.0
+,Amprion Abruf abschaltbare Lasten,name only in matcher,,,,,,,,,skipped_grid_area_market,0.0
+,Amprion NR BK,name only in matcher,,,,,,,,,skipped_grid_area_market,0.0
+,Auslaendische-Netzreserve,name only in matcher,,,,,,,,,skipped_grid_area_market,0.0
+,BASF KW-Park,name only in matcher,,,,,,,49.955,7.31,grid_area_dso,0.2
+,Bergkamen,name only in matcher,,,,,,,51.63701,7.618760000000001,opsd_exact,1.0
+,Bexbach,name only in matcher,,,,,,,49.363481,7.237136,opsd_exact,1.0
+,Bl. C,name only in matcher,,,,,,,,,unresolved,0.0
+,Boxberg,name only in matcher,,,,,,,51.41626317,14.56194878,opsd_exact,1.0
+,"Boxberg, Jänschwalde",name only in matcher,,,,,,,51.53482028,14.35312271,manual,1.0
+,"Boxberg, Jänschwalde, Lippendorf",name only in matcher,,,,,,,51.53482028,14.35312271,manual,1.0
+,"Boxberg,Jänschwalde,Lippendorf (LEAG),Schwarze Pumpe",name only in matcher,,,,,,,51.53482028,14.35312271,manual,1.0
+,"Boxberg, Jänschwalde, Lippendorf, Moorburg, Schkopau, Schwarze Pumpe",name only in matcher,,,,,,,51.53482028,14.35312271,manual,0.0
+,"Boxberg, Jänschwalde, Lippendorf, Rostock, Schkopau, Schwarze Pumpe",name only in matcher,,,,,,,51.53482028,14.35312271,manual,0.0
+,"Boxberg, Jänschwalde, Lippendorf, Schkopau",name only in matcher,,,,,,,51.53482028,14.35312271,manual,0.0
+,"Boxberg, Jänschwalde, Lippendorf, Schwarze Pumpe",name only in matcher,,,,,,,51.53482028,14.35312271,manual,1.0
+,"Boxberg,Jänschwalde,Lippendorf Vattenfall (EPH),Schkopau,Schwarze Pumpe",name only in matcher,,,,,,,51.53482028,14.35312271,manual,0.0
+,"Boxberg,Jänschwalde,Lippendorf Vattenfall (EPH),Schwarze Pumpe",name only in matcher,,,,,,,51.53482028,14.35312271,manual,1.0
+,"Boxberg, Jänschwalde, Lippendorf VE, Moorburg, Schkopau, Schwarze Pumpe",name only in matcher,,,,,,,51.53482028,14.35312271,manual,0.0
+,"Boxberg, Jänschwalde, Lippendorf VE, Schkopau, Schwarze Pumpe",name only in matcher,,,,,,,51.53482028,14.35312271,manual,1.0
+,"Boxberg, Jänschwalde, Rostock, Schwarze Pumpe",name only in matcher,,,,,,,51.53482028,14.35312271,manual,1.0
+,"Boxberg,Jänschwalde,Schwarze Pumpe",name only in matcher,,,,,,,51.53482028,14.35312271,manual,1.0
+,"Boxberg, Schwarze Pumpe",name only in matcher,,,,,,,51.53482028,14.35312271,manual,1.0
+,Bremen 5,name only in matcher,,,,,,,53.051692,8.7957,psa_exact,0.95
+,Bremen 6,name only in matcher,,,,,,,53.051692,8.7957,psa_exact,0.95
+,Brokdorf (EON),name only in matcher,,,,,,,53.851095,9.345944,opsd_exact,1.0
+,Buschhaus,name only in matcher,,,,,,,52.17237156,10.97682873,opsd_exact,1.0
+,CB-Redispatch,name only in matcher,,,,,,,,,unresolved,0.0
+,diverse,name only in matcher,,,,,,,,,unresolved,0.0
+,DT10,name only in matcher,,,,,,,,,unresolved,0.0
+,Duisburg_HKW_3,name only in matcher,,,,,,,51.39066,6.74778,psa_exact,0.95
+,EES KW-Pool,name only in matcher,,,,,,,,,skipped_grid_area_unresolvable,0.0
+,EGC KW-Pool,name only in matcher,,,,,,,,,skipped_grid_area_unresolvable,0.0
+,Emden 4 GT,name only in matcher,,,,,,,53.340748,7.210616,psa_exact,0.95
+,EMS B,name only in matcher,,,,,,,52.481878,7.306658,manual,1.0
+,Ems D,name only in matcher,,,,,,,52.481878,7.306658,manual,1.0
+,Emsland,name only in matcher,,,,,,,52.481878,7.306658,opsd_exact,1.0
+,Emsland B,name only in matcher,,,,,,,52.481878,7.306658,opsd_exact,1.0
+,Emsland C,name only in matcher,,,,,,,52.481878,7.306658,opsd_exact,1.0
+,Emsland D,name only in matcher,,,,,,,52.481878,7.306658,opsd_exact,1.0
+,Emsland (EON),name only in matcher,,,,,,,52.481878,7.306658,opsd_exact,1.0
+,EMSLAND_GTB2,name only in matcher,,,,,,,52.481878,7.306658,opsd_exact,1.0
+,EMSLAND_GTC2,name only in matcher,,,,,,,52.481878,7.306658,opsd_exact,1.0
+,Emsland KKE,name only in matcher,,,,,,,52.472897,7.32414,psa_exact,0.95
+,EnBW KW-Pool,name only in matcher,,,,,,,48.66,9.004999999999999,grid_area_dso,0.2
+,EnBW Trading GmbH,name only in matcher,,,,,,,,,unresolved,0.0
+,EnDK KW-Pool,name only in matcher,,,,,,,,,skipped_grid_area_unresolvable,0.0
+,Ensdorf,name only in matcher,,,,,,,49.293248,6.770936999999999,opsd_exact,1.0
+,Freimann GT 1,name only in matcher,,,,,,,48.188278,11.594954,opsd_exact,1.0
+,Frimmersdorf,name only in matcher,,,,,,,51.05744518,6.577080395,opsd_exact,1.0
+,GDF Suez KW-Pool,name only in matcher,,,,,,,,,skipped_grid_area_unresolvable,0.0
+,Gersteinwerk,name only in matcher,,,,,,,51.672453,7.709947,opsd_exact,1.0
+,GKW 1,name only in matcher,,,,,,,,,unresolved,0.0
+,GKW 2,name only in matcher,,,,,,,,,unresolved,0.0
+,GK-West,name only in matcher,,,,,,,,,unresolved,0.0
+,Goldisthal,name only in matcher,,,,,,,50.5167,11.0,gazetteer,0.5
+,Grafenrheinfeld,name only in matcher,,,,,,,49.984424,10.181753,opsd_exact,1.0
+,Grosskraftwerk Mannheim AG,name only in matcher,,,,,,,49.51644467,8.460246482,opsd_fuzzy,0.756
+,GT12,name only in matcher,,,,,,,,,unresolved,0.0
+,GTKW Darmstadt,name only in matcher,,,,,,,49.884879,8.650067,opsd_exact,1.0
+,GTKW Thyrow,name only in matcher,,,,,,,52.2526,13.2396,gazetteer,0.5
+,Gundremmingen,name only in matcher,,,,,,,48.515,10.4016,psa_exact,0.95
+,Gundremmingen B (EON),name only in matcher,,,,,,,48.515,10.4016,psa_exact,0.95
+,Hamm Uentrop,name only in matcher,,,,,,,51.680278,7.969722,opsd_city,0.55
+,Heizkraftwerk Altbach/Deizisau,name only in matcher,,,,,,,48.717611,9.374917,opsd_exact,1.0
+,Heizkraftwerk Altbach/Deizisau Block 1,name only in matcher,,,,,,,48.717611,9.374917,opsd_exact,1.0
+,Heizkraftwerk Heilbronn,name only in matcher,,,,,,,49.177334,9.206318,opsd_exact,1.0
+,Heizkraftwerk Stuttgart-Münster,name only in matcher,,,,,,,48.81365,9.21921,psa_fuzzy,0.776
+,Heizkraftwerk Stuttgart-Münster GT,name only in matcher,,,,,,,48.81365,9.21921,psa_fuzzy,0.776
+,Heizkraftwerk Stuttgart-Münster GT 16,name only in matcher,,,,,,,48.81365,9.21921,psa_fuzzy,0.776
+,Herne,name only in matcher,,,,,,,51.550753,7.187481,opsd_exact,1.0
+,HKV,name only in matcher,,,,,,,,,unresolved,0.0
+,Hohenwarte 2,name only in matcher,,,,,,,50.60638889,11.48166667,wikipedia,0.85
+,Hohewarte II,name only in matcher,,,,,,,53.858254,10.7184926,nominatim,0.4
+,Ibbenbüren,name only in matcher,,,,,,,52.28881179,7.747906179,opsd_exact,1.0
+,Ingolstadt 3,name only in matcher,,,,,,,48.761882,11.50246,psa_exact,0.95
+,Ingolstadt 4,name only in matcher,,,,,,,48.761882,11.50246,psa_exact,0.95
+,Isar 2,name only in matcher,,,,,,,48.6046,12.29507,opsd_exact,1.0
+,Isar 2 (EON),name only in matcher,,,,,,,48.6046,12.29507,opsd_exact,1.0
+,Jänschwalde,name only in matcher,,,,,,,51.83444099,14.45903778,opsd_exact,1.0
+,"Jänschwalde, Lippendorf, Schkopau",name only in matcher,,,,,,,51.53482028,14.35312271,manual,1.0
+,"Jänschwalde,Schwarze Pumpe",name only in matcher,,,,,,,51.53482028,14.35312271,manual,1.0
+,Kaunertal,name only in matcher,,,,,,,,,unresolved,0.0
+,Kernkraftwerk Neckarwestheim,name only in matcher,,,,,,,49.0408,9.1759,psa_exact,0.95
+,Kernkraftwerk Philippsburg,name only in matcher,,,,,,,49.252722,8.435436,opsd_exact,1.0
+,Kernkraftwerk Philippsburg Block 2,name only in matcher,,,,,,,49.252722,8.435436,opsd_exact,1.0
+,Kiel,name only in matcher,,,,,,,54.33945,10.1766,opsd_exact,1.0
+,KMW_KW2_DT,name only in matcher,,,,,,,,,unresolved,0.0
+,Knapsack,name only in matcher,,,,,,,50.858679,6.845286,psa_exact,0.95
+,Knapsack Block 10,name only in matcher,,,,,,,50.858679,6.845286,psa_exact,0.95
+,Knepper,name only in matcher,,,,,,,51.56846926,7.349182511,opsd_exact,1.0
+,Koepchenwerk,name only in matcher,,,,,,,51.41048,7.453139999999999,opsd_exact,1.0
+,Kraftwerk Bexbach,name only in matcher,,,,,,,49.363481,7.237136,opsd_exact,1.0
+,Kraftwerk Lippendorf,name only in matcher,,,,,,,51.182122,12.373287,opsd_exact,1.0
+,Kraftwerk Mainz Wiesbaden,name only in matcher,,,,,,,49.99256363636363,8.248863636363637,gazetteer,0.5
+,Kraftwerk Marbach,name only in matcher,,,,,,,48.9273875,9.231165,psa_exact,0.95
+,Kraftwerk Walheim,name only in matcher,,,,,,,49.017472,9.157389,opsd_exact,1.0
+,KW Buschhaus,name only in matcher,,,,,,,52.17237156,10.97682873,opsd_exact,1.0
+,KW Emsland D1. D2. D0,name only in matcher,,,,,,,52.9,7.4,grid_area_region,0.3
+,KW Grohnde,name only in matcher,,,,,,,52.035641,9.413497,opsd_exact,1.0
+,KW Knapsack 1,name only in matcher,,,,,,,50.858679,6.845286,psa_exact,0.95
+,KWNIEHL,name only in matcher,,,,,,,,,unresolved,0.0
+,Lausward,name only in matcher,,,,,,,,,unresolved,0.0
+,Lippendorf (LEAG),name only in matcher,,,,,,,51.182122,12.373287,opsd_exact,1.0
+,Lippendorf Vattenfall,name only in matcher,,,,,,,51.173977,12.3716883,nominatim,0.4
+,Lippendorf Vattenfall (EPH),name only in matcher,,,,,,,51.173977,12.3716883,nominatim,0.4
+,Lünen,name only in matcher,,,,,,,51.61403992,7.481253973999999,opsd_exact,1.0
+,Lünen 7,name only in matcher,,,,,,,51.61403992,7.481253973999999,opsd_exact,1.0
+,Markersbach,name only in matcher,,,,,,,50.5354,12.8615,gazetteer,0.5
+,Markesbach,name only in matcher,,,,,,,50.51938,12.87976,opsd_fuzzy,0.809
+,MEAS,name only in matcher,,,,,,,,,unresolved,0.0
+,Moorburg,name only in matcher,,,,,,,53.486245,9.953149,opsd_exact,1.0
+,MRL BK TransnetBW,name only in matcher,,,,,,,,,skipped_grid_area_market,0.0
+,München Nord 1,name only in matcher,,,,,,,48.14369733333334,11.559808,gazetteer,0.5
+,München Süd DT 60,name only in matcher,,,,,,,48.14369733333334,11.559808,gazetteer,0.5
+,München Süd GT 2,name only in matcher,,,,,,,48.14369733333334,11.559808,gazetteer,0.5
+,München Süd GT 3,name only in matcher,,,,,,,48.14369733333334,11.559808,gazetteer,0.5
+,München Süd GT 62,name only in matcher,,,,,,,48.14369733333334,11.559808,gazetteer,0.5
+,Netzreservekraftwerk Bexbach,name only in matcher,,,,,,,49.363481,7.237136,opsd_exact,1.0
+,Netzreservekraftwerk Darmstadt,name only in matcher,,,,,,,49.863,8.681,psa_exact,0.95
+,Netzreservekraftwerk Darmstadt/GTKW,name only in matcher,,,,,,,49.8718375,8.653300000000002,gazetteer,0.5
+,Netzreservekraftwerk KMW 2,name only in matcher,,,,,,,,,unresolved,0.0
+,Netzreservekraftwerk Weiher,name only in matcher,,,,,,,49.33413028,7.031355927999999,opsd_exact,1.0
+,Neurath,name only in matcher,,,,,,,51.039475,6.615041000000001,opsd_exact,1.0
+,Niederaußem,name only in matcher,,,,,,,50.995692,6.669039,opsd_exact,1.0
+,NIEDERAUSSEM_D,name only in matcher,,,,,,,50.995692,6.669039,opsd_exact,1.0
+,Niederrad 2,name only in matcher,,,,,,,50.0856,8.62785,opsd_exact,1.0
+,Pumpspeicherwerk Schluchseegruppe RZ TNG,name only in matcher,,,,,,,,,unresolved,0.0
+,RDK & Heilbronn,name only in matcher,,,,,,,49.14191666666667,9.205183333333332,gazetteer,0.5
+,Redispatch BK,name only in matcher,,,,,,,,,unresolved,0.0
+,Redispatch DE<>CH: Vertrag ID,name only in matcher,,,,,,,,,unresolved,0.0
+,Reservekraftwerk Heilbronn,name only in matcher,,,,,,,49.177334,9.206318,opsd_exact,1.0
+,Reservekraftwerk Heizkraftwerk Altbach/Deizisau Block 1,name only in matcher,,,,,,,48.717611,9.374917,opsd_exact,1.0
+,Reservekraftwerk Ingolstadt 3,name only in matcher,,,,,,,48.761882,11.50246,psa_exact,0.95
+,Reservekraftwerk Ingolstadt 4,name only in matcher,,,,,,,48.761882,11.50246,psa_exact,0.95
+,Reservekraftwerk Irsching 3,name only in matcher,,,,,,,48.76702,11.580033,opsd_exact,1.0
+,Reservekraftwerk Irsching 4,name only in matcher,,,,,,,48.76702,11.580033,opsd_exact,1.0
+,Reservekraftwerk Irsching 5,name only in matcher,,,,,,,48.76702,11.580033,opsd_exact,1.0
+,Reservekraftwerk Mainz Wiesbaden Bl.2,name only in matcher,,,,,,,49.99256363636363,8.248863636363637,gazetteer,0.5
+,Reservekraftwerk Marbach,name only in matcher,,,,,,,48.9273875,9.231165,psa_exact,0.95
+,Reservekraftwerk Staudinger 4,name only in matcher,,,,,,,50.088553,8.953399000000001,opsd_exact,1.0
+,Reservekraftwerk Walheim,name only in matcher,,,,,,,49.017472,9.157389,opsd_exact,1.0
+,ReserveKW Irsching 4,name only in matcher,,,,,,,48.7675,11.58,manual,1.0
+,ReserveKW Irsching 5,name only in matcher,,,,,,,48.7675,11.58,manual,1.0
+,Reuter,name only in matcher,,,,,,,52.532146,13.246072,opsd_exact,1.0
+,Rheinhafen-Dampfkraftwerk Karlsruhe,name only in matcher,,,,,,,49.07,8.33,wikipedia,0.85
+,Rheinhafen-Dampfkraftwerk Karlsruhe Block 4,name only in matcher,,,,,,,49.07,8.33,wikipedia,0.85
+,Robert Frank 4 GT,name only in matcher,,,,,,,52.54585,9.11363,psa_exact,0.95
+,Römerbrücke Heizkraftwerk,name only in matcher,,,,,,,49.223899,7.014899000000001,opsd_exact,1.0
+,Rostock,name only in matcher,,,,,,,54.08816,12.13468,wikipedia,0.85
+,Schluchsee,name only in matcher,,,,,,,47.8167,8.1833,gazetteer,0.5
+,Schluchseewerk AG,name only in matcher,,,,,,,,,unresolved,0.0
+,Scholven,name only in matcher,,,,,,,51.60236802,7.009894096,opsd_exact,1.0
+,Schwarze Pumpe,name only in matcher,,,,,,,51.53482028,14.35312271,opsd_exact,1.0
+,Silz 1 (EON),name only in matcher,,,,,,,53.5195,12.44,gazetteer,0.5
+,Statkraft KW-Pool,name only in matcher,,,,,,,,,unresolved,0.0
+,Stummhafen,name only in matcher,,,,,,,,,unresolved,0.0
+,SW Hannover KW-Pool,name only in matcher,,,,,,,52.3759,9.732,manual,1.0
+,TransnetBW,name only in matcher,,,,,,,0.0,0.0,unresolved,0.0
+,VE-G KW Pool,name only in matcher,,,,,,,,,skipped_grid_area_unresolvable,0.0
+,verteilt auf die KW-Blöcke GK West 1/2,name only in matcher,,,,,,,,,unresolved,0.0
+,verteilt auf KW-Blöcke GK West1 /2,name only in matcher,,,,,,,,,unresolved,0.0
+,Vianden,name only in matcher,,,,,,,49.9522709,6.178345597000001,opsd_exact,1.0
+,VIANDEN_10,name only in matcher,,,,,,,49.9522709,6.178345597000001,opsd_exact,1.0
+,Völklingen,name only in matcher,,,,,,,49.25298,6.85666,wikipedia,0.85
+,Voerde,name only in matcher,,,,,,,51.576475,6.689428,opsd_exact,1.0
+,Vorarlberger Illwerke AG,name only in matcher,,,,,,,47.073096,9.873709,opsd_exact,1.0
+,Waldeck 3,name only in matcher,,,,,,,51.167139,9.046832,opsd_exact,1.0
+,Waldeck 4,name only in matcher,,,,,,,51.167139,9.046832,opsd_exact,1.0
+,Walsum,name only in matcher,,,,,,,51.528611,6.711944,opsd_exact,1.0
+,WALSUM_9,name only in matcher,,,,,,,51.528611,6.711944,opsd_exact,1.0
+,Walsum 9 undWeiher 3,name only in matcher,,,,,,,51.5351625,6.7166676,nominatim,0.4
+,Wehr,name only in matcher,,,,,,,50.4167,7.2167,gazetteer,0.5
+,Weiher,name only in matcher,,,,,,,49.33413028,7.031355927999999,opsd_exact,1.0
+,Weiher 3 und Walsum 9,name only in matcher,,,,,,,50.0927605,11.455443,nominatim,0.4
+,Weisweiler,name only in matcher,,,,,,,50.839167,6.321111,opsd_exact,1.0
+,Westfalen,name only in matcher,,,,,,,51.680278,7.969722,opsd_exact,1.0
+,Wilhelmshaven,name only in matcher,,,,,,,53.565819,8.146245,opsd_exact,1.0
+,Wilhelmshaven (EON),name only in matcher,,,,,,,53.565819,8.146245,opsd_exact,1.0
+,Wilhelmshaven (GDF),name only in matcher,,,,,,,53.565819,8.146245,opsd_exact,1.0
+,Wilhelmshaven GT (Uniper),name only in matcher,,,,,,,53.565819,8.146245,opsd_exact,1.0
+,Wolfsburg Nord B,name only in matcher,,,,,,,52.4097,10.7808,gazetteer,0.5
+,Wolfsburg West 1,name only in matcher,,,,,,,52.4097,10.7808,gazetteer,0.5
+,Zielitz,name only in matcher,,,,,,,52.29848,11.67963,opsd_exact,1.0
+,Zolling,name only in matcher,,,,,,,48.45534,11.8019,opsd_exact,1.0
+B¿rse,B¿rse,"shared, neither has coord",,,,unresolvable,none,none,,,unresolved,0.0
+D4_SWSW_ANT_RWE,D4_SWSW_ANT_RWE,"shared, neither has coord",,,,unresolvable,none,none,,,unresolved,0.0
+EnBW Pumpverbot,EnBW Pumpverbot,"shared, neither has coord",,,,unresolvable,none,none,,,unresolved,0.0
+GuDAnlageM120,GuDAnlageM120,"shared, neither has coord",,,,unresolvable,none,low,,,unresolved,0.0
+HKW_ROEMER_KW,HKW_ROEMER_KW,"shared, neither has coord",,,,unresolvable,none,none,,,unresolved,0.0
+HKW_ROEMER_LM600,HKW_ROEMER_LM600,"shared, neither has coord",,,,unresolvable,none,none,,,unresolved,0.0
+KMW_KW3,KMW_KW3,"shared, neither has coord",,,,unresolvable,none,none,,,unresolved,0.0
+KMW_KW5,KMW_KW5,"shared, neither has coord",,,,unresolvable,none,none,,,unresolved,0.0
+Notfall-RD mit AVA,Notfall-RD mit AVA,"shared, neither has coord",,,,aggregated,none,,,,skipped_grid_area_market,0.0
+Notfall-RD mit SHN,Notfall-RD mit SHN,"shared, neither has coord",,,,aggregated,none,,,,skipped_grid_area_market,0.0
+50H InfraLeuna IKW,50H InfraLeuna IKW,"shared, only lookup has coord",,53.09021175,14.2273665,claude,pypsa,medium,,,unresolved,0.0
+50H PV Witznitz,50H PV Witznitz,"shared, only lookup has coord",,51.801979,12.091698,claude,pypsa,medium,,,unresolved,0.0
+AVA Cluster Ohlensehlen,AVA Cluster Ohlensehlen,"shared, only lookup has coord",,52.95,9.35,cluster_match,geocoded,medium,,,unresolved,0.0
+BASF-GESAMTEINSPEISG,BASF-GESAMTEINSPEISG,"shared, only lookup has coord",,49.5519,8.4431,geocoded_match,geocoded,medium,,,skipped_grid_area_market,0.0
+CHEMIEPARK_MARL_KRAFTWERKE,CHEMIEPARK_MARL_KRAFTWERKE,"shared, only lookup has coord",,51.6804,7.096900000000001,claude,pypsa,high,,,unresolved,0.0
+CROC Cluster Görries,CROC Cluster Görries,"shared, only lookup has coord",,53.4167,11.6167,geocoded_cluster,geocoded,medium,,,unresolved,0.0
+EGM_DTS,EGM_DTS,"shared, only lookup has coord",,49.535937,8.464503,claude,pypsa,medium,,,unresolved,0.0
+GAMOR_ROEMER,GAMOR_ROEMER,"shared, only lookup has coord",,51.49151700000001,6.742047,claude,pypsa,medium,,,unresolved,0.0
+GTKW-DA-GT11,GTKW-DA-GT11,"shared, only lookup has coord",,49.898,8.654,claude,pypsa,medium,,,unresolved,0.0
+GTKW-DA-GT12,GTKW-DA-GT12,"shared, only lookup has coord",,49.898,8.654,claude,pypsa,medium,,,unresolved,0.0
+HKW_BA_B1_DT_23,HKW_BA_B1_DT_23,"shared, only lookup has coord",,51.6886345,7.084752,claude,pypsa,medium,,,unresolved,0.0
+HKW_BA_B1_GT_11,HKW_BA_B1_GT_11,"shared, only lookup has coord",,51.506036,8.979213,claude,pypsa,medium,,,unresolved,0.0
+HKW-OF-EVO,HKW-OF-EVO,"shared, only lookup has coord",,50.1,8.76,geocoded_match,geocoded,high,,,unresolved,0.0
+KKE_A,KKE_A,"shared, only lookup has coord",,52.472897,7.32414,claude,pypsa,high,,,unresolved,0.0
+KURATIV_VIANDEN_POOL,KURATIV_VIANDEN_POOL,"shared, only lookup has coord",,49.9344,6.2061,geocoded_match,geocoded,high,,,unresolved,0.0
+LUDWHN_A800_GT11,LUDWHN_A800_GT11,"shared, only lookup has coord",,49.494936,8.434017,claude,pypsa,medium,,,unresolved,0.0
+Netzreservekraftwerk GTKW-DA-POOL,Netzreservekraftwerk GTKW-DA-POOL,"shared, only lookup has coord",,51.225419,6.815135,claude,pypsa,medium,,,skipped_grid_area_unresolvable,0.0
+Netzreservekraftwerk KMW 2 DT,Netzreservekraftwerk KMW 2 DT,"shared, only lookup has coord",,51.338941,6.66368,claude,pypsa,medium,,,unresolved,0.0
+Pumpspeicherwerk Schluchseegruppe Häusern/Waldshut/Witznau RZ TNG,Pumpspeicherwerk Schluchseegruppe Häusern/Waldshut/Witznau RZ TNG,"shared, only lookup has coord",,47.755234,8.187048,claude,pypsa,medium,,,unresolved,0.0
+ReserveKW Heyden,ReserveKW Heyden,"shared, only lookup has coord",,52.379,8.997,claude,pypsa,high,,,unresolved,0.0
+STUMMHAFEN_10,STUMMHAFEN_10,"shared, only lookup has coord",,53.124672,8.726764,claude,pypsa,medium,,,unresolved,0.0
+SWDU_HKW_3A,SWDU_HKW_3A,"shared, only lookup has coord",,51.225419,6.815135,claude,pypsa,medium,,,unresolved,0.0
+SWDU_HKW_3B,SWDU_HKW_3B,"shared, only lookup has coord",,51.225419,6.815135,claude,pypsa,medium,,,unresolved,0.0
+SWDU_HKW_3B_GT2,SWDU_HKW_3B_GT2,"shared, only lookup has coord",,51.222827,6.731094,claude,pypsa,medium,,,unresolved,0.0
+TTG Cluster EE Bechterdissen T411,TTG Cluster EE Bechterdissen T411,"shared, only lookup has coord",,52.055,8.753,cluster_match,geocoded,medium,,,unresolved,0.0
+Vianden M1-M4,Vianden M1-M4,"shared, only lookup has coord",,49.93,6.2,geocoded_match,geocoded,high,,,unresolved,0.0
+Vianden M5-M9,Vianden M5-M9,"shared, only lookup has coord",,49.931,6.215,geocoded_match,geocoded,high,,,unresolved,0.0
+VoelklingenGT,VoelklingenGT,"shared, only lookup has coord",,50.706211,6.649895,claude,pypsa,medium,,,unresolved,0.0
+50H_AVA_CR_FOE,50H_AVA_CR_FOE,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_AVA_CR_STW,50H_AVA_CR_STW,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_AVA_CR_WK,50H_AVA_CR_WK,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_AVA_CR_WOL,50H_AVA_CR_WOL,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_EDIS_CR_ATS,50H_EDIS_CR_ATS,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_EDIS_CR_BW,50H_EDIS_CR_BW,"shared, only matcher has coord",,,,aggregated,none,,48.66,9.004999999999999,grid_area_state,0.25
+50H_EDIS_CR_EH,50H_EDIS_CR_EH,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_EDIS_CR_GSE,50H_EDIS_CR_GSE,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_EDIS_CR_GUE_Nord,50H_EDIS_CR_GUE_Nord,"shared, only matcher has coord",,,,aggregated,none,,53.01000000000001,13.02,grid_area_dso,0.15
+50H_EDIS_CR_GUE_Sued,50H_EDIS_CR_GUE_Sued,"shared, only matcher has coord",,,,aggregated,none,,51.91,13.02,grid_area_dso,0.15
+50H_EDIS_CR_HND,50H_EDIS_CR_HND,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_EDIS_CR_LHG,50H_EDIS_CR_LHG,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_EDIS_CR_LUB,50H_EDIS_CR_LUB,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_EDIS_CR_LV_WEST,50H_EDIS_CR_LV_WEST,"shared, only matcher has coord",,,,aggregated,none,,52.46,12.145,grid_area_dso,0.15
+50H_EDIS_CR_NHG_Nord,50H_EDIS_CR_NHG_Nord,"shared, only matcher has coord",,,,aggregated,none,,53.01000000000001,13.02,grid_area_dso,0.15
+50H_EDIS_CR_NHG_Sued,50H_EDIS_CR_NHG_Sued,"shared, only matcher has coord",,,,aggregated,none,,51.91,13.02,grid_area_dso,0.15
+50H_EDIS_CR_PAS,50H_EDIS_CR_PAS,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_EDIS_CR_PAS_51,50H_EDIS_CR_PAS_51,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_EDIS_CR_PE,50H_EDIS_CR_PE,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_EDIS_CR_PZS,50H_EDIS_CR_PZS,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_EDIS_CR_SOW_Nord,50H_EDIS_CR_SOW_Nord,"shared, only matcher has coord",,,,aggregated,none,,53.01000000000001,13.02,grid_area_dso,0.15
+50H_EDIS_CR_SOW_Sued,50H_EDIS_CR_SOW_Sued,"shared, only matcher has coord",,,,aggregated,none,,51.91,13.02,grid_area_dso,0.15
+50H_EDIS_CR_SW,50H_EDIS_CR_SW,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_EDIS_CR_THY,50H_EDIS_CR_THY,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_EDIS_CR_VIE_Sued,50H_EDIS_CR_VIE_Sued,"shared, only matcher has coord",,,,aggregated,none,,51.91,13.02,grid_area_dso,0.15
+50H_EDIS_CR_WU,50H_EDIS_CR_WU,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_MNS_CR_ADB,50H_MNS_CR_ADB,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_MNS_CR_CRO,50H_MNS_CR_CRO,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_MNS_CR_FRN,50H_MNS_CR_FRN,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_MNS_CR_GRS,50H_MNS_CR_GRS,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_MNS_CR_HER,50H_MNS_CR_HER,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_MNS_CR_JEN,50H_MNS_CR_JEN,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_MNS_CR_JSN,50H_MNS_CR_JSN,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_MNS_CR_KLM,50H_MNS_CR_KLM,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_MNS_CR_LAU_Nord,50H_MNS_CR_LAU_Nord,"shared, only matcher has coord",,,,aggregated,none,,52.5125,11.87,grid_area_dso,0.15
+50H_MNS_CR_LAU_Sued,50H_MNS_CR_LAU_Sued,"shared, only matcher has coord",,,,aggregated,none,,51.4575,11.87,grid_area_dso,0.15
+50H_MNS_CR_MA_Nord,50H_MNS_CR_MA_Nord,"shared, only matcher has coord",,,,aggregated,none,,52.5125,11.87,grid_area_dso,0.15
+50H_MNS_CR_MA_Sued,50H_MNS_CR_MA_Sued,"shared, only matcher has coord",,,,aggregated,none,,51.4575,11.87,grid_area_dso,0.15
+50H_MNS_CR_PRL,50H_MNS_CR_PRL,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_MNS_CR_PRL_TU,50H_MNS_CR_PRL_TU,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_MNS_CR_PUL,50H_MNS_CR_PUL,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_MNS_CR_PUL_47,50H_MNS_CR_PUL_47,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_MNS_CR_RAG,50H_MNS_CR_RAG,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_MNS_CR_ROE,50H_MNS_CR_ROE,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_MNS_CR_STR,50H_MNS_CR_STR,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_MNS_CR_ZW,50H_MNS_CR_ZW,"shared, only matcher has coord",,,,aggregated,none,,51.985,11.87,grid_area_dso,0.2
+50H_TEN_CR_M1_EI,50H_TEN_CR_M1_EI,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_TEN_CR_M2_VIB,50H_TEN_CR_M2_VIB,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_TEN_CR_M2_VIB_37,50H_TEN_CR_M2_VIB_37,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_TEN_CR_S1_ATF,50H_TEN_CR_S1_ATF,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_TEN_CR_S1_ATF_24,50H_TEN_CR_S1_ATF_24,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_TEN_CR_S2_WD,50H_TEN_CR_S2_WD,"shared, only matcher has coord",,,,aggregated,none,,52.46,13.02,grid_area_dso,0.2
+50H_WEMA_CR_GOE,50H_WEMA_CR_GOE,"shared, only matcher has coord",,,,aggregated,none,,53.895,12.5,grid_area_dso,0.2
+50H_WEMA_CR_GUE,50H_WEMA_CR_GUE,"shared, only matcher has coord",,,,aggregated,none,,53.895,12.5,grid_area_dso,0.2
+50H_WEMA_CR_PE,50H_WEMA_CR_PE,"shared, only matcher has coord",,,,aggregated,none,,53.895,12.5,grid_area_dso,0.2
+50H_WEMA_CR_PMS,50H_WEMA_CR_PMS,"shared, only matcher has coord",,,,aggregated,none,,53.895,12.5,grid_area_dso,0.2
+50H_WEMA_CR_PMS_93,50H_WEMA_CR_PMS_93,"shared, only matcher has coord",,,,aggregated,none,,53.895,12.5,grid_area_dso,0.2
+50H_WEMA_CR_WE,50H_WEMA_CR_WE,"shared, only matcher has coord",,,,aggregated,none,,53.895,12.5,grid_area_dso,0.2
+AMP_LEW_VERTEILNETZ_NORD_CR_KWK,AMP_LEW_VERTEILNETZ_NORD_CR_KWK,"shared, only matcher has coord",,,,aggregated,none,,49.745,11.405,grid_area_dso,0.15
+AMP_LEW_VERTEILNETZ_NORD_CR_PHOTOVOLTAIK,AMP_LEW_VERTEILNETZ_NORD_CR_PHOTOVOLTAIK,"shared, only matcher has coord",,,,aggregated,none,,49.745,11.405,grid_area_dso,0.15
+AMP_LEW_VERTEILNETZ_NORD_CR_SONSTIGE_EE,AMP_LEW_VERTEILNETZ_NORD_CR_SONSTIGE_EE,"shared, only matcher has coord",,,,aggregated,none,,49.745,11.405,grid_area_dso,0.15
+AMP_LEW_VERTEILNETZ_NORD_CR_WIND,AMP_LEW_VERTEILNETZ_NORD_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,49.745,11.405,grid_area_dso,0.15
+AMP_LEW_VERTEILNETZ_SUED_CR_KONVENTIONELL,AMP_LEW_VERTEILNETZ_SUED_CR_KONVENTIONELL,"shared, only matcher has coord",,,,aggregated,none,,48.095,11.405,grid_area_dso,0.15
+AMP_LEW_VERTEILNETZ_SUED_CR_KWK,AMP_LEW_VERTEILNETZ_SUED_CR_KWK,"shared, only matcher has coord",,,,aggregated,none,,48.095,11.405,grid_area_dso,0.15
+AMP_LEW_VERTEILNETZ_SUED_CR_PHOTOVOLTAIK,AMP_LEW_VERTEILNETZ_SUED_CR_PHOTOVOLTAIK,"shared, only matcher has coord",,,,aggregated,none,,48.095,11.405,grid_area_dso,0.15
+AMP_LEW_VERTEILNETZ_SUED_CR_SONSTIGE_EE,AMP_LEW_VERTEILNETZ_SUED_CR_SONSTIGE_EE,"shared, only matcher has coord",,,,aggregated,none,,48.095,11.405,grid_area_dso,0.15
+AMP_LEW_VERTEILNETZ_SUED_CR_WIND,AMP_LEW_VERTEILNETZ_SUED_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,48.095,11.405,grid_area_dso,0.15
+AMP_SYNA_PFUNG_CR_WIND,AMP_SYNA_PFUNG_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,50.525,9.004999999999999,grid_area_dso,0.2
+AMP_SYNA_TAUNUS_CR_WIND,AMP_SYNA_TAUNUS_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,50.525,9.004999999999999,grid_area_dso,0.2
+AMP_VSE_CR_PHOTOVOLTAIK,AMP_VSE_CR_PHOTOVOLTAIK,"shared, only matcher has coord",,,,aggregated,none,,49.375,6.885,grid_area_dso,0.2
+AMP_VSE_CR_SONSTIGE_EE,AMP_VSE_CR_SONSTIGE_EE,"shared, only matcher has coord",,,,aggregated,none,,49.375,6.885,grid_area_dso,0.2
+AMP_VSE_CR_WIND,AMP_VSE_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,49.375,6.885,grid_area_dso,0.2
+AMP_WESTNETZ_BORNHEIM_CR_WIND,AMP_WESTNETZ_BORNHEIM_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,49.7831,8.0603,grid_area_city,0.45
+AMP_WESTNETZ_DORTMUND_CR_WIND,AMP_WESTNETZ_DORTMUND_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,51.50762222222223,7.472581481481482,grid_area_city,0.45
+AMP_WESTNETZ_EIFEL_CR_WIND,AMP_WESTNETZ_EIFEL_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,50.35,6.7,grid_area_region,0.3
+AMP_WESTNETZ_EMSLAND_CR_PHOTOVOLTAIK,AMP_WESTNETZ_EMSLAND_CR_PHOTOVOLTAIK,"shared, only matcher has coord",,,,aggregated,none,,52.9,7.4,grid_area_region,0.3
+AMP_WESTNETZ_EMSLAND_CR_SONSTIGE_EE,AMP_WESTNETZ_EMSLAND_CR_SONSTIGE_EE,"shared, only matcher has coord",,,,aggregated,none,,52.9,7.4,grid_area_region,0.3
+AMP_WESTNETZ_EMSLAND_CR_WIND,AMP_WESTNETZ_EMSLAND_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,52.9,7.4,grid_area_region,0.3
+AMP_WESTNETZ_HUERTH_CR_WIND,AMP_WESTNETZ_HUERTH_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,50.8708,6.8676,grid_area_city,0.45
+AMP_WESTNETZ_KREFELDNEUSS_CR_WIND,AMP_WESTNETZ_KREFELDNEUSS_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,51.425,7.66,grid_area_dso,0.2
+AMP_WESTNETZ_MUELHEIM_CR_WIND,AMP_WESTNETZ_MUELHEIM_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,49.9125,7.0195,grid_area_city,0.45
+AMP_WESTNETZ_MUENSTERLAND_CR_WIND,AMP_WESTNETZ_MUENSTERLAND_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,52.1,7.35,grid_area_region,0.3
+AMP_WESTNETZ_NAHE_CR_PHOTOVOLTAIK,AMP_WESTNETZ_NAHE_CR_PHOTOVOLTAIK,"shared, only matcher has coord",,,,aggregated,none,,49.75,7.45,grid_area_region,0.3
+AMP_WESTNETZ_NAHE_CR_WIND,AMP_WESTNETZ_NAHE_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,49.75,7.45,grid_area_region,0.3
+AMP_WESTNETZ_NIEDERRHEIN_CR_WIND,AMP_WESTNETZ_NIEDERRHEIN_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,51.59999999999999,6.449999999999999,grid_area_region,0.3
+AMP_WESTNETZ_NIKE_CR_KONVENTIONELL,AMP_WESTNETZ_NIKE_CR_KONVENTIONELL,"shared, only matcher has coord",,,,aggregated,none,,51.425,7.66,grid_area_dso,0.2
+AMP_WESTNETZ_NIKE_CR_PHOTOVOLTAIK,AMP_WESTNETZ_NIKE_CR_PHOTOVOLTAIK,"shared, only matcher has coord",,,,aggregated,none,,51.425,7.66,grid_area_dso,0.2
+AMP_WESTNETZ_NIKE_CR_SONSTIGE_EE,AMP_WESTNETZ_NIKE_CR_SONSTIGE_EE,"shared, only matcher has coord",,,,aggregated,none,,51.425,7.66,grid_area_dso,0.2
+AMP_WESTNETZ_NIKE_CR_WIND,AMP_WESTNETZ_NIKE_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,51.425,7.66,grid_area_dso,0.2
+AMP_WESTNETZ_PLAIDT_CR_WIND,AMP_WESTNETZ_PLAIDT_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,50.3926,7.3925,grid_area_city,0.45
+AMP_WESTNETZ_SAUERLAND_CR_WIND,AMP_WESTNETZ_SAUERLAND_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,51.1,8.35,grid_area_region,0.3
+AMP_WESTNETZ_SIEGEN_CR_WIND,AMP_WESTNETZ_SIEGEN_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,50.87617999999999,8.021020000000002,grid_area_city,0.45
+AMP_WESTNETZ_SIERSDORF_CR_WIND,AMP_WESTNETZ_SIERSDORF_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,51.425,7.66,grid_area_dso,0.2
+AMP_WESTNETZ_TRIER_CR_PHOTOVOLTAIK,AMP_WESTNETZ_TRIER_CR_PHOTOVOLTAIK,"shared, only matcher has coord",,,,aggregated,none,,49.75,6.65,grid_area_region,0.3
+AMP_WESTNETZ_TRIER_CR_SONSTIGE_EE,AMP_WESTNETZ_TRIER_CR_SONSTIGE_EE,"shared, only matcher has coord",,,,aggregated,none,,49.75,6.65,grid_area_region,0.3
+AMP_WESTNETZ_TRIER_CR_WIND,AMP_WESTNETZ_TRIER_CR_WIND,"shared, only matcher has coord",,,,aggregated,none,,49.75,6.65,grid_area_region,0.3
+Baden-Württemberg Mitte EE,Baden-Württemberg Mitte EE,"shared, only matcher has coord",,,,aggregated,none,,48.66,9.004999999999999,state_centroid,0.35
+Baden-Württemberg Nord EE,Baden-Württemberg Nord EE,"shared, only matcher has coord",,,,aggregated,none,,49.22499999999999,9.004999999999999,state_centroid_N,0.3
+Baden-Württemberg Nord-Ost EE,Baden-Württemberg Nord-Ost EE,"shared, only matcher has coord",,,,aggregated,none,,49.22499999999999,9.7525,state_centroid_NE,0.3
+Baden-Württemberg Nord-West EE,Baden-Württemberg Nord-West EE,"shared, only matcher has coord",,,,aggregated,none,,49.22499999999999,8.2575,state_centroid_NW,0.3
+Baden-Württemberg Süd EE,Baden-Württemberg Süd EE,"shared, only matcher has coord",,,,aggregated,none,,48.095,9.004999999999999,state_centroid_S,0.3
+Baden-Württemberg Süd-Ost EE,Baden-Württemberg Süd-Ost EE,"shared, only matcher has coord",,,,aggregated,none,,48.095,9.7525,state_centroid_SE,0.3
+Baden-Württemberg West EE,Baden-Württemberg West EE,"shared, only matcher has coord",,,,aggregated,none,,48.66,8.2575,state_centroid_W,0.3
+EE Bayern,EE Bayern,"shared, only matcher has coord",,,,aggregated,none,,48.92,11.405,state_centroid,0.35
+EE Hessen,EE Hessen,"shared, only matcher has coord",,,,aggregated,none,,50.525,9.004999999999999,state_centroid,0.35
+EE Niedersachsen,EE Niedersachsen,"shared, only matcher has coord",,,,aggregated,none,,52.595,9.125,state_centroid,0.35
+illwerke vkw AG,illwerke vkw AG,"shared, only matcher has coord",,,,unresolvable,none,low,47.085032,9.880116,psa_fuzzy,0.293
+Kühtai 1 (Uniper),Kühtai 1 (Uniper),"shared, only matcher has coord",,,,unresolvable,none,none,47.207784,11.005735,opsd_exact,1.0
+Stuttgart Umland Nord EE,Stuttgart Umland Nord EE,"shared, only matcher has coord",,,,aggregated,none,,48.76828,9.186139999999996,gazetteer,0.5
+Stuttgart Umland Ost EE,Stuttgart Umland Ost EE,"shared, only matcher has coord",,,,aggregated,none,,48.76828,9.186139999999996,gazetteer,0.5
+Stuttgart Umland Süd EE,Stuttgart Umland Süd EE,"shared, only matcher has coord",,,,aggregated,none,,48.76828,9.186139999999996,gazetteer,0.5

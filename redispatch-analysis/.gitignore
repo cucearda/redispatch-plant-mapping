@@ -1,0 +1,86 @@
+# ---------------------------------------------------------------------------
+# Allowlist policy: ignore everything, then re-include source and small results.
+# Deliberate — the working folder is 1.7 GB, and with a blocklist one forgotten
+# pattern in `git add -A` pushes hundreds of megabytes.
+#
+# New file type?      add a `!` line below.
+# One specific file?  git add -f <path>
+# What's hidden?      git status --ignored
+# ---------------------------------------------------------------------------
+*
+
+# Descend into directories (without this, nothing below the root is reachable).
+!*/
+
+# --- source ----------------------------------------------------------------
+!*.py
+!*.ipynb
+!*.smk
+!*.sh
+
+# --- config and docs -------------------------------------------------------
+!*.md
+!*.tex
+!*.yaml
+!*.yml
+!*.toml
+!*.cfg
+!*.txt
+!.gitignore
+!.env.example
+
+# --- slide decks (the framing a reader needs before the code) --------------
+!*.pptx
+
+# --- small result tables (inspectable without a full rerun) ----------------
+!results/matcher/plant_matcher_output.xlsx
+!results/plant_lookup_complete_with_coords.csv
+!results/comparison_lookup_vs_matcher.csv
+!results/comparison_matcher_conf_ge_0p5.csv
+!figures/paper/claim_check.csv
+!data/samples/*.csv
+
+# ---------------------------------------------------------------------------
+# Excluded wholesale — re-ignored after the allowlist, so no `!` rule above can
+# pull anything out of them.
+# ---------------------------------------------------------------------------
+
+# PyPSA-Eur workflow intermediates and solved networks (1.2 GB + 124 MB).
+# One .nc here exceeds GitHub's 100 MB hard limit.
+resources/
+results/de-nodal-2013/
+results/de-nodal-2025-hourly/
+results/test-elec/
+
+# Third-party clone, has its own git history
+pypsa-eur/
+
+# Collaborator's repository, cloned for comparison — do not vendor it
+reference_repo/
+
+# Shadow-price exports (130 MB of CSV, no code)
+Constraints_and_Shadow_Prices_v2/
+
+# Siting sweep artefacts: 50 generated configs + 50 result CSVs per run
+siting/out/
+
+# Generated bitmaps — regenerate with maps/render_to_png.py and the notebooks
+figures/**/*.png
+figures/**/*.pdf
+
+# Generated interactive maps — regenerate with maps/*.py
+results/maps/
+
+# Raw and joined data — see data/README.md for provenance
+data/*.csv
+data/*.parquet
+data/*.xlsx
+data/grid_data/
+
+# --- python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+.venv/
+venv/

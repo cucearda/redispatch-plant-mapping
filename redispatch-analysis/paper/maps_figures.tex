@@ -1,0 +1,88 @@
+% ---------------------------------------------------------------
+% Map figures rendered from the interactive Leaflet maps
+% (regenerate with:  python render_maps_to_png.py)
+%
+% Preamble needs:  \usepackage{graphicx}
+%                  \graphicspath{{figures_maps/}}   % or copy PNGs next to the .tex
+% ---------------------------------------------------------------
+
+% === Section 5.2 -- "Figure?? maps the resulting locational value dV ..." =========
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.78\textwidth]{map_siting_score_clean.png}
+  \caption[Locational value of a reference battery]{%
+    Locational value $\Delta V$ of a reference 50\,MW/200\,MWh battery across Germany,
+    derived from geolocated redispatch events (2013--2025, confidence $>0.5$).
+    Colour: annual $\Delta V$ per candidate grid cell in million~EUR/year;
+    black circles mark the ten highest-scoring cells.
+    Red/blue lines show the 380/220\,kV transmission grid.}
+  \label{fig:siting_score}
+\end{figure}
+
+% === Section 5.3 -- "the 17 German PyPSA nodes (circles in Figure??)" ============
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.78\textwidth]{map_siting_vs_pypsa_clean.png}
+  \caption[Siting score vs.\ PyPSA-Eur nodal benchmark]{%
+    Redispatch-based siting score (background heatmap) against the PyPSA-Eur nodal
+    arbitrage benchmark (circles, one per German node; size and colour scale with the
+    node's arbitrage value). The two rankings agree with a Spearman correlation of
+    $\rho = 0.65$ ($\tau = 0.43$, $p = 0.005$).}
+  \label{fig:siting_vs_pypsa}
+\end{figure}
+
+% === Section 5.1 -- redispatch events / grid stress backdrop ====================
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.78\textwidth]{map_redispatch_kde_clean.png}
+  \caption[Spatial distribution of redispatch events]{%
+    Kernel-density estimate of geolocated redispatch events in Germany.
+    Only TSO (\"UNB) redispatch is covered; DSO-level measures are not included.}
+  \label{fig:redispatch_kde}
+\end{figure}
+
+% === Section 5.2 -- optional: score vs. where batteries actually are =============
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.78\textwidth]{map_siting_vs_batteries_clean.png}
+  \caption[Siting score vs.\ realised battery locations]{%
+    Siting score (background) against actual MaStR battery locations
+    (green: in operation, orange: planned; marker size $\propto \sqrt{\text{MW}}$).
+    Realised siting follows land availability and connection queues rather than
+    locational grid value.}
+  \label{fig:siting_vs_batteries}
+\end{figure}
+
+% === Appendix A/B -- supplementary =============================================
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.78\textwidth]{map_source_nodes_clean.png}
+  \caption[Geolocated redispatch source nodes]{%
+    Geolocated redispatch source nodes, coloured by net direction
+    (net upward vs.\ net downward dispatch).}
+  \label{fig:source_nodes}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.78\textwidth]{map_h_sweep_clean.png}
+  \caption[Siting score at the default kernel bandwidth]{%
+    Siting score at the default kernel bandwidth $h$ (one frame of the bandwidth sweep,
+    see Appendix~\ref{app:bandwidth}).}
+  \label{fig:h_sweep_map}
+\end{figure}
+
+% --- Two maps side by side (alternative layout) --------------------------------
+% \begin{figure}[htbp]
+%   \centering
+%   \begin{subfigure}[t]{0.48\textwidth}
+%     \includegraphics[width=\linewidth]{map_siting_score_clean.png}
+%     \caption{Redispatch-based siting score}
+%   \end{subfigure}\hfill
+%   \begin{subfigure}[t]{0.48\textwidth}
+%     \includegraphics[width=\linewidth]{map_siting_vs_pypsa_clean.png}
+%     \caption{PyPSA-Eur nodal benchmark overlay}
+%   \end{subfigure}
+%   \caption{Siting score and benchmark.}
+% \end{figure}
+% (requires \usepackage{subcaption})

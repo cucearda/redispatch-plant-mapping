@@ -1,0 +1,201 @@
+ï»¿BEGINN_DATUM;BEGINN_UHRZEIT;ZEITZONE_VON;ENDE_DATUM;ENDE_UHRZEIT;ZEITZONE_BIS;GRUND_DER_MASSNAHME;RICHTUNG;MITTLERE_LEISTUNG_MW;MAXIMALE_LEISTUNG_MW;GESAMTE_ARBEIT_MWH;ANWEISENDER_UENB;ANFORDERNDER_UENB;BETROFFENE_ANLAGE;PRIMAERENERGIEART
+01.01.2021;02:30;CET;01.01.2021;06:00;CET;Strombedingter Countertrade DE-DK2;Wirkleistungseinspeisung erhÃ¶hen;20;30;70;50Hertz;50Hertz;BÃ¶rse;Sonstiges
+02.01.2021;22:00;CET;03.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;175;280;350;Amprion;Amprion;NIEDERAUSSEM_K;Konventionell
+02.01.2021;22:00;CET;03.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;175;280;350;TransnetBW;Amprion;Rheinhafen-Dampfkraftwerk Karlsruhe Block 7;Konventionell
+02.01.2021;23:00;CET;02.01.2021;23:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;200;200;50;Amprion;Amprion;BÃ¶rse;Sonstiges
+02.01.2021;23:00;CET;03.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;175;200;175;Amprion;Amprion;NEURATH_F;Konventionell
+02.01.2021;23:00;CET;03.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;175;200;175;Amprion;Amprion;NEURATH_G;Konventionell
+02.01.2021;23:15;CET;03.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;40;70;30;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;VOELKLINGEN_MKV;Konventionell
+02.01.2021;23:30;CET;03.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;55;70;27,5;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+03.01.2021;00:00;CET;03.01.2021;02:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;95;200;190;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NEURATH_D;Konventionell
+03.01.2021;00:00;CET;03.01.2021;02:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;77;100;193;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NIEDERAUSSEM_C;Konventionell
+03.01.2021;00:00;CET;03.01.2021;03:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;193;360;580;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NEURATH_E;Konventionell
+03.01.2021;00:00;CET;03.01.2021;05:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;324;500;1618;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;Rostock Kohlekraftwerk;Konventionell
+03.01.2021;00:00;CET;03.01.2021;07:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;300;300;2100;Amprion;Amprion;NIEDERAUSSEM_K;Konventionell
+03.01.2021;00:00;CET;03.01.2021;07:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;300;300;2100;TransnetBW;Amprion;Rheinhafen-Dampfkraftwerk Karlsruhe Block 7;Konventionell
+03.01.2021;00:00;CET;03.01.2021;08:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;217;400;1030;Amprion;Amprion;BÃ¶rse;Sonstiges
+03.01.2021;00:00;CET;03.01.2021;10:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;136,9;170;992,5;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Heizkraftwerk Altbach/Deizisau Block 2;Konventionell
+03.01.2021;00:00;CET;03.01.2021;13:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;311;550;4048;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NEURATH_F;Konventionell
+03.01.2021;00:00;CET;03.01.2021;13:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;270;412;3243;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NEURATH_G;Konventionell
+03.01.2021;00:00;CET;03.01.2021;23:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;62,97;200;456,5;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+03.01.2021;00:00;CET;03.01.2021;23:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;118,35;300;1361;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Grohnde;Konventionell
+03.01.2021;00:00;CET;03.01.2021;23:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;225;470;3598;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NIEDERAUSSEM_K;Konventionell
+03.01.2021;00:00;CET;03.01.2021;23:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;123,51;239;1574,75;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Rheinhafen-Dampfkraftwerk Karlsruhe Block 7;Konventionell
+03.01.2021;00:00;CET;03.01.2021;23:45;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;63;95;720;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;VOELKLINGEN_MKV;Konventionell
+03.01.2021;00:00;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;145,52;200;2182,75;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Grosskraftwerk Mannheim;Konventionell
+03.01.2021;00:15;CET;03.01.2021;18:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;124,04;300;713,25;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Vorarlberger Ilwerke;Sonstiges
+03.01.2021;00:30;CET;03.01.2021;01:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;30;40;15;Amprion;Amprion;BÃ¶rse;Sonstiges
+03.01.2021;00:30;CET;03.01.2021;07:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;161,54;300;1050;TenneT DE;Amprion;Brokdorf;Konventionell
+03.01.2021;00:45;CET;03.01.2021;01:00;CET;Strombedingter Countertrade DE-DK2;Wirkleistungseinspeisung erhÃ¶hen;2;2;1;50Hertz;50Hertz;BÃ¶rse;Sonstiges
+03.01.2021;01:00;CET;03.01.2021;06:00;CET;Strombedingter Countertrade DE-DK1;Wirkleistungseinspeisung erhÃ¶hen;546,4;700;2732;TenneT DE;TenneT DE;BÃ¶rse;Sonstiges
+03.01.2021;01:00;CET;03.01.2021;23:45;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;40,22;130;231,25;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+03.01.2021;01:30;CET;03.01.2021;02:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;60;70;30;Amprion;Amprion;NEURATH_D;Konventionell
+03.01.2021;01:30;CET;03.01.2021;06:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;46;80;207;Amprion;Amprion;NEURATH_G;Konventionell
+03.01.2021;01:30;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;141;300;2015;Amprion;Amprion;NEURATH_F;Konventionell
+03.01.2021;01:45;CET;03.01.2021;02:00;CET;Strombedingter Countertrade DE-DK2;Wirkleistungseinspeisung erhÃ¶hen;1;1;0;50Hertz;50Hertz;BÃ¶rse;Sonstiges
+03.01.2021;02:15;CET;03.01.2021;03:00;CET;Strombedingter Countertrade DE-DK2;Wirkleistungseinspeisung erhÃ¶hen;5;7;4;50Hertz;50Hertz;BÃ¶rse;Sonstiges
+03.01.2021;03:45;CET;03.01.2021;07:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;85,85;150;279;TenneT DE;Amprion;Grohnde;Konventionell
+03.01.2021;04:00;CET;03.01.2021;05:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;215;215;215;TenneT DE;APG;BÃ¶rse;Sonstiges
+03.01.2021;04:45;CET;03.01.2021;05:00;CET;Strombedingter Countertrade DE-DK2;Wirkleistungseinspeisung erhÃ¶hen;6;6;2;50Hertz;50Hertz;BÃ¶rse;Sonstiges
+03.01.2021;05:00;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;84,78;250;572,25;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+03.01.2021;05:00;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;280,45;300;5328,5;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Brokdorf;Konventionell
+03.01.2021;05:00;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;270,92;360;5147,5;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Heizkraftwerk Heilbronn Block 7;Konventionell
+03.01.2021;05:45;CET;03.01.2021;06:00;CET;Strombedingter Countertrade DE-DK2;Wirkleistungseinspeisung erhÃ¶hen;2;2;1;50Hertz;50Hertz;BÃ¶rse;Sonstiges
+03.01.2021;05:45;CET;03.01.2021;08:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;50;50;25;TenneT DE;APG;BÃ¶rse;Sonstiges
+03.01.2021;05:45;CET;03.01.2021;08:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;90;100;225;TenneT DE;APG;Grohnde;Konventionell
+03.01.2021;06:00;CET;03.01.2021;13:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;221;250;1550;50Hertz;Amprion;Boxberg (Standort);Konventionell
+03.01.2021;07:00;CET;04.01.2021;00:00;CET;Strombedingter Countertrade DE-DK1;Wirkleistungseinspeisung erhÃ¶hen;794,47;1399;13506;TenneT DE;TenneT DE;BÃ¶rse;Sonstiges
+03.01.2021;07:00;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;231;300;3927;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Grohnde;Konventionell
+03.01.2021;07:00;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;193,97;300;3297,5;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Rheinhafen-Dampfkraftwerk Karlsruhe Block 7;Konventionell
+03.01.2021;07:30;CET;03.01.2021;21:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;65;80;390;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;VOELKLINGEN_MKV;Konventionell
+03.01.2021;07:45;CET;03.01.2021;10:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;114,67;150;258;TenneT DE;TenneT DE;BÃ¶rse;Sonstiges
+03.01.2021;07:45;CET;03.01.2021;10:00;CET;Strombedingter Countertrade DE-DK1;Wirkleistungseinspeisung reduzieren;65,11;84;146,5;TenneT DE;TenneT DE;Brokdorf;Konventionell
+03.01.2021;07:45;CET;03.01.2021;10:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;114,67;150;258;TenneT DE;TenneT DE;Grohnde;Konventionell
+03.01.2021;08:00;CET;03.01.2021;13:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;150;150;750;50Hertz;Amprion;JÃ¤nschwalde (Standort);Konventionell
+03.01.2021;08:00;CET;03.01.2021;21:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;153;220;1068;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;Lippendorf EnBW;Konventionell
+03.01.2021;08:00;CET;03.01.2021;21:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;184;281;736;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;Schwarze Pumpe (Standort);Konventionell
+03.01.2021;08:30;CET;03.01.2021;20:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;176,79;320;1237,5;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Heizkraftwerk Heilbronn Block 7;Konventionell
+03.01.2021;10:00;CET;04.01.2021;00:00;CET;Strombedingter Countertrade DE-DK1;Wirkleistungseinspeisung erhÃ¶hen;924,29;1100;12940;TenneT DE;TenneT DE;BÃ¶rse;Sonstiges
+03.01.2021;11:30;CET;03.01.2021;23:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;239;381;2810;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;KMW_KW3;Konventionell
+03.01.2021;13:00;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;245;300;2700;Amprion;Amprion;NIEDERAUSSEM_K;Konventionell
+03.01.2021;14:00;CET;03.01.2021;21:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;258;258;1806;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;JÃ¤nschwalde (Standort);Konventionell
+03.01.2021;18:00;CET;03.01.2021;19:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;50;50;50;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;Boxberg (Standort);Konventionell
+03.01.2021;18:00;CET;03.01.2021;20:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;162;181;325;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;KMW_KW3;Konventionell
+03.01.2021;18:00;CET;03.01.2021;23:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;24,83;95;37,25;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+03.01.2021;19:30;CET;03.01.2021;22:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;35;45;70;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Vorarlberger Ilwerke;Sonstiges
+03.01.2021;19:30;CET;03.01.2021;23:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;86;299;237;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;Boxberg (Standort);Konventionell
+03.01.2021;20:15;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;61,33;210;230;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Reservekraftwerk Rheinhafen-Dampfkraftwerk Karlsruhe Block 4;Konventionell
+03.01.2021;20:30;CET;03.01.2021;23:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;52;150;142;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+03.01.2021;20:30;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;37,27;55;102,5;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Reservekraftwerk Walheim Block 1;Konventionell
+03.01.2021;21:00;CET;03.01.2021;23:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;200;200;400;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;Schwarze Pumpe (Standort);Konventionell
+03.01.2021;21:15;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;127;225;348;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;Schwarze Pumpe (Standort);Konventionell
+03.01.2021;22:00;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;126;230;252;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;WEIHER_C;Konventionell
+03.01.2021;22:15;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;37,86;60;66,25;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Reservekraftwerk Heilbronn Block 5;Konventionell
+03.01.2021;22:30;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;117;230;175;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;BEXBACH_1;Konventionell
+03.01.2021;23:00;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;190;250;190;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Grohnde;Konventionell
+03.01.2021;23:00;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;166;220;166;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NEURATH_D;Konventionell
+03.01.2021;23:00;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;17,5;25;17,5;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Reservekraftwerk Walheim Block 2;Konventionell
+03.01.2021;23:15;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;210;310;158;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NEURATH_F;Konventionell
+03.01.2021;23:15;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;46,67;75;35;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Reservekraftwerk Altbach/Deizisau Block 1;Konventionell
+03.01.2021;23:15;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;33,33;60;25;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Reservekraftwerk Heilbronn Block 6;Konventionell
+03.01.2021;23:30;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;100;150;50;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NIEDERAUSSEM_K;Konventionell
+03.01.2021;23:45;CET;04.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;70;70;18;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NEURATH_G;Konventionell
+04.01.2021;00:00;CET;04.01.2021;01:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;190;250;238;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NEURATH_D;Konventionell
+04.01.2021;00:00;CET;04.01.2021;05:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;80;80;400;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Grohnde;Konventionell
+04.01.2021;00:00;CET;04.01.2021;06:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;233,33;300;1400;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Grohnde;Konventionell
+04.01.2021;00:00;CET;04.01.2021;06:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;192;220;1151;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NEURATH_G;Konventionell
+04.01.2021;00:00;CET;04.01.2021;06:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;76,8;85;480;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Reservekraftwerk Heilbronn Block 5;Konventionell
+04.01.2021;00:00;CET;04.01.2021;06:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;76,2;85;476,25;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Reservekraftwerk Heilbronn Block 6;Konventionell
+04.01.2021;00:00;CET;04.01.2021;06:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;268;350;1744;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NIEDERAUSSEM_K;Konventionell
+04.01.2021;00:00;CET;04.01.2021;06:45;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;448;550;3026;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NEURATH_F;Konventionell
+04.01.2021;00:00;CET;04.01.2021;07:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;250;250;1750;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;BEXBACH_1;Konventionell
+04.01.2021;00:00;CET;04.01.2021;07:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;250;250;1750;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;WEIHER_C;Konventionell
+04.01.2021;00:00;CET;04.01.2021;08:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;234,12;240;1990;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Reservekraftwerk Rheinhafen-Dampfkraftwerk Karlsruhe Block 4;Konventionell
+04.01.2021;00:00;CET;04.01.2021;08:45;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;77,71;90;680;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Reservekraftwerk Walheim Block 2;Konventionell
+04.01.2021;00:00;CET;04.01.2021;09:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;266,67;300;2400;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Brokdorf;Konventionell
+04.01.2021;00:00;CET;04.01.2021;09:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;73,75;80;663,75;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Reservekraftwerk Walheim Block 1;Konventionell
+04.01.2021;00:00;CET;04.01.2021;09:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;227,37;260;2160;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Reservekraftwerk Altbach/Deizisau Block 1;Konventionell
+04.01.2021;00:00;CET;04.01.2021;17:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;224,94;386;3824;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Heizkraftwerk Heilbronn Block 7;Konventionell
+04.01.2021;00:00;CET;05.01.2021;00:00;CET;Strombedingter Countertrade DE-DK1;Wirkleistungseinspeisung erhÃ¶hen;1062,29;1500;25495;TenneT DE;TenneT DE;BÃ¶rse;Sonstiges
+04.01.2021;00:00;CET;05.01.2021;00:00;CET;Strombedingter Countertrade DE-DK1;Wirkleistungseinspeisung erhÃ¶hen;528,33;1100;12680;TenneT DE;TenneT DE;BÃ¶rse;Sonstiges
+04.01.2021;00:00;CET;05.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;316,38;490;7593;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Rheinhafen-Dampfkraftwerk Karlsruhe Block 7;Konventionell
+04.01.2021;00:45;CET;04.01.2021;08:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;152;245;152;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+04.01.2021;01:00;CET;04.01.2021;09:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;185;305;834;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+04.01.2021;04:45;CET;04.01.2021;08:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;51,67;60;77,5;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Vorarlberger Ilwerke;Sonstiges
+04.01.2021;04:45;CET;04.01.2021;23:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;49,94;230;212,25;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+04.01.2021;04:45;CET;05.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;398,94;716;7679,5;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Heizkraftwerk Heilbronn Block 7;Konventionell
+04.01.2021;05:00;CET;04.01.2021;17:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;105,33;180;948;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Rheinhafen-Dampfkraftwerk Karlsruhe Block 7;Konventionell
+04.01.2021;05:00;CET;04.01.2021;21:45;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;231,58;437;3879;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Wilhelmshaven (ENGIE);Konventionell
+04.01.2021;05:00;CET;05.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;363,63;510;6909;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Wilhelmshaven (ENGIE);Konventionell
+04.01.2021;05:45;CET;04.01.2021;06:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;75;100;38;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;Boxberg (Standort);Konventionell
+04.01.2021;05:45;CET;04.01.2021;07:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;179;253;223;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;Lippendorf VE;Konventionell
+04.01.2021;05:45;CET;04.01.2021;08:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;474;700;1067;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;Schwarze Pumpe (Standort);Konventionell
+04.01.2021;06:00;CET;04.01.2021;08:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;430;497;859;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;JÃ¤nschwalde (Standort);Konventionell
+04.01.2021;06:00;CET;04.01.2021;23:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;28,5;70;28,5;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+04.01.2021;06:00;CET;04.01.2021;23:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;93;302;534,75;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Vorarlberger Ilwerke;Sonstiges
+04.01.2021;06:00;CET;05.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;339;480;6097;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;BEXBACH_1;Konventionell
+04.01.2021;06:00;CET;05.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;300;300;5400;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Grohnde;Konventionell
+04.01.2021;06:15;CET;04.01.2021;07:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;60;60;75;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Heizkraftwerk Heilbronn Block 7;Konventionell
+04.01.2021;06:15;CET;04.01.2021;08:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;72,22;120;162,5;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Rheinhafen-Dampfkraftwerk Karlsruhe Block 7;Konventionell
+04.01.2021;06:15;CET;04.01.2021;21:45;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;146,4;190;1830;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Farge;Konventionell
+04.01.2021;07:00;CET;05.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;279,53;300;4752;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Brokdorf;Konventionell
+04.01.2021;07:15;CET;05.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;82;110;1276;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;VOELKLINGEN_MKV;Konventionell
+04.01.2021;07:30;CET;04.01.2021;19:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;106;160;132,5;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+04.01.2021;08:00;CET;05.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;101;176;404;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;Lippendorf EnBW;Konventionell
+04.01.2021;08:00;CET;05.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;50;50;350;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;Rostock Kohlekraftwerk;Konventionell
+04.01.2021;09:00;CET;05.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;136;138;949;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;KMW_KW3;Konventionell
+04.01.2021;12:00;CET;04.01.2021;17:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;170;190;850;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Farge;Konventionell
+04.01.2021;12:00;CET;04.01.2021;18:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;26,84;115;114,08;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+04.01.2021;13:00;CET;04.01.2021;14:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;10;10;10;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Grosskraftwerk Mannheim;Konventionell
+05.01.2021;00:00;CET;05.01.2021;06:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;102;145;203;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;Lippendorf VE;Konventionell
+05.01.2021;00:00;CET;05.01.2021;07:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;17;80;39;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+05.01.2021;00:00;CET;05.01.2021;09:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;180,5;300;1624,5;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Brokdorf;Konventionell
+05.01.2021;00:00;CET;05.01.2021;20:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;78;150;471;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;Lippendorf EnBW;Konventionell
+05.01.2021;00:00;CET;06.01.2021;00:00;CET;Strombedingter Countertrade DE-DK1;Wirkleistungseinspeisung erhÃ¶hen;881,25;1100;21150;TenneT DE;TenneT DE;BÃ¶rse;Sonstiges
+05.01.2021;00:00;CET;06.01.2021;00:00;CET;Strombedingter Countertrade DE-DK1;Wirkleistungseinspeisung erhÃ¶hen;592,5;1100;14220;TenneT DE;TenneT DE;BÃ¶rse;Sonstiges
+05.01.2021;00:00;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;39,43;100;69;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+05.01.2021;00:00;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;133,04;300;1496,75;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Grohnde;Konventionell
+05.01.2021;00:00;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;426,32;635;10231,75;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Heizkraftwerk Heilbronn Block 7;Konventionell
+05.01.2021;00:00;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;320,76;490;7698,25;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Rheinhafen-Dampfkraftwerk Karlsruhe Block 7;Konventionell
+05.01.2021;00:00;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;106;143;633;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;VOELKLINGEN_MKV;Konventionell
+05.01.2021;00:00;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;616,46;710;12329,25;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Wilhelmshaven (ENGIE);Konventionell
+05.01.2021;02:00;CET;05.01.2021;23:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;237,7;365;4991,75;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Heizkraftwerk Heilbronn Block 7;Konventionell
+05.01.2021;02:00;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;243,9;300;5365,75;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Grohnde;Konventionell
+05.01.2021;03:30;CET;05.01.2021;04:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;150;200;75;Amprion;Amprion;BÃ¶rse;Sonstiges
+05.01.2021;03:30;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;296;300;6075;Amprion;Amprion;NIEDERAUSSEM_G;Konventionell
+05.01.2021;04:00;CET;05.01.2021;21:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;69;182;224,25;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+05.01.2021;04:00;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;157,14;250;2750;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Rheinhafen-Dampfkraftwerk Karlsruhe Block 7;Konventionell
+05.01.2021;04:30;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;69,92;190;629,25;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+05.01.2021;04:30;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;497,41;737;9699,5;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Wilhelmshaven (Uniper);Konventionell
+05.01.2021;05:00;CET;05.01.2021;07:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;85;100;170;50Hertz;50Hertz & Amprion & TenneT DE & TransnetBW;Rostock Kohlekraftwerk;Konventionell
+05.01.2021;05:00;CET;05.01.2021;23:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;67,79;100;406,75;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Grosskraftwerk Mannheim;Konventionell
+05.01.2021;05:15;CET;05.01.2021;22:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;102,08;507;306,25;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+05.01.2021;05:30;CET;05.01.2021;11:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;95,4;150;477;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Vorarlberger Ilwerke;Sonstiges
+05.01.2021;06:00;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;139;170;1801;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;KMW_KW3;Konventionell
+05.01.2021;06:15;CET;05.01.2021;07:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;20;20;15;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Heizkraftwerk Altbach/Deizisau Block 2;Konventionell
+05.01.2021;06:45;CET;05.01.2021;21:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;180,03;190;2610,5;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Farge;Konventionell
+05.01.2021;07:00;CET;05.01.2021;07:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;65;110;32;Amprion;Amprion;BÃ¶rse;Sonstiges
+05.01.2021;07:00;CET;05.01.2021;18:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;160;200;1842;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;WEISWEILER_VGTG3;Konventionell
+05.01.2021;07:00;CET;05.01.2021;19:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;196,33;200;2356;TransnetBW;Amprion;Vorarlberger Ilwerke;Sonstiges
+05.01.2021;07:00;CET;05.01.2021;19:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;122,64;183;674,5;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Staudinger 5;Konventionell
+05.01.2021;07:00;CET;05.01.2021;21:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;193;200;2708;Amprion;Amprion;NIEDERAUSSEM_K;Konventionell
+05.01.2021;07:00;CET;05.01.2021;23:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;74,29;100;520;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Mehrum;Konventionell
+05.01.2021;07:45;CET;05.01.2021;21:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;182,47;351;1642,25;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Wilhelmshaven (Uniper);Konventionell
+05.01.2021;08:00;CET;05.01.2021;16:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;55,62;94;472,75;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Staudinger 5;Konventionell
+05.01.2021;09:00;CET;05.01.2021;12:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;258,33;360;775;TransnetBW;APG;Vorarlberger Ilwerke;Sonstiges
+05.01.2021;14:15;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;292;350;2849;Amprion;Amprion;NEURATH_G;Konventionell
+05.01.2021;14:15;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;292,18;350;2848,75;TransnetBW;Amprion;Reservekraftwerk Rheinhafen-Dampfkraftwerk Karlsruhe Block 4;Konventionell
+05.01.2021;16:00;CET;05.01.2021;19:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;152;176;456;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;WEISWEILER_VGTG3;Konventionell
+05.01.2021;18:00;CET;05.01.2021;19:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;44;44;44;TransnetBW;Amprion;Heizkraftwerk Heilbronn Block 7;Konventionell
+05.01.2021;20:00;CET;05.01.2021;21:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;60;60;60;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NIEDERAUSSEM_K;Konventionell
+05.01.2021;20:45;CET;05.01.2021;21:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;75;75;19;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+05.01.2021;20:45;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;240;250;781;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;BEXBACH_1;Konventionell
+05.01.2021;20:45;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;235;250;762;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NIEDERAUSSEM_K;Konventionell
+05.01.2021;22:00;CET;06.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;50;50;100;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;KMW_KW3;Konventionell
+06.01.2021;00:00;CET;06.01.2021;00:45;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;30;30;22,5;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Vorarlberger Ilwerke;Sonstiges
+06.01.2021;00:00;CET;06.01.2021;01:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;76;105;76;Amprion;Amprion;BÃ¶rse;Sonstiges
+06.01.2021;00:00;CET;06.01.2021;01:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;207,5;290;207,5;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Heizkraftwerk Heilbronn Block 7;Konventionell
+06.01.2021;00:00;CET;06.01.2021;01:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;150;250;187,5;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Grohnde;Konventionell
+06.01.2021;00:00;CET;06.01.2021;04:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;32;69;48;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+06.01.2021;00:00;CET;06.01.2021;04:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;226,63;320;906,5;TransnetBW;Amprion;Heizkraftwerk Heilbronn Block 7;Konventionell
+06.01.2021;00:00;CET;06.01.2021;04:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;140;140;560;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NEURATH_E;Konventionell
+06.01.2021;00:00;CET;06.01.2021;04:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;350;350;1400;Amprion;Amprion;NEURATH_G;Konventionell
+06.01.2021;00:00;CET;06.01.2021;04:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;300;300;1200;Amprion;Amprion;NIEDERAUSSEM_G;Konventionell
+06.01.2021;00:00;CET;06.01.2021;04:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;243,44;295;973,75;TransnetBW;Amprion;Reservekraftwerk Rheinhafen-Dampfkraftwerk Karlsruhe Block 4;Konventionell
+06.01.2021;00:00;CET;06.01.2021;04:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;261,81;400;1047,25;TransnetBW;50Hertz & Amprion & TenneT DE & TransnetBW;Rheinhafen-Dampfkraftwerk Karlsruhe Block 7;Konventionell
+06.01.2021;00:00;CET;06.01.2021;04:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;228,19;340;912,75;TransnetBW;Amprion;Rheinhafen-Dampfkraftwerk Karlsruhe Block 7;Konventionell
+06.01.2021;00:00;CET;06.01.2021;04:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;263,56;429;1054,25;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Wilhelmshaven (ENGIE);Konventionell
+06.01.2021;00:00;CET;06.01.2021;05:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;129;240;226;Amprion;Amprion;BÃ¶rse;Sonstiges
+06.01.2021;00:00;CET;06.01.2021;07:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;132;143;926;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;VOELKLINGEN_HKV;Konventionell
+06.01.2021;00:00;CET;06.01.2021;07:30;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;14,55;100;80;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+06.01.2021;00:00;CET;06.01.2021;08:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;429;540;3540;Amprion;Amprion;NEURATH_F;Konventionell
+06.01.2021;00:00;CET;07.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;250;250;6000;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;BEXBACH_1;Konventionell
+06.01.2021;00:00;CET;07.01.2021;00:00;CET;Strombedingter Countertrade DE-DK1;Wirkleistungseinspeisung erhÃ¶hen;669,17;1100;16060;TenneT DE;TenneT DE;BÃ¶rse;Sonstiges
+06.01.2021;00:00;CET;07.01.2021;00:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;250;250;6000;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NIEDERAUSSEM_K;Konventionell
+06.01.2021;01:00;CET;06.01.2021;01:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;50;50;12,5;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;BÃ¶rse;Sonstiges
+06.01.2021;01:30;CET;06.01.2021;04:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;108;140;269;Amprion;Amprion;BÃ¶rse;Sonstiges
+06.01.2021;01:30;CET;06.01.2021;05:15;CET;Strombedingter Redispatch;Wirkleistungseinspeisung erhÃ¶hen;214,8;380;805,5;TransnetBW;Amprion;Heizkraftwerk Heilbronn Block 7;Konventionell
+06.01.2021;04:00;CET;06.01.2021;05:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;140;140;140;Amprion;Amprion;NEURATH_E;Konventionell
+06.01.2021;04:00;CET;06.01.2021;06:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;120;170;240;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;NIEDERAUSSEM_G;Konventionell
+06.01.2021;04:00;CET;06.01.2021;07:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;133,33;200;400;TenneT DE;50Hertz & Amprion & TenneT DE & TransnetBW;Grohnde;Konventionell
+06.01.2021;04:00;CET;06.01.2021;07:00;CET;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;93;100;280;Amprion;50Hertz & Amprion & TenneT DE & TransnetBW;KMW_KW3;Konventionell

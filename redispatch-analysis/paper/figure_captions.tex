@@ -1,0 +1,86 @@
+% Figure captions for the redispatch / battery-siting seminar paper
+% Generated 2026-07-24
+
+% ---------------------------------------------------------------------------
+% Funnel: published records -> analysis dataset
+% ---------------------------------------------------------------------------
+\caption{From published redispatch records to the analysis dataset.
+Successive filtering steps applied to the raw \"UNB redispatch events: from
+123{,}362 published events we retain those joined to a plant-matcher row
+(105{,}668), those with resolved coordinates (101{,}793), those matched with
+confidence above 0.5 (86{,}561), and finally those whose measure reason
+(\texttt{GRUND\_DER\_MASSNAHME}) is load-induced (83{,}716). Bar labels give the
+surviving event count and, in parentheses, the number dropped at each step.
+About 32\% of published events are removed, leaving 83{,}716 confidently
+located, load-induced events for analysis.}
+
+% ---------------------------------------------------------------------------
+% Redispatch decomposition, indexed to 2013
+% ---------------------------------------------------------------------------
+\caption{Decomposition of total redispatch energy, indexed to 2013
+(base $=1.0$). Total energy (purple) is factored into the number of events $N$
+(green), the mean duration per event $\bar d$ (blue), and the mean power per
+event $\bar P$ (orange), so that $E = N\cdot\bar d\cdot\bar P$. By 2024 total
+redispatch energy has risen roughly sevenfold, growth driven almost entirely by
+the number of events; mean duration less than doubles and plateaus after 2022,
+while mean power per event stays flat and slightly declines. The dashed line
+marks the Redispatch~2.0 / NABEG transition (Oct 2021), after which the rise in
+event count steepens.}
+
+% ---------------------------------------------------------------------------
+% Events by confidence bucket
+% ---------------------------------------------------------------------------
+\caption{Redispatch events by plant-matcher confidence
+(\texttt{final\_confidence}). Most events sit in the highest buckets
+(56{,}216 above 0.95; 20{,}553 in $(0.8,0.95]$), so the great majority of plant
+locations are matched with high confidence and only a small tail falls below
+0.5.}
+
+% ---------------------------------------------------------------------------
+% Battery siting-value heatmap
+% ---------------------------------------------------------------------------
+\caption{Battery siting-value map: grid cells coloured by local siting value
+$dV$ (M\euro/year per 50~MW) from the redispatch wedge, over 910 candidate
+cells (darker $=$ higher; colour scale normalised at the 98th percentile,
+14.59~M\euro/year; max 15.79~M\euro/year). Value concentrates in eastern
+Germany, where all top-10 sites (circles) fall around Saxony-Anhalt and Saxony,
+tracing the congested corridors where redispatch interventions concentrate. The
+380/220~kV transmission grid is overlaid for reference.}
+
+% ---------------------------------------------------------------------------
+% Unmatchable volume by TSO
+% ---------------------------------------------------------------------------
+\caption{Unmatchable redispatch volume (market-based \emph{B\"orse} and
+countertrade measures) by instructing TSO (\texttt{ANWEISENDER\_UENB}), as a
+share of the total 182.0~TWh. These measures make up 15.7\% of all volume and
+are dominated by TenneT~DE (13.7\%, mostly countertrade); TransnetBW (1.0\%),
+Amprion (0.6\%), and 50Hertz (0.4\%) contribute little. This volume is excluded
+from the location-based analysis, as no physical bottleneck can be attributed to
+it.}
+
+% ---------------------------------------------------------------------------
+% Events by geocoding source
+% ---------------------------------------------------------------------------
+\caption{Redispatch events by geocoding source (\texttt{final\_source}), i.e.\
+the pipeline step that produced each plant's coordinates. The high-confidence
+exact matches dominate---\texttt{opsd\_exact} (50{,}493), \texttt{wikipedia}
+(10{,}169), and \texttt{psa\_exact} (9{,}278)---while fuzzy, gazetteer, and
+coarse-centroid fallbacks form a small long tail, consistent with the
+confidence distribution above.}
+
+% ---------------------------------------------------------------------------
+% Match rate by TSO under two definitions
+% ---------------------------------------------------------------------------
+\caption{Match rate by instructing TSO under two definitions of ``matched,''
+each measured by share of events, of distinct plants, and of energy volume
+(MWh). GEO (left) counts any plant match with usable coordinates; Data used
+(right) applies the strict analysis criterion (confidence $>0.5$ and a valid
+measure reason). TransnetBW is best covered under both definitions (91\%
+events / 93\% MWh under GEO; 83\% / 88\% strict), and Amprion is similarly
+robust and balanced (84 / 80 / 86 under GEO). TenneT~DE matches nearly all of
+its distinct plants (95\% GEO) but only 67\% of its volume---its largest
+interventions slip through---with all three measures converging near 60\% under
+the strict definition. 50Hertz is least matched at the plant level (30\% GEO,
+13\% strict); because its event and volume shares stay far higher (82\% / 73\%
+GEO), the unmatched plants are mostly small or infrequent while a few
+well-matched large plants carry most of its redispatch energy.}

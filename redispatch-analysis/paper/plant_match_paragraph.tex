@@ -1,0 +1,65 @@
+As a first step, we filter out all events for which the reason for the
+redistribution (\texttt{GRUND\_DER\_MASSNAHME}) was specified as something other
+than ``load induced'', thereby excluding test runs (\emph{Probefahrten}) and
+minor measure types that we do not consider in our analysis. In the next step,
+all events that are marked as Counter Trading or where the affected plant is
+``Exchange'' (\emph{B\"orse}) are also eliminated. Counter trading and
+exchange-based measures relieve congestion indirectly, by buying and selling
+additional electricity on the market, rather than directly instructing
+individual plants to change their output. We remove the data because there is no
+way to determine where the bottleneck was that required corrective action.
+
+For all remaining events, the affected plant entry is matched to a physical
+plant location via a comprehensive pipeline. The pipeline's steps are outlined
+in Algorithm~\ref{alg:plant-matcher}. Before any lookup, the raw plant string is
+normalised and cleaned: mojibake is repaired, umlauts are ASCII-folded, and
+transmission-system-operator codes, plant-type abbreviations, block and turbine
+unit codes, and other descriptor noise are stripped, leaving the significant
+place tokens. Each plant is also assigned an energy class
+(\emph{konventionell}, \emph{erneuerbar}, or \emph{sonstiges}) derived from its
+primary energy carrier, which is used to reject candidates whose fuel type
+contradicts the plant.
+
+The pipeline iterates through 7 different steps for every location, stopping as
+soon as a candidate reaches a confidence above $0.85$. The steps are, in order:
+(0)~an aggregation filter that intercepts grid-area, cluster, and pool entries,
+resolving them only to a coarse regional, state, or DSO-area centroid, and
+discarding purely market-based constructs (e.g. \emph{B\"orse}, minimum reserve,
+EIC codes) that have no meaningful coordinate; (1)~a direct match against the
+OPSD database, first exact and then fuzzy; (2)~a direct match against the PyPSA
+plant list, again exact and then fuzzy; (3)~for conventional and
+\emph{sonstiges} plants, a German Wikipedia API search using the cleaned name
+plus a plant-type suffix (e.g.\ ``Kraftwerk''), with a DuckDuckGo search as a
+fallback; (4)~for the remaining plants, a place-name extraction resolved against
+the German pgeocode gazetteer, complemented by state- and region-centroid
+lookups; (5)~for renewables not yet located, a Wikipedia search (with
+DuckDuckGo fallback) using ``Windpark''/``Solarpark'' suffixes; and (6)~a
+last-resort Nominatim forward geocode when nothing else matched. Every Wikipedia
+and DuckDuckGo candidate must pass a set of strict gates (title blocklist, token
+overlap, presence of coordinates within the German--Luxembourg--Austrian bounding
+box, and no energy-type contradiction) before it is accepted. Each step records
+its outcome independently, and the final coordinate is chosen as the
+highest-confidence candidate across all steps.
+
+The confidence score calculation can be seen in Table~\ref{tab:confidence}. The
+reasoning behind the confidence scoring is as following: The highest confidence
+is assigned to direct matches to the OPSD database, which is a list of plants
+provided by Netztransparenz directly. The second highest confidence is assigned
+to direct matches to the PyPSA plant list, a list maintained by the Technical
+University of Berlin. After this, both OPSD and PyPSA are fuzzy matched against
+the string. For this, they get assigned a base confidence multiplied with a
+fuzzy match coefficient between 0 and 1, obtained as the Ratcliff--Obershelp
+similarity ratio between the cleaned plant name and the candidate string (the
+\texttt{difflib.SequenceMatcher} implementation), with a fuzzy match only being
+considered above a cutoff of $0.88$ for OPSD and $0.90$ for PyPSA. The remaining,
+web- and gazetteer-based sources are assigned successively lower base
+confidences, reflecting that they identify a plausible location rather than a
+verified plant entry: a Wikipedia match scores $0.85$, a DuckDuckGo-mediated
+Wikipedia match $0.70$, an OPSD city-name match $0.55$, and a gazetteer
+place-name hit $0.50$, while coarse state-, region-, and DSO-area centroids
+receive the lowest scores. Two adjustments are applied on top of the base score:
+a candidate whose energy class contradicts the plant's primary energy carrier is
+set to zero, and a PyPSA match that is ambiguous because several equally named
+plants share the string is penalised in proportion to the number of competing
+candidates. For a more comprehensive overview see our github (link github,
+probably explain more):

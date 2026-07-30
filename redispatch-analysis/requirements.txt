@@ -1,0 +1,14 @@
+# Rule-based matcher
+pandas>=2.0
+requests>=2.31
+beautifulsoup4>=4.12
+pgeocode>=0.4
+openpyxl>=3.1          # Excel output; the CSV is written regardless
+ddgs>=6.0              # optional — DuckDuckGo fallback is skipped if absent
+
+# Maps and figures
+numpy>=1.24
+scipy>=1.10
+shapely>=2.0
+networkx>=3.0
+Pillow>=10.0

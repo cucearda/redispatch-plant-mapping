@@ -1,0 +1,91 @@
+# Battery locational-siting scorer config.
+# Scope: ACTIVE batteries from MaStR.
+# Resolution: QUARTER-HOURLY (15-min) end to end. Prices are loaded at their
+#   native 15-min UTC grid, events are expanded onto that grid, and the LP
+#   cycles over 96 steps/day with dt = 0.25 h.
+# Wedge: sign from RICHTUNG, magnitude = joined intraday price p_base[t].
+
+paths:
+  battery_csv:   "C:/Users/wachs/Documents/TUM/Seminar EM/Final_Analysis/commercial_battery_storage.csv"
+  redispatch_csv: "C:/Users/wachs/Documents/TUM/Seminar EM/ALLES_NEU/redispatch_joined_high_confidence.csv"
+  price_csv:     "C:/Users/wachs/Documents/TUM/Seminar EM/ALLES_NEU/intraday_prices_de_15min.csv"
+  buses_csv:     "C:/Users/wachs/Documents/TUM/Seminar EM/grid_data/buses.csv"
+  lines_csv:     "C:/Users/wachs/Documents/TUM/Seminar EM/grid_data/lines.csv"
+  out_dir:       "C:/Users/wachs/Documents/TUM/Seminar EM/ALLES_NEU/battery_siting_score/out"
+
+battery:
+  # source: which roster of batteries to score.
+  #   "mastr": the real active MaStR fleet from paths.battery_csv (original behavior).
+  #   "grid":  an ARTIFICIAL regular lattice of candidate sites across Germany, built
+  #            from the DE buses' bounding box. Turns the output into a locational-value
+  #            MAP ("where would a battery be worth siting") instead of a per-fleet score.
+  #            Everything downstream (snap, wedge, LP/proxy, rank) is identical.
+  source: "grid"
+  grid:
+    spacing_deg: 0.25         # lattice step in degrees (~20-28 km); smaller = denser map
+    power_mw: 50.0            # nameplate per candidate (ignored when baseline.use_fixed_mw=true)
+    max_dist_km: 50.0         # drop cells farther than this from any DE bus (clip to grid footprint).
+                              # 50 km fills interior rural holes while sea/foreign corners still drop out.
+  status_filter: ["active"]   # confirmed: active only (mastr source only)
+  duration_hours: 4           # E = 4 * p_bar (= 16 quarter-hour steps at full power),
+                              #   capacity field ignored (NaN anyway)
+  drop_nan_coords: true
+
+baseline:
+  # When use_fixed_mw is true, EVERY battery is scored at fixed_mw instead of its
+  # own MaStR nameplate. Because the LP profit is exactly linear in p_bar, this
+  # rescales V_eur, V_copperplate_eur and dV_eur to a common reference size, so
+  # the copperplate becomes identical across the fleet and dV measures pure
+  # locational value of a standardized battery (no size effect). When false,
+  # each battery is scored at its own p_bar_mw (V/dV then scale with size).
+  use_fixed_mw: true
+  fixed_mw: 50.0              # common reference power [MW] applied to all batteries
+
+storage_lp:
+  eta_roundtrip: 1         # one-way efficiency = sqrt(0.85) ~= 0.9220
+
+kernel:
+  type: "ptdf"                # "gaussian" | "quartic" | "ptdf".
+                              #   gaussian/quartic: K_h applied to Dijkstra graph distance [m].
+                              #   ptdf: PyPSA DC PTDF; K_h applied to ||PTDF[:,n] - PTDF[:,g]||_2
+                              #     (dimensionless). Cross-sub-network pairs forced to zero.
+  bandwidth_h_m: 200000.0     # graph-distance kernels only. quartic: hard support radius. gaussian: sigma.
+  cutoff_sigmas: 4.0          # graph-gaussian only; Dijkstra cutoff = cutoff_sigmas * sigma (= 800 km here).
+  ptdf_bandwidth: 1.0         # ptdf only. Dimensionless. PTDF entries are in [-1,1],
+                              # so per-line differences are O(1) and ||diff|| over the
+                              # active lines is typically O(0.1)-O(10). Tune as needed.
+  ptdf_shape: "gaussian"      # ptdf only. Kernel SHAPE applied to PTDF distance: "gaussian" or "quartic".
+
+wedge:
+  # mode:
+  #   "exponential": pi_hat = p_base[t] * exp(scale * sum_g K(d)*sign).  Multiplicative in price ->
+  #       shift scales with the price level (biases toward peak/sell hours); strictly positive.
+  #   "additive":    pi_hat = p_base[t] + alpha_cal * sum_g K(d)*sign*MW_g.  Flat EUR/MWh shift,
+  #       VOLUME-WEIGHTED by each event's mean power; a surplus neighbourhood lowers the cheap
+  #       charging hours as much as the peaks (symmetric). alpha_cal is auto-CALIBRATED so the mean
+  #       absolute wedge over active steps == calib_price_eur_per_mwh.
+  mode: "additive"
+  scale: 0.10                 # exponential mode only: alpha in the exponent (dimensionless)
+  calib_price_eur_per_mwh: 100.0   # additive mode: target mean local price premium [EUR/MWh].
+                              # Anchor to BNetzA: annual redispatch cost / annual redispatch energy
+                              # (~ EUR 2.8 bn / ~28 TWh in 2024 ~= 100 EUR/MWh). alpha is derived from it.
+  clip_eur_per_mwh: 500.0     # +/- ceiling on the congestion-driven local price premium [EUR/MWh],
+                              # ~ p99 of observed intraday price. Bounds the heavy tail of volume-weighted
+                              # W (a few buses sit near GW-scale redispatch hubs); a congestion premium
+                              # cannot physically exceed the scarcity price. null disables.
+  # mc[g,t] = p_base[t] (joined intraday price). sign from RICHTUNG.
+  # per_constraint not implementable (no constraint/line ID in this dataset).
+
+window:
+  # Restrict scoring to full calendar years covered by BOTH redispatch and prices.
+  # end_utc is inclusive; 23:45 captures the last quarter-hour step of the day.
+  start_utc: "2021-10-01T00:00:00Z"   # Redispatch 2.0 in force (NABEG); pre-2.0 events excluded
+  end_utc:   "2025-12-31T23:45:00Z"
+
+run:
+  method: "proxy"             # "proxy" | "lp".
+                              #   proxy: fast analytic screening score only (seconds).
+                              #   lp:    full daily LP solver per battery (slow, the
+                              #          n_workers pool); also reports Spearman vs proxy.
+  n_workers: 8                # multiprocessing pool size (LP method only)
+  sample_batteries: null      # set to int for a quick subset run; null = all

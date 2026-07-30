@@ -1,0 +1,34 @@
+% PyPSA-Eur run configuration for the nodal baseline (Section \ref{sec:Baseline}).
+% Values taken from results/de-nodal-2025-hourly/configs/config.base_s_30_elec_.yaml
+\begin{table}[t]
+  \centering
+  \caption{Configuration of the PyPSA-Eur baseline runs. Both runs share all
+  settings except the spatial clustering. Note the deliberate split between the
+  \emph{system year} 2025 (capacities, costs, CO\textsubscript{2} budget) and the
+  \emph{weather year} 2013 (renewable and load time series); see the discussion in
+  Section~\ref{sec:Baseline}.}
+  \label{tab:pypsa-settings}
+  \begin{tabular}{@{}ll@{}}
+    \toprule
+    \textbf{Setting} & \textbf{Value} \\
+    \midrule
+    PyPSA-Eur version        & v2026.02.0 \\
+    Foresight                & overnight (single horizon) \\
+    System / price year      & 2025 (\texttt{planning\_horizons}) \\
+    Weather year             & 2013 \\
+    Snapshots                & 2013-01-01 to 2014-01-01, hourly \\
+                             & (8760\,h, leap day dropped) \\
+    Atlite cutout            & \texttt{europe-2013-sarah3-era5} \\
+    Countries                & DE + FR, BE, NL, LU, CH, \\
+                             & AT, CZ, PL, DK (10 total) \\
+    Spatial clustering       & 20 and 30 nodes \\
+                             & ($\rightarrow$ 10 and 17 DE nodes) \\
+    Transmission limit (\texttt{ll})    & v1.0 (no grid expansion) \\
+    Transmission losses      & linearised, 2 tranches \\
+    CO\textsubscript{2} budget (2025)   & 0.648 rel.\ to 1990 \\
+    Load shedding            & enabled, 100\,000\,\euro/MWh \\
+    Solver                   & Gurobi, barrier (method 2) \\
+    Random seed              & 123 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

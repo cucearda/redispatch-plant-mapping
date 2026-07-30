@@ -1,0 +1,24 @@
+\subsection{Limitations}
+\label{sec:limitations}
+
+Several limitations bound how far our ranking can be trusted. First, the wedge is
+anchored to the affected \emph{plant} of each redispatch event, which is the
+actuator the TSO uses, not the location of the binding constraint; the PTDF kernel
+mitigates but cannot relocate a signal that is already mislocated, so scores reward
+proximity to dispatch activity rather than to congestion itself. Second, our data
+covers only the 220/380~kV transmission system, so a battery that relieves
+distribution-level congestion can score poorly despite being well placed, making
+the ranking valid only within the transmission frame. Third, roughly 30\% of
+redispatch volume never enters the scoring---mostly countertrading, which by
+construction identifies no congested location, and secondarily plants that cannot
+be matched to coordinates---so the effective price is built on a partial view of
+the system. Crucially, this missing share is unlikely to be random: matchability
+correlates with plant type, region, and vintage, and countertrading concentrates on
+particular corridors, so the missing events are plausibly clustered in space and the
+recovered hotspot map may differ from the true one even at the transmission level we
+do observe. Finally, batteries co-located with PV or wind can be good for the grid
+almost by construction, absorbing local generation that would otherwise be curtailed,
+yet our pure arbitrage score does not credit this avoided curtailment and so
+under-ranks them. Taken together, the scores are best read as a relative,
+transmission-level indication of placement against the redispatch we can observe and
+localise, not an absolute, node-level verdict on any individual site.

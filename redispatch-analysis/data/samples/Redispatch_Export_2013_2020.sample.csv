@@ -1,0 +1,201 @@
+BEGINN_DATUM;BEGINN_UHRZEIT;ZEITZONE_VON;ENDE_DATUM;ENDE_UHRZEIT;ZEITZONE_BIS;GRUND_DER_MASSNAHME;RICHTUNG;MITTLERE_LEISTUNG_MW;MAXIMALE_LEISTUNG_MW;GESAMTE_ARBEIT_MWH;ANWEISENDER_UENB;ANFORDERNDER_UENB;BETROFFENE_ANLAGE;PRIMAERENERGIEART
+02.04.2013;11:00;UTC;02.04.2013;14:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;267;300;800;50Hertz;PSE;Jänschwalde, Schkopau;Konventionell
+04.04.2013;00:30;UTC;04.04.2013;06:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;90;90;495;TransnetBW;TenneT DE;EnBW Trading GmbH;Sonstiges
+04.04.2013;00:30;UTC;04.04.2013;06:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;88;90;485;TenneT DE;TenneT DE;Mehrum;Konventionell
+05.04.2013;11:30;UTC;05.04.2013;17:15;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;50;50;288;TenneT DE;TenneT DE;Mehrum;Konventionell
+06.04.2013;00:00;UTC;06.04.2013;06:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;79;100;475;TenneT DE;TenneT DE;Mehrum;Konventionell
+06.04.2013;00:45;UTC;06.04.2013;04:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;100;100;325;TenneT DE;TenneT DE;Statkraft KW-Pool;Konventionell
+06.04.2013;04:00;UTC;06.04.2013;06:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;50;50;100;TenneT DE;TenneT DE;Statkraft KW-Pool;Konventionell
+06.04.2013;23:45;UTC;07.04.2013;03:00;UTC;Spannungsbedingter Redispatch;Wirkleistungseinspeisung erhöhen;5;5;16;TenneT DE;TenneT DE;EGC KW-Pool;Konventionell
+06.04.2013;23:45;UTC;07.04.2013;03:00;UTC;Spannungsbedingter Redispatch;Wirkleistungseinspeisung reduzieren;5;5;16;TenneT DE;TenneT DE;Waldeck 5;Sonstiges
+07.04.2013;21:45;UTC;07.04.2013;22:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;90;90;22;TenneT DE;TenneT DE;Mehrum;Konventionell
+07.04.2013;22:00;UTC;08.04.2013;01:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;66;90;199;TenneT DE;TenneT DE;Mehrum;Konventionell
+08.04.2013;02:00;UTC;08.04.2013;06:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;72;90;288;TenneT DE;TenneT DE;Mehrum;Konventionell
+09.04.2013;14:15;UTC;09.04.2013;17:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;97;110;268;TenneT DE;TenneT DE;Kiel;Konventionell
+09.04.2013;15:00;UTC;09.04.2013;17:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;170;190;340;TransnetBW;TenneT DE;EnBW Trading GmbH;Sonstiges
+13.04.2013;04:45;UTC;13.04.2013;16:15;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;493;800;5668;TenneT DE;50Hertz & TenneT DE;Irsching 5;Konventionell
+13.04.2013;06:00;UTC;13.04.2013;16:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;530;800;5300;50Hertz;TenneT DE;Boxberg, Jänschwalde, Lippendorf, Schkopau, Schwarze Pumpe;Konventionell
+13.04.2013;15:00;UTC;13.04.2013;16:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;50;50;50;TenneT DE;50Hertz & TenneT DE;Statkraft KW-Pool;Konventionell
+13.04.2013;22:15;UTC;14.04.2013;17:30;UTC;Spannungsbedingter Redispatch;Wirkleistungseinspeisung erhöhen;240;250;4616;TenneT DE;TenneT DE;Irsching 5;Konventionell
+13.04.2013;23:45;UTC;14.04.2013;06:45;UTC;Spannungsbedingter Redispatch;Wirkleistungseinspeisung reduzieren;4;4;28;TenneT DE;TenneT DE;Waldeck 5;Sonstiges
+14.04.2013;10:45;UTC;14.04.2013;14:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;248;248;806;TenneT DE;TenneT DE;Waldeck 6;Sonstiges
+14.04.2013;11:30;UTC;14.04.2013;14:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;248;248;620;50Hertz;TenneT DE;Schkopau;Konventionell
+15.04.2013;20:30;UTC;15.04.2013;22:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;85;90;128;TenneT DE;TenneT DE;Mehrum;Konventionell
+15.04.2013;22:00;UTC;15.04.2013;22:30;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;20;25;10;TenneT DE;TenneT DE;Mehrum;Konventionell
+16.04.2013;18:45;UTC;16.04.2013;19:30;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;120;120;90;TenneT DE;TenneT DE;EGC KW-Pool;Konventionell
+16.04.2013;18:45;UTC;16.04.2013;20:15;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;110;120;165;TenneT DE;TenneT DE;Kiel;Konventionell
+18.04.2013;05:00;UTC;18.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;154;386;1236;TenneT DE;50Hertz & TenneT DE;Ingolstadt 4;Konventionell
+18.04.2013;06:00;UTC;18.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;278;300;2500;TransnetBW;TenneT DE;EnBW KW-Pool;Sonstiges
+18.04.2013;06:15;UTC;18.04.2013;07:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;106;106;80;TenneT DE;TenneT DE;Statkraft KW-Pool;Konventionell
+18.04.2013;06:15;UTC;18.04.2013;08:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;294;420;515;TenneT DE;TenneT DE;Wilhelmshaven;Konventionell
+18.04.2013;07:00;UTC;18.04.2013;08:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;200;200;200;TenneT DE;TenneT DE;Ingolstadt 4;Konventionell
+18.04.2013;07:00;UTC;18.04.2013;09:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;200;200;400;TransnetBW;TenneT DE;EnBW KW-Pool;Sonstiges
+18.04.2013;08:00;UTC;18.04.2013;09:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;100;100;100;TenneT DE;TenneT DE;Statkraft KW-Pool;Konventionell
+18.04.2013;08:15;UTC;18.04.2013;08:30;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;60;60;15;TenneT DE;TenneT DE;Wilhelmshaven;Konventionell
+18.04.2013;08:45;UTC;18.04.2013;17:00;UTC;Spannungsbedingter Redispatch;Wirkleistungseinspeisung reduzieren;2;2;16;TenneT DE;TenneT DE;Huntorf;Konventionell
+18.04.2013;08:45;UTC;18.04.2013;12:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;300;300;975;TransnetBW;TransnetBW;EnBW KW-Pool;Sonstiges
+18.04.2013;09:00;UTC;18.04.2013;20:30;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;166;260;1912;TenneT DE;TenneT DE;Staudinger 5;Konventionell
+18.04.2013;09:30;UTC;18.04.2013;12:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;84;185;211;TenneT DE;TenneT DE;Ingolstadt 4;Konventionell
+18.04.2013;10:00;UTC;18.04.2013;12:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;184;200;367;TransnetBW;TransnetBW;Vorarlberger Illwerke AG;Sonstiges
+18.04.2013;10:00;UTC;18.04.2013;12:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;184;200;367;TransnetBW;TransnetBW;Kraftwerk Lippendorf;Konventionell
+18.04.2013;12:00;UTC;18.04.2013;19:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;167;167;1169;TransnetBW;TransnetBW;Heizkraftwerk Altbach/Deizisau ;Konventionell
+18.04.2013;12:00;UTC;18.04.2013;19:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;167;167;1169;TransnetBW;TransnetBW;Kraftwerk Lippendorf;Konventionell
+18.04.2013;12:00;UTC;18.04.2013;19:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;233;233;1631;TransnetBW;TransnetBW;Heizkraftwerk Altbach/Deizisau ;Konventionell
+18.04.2013;16:15;UTC;18.04.2013;17:00;UTC;Gezielter Leistungsausgleich bei Einspeisemanagement;Wirkleistungseinspeisung erhöhen;19;19;14;TenneT DE;TenneT DE;Statkraft KW-Pool;Konventionell
+18.04.2013;16:15;UTC;18.04.2013;17:00;UTC;Gezielter Leistungsausgleich bei Einspeisemanagement;Wirkleistungseinspeisung erhöhen;30;30;22;TenneT DE;TenneT DE;Statkraft KW-Pool;Konventionell
+18.04.2013;16:15;UTC;18.04.2013;17:00;UTC;Gezielter Leistungsausgleich bei Einspeisemanagement;Wirkleistungseinspeisung erhöhen;20;20;15;TenneT DE;TenneT DE;Statkraft KW-Pool;Konventionell
+18.04.2013;16:15;UTC;18.04.2013;17:00;UTC;Gezielter Leistungsausgleich bei Einspeisemanagement;Wirkleistungseinspeisung erhöhen;40;40;30;TenneT DE;TenneT DE;Statkraft KW-Pool;Konventionell
+18.04.2013;18:30;UTC;18.04.2013;21:15;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;92;125;254;TenneT DE;TenneT DE;Kiel;Konventionell
+18.04.2013;19:00;UTC;18.04.2013;20:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;85;85;85;TransnetBW;TenneT DE;EnBW KW-Pool;Sonstiges
+18.04.2013;21:00;UTC;18.04.2013;22:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;100;125;100;TenneT DE;TenneT DE;GDF Suez KW-Pool;Konventionell
+18.04.2013;21:30;UTC;18.04.2013;22:00;UTC;Gezielter Leistungsausgleich bei Einspeisemanagement;Wirkleistungseinspeisung erhöhen;50;50;25;TenneT DE;TenneT DE;GDF Suez KW-Pool;Konventionell
+19.04.2013;23:15;UTC;20.04.2013;00:30;UTC;Spannungsbedingter Redispatch;Wirkleistungseinspeisung reduzieren;3;3;4;TenneT DE;TenneT DE;Huntorf;Konventionell
+20.04.2013;00:45;UTC;20.04.2013;02:30;UTC;Spannungsbedingter Redispatch;Wirkleistungseinspeisung reduzieren;3;3;5;TenneT DE;TenneT DE;Huntorf;Konventionell
+20.04.2013;02:45;UTC;20.04.2013;04:00;UTC;Spannungsbedingter Redispatch;Wirkleistungseinspeisung reduzieren;3;3;4;TenneT DE;TenneT DE;Huntorf;Konventionell
+20.04.2013;19:30;UTC;20.04.2013;22:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;75;75;187;Amprion;TenneT DE;Scholven;Konventionell
+20.04.2013;19:30;UTC;20.04.2013;22:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;75;75;187;Amprion;TenneT DE;Scholven;Konventionell
+20.04.2013;19:30;UTC;20.04.2013;22:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;75;75;187;Amprion;TenneT DE;Scholven;Konventionell
+20.04.2013;19:30;UTC;20.04.2013;22:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;75;75;187;Amprion;TenneT DE;Scholven;Konventionell
+20.04.2013;20:00;UTC;20.04.2013;22:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;300;300;600;50Hertz;TenneT DE;Markersbach, Schkopau;Konventionell
+20.04.2013;21:45;UTC;20.04.2013;22:00;UTC;Spannungsbedingter Redispatch;Wirkleistungseinspeisung reduzieren;3;3;1;TenneT DE;TenneT DE;Huntorf;Konventionell
+20.04.2013;22:00;UTC;21.04.2013;04:00;UTC;Spannungsbedingter Redispatch;Wirkleistungseinspeisung reduzieren;3;3;18;TenneT DE;TenneT DE;Huntorf;Konventionell
+20.04.2013;22:00;UTC;21.04.2013;00:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;300;300;600;50Hertz;TenneT DE;Lippendorf, Schkopau;Konventionell
+20.04.2013;22:00;UTC;20.04.2013;23:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;75;75;75;Amprion;TenneT DE;Scholven;Konventionell
+20.04.2013;22:00;UTC;20.04.2013;23:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;75;75;75;Amprion;TenneT DE;Scholven;Konventionell
+20.04.2013;22:00;UTC;20.04.2013;23:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;75;75;75;Amprion;TenneT DE;Scholven;Konventionell
+20.04.2013;22:00;UTC;20.04.2013;23:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;75;75;75;Amprion;TenneT DE;Scholven;Konventionell
+20.04.2013;23:00;UTC;21.04.2013;00:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;75;75;75;Amprion;TenneT DE;Scholven;Konventionell
+20.04.2013;23:00;UTC;21.04.2013;00:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;75;75;75;Amprion;TenneT DE;Scholven;Konventionell
+20.04.2013;23:00;UTC;21.04.2013;00:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;75;75;75;Amprion;TenneT DE;Scholven;Konventionell
+20.04.2013;23:00;UTC;21.04.2013;00:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;75;75;75;Amprion;TenneT DE;Scholven;Konventionell
+21.04.2013;06:15;UTC;21.04.2013;08:00;UTC;Spannungsbedingter Redispatch;Wirkleistungseinspeisung reduzieren;3;3;5;TenneT DE;TenneT DE;Huntorf;Konventionell
+21.04.2013;09:00;UTC;21.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;150;150;600;Amprion;TenneT DE;Scholven;Konventionell
+21.04.2013;09:00;UTC;21.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;150;150;600;Amprion;TenneT DE;Scholven;Konventionell
+21.04.2013;09:00;UTC;21.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;20;20;80;Amprion;TenneT DE;Völklingen;Konventionell
+21.04.2013;09:00;UTC;21.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;40;40;160;Amprion;TenneT DE;Herne;Konventionell
+21.04.2013;09:00;UTC;21.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;40;40;160;Amprion;TenneT DE;Walsum;Konventionell
+21.04.2013;09:00;UTC;21.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;400;400;1600;50Hertz;TenneT DE;VE-G KW Pool;Konventionell
+21.04.2013;10:30;UTC;21.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;270;490;1215;TenneT DE;TenneT DE;Heyden;Konventionell
+21.04.2013;10:30;UTC;21.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;383;490;1725;TenneT DE;TenneT DE;Waldeck 6;Sonstiges
+21.04.2013;11:00;UTC;21.04.2013;22:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;587;1040;6460;50Hertz;TenneT DE;Boxberg, Goldisthal, Jänschwalde, Lippendorf, Markersbach, Schkopau;Konventionell
+21.04.2013;12:30;UTC;21.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;150;150;375;TenneT DE;TenneT DE;Grafenrheinfeld;Konventionell
+21.04.2013;13:00;UTC;21.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;75;75;150;Amprion;TenneT DE;Scholven;Konventionell
+21.04.2013;13:00;UTC;21.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;75;75;150;Amprion;TenneT DE;Scholven;Konventionell
+21.04.2013;14:00;UTC;21.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;75;75;75;Amprion;TenneT DE;Scholven;Konventionell
+21.04.2013;14:00;UTC;21.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;75;75;75;Amprion;TenneT DE;Scholven;Konventionell
+21.04.2013;14:00;UTC;21.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;20;20;20;Amprion;TenneT DE;Völklingen;Konventionell
+21.04.2013;14:00;UTC;21.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;20;20;20;Amprion;TenneT DE;Herne;Konventionell
+21.04.2013;14:00;UTC;21.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;30;30;30;Amprion;TenneT DE;Walsum;Konventionell
+21.04.2013;15:00;UTC;21.04.2013;16:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;150;150;150;Amprion;TenneT DE;Scholven;Konventionell
+21.04.2013;15:00;UTC;21.04.2013;16:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;150;150;150;Amprion;TenneT DE;Scholven;Konventionell
+21.04.2013;15:00;UTC;21.04.2013;18:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;20;20;60;Amprion;TenneT DE;Völklingen;Konventionell
+21.04.2013;15:00;UTC;21.04.2013;18:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;20;20;60;Amprion;TenneT DE;Herne;Konventionell
+21.04.2013;15:00;UTC;21.04.2013;18:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;60;60;180;Amprion;TenneT DE;Walsum;Konventionell
+21.04.2013;16:45;UTC;21.04.2013;17:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;50;50;12;TenneT DE;TenneT DE;Heyden;Konventionell
+21.04.2013;16:45;UTC;21.04.2013;17:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;200;200;50;TenneT DE;TenneT DE;Waldeck 5;Sonstiges
+21.04.2013;16:45;UTC;21.04.2013;17:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;45;45;11;TenneT DE;TenneT DE;Wilhelmshaven;Konventionell
+21.04.2013;16:45;UTC;21.04.2013;17:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;80;80;20;TenneT DE;TenneT DE;SW München KW-Pool;Sonstiges
+21.04.2013;16:45;UTC;21.04.2013;17:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;8;8;2;TenneT DE;TenneT DE;Erzhausen 3;Sonstiges
+21.04.2013;16:45;UTC;21.04.2013;17:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;20;20;5;TenneT DE;TenneT DE;EES KW-Pool;Konventionell
+21.04.2013;18:00;UTC;21.04.2013;20:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;60;60;120;TenneT DE;TenneT DE;Statkraft KW-Pool;Konventionell
+21.04.2013;18:00;UTC;21.04.2013;20:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;20;20;40;Amprion;TenneT DE;Walsum;Konventionell
+21.04.2013;18:00;UTC;21.04.2013;20:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;50;50;100;Amprion;TenneT DE;Herne;Konventionell
+21.04.2013;18:00;UTC;21.04.2013;20:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;20;20;40;Amprion;TenneT DE;Völklingen;Konventionell
+21.04.2013;20:00;UTC;21.04.2013;21:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;40;40;40;Amprion;TenneT DE;Walsum;Konventionell
+21.04.2013;20:00;UTC;21.04.2013;21:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;70;70;70;Amprion;TenneT DE;Herne;Konventionell
+21.04.2013;20:00;UTC;21.04.2013;21:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;40;40;40;Amprion;TenneT DE;Völklingen;Konventionell
+21.04.2013;20:30;UTC;21.04.2013;22:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;183;250;275;TenneT DE;TenneT DE;Wilhelmshaven;Konventionell
+21.04.2013;20:30;UTC;21.04.2013;22:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;183;250;275;TenneT DE;TenneT DE;Heyden;Konventionell
+21.04.2013;22:00;UTC;21.04.2013;23:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;500;500;500;50Hertz;TenneT DE;Lippendorf, Schkopau;Konventionell
+21.04.2013;22:00;UTC;22.04.2013;00:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;188;250;375;TenneT DE;TenneT DE;Wilhelmshaven;Konventionell
+21.04.2013;22:00;UTC;22.04.2013;00:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;188;250;375;TenneT DE;TenneT DE;Heyden;Konventionell
+21.04.2013;23:00;UTC;22.04.2013;00:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;50;50;50;TenneT DE;TenneT DE;Statkraft KW-Pool;Konventionell
+22.04.2013;09:30;UTC;22.04.2013;20:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;135;190;1420;TenneT DE;TenneT DE;Mehrum;Konventionell
+22.04.2013;10:15;UTC;22.04.2013;11:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;150;150;112;TenneT DE;TenneT DE;Statkraft KW-Pool;Konventionell
+22.04.2013;11:00;UTC;22.04.2013;20:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;134;190;1210;TransnetBW;TenneT DE;EnBW KW-Pool;Sonstiges
+23.04.2013;03:30;UTC;23.04.2013;04:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;57;57;28;TenneT DE;TenneT DE;Erzhausen 2;Sonstiges
+23.04.2013;03:30;UTC;23.04.2013;04:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;57;57;28;TenneT DE;TenneT DE;Erzhausen 1;Sonstiges
+23.04.2013;05:15;UTC;23.04.2013;08:30;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;93;190;301;TenneT DE;TenneT DE;Mehrum;Konventionell
+23.04.2013;05:30;UTC;23.04.2013;12:00;UTC;Gezielter Leistungsausgleich bei Einspeisemanagement;Wirkleistungseinspeisung erhöhen;190;190;1235;TransnetBW;TenneT DE;EnBW KW-Pool;Sonstiges
+23.04.2013;06:30;UTC;23.04.2013;10:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;190;190;665;TenneT DE;TenneT DE;Statkraft KW-Pool;Konventionell
+23.04.2013;10:00;UTC;23.04.2013;12:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;190;190;380;TransnetBW;TenneT DE;EnBW KW-Pool;Sonstiges
+23.04.2013;11:15;UTC;23.04.2013;11:30;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;150;150;38;TenneT DE;TenneT DE;EGC KW-Pool;Konventionell
+23.04.2013;11:15;UTC;23.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;150;150;262;TenneT DE;TenneT DE;Staudinger 5;Konventionell
+23.04.2013;11:45;UTC;23.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;5;5;6;Amprion;TenneT DE;Völklingen;Konventionell
+23.04.2013;11:45;UTC;23.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;35;35;43;Amprion;TenneT DE;Walsum;Konventionell
+23.04.2013;11:45;UTC;23.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;20;20;25;Amprion;TenneT DE;Lünen;Konventionell
+23.04.2013;11:45;UTC;23.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;90;90;112,5;Amprion;TenneT DE;Herne;Konventionell
+25.04.2013;04:00;UTC;25.04.2013;05:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;70;70;70;Amprion;TenneT DE;GK-West;Konventionell
+25.04.2013;04:00;UTC;25.04.2013;05:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;41;41;41;Amprion;TenneT DE;Emsland;Konventionell
+25.04.2013;04:00;UTC;25.04.2013;05:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;50;50;50;Amprion;TenneT DE;Lünen;Konventionell
+25.04.2013;04:00;UTC;25.04.2013;16:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;723;1150;8675;50Hertz;TenneT DE;Jänschwalde, Lippendorf, Schkopau, Schwarze Pumpe;Konventionell
+25.04.2013;05:00;UTC;25.04.2013;06:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;140;140;140;Amprion;TenneT DE;GK-West;Konventionell
+25.04.2013;05:00;UTC;25.04.2013;06:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;64;64;64;Amprion;TenneT DE;Emsland;Konventionell
+25.04.2013;05:00;UTC;25.04.2013;06:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;120;120;120;Amprion;TenneT DE;Lünen;Konventionell
+25.04.2013;06:00;UTC;25.04.2013;07:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;140;140;140;Amprion;TenneT DE;GK-West;Konventionell
+25.04.2013;06:00;UTC;25.04.2013;07:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;220;220;220;Amprion;TenneT DE;Emsland;Konventionell
+25.04.2013;06:00;UTC;25.04.2013;07:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;120;120;120;Amprion;TenneT DE;Lünen;Konventionell
+25.04.2013;07:00;UTC;25.04.2013;09:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;475;475;950;Amprion;TenneT DE;Emsland;Konventionell
+25.04.2013;07:00;UTC;25.04.2013;09:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;40;40;80;Amprion;TenneT DE;GK-West;Konventionell
+25.04.2013;07:00;UTC;25.04.2013;09:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;60;60;120;Amprion;TenneT DE;Herne;Konventionell
+25.04.2013;07:00;UTC;25.04.2013;09:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;30;30;60;Amprion;TenneT DE;Walsum;Konventionell
+25.04.2013;07:00;UTC;25.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;230;230;1380;Amprion;TenneT DE;GK-West;Konventionell
+25.04.2013;07:00;UTC;25.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;160;160;960;Amprion;TenneT DE;Lünen;Konventionell
+25.04.2013;09:00;UTC;25.04.2013;11:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;150;150;300;Amprion;TenneT DE;Emsland;Konventionell
+25.04.2013;09:00;UTC;25.04.2013;11:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;160;160;320;Amprion;TenneT DE;GK-West;Konventionell
+25.04.2013;09:00;UTC;25.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;160;160;640;Amprion;TenneT DE;Herne;Konventionell
+25.04.2013;09:00;UTC;25.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;160;160;640;Amprion;TenneT DE;Walsum;Konventionell
+25.04.2013;10:30;UTC;25.04.2013;11:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;50;50;25;TenneT DE;TenneT DE;Heyden;Konventionell
+25.04.2013;10:30;UTC;25.04.2013;11:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;50;50;25;TenneT DE;TenneT DE;Ingolstadt 4;Konventionell
+25.04.2013;10:30;UTC;25.04.2013;14:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;270;330;945;TenneT DE;TenneT DE;Heyden;Konventionell
+25.04.2013;10:30;UTC;25.04.2013;11:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;250;250;125;TenneT DE;TenneT DE;Staudinger 5;Konventionell
+25.04.2013;11:00;UTC;25.04.2013;12:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;50;50;50;Amprion;TenneT DE;Scholven;Konventionell
+25.04.2013;11:00;UTC;25.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;210;210;420;Amprion;TenneT DE;GK-West;Konventionell
+25.04.2013;11:00;UTC;25.04.2013;14:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;200;200;600;Amprion;TenneT DE;Emsland;Konventionell
+25.04.2013;12:00;UTC;25.04.2013;14:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;50;50;100;Amprion;TenneT DE;Scholven;Konventionell
+25.04.2013;12:00;UTC;25.04.2013;14:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;255;420;510;TenneT DE;TenneT DE;Statkraft KW-Pool;Konventionell
+25.04.2013;13:00;UTC;25.04.2013;14:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;120;120;120;Amprion;TenneT DE;Lünen;Konventionell
+25.04.2013;13:00;UTC;25.04.2013;14:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;20;20;20;Amprion;TenneT DE;GK-West;Konventionell
+25.04.2013;13:00;UTC;25.04.2013;14:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;20;20;20;Amprion;TenneT DE;GK-West;Konventionell
+25.04.2013;13:00;UTC;25.04.2013;14:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;50;50;50;Amprion;TenneT DE;Herne;Konventionell
+25.04.2013;13:00;UTC;25.04.2013;14:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;50;50;50;Amprion;TenneT DE;Walsum;Konventionell
+25.04.2013;13:00;UTC;25.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;140;140;280;Amprion;TenneT DE;GK-West;Konventionell
+25.04.2013;13:00;UTC;25.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;140;140;280;Amprion;TenneT DE;GK-West;Konventionell
+25.04.2013;13:00;UTC;25.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;50;50;100;Amprion;TenneT DE;Herne;Konventionell
+25.04.2013;13:00;UTC;25.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;50;50;100;Amprion;TenneT DE;Walsum;Konventionell
+25.04.2013;14:00;UTC;25.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;5;5;5;Amprion;TenneT DE;Walsum;Konventionell
+25.04.2013;14:00;UTC;25.04.2013;16:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;50;50;100;Amprion;TenneT DE;Lünen;Konventionell
+25.04.2013;14:00;UTC;25.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;70;70;70;TenneT DE;TenneT DE;Statkraft KW-Pool;Konventionell
+25.04.2013;15:00;UTC;25.04.2013;16:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;70;70;70;Amprion;TenneT DE;GK-West;Konventionell
+25.04.2013;15:00;UTC;25.04.2013;16:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;70;70;70;Amprion;TenneT DE;GK-West;Konventionell
+25.04.2013;15:00;UTC;25.04.2013;16:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;30;30;30;Amprion;TenneT DE;Herne;Konventionell
+25.04.2013;15:00;UTC;25.04.2013;16:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;55;55;55;Amprion;TenneT DE;Walsum;Konventionell
+26.04.2013;06:00;UTC;26.04.2013;07:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;0;0;0;Amprion;TenneT DE;Herne;Konventionell
+26.04.2013;06:00;UTC;26.04.2013;07:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;150;150;150;Amprion;TenneT DE;Lünen;Konventionell
+26.04.2013;06:00;UTC;26.04.2013;07:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;150;150;150;Amprion;TenneT DE;Walsum;Konventionell
+26.04.2013;06:00;UTC;26.04.2013;08:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;450;600;900;50Hertz;TenneT DE;Goldisthal, Markersbach;Sonstiges
+26.04.2013;07:00;UTC;26.04.2013;09:30;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;120;120;300;Amprion;TenneT DE;Walsum;Konventionell
+26.04.2013;07:00;UTC;26.04.2013;10:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;80;80;240;Amprion;TenneT DE;Walsum;Konventionell
+26.04.2013;07:00;UTC;26.04.2013;12:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;0;0;0;Amprion;TenneT DE;Herne;Konventionell
+26.04.2013;07:00;UTC;26.04.2013;12:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;110;110;550;Amprion;TenneT DE;GK-West;Konventionell
+26.04.2013;07:00;UTC;26.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;210;210;1260;Amprion;TenneT DE;Lünen;Konventionell
+26.04.2013;08:00;UTC;26.04.2013;09:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;800;800;800;50Hertz;TenneT DE;Goldisthal, Markersbach, Schkopau;Konventionell
+26.04.2013;09:00;UTC;26.04.2013;14:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;540;800;2700;50Hertz;TenneT DE;Boxberg, Jänschwalde, Lippendorf, Schkopau;Konventionell
+26.04.2013;09:00;UTC;26.04.2013;10:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;200;200;200;TenneT DE;TenneT DE;Staudinger 5;Konventionell
+26.04.2013;10:00;UTC;26.04.2013;12:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;200;200;400;TenneT DE;TenneT DE;Staudinger 5;Konventionell
+26.04.2013;10:00;UTC;26.04.2013;12:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;100;100;200;Amprion;TenneT DE;Herne;Konventionell
+26.04.2013;10:00;UTC;26.04.2013;12:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;180;180;360;Amprion;TenneT DE;Walsum;Konventionell
+26.04.2013;10:45;UTC;26.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;151;280;640;TenneT DE;TenneT DE;Staudinger 5;Konventionell
+26.04.2013;12:00;UTC;26.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;0;0;0;Amprion;TenneT DE;Herne;Konventionell
+26.04.2013;12:00;UTC;26.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;40;40;40;Amprion;TenneT DE;GK-West;Konventionell
+26.04.2013;12:00;UTC;26.04.2013;13:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;130;130;130;Amprion;TenneT DE;Walsum;Konventionell
+26.04.2013;13:00;UTC;26.04.2013;14:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;0;0;0;Amprion;TenneT DE;Herne;Konventionell
+26.04.2013;13:00;UTC;26.04.2013;14:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;0;0;0;Amprion;TenneT DE;Walsum;Konventionell
+26.04.2013;13:00;UTC;26.04.2013;15:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;80;80;160;Amprion;TenneT DE;Lünen;Konventionell
+26.04.2013;22:30;UTC;26.04.2013;23:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;150;150;75;Amprion;TenneT DE;Scholven;Konventionell
+26.04.2013;22:30;UTC;26.04.2013;23:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;150;150;75;Amprion;TenneT DE;Scholven;Konventionell
+26.04.2013;22:30;UTC;26.04.2013;23:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;300;300;150;50Hertz;TenneT DE;Goldisthal;Sonstiges
+26.04.2013;23:30;UTC;27.04.2013;00:30;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung reduzieren;300;300;300;50Hertz;TenneT DE;Goldisthal;Sonstiges
+26.04.2013;23:30;UTC;27.04.2013;00:30;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;150;150;150;Amprion;TenneT DE;Scholven;Konventionell
+26.04.2013;23:30;UTC;27.04.2013;00:30;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;150;150;150;Amprion;TenneT DE;Scholven;Konventionell
+27.04.2013;07:00;UTC;27.04.2013;08:00;UTC;Strombedingter Redispatch;Wirkleistungseinspeisung erhöhen;150;150;150;Amprion;TenneT DE;GK-West;Konventionell
