@@ -5,6 +5,10 @@ Each stage lives in its own module with a `main()` entry point (see docs/matchin
 this orchestrates them in order. Stages write incrementally to this pipeline's temp_A1/ and to
 results/A1/ (see paths.py), so a run can also be resumed by commenting out completed stages.
 
+Run `python prep_data.py` first if input/Redispatch_Daten_2013_2026.csv,
+input/pypsa_powerplants_de_at_lu.csv, or input/bnetza_kraftwerkliste_clean.csv
+don't exist yet — this pipeline reads them read-only and doesn't build them itself.
+
     python A1/main.py
 
 The candidate index (step 0) is rebuilt only if it's missing — the German PyPSA data is stable,
@@ -28,15 +32,14 @@ import geocode_backfill
 import confirm_matches
 
 # ── config ────────────────────────────────────────────────────────────────────
-# Both exports together cover 2013-2026 (Redispatch_Daten.csv is the 2025-26 subset of the
-# 2021-2026 file). Concatenated in step 1, so a name appearing in both years is one entry.
-REDISPATCH_FILES = [os.path.join(INPUT_DIR, "Redispatch_Daten_2013_2020.csv"),
-                     os.path.join(INPUT_DIR, "Redispatch_Daten_2021_2026.csv")]
+# The prepped combined 2013-2026 dataset — built by prep_data.py, which must be
+# run first (see its docstring / docs/matching-pipeline.md).
+REDISPATCH_FILE  = os.path.join(INPUT_DIR, "Redispatch_Daten_2013_2026.csv")
 INDEX_FILE       = os.path.join(TEMP_DIR, "candidate_index.csv")
 
 # ── stages, in order ──────────────────────────────────────────────────────────
 STAGES = [
-    ("redispatch prep + rule filter", lambda: redispatch_prep.main(REDISPATCH_FILES)),
+    ("redispatch prep + rule filter", lambda: redispatch_prep.main(REDISPATCH_FILE)),
     ("exact match",                   match_exact.main),
     ("fuzzy shortlist",               match_fuzzy.main),
     ("LLM disambiguation",            match_llm.main),

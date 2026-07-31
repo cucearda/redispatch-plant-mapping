@@ -1,18 +1,15 @@
 """Build the dashboard data file (dashboard/data.js) from the raw redispatch
 calls and the plant-coordinate matches.
 
-Reads (both raw exports, covering 2013-2026 together):
-  - input/Redispatch_Daten_2013_2020.csv
-  - input/Redispatch_Daten_2021_2026.csv
+Reads:
+  - The combined 2013-2026 redispatch dataset, via prep_data.prep_redispatch()
+    (see ../prep_data.py — the raw-export combining, timezone correction, and
+    direction-encoding cleanup live there now, shared with any pipeline).
   - results/A1/redispatch_plant_matches.csv   one row per distinct plant name
                                            (or composed multi_plant bundle),
                                            with lat/lon/fueltype/entry_type
 
 Writes:
-  - input/Redispatch_Daten_2013_2026.csv   the two exports combined, timezone-
-                                           normalized and de-duplicated. A
-                                           derived cache (gitignored) — delete
-                                           and re-run to regenerate.
   - dashboard/data.js                      `const REDISPATCH_DATA = {...}`
                                            loaded by index.html via <script
                                            src> (works from file:// with no
@@ -24,16 +21,6 @@ Each raw call is classified as:
   - boerse        -> entry_type == "countertrade" (the "Börse" market entry)
   - not_identified-> everything else without coordinates
 
-Two source-data quirks are corrected here, not in the raw files:
-  - The 2013-2020 export timestamps are labelled UTC; the 2021-2026 export
-    (and everything since) is CET/CEST local time. Left alone, calendar days
-    would misalign by 1-2h across the 2020/2021 boundary — every timestamp is
-    converted to Europe/Berlin local time before its "day" is taken.
-  - 6 rows in Redispatch_Daten_2021_2026.csv have a corrupted byte in
-    "erhöhen" (a mixed-encoding artifact in the source export). RICHTUNG is
-    matched by substring ("erh" / "reduzieren") rather than exact equality so
-    these still classify correctly.
-
 Only dependency is pandas (already used elsewhere in the project).
 
 Run from anywhere:  python dashboard/build_data.py
@@ -41,6 +28,7 @@ Run from anywhere:  python dashboard/build_data.py
 
 import json
 import os
+import sys
 from datetime import datetime, timezone
 
 import pandas as pd
@@ -48,78 +36,16 @@ import pandas as pd
 # Resolve paths relative to the repo root (this file lives in dashboard/).
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
+sys.path.insert(0, ROOT)  # so `import prep_data` works when run from anywhere
 
-RAW_FILES = [
-    os.path.join(ROOT, "input", "Redispatch_Daten_2013_2020.csv"),
-    os.path.join(ROOT, "input", "Redispatch_Daten_2021_2026.csv"),
-]
-COMBINED_FILE = os.path.join(ROOT, "input", "Redispatch_Daten_2013_2026.csv")
+import prep_data
+
 MATCHES_FILE = os.path.join(ROOT, "results", "A1", "redispatch_plant_matches.csv")
 OUT_FILE = os.path.join(HERE, "data.js")
 
-BERLIN = "Europe/Berlin"
-
-
-def _num(series):
-    """Parse a German comma-decimal string column into floats."""
-    return pd.to_numeric(
-        series.astype(str).str.replace(",", ".", regex=False),
-        errors="coerce",
-    )
-
-
-def _local_day(df):
-    """Europe/Berlin calendar day for BEGINN_DATUM+BEGINN_UHRZEIT, aware that
-    ZEITZONE_VON is either 'UTC' (2013-2020 export) or 'CET'/'CEST' (2021-2026
-    export, already Berlin wall-clock time)."""
-    naive = pd.to_datetime(
-        df["BEGINN_DATUM"] + " " + df["BEGINN_UHRZEIT"],
-        format="%d.%m.%Y %H:%M", errors="coerce",
-    )
-    is_utc = df["ZEITZONE_VON"].astype(str).str.strip().str.upper().eq("UTC")
-
-    day = pd.Series(pd.NA, index=df.index, dtype="object")
-    utc_local = (naive[is_utc]
-                 .dt.tz_localize("UTC", ambiguous="NaT", nonexistent="NaT")
-                 .dt.tz_convert(BERLIN))
-    day.loc[is_utc] = utc_local.dt.strftime("%Y-%m-%d")
-
-    berlin_local = naive[~is_utc].dt.tz_localize(
-        BERLIN, ambiguous="NaT", nonexistent="NaT")
-    day.loc[~is_utc] = berlin_local.dt.strftime("%Y-%m-%d")
-    return day
-
 
 def load_raw():
-    frames = []
-    for path in RAW_FILES:
-        df = pd.read_csv(path, sep=";", encoding="utf-8-sig", low_memory=False)
-        df.columns = df.columns.str.strip()
-        n_before = len(df)
-        df = df.drop_duplicates()
-        n_dupes = n_before - len(df)
-        print(f"  {os.path.basename(path)}: {n_before} rows"
-              + (f" ({n_dupes} exact duplicates dropped)" if n_dupes else ""))
-        frames.append(df)
-    r = pd.concat(frames, ignore_index=True)
-
-    r["name"] = r["BETROFFENE_ANLAGE"].astype(str).str.strip()
-    r["day"] = _local_day(r)
-    r["mwh"] = _num(r["GESAMTE_ARBEIT_MWH"]).abs()
-    r = r.dropna(subset=["day", "mwh"])
-
-    # substring match, not equality: tolerant of the corrupted "erhöhen" byte
-    # in a handful of 2021-2026 rows, and of either source's exact wording
-    richtung = r["RICHTUNG"].astype(str)
-    is_increase = richtung.str.contains("erh", case=False, na=False)
-    is_decrease = richtung.str.contains("reduzieren", case=False, na=False)
-    r["inc"] = r["mwh"].where(is_increase, 0.0)
-    r["dec"] = r["mwh"].where(is_decrease, 0.0)
-
-    r.to_csv(COMBINED_FILE, sep=";", index=False, encoding="utf-8-sig")
-    print(f"  -> {os.path.basename(COMBINED_FILE)}: {len(r)} combined rows "
-          f"(gitignored cache, regenerate freely)")
-    return r
+    return prep_data.prep_redispatch()
 
 
 def load_matches():

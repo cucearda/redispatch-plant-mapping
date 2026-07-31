@@ -2,7 +2,8 @@
 
 norm_light — the exact-match level: lowercase, strip a leading TSO prefix,
 parenthesised noise, and punctuation. IDENTICAL to build_candidate_index.norm(),
-so bnetza_lookup.norm_name and the index names line up with a normalised query.
+so bnetza_kraftwerkliste_clean.norm_name and the index names line up with a
+normalised query.
 
 (norm_heavy — the fuzzy level, with stopword/affix stripping — is added here when
 the fuzzy stage is built.)

@@ -4,12 +4,12 @@ match_exact.py — matching pipeline step 2 (exact match, early-exit).
 For each matchable entry (individual + cluster), light-normalise the name and look
 for an EXACT normalised-name hit against two sources:
   • the candidate index's match_names (→ index id)
-  • bnetza_lookup.Anzeigename (→ MaStR SEE id; resolved into the index where possible)
+  • bnetza_kraftwerkliste_clean.Anzeigename (→ MaStR SEE id; resolved into the index where possible)
 
 A hit short-circuits ONLY if it resolves to exactly ONE distinct plant (method=exact).
 Ambiguous (>1 distinct plant) or no hit → left for the fuzzy → LLM stages.
 
-Output: data/matches_exact.csv — the entries the exact stage resolves.
+Output: results/A1/matches_exact.csv — the entries the exact stage resolves.
 """
 
 import os
@@ -18,10 +18,10 @@ from collections import defaultdict
 import pandas as pd
 
 from normalize import norm_light
-from paths import TEMP_DIR, RESULTS_DIR
+from paths import INPUT_DIR, TEMP_DIR, RESULTS_DIR
 
 INDEX   = os.path.join(TEMP_DIR, "candidate_index.csv")
-BNETZA  = os.path.join(TEMP_DIR, "bnetza_lookup.csv")
+BNETZA  = os.path.join(INPUT_DIR, "bnetza_kraftwerkliste_clean.csv")  # prepped by ../prep_data.py
 ENTRIES = os.path.join(TEMP_DIR, "redispatch_entries.csv")
 OUT     = os.path.join(RESULTS_DIR, "matches_exact.csv")
 

@@ -12,7 +12,7 @@ table has one row per name, and is joined back onto the events for analysis.
 | Artifact | Role |
 |---|---|
 | `A1/temp_A1/candidate_index.csv` | The matchable universe — PyPSA `powerplantmatching` fleet (spine) + 43 gap-filled OPSD conventional plants, each row carrying its `{pypsa, mastr, opsd, eic}` IDs, coordinates, capacity, fuel, and name variants. Built by [`build_candidate_index.py`](../A1/build_candidate_index.py). See [step0-candidate-index.md](step0-candidate-index.md). |
-| `A1/temp_A1/bnetza_lookup.csv` | The BNetzA Kraftwerksliste as a standalone exact-match table (`norm_name → mastr_id`), kept out of the index. |
+| `input/bnetza_kraftwerkliste_clean.csv` | The BNetzA Kraftwerksliste as a standalone exact-match table (`norm_name → mastr_id`), kept out of the index. Prepped by [`prep_data.py`](../prep_data.py), which must run before step 0. |
 
 ## Pipeline stages
 
@@ -67,8 +67,8 @@ also strip generic type words, DSO prefixes, and turbine codes).
 
 So a matched **individual** entry expands to one plant's `{pypsa, mastr, opsd, eic}` IDs +
 coordinates; a matched **cluster** expands to the centroid + the **full list** of member
-IDs. For `id_source = bnetza`, Layer 2 comes from `bnetza_lookup` instead (name / energy /
-PLZ / Ort), and `matched_id` itself is the MaStR id.
+IDs. For `id_source = bnetza`, Layer 2 comes from `bnetza_kraftwerkliste_clean` instead
+(name / energy / PLZ / Ort), and `matched_id` itself is the MaStR id.
 
 ## How each `method` works
 
@@ -77,8 +77,9 @@ confidence interpreted accordingly.
 
 - **`exact`** *(built)* — Deterministic name equality, no API. The redispatch name is
   light-normalised (lowercase; strip TSO prefix, parentheses, punctuation; split
-  underscores) and compared for exact equality against both `bnetza_lookup.norm_name`
-  and the index's plant-name variants (PyPSA + OPSD names). Accepted **only if exactly
+  underscores) and compared for exact equality against both
+  `bnetza_kraftwerkliste_clean.norm_name` and the index's plant-name variants
+  (PyPSA + OPSD names). Accepted **only if exactly
   one distinct plant matches** — ambiguous ties fall through to fuzzy → LLM. Highest
   precision. e.g. `50H Berlin Mitte` → `berlin mitte` = index `Berlin Mitte`.
 

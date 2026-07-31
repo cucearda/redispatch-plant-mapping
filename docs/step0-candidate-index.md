@@ -1,10 +1,15 @@
 # Step 0 — Candidate Index
 
-Builds the two lookup tables every downstream matching stage reads. Script:
-[`build_candidate_index.py`](../A1/build_candidate_index.py). Run:
+Builds the candidate index every downstream matching stage reads. Script:
+[`build_candidate_index.py`](../A1/build_candidate_index.py).
+
+**Prerequisite:** run `python prep_data.py` first (once, and again whenever a
+raw file under `input/` changes) — it produces the DE+AT+LU PyPSA extract and
+the cleaned BNetzA lookup this step reads; see [`prep_data.py`](../prep_data.py).
 
 ```bash
-python A1/build_candidate_index.py     # writes A1/temp_A1/candidate_index.csv + A1/temp_A1/bnetza_lookup.csv
+python prep_data.py                    # writes input/pypsa_powerplants_de_at_lu.csv + input/bnetza_kraftwerkliste_clean.csv (+ the redispatch cache)
+python A1/build_candidate_index.py     # writes A1/temp_A1/candidate_index.csv
 ```
 
 ## Purpose
@@ -16,13 +21,15 @@ the output, and (c) is aggregated to the right granularity. Step 0 produces it.
 
 ## Inputs
 
-All inputs live in the project-root `input/` folder (shared across every pipeline variant):
+All inputs live in the project-root `input/` folder (shared across every pipeline variant).
+Two are prepped datasets built by [`prep_data.py`](../prep_data.py) from raw sources, not
+read directly:
 
 | File | Rows | Role |
 |---|---|---|
-| `pypsa_unaggregated_powerplants.csv` | 141,420 | **Spine.** Full MaStR-level fleet, all with coords; `projectID` cross-references MaStR/OPSD/EIC/JRC/GEM |
+| `pypsa_powerplants_de_at_lu.csv` | 141,928 | **Spine.** Prepped by `prep_data.py`, filtering the raw `pypsa_powerplants_europe.csv` (165,064 rows) to Germany + Austria + Luxembourg. All with coords; `projectID` cross-references MaStR/OPSD/EIC/JRC/GEM. Includes AT/LU pumped storage (Illwerke, Kühtai, Vianden) — the redispatch data's `"foreign"`-labelled entries name these plants, so the index now has real candidates for them even though matching those entries isn't wired up yet (see "Deferred" below). |
 | `OPSD_conventional_power_plants_DE.csv` | 909 | Curated conventional names + `BNA` ids; gap-fill source |
-| `Bundesnetzagentur_Kraftwerkliste.csv` | 2,614 | MaStR extract (Datenstand 2026); source for the standalone exact-match table |
+| `bnetza_kraftwerkliste_clean.csv` | 2,323 | Prepped by `prep_data.py` from the raw `Bundesnetzagentur_Kraftwerkliste.csv` (2,614 rows); source for the standalone exact-match table |
 
 `OPSD_renewable_power_plants_DE.csv` (1.77M rows) is **deliberately not used** — it
 duplicates PyPSA's MaStR-derived renewables, is ~all rooftop-PV noise, and carries no
@@ -46,7 +53,10 @@ lat, lon, mastr_ids, opsd_ids, eic_ids, source_pypsa_ids, turbine_count`.
   so a match emits the plant IDs directly. Coverage: mastr **99.8%**, eic 1,937 rows,
   opsd 673 rows (673 rows hold all 907 OPSD conventional ids — one row can carry several).
 
-### `A1/temp_A1/bnetza_lookup.csv` — standalone stage-1 exact-match table (2,323 rows, 1,963 distinct `norm_name`)
+### `input/bnetza_kraftwerkliste_clean.csv` — standalone stage-1 exact-match table (2,323 rows, 1,963 distinct `norm_name`)
+
+**Prepped by `prep_data.py`, not this script** — an input to step 0, not one of
+its outputs (moved here from being built inline by `build_candidate_index.py`).
 
 Columns: `mastr_id, Anzeigename, norm_name, Energietraeger, Nettonennleistung_MW,
 Postleitzahl, Ort`. Cleaned from the raw BNetzA file (9 junk header rows dropped,
@@ -65,7 +75,7 @@ latin-1 → UTF-8, the 290 aggregated `Kleinanlagen_aggregiert` buckets removed)
 4. **Aggregate.**
    - Pass 1 — merge same-name turbines within 50 km into farm-level `individual` rows (summed capacity, mean coords, unioned ids).
    - Pass 2 — geo-cluster co-located same-fuel+tech plants (10 km radius, ≥3 plants, ≥1 MW) into `cluster` rows carrying member `aliases` + constituent ids.
-5. **BNetzA** written separately as the exact-match lookup.
+5. **BNetzA** is prepped separately, beforehand, by `prep_data.py` — not built by this script.
 
 ## Key design decisions
 
@@ -94,6 +104,9 @@ latin-1 → UTF-8, the 290 aggregated `Kleinanlagen_aggregiert` buckets removed)
   pipeline used an LLM (Pass 4); decision pending.
 - **Match-time stopword normalisation** — to be added in the fuzzy stage.
 - **Foreign plants** (Vianden, Kühtai, illwerke) and **grid aggregates** (CR_/UW/EE) —
-  flagged unmatchable at the redispatch-side rule filter, not here.
+  still flagged unmatchable at the redispatch-side rule filter (`entry_type = foreign`
+  entries aren't routed to any matching stage). The index itself now carries real
+  Austrian/Luxembourgish candidates for them (via the DE+AT+LU PyPSA extract above),
+  so wiring `foreign` into matching is now a rule-filter change, not a missing-data one.
 - **Speculative gap-fill** of the 195 reconciled dupes and of BNetzA-only plants — only
   add if a residual entry traces to a truly PyPSA-absent plant.

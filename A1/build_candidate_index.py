@@ -29,9 +29,13 @@ import pandas as pd
 from paths import INPUT_DIR, TEMP_DIR
 
 # ── files ─────────────────────────────────────────────────────────────────────
-PYPSA  = os.path.join(INPUT_DIR, "pypsa_unaggregated_powerplants.csv")
+# PYPSA and BNETZA are prepped by ../prep_data.py (run that first) — PYPSA is the
+# DE+AT+LU filter of pypsa_powerplants_europe.csv (adds Austrian/Luxembourgish
+# pumped storage so "foreign" redispatch entries have real coordinates to match
+# against); BNETZA is the cleaned Kraftwerksliste, no longer built by this file.
+PYPSA  = os.path.join(INPUT_DIR, "pypsa_powerplants_de_at_lu.csv")
 OPSD   = os.path.join(INPUT_DIR, "OPSD_conventional_power_plants_DE.csv")
-BNETZA = os.path.join(INPUT_DIR, "Bundesnetzagentur_Kraftwerkliste.csv")
+BNETZA = os.path.join(INPUT_DIR, "bnetza_kraftwerkliste_clean.csv")
 OUT    = os.path.join(TEMP_DIR, "candidate_index.csv")
 
 # ── tuning (same constants as the old aggregate_plants.py) ────────────────────
@@ -285,22 +289,6 @@ def gapfill_opsd(py: pd.DataFrame, opsd: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(new_rows)
 
 
-# ── standalone BNetzA exact-match lookup (NOT part of the index) ───────────────
-def write_bnetza_lookup() -> None:
-    kw = pd.read_csv(BNETZA, sep=";", skiprows=9, encoding="latin-1", low_memory=False)
-    kw.columns = [c.strip() for c in kw.columns]
-    kw = kw[kw["Datensatztyp*"].isin(["Einzelanlage", "stillgelegte Anlagen"])].copy()  # drop aggregated buckets
-    kw["norm_name"] = kw["Anzeigename"].map(norm)
-    kw["Nettonennleistung_MW"] = pd.to_numeric(
-        kw["Nettonennleistung_MW"].astype(str).str.replace(",", ".", regex=False), errors="coerce")
-    out = kw.rename(columns={"EinheitMastrNummer": "mastr_id"})[
-        ["mastr_id", "Anzeigename", "norm_name", "Energietraeger",
-         "Nettonennleistung_MW", "Postleitzahl", "Ort"]]
-    out.to_csv(os.path.join(TEMP_DIR, "bnetza_lookup.csv"), index=False, encoding="utf-8")
-    print(f"→ {os.path.join(TEMP_DIR, 'bnetza_lookup.csv')}: {len(out)} rows "
-          f"({out['norm_name'].nunique()} distinct normalised names) for stage-1 exact match")
-
-
 # ── main ──────────────────────────────────────────────────────────────────────
 def main() -> None:
     # 1. PyPSA spine ------------------------------------------------------------
@@ -327,7 +315,7 @@ def main() -> None:
     py = pd.concat([py, opsd_extra], ignore_index=True)
     print(f"  spine after gap-fill: {len(py)} rows")
 
-    # 4. aggregate (BNetzA is NOT in the index — see write_bnetza_lookup) --------
+    # 4. aggregate (BNetzA is NOT in the index — it's prepped separately by ../prep_data.py) --
     indiv = pass1_individuals(py)
     print(f"\nPass 1 individuals: {len(indiv)} (from {len(py)} turbine rows)")
     clusters = pass2_clusters(indiv)
@@ -361,9 +349,6 @@ def main() -> None:
     assert (out["Capacity"] >= 0).all(), "negative capacity"
     assert out["match_names"].str.len().gt(0).all(), "candidate with no name to match on"
     print("  self-check OK")
-
-    # BNetzA standalone exact-match lookup (separate from the index) ------------
-    write_bnetza_lookup()
 
 
 if __name__ == "__main__":

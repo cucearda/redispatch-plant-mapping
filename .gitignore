@@ -13,15 +13,28 @@ venv/
 input/OPSD_renewable_power_plants_DE.csv
 # pypsa_unaggregated is the 18M raw spine input
 input/pypsa_unaggregated_powerplants.csv
+input/pypsa_powerplants_europe.csv
 # pypsa_powerplants is the 21M all-country extract (German subset == pypsa_unaggregated)
 input/pypsa_powerplants.csv
 
-# Per-pipeline private scratch — regenerable intermediates (candidate index, bnetza
-# lookup, redispatch entries, fuzzy candidates, ...). Future-proof: covers any
-# pipeline folder's temp_<label>/ (A1/temp_A1/, A2/temp_A2/, ...) without editing
-# this file again per new pipeline.
+
+# Per-pipeline private scratch — regenerable intermediates (candidate index,
+# redispatch entries, fuzzy candidates, ...). Future-proof: covers any pipeline
+# folder's temp_<label>/ (A1/temp_A1/, A2/temp_A2/, ...) without editing this
+# file again per new pipeline.
 */temp_*/
 
-# Derived — regenerate with dashboard/build_data.py (2013-2020 + 2021-2026,
+# Derived — regenerate with prep_data.py (2013-2020 + 2021-2026,
 # timezone-normalized and de-duplicated)
 input/Redispatch_Daten_2013_2026.csv
+
+# Derived — regenerate with prep_data.py (Europe extract filtered to DE+AT+LU)
+input/pypsa_powerplants_de_at_lu.csv
+
+# Derived — regenerate with prep_data.py (OPSD conventional Europe extract
+# filtered to DE+AT)
+input/opsd_conventional_powerplants_de_at.csv
+
+# Derived — regenerate with prep_data.py (cleaned BNetzA Kraftwerksliste,
+# filtered to Einzelanlage/stillgelegte Anlagen row types)
+input/bnetza_kraftwerkliste_clean.csv

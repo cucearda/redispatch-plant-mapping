@@ -10,7 +10,7 @@ Step 1 — rule filter: classify each key into the 3-way router's entry_type —
          individual · cluster · multi_plant · control_reserve · regional_renewable
          · substation · countertrade · emergency · foreign.
 
-Output: data/redispatch_entries.csv (one row per distinct name, the loop grain
+Output: temp_A1/redispatch_entries.csv (one row per distinct name, the loop grain
 for everything downstream). Only `individual` + `cluster` go to matching; the rest
 are labelled and kept so the lookup accounts for 100% of the redispatch names.
 """
@@ -22,7 +22,9 @@ import pandas as pd
 
 from paths import INPUT_DIR, TEMP_DIR
 
-REDISPATCH = os.path.join(INPUT_DIR, "Redispatch_Daten.csv")
+# By default reads the prep_data.py-combined file; main(redispatch_file) can
+# still be pointed at raw exports (or a list of them) directly if needed.
+REDISPATCH = os.path.join(INPUT_DIR, "Redispatch_Daten_2013_2026.csv")
 OUT        = os.path.join(TEMP_DIR, "redispatch_entries.csv")
 
 # Classification patterns, checked in precedence order (first match wins).
