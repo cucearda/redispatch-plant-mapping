@@ -51,6 +51,16 @@
   #title h1 { margin: 0; font-size: 17px; font-weight: 650; letter-spacing: -0.01em; }
   #title p  { margin: 4px 0 0; font-size: 12px; color: var(--ink-secondary); line-height: 1.35; }
   #title .range { margin-top: 6px; font-size: 12px; font-weight: 600; color: var(--ink-primary); }
+  .pipeline-picker {
+    display: flex; align-items: center; gap: 6px; margin-top: 8px;
+    padding-top: 8px; border-top: 1px solid var(--hairline);
+  }
+  .pipeline-picker span { font-size: 11px; color: var(--ink-muted); }
+  .pipeline-picker select {
+    font-family: var(--font); font-size: 12px; color: var(--ink-primary);
+    background: #f4f3ef; border: 1px solid var(--hairline); border-radius: 7px;
+    padding: 3px 8px; cursor: pointer;
+  }
 
   /* ---- right-side stack: unmapped + filters panels ------------------------ */
   #right-stack {
@@ -143,6 +153,13 @@
   <p>Location and volume of grid-driven redispatch by power plant. Circle size = total
      energy (MWh); colour = net direction.</p>
   <div class="range" id="title-range">—</div>
+  <label class="pipeline-picker">
+    <span>Matching pipeline</span>
+    <select id="pipeline-select">
+      <option value="A1">A1 (LLM-based)</option>
+      <option value="J1">J1 (rule-based)</option>
+    </select>
+  </label>
 </div>
 
 <div id="right-stack">
@@ -213,14 +230,17 @@
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
   crossorigin=""></script>
 <script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.js"></script>
-<script src="data.js"></script>
+<script src="data_A1.js"></script>
+<script src="data_J1.js"></script>
 <script>
 (function () {
   "use strict";
 
-  // data.js declares `const REDISPATCH_DATA` — a top-level const is a global
-  // lexical binding (referenced by name), NOT a property of window.
-  const DATA = REDISPATCH_DATA;
+  // data_A1.js / data_J1.js each declare their own top-level const — a
+  // top-level const is a global lexical binding (referenced by name), NOT a
+  // property of window, so both stay addressable side by side.
+  const DATASETS = { A1: REDISPATCH_DATA_A1, J1: REDISPATCH_DATA_J1 };
+  let DATA, DAYS, dayIndex, plants, wholePeriodMax, PER_DAY_RATE;
 
   // ---- date axis: continuous daily range from date_min..date_max -----------
   function parseDay(s) { const [y, m, d] = s.split("-").map(Number); return new Date(Date.UTC(y, m - 1, d)); }
@@ -229,14 +249,6 @@
     const d = parseDay(s);
     return d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
   }
-
-  const DAYS = [];
-  {
-    let cur = parseDay(DATA.meta.date_min);
-    const end = parseDay(DATA.meta.date_max);
-    while (cur <= end) { DAYS.push(fmtDay(cur)); cur = new Date(cur.getTime() + 86400000); }
-  }
-  const dayIndex = Object.fromEntries(DAYS.map((d, i) => [d, i]));
 
   // ---- number formatting ---------------------------------------------------
   function fmtMWh(v) {
@@ -302,24 +314,36 @@
 
   const layer = L.layerGroup().addTo(map);
 
-  // pre-sum each plant's series into arrays aligned with DAYS would be heavy in
-  // memory; instead keep per-plant sparse series and iterate its own keys.
-  const plants = DATA.plants.map(p => ({
-    name: p.name, lat: p.lat, lon: p.lon, fueltype: p.fueltype, entry_type: p.entry_type,
-    matched: p.matched, confidence: p.confidence,
-    days: Object.keys(p.series), series: p.series,
-  }));
+  // ---- dataset loading: swap in a pipeline's data and recompute everything
+  // derived from it (day axis, per-plant series, the size-legend anchor) ----
+  function loadDataset(label) {
+    DATA = DATASETS[label];
 
-  // Anchor for the length-based scale: the single largest plant total over the
-  // *entire* dataset, turned into a per-day rate. A window of N days always
-  // references perDayRate * N (nice-rounded) regardless of where it sits or
-  // which plants/filters are active — only its length matters.
-  const wholePeriodMax = plants.reduce((max, p) => {
-    let total = 0;
-    for (const d of p.days) { const v = p.series[d]; total += v[0] + v[1]; }
-    return Math.max(max, total);
-  }, 0);
-  const PER_DAY_RATE = wholePeriodMax / DAYS.length; // MWh/day
+    DAYS = [];
+    let cur = parseDay(DATA.meta.date_min);
+    const end = parseDay(DATA.meta.date_max);
+    while (cur <= end) { DAYS.push(fmtDay(cur)); cur = new Date(cur.getTime() + 86400000); }
+    dayIndex = Object.fromEntries(DAYS.map((d, i) => [d, i]));
+
+    // pre-sum each plant's series into arrays aligned with DAYS would be heavy
+    // in memory; instead keep per-plant sparse series and iterate its own keys.
+    plants = DATA.plants.map(p => ({
+      name: p.name, lat: p.lat, lon: p.lon, fueltype: p.fueltype, entry_type: p.entry_type,
+      matched: p.matched, confidence: p.confidence,
+      days: Object.keys(p.series), series: p.series,
+    }));
+
+    // Anchor for the length-based scale: the single largest plant total over
+    // the *entire* dataset, turned into a per-day rate. A window of N days
+    // always references perDayRate * N (nice-rounded) regardless of where it
+    // sits or which plants/filters are active — only its length matters.
+    wholePeriodMax = plants.reduce((max, p) => {
+      let total = 0;
+      for (const d of p.days) { const v = p.series[d]; total += v[0] + v[1]; }
+      return Math.max(max, total);
+    }, 0);
+    PER_DAY_RATE = wholePeriodMax / DAYS.length; // MWh/day
+  }
 
   function referenceMaxForWindow(i0, i1) {
     return PER_DAY_RATE * (i1 - i0 + 1);
@@ -456,12 +480,20 @@
     el.addEventListener("change", () => render(lastI0, lastI1));
   });
 
+  // ---- initial load -----------------------------------------------------------
+  // Must happen before the month-select/slider setup below, which both read DAYS.
+  loadDataset("A1");
+
   // ---- month presets (grouped by year — the dataset now spans ~13 years) ---
-  (function buildMonths() {
-    const sel = document.getElementById("preset-month");
+  // Rebuilt on every dataset switch since J1/A1 may not span the exact same
+  // range of distinct months (in practice they share the same underlying
+  // redispatch export, so this is mostly a no-op, but it's cheap to redo).
+  const monthSelect = document.getElementById("preset-month");
+  function rebuildMonthOptions() {
+    monthSelect.innerHTML = "";
     const opt0 = document.createElement("option");
     opt0.value = ""; opt0.textContent = "Jump to month…"; opt0.disabled = true; opt0.selected = true;
-    sel.appendChild(opt0);
+    monthSelect.appendChild(opt0);
     const seen = new Set();
     let group = null, groupYear = null;
     for (const d of DAYS) {
@@ -472,7 +504,7 @@
       if (year !== groupYear) {
         group = document.createElement("optgroup");
         group.label = year;
-        sel.appendChild(group);
+        monthSelect.appendChild(group);
         groupYear = year;
       }
       const opt = document.createElement("option");
@@ -480,14 +512,14 @@
       opt.textContent = parseDay(d + "").toLocaleDateString("en-GB", { month: "short", timeZone: "UTC" });
       group.appendChild(opt);
     }
-    sel.addEventListener("change", () => {
-      const ym = sel.value; if (!ym) return;
-      let i0 = DAYS.findIndex(d => d.startsWith(ym));
-      let i1 = i0; for (let i = i0; i < DAYS.length && DAYS[i].startsWith(ym); i++) i1 = i;
-      slider.noUiSlider.set([i0, i1]);
-      sel.selectedIndex = 0;
-    });
-  })();
+  }
+  monthSelect.addEventListener("change", () => {
+    const ym = monthSelect.value; if (!ym) return;
+    let i0 = DAYS.findIndex(d => d.startsWith(ym));
+    let i1 = i0; for (let i = i0; i < DAYS.length && DAYS[i].startsWith(ym); i++) i1 = i;
+    slider.noUiSlider.set([i0, i1]);
+    monthSelect.selectedIndex = 0;
+  });
 
   // ---- slider --------------------------------------------------------------
   const slider = document.getElementById("slider");
@@ -507,6 +539,29 @@
     slider.noUiSlider.set([0, DAYS.length - 1]);
   });
 
+  // ---- pipeline picker -------------------------------------------------------
+  document.getElementById("pipeline-select").addEventListener("change", (e) => {
+    // Remember the selected window as dates, not raw day-indices — indices
+    // are only comparable within one dataset's own DAYS array.
+    const selStart = DAYS[lastI0], selEnd = DAYS[lastI1];
+
+    loadDataset(e.target.value);
+    rebuildMonthOptions();
+    // the day axis can differ in length between pipelines' data files, so the
+    // slider's range must be updated before use
+    slider.noUiSlider.updateOptions({ range: { min: 0, max: DAYS.length - 1 } });
+
+    // re-map the previous window onto the new dataset's day axis; fall back
+    // to the whole period if either edge no longer exists (different range)
+    const newI0 = dayIndex[selStart], newI1 = dayIndex[selEnd];
+    if (newI0 !== undefined && newI1 !== undefined) {
+      slider.noUiSlider.set([newI0, newI1]);
+    } else {
+      slider.noUiSlider.set([0, DAYS.length - 1]);
+    }
+  });
+
+  rebuildMonthOptions();
   // initial render is triggered by the slider "update" event on create.
 })();
 </script>

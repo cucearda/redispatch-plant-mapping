@@ -8,9 +8,18 @@ no server or build tooling required.
 
 | File | Role |
 |---|---|
-| `build_data.py` | Reads both raw exports + the plant-coordinate matches, aggregates, and writes `data.js`. |
-| `data.js` | **Generated** — `const REDISPATCH_DATA = {…}`. Do not edit by hand. |
-| `index.html` | The dashboard. Loads `data.js` locally and Leaflet + noUiSlider + map tiles from CDNs. |
+| `build_data.py` | Reads both raw exports + a pipeline's plant-coordinate matches, aggregates, and writes `data_<LABEL>.js`. |
+| `data_A1.js` | **Generated** — `const REDISPATCH_DATA_A1 = {…}`, from `results/A1/redispatch_plant_matches.csv`. Do not edit by hand. |
+| `data_J1.js` | **Generated** — `const REDISPATCH_DATA_J1 = {…}`, from `results/J1/redispatch_plant_matches.csv`. Do not edit by hand. |
+| `index.html` | The dashboard. Loads both `data_*.js` locally (a dropdown switches which one is shown) and Leaflet + noUiSlider + map tiles from CDNs. |
+
+The dashboard is not tied to one matching pipeline: `build_data.py` normalises
+each pipeline's own output schema (A1's `matched_id`/`confidence` label vs.
+J1's `opsd_match`/`psa_match`/continuous `final_confidence`) to one common
+shape via a small per-pipeline adapter (see `PIPELINES` in `build_data.py`).
+Adding a third pipeline later means adding one adapter function plus one
+`PIPELINES` entry — no changes to `index.html` beyond one more `<option>` and
+`<script src>`.
 
 Also writes/reads `input/Redispatch_Daten_2013_2026.csv` — a gitignored, regenerate-freely
 cache combining the two source exports (see below).
@@ -24,9 +33,11 @@ cache combining the two source exports (see below).
    ```
 
    It reads `input/Redispatch_Daten_2013_2020.csv` and `input/Redispatch_Daten_2021_2026.csv`
-   (the full 2013–2026 history) plus `results/A1/redispatch_plant_matches.csv`, writes
-   `dashboard/data.js`, and prints a sanity report (plant count, date range, and the
-   volume split mapped / Börse / not-identified, which sums to 100%).
+   (the full 2013–2026 history) plus **both** `results/A1/redispatch_plant_matches.csv` and
+   `results/J1/redispatch_plant_matches.csv`, writes `dashboard/data_A1.js` and
+   `dashboard/data_J1.js`, and prints a sanity report per pipeline (plant count,
+   date range, and the volume split mapped / Börse / not-identified, which sums
+   to 100%). Pass `--pipeline A1` or `--pipeline J1` to build just one.
 
    Combining the two exports required correcting two source-data quirks (not touched
    in the raw files themselves):
@@ -42,9 +53,12 @@ cache combining the two source exports (see below).
      apparent export artifacts) are dropped before aggregating, to avoid double-counting.
 
 2. **Open the dashboard** — double-click `dashboard/index.html` (opens over
-   `file://`; `data.js` is loaded via a `<script>` tag so no local server is
-   needed). Map tiles and the Leaflet/slider libraries load from CDNs, so an
-   **internet connection is required**.
+   `file://`; the `data_*.js` files are loaded via `<script>` tags so no local
+   server is needed). Map tiles and the Leaflet/slider libraries load from
+   CDNs, so an **internet connection is required**. Use the **"Matching
+   pipeline"** dropdown under the title to switch between A1 and J1 — it
+   reloads the map, size-legend scale, and month list for the selected
+   pipeline's data.
 
 ## What it shows
 
@@ -75,5 +89,5 @@ cache combining the two source exports (see below).
 
 ## Regenerating after a data refresh
 
-Re-run `python dashboard/build_data.py` whenever either raw export or
-`results/A1/redispatch_plant_matches.csv` changes, then reload the page.
+Re-run `python dashboard/build_data.py` whenever either raw export or either
+pipeline's `redispatch_plant_matches.csv` changes, then reload the page.
