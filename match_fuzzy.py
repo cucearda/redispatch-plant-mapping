@@ -1,11 +1,10 @@
 """
 match_fuzzy.py — matching pipeline steps 3-4 (candidate pre-filter + fuzzy top-K).
 
-For every matchable entry not resolved by exact match:
+For every individual entry not resolved by exact match:
   Step 3 — pre-filter index candidates:
      • fuel: PRIMAERENERGIEART → allowed Fueltype set (Sonstiges = no filter)
-     • capacity (individuals only): Capacity == 0 or Capacity >= max_dispatched × 0.7
-     • entry_type: individual entries → individual candidates; cluster → cluster candidates
+     • capacity: Capacity == 0 or Capacity >= max_dispatched × 0.7
   Step 4 — fuzzy score (WRatio, heavy-normalised, MAX over each candidate's name
      variants) and keep the top-K per entry.
 
@@ -58,7 +57,6 @@ def main() -> None:
     done = set(pd.read_csv(EXACT)["betroffene_anlage"]) if os.path.exists(EXACT) else set()
 
     indiv = idx[idx["entry_type"] == "individual"]
-    clust = idx[idx["entry_type"] == "cluster"]
 
     # id → attributes (for output)
     NAME = dict(zip(idx["id"], idx["Name"].astype(str)))
@@ -67,7 +65,7 @@ def main() -> None:
     LAT  = dict(zip(idx["id"], idx["lat"]))
     LON  = dict(zip(idx["id"], idx["lon"]))
 
-    # clusters are handled by match_clusters.py (location → set of individuals); fuzzy owns individuals
+    # cluster entries are DSO substation aggregates — not plant-matched (see match_clusters removal)
     open_ent = ent[(ent["entry_type"] == "individual") & ~ent["betroffene_anlage"].isin(done)]
 
     rows, no_cand = [], []
@@ -75,13 +73,10 @@ def main() -> None:
         q = heavy_or_light(e.betroffene_anlage)
         allowed = FUEL_FILTER.get(e.primaerenergieart)
 
-        if e.entry_type == "cluster":
-            m = clust if allowed is None else clust[clust["Fueltype"].isin(allowed)]
-        else:
-            m = indiv if allowed is None else indiv[indiv["Fueltype"].isin(allowed)]
-            if pd.notna(e.max_dispatched_mw):
-                floor = e.max_dispatched_mw * (1 - CAP_TOL)
-                m = m[(m["Capacity"] == 0) | (m["Capacity"] >= floor)]
+        m = indiv if allowed is None else indiv[indiv["Fueltype"].isin(allowed)]
+        if pd.notna(e.max_dispatched_mw):
+            floor = e.max_dispatched_mw * (1 - CAP_TOL)
+            m = m[(m["Capacity"] == 0) | (m["Capacity"] >= floor)]
 
         # flatten variants → parallel choice/id lists
         choices, cand_ids = [], []

@@ -21,7 +21,6 @@ import redispatch_prep
 import match_exact
 import match_fuzzy
 import match_llm
-import match_clusters
 import match_wikipedia
 import assemble_results
 import geocode_backfill
@@ -39,7 +38,6 @@ STAGES = [
     ("exact match",                   match_exact.main),
     ("fuzzy shortlist",               match_fuzzy.main),
     ("LLM disambiguation",            match_llm.main),
-    ("cluster matching",              match_clusters.main),
     ("Wikipedia residual",            match_wikipedia.main),
     ("assemble",                      assemble_results.main),
     ("coordinate backfill",           geocode_backfill.main),

@@ -1,13 +1,14 @@
 """
 assemble_results.py — merge every stage's output into one lookup table.
 
-Combines the per-stage match files (exact / llm / cluster / wikipedia) with the full
-398-entry base and the candidate index → results/redispatch_plant_matches.csv:
+Combines the per-stage match files (exact / llm / wikipedia) with the full
+entry base and the candidate index → results/redispatch_plant_matches.csv:
 one row per distinct BETROFFENE_ANLAGE, Layer-1 map + Layer-2 enrichment joined in.
 
-Precedence: exact → llm → cluster, then wikipedia OVERRIDES the llm null/low rows it
+Precedence: exact → llm, then wikipedia OVERRIDES the llm null/low rows it
 re-resolved. Unmatched / unmatchable entries carry the classification and empty ids.
-(The final coordinate backfill for coord-less rows is geocode_backfill.py.)
+Cluster entries are DSO substation aggregates — not plant-matched, only located by the
+coordinate backfill (see geocode_backfill.py).
 """
 
 import os
@@ -20,7 +21,6 @@ ENTRIES = "data/redispatch_entries.csv"
 INDEX   = "data/candidate_index.csv"
 EXACT   = "results/matches_exact.csv"
 LLM     = "results/matches_llm.csv"
-CLUSTER = "results/matches_cluster.csv"
 WIKI    = "results/matches_wikipedia.csv"
 OUT     = "results/redispatch_plant_matches.csv"
 
@@ -29,7 +29,7 @@ COLS = ["betroffene_anlage", "primaerenergieart", "entry_type", "name_technology
         "matched_name", "fueltype", "capacity_mw", "lat", "lon", "coord_source",
         "mastr_ids", "opsd_ids", "eic_ids", "reasoning"]
 
-MATCHABLE = {"individual", "cluster"}
+MATCHABLE = {"individual"}
 
 
 def uniq_join(series) -> str:
@@ -84,19 +84,6 @@ def main() -> None:
                 put_single(r.betroffene_anlage, mid, "llm", r.confidence, r.reasoning)
             else:
                 put(r.betroffene_anlage, "", "", "llm", "none", r.reasoning)
-
-    # cluster (name + geocode; comma-joined member ids)
-    if os.path.exists(CLUSTER):
-        for r in pd.read_csv(CLUSTER).fillna("").itertuples():
-            members = str(r.matched_id).split(",")
-            put(r.betroffene_anlage, r.matched_id, "index", r.method, r.confidence,
-                f"cluster: {r.n_members} plants @ {r.location}",
-                matched_name=f"Cluster @ {r.location}",
-                fueltype=uniq_join(FUEL.get(m, "") for m in members),
-                capacity=r.total_mw, lat=r.lat, lon=r.lon, coord_source="index",
-                mastr=uniq_join(MAS.get(m, "") for m in members),
-                opsd=uniq_join(OPS.get(m, "") for m in members),
-                eic=uniq_join(EIC.get(m, "") for m in members))
 
     # wikipedia — overrides the llm null/low rows it re-resolved
     if os.path.exists(WIKI):

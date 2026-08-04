@@ -59,7 +59,7 @@ def main() -> None:
     idx_name = dict(zip(idx["id"], idx["Name"].astype(str)))
     bn_name  = dict(zip(bn["mastr_id"].astype(str), bn["Anzeigename"].astype(str)))
 
-    matchable = ent[ent["entry_type"].isin(["individual", "cluster"])]
+    matchable = ent[ent["entry_type"] == "individual"]
     rows, ambiguous = [], 0
     for e in matchable.itertuples():
         q = norm_light(e.betroffene_anlage)

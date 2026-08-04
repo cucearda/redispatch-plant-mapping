@@ -11,8 +11,9 @@ Step 1 — rule filter: classify each key into the 3-way router's entry_type —
          · substation · countertrade · emergency · foreign.
 
 Output: data/redispatch_entries.csv (one row per distinct name, the loop grain
-for everything downstream). Only `individual` + `cluster` go to matching; the rest
-are labelled and kept so the lookup accounts for 100% of the redispatch names.
+for everything downstream). Only `individual` goes to plant-matching; the rest
+(including `cluster` DSO substation aggregates) are labelled and located but not
+plant-matched, so the lookup accounts for 100% of the redispatch names.
 """
 
 import os
@@ -25,12 +26,12 @@ OUT        = "data/redispatch_entries.csv"
 
 # Classification patterns, checked in precedence order (first match wins).
 # Order matters: countertrade/emergency/foreign before the grid aggregates,
-# and Cluster (matchable) before CR_/UW/EE so "SHN Cluster …" isn't stolen.
+# and Cluster before CR_/UW/EE so "SHN Cluster …" isn't stolen.
 CATEGORY_RES = [
     ("countertrade",       re.compile(r"^\s*Börse", re.I)),                  # EPEX Gegengeschäft — no plant
     ("emergency",          re.compile(r"Notfall", re.I)),                    # Notfall-RD virtual entry
     ("foreign",            re.compile(r"Vianden|K[üu]htai|illwerke|Vorarlberger|Ilwerke", re.I)),  # AT/LU pumped storage
-    ("cluster",            re.compile(r"\bCluster\b", re.I)),                # DSO renewable cluster → set of plants
+    ("cluster",            re.compile(r"\bCluster\b", re.I)),                # DSO substation aggregate — located, not plant-matched
     ("control_reserve",    re.compile(r"_CR_|_CR\b", re.I)),                 # control-reserve grid node
     ("substation",         re.compile(r"\bUW\b|Umspannwerk", re.I)),        # transformer station node
     ("regional_renewable", re.compile(r"\bEE\b", re.I)),                     # "EE Bayern" — whole-state renewables
@@ -125,8 +126,8 @@ def main(redispatch_file: str | list[str] = REDISPATCH) -> None:
 
     print(f"→ {OUT}: {len(out)} distinct entries\n")
     print(out["entry_type"].value_counts().to_string())
-    matchable = out["entry_type"].isin(["individual", "cluster"]).sum()
-    print(f"\nmatchable (individual + cluster): {matchable}")
+    matchable = (out["entry_type"] == "individual").sum()
+    print(f"\nmatchable (individual): {matchable}")
 
     # multi_plant rows are composed from their segments' matches — report the segments
     # that have no entry of their own (those members are simply missing from the set).

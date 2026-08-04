@@ -8,14 +8,14 @@ Builds ONE candidate index that every downstream match stage searches against.
   + BNetzA Anzeigename (join on mastr) ─┘
   then AGGREGATE turbine-level rows into matchable units:
     entry_type = "individual"  (Pass 1: same-name + co-located turbines → one farm)
-    entry_type = "cluster"     (Pass 2: geo-cluster same fuel/tech → set of plants)
 
 Each candidate row carries all constituent IDs (mastr/opsd/eic/pypsa) so a match
 emits the plant IDs the thesis needs, and up to 3 name variants to match against.
 
-Reuses the geo-clustering from ../pypsa-redispatch-data-linkage/aggregate_plants.py;
-drops that script's Pass 4 (LLM cluster naming) — the index doesn't need pretty
-names, the member names ARE the fuzzy-match queries.
+The index holds only individual plants. Redispatch "Cluster" entries are DSO
+substation aggregates whose true membership (mostly sub-100 kW distributed
+renewables) is not knowable from public data, so they are not plant-matched —
+they are located and labelled only (see match_clusters removal / thesis limitations).
 """
 
 import ast
@@ -33,18 +33,9 @@ OPSD   = DATA + "OPSD_conventional_power_plants_DE.csv"
 BNETZA = DATA + "Bundesnetzagentur_Kraftwerkliste .csv"
 OUT    = DATA + "candidate_index.csv"
 
-# ── tuning (same constants as the old aggregate_plants.py) ────────────────────
-MAX_FARM_RADIUS_KM       = 50.0        # Pass 1: same-name merge tolerance
-GEO_CLUSTER_RADIUS_KM    = 10.0        # Pass 2: connect plants within this distance
-GEO_CLUSTER_MAX_DIAMETER = 30.0        # Pass 2: max cluster span (splits chains)
-GEO_CLUSTER_MIN_PLANTS   = 3
-GEO_CLUSTER_MIN_CAPACITY = 1.0         # MW — drop rooftop-solar noise from clustering
-CLUSTER_ID_OFFSET        = 10_000_000
-# redispatch "Cluster" entries are all renewable DSO clusters (99.4% Erneuerbar, all wind/solar);
-# clustering conventional plants only produces candidates nothing can match.
-# ponytail: renewables only; add Hydro/others if a non-renewable Cluster entry ever appears
-CLUSTER_FUELS            = {"Wind", "Solar", "Biogas"}
-RECONCILE_KM             = 0.5         # OPSD gap-fill: same plant if within this of a PyPSA plant
+# ── tuning ────────────────────────────────────────────────────────────────────
+MAX_FARM_RADIUS_KM = 50.0        # Pass 1: same-name merge tolerance
+RECONCILE_KM       = 0.5         # OPSD gap-fill: same plant if within this of a PyPSA plant
 
 # OPSD energy_source → PyPSA Fueltype vocab (for gap-filled rows)
 FUELMAP = {
@@ -56,7 +47,7 @@ FUELMAP = {
 
 
 def norm(name: str) -> str:
-    """Minimal name normaliser for cluster aliases: strip TSO prefixes, parens, punctuation."""
+    """Minimal name normaliser for BNetzA names: strip TSO prefixes, parens, punctuation."""
     s = str(name).strip()
     s = re.sub(r"^\s*(50H|TTG|TNG|AMP|TBW)\s+", "", s)      # TSO abbrev prefixes
     s = re.sub(r"\([^)]*\)", " ", s)                        # parenthesised noise
@@ -98,72 +89,6 @@ def haversine_km(lat1, lon1, lat2, lon2) -> float:
     return 2 * R * math.asin(math.sqrt(a))
 
 
-class UnionFind:
-    def __init__(self, n):
-        self.parent = list(range(n))
-
-    def find(self, x):
-        while self.parent[x] != x:
-            self.parent[x] = self.parent[self.parent[x]]
-            x = self.parent[x]
-        return x
-
-    def union(self, a, b):
-        ra, rb = self.find(a), self.find(b)
-        if ra != rb:
-            self.parent[ra] = rb
-
-
-def cluster_components(group: pd.DataFrame, radius_km: float) -> list[list[int]]:
-    indices, lats, lons = group.index.tolist(), group["lat"].tolist(), group["lon"].tolist()
-    n = len(indices)
-    buckets: dict[tuple[int, int], list[int]] = defaultdict(list)
-    for i in range(n):
-        buckets[(int(lats[i] / 0.1), int(lons[i] / 0.1))].append(i)
-    uf = UnionFind(n)
-    for (cy, cx), members in buckets.items():
-        for dy in (-1, 0, 1):
-            for dx in (-1, 0, 1):
-                nb = (cy + dy, cx + dx)
-                if nb not in buckets:
-                    continue
-                for i in members:
-                    for j in buckets[nb]:
-                        if j > i and haversine_km(lats[i], lons[i], lats[j], lons[j]) <= radius_km:
-                            uf.union(i, j)
-    comps: dict[int, list[int]] = defaultdict(list)
-    for i in range(n):
-        comps[uf.find(i)].append(indices[i])
-    return list(comps.values())
-
-
-def max_pairwise_km(cdf: pd.DataFrame) -> float:
-    lats, lons = cdf["lat"].tolist(), cdf["lon"].tolist()
-    n = len(lats)
-    if n < 2:
-        return 0.0
-    step = 1 if n <= 50 else max(1, n // 50)        # ponytail: subsample big comps, O(n^2) is the ceiling
-    idx = list(range(0, n, step))
-    return max(haversine_km(lats[i], lons[i], lats[j], lons[j])
-               for a, i in enumerate(idx) for j in idx[a + 1:])
-
-
-def split_oversized(components, full_df, max_diameter_km, min_radius_km=2.5):
-    result, queue = [], [(c, GEO_CLUSTER_RADIUS_KM) for c in components]
-    while queue:
-        comp, r = queue.pop(0)
-        if len(comp) < 2 or max_pairwise_km(full_df.loc[comp]) <= max_diameter_km:
-            result.append(comp)
-            continue
-        new_r = r / 2
-        if new_r < min_radius_km:
-            result.append(comp)
-            continue
-        for sub in cluster_components(full_df.loc[comp], new_r):
-            queue.append((sub, new_r))
-    return result
-
-
 # ── Pass 1: same-name + co-located turbine merge → individual farm units ───────
 def centroid_span_km(g: pd.DataFrame) -> float:
     wc = g.dropna(subset=["lat", "lon"])
@@ -201,38 +126,6 @@ def pass1_individuals(df: pd.DataFrame) -> pd.DataFrame:
     out = pd.DataFrame(rows).reset_index(drop=True)
     out["entry_type"] = "individual"
     return out
-
-
-# ── Pass 2: geographic clusters → set-of-plants candidates ─────────────────────
-def pass2_clusters(indiv: pd.DataFrame) -> list[dict]:
-    elig = indiv[(indiv["Capacity"] >= GEO_CLUSTER_MIN_CAPACITY)
-                 & indiv["lat"].notna() & indiv["lon"].notna()].copy()
-    rows, cid = [], CLUSTER_ID_OFFSET
-    for (fuel, tech), g in elig.groupby([elig["Fueltype"].fillna(""),
-                                         elig["Technology"].fillna("")], sort=False):
-        if fuel not in CLUSTER_FUELS or len(g) < GEO_CLUSTER_MIN_PLANTS:
-            continue
-        comps = split_oversized(cluster_components(g, GEO_CLUSTER_RADIUS_KM), g, GEO_CLUSTER_MAX_DIAMETER)
-        for comp in comps:
-            if len(comp) < GEO_CLUSTER_MIN_PLANTS:
-                continue
-            cdf = g.loc[comp]
-            aliases = sorted({norm(n) for n in cdf["Name"]} - {""})
-            rows.append({
-                "id": cid, "entry_type": "cluster",
-                "Name": f"Cluster {cid}", "Fueltype": fuel, "Technology": tech,
-                "Capacity": float(cdf["Capacity"].sum()),
-                "lat": float(cdf["lat"].mean()), "lon": float(cdf["lon"].mean()),
-                "turbine_count": len(cdf),
-                "source_pypsa_ids": ",".join(str(i) for i in cdf["id"]),
-                "mastr_ids": uniq(cdf["mastr_ids"]),
-                "opsd_ids":  uniq(cdf["opsd_ids"]),
-                "eic_ids":   uniq(cdf["eic_ids"]),
-                "name_opsd": "",
-                "aliases": ", ".join(aliases),
-            })
-            cid += 1
-    return rows
 
 
 # ── OPSD gap-fill: add the OPSD conventional plants PyPSA doesn't reference ────
@@ -326,37 +219,26 @@ def main() -> None:
     py = pd.concat([py, opsd_extra], ignore_index=True)
     print(f"  spine after gap-fill: {len(py)} rows")
 
-    # 4. aggregate (BNetzA is NOT in the index — see write_bnetza_lookup) --------
-    indiv = pass1_individuals(py)
-    print(f"\nPass 1 individuals: {len(indiv)} (from {len(py)} turbine rows)")
-    clusters = pass2_clusters(indiv)
-    print(f"Pass 2 clusters:    {len(clusters)}")
+    # 4. aggregate to individuals (BNetzA is NOT in the index — see write_bnetza_lookup)
+    out = pass1_individuals(py)
+    print(f"\nPass 1 individuals: {len(out)} (from {len(py)} turbine rows)")
 
     # 5. assemble match_names + write ------------------------------------------
-    out = pd.concat([indiv, pd.DataFrame(clusters)], ignore_index=True)
-
     def match_names(r):
-        if r["entry_type"] == "cluster":
-            return r["aliases"]
         names = [str(r["Name"]), str(r.get("name_opsd", ""))]
         return " | ".join(sorted({n for n in names if n and n != "nan"}))
     out["match_names"] = out.apply(match_names, axis=1)
     for col in ("mastr_ids", "opsd_ids", "eic_ids"):
         out[col] = out[col].apply(lambda v: ",".join(v) if isinstance(v, list) else "")
-    out["aliases"] = out.get("aliases", "").fillna("")
 
-    cols = ["id", "entry_type", "Name", "match_names", "aliases",
+    cols = ["id", "entry_type", "Name", "match_names",
             "Fueltype", "Technology", "Capacity", "lat", "lon",
             "mastr_ids", "opsd_ids", "eic_ids", "source_pypsa_ids", "turbine_count"]
     out[cols].to_csv(OUT, index=False, encoding="utf-8")
-    print(f"\n→ {OUT}: {len(out)} candidate rows "
-          f"({(out['entry_type']=='individual').sum()} individual, "
-          f"{(out['entry_type']=='cluster').sum()} cluster)")
-    print(f"  individuals ≥10 MW: {((out['entry_type']=='individual') & (out['Capacity']>=10)).sum()}")
+    print(f"\n→ {OUT}: {len(out)} candidate rows (all individual)")
+    print(f"  individuals ≥10 MW: {(out['Capacity']>=10).sum()}")
 
     # self-check ----------------------------------------------------------------
-    cl = out[out["entry_type"] == "cluster"]
-    assert (cl["turbine_count"] >= GEO_CLUSTER_MIN_PLANTS).all(), "cluster below min plants"
     assert (out["Capacity"] >= 0).all(), "negative capacity"
     assert out["match_names"].str.len().gt(0).all(), "candidate with no name to match on"
     print("  self-check OK")

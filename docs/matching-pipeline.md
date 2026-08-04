@@ -21,11 +21,10 @@ Each name is routed once and resolved at the first stage that succeeds.
 | # | Stage | Module | What it does |
 |---|---|---|---|
 | 0 | Redispatch prep | [`redispatch_prep.py`](../redispatch_prep.py) | Reduce to 398 distinct keys; per name compute modal `PRIMAERENERGIEART`, `max(MAXIMALE_LEISTUNG_MW)` (the capacity floor), and a `name_technology` where the name spells it out. |
-| 1 | Rule filter / router | " | Classify each key into `individual` / `cluster` / an unmatchable aggregate type. ~283 matchable, ~115 structural aggregates (kept, labelled). |
+| 1 | Rule filter / router | " | Classify each key into `individual` (plant-matched) or an aggregate type (`cluster` / `substation` / … — located + labelled, not plant-matched). |
 | 2 | Exact match | [`match_exact.py`](../match_exact.py) | Unique normalised-name equality against BNetzA + the index → early exit. **27 resolved.** |
 | 3 | Fuzzy shortlist | [`match_fuzzy.py`](../match_fuzzy.py) | Fuel- + capacity-filtered `WRatio` top-20 per individual (max over each candidate's name variants). Fuzzy never decides — it feeds the LLM. |
 | 4 | LLM disambiguation | [`match_llm.py`](../match_llm.py) | `claude-sonnet-5` + adaptive thinking picks the correct candidate using fuel / capacity / coordinates / operator knowledge, or returns null. **168 of 197 matched** (130 high · 35 medium · 3 low); 29 null → residual. |
-| 4b | Cluster matching | [`match_clusters.py`](../match_clusters.py) | DSO cluster entries → the **set** of co-located individual plants at that location. Name channel (coherence-checked) resolves **32/59**; the Haiku geocode channel resolves **26** more → **58/59**. |
 | 5 | Wikipedia residual | [`match_wikipedia.py`](../match_wikipedia.py) | LLM null/low entries: Wikipedia coordinate → nearest plant within 5 km, or coordinate-only. |
 | 6 | Coordinate backfill | [`geocode_backfill.py`](../geocode_backfill.py) | Any still-coordless row (aggregates, residual failures) gets an approximate coordinate from its name via Haiku, so it can enter the spatial analysis. |
 | 7 | Assemble | [`assemble_results.py`](../assemble_results.py) | Merge all stage outputs → `results/redispatch_plant_matches.csv`. |
@@ -43,10 +42,10 @@ also strip generic type words, DSO prefixes, and turbine codes).
 |---|---|---|
 | `betroffene_anlage` | free text | The redispatch entry name — the key |
 | `primaerenergieart` | `Konventionell` · `Erneuerbar` · `Sonstiges` | Energy category from the redispatch data |
-| `entry_type` | `individual` · `cluster` · `control_reserve` · `substation` · `regional_renewable` · `countertrade` · `emergency` · `foreign` | Rule-filter class. Only `individual`/`cluster` are matched to plants; the rest are structural aggregates kept for completeness |
-| `matched_id` | index id · MaStR `SEE…` id · comma-joined member ids · *(empty)* | The resolved plant. For clusters it is the **set** of member plant ids; empty if unmatched |
+| `entry_type` | `individual` · `cluster` · `control_reserve` · `substation` · `regional_renewable` · `countertrade` · `emergency` · `foreign` | Rule-filter class. Only `individual` is matched to a plant; the rest (incl. `cluster`) are aggregates — located + labelled, not plant-matched |
+| `matched_id` | index id · MaStR `SEE…` id · *(empty)* | The resolved plant; empty for unmatched and for all aggregate entry types |
 | `id_source` | `index` · `bnetza` · *(empty)* | Which table `matched_id` points into (`index` = candidate index; `bnetza` = a BNetzA-only MaStR id not in PyPSA) |
-| `method` | `exact` · `llm` · `cluster_name` · `cluster_geocode` · `wikipedia` · `manual` · *(empty)* | How the match was made — auditable per entry |
+| `method` | `exact` · `llm` · `wikipedia` · `manual` · *(empty)* | How the match was made — auditable per entry |
 | `confidence` | `high` · `medium` · `low` · *(empty)* | Match confidence; empty for structurally unmatchable entries |
 | `needs_review` | `yes` · `no` | Flags entries for manual verification (low confidence or channel disagreement) |
 | `lat`, `lon` | coordinates · *(empty)* | The plant's location |
@@ -58,17 +57,17 @@ also strip generic type words, DSO prefixes, and turbine codes).
 
 **Layer 2 — enrichment** (join `matched_id → candidate_index` when `id_source = index`):
 
-| Column | For clusters | Source |
-|---|---|---|
-| `matched_name` | cluster's canonical name | index |
-| `fueltype`, `capacity_mw` | summed capacity / centroid | index |
-| `mastr_ids`, `opsd_ids`, `eic_ids` | **all member** registry ids | index |
-| `source_pypsa_ids`, `turbine_count` | the constituent plants | index |
+| Column | Source |
+|---|---|
+| `matched_name`, `fueltype`, `capacity_mw` | index |
+| `mastr_ids`, `opsd_ids`, `eic_ids` | index |
+| `source_pypsa_ids`, `turbine_count` | index |
 
 So a matched **individual** entry expands to one plant's `{pypsa, mastr, opsd, eic}` IDs +
-coordinates; a matched **cluster** expands to the centroid + the **full list** of member
-IDs. For `id_source = bnetza`, Layer 2 comes from `bnetza_lookup` instead (name / energy /
-PLZ / Ort), and `matched_id` itself is the MaStR id.
+coordinates. For `id_source = bnetza`, Layer 2 comes from `bnetza_lookup` instead (name /
+energy / PLZ / Ort), and `matched_id` itself is the MaStR id. Aggregate entry types
+(`cluster`, `substation`, …) have no `matched_id`, so no Layer-2 join — they carry only the
+Layer-1 label, a geocoded coordinate, and a `name_technology` where the name spells it out.
 
 ## How each `method` works
 
@@ -90,17 +89,14 @@ confidence interpreted accordingly.
   Mainz-Wiesbaden), or **declines → null**. The `confidence` value is the model's own
   assessment.
 
-- **`cluster_name`** *(built)* — For DSO cluster entries whose location appears in plant
-  names. Extract the location token (strip DSO / `Cluster` / turbine codes), gather **all
-  renewable individuals whose name contains it**, then a **geographic-coherence check**
-  keeps only the co-located core (densest 25 km ball) and rejects nationwide name
-  collisions. The result is the member **set** (`matched_id` = comma-joined ids).
-  e.g. `SHN Cluster Handewitt` → the 16 Handewitt turbines.
-
-- **`cluster_geocode`** *(built)* — For cluster locations that appear in *no* plant
-  name (Süderdonn, Klixbüll, …). Claude Haiku estimates the location's coordinates from
-  the name → gather individual wind/solar plants within a radius → the member set.
-  Confidence medium (geocoded, not name-confirmed).
+- **cluster entries** *(not plant-matched)* — DSO `Cluster` entries name a substation, and
+  the generation behind it is mostly sub-100 kW distributed renewables whose true membership
+  is not recoverable from public data. An earlier name-gather channel produced systematic
+  false positives (e.g. `BAG NWAK-Cluster 15 Pleinting`, a substation dispatching up to
+  550 MW, matched to three same-named solar plants totalling 1.2 MW). Clusters are therefore
+  treated like `regional_renewable`: **located** by the coordinate backfill and labelled with
+  a `name_technology` where the name spells it out, but **not** matched to plant ids. See the
+  thesis limitations chapter.
 
 - **`wikipedia`** *(built)* — For individuals the LLM declined (null / low). A bot
   queries the name via the Wikipedia API (`opensearch` → `page/summary` → `coordinates`),
@@ -116,7 +112,7 @@ confidence interpreted accordingly.
 | Value | Matchable? | What it is |
 |---|---|---|
 | `individual` | yes → one plant | A named single plant |
-| `cluster` | yes → set of plants | A DSO-controlled group at one location (e.g. *SHN Cluster Handewitt*) |
+| `cluster` | no → located only | A DSO substation aggregate (e.g. *SHN Cluster Handewitt*, *BAG NWAK-Cluster Pleinting*). True membership — mostly sub-100 kW distributed renewables — is not knowable from public data, so located + labelled, not plant-matched |
 | `control_reserve` | no | DSO feed-in-management bucket — a whole grid-region + technology fleet (`{DSO}_{region}_CR_{tech}`) |
 | `substation` | no | Umspannwerk / transformer-station node — aggregates all plants feeding it |
 | `regional_renewable` | no | Whole-federal-state renewable bucket (e.g. *EE Bayern*) |
@@ -128,18 +124,17 @@ Structural aggregates are not thrown away — they are labelled (and, where the 
 carry a `name_technology` and a geocoded coordinate), so the table accounts for **100 % of
 the redispatch names and volume**, which is itself a finding.
 
-## Current status — all channels built
+## Current status
 
-Final lookup table: **`results/redispatch_plant_matches.csv`** — 398 rows.
+Final lookup table: **`results/redispatch_plant_matches.csv`**.
 
-- **255 plant-matched:** 168 `llm` · 32 `cluster_name` · 27 `exact` · 26 `cluster_geocode`
-  · 2 `wikipedia`. Confidence: 189 high · 61 medium · 5 low.
-- **370 / 398 carry a coordinate** (255 from the index, 115 name-geocoded); the 28 without
-  are countertrade/emergency (no location) plus a few the geocoder couldn't place.
-- **33 flagged `needs_review`** (low confidence, channel disagreement, or unresolved
-  matchable entries).
-- The rest are structural aggregates (control-reserve regions, substations, regional
-  buckets, foreign plants), labelled and — where possible — geocoded.
+Plant-matching is `exact` → `llm` → `wikipedia`, on `individual` entries only. Every other
+entry type — including `cluster` — is located (geocoded) and labelled but not matched to a
+plant. Aggregate entries account for 100% of the redispatch names and volume that carry no
+single resolvable plant, which is itself a finding.
+
+> Counts are omitted here pending a full re-run after the cluster-matching removal; regenerate
+> with `python main.py` (needs API keys for the LLM / geocode / Wikipedia stages).
 
 Run the whole thing with **`python main.py`** — it orchestrates every stage in order
 (rebuilding the index only if missing) and exposes the redispatch input file as one config
