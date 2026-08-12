@@ -1,0 +1,136 @@
+  ... 25/555 processed
+  ... 50/555 processed
+  ... 75/555 processed
+  ... 100/555 processed
+  ... 125/555 processed
+  ... 150/555 processed
+  ... 175/555 processed
+  ... 200/555 processed
+  ... 225/555 processed
+  ... 250/555 processed
+  ... 275/555 processed
+  ... 300/555 processed
+  ... 325/555 processed
+  ... 350/555 processed
+  ... 375/555 processed
+  ... 400/555 processed
+  ... 425/555 processed
+  ... 450/555 processed
+  ... 475/555 processed
+  ... 500/555 processed
+  ... 525/555 processed
+  ... 550/555 processed
+
+-> C:\research\paper_redispatch\redispatch-plant-mapping\AJ1\temp_AJ1\matches_wikipedia.csv: 555 rows
+
+status
+match       278
+rejected    195
+none         82
+
+source (of matches):
+source
+wikipedia     193
+duckduckgo     85
+
+rejection reasons:
+reason
+no_token_overlap      125
+page_missing           31
+no_fuel_type_found     29
+no_coords              10
+
+new matches (no clean exact-match hit anywhere): 91
+  '50H Berlin Marzahn' -> 'Heizkraftwerk Marzahn' (Erdgas) [52.5239,13.5219] via duckduckgo
+  '50H Chemnitz' -> 'Heizkraftwerk Chemnitz-Nord' (Braunkohle, Heizöl, Erdgas) [50.8578,12.9239] via duckduckgo
+  '50H HAP Halle-Dieselstr HKW-BlockC' -> 'Kraftwerk Halle-Dieselstraße' (Erdgas) [51.4590,11.9931] via wikipedia
+  '50H Halle-Dieselstr HKW-BlockA' -> 'Kraftwerk Halle-Dieselstraße' (Erdgas) [51.4590,11.9931] via wikipedia
+  '50H Halle-Dieselstr HKW-BlockB' -> 'Kraftwerk Halle-Dieselstraße' (Erdgas) [51.4590,11.9931] via wikipedia
+  '50H Halle-Dieselstr HKW-BlockC' -> 'Kraftwerk Halle-Dieselstraße' (Erdgas) [51.4590,11.9931] via wikipedia
+  '50H Hamburg Tiefstack 2 HKW SK' -> 'Heizkraftwerk Tiefstack' (Steinkohle, Erdgas) [53.5269,10.0636] via duckduckgo
+  '50H Hamburg Tiefstack GuD' -> 'Heizkraftwerk Tiefstack' (Steinkohle, Erdgas) [53.5269,10.0636] via duckduckgo
+  '50H OWP Arkona' -> 'Offshore-Windpark Arkona' (Windenergie) [54.7820,14.1210] via wikipedia
+  '50H OWP Baltic 1+2' -> 'Offshore-Windpark Baltic 2' (Windenergie) [54.9733,13.1778] via wikipedia
+  '50H OWP Baltic 1+2 Nord' -> 'Offshore-Windpark Baltic 2' (Windenergie) [54.9733,13.1778] via duckduckgo
+  '50H OWP MIO Baltic 1+2' -> 'Offshore-Windpark Baltic 2' (Windenergie) [54.9733,13.1778] via duckduckgo
+  'BIBLIS_GT (bnBm)' -> 'Gasturbinenkraftwerk Biblis' (Erdgas) [49.7054,8.4150] via wikipedia
+  'Bremen 15' -> 'Kraftwerk Bremen-Hastedt' (Erdgas) [53.0598,8.8732] via wikipedia
+  'Bremen 5' -> 'Kraftwerk Bremen-Hastedt' (Erdgas) [53.0598,8.8732] via wikipedia
+  'Bremen 6' -> 'Kraftwerk Bremen-Hastedt' (Erdgas) [53.0598,8.8732] via wikipedia
+  'Bremen BHKW' -> 'Kraftwerk Bremen-Hastedt' (Erdgas) [53.0598,8.8732] via wikipedia
+  'Bremen GKB' -> 'Kraftwerk Bremen-Hastedt' (Erdgas) [53.0598,8.8732] via wikipedia
+  'Duisburg_HKW_3' -> 'Kraftwerk Duisburg-Walsum' (Steinkohle) [51.5286,6.7119] via wikipedia
+  'Emden 4 GT' -> 'Kraftwerk Emden' (Erdgas, Biomasse) [53.3404,7.2102] via wikipedia
+  'Emden 4 GT (KapRes)' -> 'Kraftwerk Emden' (Erdgas, Biomasse) [53.3404,7.2102] via wikipedia
+  'Frankfurt West 2' -> 'Heizkraftwerk West (Frankfurt am Main)' (Steinkohle, Erdgas) [50.0983,8.6534] via duckduckgo
+  'Frankfurt West 3' -> 'Kraftwerk der Frankfurt-Offenbacher Trambahn-Gesellschaft' (Steinkohle) [50.1005,8.7243] via duckduckgo
+  'Frankfurt West 4' -> 'Kraftwerk der Frankfurt-Offenbacher Trambahn-Gesellschaft' (Steinkohle) [50.1005,8.7243] via duckduckgo
+  'Gersteinwerk' -> 'Gersteinwerk' (Erdgas) [51.6733,7.7169] via wikipedia
+  'Goldisthal' -> 'Pumpspeicherwerk Goldisthal' (Wasser) [50.5081,11.0258] via duckduckgo
+  'Grosskraftwerk Mannheim AG' -> 'Grosskraftwerk Mannheim' (Steinkohle) [49.4457,8.4904] via wikipedia
+  'HAP Lippendorf VE' -> 'Kraftwerk Lippendorf' (Braunkohle (Mitteldeutsches Braunkohlerevier)) [51.1832,12.3729] via wikipedia
+  'Hamm Uentrop' -> 'GuD-Kraftwerk Hamm-Uentrop' (Erdgas) [51.6739,7.9292] via duckduckgo
+  'Hannover (GKH) 1' -> 'Gemeinschaftskraftwerk Hannover' (Steinkohle) [52.4200,9.6486] via duckduckgo
+  'Hannover (GKH) 2' -> 'Gemeinschaftskraftwerk Hannover' (Steinkohle) [52.4200,9.6486] via duckduckgo
+  'Hannover-Linden GuD' -> 'Heizkraftwerk Linden' (Erdgas) [52.3729,9.7142] via duckduckgo
+  'Heizkraftwerk Gaisburg Block 3' -> 'Heizkraftwerk Stuttgart-Gaisburg' (Erdgas) [48.7825,9.2314] via duckduckgo
+  'Heizkraftwerk Stuttgart-Münster' -> 'Kraftwerk Stuttgart-Münster' (Hausmüll und hausmüllähnlicher Gewerbemüll, Erdgas, Öl) [48.8158,9.2211] via wikipedia
+  'Heizkraftwerk Stuttgart-Münster GT' -> 'Kraftwerk Stuttgart-Münster' (Hausmüll und hausmüllähnlicher Gewerbemüll, Erdgas, Öl) [48.8158,9.2211] via wikipedia
+  'Heizkraftwerk Stuttgart-Münster GT 16,17,18' -> 'Kraftwerk Stuttgart-Münster' (Hausmüll und hausmüllähnlicher Gewerbemüll, Erdgas, Öl) [48.8158,9.2211] via wikipedia
+  'Heizkraftwerk Stuttgart-Münster GT 87' -> 'Kraftwerk Stuttgart-Münster' (Hausmüll und hausmüllähnlicher Gewerbemüll, Erdgas, Öl) [48.8158,9.2211] via wikipedia
+  'Heizkraftwerk Stuttgart-Münster GT 88' -> 'Kraftwerk Stuttgart-Münster' (Hausmüll und hausmüllähnlicher Gewerbemüll, Erdgas, Öl) [48.8158,9.2211] via wikipedia
+  'Heizkraftwerk_Pforzheim' -> 'Heizkraftwerk Pforzheim' (Erdgas, Altholz und Holzschnitzel) [48.8970,8.7248] via wikipedia
+  'Irsching 4' -> 'Kraftwerk Irsching' (Erdgas, Mineralöl) [48.7675,11.5800] via wikipedia
+  'Irsching 5' -> 'Kraftwerk Irsching' (Erdgas, Mineralöl) [48.7675,11.5800] via wikipedia
+  'Irsching 6 (bnBm)' -> 'Kraftwerk Irsching' (Erdgas, Mineralöl) [48.7675,11.5800] via wikipedia
+  'Kernkraftwerk Neckarwestheim' -> 'Kernkraftwerk Neckarwestheim' (Kernenergie) [49.0411,9.1750] via wikipedia
+  'Kernkraftwerk Neckarwestheim Block 2' -> 'Kernkraftwerk Neckarwestheim' (Kernenergie) [49.0411,9.1750] via wikipedia
+  'Kraftwerk Walheim' -> 'Kraftwerk Walheim' (Kohle, leichtes Heizöl) [49.0175,9.1574] via wikipedia
+  'Kraftwerk Walheim GT D' -> 'Kraftwerk Walheim' (Kohle, leichtes Heizöl) [49.0175,9.1574] via wikipedia
+  'Lausward' -> 'Kraftwerk Lausward' (Erdgas, leichtes Heizöl) [51.2214,6.7311] via wikipedia
+  'Linden GKL GT 1' -> 'Heizkraftwerk Linden' (Erdgas) [52.3729,9.7142] via duckduckgo
+  'Linden GKL GT 3' -> 'Heizkraftwerk Linden' (Erdgas) [52.3729,9.7142] via duckduckgo
+  'Lippendorf VE' -> 'Kraftwerk Lippendorf' (Braunkohle (Mitteldeutsches Braunkohlerevier)) [51.1832,12.3729] via wikipedia
+  'Markersbach' -> 'Pumpspeicherwerk Markersbach' (Wasserkraft) [50.5098,12.8689] via wikipedia
+  'Mehrum' -> 'Kraftwerk Mehrum' (Steinkohle) [52.3143,10.0913] via wikipedia
+  'München Nord 1' -> 'Heizkraftwerk Nord (München)' (Steinkohle, Restmüll, Erdgas) [48.1803,11.6397] via duckduckgo
+  'München Nord 2' -> 'Heizkraftwerk Nord (München)' (Steinkohle, Restmüll, Erdgas) [48.1803,11.6397] via duckduckgo
+  'München Süd DT 60' -> 'Heizkraftwerk Süd (München)' (Erdgas) [48.1143,11.5559] via duckduckgo
+  'München Süd GT 2' -> 'Heizkraftwerk Süd (München)' (Erdgas) [48.1143,11.5559] via duckduckgo
+  'München Süd GT 3' -> 'Heizkraftwerk Süd (München)' (Erdgas) [48.1143,11.5559] via duckduckgo
+  'München Süd GT 61' -> 'Heizkraftwerk Süd (München)' (Erdgas) [48.1143,11.5559] via duckduckgo
+  'München Süd GT 62' -> 'Heizkraftwerk Süd (München)' (Erdgas) [48.1143,11.5559] via duckduckgo
+  'NIEHL-II' -> 'Heizkraftwerk Köln-Niehl' (Erdgas und Heizöl) [50.9749,6.9880] via duckduckgo
+  'NIEHL-II-GT' -> 'Heizkraftwerk Köln-Niehl' (Erdgas und Heizöl) [50.9749,6.9880] via duckduckgo
+  'OWP BARD Offshore 1 AC102 (kurativ)' -> 'BARD Offshore 1' (Windenergie) [54.3583,5.9750] via wikipedia
+  'OWP BARD Offshore 1 AC103 (kurativ)' -> 'BARD Offshore 1' (Windenergie) [54.3583,5.9750] via wikipedia
+  'OWP Borkum Riffgrund 3' -> 'Offshore-Windpark Borkum Riffgrund' (Windenergie) [53.9667,6.5500] via wikipedia
+  'OWP Borkum Riffgrund 3 Test' -> 'Offshore-Windpark Borkum Riffgrund' (Windenergie) [53.9667,6.5500] via duckduckgo
+  'Reisach' -> 'Pumpspeicherwerk Reisach' (Wasserkraft) [49.5301,12.2847] via duckduckgo
+  'Reisach 1' -> 'Pumpspeicherwerk Reisach' (Wasserkraft) [49.5301,12.2847] via duckduckgo
+  'Reisach 2' -> 'Pumpspeicherwerk Reisach' (Wasserkraft) [49.5301,12.2847] via duckduckgo
+  'Reisach 3' -> 'Pumpspeicherwerk Reisach' (Wasserkraft) [49.5301,12.2847] via duckduckgo
+  'Reservekraftwerk Irsching 3' -> 'Kraftwerk Irsching' (Erdgas, Mineralöl) [48.7675,11.5800] via wikipedia
+  'Reservekraftwerk Irsching 4' -> 'Kraftwerk Irsching' (Erdgas, Mineralöl) [48.7675,11.5800] via wikipedia
+  'Reservekraftwerk Irsching 5' -> 'Kraftwerk Irsching' (Erdgas, Mineralöl) [48.7675,11.5800] via wikipedia
+  'Reservekraftwerk Rheinhafen-Dampfkraftwerk Karlsruhe Block 4' -> 'Rheinhafen-Dampfkraftwerk Karlsruhe' (Gas und Steinkohle) [49.0125,8.3028] via duckduckgo
+  'Reservekraftwerk Rheinhafen-Dampfkraftwerk Karlsruhe Block 7' -> 'Rheinhafen-Dampfkraftwerk Karlsruhe' (Gas und Steinkohle) [49.0125,8.3028] via duckduckgo
+  'Reservekraftwerk Staudinger 4' -> 'Kraftwerk Staudinger' (Block 5 sowie ehemals die Blöcke 1, 2 und 3 Steinkohle; Block 4 Erdgas) [50.0881,8.9522] via wikipedia
+  'Reservekraftwerk Walheim' -> 'Kraftwerk Walheim' (Kohle, leichtes Heizöl) [49.0175,9.1574] via wikipedia
+  'Reservekraftwerk Walheim Block 1' -> 'Kraftwerk Walheim' (Kohle, leichtes Heizöl) [49.0175,9.1574] via wikipedia
+  'Reservekraftwerk Walheim Block 2' -> 'Kraftwerk Walheim' (Kohle, leichtes Heizöl) [49.0175,9.1574] via wikipedia
+  'Rheinhafen-Dampfkraftwerk Karlsruhe' -> 'Rheinhafen-Dampfkraftwerk Karlsruhe' (Gas und Steinkohle) [49.0125,8.3028] via wikipedia
+  'Rheinhafen-Dampfkraftwerk Karlsruhe Block 7' -> 'Rheinhafen-Dampfkraftwerk Karlsruhe' (Gas und Steinkohle) [49.0125,8.3028] via duckduckgo
+  'Rheinhafen-Dampfkraftwerk Karlsruhe Block 8' -> 'Rheinhafen-Dampfkraftwerk Karlsruhe' (Gas und Steinkohle) [49.0125,8.3028] via duckduckgo
+  'Rostock Kohlekraftwerk' -> 'Kraftwerk Rostock' (Steinkohle) [54.1414,12.1319] via wikipedia
+  'STUMMHAFEN_10' -> 'Kraftwerk Lünen-Stummhafen' (Steinkohle) [51.6153,7.4619] via duckduckgo
+  'Schkopau VE' -> 'Kraftwerk Schkopau' (Braunkohle) [51.4011,11.9508] via wikipedia
+  'Stummhafen' -> 'Kraftwerk Lünen-Stummhafen' (Steinkohle) [51.6153,7.4619] via duckduckgo
+  'WP_BEDBURG A44N' -> 'Windpark Bedburg A44n' (Windenergie) [51.0420,6.4970] via wikipedia
+  'WP_JUECHEN A44N' -> 'Windpark Jüchen A44n' (Windenergie) [51.0563,6.4993] via wikipedia
+  'Wolfsburg Nord A' -> 'Heizkraftwerk Wolfsburg Nord/Süd' (Kohle, Erdgas, Heizöl) [52.4324,10.7874] via duckduckgo
+  'Wolfsburg Nord B' -> 'Heizkraftwerk Wolfsburg Nord/Süd' (Kohle, Erdgas, Heizöl) [52.4324,10.7874] via duckduckgo
+  'Wolfsburg West 1' -> 'Heizkraftwerk Wolfsburg West' (Kohle; auch Heizöl, Altöl, Klärschlammgranulate) [52.4419,10.7640] via duckduckgo
+  'Wolfsburg West 2' -> 'Heizkraftwerk Wolfsburg West' (Kohle; auch Heizöl, Altöl, Klärschlammgranulate) [52.4419,10.7640] via duckduckgo
+
+significant differences vs. exact match: 0
