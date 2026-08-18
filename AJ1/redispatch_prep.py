@@ -124,6 +124,10 @@ def main(redispatch_file: str = REDISPATCH) -> None:
     df = df[df["GRUND_DER_MASSNAHME"] != "Probefahrt"]
     n_dropped_probefahrt = n_raw - len(df)
 
+    # notna() first: pandas >=3.0's astype(str) PRESERVES NaN rather than
+    # rendering it as the literal "nan" string 2.x produced, so the "nan"
+    # guard below can't be relied on to drop null plant names on its own.
+    df = df[df["BETROFFENE_ANLAGE"].notna()]
     df["BETROFFENE_ANLAGE"] = df["BETROFFENE_ANLAGE"].astype(str).str.strip()
     df = df[df["BETROFFENE_ANLAGE"].ne("") & df["BETROFFENE_ANLAGE"].ne("nan")]
     df["MAXIMALE_LEISTUNG_MW"] = pd.to_numeric(
