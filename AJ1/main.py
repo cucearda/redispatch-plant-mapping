@@ -17,15 +17,19 @@ Note stage 1 (classify) rewrites redispatch_entries.csv in place to add the
 why running them via this orchestrator is safer than by hand.
 """
 
+import os
 import sys
 import time
 
-from paths import TEMP_DIR
+from paths import RESULTS_DIR
 
 import redispatch_prep
 import classify
 import match_exact
+import match_llm
+import match_geo
 import match_wikipedia
+import assemble_results
 
 # ponytail: cross_verify is stage 3 but is currently broken against the
 # rewritten match_exact.py — it imports `_tight_cluster_pick` (gone) and reads
@@ -33,12 +37,17 @@ import match_wikipedia
 # {reg}_ids/{reg}_names). Re-add here once it's ported to the new schema.
 # import cross_verify
 
+# match_llm runs before the Wikipedia stage purely so the cheap, fast stage
+# finishes first — they're independent, and assemble merges whichever ran.
 STAGES = [
     ("redispatch prep",   lambda _: redispatch_prep.main()),
     ("classify",          lambda _: classify.main()),
     ("exact match",       lambda _: match_exact.main()),
     # ("cross-verify",    lambda _: cross_verify.main()),
+    ("LLM candidate ranking", lambda _: match_llm.main()),
+    ("geo fallback",      lambda _: match_geo.main()),
     ("wikipedia",         lambda limit: match_wikipedia.main(limit=limit)),
+    ("assemble",          lambda _: assemble_results.main()),
 ]
 
 
@@ -53,9 +62,8 @@ def main(wiki_limit: int = None) -> None:
         banner(f"step {i} · {name}")
         fn(wiki_limit)
 
-    print(f"\n✓ AJ1 complete in {time.time() - t0:.0f}s → {TEMP_DIR}")
-    print("  (no results/AJ1/redispatch_plant_matches.csv yet — no stage "
-          "assembles one)")
+    print(f"\n✓ AJ1 complete in {time.time() - t0:.0f}s → "
+          f"{os.path.join(RESULTS_DIR, 'redispatch_plant_matches.csv')}")
 
 
 if __name__ == "__main__":
