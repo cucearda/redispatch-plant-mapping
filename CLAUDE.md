@@ -17,9 +17,12 @@ asked to work on it.
 
 ## The multi-pipeline convention
 
-There are (currently) two independent, directly-comparable matching
-pipelines, `A1/` (LLM-based disambiguation) and `J1/` (deterministic
-rule-based cascade, no LLM calls). Both follow the same folder convention:
+There are (currently) three independent, directly-comparable matching
+pipelines: `A1/` (LLM-based disambiguation), `J1/` (deterministic rule-based
+cascade, no LLM calls), and `AJ1/` (registry exact-match, then LLM ranking of
+the candidate pool, then a Wikipedia bot, then an area-level geo fallback —
+scoring the *coordinate* on its own axis, separately from the plant
+identity). All follow the same folder convention:
 
 - `input/` — raw + prepped source data, shared read-only by every pipeline.
   Prepped (derived) files are built by `prep_data.py` and are gitignored —
@@ -39,23 +42,25 @@ rule-based cascade, no LLM calls). Both follow the same folder convention:
 
 **Adding a new pipeline variant** (`A2/`, `K1/`, ...): copy `paths.py`
 verbatim into the new folder — nothing else needs touching, and its temp/
-results paths just work. Read the existing `A1/` and `J1/` folders (and
-`dashboard/build_data.py`'s `PIPELINES` adapter registry, see below) as
+results paths just work. Read the existing `A1/`, `J1/` and `AJ1/` folders
+(and `dashboard/build_data.py`'s `PIPELINES` adapter registry, see below) as
 worked examples before building the next one.
 
-## Two pipelines, two schemas, no shared output contract
+## Three pipelines, three schemas, no shared output contract
 
-`A1` and `J1` deliberately do **not** share an output schema — they were
-built independently (A1 designed for this repo; J1 recreated from
-`redispatch-analysis/matcher/`) and expose very different match metadata
-(A1: `method`/`confidence` label/`entry_type`; J1: per-registry
-`opsd_match`/`psa_match`/`wiki_match`/... columns and a continuous
-`final_confidence`). Anything that needs to treat both pipelines uniformly
-(the dashboard, a future comparison script) should write a small adapter
-that normalises each pipeline's own columns into a common shape, rather than
-trying to make the pipelines themselves agree on one schema. See
-`dashboard/build_data.py`'s `adapt_a1`/`adapt_j1` functions and its
-`PIPELINES` registry for the pattern to follow.
+`A1`, `J1` and `AJ1` deliberately do **not** share an output schema — they
+were built independently (A1 designed for this repo; J1 recreated from
+`redispatch-analysis/matcher/`; AJ1 combining practices from both) and expose
+very different match metadata (A1: `method`/`confidence` label/`entry_type`;
+J1: per-registry `opsd_match`/`psa_match`/`wiki_match`/... columns and a
+continuous `final_confidence`; AJ1: a `best_guess_*` + `guess_basis` identity
+axis alongside a wholly separate `coord_*` location axis). Anything that
+needs to treat the pipelines uniformly (the dashboard, a future comparison
+script) should write a small adapter that normalises each pipeline's own
+columns into a common shape, rather than trying to make the pipelines
+themselves agree on one schema. See `dashboard/build_data.py`'s
+`adapt_a1`/`adapt_j1`/`adapt_aj1` functions and its `PIPELINES` registry for
+the pattern to follow.
 
 ## Comparison docs
 
@@ -89,6 +94,27 @@ were written:
   Anything that needs to classify it consistently across both pipelines
   (e.g. the dashboard) should check the raw redispatch name itself
   (`name == "Börse"`) rather than relying on either pipeline's own tagging.
+- **A pipeline's output key is not always the raw `BETROFFENE_ANLAGE`
+  string.** A1 keys the *whole* raw string, including a multi-plant bundle
+  like `"Boxberg, Jänschwalde, Lippendorf"`, which it then places at one
+  centroid of its members. J1 and AJ1 key the *exploded member names*
+  instead — and with different segmentation rules (AJ1 uses A1's stricter
+  ">=2 plantish segments" gate plus an " und " split; J1 splits every comma).
+  So anything joining a pipeline's matches back to the raw redispatch calls
+  must apply that pipeline's own explosion first, and split the call's volume
+  across the members (equally — the export gives one combined
+  `GESAMTE_ARBEIT_MWH` per bundle and never says how it divided). See
+  `dashboard/build_data.py`'s per-pipeline `explode`; joining on the raw
+  string alone silently drops 10.3% of all redispatch volume (382 of the 1154
+  distinct raw names are bundles).
+- **AJ1 has two independent confidence axes, deliberately.**
+  `guess_basis`/`llm_confidence` say whether the right *plant* was
+  identified; `coord_score`/`coord_basis`/`coord_precision` (see
+  `AJ1/coords.py`) say whether the *location* can be trusted, and a row can
+  score well on one and badly on the other (a Wikipedia-identified plant with
+  only a town-level gazetteer centroid, say). Never collapse them into one
+  number. `coord_precision != "plant"` means the point is a town/area/state
+  centroid and must not be drawn or analysed as a plant site.
 - **Windows console encoding**: plain `python -c "..."` with German
   characters or special symbols (→, ·, ö) in `print()` can raise
   `UnicodeEncodeError` under the default cp1252 console. Prefix commands with

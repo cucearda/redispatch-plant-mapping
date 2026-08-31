@@ -86,7 +86,9 @@
   .u-hint  { margin: 10px 0 0; font-size: 10.5px; line-height: 1.4; color: var(--ink-muted); }
 
   /* ---- plant filter panel -------------------------------------------------- */
-  #filters { padding: 12px 14px; }
+  /* four filter groups no longer fit a short viewport; cap and scroll rather
+     than letting the panel run under the timebar */
+  #filters { padding: 12px 14px; max-height: 52vh; overflow-y: auto; }
   .f-group { margin: 0 0 10px; }
   .f-group:last-child { margin-bottom: 0; }
   .f-group-title {
@@ -107,6 +109,8 @@
   }
   .l-row { display: flex; align-items: center; gap: 8px; margin: 5px 0; font-size: 12px; color: var(--ink-secondary); }
   .l-swatch { width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid #fff; box-shadow: 0 0 0 1px var(--hairline); flex: 0 0 auto; }
+  .l-swatch-dashed { background: transparent; border: 1.5px dashed var(--ink-muted); box-shadow: none; }
+  .l-note { margin: 8px 0 0; font-size: 10.5px; line-height: 1.4; color: var(--ink-muted); }
   .l-sizes { display: flex; align-items: flex-end; gap: 14px; margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--hairline); }
   .l-size { display: flex; flex-direction: column; align-items: center; gap: 3px; }
   .l-size .ring { border: 1.5px solid var(--ink-muted); border-radius: 50%; }
@@ -138,6 +142,11 @@
   }
   .rd-tip .t-name { font-weight: 650; margin-bottom: 3px; }
   .rd-tip .t-fuel { color: var(--ink-muted); font-size: 11px; margin-bottom: 5px; }
+  .rd-tip .t-meta {
+    margin-top: 6px; padding-top: 5px; border-top: 1px solid var(--hairline);
+    font-size: 10.5px; line-height: 1.45; color: var(--ink-muted);
+  }
+  .rd-tip .t-meta b { font-weight: 650; color: var(--ink-secondary); }
   .rd-tip table { border-collapse: collapse; font-variant-numeric: tabular-nums; }
   .rd-tip td { padding: 1px 0; }
   .rd-tip td.k { color: var(--ink-secondary); padding-right: 12px; }
@@ -158,6 +167,7 @@
     <select id="pipeline-select">
       <option value="A1">A1 (LLM-based)</option>
       <option value="J1">J1 (rule-based)</option>
+      <option value="AJ1">AJ1 (registry + LLM + wiki)</option>
     </select>
   </label>
 </div>
@@ -191,16 +201,30 @@
   <div id="filters" class="panel">
     <h2>Plants shown</h2>
     <div class="f-group">
+      <div class="f-group-title">Entry kind</div>
+      <label class="f-check"><input type="checkbox" class="f-kind" value="plant" checked> Individual plant</label>
+      <label class="f-check"><input type="checkbox" class="f-kind" value="aggregate" checked> Aggregate</label>
+      <label class="f-check"><input type="checkbox" class="f-kind" value="unclear" checked> Unclear</label>
+    </div>
+    <div class="f-group">
       <div class="f-group-title">Match type</div>
       <label class="f-check"><input type="checkbox" id="mt-matched" checked> Matched to plant</label>
       <label class="f-check"><input type="checkbox" id="mt-geocoded" checked> Geocoded only</label>
     </div>
     <div class="f-group">
-      <div class="f-group-title">Confidence</div>
+      <div class="f-group-title">Identity confidence</div>
       <label class="f-check"><input type="checkbox" class="f-conf" value="high" checked> High</label>
       <label class="f-check"><input type="checkbox" class="f-conf" value="medium" checked> Medium</label>
       <label class="f-check"><input type="checkbox" class="f-conf" value="low" checked> Low</label>
       <label class="f-check"><input type="checkbox" class="f-conf" value="none" checked> None</label>
+    </div>
+    <!-- only pipelines that score the coordinate separately from the identity
+         (meta.has_coord_conf) fill this in; hidden for the others -->
+    <div class="f-group" id="f-group-coord" hidden>
+      <div class="f-group-title">Coordinate confidence</div>
+      <label class="f-check"><input type="checkbox" class="f-coord" value="high" checked> High — sources agree</label>
+      <label class="f-check"><input type="checkbox" class="f-coord" value="medium" checked> Medium — single source</label>
+      <label class="f-check"><input type="checkbox" class="f-coord" value="low" checked> Low — area centroid</label>
     </div>
   </div>
 </div>
@@ -210,6 +234,7 @@
   <div class="l-row"><span class="l-swatch" style="background: var(--c-increase)"></span> Net increase (erhöhen)</div>
   <div class="l-row"><span class="l-swatch" style="background: var(--c-decrease)"></span> Net decrease (reduzieren)</div>
   <div class="l-row"><span class="l-swatch" style="background: var(--c-balanced)"></span> Balanced</div>
+  <div class="l-row" id="l-dashed-row" hidden><span class="l-swatch l-swatch-dashed"></span> Area centroid, not a plant site</div>
   <div class="l-sizes" id="l-sizes"></div>
 </div>
 
@@ -232,6 +257,7 @@
 <script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.js"></script>
 <script src="data_A1.js"></script>
 <script src="data_J1.js"></script>
+<script src="data_AJ1.js"></script>
 <script>
 (function () {
   "use strict";
@@ -239,8 +265,13 @@
   // data_A1.js / data_J1.js each declare their own top-level const — a
   // top-level const is a global lexical binding (referenced by name), NOT a
   // property of window, so both stay addressable side by side.
-  const DATASETS = { A1: REDISPATCH_DATA_A1, J1: REDISPATCH_DATA_J1 };
+  const DATASETS = {
+    A1: REDISPATCH_DATA_A1,
+    J1: REDISPATCH_DATA_J1,
+    AJ1: REDISPATCH_DATA_AJ1,
+  };
   let DATA, DAYS, dayIndex, plants, wholePeriodMax, PER_DAY_RATE;
+  let hasCoordConf = false;
 
   // ---- date axis: continuous daily range from date_min..date_max -----------
   function parseDay(s) { const [y, m, d] = s.split("-").map(Number); return new Date(Date.UTC(y, m - 1, d)); }
@@ -307,9 +338,22 @@
   const map = L.map("map", { zoomControl: true, minZoom: 4, maxZoom: 11 })
     .setView([51.1, 10.2], 6);
   L.control.zoom({ position: "topleft" }); // keep default; positioned below title via CSS default
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    subdomains: "abcd", maxZoom: 19,
+  // Esri's World Light Gray Canvas: a muted grey basemap that stays out of the
+  // data's way, served without an API key. (CARTO's keyless Positron endpoint,
+  // used here previously, still answers 200 but now returns tiles with an
+  // "API KEY REQUIRED" watermark burnt into the image; OpenStreetMap's own
+  // tile server answers 418 "access blocked" for this kind of use.) The canvas
+  // is split into a label-free base plus a transparent reference layer, both
+  // added to Leaflet's tilePane so the plant circles still draw above them.
+  const ESRI = "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas";
+  const esriAttribution =
+    'Tiles &copy; <a href="https://www.esri.com/">Esri</a> — Esri, HERE, Garmin, ' +
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+  L.tileLayer(`${ESRI}/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}`, {
+    attribution: esriAttribution, maxZoom: 16,
+  }).addTo(map);
+  L.tileLayer(`${ESRI}/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}`, {
+    maxZoom: 16,
   }).addTo(map);
 
   const layer = L.layerGroup().addTo(map);
@@ -328,10 +372,21 @@
     // pre-sum each plant's series into arrays aligned with DAYS would be heavy
     // in memory; instead keep per-plant sparse series and iterate its own keys.
     plants = DATA.plants.map(p => ({
-      name: p.name, lat: p.lat, lon: p.lon, fueltype: p.fueltype, entry_type: p.entry_type,
+      name: p.name, lat: p.lat, lon: p.lon,
+      fueltype: p.fueltype, fuel_basis: p.fuel_basis,
+      entry_kind: p.entry_kind, entry_label: p.entry_label,
       matched: p.matched, confidence: p.confidence,
+      coord_conf: p.coord_conf, coord_label: p.coord_label,
       days: Object.keys(p.series), series: p.series,
     }));
+
+    // The coordinate-confidence axis only exists for a pipeline that scores
+    // the location separately from the identity (AJ1). Hide both its filter
+    // group and the dashed-circle legend row for the pipelines that don't,
+    // rather than showing a control that would silently match everything.
+    hasCoordConf = !!DATA.meta.has_coord_conf;
+    document.getElementById("f-group-coord").hidden = !hasCoordConf;
+    document.getElementById("l-dashed-row").hidden = !hasCoordConf;
 
     // Anchor for the length-based scale: the single largest plant total over
     // the *entire* dataset, turned into a per-day rate. A window of N days
@@ -363,17 +418,25 @@
     return s;
   }
 
-  // ---- plant filter (match type + confidence) -------------------------------
+  // ---- plant filter (entry kind + match type + the two confidence axes) ----
   function readFilter() {
     const showMatched = document.getElementById("mt-matched").checked;
     const showGeocoded = document.getElementById("mt-geocoded").checked;
-    const confs = new Set(
-      Array.from(document.querySelectorAll(".f-conf:checked")).map(el => el.value)
+    const checked = sel => new Set(
+      Array.from(document.querySelectorAll(sel + ":checked")).map(el => el.value)
     );
+    const kinds = checked(".f-kind");
+    const confs = checked(".f-conf");
+    const coords = checked(".f-coord");
     return function passes(p) {
       if (p.matched && !showMatched) return false;
       if (!p.matched && !showGeocoded) return false;
-      return confs.has(p.confidence);
+      if (!kinds.has(p.entry_kind)) return false;
+      if (!confs.has(p.confidence)) return false;
+      // a dataset without a coordinate score keeps the group hidden, so the
+      // boxes in it must not filter anything
+      if (hasCoordConf && !coords.has(p.coord_conf)) return false;
+      return true;
     };
   }
 
@@ -410,20 +473,31 @@
       const r = radius(total);
       const key = colorFor(inc, dec);
       const net = inc - dec;
+      // A "low" coordinate confidence means the point is a town / grid-area /
+      // Bundesland centroid, not a plant site (AJ1's assemble_results.py warns
+      // never to read one as a plant pin) — draw it hollow-dashed so it can't
+      // be mistaken for a located plant even with the filter left on.
+      const areaOnly = p.coord_conf === "low";
       const marker = L.circleMarker([p.lat, p.lon], {
         radius: r,
-        color: "#ffffff", weight: 1.5, opacity: 0.95,
-        fillColor: CSSCOL[key], fillOpacity: 0.72,
+        color: areaOnly ? CSSCOL[key] : "#ffffff",
+        weight: 1.5, opacity: 0.95,
+        dashArray: areaOnly ? "3 3" : null,
+        fillColor: CSSCOL[key], fillOpacity: areaOnly ? 0.28 : 0.72,
       });
       marker.bindTooltip(
         `<div class="t-name">${escapeHtml(p.name)}</div>` +
-        (p.fueltype ? `<div class="t-fuel">${escapeHtml(p.fueltype)}</div>` : "") +
+        (p.fueltype
+          ? `<div class="t-fuel">${escapeHtml(p.fueltype)}` +
+            (p.fuel_basis ? ` · ${escapeHtml(p.fuel_basis)}` : "") + `</div>`
+          : "") +
         `<table>` +
           `<tr><td class="k">Total</td><td class="v">${fmtMWh(total)}</td></tr>` +
           `<tr><td class="k">Increase</td><td class="v" style="color:${CSSCOL["var-increase"]}">${fmtMWh(inc)}</td></tr>` +
           `<tr><td class="k">Decrease</td><td class="v" style="color:${CSSCOL["var-decrease"]}">${fmtMWh(dec)}</td></tr>` +
           `<tr><td class="k">Net</td><td class="v">${net >= 0 ? "+" : "−"}${fmtMWh(Math.abs(net))}</td></tr>` +
-        `</table>`,
+        `</table>` +
+        metaBlock(p),
         { className: "rd-tip", sticky: true, direction: "top", opacity: 1 }
       );
       layer.addLayer(marker);
@@ -451,6 +525,22 @@
     const label = `${fmtHuman(DAYS[i0])} – ${fmtHuman(DAYS[i1])}`;
     document.getElementById("title-range").textContent = label;
     document.getElementById("tb-dates").textContent = label;
+  }
+
+  // the two confidence axes + entry kind, as the tooltip's footer. Kept
+  // separate from the volume table: they describe the MATCH, not the calls.
+  const KIND_LABEL = { plant: "Individual plant", aggregate: "Aggregate",
+                       unclear: "Unclear", countertrade: "Countertrade" };
+  function metaBlock(p) {
+    const rows = [];
+    const kind = KIND_LABEL[p.entry_kind] || p.entry_kind;
+    rows.push(`${escapeHtml(kind)}${p.entry_label ? " · " + escapeHtml(p.entry_label) : ""}`);
+    rows.push(`Identity: <b>${escapeHtml(p.confidence)}</b>`);
+    if (p.coord_conf) {
+      rows.push(`Coordinate: <b>${escapeHtml(p.coord_conf)}</b>` +
+                (p.coord_label ? ` — ${escapeHtml(p.coord_label)}` : ""));
+    }
+    return `<div class="t-meta">${rows.join("<br>")}</div>`;
   }
 
   function escapeHtml(s) {

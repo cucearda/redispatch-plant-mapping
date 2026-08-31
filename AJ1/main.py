@@ -39,14 +39,21 @@ import assemble_results
 
 # match_llm runs before the Wikipedia stage purely so the cheap, fast stage
 # finishes first — they're independent, and assemble merges whichever ran.
+#
+# The geo fallback runs LAST of the matching stages, after wikipedia: it is
+# the area-level fallback for entries no plant-level stage could locate, so
+# it has to come after every stage that can produce a plant coordinate.
+# (It used to run before wikipedia, which only wasted Nominatim calls on
+# entries wikipedia went on to resolve — plant precision always outranks
+# area, so the output was never wrong, just needlessly bought.)
 STAGES = [
     ("redispatch prep",   lambda _: redispatch_prep.main()),
     ("classify",          lambda _: classify.main()),
     ("exact match",       lambda _: match_exact.main()),
     # ("cross-verify",    lambda _: cross_verify.main()),
     ("LLM candidate ranking", lambda _: match_llm.main()),
-    ("geo fallback",      lambda _: match_geo.main()),
     ("wikipedia",         lambda limit: match_wikipedia.main(limit=limit)),
+    ("geo fallback",      lambda _: match_geo.main()),
     ("assemble",          lambda _: assemble_results.main()),
 ]
 

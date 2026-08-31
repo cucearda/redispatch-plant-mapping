@@ -22,18 +22,39 @@ can filter by how much it should be trusted:
 (`agreed`), disagreed and were resolved by the LLM (`llm_resolved`), or
 disagreed unresolved (`conflict`).
 
-Coordinates are merged in precedence order — a real plant location always
-beats an area centroid — and `coord_precision` says which you got:
+Coordinates are reconciled across datasets rather than taken from a
+precedence ladder — see coords.py. Every dataset with a location (OPSD,
+PyPSA, Wikipedia) contributes one point; if they agree within
+`coords.AGREE_KM` the answer is their centroid, if they disagree the best
+guess's own point wins and the disagreement is recorded. `coord_basis` says
+which happened:
 
-  plant   OPSD / PyPSA / Wikipedia   an actual plant location
-  town    gazetteer / nominatim      the settlement the entry is named after
-  area    grid_area / region         DSO or region centroid
-  state   state_centroid             Bundesland centroid
+  consensus            >=2 datasets agreed; lat/lon is their centroid
+  best_guess_disputed  they disagreed; the best guess's point was kept
+  single_source        only one dataset had a location
+  postcode             none did; a BNetzA postcode centroid was used
+  area_fallback        none did; match_geo.py's area-level centroid
+  none                 nothing located it
 
-`coord_source` names the specific resolver. **Only `plant` rows may be drawn
-as a plant pin.** A `state` centroid rendered like a matched plant is the
-same false-positive failure match_exact.py refuses to make about identity,
-relocated into geography — filter on `coord_precision` before mapping.
+`coord_precision` still says what KIND of location you got:
+
+  plant     OPSD / PyPSA / Wikipedia   an actual plant location
+  postcode  BNetzA Postleitzahl        the postcode's centroid
+  town      gazetteer / nominatim      the settlement the entry is named after
+  area      grid_area / region         DSO or region centroid
+  state     state_centroid             Bundesland centroid
+
+**Only `plant` rows may be drawn as a plant pin.** A `state` centroid
+rendered like a matched plant is the same false-positive failure
+match_exact.py refuses to make about identity, relocated into geography —
+filter on `coord_precision` before mapping.
+
+`coord_score` (0..1) rates the LOCATION only, never the identity: it starts
+from `coord_basis`, decays with how far the datasets disagree, and is
+nudged by whether the point falls within BNetzA's stated postcode
+(`plz_check`). Identity confidence remains a separate axis — `guess_basis`
+and `llm_confidence`. `coord_spread_km`, `coord_n_sources` and
+`coord_sources` expose the evidence the score was computed from.
 
 Inputs (all read-only; every optional file is skipped gracefully if absent,
 and the wiki file may be partial — a capped smoke-test run only covers the
@@ -49,6 +70,7 @@ import os
 
 import pandas as pd
 
+import coords as coords_mod
 from paths import INPUT_DIR, TEMP_DIR, RESULTS_DIR
 
 ENTRIES = os.path.join(TEMP_DIR, "redispatch_entries.csv")
@@ -58,6 +80,7 @@ WIKI    = os.path.join(TEMP_DIR, "matches_wikipedia.csv")
 GEO     = os.path.join(TEMP_DIR, "matches_geo.csv")
 OPSD    = os.path.join(INPUT_DIR, "OPSD_conventional_power_plants_DE.csv")
 PSA     = os.path.join(INPUT_DIR, "pypsa_powerplants_de_at_lu.csv")
+BNETZA  = os.path.join(INPUT_DIR, "bnetza_kraftwerkliste_clean.csv")
 OUT     = os.path.join(RESULTS_DIR, "redispatch_plant_matches.csv")
 
 REGISTRIES = ("opsd", "psa", "bnetza")
@@ -74,9 +97,9 @@ def _blank(v):
 
 
 def _load_coords():
-    """{registry id (as str) -> (lat, lon)} for the two registries that have
-    coordinates. BNetzA's cleaned file carries none, so a BNetzA-only winner
-    has no coordinate of its own and falls back to Wikipedia's."""
+    """{(registry, id as str) -> (lat, lon)} for the two registries that have
+    coordinates. BNetzA's cleaned file carries none — its rows contribute a
+    postcode instead, via _load_plz()."""
     coords = {}
     opsd = pd.read_csv(OPSD, encoding="utf-8-sig")
     for i, lat, lon in zip(opsd["id"], opsd["lat"], opsd["lon"]):
@@ -85,6 +108,15 @@ def _load_coords():
     for i, lat, lon in zip(psa["id"], psa["lat"], psa["lon"]):
         coords[("psa", str(i))] = (lat, lon)
     return coords
+
+
+def _load_plz():
+    """{bnetza mastr_id -> Postleitzahl}. dtype=str is not optional: 71
+    distinct German codes have a leading zero, and 62 rows are Austrian
+    (`A-6794` or a bare 4-digit code), so the column must not be coerced to
+    a number. postcodes.normalize_plz() sorts the variants out."""
+    bn = pd.read_csv(BNETZA, dtype={"Postleitzahl": str})
+    return {str(i): p for i, p in zip(bn["mastr_id"], bn["Postleitzahl"])}
 
 
 def _sole_candidate(row):
@@ -126,7 +158,8 @@ def main() -> None:
     llm = pd.read_csv(LLM).set_index("plant") if os.path.exists(LLM) else pd.DataFrame()
     wiki = pd.read_csv(WIKI).set_index("plant") if os.path.exists(WIKI) else pd.DataFrame()
     geo = pd.read_csv(GEO).set_index("plant") if os.path.exists(GEO) else pd.DataFrame()
-    coords = _load_coords()
+    coord_lookup = _load_coords()
+    plz_lookup = _load_plz()
 
     if not os.path.exists(LLM):
         print("note: no matches_llm.csv — ranked guesses will be missing "
@@ -182,22 +215,27 @@ def main() -> None:
             basis = "none"
             fuel_status = "conflict" if had_conflict else "unknown"
 
-        # Coordinate precedence: a real plant coordinate always beats an
-        # area-level one, and `coord_precision` says which you got. An `area`
-        # or `state` row is a centroid that may sit tens of km from anything
-        # generating power — never render it as a plant pin.
-        lat, lon, coord_source, precision, area_label = None, None, None, None, None
-        if cid is not None and (reg, cid) in coords:
-            lat, lon = coords[(reg, cid)]
-            coord_source, precision = reg, "plant"
-        if _blank(lat) and not _blank(wk.get("lat")):
-            lat, lon = wk.get("lat"), wk.get("lon")
-            coord_source, precision = "wikipedia", "plant"
-        if _blank(lat) and gg:
-            lat, lon = gg.get("lat"), gg.get("lon")
-            coord_source = gg.get("geo_source")
-            precision = gg.get("coord_precision")
-            area_label = gg.get("area_label")
+        # Coordinates: every dataset that has one gets a say, they are
+        # checked against each other, and the disagreement becomes a score.
+        # See coords.py. `coord_precision` still says what kind of location
+        # you got — an `area`/`state` row is a centroid that may sit tens of
+        # km from anything generating power, so never render it as a plant
+        # pin; filter on `coord_precision` before mapping.
+        wiki_ok = str(wk.get("status")) == "match"
+
+        sources = {}
+        for r_ in ("opsd", "psa"):
+            pt = coords_mod.points_for_ids(_split(ex.get(f"{r_}_ids")),
+                                           coord_lookup, r_)
+            if pt:
+                sources[r_] = pt
+        if wiki_ok and not _blank(wk.get("lat")):
+            sources["wikipedia"] = (float(wk["lat"]), float(wk["lon"]))
+
+        plz_list = [plz_lookup.get(str(i)) for i in _split(ex.get("bnetza_ids"))]
+        plz_list = [p for p in plz_list if p]
+
+        cinfo = coords_mod.reconcile(sources, reg, plz_list, gg or None)
 
         out.update({
             "best_guess_id":       cid,
@@ -208,13 +246,15 @@ def main() -> None:
             "fuel_status":         fuel_status,
             "llm_confidence":      lm.get("llm_confidence"),
             "llm_reasoning":       lm.get("llm_reasoning"),
-            "lat":                 lat,
-            "lon":                 lon,
-            "coord_source":        coord_source,
-            "coord_precision":     precision,
-            "area_label":          area_label,
-            "wiki_title":          wk.get("title"),
-            "wiki_url":            wk.get("url"),
+        })
+        out.update(cinfo)
+        # wiki columns only mean anything on an accepted match — carrying
+        # them unconditionally let rejected hits masquerade as matches
+        # (e.g. "50H BASF Schwarzheide" showed wiki_title "Schwarzerden").
+        out.update({
+            "wiki_title": wk.get("title") if wiki_ok else None,
+            "wiki_url":   wk.get("url") if wiki_ok else None,
+            "wiki_fuel":  wk.get("wiki_fuel") if wiki_ok else None,
         })
         rows.append(out)
 
@@ -236,6 +276,22 @@ def main() -> None:
     print("\ncoord_precision (plant = a real plant location; the rest are "
           "centroids):")
     print(out_df["coord_precision"].value_counts().to_string())
+    print("\ncoord_basis (how the coordinate was decided):")
+    print(out_df["coord_basis"].value_counts().to_string())
+    print("\nplz_check (BNetzA postcode containment):")
+    print(out_df["plz_check"].value_counts().to_string())
+
+    scored = out_df[out_df["coord_score"] > 0]
+    if len(scored):
+        print(f"\ncoord_score over {len(scored)} located rows: "
+              f"mean {scored['coord_score'].mean():.3f}, "
+              f"median {scored['coord_score'].median():.3f}")
+    disputed = out_df[out_df["coord_basis"] == "best_guess_disputed"]
+    print(f"\ndisputed (sources disagree by > {coords_mod.AGREE_KM:.0f} km): "
+          f"{len(disputed)}")
+    for r in disputed.sort_values("coord_spread_km", ascending=False).itertuples():
+        print(f"  {r.plant!r}: {r.coord_spread_km:.1f} km apart "
+              f"({r.coord_sources}) -> kept {r.coord_source}")
 
 
 if __name__ == "__main__":

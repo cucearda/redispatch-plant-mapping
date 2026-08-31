@@ -79,10 +79,18 @@ string that surfaced the reported title -- a bare cleaned name, or, if a
 suffix-prefixed variant ("Kraftwerk <name>") is what actually found it,
 that full string, so it's visible which one did the work.
 
-Usage: python match_wikipedia.py [limit]   (limit = process only the first
-N entries, for a smoke test before a full run -- a full run is a genuinely
-long network job, several hundred round-trips even with the on-disk cache
-warm).
+Usage: python match_wikipedia.py [limit|rejected]
+  limit    -- process only the first N entries, for a smoke test before a
+              full run (a full run is a genuinely long network job, several
+              hundred round-trips even with the on-disk cache warm).
+  rejected -- retry only entries whose PREVIOUS run in OUT ended
+              status=="rejected" (e.g. after a gate-logic change), merging
+              the new results back into OUT instead of overwriting the
+              already-matched/none rows. Cheap when the retry only changes
+              gate logic (title/fuel/contradiction checks) -- opensearch/page
+              lookups the previous run already made are still cache-warm.
+              A new suffix variant (e.g. a class's suffix list changing)
+              does cost fresh network calls for the entries it affects.
 """
 
 import json
@@ -178,10 +186,20 @@ def norm_tokens(s):
 
 def title_overlap_strong(entry_tokens, title):
     """At least one >=5-char token shared between the entry's own tokens
-    and the Wikipedia title."""
+    and the Wikipedia title -- also counts a compound match (one token a
+    substring of the other), since German Wikipedia titles routinely fuse
+    the plant name and its type straight together with no space or hyphen
+    (e.g. "Walchensee" -> "Walchenseekraftwerk"), which a plain set
+    intersection of whole tokens would never catch. Confirmed live: this is
+    exactly what dropped the real Walchenseekraftwerk article for the
+    "Walchensee 1-4" entries -- title_overlap_strong rejected it while a
+    same-tokens-by-luck but wrong article (Walchensee-Museum, split by its
+    own hyphen) survived to become the reported rejection reason instead."""
     a = {t for t in entry_tokens if len(t) >= 5}
     b = {t for t in norm_tokens(title.replace("_", " ")).split() if len(t) >= 5}
-    return bool(a & b)
+    if a & b:
+        return True
+    return any(ta in tb or tb in ta for ta in a for tb in b)
 
 
 def in_de_bbox(lat, lon):
@@ -319,6 +337,12 @@ def energy_contradicts(wiki_class, entry_class):
 # ---------------------------------------------------------------------------
 # Suffix selection -- ported verbatim from J1/resolve.py's Stage 3/5 logic
 def suffixes_for(name, entry_class):
+    """"Kraftwerk" is always appended regardless of entry_class -- per your
+    instruction. Motivated directly by Walchensee: labeled "Erneuerbar" (the
+    systematic hydro-labeling mismatch noted in the module docstring), so
+    the old erneuerbar branch only ever tried Windpark/Solarpark-style
+    suffixes and never "Kraftwerk", even though the real article
+    (Walchenseekraftwerk) is titled with exactly that suffix."""
     nl = name.lower()
     ec = _safe_str(entry_class).lower()
 
@@ -332,22 +356,23 @@ def suffixes_for(name, entry_class):
             suf.append("Kernkraftwerk")
         if any(s in nl for s in ("hkw", "bhkw", "heiz", "kwk")):
             suf.append("Heizkraftwerk")
-        suf.append("Kraftwerk")
-        return suf
-
-    if ec == "sonstiges":
-        return ["Pumpspeicherkraftwerk", "Wasserkraftwerk", "Speicherkraftwerk", "Kraftwerk"]
-
-    if ec == "erneuerbar":
+    elif ec == "sonstiges":
+        suf = ["Pumpspeicherkraftwerk", "Wasserkraftwerk", "Speicherkraftwerk"]
+    elif ec == "erneuerbar":
         is_offshore = any(s in nl for s in ("owp", "offshore"))
         if any(s in nl for s in ("owp", "windpark", "windkraft", " wp ", "_wp_", "wind")):
-            return (["Offshore-Windpark", "Windpark", "Windkraftanlage"] if is_offshore
-                    else ["Windpark", "Windkraftanlage"])
-        if any(s in nl for s in ("solarpark", "pv", "photovolt", "solar")):
-            return ["Solarpark", "Photovoltaikanlage", "PV-Freiflächenanlage"]
-        return ["Windpark", "Solarpark"]
+            suf = (["Offshore-Windpark", "Windpark", "Windkraftanlage"] if is_offshore
+                   else ["Windpark", "Windkraftanlage"])
+        elif any(s in nl for s in ("solarpark", "pv", "photovolt", "solar")):
+            suf = ["Solarpark", "Photovoltaikanlage", "PV-Freiflächenanlage"]
+        else:
+            suf = ["Windpark", "Solarpark"]
+    else:
+        suf = []
 
-    return ["Kraftwerk"]
+    if "Kraftwerk" not in suf:
+        suf.append("Kraftwerk")
+    return suf
 
 
 def _tier_key(name, tier):
@@ -770,10 +795,33 @@ def _comparison_report(wiki_out):
 
 
 # ---------------------------------------------------------------------------
-def main(entries_file: str = ENTRIES, limit: int = None) -> None:
+def _save_out(rows, prior):
+    """prior is the previous OUT (only set in --retry mode): rows we just
+    (re)computed replace their old counterpart by plant name, everything
+    else from the old file (already-matched/none entries we didn't touch
+    this run) is carried through untouched -- so a scoped retry can't
+    clobber the rest of the file, including at the mid-run checkpoint
+    writes, not just the final save."""
+    out = pd.DataFrame(rows)
+    if prior is not None:
+        untouched = prior[~prior["plant"].isin(out["plant"])]
+        out = pd.concat([untouched, out], ignore_index=True)
+    out.to_csv(OUT, index=False, encoding="utf-8")
+    return out
+
+
+def main(entries_file: str = ENTRIES, limit: int = None, retry_status: str = None) -> None:
     df = pd.read_csv(entries_file)
     unclear = df[df["category"] == "unclear"].reset_index(drop=True)
-    if limit:
+
+    prior = None
+    if retry_status:
+        prior = pd.read_csv(OUT)
+        retry_plants = set(prior.loc[prior["status"] == retry_status, "plant"])
+        unclear = unclear[unclear["plant"].isin(retry_plants)].reset_index(drop=True)
+        print(f"retrying {len(unclear)} previously-{retry_status!r} entries "
+              f"(of {len(prior)} total; the rest are carried through unchanged)\n")
+    elif limit:
         unclear = unclear.head(limit)
 
     cache = load_cache()
@@ -791,12 +839,11 @@ def main(entries_file: str = ENTRIES, limit: int = None) -> None:
             "reason": res.get("reason"),
         })
         if (i + 1) % CHECKPOINT_EVERY == 0:
-            pd.DataFrame(rows).to_csv(OUT, index=False, encoding="utf-8")
+            _save_out(rows, prior)
             save_cache(cache)
             print(f"  ... {i + 1}/{len(unclear)} processed")
 
-    out = pd.DataFrame(rows)
-    out.to_csv(OUT, index=False, encoding="utf-8")
+    out = _save_out(rows, prior)
     save_cache(cache)
 
     print(f"\n-> {OUT}: {len(out)} rows\n")
@@ -810,5 +857,8 @@ def main(entries_file: str = ENTRIES, limit: int = None) -> None:
 
 
 if __name__ == "__main__":
-    _limit = int(sys.argv[1]) if len(sys.argv) > 1 else None
-    main(limit=_limit)
+    _arg = sys.argv[1] if len(sys.argv) > 1 else None
+    if _arg == "rejected":
+        main(retry_status="rejected")
+    else:
+        main(limit=int(_arg) if _arg else None)
