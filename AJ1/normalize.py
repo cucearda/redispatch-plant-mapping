@@ -80,6 +80,16 @@ def norm_bare(s):
     return re.sub(r"[^a-z0-9]+", "", s)
 
 
+def norm_tokens(s):
+    """Lowercase ASCII tokens separated by single spaces (J1, verbatim) —
+    used by match_geo.py's place/state/region lookups, which match on word
+    tokens rather than the squashed keys the registry matcher uses."""
+    s = ascii_fold(s)
+    s = re.sub(r"[_\-/]", " ", s)
+    s = re.sub(r"[^a-z0-9 ]+", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
 PREFIX_DROP = {
     "50h", "50hertz", "amp", "amprion", "ttg", "tt", "tennet",
     "tbw", "transnetbw",
@@ -180,3 +190,15 @@ def clean_heavy(name: str, fold=norm) -> str:
 def clean_heavy_bare(name: str) -> str:
     """clean_heavy with bare-letter diacritic folding (ae -> a)."""
     return clean_heavy(name, fold=norm_bare)
+
+
+def significant_tokens(name):
+    """Tokens left after dropping TSO prefixes, operator/plant-type noise and
+    bare digits (J1, verbatim). match_geo.py matches place names against these,
+    so 'TTG UW Diele' reduces to the tokens that could name a real place."""
+    out = []
+    for t in norm_tokens(strip_tso(name)).split():
+        if t in PREFIX_DROP or t.endswith("kraftwerk") or t.isdigit():
+            continue
+        out.append(t)
+    return out

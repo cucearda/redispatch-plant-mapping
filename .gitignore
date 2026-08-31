@@ -38,3 +38,10 @@ input/opsd_conventional_powerplants_de_at.csv
 # Derived — regenerate with prep_data.py (cleaned BNetzA Kraftwerksliste,
 # filtered to Einzelanlage/stillgelegte Anlagen row types)
 input/bnetza_kraftwerkliste_clean.csv
+
+# Stale pre-restructuring data dir (395M) — superseded by input/; every file
+# here was either renamed into input/ or is unused. Never tracked.
+data/
+
+# Thesis working copy (LaTeX), kept out of the code repo
+thesis
