@@ -6,8 +6,10 @@ Combines practices from A1 (`A1/redispatch_prep.py`) and J1
 (`J1/sources.py::load_redispatch`), picked deliberately rather than inheriting
 either wholesale:
 
-- **Drop `Probefahrt` (test-drive) rows** before any aggregation (J1's
-  practice; A1 has no equivalent filter).
+- **Drop test-type rows** before any aggregation: every GRUND_DER_MASSNAHME
+  matching TEST_PATTERN (Probefahrt, Probestart, Probeabruf, Testfahrt,
+  Funktionstest; 8 labels in all). Extends J1's Probefahrt-only practice;
+  A1 has no equivalent filter.
 - **Explode multi-plant bundles into their member names**, but using A1's
   stricter segmentation rule: a comma-joined string is only a genuine bundle
   if >=2 of its comma segments each carry a run of 4+ letters (so a single
@@ -60,6 +62,10 @@ from paths import INPUT_DIR, TEMP_DIR
 
 REDISPATCH = os.path.join(INPUT_DIR, "Redispatch_Daten_2013_2026.csv")
 OUT = os.path.join(TEMP_DIR, "redispatch_entries.csv")
+
+# every test-type cause label: Probefahrt, Probestart (NetzRes), and
+# Probeabruf/Testfahrt/Funktionstest (KapRes|bnBm)
+TEST_PATTERN = "probe|test"
 
 
 # ---------------------------------------------------------------------------
@@ -121,8 +127,8 @@ def main(redispatch_file: str = REDISPATCH) -> None:
     df.columns = _clean_columns(df.columns)
     n_raw = len(df)
 
-    df = df[df["GRUND_DER_MASSNAHME"] != "Probefahrt"]
-    n_dropped_probefahrt = n_raw - len(df)
+    df = df[~df["GRUND_DER_MASSNAHME"].str.contains(TEST_PATTERN, case=False, na=False)]
+    n_dropped_test = n_raw - len(df)
 
     # notna() first: pandas >=3.0's astype(str) PRESERVES NaN rather than
     # rendering it as the literal "nan" string 2.x produced, so the "nan"
@@ -198,7 +204,7 @@ def main(redispatch_file: str = REDISPATCH) -> None:
     n_nan_capacity = int(out["max_dispatched_mw"].isna().sum())
     n_conflict = int(out["energy_conflict"].sum())
 
-    print(f"raw rows: {n_raw}  (dropped {n_dropped_probefahrt} Probefahrt rows)")
+    print(f"raw rows: {n_raw}  (dropped {n_dropped_test} test-type rows)")
     print(f"events exploded as a genuine multi-plant bundle: {n_bundle_events}")
     print(f"\n-> {OUT}: {len(out)} distinct plant names")
     print(f"  bundle-only names (never appear solo):            {n_bundle_only}")

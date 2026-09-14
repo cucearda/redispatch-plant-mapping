@@ -18,7 +18,7 @@ approaches into a 3-way split:
   bucket includes, by design, several name families that look reserve/pool/
   operator-related but were checked against the real data and found to be
   genuine individual plants: the Netzreservekraftwerk/Reservekraftwerk/
-  ReserveKW family (51 names, all with a bare-name twin elsewhere in the
+  ReserveKW family (50 names, 24 with a bare-name twin elsewhere in the
   data), Pool/pool entries (14 names, both site-specific and
   operator-portfolio), bare TSO/DSO names (TransnetBW, EnBW Trading GmbH,
   EnBW Pumpverbot), and foreign plants (Vianden, Kühtai, Illwerke,
@@ -38,7 +38,7 @@ from paths import TEMP_DIR
 
 ENTRIES = os.path.join(TEMP_DIR, "redispatch_entries.csv")
 
-# Checked against all 776 distinct AJ1 names (see the plan/chat history):
+# Checked against all 746 distinct AJ1 names (see the plan/chat history):
 # zero false positives at word-boundary granularity, and the
 # Netzreservekraftwerk/Reservekraftwerk/ReserveKW family, Pool entries, bare
 # TSO/DSO names, and foreign plants all correctly fall through to "unclear".
